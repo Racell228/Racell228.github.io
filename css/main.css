@@ -233,7 +233,7 @@ th {
 }
 .foot {
 	background: #302232;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	padding-top: 3px;
 	padding-bottom: 3px;
