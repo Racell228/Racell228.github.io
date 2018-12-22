@@ -1,0 +1,163 @@
+
+
+/*font-family:  'Ubuntu', sans-serif;
+
+font-family: 'Montserrat', sans-serif; */
+
+
+body {
+	font-family: 'Ubuntu', sans-serif ;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+div,p,input,button,form,span,a,ul,li {
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	background: background: background: rgba(77,190,254,1);
+	background: -moz-linear-gradient(left, rgba(77,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,190,254,1)), color-stop(100%, rgba(55,143,217,1)));
+	background: -webkit-linear-gradient(left, rgba(77,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -o-linear-gradient(left, rgba(77,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: -ms-linear-gradient(left, rgba(77,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	background: linear-gradient(to right, rgba(77,190,254,1) 0%, rgba(55,143,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbefe', endColorstr='#378fd9', GradientType=1 );
+	height: 830px;
+	color: #fff;
+}
+.top {
+	padding-left: 10px;
+}
+.logo {
+	padding-top: 65px;
+}
+.intro {
+	margin-bottom: 37px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 16px;
+
+}
+.wrapper {
+	display: flex ;
+	justify-content: space-between;
+}
+.offer {
+	padding-top: 166px;
+
+}
+.title	{
+	font-size: 37px;
+	font-weight: 700;
+}
+.title span {
+	font-size: 59px;
+}
+.btn {
+	background: #ffd429;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	display: block;
+	width: 205px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+.learn {
+	font-family:  'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+.learn p {
+	font-weight: 400;
+	font-size: 15px;
+}
+h2 {
+	font-size: 30px;
+}
+
+.up {
+	padding-top: 115px;
+	text-align: center;
+	padding-bottom: 80px;
+}
+.future {
+	display: flex ;
+	justify-content: center;
+	text-align: center;
+}
+.future h3 {
+	font-size: 19px;
+	padding-bottom: 25px;
+}
+.future1 {
+	width: 385px;
+	padding-top: 6px;
+}
+.future2 {
+	width: 385px;
+}
+.future3 {
+	width: 385px;
+	margin-bottom: 123px;
+}
+.mail {
+	background: #ecf3f8;
+	display: flex ;
+	justify-content: center;
+	text-align: center;
+	padding-top: 110px;
+}
+.text {
+	padding-bottom: 63px;
+	text-align: center;
+	font-family: 'montserrat',sans-serif;
+	font-size: 30px;
+	padding-bottom: 80px;
+}
+.input1 {
+	height: 50px;
+	width: 100%;
+	border: 1px solid #bbb;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding-left: 14px;
+
+}
+.table {
+	margin: 0 auto;
+	max-width: 345px;
+}
+.btn1 {
+	height: 50px;
+	width: 340px;
+	border: 1px solid #bbb;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding-left: 14px;
+	background: #ffd429;
+	font-family: 'montserrat',sans-serif;
+	margin-bottom: 105px;
+	font-weight: 900;
+	
+}
+.footer {
+	background: #164d7a;
+	text-align: center;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
