@@ -435,7 +435,7 @@ footer p {
 }
 #menu_body {
 	position: absolute;
-	right: 28%;
+	right: 400px;
 }
 
 
@@ -493,5 +493,5 @@ footer p {
 	width: 250px;
 }
 .about_foot1 {
-	margin-top: 40%;
+	margin-top: 600px;
 }
