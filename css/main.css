@@ -5,7 +5,6 @@ body {
 }
 .head {
 	background-color: #441014;
-	width: 100%;
 }
 .container {
 	width: 1220px;
@@ -618,4 +617,21 @@ margin-top: 70px;
 	border:2px solid #c6985f;
 	width:1070px;
 	margin-left: 40px; 
+}
+@media screen and (max-width: 1200px) {
+.container {
+
+	}
+.head  {
+	width: 1200px;
+}
+
+.background {
+	width: 1200px;
+}
+.advantages {
+	width: 1200px;
+}
+footer {
+	width: 1200px;
 }
