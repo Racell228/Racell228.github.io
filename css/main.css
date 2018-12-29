@@ -216,7 +216,7 @@ transform: scale(1);
 	font-family: 'Forum', cursive;
 }
 .adv_item {
- 
+ display: block;
  padding-left: 83px;
 }
 
