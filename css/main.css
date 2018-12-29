@@ -5,6 +5,10 @@ body {
 }
 .head {
 	background-color: #441014;
+<<<<<<< HEAD
+=======
+	width: 100%;
+>>>>>>> parent of 281cb4e... qqq
 }
 .container {
 	width: 1220px;
@@ -617,6 +621,7 @@ margin-top: 70px;
 	border:2px solid #c6985f;
 	width:1070px;
 	margin-left: 40px; 
+<<<<<<< HEAD
 }
 @media screen and (max-width: 1200px) {
 .container {
@@ -634,4 +639,6 @@ margin-top: 70px;
 }
 footer {
 	width: 1200px;
+=======
+>>>>>>> parent of 281cb4e... qqq
 }
