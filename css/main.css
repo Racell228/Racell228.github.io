@@ -755,7 +755,9 @@ textarea {
 .head  {
 	width: 1200px;
 }
-
+.about_line {
+	width: 1200px;
+}
 .background {
 	width: 1200px;
 }
