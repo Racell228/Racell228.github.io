@@ -9,7 +9,7 @@ $email = $_POST['user_email'];
 $theme = $_POST['user_theme'];
 $text = $_POST['user_text'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 4;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
