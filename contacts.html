@@ -63,12 +63,12 @@
 <section class="contact_form">
 <div class="container">
 	<img src="img/contact_img.png" alt="" class="contact_img">
-	<form name="MyForm" action="mail.php" method="POST" class="contact_table">
-					<input type="name" name="user_name" placeholder="Ваше имя" required >
-					<input type="email" name="user_email" placeholder="Ваш e-mail" required>
-					<input type="them" name="user_theme" placeholder="Тема сообщения" required>
-					<textarea type="text" name="user_text" placeholder="Текст..."  required></textarea>
-					<button type="submit">Отправить</button>
+	<form name="MyForm" action="mail.php" method="post" class="contact_table">
+					<input type="text" name="name" placeholder="Ваше имя" required class="input" >
+					<input type="text" name="email" placeholder="Ваш e-mail" required class="input">
+					<input type="text" name="sub" placeholder="Тема сообщения" required class="input">
+					<textarea type="text" name="body" placeholder="Текст..."  required class="input"></textarea>
+					<button type="submit" id="submit">Отправить</button>
 				</form>
 </div> 
 </section>
