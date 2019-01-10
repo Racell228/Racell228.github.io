@@ -1,41 +1,23 @@
-<?php 
-
-require_once('phpmailer/PHPMailerAutoload.php');
-$mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
-
-$name = $_POST['user_name'];
-$email = $_POST['user_email'];
-$theme = $_POST['user_theme'];
-$text = $_POST['user_text'];
-
-//$mail->SMTPDebug = 4;                               // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dzharuzov@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '$dk820&123'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
-
-$mail->setFrom('dzharuzov@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('ignatenko.ura000000@gmail.com');     // Кому будет уходить письмо 
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его Почта ' .$email. 'Тема письма: ' .$theme. 'Текст письма ' .$text;
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thank-you.html');
+<meta http-equiv='refresh' content='6; url=https://index.html'>
+<meta charset="UTF-8" />
+<?php
+if (isset($_POST['name'])) {$name = $_POST['name']; if ($name == '') {unset($name);}}
+if (isset($_POST['email'])) {$email = $_POST['email']; if ($email == '') {unset($email);}}
+if (isset($_POST['sub'])) {$sub = $_POST['sub']; if ($sub == '') {unset($sub);}}
+if (isset($_POST['body'])) {$body = $_POST['body']; if ($body == '') {unset($body);}}
+ 
+if (isset($name) && isset($email) && isset($sub) && isset($body)){
+ 
+$address = "ignatenko.ura000000@gmail.com";
+$mes = "Имя: $name \nE-mail: $email \nТема: $sub \nТекст: $body";
+$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
+if ($send == 'true')
+{echo "Сообщение отправлено успешно, через 6 секунд Вы будете направлены на главную страницу блога <a href='https://bloggood.ru/'>BLOGGOOD.RU</a>,где сможете продолжить ваш просмотр";}
+else {echo "Ошибка, сообщение не отправлено!";}
+ 
+}
+else
+{
+echo "Вы заполнили не все поля, вернитесь назад и заполните необходимые поля!";
 }
 ?>
