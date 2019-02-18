@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+
+</head>
+<body>
+	<div class="left"></div>
+	<h2>Дайте відповідь на подані запитання, <br> щоб закріпити знання, <br>отримані в процесі перегляду презентації</h2>
+<form class="form">
+  <p>
+  	<h3 >1. Державні символи країни - це :</h3><br>
+    <label>
+      <input type="radio" name="question1" value="1">
+      А). Візитна карта країни</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question1" value="0">
+      Б). Те, що найбільше шанує народ</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question1" value="1">
+      В). Розпізнавальні знаки країни</label>
+    <br>
+    <label>
+  </p>
+<br>
+
+
+
+
+
+  <p><h3 >2. Хата, пісня, калина, барвінок, тополя, лелека. Верба, писанка, рушник - це:</h3><br>
+    <label>
+      <input type="radio" name="question2" value="0">
+      А). Народні традиції</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question2" value="0">
+      Б). Народні обереги</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question2" value="1">
+      В) Народні символи</label>
+    <br>
+    
+  </p>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+	<p><h3 >3. Педагогічні ради, семінари, практикуми, методичні об'єднання, творчі групи, ділові ігри - це:</h3><br>
+    <label>
+      <input type="radio" name="question3" value="1">
+      А). Групові форми роботи</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question3" value="0">
+      Б). Індивідуальні форми</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question3" value="0">
+      В). Колективні</label>
+    <br>
+    <label>
+  </p>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <p><h3 >4. Що є головними складовими національного виховання</h3><br>
+    <label>
+      <input type="radio" name="question4" value="0">
+      А). Розвиток мовлення</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question4" value="1">
+      Б). Громадське виховання</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question4" value="1">
+      В). Патріотичне виховання</label>
+    <br>
+    <label>
+  </p>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+  <p><h3 >5. В якій освітній лінії Базового компоненту йдеться про формування інтересу до самого себе та довкілля</h3><br>
+    <label>
+      <input type="radio" name="question5" value="0">
+      А). Освітня лінія "Дитина в соціумі"</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question5" value="1">
+      Б). Освітня лінія "Дитина в сенсорно-пізнавальному просторі"</label>
+    <br>
+    <br>
+    <label>
+      <input type="radio" name="question5" value="0">
+      В). Освітня лінія "Особистість дитини"</label>
+    <br>
+    <label>
+  </p>
+  <br>
+
+
+  <p>
+    <input class="button" type="button" id="calc" value="Дізнатись результат">
+    <input class="reset" type="reset" value="Оновити">
+  </p>
+    <p>Правильних відповідей: <input type="text" name="result" readonly></p>
+</form>
+
+
+<p class="result">
+	Кількість балів: <br>	
+	0-2 Погано <br>
+	3-4 Добре <br>
+	5 Відмінно <br>
+
+</p>
+
+
+<script>calc.onclick = function(){
+    var myform = this.form;
+    myform.result.value = +myform.question1.value+  +myform.question2.value + +myform.question3.value + +myform.question4.value + +myform.question5.value ;
+
+
+
+
+
+
+
+
+
+}</script>
+</body>
+</html>
