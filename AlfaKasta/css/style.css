@@ -178,10 +178,11 @@ form img {
 .btn {
 	margin-right: 18px;
 	background-color: #6772e5;
-	padding: 8px 18px;
+	padding: 8px 16px;
 	font-weight: 700;
 	text-align: center;
 	height: 20px;
+	width: 115px;
 }
 .head_bg {
 	background-image: linear-gradient(to left, #75559e, #3d73bf);
