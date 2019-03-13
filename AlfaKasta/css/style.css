@@ -97,8 +97,11 @@ nav	{
 	font-size: 21px;
 }
 .slide a {
-	margin-right: 22px;
+	margin-right: 17px;
 	color: #9ca2b1;
+}
+.slide {
+	height: 20px;
 }
 .slide a.active{
 	color: #fff;
@@ -178,6 +181,7 @@ form img {
 	padding: 8px 18px;
 	font-weight: 700;
 	text-align: center;
+	height: 20px;
 }
 .head_bg {
 	background-image: linear-gradient(to left, #75559e, #3d73bf);
