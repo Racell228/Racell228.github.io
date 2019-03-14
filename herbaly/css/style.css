@@ -34,17 +34,14 @@ section{
 .books{
 	padding-top: 150px;
 }
-.recovery_guide h2{
+h2{
 	font-size: 60px;
 	font-weight: bold;
-	
-	
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
 	-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  	-webkit-text-fill-color: transparent;
 	color: #057f60;
- }
-
+}
 .recovery_guide p{
 	font-size: 30px;
 	width: 740px;
@@ -319,4 +316,209 @@ width: 860px;
 	font-weight: normal;
 	margin: 0;
 	padding-top: 24px;
+}
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 16px;
+		overflow-x: hidden;
+	}
+	html {
+		overflow-x: hidden;
+	}
+	section{
+		background-image: url(../img/bg_768.png);
+		width: 768px;
+		height: auto;
+	}
+	.container {
+    	width: 625px;
+	}
+	.logo {
+		padding-top: 35px;
+	}
+	.logo img {
+		width: 150px;
+		height: 35px;
+	}
+	.mail {
+		padding-top: 35px;
+	}
+	.mail img {
+		width: 45px;
+		height: 45px;
+	}
+	.books img {
+		width: 700px;
+    	height: 490px;
+	}
+	.books {
+		padding-top: 100px;;
+	}
+	.recovery_guide h2 {
+    	font-size: 30px;
+    	margin-top: -15px;
+    	margin-bottom: 9px;
+    }
+    .recovery_guide p {
+    	font-size: 16px;
+    	width: 425px;
+    	line-height: 20px;
+    	margin-top: 0;
+    	margin-bottom: 0;
+    }
+    .advantages {
+    	margin-top: 25px;
+    }
+    .numbers {
+    	font-size: 16px;
+    	margin-bottom: 3px;
+    }
+    .numbers p {
+    	padding-left: 10px;
+    	position: relative;
+    	top: -6px;
+    	padding-left: 10px;
+    }
+    
+    .numbers img {
+    	width: 25px;
+    	height: 25px;
+    }
+    .description h2 {
+    	font-size: 18px;
+    	width: 300px;
+    	padding-top: 90px;
+    }
+    .click_here {
+		width: 370px;
+    }
+    .advantages h4 {
+    	font-weight: bold;
+    	font-size: 18px;
+    } 
+    .btn {
+	    width: 370px;
+	    padding: 2px 15px;
+	    font-size: 22px;
+	    text-align: start;
+	}
+	.advantages h3 {
+		font-size: 30px;
+	}
+	.description {
+		width: 390px;
+	}
+	.description h3 {
+		font-size: 16px;
+		padding-top: 40px;
+
+	}
+	.description p {
+		font-size: 16px;
+		padding-top: 15px;
+		line-height: 18px;
+	}
+	.doctors_say h2 {
+		margin-top: 900px;
+		font-size: 18px;
+	}
+	.doctors_say p {
+		width: 370px;
+		font-size: 14px;
+    	line-height: 18px;
+    	padding-top: 40px;
+
+	}
+	.program h2 {
+		font-size: 18px;
+		padding-top: 290px;
+		margin-bottom: 25px;
+	}
+	.program p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.program {
+		width: 412px;
+	}
+	.much_more {
+    	padding-left: 36px;
+	}
+	.program h3 {
+    	padding-top: 25px;
+    	font-size: 18px;
+    	margin-left: 25px;
+    	margin-bottom: 37px;
+    }
+    .button {
+    	font-size: 24px;
+    	padding: 3px 25px;
+    	margin-left: 26px;
+    }
+    .about h2 {
+    	font-size: 18px;
+    	padding-top: 740px;
+    }
+    .authors p {
+    	font-size: 14px;
+    	line-height: 16px;
+    	width: 300px;
+    	padding-top: 30px;
+    }
+    .sale h2 {
+    	font-size: 18px;
+    	text-align: center;
+    	padding-top: 300px;
+    }
+    .four_books img {
+    	height: 300px;
+    	width: 180px;
+    	padding-top: 50px;
+    	margin-left: 35px;
+    }
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    }
+    .four_books p {
+    	position: static;
+    	width: auto;
+    	font-size: 18px;
+    	padding-top: 10px;
+    	margin-left: 33px;
+    }
+    .price h3 {
+    	font-size: 18px;
+    	margin-left: 95px;
+	}
+	.buy {
+    	padding-top: 30px;
+    }
+    .price {
+    	margin-left: 115px;
+    	justify-content: start;
+    }
+    .price h2 {
+    	font-size: 26px;
+    	margin-left: 70px;
+    	margin-bottom: 22px;
+    }
+    .btn_buy {
+    	font-size: 22px;
+    	margin-left: 150px;
+    }
+    .footer p {
+   		font-size: 12px;
+    	padding-bottom: 20px;
+    }
+    .footer {
+    	padding-top: 60px;
+	}
+	.href {
+		font-size: 12px;
+	}
+	.footer h6 {
+		font-size: 10px;
+		padding-bottom: 25px;
+	}
 }
