@@ -1,8 +1,12 @@
 body{
 	margin: 0;
 	padding: 0;
+<<<<<<< HEAD
 	font-family: ProximaNova;
 	font-weight: normal;  
+=======
+	font-family: Proxima Nova;
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	
 }
 h1,h2,h3,h4,h5,p{
@@ -37,6 +41,7 @@ section{
 .recovery_guide h2{
 	font-size: 60px;
 	font-weight: bold;
+<<<<<<< HEAD
 	
 	
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
@@ -45,6 +50,16 @@ section{
 	color: #057f60;
  }
 
+=======
+
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	color: #057f60;
+ }
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 .recovery_guide p{
 	font-size: 30px;
 	width: 740px;
@@ -72,7 +87,13 @@ section{
 }
 .advantages h4{
 	font-size: 30px;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	color: #057f60;
@@ -96,8 +117,14 @@ section{
 	text-align: center;
 	padding: 10px 15px;
 	border-radius: 30px;
+<<<<<<< HEAD
 	
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	color: white;
 	font-size: 38px;
 	font-weight: normal;
@@ -116,7 +143,13 @@ width: 860px;
 	padding-top: 170px;
 	font-size: 48px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -138,7 +171,13 @@ width: 860px;
 	margin-top: 1530px;
 	font-size: 48px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -151,7 +190,10 @@ width: 860px;
 }
 .doctors_say span{
 	font-weight: bold;
+<<<<<<< HEAD
 	font-style: italic;
+=======
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 }
 .program{
 	width: 890px;
@@ -162,7 +204,13 @@ width: 860px;
 	padding-top: 170px;
 	font-size: 48px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	margin-bottom: 75px;
@@ -181,7 +229,13 @@ width: 860px;
 	padding-top: 75px;
 	font-size: 48px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	margin-bottom: 75px;
@@ -190,9 +244,17 @@ width: 860px;
 	margin-top: 15px;
 	width: 640px;
 	text-align: center;
+<<<<<<< HEAD
 	padding: 7px 55px;;
 	border-radius: 30px;
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%);
+=======
+	padding: 15px 40px;
+	border-radius: 30px;
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	color: white;
 	font-size: 38px;
 	font-weight: normal;
@@ -207,7 +269,13 @@ width: 860px;
 	padding-top: 1140px;
 	font-size: 48px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%);  
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -230,7 +298,13 @@ width: 860px;
 	padding-top: 170px;
 	font-size: 52px;
 	font-weight: bold;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%);  
+=======
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -257,16 +331,24 @@ width: 860px;
 	text-align: center;
 }
 .price{
+<<<<<<< HEAD
 	width: 370px;
     justify-content: space-around;
     margin-left: 63px;
 	display: flex;
+=======
+	display: flex;
+	justify-content: space-around;
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 }
 .price h3{
 	font-size: 42px;
 	font-weight: normal;
+<<<<<<< HEAD
 	text-decoration: line-through;
     padding-top: 6px;
+=======
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 }
 .price h2{
 	font-size: 52px;
@@ -281,9 +363,17 @@ width: 860px;
 .btn_buy{
 	width: 490px;
 	text-align: center;
+<<<<<<< HEAD
 	padding: 6px 50px;
 	border-radius: 30px;
 	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%);
+=======
+	padding: 10px 50px;
+	border-radius: 30px;
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 	color: white;
 	font-size: 38px;
 	font-weight: normal;
@@ -301,6 +391,7 @@ width: 860px;
 	font-weight: normal;
 	padding-bottom: 42px;
 }
+<<<<<<< HEAD
 .href {
 	text-align: center;
 	font-size: 24px;
@@ -312,6 +403,10 @@ width: 860px;
 .footer a:hover {
 	text-decoration: underline;
 	
+=======
+.footer span{
+	padding-left: 40px;
+>>>>>>> 19f65711fa7880dbf83653ccd0d5c3626d4cafef
 }
 .footer h6{
 	font-size: 20px;
