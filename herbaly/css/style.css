@@ -420,18 +420,19 @@ width: 860px;
 	}
 	.doctors_say h2 {
 		margin-top: 900px;
-		font-size: 18px;
+		font-size: 24px;
+    	width: 370px;
 	}
 	.doctors_say p {
 		width: 370px;
-		font-size: 14px;
-    	line-height: 18px;
+		font-size: 18px;
+    	line-height: 23px;
     	padding-top: 40px;
 
 	}
 	.program h2 {
 		font-size: 18px;
-		padding-top: 290px;
+		padding-top: 95px;
 		margin-bottom: 25px;
 	}
 	.program p {
@@ -456,19 +457,19 @@ width: 860px;
     	margin-left: 26px;
     }
     .about h2 {
-    	font-size: 18px;
-    	padding-top: 740px;
+    	font-size: 22px;
+    	padding-top: 565px;
     }
     .authors p {
-    	font-size: 14px;
-    	line-height: 16px;
+    	font-size: 18px;
+    	line-height: 19px;
     	width: 300px;
     	padding-top: 30px;
     }
     .sale h2 {
     	font-size: 18px;
     	text-align: center;
-    	padding-top: 300px;
+    	padding-top: 95px;
     }
     .four_books img {
     	height: 300px;
