@@ -192,7 +192,7 @@ form img {
 	margin-right: 18px;
 	background-color: #6772e5;
 	padding: 8px 16px;
-	font-weight: 700;
+	font-weight: 400;
 	text-align: center;
 	height: 20px;
 	width: 115px;
@@ -625,14 +625,16 @@ form img {
 
 .event_info:hover .vs {
 	opacity: 1;
-	transition: 1s;
+	transition: 0.5s;
+	margin-top: 13px;
+	
 }
 .event_info:hover .event_info_vs .event_info_player {
 	display: none;
 }
 .event_info_vs .event_info_player {
 	position: relative;
-    top: 28px;
+    top: 7px;
 }
 .event_info_vs {
 	width: 200px;
@@ -645,7 +647,7 @@ form img {
 	border-radius: 30px;
 	background-color: #6772e5;
 	padding: 3px 0;
-	margin-top: 13px;
+	margin-top: -26px;
 	margin-right: 10px;
 	display: flex;
 	opacity: 0;
@@ -930,7 +932,7 @@ float: left;
    		display: flex;
    		position: relative;
     	left: 18px;
-    	top: 29px;
+    	top: 68px;
    	}
    	.arrow {
     	display: none;
