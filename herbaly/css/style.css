@@ -318,10 +318,6 @@ width: 860px;
 	padding-top: 24px;
 }
 @media screen and (max-width: 768px) {
-	body {
-		font-size: 16px;
-		overflow-x: hidden;
-	}
 	html {
 		overflow-x: hidden;
 	}
@@ -522,4 +518,323 @@ width: 860px;
 		font-size: 10px;
 		padding-bottom: 25px;
 	}
+}
+@media screen and (max-width: 480px) {
+	html {
+		overflow-x: hidden;
+	}
+	section{
+		background-image: url(../img/bg_480.png);
+		width: 480px;
+		height: auto;
+	}
+	.container {
+    	width: 370px;
+	}
+	.logo {
+		padding-top: 20px;
+	}
+	.logo img {
+		width: 93px;
+		height: 22px;
+	}
+	.mail {
+		padding-top: 20px;
+	}
+	.mail img {
+		width: 23px;
+		height: 23px;
+	}
+	.books img {
+		width: 450px;
+   	 	height: 342px;
+	}
+	.books {
+		padding-top: 60px;
+		margin-left: -30px;
+	}
+	.recovery_guide h2 {
+    	font-size: 22px;
+    	margin-top: -15px;
+    	margin-bottom: 9px;
+    	margin-left: 12px;
+    }
+    .recovery_guide p {
+    	font-size: 14px;
+    	width: 372px;
+    	line-height: 16px;
+    	margin-top: 0;
+    	margin-bottom: 0;
+    }
+    .advantages {
+    	margin-top: 25px;
+    }
+    .numbers {
+    	font-size: 16px;
+    	margin-bottom: 3px;
+    }
+    .numbers p {
+    	padding-left: 10px;
+    	position: relative;
+    	top: -5px;
+    	padding-left: 10px;
+    }
+    
+    .numbers img {
+    	width: 17px;
+    	height: 17px;
+    }
+    .description h2 {
+    	font-size: 19px;
+    	width: 286px;
+    	padding-left: 16px;
+   	 	padding-top: 34px;
+    }
+    .click_here {
+		width: 370px;
+    }
+    .advantages h4 {
+    	font-weight: bold;
+    	font-size: 18px;
+    } 
+    .btn {
+	    width: 370px;
+	    padding: 2px 34px;
+    	font-size: 18px;
+	    text-align: start;
+	}
+	.advantages h3 {
+		font-size: 24px;
+		padding-bottom: 10px;
+	}
+	.description {
+		width: 390px;
+		margin-bottom: 50px;
+	}
+	.description h3 {
+		font-size: 19px;
+    	padding-top: 13px;
+    	padding-left: 16px;
+
+	}
+	.description p {
+		font-size: 16px;
+    	line-height: 20px;
+   	 	width: 334px;
+    	margin-left: 16px;
+	}
+	.doctors_say h2 {
+		margin-top: 575px;
+		font-size: 19px;
+    	width: 310px;
+	}
+	.doctors_say {
+    	margin-left: -7px;
+    }
+	.doctors_say p {
+		width: 320px;
+		font-size: 16px;
+    	line-height: 17px;
+    	padding-top: 17px;
+
+	}
+	.program h2 {
+		font-size: 18px;
+		padding-top: 15px;
+		margin-bottom: 32px;
+		margin-left: 34px;
+	}
+	.much_more {
+		margin-left: 21px;
+	}
+	.program p {
+		font-size: 14px;
+    	line-height: 21px;
+    	position: relative;
+    	top: -8px;
+	}
+	.program .numbers {
+		margin-left: 30px;
+	}
+	.program {
+		width: 412px;
+	}
+	.much_more {
+    	padding-left: 36px;
+	}
+	.program h3 {
+    	padding-top: 25px;
+    	font-size: 16px;
+    	margin-left: 100px;
+    	margin-bottom: 20px;
+    }
+    .button {
+    	font-size: 18px;
+    	padding: 3px 25px;
+    	margin-left: 147px;
+    }
+    .about h2 {
+    	font-size: 16px;
+    	padding-top: 376px;
+    }
+    .authors {
+    	display: block
+    }
+    .authors p {
+    	font-size: 12px;
+    	line-height: 19px;
+    	width: 363px;
+    	padding-top: 30px;
+    }
+    .sale h2 {
+    	font-size: 16px;
+    	text-align: center;
+    	padding-top: 95px;
+    }
+    .four_books div {
+    	width: 150px;
+    }
+    .sale_book {
+    	margin-left: 30px;
+    	position: relative;
+    }
+    .four_books img {
+    	height: 225px;
+    	width: 135px;
+    	padding-top: 30px;
+    	margin-left: 0;
+    }
+
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    }
+    .four_books p {
+    	
+    	width: 170px;
+    	font-size: 18px;
+    	padding-top: 10px;
+    	margin-left: 0px;
+    }
+    .price h3 {
+    	font-size: 16px;
+    	margin-left: 135px;
+	}
+	.buy {
+    	padding-top: 30px;
+    }
+    .price {
+    	margin-left: -30px;
+    	justify-content: start;
+    }
+    .price h2 {
+    	font-size: 24px;
+   		margin-left: 10px;
+  		margin-bottom: 22px;
+    }
+    .btn_buy {
+    	font-size: 18px;
+    	margin-left: -142px;
+    	padding: 6px 11px;
+    }
+    .footer p {
+   		font-size: 10px;
+    	padding-bottom: 0px;
+
+    }
+    .footer {
+    	padding-top: 28px;
+	}
+	.href {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	.footer h6 {
+		font-size: 10px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	.foot {
+		margin-top: 10px;
+	}
+}
+
+.exitblock {    
+    display:none;    
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}    
+.exitblock .fon {
+    background: #F6FCFF;
+    opacity:.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.left_basil{
+	position: absolute;
+	top: 116px;
+	left: 0;
+}
+.right_basil {
+	position: absolute;
+	right: 0;
+    top: 113px;
+}
+.exitblock .modaltext {
+    box-sizing: border-box;  
+    background: #F6FCFF;
+    position:fixed;
+    top:30%;
+    left:30%;
+    width: 680px;
+	height: 400px;
+	text-align: center;
+	font-size: 32px;
+}        
+.closeblock {
+    cursor:pointer;
+    position: fixed;
+    line-height:60px;
+    font-size:82px;
+    transform: rotate(45deg);
+    text-align:center;
+    top:20px;
+    right:30px;
+    color: #337AB7;    
+}
+.closeblock:hover {
+    color: #000;    
+}
+.exit_head {
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	padding-top: 12px;
+	padding-bottom: 4px;
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.exit_promo {
+	padding-top: 45px;
+	font-weight: bold;
+}
+.exit_save span {
+	color:  #06735d;
+	font-size: 48px;
+	font-weight: bold;
+	
+}
+.exit_code span {
+	font-size: 38px;
+	font-weight: bold;
+	
+}
+.exit_hurry {
+	font-size: 24px;
+	padding-top: 25px;
 }
