@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Source Sans Pro, sans-serif;
+	font-weight: 400;
 	overflow-x: hidden;
 }
 html {
@@ -68,12 +69,12 @@ nav	{
 .balance_arrow {
 	width: 11px;
     height: 9px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 .arrow_up {
 	width: 11px;
     height: 9px;
-    padding-left: 10px;
+    padding-left: 12px;
     margin-top: 5px;
 }
 .balance:hover .balance_arrow {
@@ -95,6 +96,7 @@ nav	{
 .logo {
 	margin-right: 25px;
 	font-size: 21px;
+	font-weight: 300;
 }
 .slide a {
 	margin-right: 11px;
@@ -233,7 +235,7 @@ form img {
 	align-items: center;
 	display: flex;
 	margin-top: 20px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -249,6 +251,7 @@ form img {
 	display: none;
     flex-direction: column;
     width: 150px;
+    height: 186px;
     font-size: 14px;
     z-index: 1;
     padding-left: 10px;
@@ -305,7 +308,7 @@ form img {
 	font-size: 16px;
 	color: #3d4467;
 	padding-bottom: 13px;
-	font-weight: 600;
+	font-weight: 400;
 
 
 }
@@ -319,6 +322,7 @@ form img {
 	display: flex;
 	text-align: center;
 	color: #8e8ea6;
+	font-weight: 400;
 }
 .rate_table:hover {
 	color: #8e8ea6;
@@ -481,6 +485,7 @@ form img {
 .amount_win {
 	color: #9ca2b1;
 	font-size: 13px;
+	font-weight: 400;
 }
 .factor {
 	position: relative;
@@ -619,10 +624,15 @@ form img {
 }
 
 .event_info:hover .vs {
-	display: flex;
+	opacity: 1;
+	transition: 1s;
 }
 .event_info:hover .event_info_vs .event_info_player {
 	display: none;
+}
+.event_info_vs .event_info_player {
+	position: relative;
+    top: 28px;
 }
 .event_info_vs {
 	width: 200px;
@@ -631,13 +641,14 @@ form img {
 	width: 200px;
 }
 .vs {
-	width: 160px;
+	width: 166px;
 	border-radius: 30px;
 	background-color: #6772e5;
 	padding: 3px 0;
 	margin-top: 13px;
 	margin-right: 10px;
-	display: none;
+	display: flex;
+	opacity: 0;
 	font-size: 13px;
 }
 .vs a {
@@ -648,7 +659,8 @@ form img {
 }
 .rate_vs {
 	margin-top: 14px;
-	padding-left: 11px;
+	padding-left: 15px;
+    padding-right: 3px;
 	position: relative;
 }
 .open_avatar {
@@ -811,7 +823,9 @@ float: left;
 	.slide_m{
 		display: block;
 	}
-	
+	.vs {
+		opacity: 1;
+	}
 	
 	.desktop_plus {
 		display: none;
@@ -822,6 +836,7 @@ float: left;
 		position: relative;
     	top: -11px;
     	right: 6px;
+    	font-weight: 400;
 	}
 	.btn{
 		height: 17px;
@@ -865,7 +880,7 @@ float: left;
 	.event_info {
 		background-color: #fff;
 		width: 355px;
-		height: 175px;
+		height: 200px;
 		position: relative;
 		padding-bottom: 0;
 		margin-bottom: 8px;
@@ -899,13 +914,13 @@ float: left;
    		color: #6772e5;
    		text-align: center;
    		position: relative;
-   		top: 4px;
+   		top: 13px;
    		height: 20px;
    	}
    	.event_info_novs .event_info_player {
    		display: flex;
    		position: absolute;
-    	bottom: -51px;
+    	bottom: -62px;
     	left: 25px;
    	} 
    	.event_info_player{
@@ -915,7 +930,7 @@ float: left;
    		display: flex;
    		position: relative;
     	left: 18px;
-    	top: 10px;
+    	top: 29px;
    	}
    	.arrow {
     	display: none;
@@ -944,20 +959,26 @@ float: left;
 	.drop_nav_more {
 		display: none;
 	}
-	
-	
-	.balance:hover .arrow_up {
+	.open_full:hover  .full_player  {
+		display: none;
+	}
+	.open_full:hover .full_player_rate_vs {
     display: none;
+}
+	.balance:hover .arrow_up {
+    	display: none;
 	}
 	.balance:hover .balance_arrow {
-    display: inline-block;
+   		display: inline-block;
 }
-.balance:hover .balance_more {
-	display: inline;
+	.balance:hover .balance_more {
+		display: inline;
 	} 
 	.profile_more_open {
 		display:flex;
 	}
+
+
 
 }
 @media screen and (max-width: 850px) {
@@ -1054,6 +1075,7 @@ float: left;
     .profile_more {
     	right: -11px;
     }
+
    
   
 
@@ -1088,6 +1110,7 @@ float: left;
 	.logotype {
 		top: 10px;
 	}
+	
 }
 @media screen and (max-width: 340px) {
 	.balance {
