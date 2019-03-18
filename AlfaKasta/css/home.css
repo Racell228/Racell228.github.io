@@ -773,6 +773,7 @@ float: left;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 60px;
+	padding-top: 50px;
 }
 .adv_item {
 	width: 300px;
@@ -953,6 +954,14 @@ footer img {
 .slider2 {
 	display: none;
 } 
+.help {
+	display: none;
+}
+.support {
+	position: absolute;
+	top: -999999px;
+}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -963,7 +972,8 @@ footer img {
 		display: block;
 	}
 	.drop_nav {
-		height: 250px;
+		height: 267px;
+
 		top: 35px;
 		padding-top: 0px;
 	}
@@ -1208,6 +1218,7 @@ footer img {
 	.drop_nav {
    		height: 250px;
     	top: 35px;
+    	left: 15px;
     	padding-top: 0px;
 	}
 	.cyber_sport {
@@ -1381,12 +1392,20 @@ footer img {
 	.more_drop {
 		display: none;
 	}
+
 	.support {
 		position: absolute;
     	bottom: 0;
     	right: 28%;
     	display: block;
 	}
+	.support {
+		top: auto;
+	}
+	.help {
+		display:block;
+	}
+	
 	
 	
 
