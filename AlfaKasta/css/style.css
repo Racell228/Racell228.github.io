@@ -128,6 +128,11 @@ nav	{
     padding-top: 15px;
     border-radius: 3px;
 }
+.dota {
+	position: absolute;
+    height: 283px;
+    top: 32px;
+}
 
 .more_display {
 	display:flex;
@@ -206,7 +211,7 @@ form img {
 	background-image: linear-gradient(to left, #222c3c, #292552);
 	height: 316px;
 }
-.head_foto img {
+.bg_players {
 	width: 753px;
 	height: 262px;
 	position: absolute;
@@ -762,7 +767,7 @@ float: left;
 	.slide a {
 		margin-right: 11px;
 	}
-	.head_foto img {
+	.bg_players {
     width: 61%;
     height: 242px;
     position: absolute;
@@ -811,7 +816,7 @@ float: left;
     .head_bg_cyber {
     	height: 266px;
     }
-    .head_foto img {
+    .bg_players {
     	height: 219px;
     	top: 47px;
     }
@@ -824,6 +829,13 @@ float: left;
 	.head_deposit h2 {
 		font-size: 28px;
 	}
+	.dota {
+    	position: absolute;
+    	height: 248px;
+    	top: 17px;
+	}
+
+
 }
 @media screen and (max-width: 992px) {
 	.slide {
@@ -992,7 +1004,7 @@ float: left;
 }
 @media screen and (max-width: 850px) {
 
-	.head_foto img {
+	.bg_players {
 		display: none;
 	}
 	.head_bg {
@@ -1001,6 +1013,11 @@ float: left;
 	.head_deposit {
     	margin-top: 24px;
     }
+    .dota {
+    	display: none;
+	}
+
+
 }
 @media screen and (max-width: 780px) {
 	

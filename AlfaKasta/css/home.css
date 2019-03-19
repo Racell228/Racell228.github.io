@@ -164,6 +164,9 @@ input[type="name"]::-moz-placeholder {
     top: 4px;
 
 }
+.dota {
+	width: auto;
+}
 .sign_up a {
 	margin-left: 0;
 	position: relative;
