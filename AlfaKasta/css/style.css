@@ -160,12 +160,12 @@ nav	{
 }
 input[type="name"]::-webkit-input-placeholder {
     color: #9ca2b1;
-    font: 400 14px Source Sans Pro;
+    font: 600 14px Source Sans Pro;
     opacity: 0.7;
 } 
 input[type="name"]::-moz-placeholder {
     color: #9ca2b1;
-    font: 400 14px Source Sans Pro;
+    font: 600 14px Source Sans Pro;
     opacity: 0.7;
 }
 .search input {
@@ -197,7 +197,7 @@ form img {
 	margin-right: 18px;
 	background-color: #6772e5;
 	padding: 8px 16px;
-	font-weight: 400;
+	font-weight: 600;
 	text-align: center;
 	height: 20px;
 	width: 115px;
