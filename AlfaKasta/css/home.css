@@ -1215,12 +1215,7 @@ footer img {
 	    order: -1;
 	    height: 30px;
 	}
-	.drop_nav {
-   		height: 250px;
-    	top: 35px;
-    	left: 15px;
-    	padding-top: 0px;
-	}
+	
 	.cyber_sport {
 		margin-right: 13%;
 	}
@@ -1291,6 +1286,91 @@ footer img {
 	}
 	footer p {
 		margin-bottom: 25px;
+	}
+	.help a {
+		background-color: #2c275d;
+		border-radius: 3px;
+		padding: 8px 0 8px 14px;
+		color: #fff;
+		width: 90%;
+		font-size: 16px;
+		font-weight: 400;
+		position: relative;
+	}
+	.drop_nav {
+	    height: 667px;
+	    position: fixed;
+	    top: 0px;
+	    padding-top: 0px;
+	    left: 0px;
+	    width: 85%;
+	    padding-left: 14px;
+	    box-shadow: 57px 2px 4px 0 rgba(27, 24, 74, 0.5);
+	    z-index: 999999;
+	}
+	.drop_nav_m a {
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	.drop_nav span {
+		margin-left: 11px;
+	}
+	.logo_m a {
+		font-weight: 300;
+		font-size: 28px;
+		color: #fff;
+		margin-right: 5px;
+		margin-left: 0;
+	}
+	.logo_m {
+		display: block;
+	}
+	.logo_m span{
+		font-weight: 700;
+		font-size: 28px;
+		color: #fff;
+		margin-right: 0;
+		margin-left: 0;
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		padding: 0;
+	}
+	.more_drop {
+		display: none;
+	}
+
+	.support {
+		position: absolute;
+    	bottom: 0;
+    	right: 28%;
+    	display: block;
+	}
+	.support {
+		top: auto;
+	}
+	.help {
+		display:block;
+	}
+	.categories_drop {
+		display: block;	
+	}
+	.categories_drop a {
+		background-color: #2c275d;
+		border-radius: 3px;
+		padding: 8px 0 8px 14px;
+		color: #fff;
+		width: 90%;
+		font-size: 16px;
+		font-weight: 400;
+		position: relative;
+	}
+	.categories_drop img,.help img {
+		width: 6px;
+		height: 10px;
+		position: absolute;
+		right: 11px;
+    	top: 13px;
 	}
 
 	
@@ -1538,7 +1618,7 @@ footer img {
     footer {
     	height: 791px;
 	}
-	
+
 }
 @media screen and (max-width: 350px) {
 	.logo_m a {
