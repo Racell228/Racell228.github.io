@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+</head>
+<body>
+
+<header>
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<a href="#"><span>Альфа</span>каста</a>
+				</div>
+				<div class="slide">
+					 <a href="#" class="active" onclick="return show('Page1','Page2');">Спорт</a>
+					  <a href="#" onclick="return show('Page2','Page1');">Киберспорт</a>
+				</div>
+				<div class="drop_nav">
+					<a href="#">
+						<img src="img/burger.png" class="burger">
+						<img src="img/more.png" class="drop_nav_more">
+					</a>
+					<div class="more">
+						<div class="slide_m">
+					 		<a href="#" class="active" onclick="return show('Page1','Page2');">Спорт</a>
+
+					 		 <a href="#" onclick="return show('Page2','Page1');">Киберспорт</a>
+						</div>
+						<a href="#">О нас <span>скоро</span></a>
+						<a href="#">Новости</a>
+						<a href="#">Поддержка</a>
+						<a href="#">Карьера <span>скоро</span></a>
+					</div>
+				</div>
+				<div class="search">
+					<form>
+					<input type="name" placeholder="Поиск по ставкам" required class="inpu1" >
+					<a href="#"> <img src="img/search.png"></a>
+					</form>
+				</div>
+				<div class="balance">
+					<p class="money"><span>UAH</span> 4 800 </p>
+					<p class="bonus"><span>БОНУС</span> 4 600</p>
+					<a href="#"><img src="img/arrow.png" class="balance_arrow"></a>
+					<a href="#"><img src="img/arrow_more.png" class="arrow_up"></a>
+					<div class="balance_more">
+						<a href="#">Пополнить счет</a>
+					</div>
+				</div>
+				<div class="btn">
+					<a href="#"><span class="desktop_plus">Создать ставку</span> <span class="plus">+</span></a>
+				</div>
+				<div class="profile">
+					<a href="#"> <img src="img/profile.png" class="profile_icon"></a>
+					<a href="#"><img src="img/arrow.png" class="arrow"></a>
+					<a href="#"><img src="img/arrow_more.png" class="arrow_up_profile">
+					<div class="profile_more">
+						<a href="#">Мой профиль</a>
+						<a href="#">История счета</a>
+						<a href="#">Депозит</a>
+						<a href="#">Вывод средств</a>
+						<a href="#">Выход из системы</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="head_bg" >
+		<div class="head_position">
+			<div class="container">
+				<div class="head_foto">
+					<img src="img/players.png" class="bg_players">
+				</div>
+				<div class="head_deposit">
+					<h2><span>Бонус 200%</span><br> Удвой свой первый депозит</h2>
+					<a href="#" class="btn_head">Получить</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="last_rates">
+		<div class="container">
+			<div class="tabs-wrap">
+	<div class="categories">
+    	<h3>Последние ставки:</h3>
+        <a href="#tab1" class="categories__item active">Мой профиль</a>
+        <a href="#tab2" class="categories__item">История счёта</a>
+        <a href="#tab3" class="categories__item">Депозит</a>
+        <a href="#tab4" class="categories__item">Вывод средств</a>
+    </div>
+			<div class="tabs">
+        		<div id="tab1" class="tabs__item">
+					<div class="profile_player">
+						<div class="profile_head">
+							<p class="profile_name">Имя</p>
+							<p class="profile_surname">Фамилия</p>
+							<p class="profile_date">Дата рождения</p>
+							<p class="profile_mail">Электронная почта</p>
+							<p class="profile_tel">Телефон</p>
+							<p class="profile_country">Страна</p>
+						</div>
+						<div class="profile_body">
+							<p>Имя</p>
+							<p>Фамилия</p>
+							<p>Дата рождения</p>
+							<p>Электронная почта</p>
+							<p>Телефон</p>
+							<p>Страна</p>
+						</div>
+					</div>
+					
+				</div>
+						
+					
+
+
+
+
+        <div id="tab2" class="tabs__item">
+					<div class="rates">
+						<div class="rate_table">
+							<div class="date">
+								Дата
+								<a href="#"><img src="img/up.png" class="date_up"></a>
+								<a href="#"><img src="img/down.png" class="date_bottom"></a>
+								<div class="table_date">
+									<div class="hint">
+										<p>Здесь вы видите время начала события (матча, игры, боя…)</p>
+									</div>
+								</div>
+							</div>
+					
+							<div class="event fact">Событие</div>
+							<div class="rate">Ставка
+								<div class="table_rate">
+									<div class="hint">
+										<p>Описание того, на что поставил тот или иной игрок</p>
+									</div>
+								</div>
+							</div>
+							<div class="amount">
+								Сумма 
+								<a href="#"><img src="img/up.png" class="amount_up"></a>
+								<a href="#"><img src="img/down.png" class="amount_bottom"></a>
+							</div>
+							<div class="factor">
+								Кеф
+								<div class="table_factor">
+									<div class="hint">
+										<p>Размер коэффициента в случае выигрыша</p>
+									</div>
+								</div>
+							</div>
+							<div class="player game">Игроки
+								<div class="table_player">
+									<div class="hint">
+										<p>Здесь вы видите тех, кто принимает участие в ставке</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="line">
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span> <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span> <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+					</div>
+					</div>
+						</div>
+					</div>
+				</div>
+       <div id="tab3" class="tabs__item">
+					<div class="rates">
+						<div class="rate_table">
+							<div class="date">
+								Дата
+								<a href="#"><img src="img/up.png" class="date_up"></a>
+								<a href="#"><img src="img/down.png" class="date_bottom"></a>
+								<div class="table_date">
+									<div class="hint">
+										<p>Здесь вы видите время начала события (матча, игры, боя…)</p>
+									</div>
+								</div>
+							</div>
+					
+							<div class="event fact">Событие</div>
+							<div class="rate">Ставка
+								<div class="table_rate">
+									<div class="hint">
+										<p>Описание того, на что поставил тот или иной игрок</p>
+									</div>
+								</div>
+							</div>
+							<div class="amount">
+								Сумма 
+								<a href="#"><img src="img/up.png" class="amount_up"></a>
+								<a href="#"><img src="img/down.png" class="amount_bottom"></a>
+							</div>
+							<div class="factor">
+								Кеф
+								<div class="table_factor">
+									<div class="hint">
+										<p>Размер коэффициента в случае выигрыша</p>
+									</div>
+								</div>
+							</div>
+							<div class="player game">Игроки
+								<div class="table_player">
+									<div class="hint">
+										<p>Здесь вы видите тех, кто принимает участие в ставке</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="line">
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Теннис</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+					</div>
+					</div>
+						</div>
+					</div>
+				</div>
+         <div id="tab4" class="tabs__item">
+					<div class="rates">
+						<div class="rate_table">
+							<div class="date">
+								Дата
+								<a href="#"><img src="img/up.png" class="date_up"></a>
+								<a href="#"><img src="img/down.png" class="date_bottom"></a>
+								<div class="table_date">
+									<div class="hint">
+										<p>Здесь вы видите время начала события (матча, игры, боя…)</p>
+									</div>
+								</div>
+							</div>
+					
+							<div class="event fact">Событие</div>
+							<div class="rate">Ставка
+								<div class="table_rate">
+									<div class="hint">
+										<p>Описание того, на что поставил тот или иной игрок</p>
+									</div>
+								</div>
+							</div>
+							<div class="amount">
+								Сумма 
+								<a href="#"><img src="img/up.png" class="amount_up"></a>
+								<a href="#"><img src="img/down.png" class="amount_bottom"></a>
+							</div>
+							<div class="factor">
+								Кеф
+								<div class="table_factor">
+									<div class="hint">
+										<p>Размер коэффициента в случае выигрыша</p>
+									</div>
+								</div>
+							</div>
+							<div class="player game">Игроки
+								<div class="table_player">
+									<div class="hint">
+										<p>Здесь вы видите тех, кто принимает участие в ставке</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="line">
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Хоккей</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+					</div>
+					</div>
+						</div>
+					</div>
+				</div>
+ 				<div id="tab5" class="tabs__item">
+					<div class="rates">
+						<div class="rate_table">
+							<div class="date">
+								Дата
+								<a href="#"><img src="img/up.png" class="date_up"></a>
+								<a href="#"><img src="img/down.png" class="date_bottom"></a>
+								<div class="table_date">
+									<div class="hint">
+										<p>Здесь вы видите время начала события (матча, игры, боя…)</p>
+									</div>
+								</div>
+							</div>
+					
+							<div class="event fact">Событие</div>
+							<div class="rate">Ставка
+								<div class="table_rate">
+									<div class="hint">
+										<p>Описание того, на что поставил тот или иной игрок</p>
+									</div>
+								</div>
+							</div>
+							<div class="amount">
+								Сумма 
+								<a href="#"><img src="img/up.png" class="amount_up"></a>
+								<a href="#"><img src="img/down.png" class="amount_bottom"></a>
+							</div>
+							<div class="factor">
+								Кеф
+								<div class="table_factor">
+									<div class="hint">
+										<p>Размер коэффициента в случае выигрыша</p>
+									</div>
+								</div>
+							</div>
+							<div class="player game">Игроки
+								<div class="table_player">
+									<div class="hint">
+										<p>Здесь вы видите тех, кто принимает участие в ставке</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="line">
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">ММА</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div>
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 </div>
+					</div>
+					</div>
+				</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме </span></div>
+					<div class="event_info_amount">₴ 1 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_vs">
+						<div class="event_info_player">
+							<span><img src="img/player.png" class="avatar"></span><span class="vs_span">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+						</div>
+						<div class="vs">
+							<div class="rate_vs">
+								<a href="#">Поставить против</a>
+							</div>
+							<div class="open_full">
+								<a href="#"  class="open_avatar"><img src="img/player.png" class="avatar"></a>
+						 		<div class="full_player_rate_vs">
+									<img src="img/full_player.png">
+								</div>
+							</div>
+						</div>
+					</div>
+						</div>
+						<div class="event_info">
+					<div class="event_info_date"><span class="time">16:00</span>  <span class="day">сегодня</span></div>
+					<div class="event_info_event"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_rate"><span>Победа Toronto Raptors во 2м тайме</span></div>
+					<div class="event_info_amount">₴ 440</div>
+					<div class="event_info_factor"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
+					<div class="event_info_novs">
+					<div class="event_info_player">
+						<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+						 <span class="vs_span">против</span>
+						 <div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+							 <div class="full_player">
+								<img src="img/full_player.png">
+							</div>
+						</div>
+					</div>
+					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+   
+  </div>
+
+

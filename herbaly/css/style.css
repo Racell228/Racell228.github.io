@@ -3,15 +3,11 @@ body{
 	padding: 0;
 	font-family: ProximaNova;
 	font-weight: normal; 
-	overflow-x: hidden;  
 	
 }
 h1,h2,h3,h4,h5,p{
 	padding: 0;
 	margin: 0;
-}
-html {
-	overflow-x: hidden; 
 }
 a{
 	color: #000;
@@ -325,16 +321,179 @@ width: 860px;
 	.container {
 		width: 100%;
 		margin: 0;
+		margin-left: 20px;
+	}
+	html {
+		overflow-x: hidden;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	section {
+		width: auto;
+		background-position-x: 52%;
+	}
+	.doctors_say p {
+    	width: 792px;
+	}
+	.program {
+    	width: 770px;
+    }
+    .authors{
+    	width: 100%;
+    }
+    .authors p {
+    	width: 85%;
+    }
+    .four_books img {
+    	height: 300px;
+    	width: 180px;
+    	padding-top: 50px;
+    	margin-left: 35px;
+    }
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    }
+    .four_books p {
+    	position: static;
+    	width: auto;
+    	font-size: 18px;
+    	padding-top: 10px;
+    	margin-left: 33px;
+    }
+    .books img {
+    	width: 100%;
+    }
+    .doctors_say h2 {
+    	width: auto;
+    	margin-top: 1684px;
+    }
+    .description h2 {
+    	padding-top: 300px;
+    	width: 560px;
+    }
+    .description p {
+    	width: 97%;
+    }
+    .buy {
+    	padding-top: 53px;
+	}
+	.href {
+    	margin-right: 73px;
+    }
+    .footer p {
+    	width: 97%;
+    }
+    .mail {
+    	margin-right: 3%;
+    }
+}
+@media screen and (max-width: 1100px) {
+	.description h3 {
+    	padding-top: 60px;
+    }
+    .authors p {
+	    line-height: 43px;
+	}
+	.click_here {
+   		margin-top: -15px;
+   	}
+   	.description h2 {
+    	padding-top: 315px;
+	}
+	.doctors_say p {
+    	width: 720px;
 	}
 }
-
+@media screen and (max-width: 1056px){
+	.authors p {
+    	line-height: 41px;
+	}
+}
+@media screen and (max-width: 1002px) {
+	.authors p {
+    	line-height: 39px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.description p {
+		line-height: 36px;
+		font-size: 32px;
+	}
+	.description {
+		width: 804px;
+	}
+	.doctors_say h2 {
+		margin-top: 1518px;
+	}
+	.doctors_say p {
+		line-height: 41px;
+		width: 663px;
+		font-size: 32px;
+	}
+	.footer p {
+    	font-size: 20px;
+    }
+    .authors p {
+    	line-height: 35px;
+    	font-size: 29px;
+	}
+	.about h2 {
+    	padding-top: 1250px;
+    }
+    .four_books {
+    	margin-top: 100px;
+    }
+    .footer {
+    	padding-top: 310px;
+	}
+	.books {
+    	padding-top: 210px;
+	}
+	.program h2 {
+    	padding-top: 230px;
+    }
+}
+@media screen and (max-width: 912px) {
+	.footer {
+    padding-top: 195px;
+	}
+}
+@media screen and (max-width: 860px) {
+	.four_books {
+		width: 500px;
+		margin: auto;
+	}
+	.footer {
+		padding-top: 50px;
+	}
+	.authors p {
+    	line-height: 32px;
+    	font-size: 27px;
+	}
+}
+@media screen and (max-width: 825px) {
+	.authors p {
+		font-size: 24px;
+	}
+	section {
+		width: auto;
+		background-position-x: 52%;
+	}
+	.doctors_say p {
+	    width: 632px;
+	}
+	.description {
+    	width: 762px;
+	}
+}
 @media screen and (max-width: 768px) {
 	html {
 		overflow-x: hidden;
 	}
 	section{
 		background-image: url(../img/bg_768.png);
-		background-position: center;
 		width: 768px;
 		height: auto;
 	}
@@ -350,6 +509,8 @@ width: 860px;
 	}
 	.mail {
 		padding-top: 35px;
+		position: absolute;
+    	right: 0;
 	}
 	.mail img {
 		width: 45px;
@@ -531,6 +692,93 @@ width: 860px;
 		padding-bottom: 25px;
 	}
 }
+@media screen and (max-width:670px) {
+	.description {
+    	width: 330px;
+	}
+	.authors {
+    	display: block;
+	}
+	.authors p {
+		width: 500px;
+		font-size: 16px;
+    	line-height: 18px;
+    	padding-top: 15px;
+	}
+}
+@media screen and (max-width:626px) {
+	.program {
+    	width: 360px;
+    	margin-right: 50px;
+	}
+	.description p {
+    	width: 84%;
+	}
+	.footer p {
+    	width: 88%;
+	}
+	.program p {
+    	font-size: 16px;
+   		line-height: 18px;
+	}
+	.books img {
+    	width: 670px;
+    	height: 459px;
+	}
+	.mail {
+    	position: absolute;
+    	right: 0;
+	}	
+	.books img {
+   		 width: 582px;
+    	height: 433px;
+	}
+	
+}
+@media screen and (max-width:593px) {
+	.program {
+    	width: 275px;
+    	margin-right: 121px;
+	}
+	.description {
+    	width: 312px;
+    	margin-right: 100px;
+	}
+}
+@media screen and (max-width:564px) {
+	.four_books {
+		margin: inherit;
+	}
+	.sale h2 {
+		text-align: start;
+	}
+	.footer p {
+    	width: 73%;
+	}
+}
+@media screen and (max-width:519px) {
+	.four_books {
+	    margin-left: -35px;
+	}
+	.authors p {
+    	width: 460px;
+    }
+    .program {
+   	 	margin-right: 173px;
+	}
+	section {
+		background-position: -39px 0px;
+	}
+	.description {
+    	width: 312px;
+	    margin-right: 135px;
+	}
+	.description h2 {
+    	width: 295px;
+}
+
+
+}
 @media screen and (max-width: 480px) {
 	html {
 		overflow-x: hidden;
@@ -538,6 +786,7 @@ width: 860px;
 	section{
 		background-image: url(../img/bg_480.png);
 		width: 480px;
+		background-position: 0 0;
 		height: auto;
 	}
 	.container {
@@ -552,6 +801,7 @@ width: 860px;
 	}
 	.mail {
 		padding-top: 20px;
+		margin-right: 0;
 	}
 	.mail img {
 		width: 23px;
@@ -599,7 +849,7 @@ width: 860px;
     .description h2 {
     	font-size: 19px;
     	width: 286px;
-    	padding-left: 16px;
+    	padding-left: 40px;
    	 	padding-top: 34px;
     }
     .click_here {
@@ -621,19 +871,22 @@ width: 860px;
 	}
 	.description {
 		width: 390px;
+		margin: 0;
 		margin-bottom: 50px;
+
 	}
 	.description h3 {
 		font-size: 19px;
     	padding-top: 13px;
-    	padding-left: 16px;
+    	padding-left: 40px;
+
 
 	}
 	.description p {
 		font-size: 16px;
     	line-height: 20px;
    	 	width: 334px;
-    	margin-left: 16px;
+    	margin-left: 40px;
 	}
 	.doctors_say h2 {
 		margin-top: 575px;
@@ -641,8 +894,8 @@ width: 860px;
     	width: 310px;
 	}
 	.doctors_say {
-    	margin-left: -7px;
-    }
+    	margin-left: 20px;
+	}
 	.doctors_say p {
 		width: 320px;
 		font-size: 16px;
@@ -670,6 +923,10 @@ width: 860px;
 	}
 	.program {
 		width: 412px;
+		margin-right: -30px;
+	}
+	.about {
+		margin-left: 20px;
 	}
 	.much_more {
     	padding-left: 36px;
@@ -706,6 +963,10 @@ width: 860px;
     .four_books div {
     	width: 150px;
     }
+    .four_books {
+    	width: 430px;
+    	margin-left: 6px;
+	}
     .sale_book {
     	margin-left: 30px;
     	position: relative;
@@ -734,6 +995,7 @@ width: 860px;
 	}
 	.buy {
     	padding-top: 30px;
+    	margin-left: 34px;
     }
     .price {
     	margin-left: -30px;
@@ -752,7 +1014,7 @@ width: 860px;
     .footer p {
    		font-size: 10px;
     	padding-bottom: 0px;
-
+    	width: 110%;
     }
     .footer {
     	padding-top: 28px;
@@ -769,6 +1031,106 @@ width: 860px;
 	.foot {
 		margin-top: 10px;
 	}
+	.books {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 425px) {
+	.footer p {
+		width: 84%;
+	}
+	.sale h2 {
+		padding-top: 34px;
+	} 
+	.buy {
+		margin-left: 0;
+	}
+	.four_books {
+		margin-left: -23px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.books img {
+  		width: 410px;
+   		height: 293px;
+	}
+	.books {
+   		margin-left: -34px;
+	}
+	.recovery_guide p {
+		width: 280px;
+	}
+	.click_here {
+    	margin-top: 30px;
+	}
+	.program {
+    	width: 384px;
+    	margin-right: 15px;
+	}
+	.authors p {
+		width: 300px;
+		line-height: 16px;
+	}
+	.four_books {
+    	margin-left: -40px;
+	}
+	.four_books img {
+    	height: 225px;
+    	width: 120px;
+    }
+}
+@media screen and (max-width: 320px){
+	.books {
+		margin-left: -54px;
+	}
+	.recovery_guide h2 {
+    	width: 188px;
+    }
+    .click_here {
+    	width: 370px;
+    	margin-left: -50px;
+	}
+	.btn {
+		padding: 2px 10px;
+	}
+	.description h2 {
+    	padding-left: 25px;
+	}
+	.description h3 {
+    	padding-left: 25px;
+	}
+	.description p {
+		margin-left: 25px;
+		width: 290px;
+	}
+	.doctors_say {
+    	margin-left: 5px;
+	}
+	.doctors_say p {
+    	width: 289px;
+	}
+	.program {
+    	width: 330px;
+   	 	margin-right: 86px;
+	}
+	.about h2 {
+    	padding-top: 440px;
+	}
+	.about {
+		margin-left: 0;
+	}
+	.four_books {
+    	flex-wrap: wrap;
+    	justify-content: unset;
+    	margin-left: -15px;
+    }
+    .four_books div {
+    	margin-left: 10px;
+    }
+    .footer p {
+   	 	width: 74%;
+	}
+
 }
 
 .exitblock {    
