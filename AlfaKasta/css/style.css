@@ -202,6 +202,10 @@ form img {
 	background-image: linear-gradient(to left, #75559e, #3d73bf);
 	height: 316px;
 }
+.head_bg_cyber {
+	background-image: linear-gradient(to left, #222c3c, #292552);
+	height: 316px;
+}
 .head_foto img {
 	width: 753px;
 	height: 262px;
@@ -802,6 +806,9 @@ float: left;
     	width: 990px;
     }
     .head_bg {
+    	height: 266px;
+    }
+    .head_bg_cyber {
     	height: 266px;
     }
     .head_foto img {
