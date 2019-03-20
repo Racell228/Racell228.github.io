@@ -1078,7 +1078,7 @@ width: 860px;
 		margin-left: 20px;
 	}
 	.much_more {
-    	padding-left: 36px;
+    	padding-left: 59px;
 	}
 	.program h3 {
     	padding-top: 25px;
@@ -1250,7 +1250,7 @@ width: 860px;
     	margin-left: -9%;
 	}
 		.four_books p{
-    	font-size: 16px;
+    	font-size: 15px;
 	}
 	.four_books img {
     	height: 225px;
@@ -1264,6 +1264,67 @@ width: 860px;
     .footer{
     	padding-left: 5%;
     }
+    .much_more{
+        margin-left: 46px;
+    }
+}
+@media screen and (max-width: 360px) {
+	.recovery_guide h2 {
+    width: 270px;
+}
+.description p {
+    margin-left: 30px;
+    width: 288px;
+    line-height: 18px;
+}
+.description h2 {
+    padding-left: 30px;
+}
+.description h3 {
+    padding-left: 30px;
+    font-size: 18px;
+}
+.doctors_say {
+    margin-left: 10px;
+    }
+    .program {
+    margin-right: 30px;
+}
+.much_more{
+	margin-left: 70px;
+}
+.about {
+    margin-left: 11px;
+}
+.four_books img {
+    margin-left: -6px;
+}
+.four_books p {
+    font-size: 14px;
+    margin-left: -10px;
+}
+.books img{
+	    margin-left: -1%;
+}
+.click_here {
+    margin-top: 17px;
+    }
+    .authors p {
+    width: 274px;
+    padding-top: 22px;
+}
+.program h3 {
+    margin-left: 77px;
+}
+
+
+
+
+
+
+
+
+
 }
 @media screen and (max-width: 320px){
 	section{
@@ -1274,6 +1335,9 @@ width: 860px;
 	}
 	.books {
 		margin-left: -54px;
+	}
+	.books img{
+		margin-left: 0;
 	}
 	.recovery_guide h2 {
     	width: 188px;
@@ -1300,7 +1364,7 @@ width: 860px;
 	}
 	.authors p {
     	width: 284px;
-    	padding-top: 24px;
+    	padding-top: 28px;
 	}
 	.doctors_say {
     	margin-left: 5px;
@@ -1329,10 +1393,14 @@ width: 860px;
     }
     .four_books p{
     	font-size: 14px;
+    	margin-left: 4px;
     }
     .four_books div {
     	margin-left: 10px;
     }
+    .four_books img {
+    margin-left: 4px;
+	}
     .sale h2{
     	padding-left: 0;
     }
@@ -1342,5 +1410,14 @@ width: 860px;
     .footer p {
    	 	width: 74%;
 	}
+	.button {
+    margin-left: 112px;
+}
+.doctors_say p {
+	line-height: 17px;
+}
+.much_more {
+    margin-left: 65px;
+    }
 
 }
