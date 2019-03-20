@@ -1206,7 +1206,7 @@ width: 860px;
 		padding-left: 9%;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
 	section{
 		background-image: url(../img/bg_375.png);
 		width: 480px;
@@ -1265,7 +1265,7 @@ width: 860px;
     	padding-left: 5%;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 320px){
 	section{
 		background-image: url(../img/bg_320.png);
 		width: 480px;
