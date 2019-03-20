@@ -1225,6 +1225,9 @@ width: 860px;
     	line-height: 19px;
     	width: 293px;
 	}
+	.recovery_guide h2 {
+    	margin-left: 0px;
+    }
 	.click_here {
     	margin-top: 30px;
     	width: 334px;
@@ -1262,7 +1265,7 @@ width: 860px;
     	padding-left: 5%;
     }
 }
-@media screen and (max-width: 365px){
+@media screen and (max-width: 360px){
 	section{
 		background-image: url(../img/bg_320.png);
 		width: 480px;
