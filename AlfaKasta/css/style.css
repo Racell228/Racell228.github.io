@@ -748,6 +748,22 @@ float: left;
 .balance_more_open {
 	display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Профиль*/
 .profile_player {
 	width: 1188px;
 	background-color: #fff;
@@ -757,6 +773,8 @@ float: left;
 }
 .profile_head {
 	display: flex;
+	height: 60px;
+	align-items: center;
 }
 .profile_head p {
 	font-size: 14px;
@@ -765,11 +783,28 @@ float: left;
   	color: #8e8ea6;
 }
 .profile_name {
-	
+	width: 130px;
+	margin-left: 20px;
 }
 .profile_body {
 	display: flex;
 }
+.profile_surname {
+	width: 130px;
+}
+.profile_date {
+	width: 140px;
+}
+.profile_mail {
+	width: 190px;
+}
+.profile_tel {
+	width: 120px;
+}
+.profile_country {
+	width: 120px;
+}
+
 
 
 
