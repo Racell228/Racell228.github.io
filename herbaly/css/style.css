@@ -27,10 +27,6 @@ section{
 	float: left;
 	padding-top: 45px; 
 }
-.mail{
-	float: right;
-	padding-top: 50px; 
-}
 .books{
 	padding-top: 150px;
 }
@@ -317,6 +313,28 @@ width: 860px;
 	margin: 0;
 	padding-top: 24px;
 }
+.down{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.up{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99999;
+}
+#btn_up{
+	display: none;
+}
+
+
+
+
+
+
+
+
 
 .exitblock {    
     display:none;    
@@ -415,6 +433,7 @@ width: 860px;
 	}
 	.doctors_say p {
     	width: 792px;
+    	font-size: 36px;
 	}
 	.program {
     	width: 770px;
@@ -438,7 +457,7 @@ width: 860px;
     .four_books p {
     	position: static;
     	width: auto;
-    	font-size: 18px;
+    	font-size: 20px;
     	padding-top: 10px;
     	margin-left: 33px;
     }
@@ -465,11 +484,14 @@ width: 860px;
     .footer p {
     	width: 97%;
     }
-    .mail {
-    	margin-right: 3%;
-    }
+    .sale h2 {
+    padding-top: 114px;
+	}
 }
 @media screen and (max-width: 1100px) {
+	.recovery_guide p {
+    font-size: 32px;
+	}
 	.description h3 {
     	padding-top: 60px;
     }
@@ -482,8 +504,15 @@ width: 860px;
    	.description h2 {
     	padding-top: 315px;
 	}
+	.description p {
+    font-size: 34px;
+	}
 	.doctors_say p {
     	width: 720px;
+    	font-size: 34px;
+	}
+	.sale h2 {
+    padding-top: 157px;
 	}
 }
 @media screen and (max-width: 1056px){
@@ -496,7 +525,8 @@ width: 860px;
     	line-height: 39px;
 	}
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
+	
 	.description p {
 		line-height: 36px;
 		font-size: 32px;
@@ -509,7 +539,7 @@ width: 860px;
 	}
 	.doctors_say p {
 		line-height: 41px;
-		width: 663px;
+		width: 638px;
 		font-size: 32px;
 	}
 	.footer p {
@@ -517,7 +547,7 @@ width: 860px;
     }
     .authors p {
     	line-height: 35px;
-    	font-size: 29px;
+    	font-size: 32px;
 	}
 	.about h2 {
     	padding-top: 1250px;
@@ -526,7 +556,7 @@ width: 860px;
     	margin-top: 100px;
     }
     .footer {
-    	padding-top: 310px;
+    	padding-top: 120px;
 	}
 	.books {
     	padding-top: 210px;
@@ -534,10 +564,38 @@ width: 860px;
 	.program h2 {
     	padding-top: 230px;
     }
+    .program p {
+    font-size: 32px;
+	}
+	.four_books img {
+    padding-top: 0px;
+	}
+	.sale h2 {
+    padding-top: 198px;
+	}
 }
 @media screen and (max-width: 912px) {
+	.sale h2{
+	padding-top: 388px;
+	}
 	.footer {
     padding-top: 195px;
+	}
+	.recovery_guide p {
+    font-size: 28px;
+	}
+	.doctors_say p {
+    width: 633px;
+    font-size: 28px;
+	}
+	.description p {
+    font-size: 28px;
+	}
+    .program p {
+    font-size: 28px;
+	}
+	.authors p{
+		font-size: 28px;
 	}
 }
 @media screen and (max-width: 860px) {
@@ -550,13 +608,13 @@ width: 860px;
 	}
 	.authors p {
     	line-height: 32px;
-    	font-size: 27px;
+	}
+	.sale h2 {
+    padding-top: 224px;
 	}
 }
 @media screen and (max-width: 825px) {
-	.authors p {
-		font-size: 24px;
-	}
+
 	section {
 		width: auto;
 		background-position-x: 52%;
@@ -566,6 +624,9 @@ width: 860px;
 	}
 	.description {
     	width: 762px;
+	}
+	.sale h2 {
+    padding-top: 182px;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -577,6 +638,14 @@ width: 860px;
 		width: 768px;
 		height: auto;
 	}
+	.up img{
+		width: 80px;
+		height: 80px;
+	}
+	.down img{
+		width: 80px;
+		height: 80px;
+	}
 	.container {
     	width: 625px;
 	}
@@ -587,21 +656,13 @@ width: 860px;
 		width: 150px;
 		height: 35px;
 	}
-	.mail {
-		padding-top: 35px;
-		position: absolute;
-    	right: 0;
-	}
-	.mail img {
-		width: 45px;
-		height: 45px;
-	}
 	.books img {
 		width: 700px;
     	height: 490px;
 	}
 	.books {
-		padding-top: 100px;;
+		padding-top: 100px;
+		padding-left: 4%;
 	}
 	.recovery_guide h2 {
     	font-size: 30px;
@@ -643,9 +704,9 @@ width: 860px;
     	height: 25px;
     }
     .description h2 {
-    	font-size: 18px;
-    	width: 300px;
     	padding-top: 90px;
+    	font-size: 24px;
+    	width: 356px;
     }
     .click_here {
 		width: 370px;
@@ -684,15 +745,15 @@ width: 860px;
 	.doctors_say p {
 		padding-left: 10%;
 		width: 370px;
-		font-size: 18px;
+		font-size: 16px;
     	line-height: 23px;
     	padding-top: 40px;
 
 	}
 	.program h2 {
-		font-size: 18px;
-		padding-top: 95px;
 		margin-bottom: 25px;
+    	font-size: 24px;
+    	padding-top: 80px;
 	}
 	.program p {
 		font-size: 16px;
@@ -706,7 +767,7 @@ width: 860px;
 	}
 	.program h3 {
     	padding-top: 25px;
-    	font-size: 18px;
+    	font-size: 24px;
     	margin-left: 25px;
     	margin-bottom: 37px;
     }
@@ -716,23 +777,24 @@ width: 860px;
     	margin-left: 26px;
     }
     .about h2 {
-    	font-size: 22px;
+    	font-size: 24px;
     	padding-top: 565px;
+    	padding-left: 7%;
     }
     .authors{
 		padding-left: 7%;
     }
     .authors p {
-    	font-size: 18px;
+    	font-size: 16px;
     	line-height: 19px;
     	width: 300px;
     	padding-top: 30px;
     }
     .sale h2 {
-    font-size: 28px;
+    font-size: 24px;
     text-align: left;
-    padding-top: 84px;
-    padding-left: 18%;
+    padding-left: 22%;
+    padding-top: 152px;
     }
     .four_books img {
     	height: 300px;
@@ -771,8 +833,8 @@ width: 860px;
     	margin-bottom: 22px;
     }
     .btn_buy {
+    	margin-left: 172px;
     	font-size: 22px;
-    	margin-left: 150px;
     }
     .footer p {
    		font-size: 12px;
@@ -793,6 +855,10 @@ width: 860px;
 @media screen and (max-width:670px) {
 	.description {
     	width: 377px;
+	}
+	.books{
+		padding-left: 0;
+		margin-left: -6%;
 	}
 	.authors {
     	display: block;
@@ -845,14 +911,13 @@ width: 860px;
     	font-size: 16px;
    		line-height: 18px;
 	}
+	.books{
+		margin-left: 0;
+	}
 	.books img {
     	width: 670px;
     	height: 459px;
 	}
-	.mail {
-    	position: absolute;
-    	right: 0;
-	}	
 	.books img {
    		 width: 582px;
     	height: 433px;
@@ -899,8 +964,14 @@ width: 860px;
 	.btn_buy {
     margin-left: 23%;
 	}
+	.program {
+    margin-right: 140px;
+	}
 }
 @media screen and (max-width:519px) {
+	.books img{
+	margin-left: -6%;
+	}
 	.four_books {
 	    margin-left: -35px;
 	}
@@ -924,6 +995,9 @@ width: 860px;
 	.description h2 {
     	width: 295px;
 }
+.about h2{
+	padding-left: 2%;
+}
 
 
 }
@@ -939,6 +1013,22 @@ width: 860px;
 	}
 	.container {
     	width: 370px;
+    }
+    .up{
+	bottom: 10px;
+	right: 10px;
+	}
+	.down{
+	bottom: 10px;
+	right: 10px;
+	}
+	.up img{
+		width: 50px;
+		height: 50px;
+	}
+	.down img{
+		width: 50px;
+		height: 50px;
 	}
 	.logo {
 		padding-top: 20px;
@@ -946,15 +1036,6 @@ width: 860px;
 	.logo img {
 		width: 93px;
 		height: 22px;
-	}
-	.mail {
-		padding-top: 20px;
-		margin-right: 0;
-		right: 10px;
-	}
-	.mail img {
-		width: 23px;
-		height: 23px;
 	}
 	.books img {
 		width: 450px;
@@ -971,7 +1052,7 @@ width: 860px;
     	margin-left: 12px;
     }
     .recovery_guide p {
-    	font-size: 14px;
+    	font-size: 16px;
     	width: 372px;
     	line-height: 16px;
     	margin-top: 0;
@@ -996,7 +1077,7 @@ width: 860px;
     	height: 17px;
     }
     .description h2 {
-    	font-size: 19px;
+    	font-size: 18px;
     	width: 286px;
     	padding-left: 40px;
    	 	padding-top: 34px;
@@ -1015,7 +1096,7 @@ width: 860px;
 	    text-align: start;
 	}
 	.advantages h3 {
-		font-size: 24px;
+		font-size: 18px;
 		padding-bottom: 10px;
 	}
 	.description {
@@ -1025,7 +1106,7 @@ width: 860px;
 
 	}
 	.description h3 {
-		font-size: 19px;
+		font-size: 18px;
     	padding-top: 13px;
     	padding-left: 40px;
 
@@ -1033,13 +1114,13 @@ width: 860px;
 	}
 	.description p {
 		font-size: 16px;
-    	line-height: 20px;
+    	line-height: 17px;
    	 	width: 334px;
     	margin-left: 40px;
 	}
 	.doctors_say h2 {
-		margin-top: 575px;
-		font-size: 19px;
+		margin-top: 500px;
+		font-size: 18px;
     	width: 310px;
 	}
 	.doctors_say {
@@ -1058,11 +1139,14 @@ width: 860px;
 		margin-bottom: 32px;
 		margin-left: 34px;
 	}
+	.program p {
+    font-size: 16px;
+	}
 	.much_more {
 		margin-left: 21px;
 	}
 	.program p {
-		font-size: 14px;
+		font-size: 16px;
     	line-height: 21px;
     	position: relative;
     	top: -8px;
@@ -1092,22 +1176,22 @@ width: 860px;
     	margin-left: 147px;
     }
     .about h2 {
-    	font-size: 16px;
-    	padding-top: 376px;
+    	font-size: 18px;
+    	padding-top: 416px;
     }
     .authors {
     	display: block
     }
     .authors p {
-    	font-size: 12px;
-    	line-height: 19px;
+    	font-size: 16px;
+    	line-height: 17px;
     	width: 363px;
-    	padding-top: 30px;
+    	padding-top: 20px;
     }
     .sale h2 {
-    	font-size: 16px;
+    	font-size: 18px;
     	text-align: center;
-    	padding-top: 95px;
+    	padding-top: 70px;
     }
     .four_books div {
     	width: 150px;
@@ -1151,7 +1235,7 @@ width: 860px;
     	justify-content: start;
     }
     .price h2 {
-    	font-size: 24px;
+    	font-size: 18px;
    		margin-left: 10px;
   		margin-bottom: 22px;
     }
@@ -1183,10 +1267,16 @@ width: 860px;
 	.books {
 		margin-left: 0;
 	}
+	.books img {
+    margin-left: 0%;
+	}
 }
 @media screen and (max-width: 425px) {
 	.footer p {
 		width: 84%;
+	}
+	.books img{
+		margin-left: -6%;
 	}
 	.sale h2 {
 		padding-top: 34px;
@@ -1203,7 +1293,34 @@ width: 860px;
     	width: 329px;
 	}
 	.footer{
-		padding-left: 9%;
+		padding-left: 5%;
+	}
+	.footer p{
+		width: 93%;
+	}
+	.doctors_say p {
+    padding-left: 1%;
+	}
+	.program {
+    margin-right: 18px;
+    width: 382px;
+	}
+	.program h2{
+		padding-left: 5%;
+	}
+	.about h2 {
+    padding-top: 400px;
+	}
+	.four_books{
+		margin-left: 8px;
+		width: 373px;
+	}
+	.four_books img {
+    height: 220px;
+    width: 130px;
+	}
+	.four_books p{
+		font-size: 16px;
 	}
 }
 @media screen and (max-width: 375px) {
@@ -1216,12 +1333,12 @@ width: 860px;
 	.books img {
   		width: 410px;
    		height: 293px;
+    	margin-left: 2%;
 	}
 	.books {
    		margin-left: -34px;
 	}
 	.recovery_guide p {
-    	font-size: 15px;
     	line-height: 19px;
     	width: 293px;
 	}
@@ -1229,7 +1346,7 @@ width: 860px;
     	margin-left: 0px;
     }
 	.click_here {
-    	margin-top: 30px;
+    	margin-top: -15px;
     	width: 334px;
 	}
 	.doctors_say p{
@@ -1247,10 +1364,9 @@ width: 860px;
 		line-height: 16px;
 	}
 	.four_books {
-    	margin-left: -9%;
+    	margin-left: 0%;
 	}
 		.four_books p{
-    	font-size: 15px;
 	}
 	.four_books img {
     	height: 225px;
@@ -1265,8 +1381,10 @@ width: 860px;
     	padding-left: 5%;
     }
     .much_more{
-        margin-left: 46px;
+        margin-left: 70px;
     }
+    .description {
+    margin-bottom: 48px;
 }
 @media screen and (max-width: 360px) {
 	.recovery_guide h2 {
@@ -1297,14 +1415,14 @@ width: 860px;
     margin-left: 11px;
 }
 .four_books img {
-    margin-left: -6px;
+    margin-left: -9px;
 }
 .four_books p {
     font-size: 14px;
     margin-left: -10px;
 }
 .books img{
-	    margin-left: -1%;
+	    margin-left: 0%;
 }
 .click_here {
     margin-top: 17px;
@@ -1316,7 +1434,28 @@ width: 860px;
 .program h3 {
     margin-left: 77px;
 }
-
+.recovery_guide p, .description p, .doctors_say p,
+.authors p{
+	font-size: 14px;
+}
+.href {
+    margin-right: 59px;
+    }
+.footer p {
+    width: 87%;
+	}
+.footer {
+    width: 87%;
+	}
+.price {
+    margin-left: -36px
+	}
+.btn_buy {
+    margin-left: 16%;
+	}
+	.sale h2{
+		padding-left: 3%;
+	}
 
 
 
@@ -1337,7 +1476,7 @@ width: 860px;
 		margin-left: -54px;
 	}
 	.books img{
-		margin-left: 0;
+		margin-left: -1px;
 	}
 	.recovery_guide h2 {
     	width: 188px;
@@ -1421,3 +1560,6 @@ width: 860px;
     }
 
 }
+
+
+

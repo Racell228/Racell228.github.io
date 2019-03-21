@@ -558,6 +558,15 @@ form img {
 	display: none;
 	width: 180px;
 }
+.table_sourse {
+	position: absolute;
+	top: -105px;
+    left: 19px;
+	text-align: left;
+	font-size: 12px;
+	display: none;
+	width: 180px;
+}
 .rate_table .rate:hover .table_rate {
 	display: block;
 	color: #2b2b2b;
@@ -574,6 +583,9 @@ form img {
 	display: block;
 	color: #2b2b2b;
 } 
+.rate_table .sourse:hover .table_sourse {
+	display: block;
+}
 .date:hover,.player:hover,.factor:hover,.rate:hover {
 	color: #6772e5;
 }
@@ -764,6 +776,7 @@ float: left;
 
 
 /*Профиль*/
+
 .profile_player {
 	width: 1188px;
 	background-color: #fff;
@@ -800,6 +813,22 @@ float: left;
   	font-weight: 600;
   	margin-top: 20px;
   	margin-bottom: 40px;
+}
+.profile_name_edit {
+    margin-left: 30px;
+    width: 203px;
+}
+.profile_surname_edit {
+	width: 197px;
+}
+.profile_date_edit {
+	width: 142px;
+}
+.profile_mail_edit {
+	width: 242px;
+}
+.profile_tel_edit {
+	width: 165px;
 }
 .profile_surname {
 	width: 130px;
@@ -864,6 +893,37 @@ float: left;
     left: 30px;
     top: 12px;
 }
+.profile_edit_form {
+	display: flex;
+}
+.profile_edit_form input {
+	margin-left: 27px;
+	font-size: 14px;
+  	font-weight: 600;
+  	color: #3d4467;
+  	padding-left: 10px;
+  	border-radius: 3px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+ 	background-color: #efefef;
+ 	border: none;
+ 	height: 34px;
+}
+.profile_edit_form input:focus {
+	background-color: #fff;
+}
+.input_name {
+	width: 166px;
+}
+.input_surname {
+	width: 166px;
+}
+.input_mail {
+	width: 206px;
+} 
+.input_tel {
+	width: 136px;
+}
+
 .rates_profile {
 	height: 490px;
 }
@@ -880,9 +940,318 @@ float: left;
 	font-size: 12px;
 	letter-spacing: 0.4px;
   	color: #3d4467;
+  	left: 18px;
+}
+.date_profile {
+	left: 16px;
+}
+.event_info_date_profile {
+	left: 17px;
+}
+.event_info_event_profile {
+	margin-left: 37px;
+	width: 380px;
+}
+.event_info_cat_profile {
+	position: relative;
+	left: 55px;
+	top: 5px;
+}
+.cat_profile {
+	left: 40px;
+}
+.event_info_factor_profile {
+	width: 70px;
+	right: 13px;
+}
+.event_info_sourse img {
+	width: 15px;
+	height: 15px;
+}
+.sourse {
+	margin-top: 13px;
+	position: relative;
+}
+.event_info_sourse {
+	width: 50px;
+	margin-top: 17px;
+}
+.event_info_amount_profile {
+	right: 10px;
+}
+.rate_profile {
+	left: 45px;
+}
+.factor_profile {
+	left: -13px;
+}
+.vs_profile a {
+	font-size: 13px;
+  	font-weight: bold;
+  	left: 14px;
+}
+#profile_player_edit2 {
+	display: none;
+}
+.vs_span_profile {
+	width: 60px;
+	color: #9ca2b1;
+	font-weight: 600;
+}
+.vs_win {
+	color: #00c868;
+	font-weight: 600;
+}
+.deposit {
+	border-radius: 4px;
+  	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  	border: solid 1px #e6e6e6;
+  	background-color: #ffffff;
+}
+.deposit_head{
+	height: 60px;
+	display: flex;
+	letter-spacing: 0.3px;
+  	color: #8e8ea6;
+  	font-weight: 600;
+  	padding-left: 20px;
+  	align-items: center;
+  	font-size: 14px;
+}
+.sum_deposit {
+	width: 170px;
+}
+.deposit_body {
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 31px;
+	display: flex;
+}
+.deposit_body form {
+	position: relative;
+}
+.deposit_body form img {
+    width: 55px;
+    height: 36px;
+    left: 1px;
+    top: 2px;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #9ca2b1;
+    font: 600 14px Source Sans Pro;
+    opacity: 0.7;
+} 
+input[type="text"]::-moz-placeholder {
+    color: #9ca2b1;
+    font: 600 14px Source Sans Pro;
+    opacity: 0.7;
+}
+.deposit_number {
+	width: 121px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    padding-left: 27px;
+    border: solid 1px #6772e5;
+    text-align: center;
+}
+.uah {
+	position: absolute;
+}
+.select_box_date select {
+	width: 116px;
+}
+select {
+	border-radius: 3px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+  	background: transparent;
+  	width: 166px;
+  	height: 36px;
+  	border:none;
+  	-webkit-appearance: none;
+  	position: relative;
+    z-index: 1;
+    padding-left: 10px;
+    font:600 14px Source Sans Pro;
+    color: #3d4467;
 }
 
-/*.hrefs {
+.select_box {
+    width: 166px;
+    height: 36px;
+    background: url(../img/arrow.png) no-repeat;
+    position: relative;
+    background-size: 11px 10px;
+    z-index: 5;
+    background-color: #efefef;
+    margin-left: 20px;
+    background-position: 93%;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+input[type=checkbox], input[type=radio] {display: none;}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #9ca2b1;
+    border-radius: 3px;
+    font-size: 20px;    
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: #6772e5;
+    background-color: #efefef;
+    border: none;
+}
+input[type=checkbox]:hover + label:before {
+	border: 1px solid #6772e5;
+}
+.checkbox_deposit {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.agree {
+	color: #9ca2b1;
+	font-size: 13px;
+	font-weight: 600;
+}
+label a {
+	color: #6772e5;
+	font-size: 13px;
+	font-weight: 600;
+}
+.add_deposit {
+	font-size: 14px;
+  	font-weight: bold;
+  	color: #6772e5;
+  	display: block;
+  	padding: 9px 18px;
+  	border: 1px solid #6772e5;
+  	width: 114px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.get_money {
+	border-radius: 4px;
+  	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  	border: solid 1px #e6e6e6;
+  	background-color: #ffffff;
+}
+.get_money_head{
+	height: 60px;
+	display: flex;
+	letter-spacing: 0.3px;
+  	color: #8e8ea6;
+  	font-weight: 600;
+  	padding-left: 20px;
+  	align-items: center;
+  	font-size: 14px;
+}
+.sum_get_money {
+	width: 170px;
+}
+.get_money_body {
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 31px;
+	display: flex;
+}
+.get_money_body form {
+	position: relative;
+}
+.get_money_body form img {
+    width: 55px;
+    height: 36px;
+    left: 1px;
+    top: 2px;
+}
+input[type="money"]::-webkit-input-placeholder {
+    color: #9ca2b1;
+    font: 600 14px Source Sans Pro;
+    opacity: 0.7;
+} 
+input[type="money"]::-moz-placeholder {
+    color: #9ca2b1;
+    font: 600 14px Source Sans Pro;
+    opacity: 0.7;
+}
+.get_money_number {
+	width: 121px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    padding-left: 27px;
+    border: solid 1px #6772e5;
+    text-align: center;
+}
+.uah {
+	position: absolute;
+}
+.get {
+	font-size: 14px;
+  	font-weight: bold;
+  	color: #6772e5;
+  	display: block;
+  	padding: 9px 18px;
+  	border: 1px solid #6772e5;
+  	width: 124px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.password_body_get input {
+	width: 269px;
+	height: 36px;
+	border: none;
+	background-color: #efefef;
+	padding-left: 16px;
+	border-radius: 3px;
+}
+.password_body_get {
+	margin-left: 20px;
+}
+input[type="password"]::-webkit-input-placeholder {
+    color: #9ca2b1;
+    font: 700 14px Source Sans Pro;
+    opacity: 0.7;
+} 
+input[type="password"]::-moz-placeholder {
+    color: #9ca2b1;
+    font: 700 14px Source Sans Pro;
+    opacity: 0.7;
+}
+.select_box_date {
+	width: 115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hrefs {
 	display: flex;
 	justify-content: space-between;
 }
@@ -939,11 +1308,22 @@ footer p {
 footer img {
 	margin-right: 10px;
 }
+.footer_bank {
+    margin-top: -80px;
+    float: right;
+}
+.mobile_profile_head {
+	display: none;
+}
+.cancel {
+	color: #9ca2b1;
+	width: 200px;
+}
 
 
 
 
-*/
+
 
 
 
@@ -1029,6 +1409,48 @@ footer img {
 	
 	
 }
+@media screen and (max-width: 1154px) {
+	.profile_head {
+		display: none;
+	}
+	.profile_edit_form input {
+		margin-left: 13px;
+	}
+	.select_box {
+		margin-top: 0;
+	}
+	.mobile_profile_head {
+		display: block;
+	}
+	.profile_edit_form {
+		flex-direction: column;
+		margin: auto;
+	}
+	.profile_player {
+		height: auto;
+	}
+	.profile_edit_form input {
+		margin-left: 0;
+	}
+	.select_box {
+		margin-left: 0;
+	} 
+	.mobile_profile_head {
+		font-size: 14px;
+  		font-weight: 600;
+  		letter-spacing: 0.3px;
+  		color: #8e8ea6;
+  		margin-top: 20px;
+  		margin-bottom: 5px;
+	}
+	.change {
+		margin-bottom: 45px;
+	}
+	.profile_player {
+		width: auto;
+	}
+
+}
 @media screen and (max-width: 1110px) {
 	.search input {
 		width: 186px;
@@ -1037,6 +1459,10 @@ footer img {
 	.rates {
     width: 1035px;
     /*margin-left: 1%;*/
+	}
+	footer p {
+		padding-left: 4%;
+	}
 	
 }
 @media screen and (max-width: 1040px) {
@@ -1150,14 +1576,26 @@ footer img {
 	}
 	.event_info_date {
     	position: absolute;
-    	left: 0;
+    	left: 40px;
     	top: 17px;
     }
     .event_info_event {
-   		margin-top: 44px;
+   		margin-top: 50px;
+   		margin-left: -34px;
    	}
    	.team_home {
 		margin-left: 20px;
+	}
+	.show_more {
+    	position: absolute;
+    	bottom: 0;
+	}
+	.rates_profile {
+		height: auto;
+		padding-bottom: 75px;
+	}
+	.last_event {
+    	opacity: 1;
 	}
 
    	.event_info_amount {
@@ -1235,9 +1673,18 @@ footer img {
 	.profile_more_open {
 		display:flex;
 	}
-
-
-
+	/*Профиль история ставок*/
+	.event_info_id {
+		display: none;
+	}
+	.event_info_sourse {
+		display: none;
+	}
+	.event_info_cat_profile {
+		position: absolute;
+    	top: 17px;
+    	left: 15px;
+	}
 }
 @media screen and (max-width: 850px) {
 
@@ -1267,6 +1714,31 @@ footer img {
 		width: auto;
 	}
 }
+@media screen and (max-width: 696px) {
+	footer {
+		height:  940px;;
+	}
+	.hrefs {
+		flex-direction: column;
+		margin-left: 20px;
+	}
+	.footer_bank {
+    	margin-top: -133px;
+    	float: none;
+    }
+    .cancel {
+    	display: block;
+    	margin-left: 0;
+    	width: 238px;
+    	margin: auto;
+		margin-top: 15px;
+    }
+    .save {
+    	display: block;
+    	width: 238px;
+    	margin: auto;
+       }
+}
 @media screen and (max-width: 620px) {
 	.logo {
 		display: none;
@@ -1277,6 +1749,9 @@ footer img {
 	.more{
 		padding-left: 27px;
 		left: -27px;
+	}
+	.get_money_head {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1317,6 +1792,11 @@ footer img {
     	font-size: 47px;
     }
 }
+@media screen and (max-width: 444px) {
+	footer p {
+		margin-bottom: 25px;
+	}
+}
 @media screen and (max-width: 386px) {
 	.balance {
 		padding: 8px 5px;
@@ -1338,6 +1818,15 @@ footer img {
     .profile_more {
     	right: -11px;
     }
+     .hrefs div {
+ 	    margin-top: 20px;
+	}
+	.hrefs h4 {
+    	font-size: 14px;
+    }
+    footer {
+    	height: 791px;
+	}
 
    
   

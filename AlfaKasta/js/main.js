@@ -115,3 +115,13 @@ $(document).ready(function(){
     slidesToScroll: 2
   });
 });
+
+$(document).ready(function() {
+  $('.profile_player__item:first-child').show();
+  $('.qqqq').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('active').siblings().removeClass('active');
+      var id = $(this).attr('href');
+      $(id).fadeIn().siblings().fadeOut();
+  });
+});

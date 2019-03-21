@@ -586,6 +586,7 @@ h1 {
 	display: none;
 	width: 180px;
 }
+
 .rate_table .rate:hover .table_rate {
 	display: block;
 	color: #2b2b2b;

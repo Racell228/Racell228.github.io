@@ -18,3 +18,10 @@ $(document).click(function(e) {
         $(".exitblock").remove();
     }
 });
+jQuery(function(f){
+    var element = f('#btn_up');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 700 ? 'In': 'Out')](100);           
+    });
+}); 
+
