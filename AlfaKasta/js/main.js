@@ -131,12 +131,3 @@ $(document).ready(function() {
   });
 });
 
-$('.rr').on('click', function(){
-    $('.rr').removeClass('active');
-    $(this).addClass('active');
-});
-$("#rr").click(function(e) {
-  e.preventDefault();
-  $("#rr").removeClass('active');
-  $(this).addClass('active');
-})

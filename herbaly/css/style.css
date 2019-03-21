@@ -27,8 +27,88 @@ section{
 	float: left;
 	padding-top: 45px; 
 }
+body{
+  display:block;
+}
+ul{
+  display:flex;
+  flex-direction:row;
+  justify-items:center;
+}
+li{
+  position:static;
+  list-style:none;
+  margin:10px;
+  padding:10px;
+  border-radius:50px;
+  display:flex;
+}
+#down{
+  align-self:center;
+}
+#down{
+  flex-direction:column;
+  padding: 0px 80px 60px 80px;
+}
+.deh{
+  width:50px;
+  height:50px;
+  position:relative;
+  box-shadow: 15px 15px #06af6e;
+  transform: rotate(45deg);
+  border-radius:4px;
+}
+.m1 {
+  animation: ani3 1.0s steps(5, start) infinite;
+  -webkit-animation: ani3 1.0s steps(5, start) infinite;
+}
+.m2 {
+  animation: ani2 1.0s steps(5, start) infinite;
+  -webkit-animation: ani2 1.0s steps(5, start) infinite;
+}
+.m3 {
+  animation: ani1 1.0s steps(5, start) infinite;
+  -webkit-animation: ani1 1.0s steps(5, start) infinite;
+}
+@keyframes ani1 {
+   0% {opacity:0.1;}
+  11% {opacity:0.1;}
+  22% {opacity:0.1;}
+  33% {opacity:0.15;}
+  44% {opacity:0.25;}
+  55% {opacity:0.5;}
+  66% {opacity:1;}
+  77% {opacity:0.5;}
+  88% {opacity:0.25;}
+  100% {opacity:0.15;}
+}
+@keyframes ani2 {
+   0% {opacity:0.1;}
+  11% {opacity:0.15;}
+  22% {opacity:0.25;}
+  33% {opacity:0.5;}
+  44% {opacity:1;}
+  55% {opacity:0.5;}
+  66% {opacity:0.25;}
+  77% {opacity:0.15;}
+  88% {opacity:0.1;}
+  100% {opacity:0.1;}
+}
+@keyframes ani3 {
+   0% {opacity:0.25;}
+  11% {opacity:0.5;}
+  22% {opacity:1;}
+  33% {opacity:0.5;}
+  44% {opacity:0.25;}
+  55% {opacity:0.15;}
+  66% {opacity:0.1;}
+  77% {opacity:0.1;}
+  88% {opacity:0.1;}
+  100% {opacity:0.15;}
+}
 .books{
 	padding-top: 150px;
+	position: relative;
 }
 h2{
 	font-size: 60px;
@@ -315,8 +395,8 @@ width: 860px;
 }
 .down{
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	bottom: 0;
+	left:20px;
 }
 .up{
 	position: fixed;
@@ -486,6 +566,14 @@ width: 860px;
     }
     .sale h2 {
     padding-top: 114px;
+	}
+	.down{
+		bottom: 153px;
+    	left: -100px;
+	}
+	.deh {
+		width: 50px;
+		height: 50px;
 	}
 }
 @media screen and (max-width: 1100px) {
@@ -851,6 +939,10 @@ width: 860px;
 		font-size: 10px;
 		padding-bottom: 25px;
 	}
+	.down {
+    	bottom: 330px;
+    	left: -100px;
+	}
 }
 @media screen and (max-width:670px) {
 	.description {
@@ -994,9 +1086,12 @@ width: 860px;
 	}
 	.description h2 {
     	width: 295px;
-}
-.about h2{
-	padding-left: 2%;
+	}
+	.about h2{
+		padding-left: 2%;
+	}
+	.down {
+		display: none;
 }
 
 
