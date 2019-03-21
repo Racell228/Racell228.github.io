@@ -5,6 +5,10 @@ body {
 	font-weight: 400;
 	overflow-x: hidden;
 }
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 html {
 	overflow-x: hidden;
 }
@@ -108,6 +112,14 @@ nav	{
 }
 .slide a.active{
 	color: #fff;
+}
+.slide_profile a {
+	margin-right: 11px;
+	color: #9ca2b1;
+}
+.slide_profile {
+	height: 20px;
+	width: 160px;
 }
 .drop_nav {
 	margin-right: 18px;
@@ -431,6 +443,11 @@ form img {
 	top: 10px;
 	width: 28px;
 	height: 28px;
+}
+.avatar1 {
+	    width: 40px;
+    height: 40px;
+    top: 4px;
 }
 .full_player {
 	position: absolute;
@@ -910,6 +927,7 @@ float: left;
 }
 .profile_edit_form input:focus {
 	background-color: #fff;
+	border: 1px solid #9ca2b1;
 }
 .input_name {
 	width: 166px;
@@ -965,8 +983,8 @@ float: left;
 	right: 13px;
 }
 .event_info_sourse img {
-	width: 15px;
-	height: 15px;
+	width: 11px;
+	height: 11px;
 }
 .sourse {
 	margin-top: 13px;
@@ -994,7 +1012,7 @@ float: left;
 	display: none;
 }
 .vs_span_profile {
-	width: 60px;
+	width: 54px;
 	color: #9ca2b1;
 	font-weight: 600;
 }
@@ -1092,7 +1110,8 @@ select {
 input[type=checkbox], input[type=radio] {display: none;}
 
 input[type=checkbox] + label:before {
-    content: "\2714";
+    content: "";
+
     color: transparent;
     display: inline-block;
     border: 1px solid #9ca2b1;
@@ -1109,7 +1128,10 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
     color: #6772e5;
+    background: url(../img/ok.svg);
     background-color: #efefef;
+    
+    background-position-y: 4px;
     border: none;
 }
 input[type=checkbox]:hover + label:before {
@@ -1211,6 +1233,10 @@ input[type="money"]::-moz-placeholder {
     margin-bottom: 30px;
     border-radius: 3px;
 }
+.password_body_get input:focus {
+	background-color: #fff;
+	border: solid 1px #9ca2b1;
+}
 .password_body_get input {
 	width: 269px;
 	height: 36px;
@@ -1235,7 +1261,17 @@ input[type="password"]::-moz-placeholder {
 .select_box_date {
 	width: 115px;
 }
-
+.save {
+	padding: 9px 41px;
+	margin-left: 12px;
+}
+.cancel {
+	padding: 9px 43px;
+	border: 1px solid #9ca2b1;
+}
+.get_money_body p {
+	display: none;
+}
 
 
 
@@ -1319,6 +1355,9 @@ footer img {
 	color: #9ca2b1;
 	width: 200px;
 }
+.deposit p {
+	display: none;
+}
 
 
 
@@ -1384,6 +1423,9 @@ footer img {
 	.slide a {
 		margin-right: 11px;
 	}
+	.slide_profile a {
+		margin-right: 11px;
+	}
 	.bg_players {
     width: 61%;
     height: 242px;
@@ -1443,12 +1485,41 @@ footer img {
   		margin-top: 20px;
   		margin-bottom: 5px;
 	}
+	.mobile_profile_head:first-child {
+		margin-top: 10px;
+	}
 	.change {
 		margin-bottom: 45px;
 	}
 	.profile_player {
-		width: auto;
+    	width: 97%;
+    	margin: auto;
 	}
+	.profile_edit_form input {
+		width: 256px;
+	}
+	.profile_body_edit {
+		flex-direction: column;
+	}
+	.profile_body_edit p {
+		margin: auto;
+		text-align: center;
+		width: auto;
+    	margin-top: 9px;
+    	margin-bottom: 9px;
+	} 
+	.profile_body {
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
+	.deposit_body .select_box {
+		margin-left: 20px;
+	}
+	.deposit {
+		width: 97%;
+		margin: auto;
+	}
+
 
 }
 @media screen and (max-width: 1110px) {
@@ -1502,6 +1573,9 @@ footer img {
 }
 @media screen and (max-width: 992px) {
 	.slide {
+		display: none;
+	}
+	.slide_profile {
 		display: none;
 	}
 	.slide_m{
@@ -1685,6 +1759,9 @@ footer img {
     	top: 17px;
     	left: 15px;
 	}
+	.event_info:hover .vs {
+		margin-top: -26px;
+	}
 }
 @media screen and (max-width: 850px) {
 
@@ -1731,12 +1808,15 @@ footer img {
     	margin-left: 0;
     	width: 238px;
     	margin: auto;
-		margin-top: 15px;
+    }
+    .change_password {
+    	margin-top: 15px;
     }
     .save {
     	display: block;
     	width: 238px;
     	margin: auto;
+    	margin-top: 10px;
        }
 }
 @media screen and (max-width: 620px) {
@@ -1753,6 +1833,56 @@ footer img {
 	.get_money_head {
 		display: none;
 	}
+	.deposit_head {
+		display: none;
+	}
+	.deposit_body {
+		flex-direction: column;
+	}
+	.deposit_body .select_box {
+		margin-left: 0;
+		margin-top: 5px;
+	}
+	.checkbox_deposit {
+		margin-left: 0;
+		margin-top: 14px;
+	}
+	.deposit p{
+		font-size: 14px;
+  		font-weight: 600;
+  		letter-spacing: 0.3px;
+  		color: #8e8ea6;
+  		margin-top: 20px;
+  		display: block;
+	}
+	.deposit p:first-child {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	.add_deposit {
+		width: 238px;
+	}
+	.get_money_body {
+		flex-direction: column;
+	}
+	.get_money_body p {
+		font-size: 14px;
+  		font-weight: 600;
+  		letter-spacing: 0.3px;
+  		color: #8e8ea6;
+  		margin-top: 20px;
+  		margin-bottom: 5px;
+  		display: block;
+	}
+	.password_body_get {
+		margin-left: 0;
+	}
+	.get {
+		width: 238px;
+	}
+	.get_money_body {
+		margin-top: -10px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.event_info {
@@ -1765,7 +1895,10 @@ footer img {
 		left: -13px;
 	}
 	.balance_more {
-		width: 238px;
+		width: 214px;
+	}
+	.wwwwww {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1796,11 +1929,33 @@ footer img {
 	footer p {
 		margin-bottom: 25px;
 	}
+	.profile_body_edit p {
+		margin: 8px;
+		text-align: start;
+	}
 }
 @media screen and (max-width: 386px) {
 	.balance {
 		padding: 8px 5px;
 	}
+	.save {
+    	display: block;
+    	width: 192px;
+    }
+    .cancel {
+       width: 188px;
+    }
+    .change a {
+    	display: block;
+    }
+    .change_info_edit {
+    	width: 238px;
+    	margin: auto;
+    }
+    .change_info_edit:last-child {
+    	margin-top: 15px;
+    }
+
 }
 @media screen and (max-width: 373px) {
 	.btn {
@@ -1841,6 +1996,10 @@ footer img {
 	}
     .categories a {
     	margin-right: -14px;
+    }
+    .categories_profile a {
+		margin-left: 40px;
+		margin-right: -23px;
     }
     .event_info_event {
 		display: block;

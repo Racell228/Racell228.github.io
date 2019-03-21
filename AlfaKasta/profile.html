@@ -24,9 +24,9 @@ function show(shown, hidden) {
 				<div class="logo">
 					<a href="#"><span>Альфа</span>каста</a>
 				</div>
-				<div class="slide">
-					 <a href="#" class="active" onclick="return show('Page1','Page2');">Спорт</a>
-					  <a href="#" onclick="return show('Page2','Page1');">Киберспорт</a>
+				<div class="slide_profile">
+					 <a href="#">Спорт</a>
+					  <a href="#">Киберспорт</a>
 				</div>
 				<div class="drop_nav">
 					<a href="#">
@@ -35,9 +35,9 @@ function show(shown, hidden) {
 					</a>
 					<div class="more">
 						<div class="slide_m">
-					 		<a href="#" class="active" onclick="return show('Page1','Page2');">Спорт</a>
+					 		<a href="#">Спорт</a>
 
-					 		 <a href="#" onclick="return show('Page2','Page1');">Киберспорт</a>
+					 		 <a href="#">Киберспорт</a>
 						</div>
 						<a href="#">О нас <span>скоро</span></a>
 						<a href="#">Новости</a>
@@ -94,11 +94,11 @@ function show(shown, hidden) {
 	<section class="last_rates last_rates_profile">
 		<div class="container">
 			<div class="tabs-wrap">
-	<div class="categories">
-        <a href="#tab1" class="categories__item active">Мой профиль</a>
-        <a href="#tab2" class="categories__item">История счёта</a>
-        <a href="#tab3" class="categories__item">Депозит</a>
-        <a href="#tab4" class="categories__item">Вывод средств</a>
+	<div class="categories categories_profile ">
+        <a href="#tab1" class="categories__item active"><span class="wwwwww">Мой </span> Профиль</a>
+        <a href="#tab2" class="categories__item">История<span class="wwwwww"> счёта</span></a>
+        <a href="#tab3" class="categories__item">Депозит</a >
+        <a href="#tab4" class="categories__item">Вывод <span class="wwwwww">средств</span></a>
     </div>
 			<div class="tabs">
         		<div id="tab1" class="tabs__item">
@@ -113,7 +113,7 @@ function show(shown, hidden) {
 									<p class="profile_country">Страна</p>
 								</div>
 								<hr class="profile_line">
-								<div class="profile_body">
+								<div class="profile_body profile_body_edit">
 									<p class="mobile_profile_head">Имя</p>
 									<p class="profile_name">Дмитрий</p>
 									<p class="mobile_profile_head">Фамилия</p>
@@ -128,8 +128,8 @@ function show(shown, hidden) {
 									<p class="profile_country">Украина</p>
 								</div>
 								<div class="change">
-									<a href="#profile_player_edit2" class="change_info qqqq">Изменить данные</a>
-									<a href="#" class="change_password">Изменить пароль</a>
+									<a href="#profile_player_edit2" class="change_info btn_js change_info_edit">Изменить данные</a>
+									<a href="#" class="change_password change_info_edit">Изменить пароль</a>
 								</div>
 							</div>
 					</div>
@@ -176,8 +176,9 @@ function show(shown, hidden) {
 								</form>
 							</div>
 							<div class="change">
-								<a href="#profile_player_edit1" class="change_info qqqq">Сохранить</a>
-								<a href="#" class="change_password cancel">Отменить</a>
+								<a href="#profile_player_edit1 " class="change_password cancel btn_js">Отменить</a>
+								<a href="#profile_player_edit1" class="change_info save btn_js">Сохранить</a>
+								
 							</div>
 						</div>
 					</div>
@@ -253,16 +254,16 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_vs">
 						<div class="event_info_player">
-							<span><img src="img/profile1.png" class="avatar"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+							<span><img src="img/profile.png" class="avatar avatar1"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
 						</div>
 						<div class="vs vs_profile">
 							<div class="rate_vs">
@@ -279,23 +280,23 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat2.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_novs">
 					<div class="event_info_player">
-						<div class="open_full"><a href="#"><img src="img/profile1.png" class="avatar"></a> 
+						<div class="open_full"><a href="#"><img src="img/profile.png" class="avatar avatar1"></a> 
 							 <div class="full_player">
 								<img src="img/full_player.png">
 							</div>
 						</div>
 						 <span class="vs_span vs_span_profile">проиграл</span>
 						 <div>
-						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar"></a> 
+						 	<div class="open_full"><a href="#"><img src="img/player.png" class="avatar "></a> 
 							 <div class="full_player">
 								<img src="img/full_player.png">
 							</div>
@@ -312,16 +313,16 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat3.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_vs">
 						<div class="event_info_player">
-							<span><img src="img/profile1.png" class="avatar"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+							<span><img src="img/profile.png" class="avatar avatar1"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
 						</div>
 						<div class="vs vs_profile">
 							<div class="rate_vs">
@@ -338,16 +339,16 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat4.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_novs">
 					<div class="event_info_player">
-						<div class="open_full"><a href="#"><img src="img/profile1.png" class="avatar"></a> 
+						<div class="open_full"><a href="#"><img src="img/profile.png" class="avatar avatar1"></a> 
 							 <div class="full_player">
 								<img src="img/full_player.png">
 							</div>
@@ -371,16 +372,16 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat5.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_vs">
 						<div class="event_info_player">
-							<span><img src="img/profile1.png" class="avatar"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
+							<span><img src="img/profile.png" class="avatar avatar1"></span><span class="vs_span vs_span_profile">против</span><span><img src="img/no_avatar.png" class="avatar"></span>
 						</div>
 						<div class="vs vs_profile">
 							<div class="rate_vs">
@@ -398,16 +399,16 @@ function show(shown, hidden) {
 					<div class="event_info_cat event_info_cat_profile">
 						<a href="#"><img src="img/cat.png" alt=""></a>
 					</div>
-					<div class="event_info_event event_info_event_profile"><span class="team_home">Баскетбол</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
+					<div class="event_info_event event_info_event_profile"><span class="team_home">Houston Rockets</span> <img src="img/team1.png" class="logotype"> - <img src="img/team2.png" class="logotype"> <span class="team_away">Toronto Raptors</span></div>
 					<div class="event_info_rate event_info_rate_profile"><span>Победа Toronto Raptors во 2м тайме </span></div>
 					<div class="event_info_amount event_info_amount_profile">₴ 1 440</div>
 					<div class="event_info_factor event_info_factor_profile"><span>2.0</span> <br> <span class="amount_win">₴ 880</span> </div>
 					<div class="event_info_sourse">
-						<a href="#"><img src="img/source.png" alt=""></a>
+						<a href="#"><img src="img/source.svg" alt=""></a>
 					</div>
 					<div class="event_info_novs">
 					<div class="event_info_player">
-						<div class="open_full"><a href="#"><img src="img/profile1.png" class="avatar"></a> 
+						<div class="open_full"><a href="#"><img src="img/profile.png" class="avatar avatar1"></a> 
 							 <div class="full_player">
 								<img src="img/full_player.png">
 							</div>
@@ -439,10 +440,12 @@ function show(shown, hidden) {
 					</div>
 					<hr class="profile_line">
 					<div class="deposit_body">
+						<p>Сумма</p>
 						<form action="">
 							<input type="text" class="deposit_number" placeholder="0.00"  required>
 							<img src="img/uah.png" alt="" class="uah">
 						</form>
+						<p>Ваша страна</p>
 						<div class="select_box">
 							<select class="select">
 								<option>Украина</option>
@@ -471,12 +474,18 @@ function show(shown, hidden) {
 					</div>
 					<hr class="profile_line">
 					<div class="get_money_body">
+						<p>Сумма</p>
 						<form action="">
 							<input type="money" class="get_money_number" placeholder="0.00"  required>
 							<img src="img/uah.png" alt="" class="uah">
 						</form>
+						<p>Пароль</p>
 						<div class="password_body_get">
 							<input type="password" placeholder="Введите пароль вашей учетной записи">
+						</div>
+						<div class="checkbox_deposit">
+  							<input type="checkbox" id="checked" name="checked" />
+  							<label for="checked"><span class="agree"> Согласен с</span> <a href="#">условиями сайта и возврата средств.</a></label>
 						</div>
 					</div>
 					
