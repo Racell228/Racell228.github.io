@@ -927,7 +927,7 @@ float: left;
 }
 .profile_edit_form input:focus {
 	background-color: #fff;
-	border: 1px solid #9ca2b1;
+	border: 1px solid #6772e5;
 }
 .input_name {
 	width: 166px;
@@ -1070,8 +1070,11 @@ input[type="text"]::-moz-placeholder {
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
     padding-left: 27px;
-    border: solid 1px #6772e5;
+	border: 1px solid #9ca2b1;
     text-align: center;
+}
+.deposit_number:focus {
+	border: solid 1px #6772e5;
 }
 .uah {
 	position: absolute;
@@ -1090,7 +1093,7 @@ select {
   	position: relative;
     z-index: 1;
     padding-left: 10px;
-    font:600 14px Source Sans Pro;
+    font:700 14px Source Sans Pro;
     color: #3d4467;
 }
 
@@ -1214,8 +1217,11 @@ input[type="money"]::-moz-placeholder {
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
     padding-left: 27px;
-    border: solid 1px #6772e5;
     text-align: center;
+    border: 1px solid #9ca2b1;
+}
+.get_money_number:focus {
+	border: 1px solid #6772e5;
 }
 .uah {
 	position: absolute;
@@ -1235,7 +1241,7 @@ input[type="money"]::-moz-placeholder {
 }
 .password_body_get input:focus {
 	background-color: #fff;
-	border: solid 1px #9ca2b1;
+	border: solid 1px #6772e5;
 }
 .password_body_get input {
 	width: 269px;

@@ -130,3 +130,13 @@ $(document).ready(function() {
       $(id).fadeIn(0).siblings().fadeOut(0);
   });
 });
+
+$('.rr').on('click', function(){
+    $('.rr').removeClass('active');
+    $(this).addClass('active');
+});
+$("#rr").click(function(e) {
+  e.preventDefault();
+  $("#rr").removeClass('active');
+  $(this).addClass('active');
+})
