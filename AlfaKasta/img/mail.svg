@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="v-1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Регистрация" transform="translate(-545.000000, -445.000000)" fill="#FFFFFF">
+            <g id="Sign-up-form" transform="translate(330.000000, 150.000000)">
+                <g id="Email" transform="translate(200.000000, 279.000000)">
+                    <g id="Group-5" transform="translate(15.000000, 12.000000)">
+                        <path d="M7.9996671,9.72387333 C6.69934668,9.72387333 0,5.92484707 0,5.92484707 L0,5.33161333 C0,4.59656277 0.596562773,4 1.33294495,4 L14.6663892,4 C15.4034372,4 16,4.59656277 16,5.33161333 L15.9893471,5.99742 C15.9893471,5.99742 9.36257334,9.72387333 7.9996671,9.72387333 Z M7.9996671,11.5548417 C9.42515917,11.5548417 15.9893471,7.99484 15.9893471,7.99484 L16,15.98452 C16,16.7195706 15.4034372,17.3161333 14.6663892,17.3161333 L1.33294495,17.3161333 C0.59722858,17.3161333 0,16.7195706 0,15.98452 L0.0106529067,7.99484 C0.0099871,7.99484 6.69934668,11.5548417 7.9996671,11.5548417 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
