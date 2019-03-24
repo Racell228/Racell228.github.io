@@ -1972,63 +1972,26 @@ body {
 		right: 11px;
     	top: 13px;
 	}
+
+
+
+
+	.container_on_mail {
+    	width:300px;
+    }
 	.registration {
 		top: 15%;
 	}
 	.container_reg {
 		width: 95%;
 	}
-	.reg_face img {
-	    width: 97px;
-	    height: 27px;
-	    position: relative;
-	    top: 17px;
-	    left: -12px;
-	}
+	
 	.close_reg {
 	    position: absolute;
 	    top: 16px;
 	    right: 16px;
 	    left: auto;
 	}
-	.reg_face {
-		padding: 0px 30px 12px 0;
-	}	
-	.reg_google img {
-	    width: 97px;
-	    height: 22px;
-	    position: relative;
-	    top: 11px;
-   		right: 14px;
-	}
-	.reg_google {
-		padding: 3px 26px 12px 0;
-	}
-	.reg_google_m {
-		margin-right: 18px;
-	}
-	.reg_line hr {
-    	width: 108px;
-	}
-	.reg_mail img {
-	    position: relative;
-	    top: 12px;
-	    width: 77px;
-	    height: 18px;
-	    right: 19px;
-	}
-	.reg_mail_text {
-		padding-left: 36px;
-	}
-	.reg_footer {
-		display: block;
-	} 
-	.reg_footer p {
-		margin-left: 0;
-	}
-	.container_on_mail {
-    	width:300px;
-    }
     .inputs_on_mail input {
     	width: 280px;
     }
@@ -2044,23 +2007,7 @@ body {
 		margin-left: 0;
 		margin-bottom: 15px;
 	}
-	.window_sign_in .reg_face img {
-    	width: 81px;
-    }
-    .window_sign_in_span {
-    	padding-left: 26px; 
-    }
-    .window_sign_in .reg_google img {
-    	width: 102px;
-    	top: 17px;
-    	right: 5px;
-    }
-    .window_sign_in  .reg_google {
-    	padding: 3px 47px 12px 0;
-    }
-    .window_sign_in_google {
-    	padding-left: 28px;
-    }
+	
     .window_sign_in .reg_footer_sign_in p  {
 		text-align: center;
     }
@@ -2360,4 +2307,68 @@ body {
 	.categories_drop a {
 		width: 241px;
 	}
+
+
+
+
+
+	.reg_face img {
+	    width: 97px;
+	    height: 27px;
+	    position: relative;
+	    top: 17px;
+	    left: -12px;
+	}
+	.reg_google img {
+	    width: 97px;
+	    height: 22px;
+	    position: relative;
+	    top: 11px;
+   		right: 14px;
+	}
+	.reg_google {
+		padding: 3px 26px 12px 0;
+	}
+	.reg_google_m {
+		margin-right: 18px;
+	}
+	.reg_line hr {
+    	width: 108px;
+	}
+	.reg_mail img {
+	    position: relative;
+	    top: 12px;
+	    width: 77px;
+	    height: 18px;
+	    right: 19px;
+	}
+	.reg_mail_text {
+		padding-left: 36px;
+	}
+	.reg_footer {
+		display: block;
+	} 
+	.reg_footer p {
+		margin-left: 0;
+	}
+	.reg_face {
+		padding: 0px 30px 12px 0;
+	}	
+	.window_sign_in .reg_face img {
+    	width: 81px;
+    }
+    .window_sign_in_span {
+    	padding-left: 26px; 
+    }
+    .window_sign_in .reg_google img {
+    	width: 102px;
+    	top: 17px;
+    	right: 5px;
+    }
+    .window_sign_in  .reg_google {
+    	padding: 3px 47px 12px 0;
+    }
+    .window_sign_in_google {
+    	padding-left: 28px;
+    }
 }
