@@ -2026,7 +2026,7 @@ footer img {
     }
     .back_sign_in {
     	position: absolute;
-    	bottom: 20px;
+    	top: 360px;
     	left: 30%;
     }
     .send_href {
