@@ -12,6 +12,9 @@ a {
 	color: #9ca2b1;
 	text-decoration: none;
 }
+.hidden {
+	overflow: hidden;
+}
 .container {
 	width: 1200px;
 	margin: auto;
@@ -967,9 +970,6 @@ footer img {
 }
 
 /*Всплывающие окна */
-body {
-	font-family: Source Sans Pro, sans-serif;
-}
 .container_reg {
 	width: 380px;
 	text-align: center;
@@ -999,7 +999,7 @@ body {
 	opacity: 1;
 	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   	border: solid 1px #e7e7e7;
-  	position: absolute;
+  	position: fixed;
   	top: 30%;
   	left: 30%;
 }
@@ -1157,6 +1157,7 @@ body {
 } 
 .window_sign_in .reg_footer_sign_in p {
 	margin-top: 0;
+	color: #9ca2b1;
 }
 .container_reg {
 	width: 380px;
@@ -1191,11 +1192,10 @@ body {
   	margin-top: 10px;
   	margin-bottom: 20px;
 }
-.checkbox_on_mail input[type=checkbox], input[type=radio] {display: none;}
+.checkbox_on_mail input[name="checked"], input[type=radio] {display: none;}
 
-.checkbox_on_mail input[type=checkbox] + label:before {
+.checkbox_on_mail input[name="checked"] + label:before {
     content: "";
-
     color: transparent;
     display: inline-block;
     border: 1px solid #9ca2b1;
@@ -1212,14 +1212,21 @@ body {
 .checkbox_on_mail label {
 	font-size: 14px;
 }
-.checkbox_on_mail input[type=checkbox]:checked + label:before {
+.checkbox_on_mail input[name="checked"]:checked + label:before {
     color: #6772e5;
-    background: url(img/ok.svg);
+    background: url(../img/ok.svg);
     background-color: #efefef;
     background-position-y: 4px;
     border: none;
 }
-.checkbox_on_mail input[type=checkbox]:hover + label:before {
+.checkbox_on_mail input[name="checked"]:checked + label:before {
+    color: #6772e5;
+    background: url(../img/ok.svg);
+    background-color: #efefef;
+    background-position-y: 4px;
+    border: none;
+}
+.checkbox_on_mail input[name="checked"]:hover + label:before {
 	border: 1px solid #6772e5;
 }
 .checkbox_on_mail {
@@ -1272,7 +1279,7 @@ body {
 }
 .checkbox_sign_in input[type=checkbox]:checked + label:before {
     color: #6772e5;
-    background: url(img/ok.svg);
+    background: url(../img/ok.svg);
     background-color: #efefef;
     background-position-y: 4px;
     border: none;
@@ -1464,7 +1471,7 @@ body {
 }
 
 .overlay_registration {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1473,7 +1480,7 @@ body {
   	background-color: rgba(27, 22, 74, 0.5);
 }
 .overlay_on_mail {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1482,7 +1489,7 @@ body {
   	background-color: rgba(27, 22, 74, 0.5);
 }
 .overlay_sign_in {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1491,7 +1498,7 @@ body {
   	background-color: rgba(27, 22, 74, 0.5);
 }
 .overlay_password_mail {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1500,7 +1507,7 @@ body {
   	background-color: rgba(27, 22, 74, 0.5);
 }
 .overlay_mail_send {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1509,7 +1516,7 @@ body {
   	background-color: rgba(27, 22, 74, 0.5);
 }
 .overlay_new_password {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -2043,8 +2050,35 @@ body {
     	float: none;
     }
     .password_mail {
-    	height: 390px;
+    	height: 100%;
+    	width: 100%;
+    	left: 0;
+    	top: 0;
     }
+    .window_sign_in {
+	    width: 100%;
+	    left: 0%;
+	    top: 0;
+	    height: 100%;
+	}
+	.mail_send {
+    	width: 100%;
+    	left: 0;
+    	top: 0;
+   	 	height: 100%;
+	}
+	.registration {
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+	.registration_on_mail {
+	    width: 100%;
+	    left: 0%;
+	    top: 0;
+	    height: 100%;
+	}
 
 	
 }

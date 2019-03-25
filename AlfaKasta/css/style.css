@@ -1444,7 +1444,7 @@ footer img {
 }
 
 .overlay_new_password {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	display: none;
 	top: 0;
@@ -1459,6 +1459,9 @@ footer img {
 	position: absolute;
 	top: 35px;
 	left: 35px;
+}
+.hidden {
+	overflow: hidden;
 }
 
 
@@ -2199,6 +2202,12 @@ footer img {
     	text-align: center;
     	float: none;
     }
+    .new_password {
+		width: 100%;
+    	left: 0;
+    	top: 0;
+   		height: 100%;
+	}
 }
 @media screen and (max-width: 386px) {
 	.balance {
