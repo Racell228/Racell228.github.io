@@ -1006,7 +1006,7 @@ footer img {
 .registration h3 {
 	font-size: 26px;
   	color: #3d4467;
-  	font-weight: bold;
+  	font-weight: 500;
   	margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -1019,7 +1019,7 @@ footer img {
 	color: #fff;
 	border-radius: 3px;
 	padding: 12px 0;
-	font-weight: 600;
+	font-weight: 500;
 }
 .reg_face img {
 	width: 7px;
@@ -1032,7 +1032,7 @@ footer img {
 	color: #8e8ea6;
 	border-radius: 3px;
 	padding: 12px 0;
-	font-weight: 600;
+	font-weight: 500;
 	border: 1px solid #8e8ea6;
 	margin-top: 10px;
 }
@@ -1048,7 +1048,7 @@ footer img {
 	background-color: #8e8ea6;
 	padding: 12px 0;
 	border-radius: 3px;
-	font-weight: 600;
+	font-weight: 500;
 }
 .reg_mail img {
 	position: relative;
@@ -1073,6 +1073,7 @@ footer img {
 .reg_sign_in {
 	color: #6772e5;
 	margin-left: 6px;
+	font-weight: 600;
 }
 
 .reg_footer {
@@ -1082,7 +1083,7 @@ footer img {
 }
 .reg_footer p  {
 	margin-left: 13%;
-	font-weight: 600;
+	font-weight: 500;
 }
 .close_reg {
 	position: absolute;
@@ -1109,7 +1110,7 @@ footer img {
 }
 .registration_on_mail h3 {
 	font-size: 15px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #3d4467;
   	margin-top: 72px;
 }
@@ -1144,7 +1145,7 @@ footer img {
 } 
 .window_sign_in h3 {
 	font-size: 26px;
-  	font-weight: bold;
+  	font-weight: 500;
   	color: #3d4467;
   	margin-top: 60px;
 }
@@ -1188,9 +1189,18 @@ footer img {
 	font-size: 12px;
   	color: #9ca2b1;
   	text-align: left;
-  	margin-left: 20px;
+  	margin-left: 15px;
   	margin-top: 10px;
-  	margin-bottom: 20px;
+  	margin-bottom: 10px;
+}
+.tochka_on_mail {
+	width: 5px;
+	height: 5px;
+	background-color: #d8d8d8;
+	display: block;
+	position: relative;
+    bottom: -20px;
+    border-radius: 100px;
 }
 .checkbox_on_mail input[name="checked"], input[type=radio] {display: none;}
 
@@ -1230,7 +1240,7 @@ footer img {
 	border: 1px solid #6772e5;
 }
 .checkbox_on_mail {
-	margin-left: -35px;
+	margin-left: -90px;
 }
 .on_mail_sign_up {
 	border-radius: 3px;
@@ -1239,7 +1249,7 @@ footer img {
   	width: 380px;
   	display: block;
   	font-size: 15px;
-  	font-weight: bold;
+  	font-weight: 500;
   	text-decoration: none;
   	padding: 12px 0;
   	margin-top: 20px;
@@ -1294,7 +1304,7 @@ footer img {
 }
 .forget {
 	font-size: 15px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
   	margin-top: 20px;
   	margin-bottom: 30px;
@@ -1322,7 +1332,7 @@ footer img {
 }
 .password_mail h3 {
 	font-size: 20px;
-  	font-weight: bold;
+  	font-weight: 500;
   	color: #3d4467;
   	margin: 0;
   	padding: 0;
@@ -1330,12 +1340,12 @@ footer img {
 }	
 .in_mail {
 	font-size: 15px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
 }
 .input_mail {
 	font-size: 14px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #6772e5;
   	margin-bottom: 10px;
 }
@@ -1347,7 +1357,7 @@ footer img {
 }
 .back_sign_in {
 	font-size: 13px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
   	text-decoration: none;
 }
@@ -1363,7 +1373,7 @@ footer img {
 	border-radius: 3px;
   	background-color: #6772e5;
   	font-size: 15px;
-  	font-weight: bold;
+  	font-weight: 500;
   	color: #ffffff;
   	text-decoration: none;
   	padding: 12px 19px 12px 18px;
@@ -1385,13 +1395,13 @@ footer img {
 }
 .mail_send h3 {
 	font-size: 20px;
-  	font-weight: bold;
+  	font-weight:500;
 	color: #3d4467;
 	margin-top: 70px;
 }
 .mail_send p {
 	font-size: 15px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
   	margin-bottom: 60px;
 }
@@ -1424,7 +1434,7 @@ footer img {
 }
 .new_password_mail {
 	font-size: 14px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
   	margin-bottom: 10px;
 }
@@ -1440,7 +1450,7 @@ footer img {
 }
 .new_password_create {
 	font-size: 14px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #6772e5;
   	margin-bottom: 10px;
 }
@@ -1454,7 +1464,7 @@ footer img {
 }
 .new_password_confirm {
 	font-size: 14px;
-  	font-weight: 600;
+  	font-weight: 500;
   	color: #8e8ea6;
   	margin-bottom: 10px;
 }
@@ -1527,6 +1537,22 @@ footer img {
 .show {
 	display: block;
 }
+.inputs_on_mail {
+	position: relative;
+}
+.img_sign_in {
+	position: absolute;
+    right: 10px;
+    bottom: 13px;
+    cursor: pointer;
+}
+.img_on_mail {
+	position: absolute;
+    right: 10px;
+    bottom: 37px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 100%;
@@ -2000,7 +2026,7 @@ footer img {
 	    left: auto;
 	}
     .inputs_on_mail input {
-    	width: 280px;
+    	width: 95%;
     }
     .on_mail_sign_up {
     	margin: auto;
