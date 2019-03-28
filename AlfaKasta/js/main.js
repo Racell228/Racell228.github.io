@@ -130,87 +130,6 @@ $(document).ready(function() {
       $(id).fadeIn(0).siblings().fadeOut(0);
   });
 });
-
-// $(document).ready(function() {
-//   $('.1').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_registration').toggleClass('show').siblings().removeClass('show')
-     
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_registration').removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.2').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_on_mail').toggleClass('show').siblings().removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_on_mail').removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.3').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_sign_in').toggleClass('show').siblings().removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_sign_in').removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.4').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_password_mail').toggleClass('show').siblings().removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_password_mail').removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.5').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_mail_send').toggleClass('show').siblings().removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_mail_send').removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.6').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_new_password').toggleClass('show').siblings().removeClass('show');
-//   });
-// });
-// $(document).ready(function() {
-//   $('.close_reg').click(function(event) {
-//       event.preventDefault();
-//       $('.overlay_new_password').removeClass('show');
-//   });
-// });
-
-
-
-
-
-
-
 $(document).ready(function() {
   $('.sign_up').click(function(event) {
       event.preventDefault();
@@ -316,3 +235,116 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function() {
+  $('.add').click(function(event) {
+      event.preventDefault();
+      $('.overlay_new_rate').toggleClass('show').siblings().removeClass('show')
+     $('html').toggleClass('hidden').siblings().removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.close_reg').click(function(event) {
+      event.preventDefault();
+      $('.overlay_new_rate').removeClass('show');
+      $('html').removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.new_rate_js').click(function(event) {
+      event.preventDefault();
+      $('.overlay_active_rate').toggleClass('show').siblings().removeClass('show');
+      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.close_reg').click(function(event) {
+      event.preventDefault();
+      $('.overlay_active_rate').removeClass('show');
+       $('html').removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.new_rate_js2').click(function(event) {
+      event.preventDefault();
+     $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay_active_close_rate').toggleClass('show').siblings().removeClass('show');
+  });
+});
+$(document).ready(function() {
+  $('.close_reg').click(function(event) {
+      event.preventDefault();
+      $('.overlay_active_close_rate').removeClass('show');
+       $('html').removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.new_rate_js3').click(function(event) {
+      event.preventDefault();
+      $('.overlay_active_my_rate').toggleClass('show').siblings().removeClass('show');
+      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.close_reg').click(function(event) {
+      event.preventDefault();
+      $('.overlay_active_my_rate').removeClass('show');
+       $('html').removeClass('hidden');
+  });
+});
+function Selected(a) {
+ var label = a.value;
+ if (label==1) {
+  document.getElementById("Label1").style.display='block';
+  document.getElementById("Label2").style.display='none';
+  document.getElementById("Label3").style.display='none';
+  } else if (label==2) {
+  document.getElementById("Label1").style.display='none';
+  document.getElementById("Label2").style.display='block';
+  document.getElementById("Label3").style.display='none';
+  } else if (label==3) {
+  document.getElementById("Label1").style.display='none';
+  document.getElementById("Label2").style.display='none';
+  document.getElementById("Label3").style.display='block';
+  }
+  }
+  function Selecteded(b) {
+ var label = b.value;
+ if (label==1) {
+  document.getElementById("first").style.display='block';
+  document.getElementById("cyber-sport").style.display='none';
+  } else if (label==2) {
+  document.getElementById("first").style.display='none';
+  document.getElementById("cyber-sport").style.display='block';
+  }
+  }
+$(function(){
+ $('#form').validate({
+   rules: {
+      winner: {
+        required: true
+      },
+      sum: {
+        required: true,
+        min: 50,
+        max: 1000
+      },
+      source: {
+        required: true,
+      },
+    },
+   messages: {
+      sum: {
+        required:"Минимальная сумма ставки 50 грн.",
+        min: "Минимальная сумма ставки 50 грн.",
+        max: "Для создания ставки у вас недостаточно средств на балансе."
+      },
+      winner: {
+        required:"Все поля обязательны для заполнения"
+      },
+      source: {
+        required:"Все поля обязательны для заполнения"
+      },
+ }
+ });
+}); 
