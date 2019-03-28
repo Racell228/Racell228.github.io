@@ -348,3 +348,13 @@ $(function(){
  }
  });
 }); 
+$(".social_share_copy").click(function(e) {
+  $('.copy_link_footer').toggle();
+  e.stopPropagation();
+});
+$('.copy_link_footer').click(function(e) {
+  e.stopPropagation();
+});
+$(document).click(function() {
+  $('.copy_link_footer').hide();
+});

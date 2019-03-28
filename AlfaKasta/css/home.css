@@ -1807,40 +1807,116 @@ footer img {
   display: none;
 }
 
-.hint {
+.hint_add_new {
   padding: 10px;
-  border-radius: 10px;
   background: #fff;
   position: relative;
+  color: #000;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
-.hint:before {
-  content: "";
-  position: absolute;
-  top: 101%;
-  margin-top:-5px;
-  left: 21px;
-  width: 9px;
-  height: 9px;
-  border-width: 0 1px 1px 0;
-  border-right: transparent;
-  border-style: solid;
-  border-color:rgba(0, 0, 0, 0.05);
-  background: #fff;
-  transform: rotate(45deg);
+.hint_add_new:before {
+     content: "";
+    position: absolute;
+    margin-top: -5px;
+    right: 85%;
+    top: 93%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    transform: rotate(135deg);
 }
-.table_rate {
+.hint_add_new p {
+	color: #000;
+	font-weight: 500;
+	font-size: 12px;
+	margin: 0;
+}
+.add_new_table_rate {
   position: absolute;
-  top: -100px;
+  top: -80px;
   left: 50px;
-  width: 200px;
+  width: 180px;
   text-align: left;
   font-size: 12px;
   display: none;
-   font-size: 12px;
+  font-size: 12px;
   color: #2b2b2b;
 }
-.date_event:hover .table_rate {
+.date_event:hover .add_new_table_rate {
+  display: block;
+}
+
+
+
+.social_share {
+	display: flex;
+	margin-top: 14px;
+	justify-content: space-evenly;
+	padding-bottom: 24px;
+}
+.social_share a {
+	display: block;
+	text-align: center;
+}
+.social_share img {
+	padding-top: 15px;
+}
+.social_share_face {
+	width: 78px;
+	height: 44px;
+	border-radius: 4px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  	background-color: #4460a0;
+}
+.social_share_twitter {
+	width: 78px;
+  	height: 44px;
+  	border-radius: 4px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  	background-color: #00aaec;
+}
+.social_share_mail {
+	width: 78px;
+  	height: 44px;
+  	border-radius: 4px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  	background-color: #9ca2b1;
+}
+.social_share_copy {
+	 width: 78px;
+  	height: 44px;
+  	border-radius: 4px;
+  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  	background-color: #3d4467;
+}
+.rate_hint {
+	padding: 10px;
+  background: #fff;
+  position: relative;
+  color: #000;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.rate_hint:before {
+     content: "";
+    position: absolute;
+    margin-top: -5px;
+    right: 85%;
+    top: 93%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    transform: rotate(135deg);
+}
+.rate_hint p {
+	color: #000;
+	font-weight: 500;
+	font-size: 12px;
+	margin: 0;
+}
+
+.date_event:hover .add_new_rate_source_hint {
   display: block;
 }
 .add_new_rate_date {
@@ -1862,13 +1938,13 @@ footer img {
 }
 .add_new_rate_source_hint {
   position: absolute;
-  top: -102px;
+  top: -82px;
   left: 25px;
   width: 200px;
   text-align: left;
   font-size: 12px;
   display: none;
-   font-size: 12px;
+  font-size: 12px;
   color: #2b2b2b;
 }
 .date_event:hover .add_new_rate_source_hint {
@@ -1887,6 +1963,7 @@ footer img {
 .date_event .hint p {
   font-size: 12px;
   color: #2b2b2b;
+  font-weight: 500;
 }
 .active_rate {
   width: 415px;
@@ -2009,13 +2086,13 @@ footer img {
 }
 .active_rate_footer p {
   color: #fff;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 12px;
+   text-transform: uppercase;
+   font-weight: 600;
   letter-spacing: 0.4px;
   color: #ffffff;
   padding-top: 20px;
   text-align: center;
-  height: 117px;
   margin: 0;
 }
 
@@ -2091,6 +2168,51 @@ label.error {
   left: auto;
   right: 30px;
   top: 30px;
+}
+
+.link_copierd {
+  padding: 10px;
+  background: #fff;
+  position: relative;
+  color: #000;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.link_copierd:before {
+     content: "";
+    position: absolute;
+    margin-top: -5px;
+    right: 85%;
+    top: 70%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    transform: rotate(135deg);
+}
+.link_copierd p {
+	color: #000;
+	font-weight: 500;
+	font-size: 12px;
+	margin: 0;
+	padding-top: 0;
+	text-transform: inherit;
+}
+.copy_link_footer {
+  position: absolute;
+  top: -45px;
+  left: 42px;
+  width: 180px;
+  text-align: left;
+  font-size: 12px;
+  display: none;
+  font-size: 12px;
+  color: #2b2b2b;
+}
+.hint_hover {
+	position: relative;
+}
+.active_rate_question {
+	padding-left: 2px;
 }
 
 
@@ -2726,6 +2848,18 @@ label.error {
     top: 16px;
     left: auto;
   }
+  .social_share_face {
+	width: 69px;
+}
+.social_share_twitter {
+	width: 69px;
+}
+.social_share_mail {
+	width: 69px;
+}
+.social_share_copy {
+	width: 69px;
+}
   
     
 }
