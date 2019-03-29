@@ -220,7 +220,7 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  $('.change_info_edit').click(function(event) {
+  $('.password_open').click(function(event) {
       event.preventDefault();
       $('.overlay_new_password').toggleClass('show').siblings().removeClass('show');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');

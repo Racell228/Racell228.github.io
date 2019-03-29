@@ -1760,7 +1760,7 @@ footer img {
 }
 .add_new_rate_sum_img {
   position: absolute;
-  right: 93px;
+  right: 92.4px;
 }
 .add_new_rate_sum_kef {
   font-size: 14px;
@@ -1828,7 +1828,7 @@ footer img {
 }
 .hint_add_new p {
 	color: #000;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 12px;
 	margin: 0;
 }
@@ -1852,7 +1852,6 @@ footer img {
 .social_share {
 	display: flex;
 	margin-top: 14px;
-	justify-content: space-evenly;
 	padding-bottom: 24px;
 }
 .social_share a {
@@ -1862,12 +1861,18 @@ footer img {
 .social_share img {
 	padding-top: 15px;
 }
+.social_share_copy_img {
+	position: relative;
+	top: -2px;
+	left: 1px;
+}
 .social_share_face {
 	width: 78px;
 	height: 44px;
 	border-radius: 4px;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   	background-color: #4460a0;
+  	margin-left: 30px;
 }
 .social_share_twitter {
 	width: 78px;
@@ -1875,6 +1880,7 @@ footer img {
   	border-radius: 4px;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   	background-color: #00aaec;
+  	margin-left: 14px;
 }
 .social_share_mail {
 	width: 78px;
@@ -1882,6 +1888,7 @@ footer img {
   	border-radius: 4px;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   	background-color: #9ca2b1;
+  	margin-left: 14px;
 }
 .social_share_copy {
 	 width: 78px;
@@ -1889,6 +1896,7 @@ footer img {
   	border-radius: 4px;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   	background-color: #3d4467;
+  	margin-left: 14px;
 }
 .rate_hint {
 	padding: 10px;
@@ -1911,7 +1919,7 @@ footer img {
 }
 .rate_hint p {
 	color: #000;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 12px;
 	margin: 0;
 }

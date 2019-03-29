@@ -1278,21 +1278,6 @@ input[type="password"]::-moz-placeholder {
 .get_money_body p {
 	display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hrefs {
 	display: flex;
 	justify-content: space-between;
@@ -1488,41 +1473,39 @@ footer img {
     right: 16px;
     top: 125px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rules {
+	width: 788px;
+	margin: auto;
+}
+.rules h2 {
+	font-family: Source Sans Pro;
+  font-size: 54px;
+  font-weight: 700;
+  color: #1b164a;
+  margin-top: 78px;
+  margin-bottom: 50px;
+}
+.rules h3 {
+	font-size: 24px;
+  	font-weight: 700;
+  	color: #1b164a;
+  	margin-bottom: 10px;
+  	line-height: 28px;
+}
+.rules p {
+	font-size: 16px;
+  	font-weight: 500;
+  	color: #8e8ea6;
+  	margin-bottom: 25px;
+}
+.rules p span {
+	font-weight: 700;
+}
+.rules li {
+	font-size: 16px;
+  	font-weight: 500;
+  	color: #8e8ea6;
+}
 
 
 
