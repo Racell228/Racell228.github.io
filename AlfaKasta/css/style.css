@@ -1915,6 +1915,18 @@ footer img {
     	width: 98%;
     	left: 1%;
     }
+    .rules {
+    	width: 90%;
+    }
+    .rules h2 {
+    	font-size: 28px;
+    }
+    .rules h3 {
+    	font-size: 25px;
+    }
+    .rules p {
+    	font-size: 14px;
+    }
 }
 @media screen and (max-width: 850px) {
 

@@ -2869,10 +2869,25 @@ label.error {
 .social_share_copy {
 	width: 69px;
 }
-  
-    
-}
+.social_share_face {
 
+  	margin-left: 0;
+}
+.social_share_twitter {
+
+  	margin-left: 0;
+}
+.social_share_mail {
+
+  	margin-left: 0;
+}
+.social_share_copy {
+
+  	margin-left: 0;
+}
+.social_share {
+	justify-content: space-evenly;
+}
 	
 }
 @media screen and (max-width: 376px) {
