@@ -842,11 +842,12 @@ float: left;
 }
 .answer {
 	opacity: 1;
-	transition: 0.5s;
+	transition: 0.3s;
 	z-index: 99999;
+	height: 140px;
 }
 .answer_height {
-		height: 140px;
+		
 }
 
 .ask {
