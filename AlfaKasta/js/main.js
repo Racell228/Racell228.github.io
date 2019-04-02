@@ -133,165 +133,168 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.sign_up').click(function(event) {
       event.preventDefault();
-      $('.overlay_registration').toggleClass('show').siblings().removeClass('show');
+      $('.registration').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
        $('html').toggleClass('hidden').siblings().removeClass('hidden');
+       $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_registration').removeClass('show');
+      $('.registration').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay').removeClass('show');
 
   });
 });
 $(document).ready(function() {
   $('.reg_mail').click(function(event) {
       event.preventDefault();
-      $('.overlay_on_mail').toggleClass('show').siblings().removeClass('show');
+      $('.registration_on_mail').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
-  });
-});
-$(document).ready(function() {
-  $('.reg_mail').click(function(event) {
-      event.preventDefault();
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay1').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_on_mail').removeClass('show');
+      $('.registration_on_mail').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+       $('.overlay1').removeClass('show');
   });
 });
+
 $(document).ready(function() {
   $('.sign_in').click(function(event) {
       event.preventDefault();
-      $('.overlay_sign_in').toggleClass('show').siblings().removeClass('show');
+      $('.window_sign_in').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_sign_in').removeClass('show');
+      $('.window_sign_in').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.forget').click(function(event) {
       event.preventDefault();
-      $('.overlay_password_mail').toggleClass('show').siblings().removeClass('show');
+      $('.password_mail').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
+       $('.overlay1').toggleClass('show').siblings().removeClass('show');
   });
 });
-$(document).ready(function() {
-  $('.forget').click(function(event) {
-      event.preventDefault();
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-  });
-});
+
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_password_mail').removeClass('show');
+      $('.password_mail').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay1').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.send_href').click(function(event) {
       event.preventDefault();
-      $('.overlay_mail_send').toggleClass('show').siblings().removeClass('show');
+      $('.mail_send').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
-  });
-});
-$(document).ready(function() {
-  $('.send_href').click(function(event) {
-      event.preventDefault();
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay1').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_mail_send').removeClass('show');
+      $('.mail_send').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay1').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.password_open').click(function(event) {
       event.preventDefault();
-      $('.overlay_new_password').toggleClass('show').siblings().removeClass('show');
+      $('.new_password').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay1').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_new_password').removeClass('show');
+      $('.new_password').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay1').removeClass('show');
   });
 });
-
-
 
 $(document).ready(function() {
   $('.add').click(function(event) {
       event.preventDefault();
-      $('.overlay_new_rate').toggleClass('show').siblings().removeClass('show')
+      $('.add_new_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate')
      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_new_rate').removeClass('show');
+      $('.add_new_rate').removeClass('window_sign_in_translate');
       $('html').removeClass('hidden');
+      $('.overlay').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.new_rate_js').click(function(event) {
       event.preventDefault();
-      $('.overlay_active_rate').toggleClass('show').siblings().removeClass('show');
+      $('.active_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
+       $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_active_rate').removeClass('show');
+      $('.active_rate').removeClass('window_sign_in_translate');
        $('html').removeClass('hidden');
+       $('.overlay').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.new_rate_js2').click(function(event) {
       event.preventDefault();
      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-      $('.overlay_active_close_rate').toggleClass('show').siblings().removeClass('show');
+      $('.active_close_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
+       $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_active_close_rate').removeClass('show');
+      $('.active_close_rate').removeClass('window_sign_in_translate');
        $('html').removeClass('hidden');
+       $('.overlay').removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.new_rate_js3').click(function(event) {
       event.preventDefault();
-      $('.overlay_active_my_rate').toggleClass('show').siblings().removeClass('show');
+      $('.my_active_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('.overlay').toggleClass('show').siblings().removeClass('show');
   });
 });
 $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
-      $('.overlay_active_my_rate').removeClass('show');
+      $('.my_active_rate').removeClass('window_sign_in_translate');
        $('html').removeClass('hidden');
+       $('.overlay').removeClass('show');
   });
 });
+
 function Selected(a) {
  var label = a.value;
  if (label==1) {

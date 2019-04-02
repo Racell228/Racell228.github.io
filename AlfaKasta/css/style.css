@@ -65,6 +65,15 @@ nav	{
 .balance:hover .balance_more {
 	display: block;
 } 
+.overlay1 {
+	width: 100%;
+	position: fixed;
+	height: 100%;
+  	background-color: rgba(27, 22, 74, 0.5);
+  	z-index: 9;
+  	top: 0;
+  	display: none;
+}
 .balance_more a {
 	padding: 9px 52px;
 	background-color: #6772e5;
@@ -1384,6 +1393,9 @@ footer img {
 	position: absolute;
 	top: 20%;
   	left: 30%;
+  	transition: 0.5s;
+	transform: translateY(-300%);
+	z-index: 99;
 }
 .new_password_container {
 	width: 378px;
@@ -2360,4 +2372,21 @@ footer img {
 	.balance {
 		padding: 8px 2px;
 	}
+}
+.window_sign_in_translate {
+	transform: translateY(0);
+}
+.change_info:hover,.change_password:hover,.show_more:hover,
+.add_deposit:hover,.get:hover {
+	background-color: #6772e5;
+	color: #fff;
+	transition: 0.5s;
+}
+.btn:hover {
+	background-color: #7862B9;
+	transition: 0.5s;
+}
+.btn_head:hover {
+	background-color: #27D380;
+	transition: 0.5s;
 }
