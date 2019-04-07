@@ -33,16 +33,16 @@ nav {
 }
 .logo a {
 	font-weight: 300;
-	font-size: 21px;
+	font-size: 20px;
 	color: #fff;
 	margin-right: 5px;
 	margin-left: 0;
 }
 .logo {
-	padding-top: 5px;
+	padding-top: 7px;
 }
 .logo span {
-	font-weight: 700;
+	font-weight: 600;
 }
 header div {
 	padding-top: 10px;
@@ -63,6 +63,18 @@ nav p {
 .more img {
 	width: 25px;
 }
+.more:hover .drop_nav_more_hover{
+	display: block;
+}
+.more:hover .slash {
+	display: none;
+}
+.drop_nav_more_hover{
+	display: none;
+	position: relative;
+}
+
+
 .more {
 	position: relative;
 }
@@ -78,7 +90,7 @@ nav p {
     font-size: 14px;
     z-index: 1;
     padding-left: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
     border-radius: 3px;
 }
 .drop_nav a {
@@ -136,8 +148,9 @@ input[type="name"]::-moz-placeholder {
 	height: 16px;
 }
 .more {
-	margin-right: 30px;
-	width: 30px;
+	margin-right: 20px;
+    width: 50px;
+    padding-top: 7px;
 }
 .sign_in  {
 	margin-left: 41px;
@@ -259,6 +272,7 @@ h1 {
 	padding: 15px 33px;
 	font-weight: bold;
 	border-radius: 4px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .last_win {
 	display: flex;
@@ -278,6 +292,7 @@ h1 {
 	padding: 0;
 	margin: 0;
 	font-size: 16px;
+	font-weight: 600;
 	color: #3d4467;
 	padding-top:12px;
 }
@@ -343,19 +358,23 @@ h1 {
 	display: flex;
 	text-align: center;
 	color: #8e8ea6;
-	font-weight: 400;
+	font-weight: 600;
+	font-size: 14px;
+    letter-spacing: 0.3px;
+    height: 53px;
+    padding-top: 7px
 }
 .rate_table:hover {
 	color: #8e8ea6;
 }
 .date_up {
 	position: absolute;
-	top: 19px;
+	top: 17px;
 	right: 11px;
 }
 .date_bottom {
 	position: absolute;
-	top: 24px;
+	top: 22px;
 	right: 11px;
 }
 .event_info {
@@ -365,6 +384,9 @@ h1 {
 	font-size: 14px;
 	color: #3d4467;
 	height: 50px;
+}
+.hint p {
+	margin: 0;
 }
 .rates {
 	text-align: center;
@@ -411,7 +433,7 @@ h1 {
 	left: -7px;
 }
 .amount {
-	font-size: 16px;
+	font-size: 14px;
 	position: relative;
 	left: 28px;
 	width: 100px;
@@ -419,12 +441,12 @@ h1 {
 }
 .amount_up {
 	position: absolute;
-	top: 19px;
+	top: 17px;
 	right: 5px;
 }
 .amount_bottom {
 	position: absolute;
-	top: 24px;
+	top: 22px;
 	right: 5px;
 }
 .player {
@@ -498,7 +520,7 @@ h1 {
 .line {
 	height: 1px;
 	border: 0;
-	margin-top: 16px;
+	margin-top: 0px;
 	color:  #e6e6e6;
 	background-color:  #e6e6e6;
 }
@@ -550,7 +572,7 @@ h1 {
 }
 .table_rate {
 	position: absolute;
-	top: -72px;
+	top: -48px;
     left: 0px;
     width: 200px;
 	text-align: left;
@@ -559,7 +581,7 @@ h1 {
 }
 .table_date {
 	position: absolute;
-	top: -80px;
+	top: -60px;
     left: 24px;
 	text-align: left;
 	font-size: 12px;
@@ -568,7 +590,7 @@ h1 {
 }
 .table_factor {
 	position: absolute;
-	top: -72px;
+	top: -48px;
     left: 31px;
 	text-align: left;
 	font-size: 12px;
@@ -577,7 +599,7 @@ h1 {
 }
 .table_player {
 	position: absolute;
-	top: -84px;
+	top: -64px;
     left: 65px;
 	text-align: left;
 	font-size: 12px;
@@ -1025,7 +1047,7 @@ footer img {
 .registration h3 {
 	font-size: 26px;
   	color: #3d4467;
-  	font-weight: 500;
+  	font-weight: 600;
   	margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -1038,7 +1060,7 @@ footer img {
 	color: #fff;
 	border-radius: 3px;
 	padding: 12px 0;
-	font-weight: 500;
+	font-weight: 600;
 }
 .reg_face img {
 	width: 7px;
@@ -1051,7 +1073,7 @@ footer img {
 	color: #8e8ea6;
 	border-radius: 3px;
 	padding: 12px 0;
-	font-weight: 500;
+	font-weight: 600;
 	border: 1px solid #8e8ea6;
 	margin-top: 10px;
 }
@@ -1067,7 +1089,7 @@ footer img {
 	background-color: #8e8ea6;
 	padding: 12px 0;
 	border-radius: 3px;
-	font-weight: 500;
+	font-weight: 600;
 }
 .reg_mail img {
 	position: relative;
@@ -1132,7 +1154,7 @@ footer img {
 }
 .registration_on_mail h3 {
 	font-size: 15px;
-  	font-weight: 500;
+  	font-weight: 600;
   	color: #3d4467;
   	margin-top: 72px;
 }
@@ -1170,7 +1192,7 @@ footer img {
 } 
 .window_sign_in h3 {
 	font-size: 26px;
-  	font-weight: 500;
+  	font-weight: 600;
   	color: #3d4467;
   	margin-top: 60px;
 }
@@ -1360,7 +1382,7 @@ footer img {
 }
 .password_mail h3 {
 	font-size: 20px;
-  	font-weight: 500;
+  	font-weight: 600;
   	color: #3d4467;
   	margin: 0;
   	padding: 0;
@@ -1426,7 +1448,7 @@ footer img {
 }
 .mail_send h3 {
 	font-size: 20px;
-  	font-weight:500;
+  	font-weight:600;
 	color: #3d4467;
 	margin-top: 70px;
 }
@@ -1796,7 +1818,7 @@ footer img {
 .add_new_rate_sum_kef {
   font-size: 14px;
   font-weight: 600;
-  color: #825cf7;
+  color: #6772e5;
   margin-left: 13px;
 }
 .add_new_rate_date input {
@@ -1820,8 +1842,7 @@ footer img {
   font: 600 14px Source Sans Pro;
 }
 .add_new_rate_href {
-  font-size: 15px;
-  font: 700 14px Source Sans Pro;
+  font: 700 15px Source Sans Pro;
   color: #ffffff;
   border-radius: 3px;
   background-color: #6772e5;
@@ -1885,6 +1906,10 @@ footer img {
 	margin-top: 14px;
 	padding-bottom: 24px;
 }
+.social_share_face img {
+	position: relative;
+	top: -1px;
+}
 .social_share a {
 	display: block;
 	text-align: center;
@@ -1894,7 +1919,7 @@ footer img {
 }
 .social_share_copy_img {
 	position: relative;
-	top: -2px;
+	top: -3px;
 	left: 1px;
 }
 .social_share_face {
@@ -2299,7 +2324,7 @@ label.error {
 	margin-top: 3px;
 }
 .visa {
-	margin-top: 4px;
+	margin-top: 6px;
 }
 .privat {
 	margin-top: 2px;
@@ -2308,19 +2333,16 @@ label.error {
 	margin-top: -2px;
 }
 .interkassa {
-	margin-top: -1px;
+	margin-top: 1px;
 }
 .mastercard {
 	position: relative;
-    bottom: 5px;
+    bottom: -2px;
 }
 .verifid {
 	position: relative;
 	bottom: 3px;
 }
-
-
-
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 100%;
@@ -3348,6 +3370,10 @@ label.error {
 .window_sign_in_translate {
 	transform: translateY(0);
 }
+.window_sign_in_static {
+	transform: translateY(-300%);
+	transition: 1.5s;
+}
 .sign_in:hover {
 	background-color: #525280;
 	transition: 0.5s;
@@ -3357,7 +3383,7 @@ label.error {
 	transition: 0.5s;
 }
 .add:hover {
-	background-color: #7862B9;
+	background-color: #5b65d2;
 	transition: 0.5s;
 }
 .about_service:hover {
@@ -3389,4 +3415,59 @@ label.error {
     border-radius: 100px;
     top: 8px;
     left: -2px;
+}
+.reg_google:hover {
+	color: #767696;
+	border-color: #767696;
+}
+.description_href a:hover {
+	box-shadow: none;
+}
+.northon {
+	position: relative;
+	top: 2px;
+}
+.window_sign_in input:focus {
+	background-color: #fff;
+	border: solid 1px #6772e5;
+}
+.registration_on_mail input:focus {
+	background-color: #fff;
+	border: solid 1px #6772e5;
+}
+.password_mail input:focus {
+	background-color: #fff;
+	border: solid 1px #6772e5;
+}
+.password_mail input {
+	padding-left: 10px;
+}
+.add_new_rate_event input:focus {
+	border: solid 1px #6772e5;
+}
+.add_new_rate_rate input:focus {
+	border: solid 1px #6772e5;
+}
+.add_new_rate_sum input:focus {
+	border: solid 1px #6772e5;
+}
+.add_new_rate_date input:focus {
+	border: solid 1px #6772e5;
+}
+.add_new_rate_source input:focus {
+	border: solid 1px #6772e5;
+}
+.add_new_rate_subcategory select:focus {
+	border: solid 1px #6772e5;
+}
+.question_new_rate img {
+	position: relative;
+	bottom: 8px;
+    left: 3px;
+}
+.sport_a:hover {
+	color: #fff;
+}
+.cyber_sport a:hover {
+	color: #fff;
 }

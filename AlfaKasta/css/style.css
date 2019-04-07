@@ -104,12 +104,13 @@ nav	{
 }
 
 .logo span {
-	font-weight: 700;
+	font-weight: 600;
 }
 .logo {
 	margin-right: 25px;
-	font-size: 21px;
+	font-size: 20px;
 	font-weight: 300;
+	margin-top:-2px;
 }
 .profile_icon {
 	border: 2px solid #6772e5;
@@ -123,6 +124,9 @@ nav	{
 .slide {
 	height: 20px;
 	width: 160px;
+}
+.slide a:hover {
+	color: #fff;
 }
 .slide a.active{
 	color: #fff;
@@ -138,10 +142,12 @@ nav	{
 .drop_nav {
 	margin-right: 18px;
 	position: relative;
+	width: 25px;
+    height: 20px;
 }
 .more {
 	position: absolute;
-	top: 30px;
+	top: 20px;
     left: -120px;
 	background-color: #1b164a;
 	display: none;
@@ -177,9 +183,23 @@ nav	{
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.drop_nav img {
+.drop_nav_more_hover{
+	display: none;
+	position: relative;
+    bottom: -10px;
+}
+.drop_nav_more {
 	width: 25px;
-	padding-top: 7px;
+	padding-top: 0;
+    position: relative;
+    bottom: 2px;
+}
+
+.drop_nav:hover .drop_nav_more_hover{
+	display: block;
+}
+.drop_nav:hover .drop_nav_more {
+	display: none;
 }
 .search {
 	margin-right: 30px;
@@ -312,7 +332,7 @@ form img {
     width: 11px;
     height: 9px;
     padding-top: 14px;
-    padding-left: 3px;
+    padding-left: 10px;
 }
 .arrow_up {
 	display: none;
@@ -322,7 +342,7 @@ form img {
 	width: 11px;
     height: 9px;
     padding-top: 14px;
-    padding-left: 3px;
+    padding-left: 10px;
 }
 .profile:hover .arrow {
 	display: none;
@@ -364,9 +384,12 @@ form img {
 .rate_table {
 	display: flex;
 	text-align: center;
-	color: #8e8ea6;
-	font-weight: 400;
 	font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #8e8ea6;
+    height: 53px;
+    padding-top: 7px;
 }
 .rate_table:hover {
 	color: #8e8ea6;
@@ -508,7 +531,7 @@ form img {
 .line {
 	height: 1px;
 	border: 0;
-	margin-top: 16px;
+	margin-top: 0;
 	color:  #e6e6e6;
 	background-color:  #e6e6e6;
 }
@@ -538,7 +561,7 @@ form img {
 }
 .factor {
 	position: relative;
-	left: -7px;
+	left: 5px;
 }
 
 .hint {
@@ -962,6 +985,10 @@ float: left;
 	background-color: #fff;
 	border: 1px solid #6772e5;
 }
+.profile_edit_form input:focus {
+	padding-left: 8px;
+	height: 32px;
+}
 .input_name {
 	width: 166px;
 }
@@ -993,6 +1020,7 @@ float: left;
   	color: #3d4467;
   	left: 18px;
 }
+
 .date_profile {
 	left: 16px;
 }
@@ -1085,7 +1113,7 @@ float: left;
     width: 55px;
     height: 36px;
     left: 1px;
-    top: 2px;
+    top: 1px;
 }
 input[type="text"]::-webkit-input-placeholder {
     color: #9ca2b1;
@@ -1099,11 +1127,11 @@ input[type="text"]::-moz-placeholder {
 }
 .deposit_number {
 	width: 121px;
-    height: 36px;
+    height: 34px;
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
     padding-left: 27px;
-	border: 1px solid #9ca2b1;
+	border: 1px solid #e6e6e6;
     text-align: center;
 }
 .deposit_number:focus {
@@ -1232,7 +1260,7 @@ label a {
     width: 55px;
     height: 36px;
     left: 1px;
-    top: 2px;
+    top: 1px;
 }
 input[type="money"]::-webkit-input-placeholder {
     color: #9ca2b1;
@@ -1246,12 +1274,12 @@ input[type="money"]::-moz-placeholder {
 }
 .get_money_number {
 	width: 121px;
-    height: 36px;
+    height: 34px;
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02);
     padding-left: 27px;
     text-align: center;
-    border: 1px solid #9ca2b1;
+    border: 1px solid #efefef;
 }
 .get_money_number:focus {
 	border: 1px solid #6772e5;
@@ -1283,6 +1311,12 @@ input[type="money"]::-moz-placeholder {
 	background-color: #efefef;
 	padding-left: 16px;
 	border-radius: 3px;
+}
+.password_body_get input:focus {
+	height: 35px;
+	padding-left: 15px;
+	width: 268px;
+
 }
 .password_body_get {
 	margin-left: 20px;
@@ -1404,7 +1438,7 @@ footer img {
 .new_password h3 {
 	margin-top: 70px;
 	font-size: 20px;
-  	font-weight: bold;
+  	font-weight: 600;
   	color: #3d4467;
 }
 .new_password input {
@@ -1512,6 +1546,7 @@ footer img {
 .rules {
 	width: 788px;
 	margin: auto;
+	padding-bottom: 100px;
 }
 .rules h2 {
 	font-family: Source Sans Pro;
@@ -1567,6 +1602,8 @@ footer img {
 	}
 	.slide a {
 		margin-right: 11px;
+		font-size: 16px;
+		font-weight: 600;
 	}
 	.slide_profile a {
 		margin-right: 11px;
@@ -1967,7 +2004,7 @@ footer img {
     	font-size: 28px;
     }
     .rules h3 {
-    	font-size: 25px;
+    	font-size: 20px;
     }
     .rules p {
     	font-size: 14px;
@@ -2376,17 +2413,52 @@ footer img {
 .window_sign_in_translate {
 	transform: translateY(0);
 }
-.change_info:hover,.change_password:hover,.show_more:hover,
+.change_info:hover,.show_more:hover,
 .add_deposit:hover,.get:hover {
 	background-color: #6772e5;
 	color: #fff;
 	transition: 0.5s;
 }
+.change_password:hover {
+	color: #767696;
+	border-color:  #767696
+}
 .btn:hover {
-	background-color: #7862B9;
+	background-color: #5b65d2;
 	transition: 0.5s;
 }
 .btn_head:hover {
 	background-color: #00b15c;
 	transition: 0.5s;
+}
+.balance_more a:hover {
+	background-color: #5b65d2;
+	transition: 0.5s;
+}
+.slide_profile a:hover {
+	color: #fff;
+}
+.verifid {
+	position: relative;
+	bottom: 3px;
+}
+.mastercard {
+	position: relative;
+    bottom: 5px;
+}
+.footer_bank img {
+	margin-left: 20px;
+}
+.northon {
+	position: relative;
+	top: 2px;
+}
+
+.new_password input:focus {
+	background-color: #fff;
+	border: solid 1px #6772e5;
+}
+.window_sign_in_static {
+	transform: translateY(-300%);
+	transition: 1.5s;
 }
