@@ -135,8 +135,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.registration').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.registration').removeClass('window_sign_in_static');
-       $('html').toggleClass('hidden').siblings().removeClass('hidden');
-       $('.overlay').toggleClass('show').siblings().removeClass('show');
+       $('html').addClass('hidden');
+       $('.overlay').addClass('show');
   });
 });
 $(document).ready(function() {
@@ -161,9 +161,9 @@ $(document).mouseup(function (e) {
 $(document).ready(function() {
   $('.reg_mail').click(function(event) {
       event.preventDefault();
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+      $('html').addClass('hidden_on_mail');
       $('.registration_on_mail').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
-      $('.overlay').toggleClass('show').siblings().removeClass('show');
+      $('.overlay').addClass('show_on_mail');
       $('.registration_on_mail').removeClass('window_sign_in_static');
   });
 });
@@ -171,9 +171,9 @@ $(document).ready(function() {
   $('.close_reg').click(function(event) {
       event.preventDefault();
       $('.registration_on_mail').removeClass('window_sign_in_translate');
-      $('html').removeClass('hidden');
+      $('html').removeClass('hidden_on_mail');
       $('.registration_on_mail').addClass('window_sign_in_static');
-       $('.overlay').removeClass('show');
+       $('.overlay').removeClass('show_on_mail');
   });
 });
 $(document).mouseup(function (e) { 
@@ -181,8 +181,8 @@ $(document).mouseup(function (e) {
   if (e.target!=popu[0]&&popu.has(e.target).length === 0){
     $('.registration_on_mail').addClass('window_sign_in_static');
     $('.registration_on_mail').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('hidden_on_mail');
+    $('.overlay').removeClass('show_on_mail');
   }
 });
 $(document).ready(function() {
@@ -190,8 +190,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.window_sign_in').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
        $('.window_sign_in').removeClass('window_sign_in_static');
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-      $('.overlay').toggleClass('show').siblings().removeClass('show');
+      $('html').addClass('sign_in_hidden');
+      $('.overlay').addClass('sign_in_show');
   });
 });
 $(document).ready(function() {
@@ -199,8 +199,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.window_sign_in').removeClass('window_sign_in_translate');
       $('.window_sign_in').addClass('window_sign_in_static');
-      $('html').removeClass('hidden');
-      $('.overlay').toggleClass('sign_in_up').siblings().removeClass('sign_in_up');
+      $('html').removeClass('sign_in_hidden');
+      $('.overlay').removeClass('sign_in_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -208,8 +208,8 @@ $(document).mouseup(function (e) {
   if (e.target!=pop[0]&&pop.has(e.target).length === 0){
     $('.window_sign_in').addClass('window_sign_in_static');
     $('.window_sign_in').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('sign_in_hidden');
+    $('.overlay').removeClass('sign_in_show');
   }
 });
 $(document).ready(function() {
@@ -217,8 +217,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.password_mail').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.password_mail').removeClass('window_sign_in_static');
-      $('html').addClass('hidden');
-       $('.overlay').addClass('show');
+      $('html').addClass('forget_hidden');
+       $('.overlay').addClass('forget_show');
   });
 });
 
@@ -227,8 +227,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.password_mail').removeClass('window_sign_in_translate');
       $('.password_mail').addClass('window_sign_in_static');
-      $('html').removeClass('hidden');
-      $('.overlay').removeClass('show');
+      $('html').removeClass('forget_hidden');
+      $('.overlay').removeClass('forget_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -236,8 +236,8 @@ $(document).mouseup(function (e) {
   if (e.target!=po[0]&&po.has(e.target).length === 0){
     $('.password_mail').addClass('window_sign_in_static');
     $('.password_mail').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay1').removeClass('show');
+    $('html').removeClass('forget_hidden');
+    $('.overlay').removeClass('forget_show');
   }
 });
 $(document).ready(function() {
@@ -245,8 +245,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.mail_send').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.mail_send').removeClass('window_sign_in_static');
-      $('html').addClass('hidden');
-      $('.overlay').toggleClass('show').siblings().removeClass('show');
+      $('html').addClass('send_href_hidden');
+      $('.overlay').addClass('send_href_show');
   });
 });
 $(document).ready(function() {
@@ -254,8 +254,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.mail_send').removeClass('window_sign_in_translate');
       $('.mail_send').addClass('window_sign_in_static');
-      $('html').removeClass('hidden');
-      $('.overlay').removeClass('show');
+      $('html').removeClass('send_href_hidden');
+      $('.overlay').removeClass('send_href_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -263,8 +263,8 @@ $(document).mouseup(function (e) {
   if (e.target!=p[0]&&p.has(e.target).length === 0){
     $('.mail_send').addClass('window_sign_in_static');
     $('.mail_send').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('send_href_hidden');
+    $('.overlay').removeClass('send_href_show');
   }
 });
 $(document).ready(function() {
@@ -272,8 +272,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.new_password').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.new_password').removeClass('window_sign_in_static');
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-      $('.overlay1').toggleClass('show').siblings().removeClass('show');
+      $('html').addClass('new_password_hidden');
+      $('.overlay1').addClass('show');
   });
 });
 $(document).ready(function() {
@@ -281,7 +281,7 @@ $(document).ready(function() {
       event.preventDefault();
       $('.new_password').removeClass('window_sign_in_translate');
       $('.new_password').addClass('window_sign_in_static');
-      $('html').removeClass('hidden');
+      $('html').removeClass('new_password_hidden');
       $('.overlay1').removeClass('show');
   });
 });
@@ -290,8 +290,8 @@ $(document).mouseup(function (e) {
   if (e.target!=q[0]&&q.has(e.target).length === 0){
     $('.new_password').addClass('window_sign_in_static');
     $('.new_password').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('new_password_hidden');
+    $('.overlay1').removeClass('show');
   }
 });
 $(document).ready(function() {
@@ -299,8 +299,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.add_new_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
        $('.add_new_rate').removeClass('window_sign_in_static');
-     $('html').toggleClass('hidden').siblings().removeClass('hidden');
-      $('.overlay').toggleClass('show').siblings().removeClass('show');
+     $('html').addClass('add_hidden');
+      $('.overlay').addClass('add_show');
   });
 });
 $(document).ready(function() {
@@ -308,8 +308,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.add_new_rate').removeClass('window_sign_in_translate');
       $('.add_new_rate').addClass('window_sign_in_static');
-      $('html').removeClass('hidden');
-      $('.overlay').removeClass('show');
+      $('html').removeClass('add_hidden');
+      $('.overlay').removeClass('add_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -317,8 +317,8 @@ $(document).mouseup(function (e) {
   if (e.target!=a[0]&&a.has(e.target).length === 0){
     $('.add_new_rate').addClass('window_sign_in_static');
     $('.add_new_rate').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('add_hidden');
+    $('.overlay').removeClass('add_show');
   }
 });
 $(document).ready(function() {
@@ -326,8 +326,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.active_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.active_rate').removeClass('window_sign_in_static');
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-       $('.overlay').toggleClass('show').siblings().removeClass('show');
+      $('html').addClass('active_rate_hidden');
+       $('.overlay').addClass('active_rate_show');
   });
 });
 $(document).ready(function() {
@@ -335,8 +335,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.active_rate').removeClass('window_sign_in_translate');
       $('.active_rate').addClass('window_sign_in_static');
-       $('html').removeClass('hidden');
-       $('.overlay').removeClass('show');
+       $('html').removeClass('active_rate_hidden');
+       $('.overlay').removeClass('active_rate_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -344,17 +344,17 @@ $(document).mouseup(function (e) {
   if (e.target!=s[0]&&s.has(e.target).length === 0){
     $('.active_rate').addClass('window_sign_in_static');
     $('.active_rate').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('active_rate_hidden');
+    $('.overlay').removeClass('active_rate_show');
   }
 });
 $(document).ready(function() {
   $('.new_rate_js2').click(function(event) {
       event.preventDefault();
-     $('html').toggleClass('hidden').siblings().removeClass('hidden');
+     $('html').addClass('active_close_rate_hidden');
       $('.active_close_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.active_close_rate').removeClass('window_sign_in_static');
-       $('.overlay').toggleClass('show').siblings().removeClass('show');
+       $('.overlay').addClass('active_close_rate_show');
   });
 });
 $(document).ready(function() {
@@ -362,8 +362,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.active_close_rate').removeClass('window_sign_in_translate');
       $('.active_close_rate').addClass('window_sign_in_static');
-       $('html').removeClass('hidden');
-       $('.overlay').removeClass('show');
+       $('html').removeClass('active_close_rate_hidden');
+       $('.overlay').removeClass('active_close_rate_show');
   });
 });
 $(document).mouseup(function (e) { 
@@ -371,8 +371,8 @@ $(document).mouseup(function (e) {
   if (e.target!=d[0]&&d.has(e.target).length === 0){
     $('.active_close_rate').addClass('window_sign_in_static');
     $('.active_close_rate').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('active_close_rate_hidden');
+    $('.overlay').removeClass('active_close_rate_show');
   }
 });
 $(document).ready(function() {
@@ -380,8 +380,8 @@ $(document).ready(function() {
       event.preventDefault();
       $('.my_active_rate').toggleClass('window_sign_in_translate').siblings().removeClass('window_sign_in_translate');
       $('.my_active_rate').removeClass('window_sign_in_static');
-      $('html').toggleClass('hidden').siblings().removeClass('hidden');
-      $('.overlay').toggleClass('show').siblings().removeClass('show');
+      $('html').addClass('my_active_rate_hidden');
+      $('.overlay').addClass('my_active_rate_show');
   });
 });
 $(document).ready(function() {
@@ -389,17 +389,17 @@ $(document).ready(function() {
       event.preventDefault();
       $('.my_active_rate').removeClass('window_sign_in_translate');
       $('.my_active_rate').addClass('window_sign_in_static');
-       $('html').removeClass('hidden');
-       $('.overlay').removeClass('show');
+       $('html').removeClass('my_active_rate_hidden');
+       $('.overlay').removeClass('my_active_rate_show');
   });
 });
 $(document).mouseup(function (e) { 
-  var e = $('.my_active_rate');
-  if (e.target!=e[0]&&e.has(e.target).length === 0){
+  var t = $('.my_active_rate');
+  if (e.target!=t[0]&&t.has(e.target).length === 0){
     $('.my_active_rate').addClass('window_sign_in_static');
     $('.my_active_rate').removeClass('window_sign_in_translate');
-    $('html').removeClass('hidden');
-    $('.overlay').removeClass('show');
+    $('html').removeClass('my_active_rate_hidden');
+    $('.overlay').removeClass('my_active_rate_show');
   }
 });
 function Selected(a) {

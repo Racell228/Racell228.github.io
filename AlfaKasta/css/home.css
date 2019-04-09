@@ -23,7 +23,7 @@ header {
 	background-color: #1b164a;
 	height: 60px;
 	font-size: 16px;
-  	font-weight: 600;
+  	font-weight: 400;
 }
 header a {
 	margin-left: 24px;
@@ -160,6 +160,7 @@ input[type="name"]::-moz-placeholder {
 	height: 36px;
 	margin-top: 4px;
 	font-size: 14px;
+	font-weight: 600;
 }
 .sign_in a {
 	margin-left: 0;
@@ -178,6 +179,7 @@ input[type="name"]::-moz-placeholder {
 	height: 36px;
 	position: relative;
     top: 4px;
+    font-weight: 600;
 
 }
 .dota {
@@ -397,7 +399,7 @@ h1 {
 	background-color: #fff;
 	font-weight: 600;
 	width: 1200px;
-	height: 490px;
+	height: 500px;
 }
 .last_event {
 	margin-bottom: 4px;
@@ -731,6 +733,8 @@ h1 {
 	display: flex;
 	opacity: 0;
 	font-size: 13px;
+	font-weight: bold;
+
 }
 .vs a {
 	position: relative;
@@ -754,7 +758,9 @@ h1 {
 .categories{
     overflow: hidden;
 }
-
+.hidden_on_mail {
+	overflow: hidden;
+}
 
 
 .categories_item{
@@ -3470,4 +3476,49 @@ label.error {
 }
 .cyber_sport a:hover {
 	color: #fff;
+}
+.show_on_mail {
+	display: block;
+}
+.sign_in_hidden {
+	overflow: hidden;
+}
+.sign_in_show{
+	display: block;
+}
+.forget_hidden {
+	overflow: hidden;
+}
+.forget_show {
+	display: block;
+}
+.send_href_hidden {
+	overflow: hidden;
+}
+.send_href_show {
+	display: block;
+}
+.add_hidden {
+	overflow: hidden;
+}
+.add_show {
+	display: block;
+}
+.active_rate_hidden {
+	overflow: hidden;
+}
+.active_rate_show {
+	display: block;
+}
+.active_close_rate_hidden {
+	overflow: hidden;
+}
+.active_close_rate_show {
+	display: block;
+}
+.my_active_rate_hidden {
+	overflow: hidden;
+}
+.my_active_rate_show {
+	display: block;
 }

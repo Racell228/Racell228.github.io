@@ -746,6 +746,7 @@ form img {
     left: 3px;
     color: #fff;
     font-size: 13px;
+    font-weight: bold;
 
 }
 .rate_vs {
@@ -2414,12 +2415,12 @@ footer img {
 	transform: translateY(0);
 }
 .change_info:hover,.show_more:hover,
-.add_deposit:hover,.get:hover {
+.add_deposit:hover,.get:hover,.password_open:hover {
 	background-color: #6772e5;
 	color: #fff;
 	transition: 0.5s;
 }
-.change_password:hover {
+.cancel:hover {
 	color: #767696;
 	border-color:  #767696
 }
@@ -2461,4 +2462,7 @@ footer img {
 .window_sign_in_static {
 	transform: translateY(-300%);
 	transition: 1.5s;
+}
+.new_password_hidden {
+	overflow: hidden;
 }
