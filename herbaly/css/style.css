@@ -1,0 +1,1660 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: ProximaNova;
+	font-weight: normal; 
+	
+}
+h1,h2,h3,h4,h5,p{
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+section{
+	background-image: url(../img/bg.png);
+	width: 1920px;
+	height: 9215px;
+}
+
+.container{
+	width: 1550px;
+	margin: 0 auto;
+}
+.logo{
+	float: left;
+	padding-top: 45px; 
+}
+body{
+  display:block;
+}
+ul{
+  display:flex;
+  flex-direction:row;
+  justify-items:center;
+}
+li{
+  position:static;
+  list-style:none;
+  margin:10px;
+  padding:10px;
+  border-radius:50px;
+  display:flex;
+}
+#down{
+  align-self:center;
+}
+#down{
+  flex-direction:column;
+  padding: 0px 80px 60px 80px;
+}
+.deh{
+  width:50px;
+  height:50px;
+  position:relative;
+  box-shadow: 15px 15px #06af6e;
+  transform: rotate(45deg);
+  border-radius:4px;
+}
+.m1 {
+  animation: ani3 1.0s steps(5, start) infinite;
+  -webkit-animation: ani3 1.0s steps(5, start) infinite;
+}
+.m2 {
+  animation: ani2 1.0s steps(5, start) infinite;
+  -webkit-animation: ani2 1.0s steps(5, start) infinite;
+}
+.m3 {
+  animation: ani1 1.0s steps(5, start) infinite;
+  -webkit-animation: ani1 1.0s steps(5, start) infinite;
+}
+@keyframes ani1 {
+   0% {opacity:0.1;}
+  11% {opacity:0.1;}
+  22% {opacity:0.1;}
+  33% {opacity:0.15;}
+  44% {opacity:0.25;}
+  55% {opacity:0.5;}
+  66% {opacity:1;}
+  77% {opacity:0.5;}
+  88% {opacity:0.25;}
+  100% {opacity:0.15;}
+}
+@keyframes ani2 {
+   0% {opacity:0.1;}
+  11% {opacity:0.15;}
+  22% {opacity:0.25;}
+  33% {opacity:0.5;}
+  44% {opacity:1;}
+  55% {opacity:0.5;}
+  66% {opacity:0.25;}
+  77% {opacity:0.15;}
+  88% {opacity:0.1;}
+  100% {opacity:0.1;}
+}
+@keyframes ani3 {
+   0% {opacity:0.25;}
+  11% {opacity:0.5;}
+  22% {opacity:1;}
+  33% {opacity:0.5;}
+  44% {opacity:0.25;}
+  55% {opacity:0.15;}
+  66% {opacity:0.1;}
+  77% {opacity:0.1;}
+  88% {opacity:0.1;}
+  100% {opacity:0.15;}
+}
+.books{
+	padding-top: 150px;
+	position: relative;
+}
+h2{
+	font-size: 60px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	color: #057f60;
+}
+.recovery_guide p{
+	font-size: 30px;
+	width: 740px;
+	margin-top: 75px;
+	margin-bottom: 65px;
+	line-height: 32px;
+}
+.numbers{
+	display: flex;
+	margin-bottom: 16px;
+}
+.numbers img{
+	width: 43px;
+	height: 43px;
+	position: relative;
+	bottom: 6px;
+}
+.numbers p{
+	margin: 0;
+	padding-left: 26px;
+}
+.click_here{
+	width: 640px;
+	text-align: center;
+}
+.advantages h4{
+	font-size: 30px;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	color: #057f60;
+	font-weight: normal;
+	padding-top: 34px; 
+}
+
+.advantages h3{
+	font-size: 48px;
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	color: #057f60;
+	font-weight: normal;
+	padding-bottom: 15px; 
+}
+.btn{
+	width: 640px;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 30px;
+	
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%); 
+	color: white;
+	font-size: 38px;
+	font-weight: normal;
+}
+.btn:hover{
+	background: -moz-linear-gradient(left, #056c5b 0%, #06af6e 100%);
+	background: -webkit-linear-gradient(left, #056c5b 0%,#06af6e 100%);
+	background: linear-gradient(-3deg, #056c5b 0%, #06af6e 100%); 
+}
+.description{
+float: right;
+text-align: left;
+width: 860px;
+}
+.description h2{
+	padding-top: 170px;
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.description h3{
+	padding-top: 100px;
+	font-size: 42px;
+	font-weight: bold;
+}
+.description p{
+	font-size: 36px;
+	line-height: 46px;
+	padding-top: 30px;
+}
+.doctors_say{
+	text-align: left;
+}
+.doctors_say h2{
+	width: 1050px;
+	margin-top: 1530px;
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.doctors_say p{
+	width: 950px;
+	font-size: 34px;
+	line-height: 46px;
+	padding-top: 70px;
+	
+}
+.doctors_say span{
+	font-weight: bold;
+	font-style: italic;
+}
+.program{
+	width: 890px;
+	float: right;
+	text-align: left;
+}
+.program h2{
+	padding-top: 170px;
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin-bottom: 75px;
+}
+.program p{
+	font-size: 30px;
+	line-height: 32px;
+}
+.images{
+	display: none;
+}
+.much_more{
+	padding-left: 71px;
+}
+.program h3{
+	padding-top: 75px;
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin-bottom: 75px;
+}
+.button{
+	margin-top: 15px;
+	width: 640px;
+	text-align: center;
+	padding: 7px 55px;;
+	border-radius: 30px;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%);
+	color: white;
+	font-size: 38px;
+	font-weight: normal;
+}
+.button:hover{
+	background: -moz-linear-gradient(left, #056c5b 0%, #06af6e 100%);
+	background: -webkit-linear-gradient(left, #056c5b 0%,#06af6e 100%);
+	background: linear-gradient(-3deg, #056c5b 0%, #06af6e 100%); 
+}
+
+.about h2{
+	padding-top: 1140px;
+	font-size: 48px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%);  
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.authors{
+	display: flex;
+	justify-content: space-between;
+}
+.authors p{
+	width: 700px;
+	font-size: 30px;
+	line-height: 46px;
+	padding-top: 70px;
+	
+}
+.authors span{
+	font-weight: bold;
+}
+.sale h2{
+	padding-top: 170px;
+	font-size: 52px;
+	font-weight: bold;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%);  
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.four_books{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.four_books img{
+	display: block;
+	padding-top: 100px;
+}
+.four_books p{
+	padding-top: 50px;
+	width: 330px;
+	font-size: 36px;
+	font-weight: bold;
+	position: absolute;
+	bottom: -136px;
+}
+.buy{
+	padding-top: 214px;
+	width: 490px;
+	text-align: center;
+}
+.price{
+	width: 370px;
+    justify-content: space-around;
+    margin-left: 63px;
+	display: flex;
+}
+.price h3{
+	font-size: 42px;
+	font-weight: normal;
+	text-decoration: line-through;
+    padding-top: 6px;
+}
+.price h2{
+	font-size: 52px;
+	font-weight: bold;
+	background: -moz-linear-gradient(left, #06af6e 0%, #056c5b 100%);
+	background: -webkit-linear-gradient(left, #06af6e 0%,#056c5b 100%);
+	background: linear-gradient(-3deg, #06af6e 0%,#056c5b 100%); 
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 70px;
+}
+.btn_buy{
+	width: 490px;
+	text-align: center;
+	padding: 6px 50px;
+	border-radius: 30px;
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#056c5b 100%);
+	color: white;
+	font-size: 38px;
+	font-weight: normal;
+}
+.btn_buy:hover{
+	background: -moz-linear-gradient(left, #056c5b 0%, #06af6e 100%);
+	background: -webkit-linear-gradient(left, #056c5b 0%,#06af6e 100%);
+	background: linear-gradient(-3deg, #056c5b 0%, #06af6e 100%); 
+}
+.footer{
+	padding-top: 160px;
+}
+.footer p{
+	font-size: 24px;
+	font-weight: normal;
+	padding-bottom: 42px;
+}
+.href {
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+.footer a {
+	padding-right: 40px;
+}
+.footer a:hover {
+	text-decoration: underline;
+	
+}
+.footer h6{
+	font-size: 20px;
+	color: #5d5e60;	
+	font-weight: normal;
+	margin: 0;
+	padding-top: 24px;
+}
+.down{
+	position: absolute;
+	bottom: 0;
+	left:20px;
+}
+.up{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99999;
+}
+#btn_up{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+.exitblock {    
+    display:none;    
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}    
+.exitblock .fon {
+    background: #F6FCFF;
+    opacity:.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.left_basil{
+	position: absolute;
+	top: 116px;
+	left: 0;
+}
+.right_basil {
+	position: absolute;
+	right: 0;
+    top: 113px;
+}
+.exitblock .modaltext {
+    box-sizing: border-box;  
+    background: #F6FCFF;
+    position:fixed;
+    top:30%;
+    left:30%;
+    width: 680px;
+	height: 400px;
+	text-align: center;
+	font-size: 32px;
+}        
+.closeblock {
+    cursor:pointer;
+    position: fixed;
+    line-height:60px;
+    font-size:82px;
+    transform: rotate(45deg);
+    text-align:center;
+    top:20px;
+    right:30px;
+    color: #337AB7;    
+}
+.closeblock:hover {
+    color: #000;    
+}
+.exit_head {
+	background: linear-gradient(to right, #056c5b 0%,#06af6e 50%,#06af6e 100%); 
+	padding-top: 12px;
+	padding-bottom: 4px;
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.exit_promo {
+	padding-top: 45px;
+	font-weight: bold;
+}
+.exit_save span {
+	color:  #06735d;
+	font-size: 48px;
+	font-weight: bold;
+	
+}
+.exit_code span {
+	font-size: 38px;
+	font-weight: bold;
+	
+}
+.exit_hurry {
+	font-size: 24px;
+	padding-top: 25px;
+}
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 100%;
+		margin: 0;
+		margin-left: 20px;
+	}
+	html {
+		overflow-x: hidden;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	section {
+		width: auto;
+		background-position-x: 52%;
+	}
+	.doctors_say p {
+    	width: 792px;
+    	font-size: 36px;
+	}
+	.program {
+    	width: 770px;
+    }
+    .authors{
+    	width: 100%;
+    }
+    .authors p {
+    	width: 85%;
+    }
+    .four_books img {
+    	height: 300px;
+    	width: 180px;
+    	padding-top: 50px;
+    	margin-left: 35px;
+    }
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    }
+    .four_books p {
+    	position: static;
+    	width: auto;
+    	font-size: 20px;
+    	padding-top: 10px;
+    	margin-left: 33px;
+    }
+    .books img {
+    	width: 100%;
+    }
+    .doctors_say h2 {
+    	width: auto;
+    	margin-top: 1684px;
+    }
+    .description h2 {
+    	padding-top: 300px;
+    	width: 560px;
+    }
+    .description p {
+    	width: 97%;
+    }
+    .buy {
+    	padding-top: 53px;
+	}
+	.href {
+    	margin-right: 73px;
+    }
+    .footer p {
+    	width: 97%;
+    }
+    .sale h2 {
+    padding-top: 114px;
+	}
+	.down{
+		bottom: 153px;
+    	left: -100px;
+	}
+	.deh {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.recovery_guide p {
+    font-size: 32px;
+	}
+	.description h3 {
+    	padding-top: 60px;
+    }
+    .authors p {
+	    line-height: 43px;
+	}
+	.click_here {
+   		margin-top: -15px;
+   	}
+   	.description h2 {
+    	padding-top: 315px;
+	}
+	.description p {
+    font-size: 34px;
+	}
+	.doctors_say p {
+    	width: 720px;
+    	font-size: 34px;
+	}
+	.sale h2 {
+    padding-top: 157px;
+	}
+}
+@media screen and (max-width: 1056px){
+	.authors p {
+    	line-height: 41px;
+	}
+}
+@media screen and (max-width: 1002px) {
+	.authors p {
+    	line-height: 39px;
+	}
+}
+@media screen and (max-width: 991px) {
+	
+	.description p {
+		line-height: 36px;
+		font-size: 32px;
+	}
+	.description {
+		width: 804px;
+	}
+	.doctors_say h2 {
+		margin-top: 1518px;
+	}
+	.doctors_say p {
+		line-height: 41px;
+		width: 638px;
+		font-size: 32px;
+	}
+	.footer p {
+    	font-size: 20px;
+    }
+    .authors p {
+    	line-height: 35px;
+    	font-size: 32px;
+	}
+	.about h2 {
+    	padding-top: 1250px;
+    }
+    .four_books {
+    	margin-top: 100px;
+    }
+    .footer {
+    	padding-top: 120px;
+	}
+	.books {
+    	padding-top: 210px;
+	}
+	.program h2 {
+    	padding-top: 230px;
+    }
+    .program p {
+    font-size: 32px;
+	}
+	.four_books img {
+    padding-top: 0px;
+	}
+	.sale h2 {
+    padding-top: 198px;
+	}
+}
+@media screen and (max-width: 912px) {
+	.sale h2{
+	padding-top: 388px;
+	}
+	.footer {
+    padding-top: 195px;
+	}
+	.recovery_guide p {
+    font-size: 28px;
+	}
+	.doctors_say p {
+    width: 633px;
+    font-size: 28px;
+	}
+	.description p {
+    font-size: 28px;
+	}
+    .program p {
+    font-size: 28px;
+	}
+	.authors p{
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 860px) {
+	.four_books {
+		width: 500px;
+		margin: auto;
+	}
+	.footer {
+		padding-top: 50px;
+	}
+	.authors p {
+    	line-height: 32px;
+	}
+	.sale h2 {
+    padding-top: 224px;
+	}
+}
+@media screen and (max-width: 825px) {
+
+	section {
+		width: auto;
+		background-position-x: 52%;
+	}
+	.doctors_say p {
+	    width: 632px;
+	}
+	.description {
+    	width: 762px;
+	}
+	.sale h2 {
+    padding-top: 182px;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		overflow-x: hidden;
+	}
+	section{
+		background-image: url(../img/bg_768.png);
+		width: 768px;
+		height: auto;
+	}
+	.up img{
+		width: 80px;
+		height: 80px;
+	}
+	.down img{
+		width: 80px;
+		height: 80px;
+	}
+	.container {
+    	width: 625px;
+	}
+	.logo {
+		padding-top: 35px;
+	}
+	.logo img {
+		width: 150px;
+		height: 35px;
+	}
+	.books img {
+		width: 700px;
+    	height: 490px;
+	}
+	.books {
+		padding-top: 100px;
+		padding-left: 4%;
+	}
+	.recovery_guide h2 {
+    	font-size: 30px;
+    	margin-top: -15px;
+    	margin-bottom: 9px;
+    }
+    .recovery_guide p {
+    	font-size: 16px;
+    	width: 425px;
+    	line-height: 20px;
+    	margin-top: 0;
+    	margin-bottom: 0;
+    }
+    .advantages {
+    	margin-top: 25px;
+    }
+    .numbers {
+    	padding-left: 10%;
+    	font-size: 16px;
+    	margin-bottom: 3px;
+    }
+    .program h2{
+    	padding-left: 10%;
+    }
+    .program h3{
+    	padding-left: 10%;
+    }
+    .program p{
+    	padding-left: 10%;
+    }
+    .numbers p {
+    	padding-left: 10px;
+    	position: relative;
+    	top: -6px;
+    	padding-left: 10px;
+    }
+    .numbers img {
+    	width: 25px;
+    	height: 25px;
+    }
+    .description h2 {
+    	padding-top: 90px;
+    	font-size: 24px;
+    	width: 356px;
+    }
+    .click_here {
+		width: 370px;
+    }
+    .advantages h4 {
+    	font-weight: bold;
+    	font-size: 18px;
+    } 
+    .btn {
+	    width: 370px;
+	    padding: 2px 15px;
+	    font-size: 22px;
+	    text-align: start;
+	}
+	.advantages h3 {
+		font-size: 30px;
+	}
+	.description {
+		width: 390px;
+	}
+	.description h3 {
+		font-size: 16px;
+		padding-top: 40px;
+
+	}
+	.description p {
+		font-size: 16px;
+		padding-top: 15px;
+		line-height: 18px;
+	}
+	.doctors_say h2 {
+		margin-top: 900px;
+		font-size: 24px;
+    	width: 370px;
+	}
+	.doctors_say p {
+		padding-left: 10%;
+		width: 370px;
+		font-size: 16px;
+    	line-height: 23px;
+    	padding-top: 40px;
+
+	}
+	.program h2 {
+		margin-bottom: 25px;
+    	font-size: 24px;
+    	padding-top: 80px;
+	}
+	.program p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.program {
+		width: 412px;
+	}
+	.much_more {
+    	padding-left: 36px;
+	}
+	.program h3 {
+    	padding-top: 25px;
+    	font-size: 24px;
+    	margin-left: 25px;
+    	margin-bottom: 37px;
+    }
+    .button {
+    	font-size: 24px;
+    	padding: 3px 25px;
+    	margin-left: 26px;
+    }
+    .about h2 {
+    	font-size: 24px;
+    	padding-top: 565px;
+    	padding-left: 7%;
+    }
+    .authors{
+		padding-left: 7%;
+    }
+    .authors p {
+    	font-size: 16px;
+    	line-height: 19px;
+    	width: 300px;
+    	padding-top: 30px;
+    }
+    .sale h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 22%;
+    padding-top: 152px;
+    }
+    .four_books img {
+    	height: 300px;
+    	width: 180px;
+    	padding-top: 50px;
+    	margin-left: 35px;
+    }
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    	margin-left: 12%;
+    }
+    .four_books p {
+    	position: static;
+    	width: auto;
+    	font-size: 18px;
+    	padding-top: 10px;
+    	margin-left: 33px;
+    }
+    .price h3 {
+    	font-size: 18px;
+    	margin-left: 95px;
+	}
+	.buy {
+		text-align: left;
+   		padding-left: 4%;
+    	padding-top: 30px;
+    }
+    .price {
+    	margin-left: 115px;
+    	justify-content: start;
+    }
+    .price h2 {
+    	font-size: 26px;
+    	margin-left: 70px;
+    	margin-bottom: 22px;
+    }
+    .btn_buy {
+    	margin-left: 172px;
+    	font-size: 22px;
+    }
+    .footer p {
+   		font-size: 12px;
+    	padding-bottom: 20px;
+    }
+    .footer {
+    	padding-top: 60px;
+    	padding-left: 6%;
+	}
+	.href {
+		font-size: 12px;
+	}
+	.footer h6 {
+		font-size: 10px;
+		padding-bottom: 25px;
+	}
+	.down {
+    	bottom: 330px;
+    	left: -100px;
+	}
+}
+@media screen and (max-width:670px) {
+	.description {
+    	width: 377px;
+	}
+	.books{
+		padding-left: 0;
+		margin-left: -6%;
+	}
+	.authors {
+    	display: block;
+	}
+	.authors p {
+		font-size: 17px;
+    	line-height: 17px;
+    	padding-top: 15px;
+    	padding-left: 6%;
+		width: 500px;
+	}
+	.four_books {
+    	margin-left: 5%;
+    }
+	.footer{
+		padding-left: 3%;
+	}
+	.buy{
+		padding-left: 0%;
+	}
+}
+@media screen and (max-width:626px) {
+	
+	.program h2{
+    	padding-left: 6%;
+    }
+    .program h3{
+    	padding-left: 6%;
+    }
+    .program p{
+    	padding-left: 6%;
+	}
+	.numbers {
+    	padding-left: 6%;
+    }
+    .program {
+    	width: 360px;
+    	margin-right: 50px;
+	}
+	.authors {
+    padding-left: 2%;
+	}
+	.description p {
+    	width: 84%;
+	}
+	.footer p {
+    	width: 88%;
+	}
+	.program p {
+    	font-size: 16px;
+   		line-height: 18px;
+	}
+	.books{
+		margin-left: 0;
+	}
+	.books img {
+    	width: 670px;
+    	height: 459px;
+	}
+	.books img {
+   		 width: 582px;
+    	height: 433px;
+	}
+	.four_books{
+	margin-left: 4%;
+	}
+	.sale h2 {
+    padding-left: 11%;
+}
+@media screen and (max-width:593px) {
+	.program {
+    	width: 275px;
+    	margin-right: 121px;
+	}
+	.description {
+    	width: 312px;
+    	margin-right: 100px;
+	}
+	.footer p{
+	width: 85%;
+	}
+}
+@media screen and (max-width:564px) {
+	.four_books {
+		margin: inherit;
+	}
+	.authors p{
+		width: 435px;
+	}
+	.sale h2 {
+		text-align: start;
+	}
+	.footer p {
+    	width: 73%;
+	}
+	.sale h2 {
+    font-size: 24px;
+    padding-top: 59px;
+	}
+	.price{
+	margin-left: 11%;
+	}
+	.btn_buy {
+    margin-left: 23%;
+	}
+	.program {
+    margin-right: 140px;
+	}
+}
+@media screen and (max-width:519px) {
+	.books img{
+	margin-left: -6%;
+	}
+	.four_books {
+	    margin-left: -35px;
+	}
+	.authors p{
+	width: 418px;
+	padding-left: 0;
+	}
+	.doctors_say p {
+    padding-left: 4%;
+    }
+    .program {
+   	 	margin-right: 173px;
+	}
+	section {
+		background-position: -39px 0px;
+	}
+	.description {
+    	width: 312px;
+	    margin-right: 135px;
+	}
+	.description h2 {
+    	width: 295px;
+	}
+	.about h2{
+		padding-left: 2%;
+	}
+	.down {
+		display: none;
+}
+
+
+}
+@media screen and (max-width: 480px) {
+	html {
+		overflow-x: hidden;
+	}
+	section{
+		background-image: url(../img/bg_480.png);
+		width: 480px;
+		background-position: 0 0;
+		height: auto;
+	}
+	.container {
+    	width: 370px;
+    }
+    .up{
+	bottom: 10px;
+	right: 10px;
+	}
+	.down{
+	bottom: 10px;
+	right: 10px;
+	}
+	.up img{
+		width: 50px;
+		height: 50px;
+	}
+	.down img{
+		width: 50px;
+		height: 50px;
+	}
+	.logo {
+		padding-top: 20px;
+	}
+	.logo img {
+		width: 93px;
+		height: 22px;
+	}
+	.books img {
+		width: 450px;
+   	 	height: 342px;
+	}
+	.books {
+		padding-top: 60px;
+		margin-left: -30px;
+	}
+	.recovery_guide h2 {
+    	font-size: 22px;
+    	margin-top: -15px;
+    	margin-bottom: 9px;
+    	margin-left: 12px;
+    }
+    .recovery_guide p {
+    	font-size: 16px;
+    	width: 372px;
+    	line-height: 16px;
+    	margin-top: 0;
+    	margin-bottom: 0;
+    }
+    .advantages {
+    	margin-top: 25px;
+    }
+    .numbers {
+    	font-size: 16px;
+    	margin-bottom: 3px;
+    }
+    .numbers p {
+    	padding-left: 10px;
+    	position: relative;
+    	top: -5px;
+    	padding-left: 10px;
+    }
+    
+    .numbers img {
+    	width: 17px;
+    	height: 17px;
+    }
+    .description h2 {
+    	font-size: 18px;
+    	width: 286px;
+    	padding-left: 40px;
+   	 	padding-top: 34px;
+    }
+    .click_here {
+		width: 370px;
+    }
+    .advantages h4 {
+    	font-weight: bold;
+    	font-size: 18px;
+    } 
+    .btn {
+	    width: 370px;
+	    padding: 2px 34px;
+    	font-size: 18px;
+	    text-align: start;
+	}
+	.advantages h3 {
+		font-size: 18px;
+		padding-bottom: 10px;
+	}
+	.description {
+		width: 390px;
+		margin: 0;
+		margin-bottom: 50px;
+
+	}
+	.description h3 {
+		font-size: 18px;
+    	padding-top: 13px;
+    	padding-left: 40px;
+
+
+	}
+	.description p {
+		font-size: 16px;
+    	line-height: 17px;
+   	 	width: 334px;
+    	margin-left: 40px;
+	}
+	.doctors_say h2 {
+		margin-top: 500px;
+		font-size: 18px;
+    	width: 310px;
+	}
+	.doctors_say {
+    	margin-left: 20px;
+	}
+	.doctors_say p {
+		width: 320px;
+		font-size: 16px;
+    	line-height: 17px;
+    	padding-top: 17px;
+
+	}
+	.program h2 {
+		font-size: 18px;
+		padding-top: 15px;
+		margin-bottom: 32px;
+		margin-left: 34px;
+	}
+	.program p {
+    font-size: 16px;
+	}
+	.much_more {
+		margin-left: 21px;
+	}
+	.program p {
+		font-size: 16px;
+    	line-height: 21px;
+    	position: relative;
+    	top: -8px;
+	}
+	.program .numbers {
+		margin-left: 30px;
+	}
+	.program {
+		width: 412px;
+		margin-right: -30px;
+	}
+	.about {
+		margin-left: 20px;
+	}
+	.much_more {
+    	padding-left: 59px;
+	}
+	.program h3 {
+    	padding-top: 25px;
+    	font-size: 16px;
+    	margin-left: 100px;
+    	margin-bottom: 20px;
+    }
+    .button {
+    	font-size: 18px;
+    	padding: 3px 25px;
+    	margin-left: 147px;
+    }
+    .about h2 {
+    	font-size: 18px;
+    	padding-top: 416px;
+    }
+    .authors {
+    	display: block
+    }
+    .authors p {
+    	font-size: 16px;
+    	line-height: 17px;
+    	width: 363px;
+    	padding-top: 20px;
+    }
+    .sale h2 {
+    	font-size: 18px;
+    	text-align: center;
+    	padding-top: 70px;
+    }
+    .four_books div {
+    	width: 150px;
+    }
+    .four_books {
+    	width: 430px;
+    	margin-left: 6px;
+	}
+    .sale_book {
+    	margin-left: 30px;
+    	position: relative;
+    }
+    .four_books img {
+    	height: 225px;
+    	width: 135px;
+    	padding-top: 30px;
+    	margin-left: 0;
+    }
+
+    .four_books {
+    	flex-wrap: wrap;
+    	justify-content: space-around;
+    }
+    .four_books p {
+    	
+    	width: 170px;
+    	font-size: 18px;
+    	padding-top: 10px;
+    	margin-left: 0px;
+    }
+    .price h3 {
+    	font-size: 16px;
+    	margin-left: 135px;
+	}
+	.buy {
+    	padding-top: 30px;
+    	margin-left: 34px;
+    }
+    .price {
+    	margin-left: -30px;
+    	justify-content: start;
+    }
+    .price h2 {
+    	font-size: 18px;
+   		margin-left: 10px;
+  		margin-bottom: 22px;
+    }
+    .btn_buy {
+    	font-size: 18px;
+    	margin-left: 18%;
+    	padding: 6px 11px;
+    }
+    .footer p {
+   		font-size: 10px;
+    	padding-bottom: 0px;
+    	width: 110%;
+    }
+    .footer {
+    	padding-top: 28px;
+	}
+	.href {
+		font-size: 10px;
+		margin-top: 10px;
+	}
+	.footer h6 {
+		font-size: 10px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	.foot {
+		margin-top: 10px;
+	}
+	.books {
+		margin-left: 0;
+	}
+	.books img {
+    margin-left: 0%;
+	}
+}
+@media screen and (max-width: 425px) {
+	.footer p {
+		width: 84%;
+	}
+	.books img{
+		margin-left: -6%;
+	}
+	.sale h2 {
+		padding-top: 34px;
+		text-align: left;
+	} 
+	.buy {
+		margin-left: 0;
+	}
+	.four_books {
+		margin-left: -23px;
+	}
+	.authors p{
+		line-height: 16px;
+    	width: 329px;
+	}
+	.footer{
+		padding-left: 5%;
+	}
+	.footer p{
+		width: 93%;
+	}
+	.doctors_say p {
+    padding-left: 1%;
+	}
+	.program {
+    margin-right: 18px;
+    width: 382px;
+	}
+	.program h2{
+		padding-left: 5%;
+	}
+	.about h2 {
+    padding-top: 400px;
+	}
+	.four_books{
+		margin-left: 8px;
+		width: 373px;
+	}
+	.four_books img {
+    height: 220px;
+    width: 130px;
+	}
+	.four_books p{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 375px) {
+	section{
+		background-image: url(../img/bg_375.png);
+		width: 480px;
+		background-position: 0 0;
+		height: auto;
+	}
+	.books img {
+  		width: 410px;
+   		height: 293px;
+    	margin-left: 2%;
+	}
+	.books {
+   		margin-left: -34px;
+	}
+	.recovery_guide p {
+    	line-height: 19px;
+    	width: 293px;
+	}
+	.recovery_guide h2 {
+    	margin-left: 0px;
+    }
+	.click_here {
+    	margin-top: -15px;
+    	width: 334px;
+	}
+	.doctors_say p{
+		padding-left: 0;
+	}
+	.program {
+    	width: 384px;
+    	margin-right: 15px;
+	}
+	.program p{
+		padding-left: 3%;
+	}
+	.authors p {
+		width: 300px;
+		line-height: 16px;
+	}
+	.four_books {
+    	margin-left: 0%;
+	}
+		.four_books p{
+	}
+	.four_books img {
+    	height: 225px;
+    	width: 120px;
+    	padding-top: 16px;
+    }
+    .sale h2{
+    text-align: left;
+    padding-left: 8%;
+    }
+    .footer{
+    	padding-left: 5%;
+    }
+    .much_more{
+        margin-left: 70px;
+    }
+    .description {
+    margin-bottom: 48px;
+}
+@media screen and (max-width: 360px) {
+	.recovery_guide h2 {
+    width: 270px;
+}
+.description p {
+    margin-left: 30px;
+    width: 288px;
+    line-height: 18px;
+}
+.description h2 {
+    padding-left: 30px;
+}
+.description h3 {
+    padding-left: 30px;
+    font-size: 18px;
+}
+.doctors_say {
+    margin-left: 10px;
+    }
+    .program {
+    margin-right: 30px;
+}
+.much_more{
+	margin-left: 70px;
+}
+.about {
+    margin-left: 11px;
+}
+.four_books img {
+    margin-left: -9px;
+}
+.four_books p {
+    font-size: 14px;
+    margin-left: -10px;
+}
+.books img{
+	    margin-left: 0%;
+}
+.click_here {
+    margin-top: 17px;
+    }
+    .authors p {
+    width: 274px;
+    padding-top: 22px;
+}
+.program h3 {
+    margin-left: 77px;
+}
+.recovery_guide p, .description p, .doctors_say p,
+.authors p{
+	font-size: 14px;
+}
+.href {
+    margin-right: 59px;
+    }
+.footer p {
+    width: 87%;
+	}
+.footer {
+    width: 87%;
+	}
+.price {
+    margin-left: -36px
+	}
+.btn_buy {
+    margin-left: 16%;
+	}
+	.sale h2{
+		padding-left: 3%;
+	}
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 320px){
+	section{
+		background-image: url(../img/bg_320.png);
+		width: 480px;
+		background-position: 0 0;
+		height: auto;
+	}
+	.books {
+		margin-left: -54px;
+	}
+	.books img{
+		margin-left: -1px;
+	}
+	.recovery_guide h2 {
+    	width: 188px;
+    	margin-left: 0px;
+    }
+    .click_here {
+    	width: 370px;
+    	margin-left: -50px;
+    	margin-top: -5px;
+	}
+	.btn {
+		padding: 2px 10px;
+	}
+	.description h2 {
+    	padding-left: 25px;
+	}
+	.description h3 {
+    	padding-left: 25px;
+    	font-size: 18px;
+	}
+	.description p {
+		margin-left: 25px;
+		width: 274px;
+	}
+	.authors p {
+    	width: 284px;
+    	padding-top: 28px;
+	}
+	.doctors_say {
+    	margin-left: 5px;
+	}
+	.doctors_say p {
+    	width: 289px;
+    	padding-left: 0%;
+	}
+	.program {
+    	width: 330px;
+   	 	margin-right: 86px;
+   	} 	
+   	 .program h3 {
+    	padding-left: 0%;
+	}
+	.about h2 {
+    	padding-top: 440px;
+	}
+	.about {
+		margin-left: 0;
+	}
+	.four_books {
+    	flex-wrap: wrap;
+    	justify-content: unset;
+    	margin-left: -15px;
+    }
+    .four_books p{
+    	font-size: 14px;
+    	margin-left: 4px;
+    }
+    .four_books div {
+    	margin-left: 10px;
+    }
+    .four_books img {
+    margin-left: 4px;
+	}
+    .sale h2{
+    	padding-left: 0;
+    }
+    .buy {
+    margin-left: -39px;
+	}
+    .footer p {
+   	 	width: 74%;
+	}
+	.button {
+    margin-left: 112px;
+}
+.doctors_say p {
+	line-height: 17px;
+}
+.much_more {
+    margin-left: 65px;
+    }
+
+}
+
+
+
