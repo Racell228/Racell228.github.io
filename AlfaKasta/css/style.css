@@ -107,7 +107,7 @@ nav	{
 	font-weight: 600;
 }
 .logo {
-	margin-right: 25px;
+	margin-right: 29px;
 	font-size: 20px;
 	font-weight: 300;
 	margin-top:-2px;
@@ -123,7 +123,7 @@ nav	{
 }
 .slide {
 	height: 20px;
-	width: 160px;
+	width: 175px;
 }
 .slide a:hover {
 	color: #fff;
@@ -137,7 +137,7 @@ nav	{
 }
 .slide_profile {
 	height: 20px;
-	width: 160px;
+	width: 175px;
 }
 .drop_nav {
 	margin-right: 18px;
@@ -202,7 +202,7 @@ nav	{
 	display: none;
 }
 .search {
-	margin-right: 30px;
+	margin-right: 22px;
 }
 input[type="name"]::-webkit-input-placeholder {
     color: #9ca2b1;
@@ -1937,7 +1937,7 @@ footer img {
 	}
 	.burger {
 		display: block;
-		margin-top: -7px;
+		margin-top: 0px;
 	}
 	.drop_nav_more {
 		display: none;
@@ -2466,4 +2466,10 @@ footer img {
 }
 .new_password_hidden {
 	overflow: hidden;
+}
+.slide .slide_sport {
+	margin-right: 21px;
+}
+.slide_profile .slide_profile_sport {
+	margin-right: 21px;
 }
