@@ -501,6 +501,7 @@ h1 {
 }
 .open_full {
 	position: relative;
+	bottom: 1px;
 }
 .event_info_novs {
 	position: relative;
@@ -738,7 +739,7 @@ h1 {
 }
 .vs a {
 	position: relative;
-    top: -6px;
+    top: -5px;
     left: 3px;
     color: #fff;
 }
