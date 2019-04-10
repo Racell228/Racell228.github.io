@@ -1005,7 +1005,7 @@ float: left;
 }
 
 .rates_profile {
-	height: 490px;
+	height: 500px;
 }
 .id {
 	width: 80px;
@@ -2472,4 +2472,7 @@ footer img {
 }
 .slide_profile .slide_profile_sport {
 	margin-right: 21px;
+}
+.rates_profile .vs a {
+	top: -8px;
 }
