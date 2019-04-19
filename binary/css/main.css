@@ -26,10 +26,10 @@ h1,h2,h3,h4,h5,p{
 }
 .illustration img{
 	width: 650px;
-	margin-top: 30px;
+	margin-top: 70px;
 }
 .features{
-	margin-top: 50px;
+	margin-top: 60px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -51,12 +51,12 @@ a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 28px;
-	background-color: #6140ff;
+	background-color: #563bda;
 	width: 290px;
 	text-align: center;
 	padding: 16px 0;
 	display: block;
-	margin-top: 50px;
+	margin-top: 60px;
 	border-radius: 3px;
 	background-image: linear-gradient(to left,
 	transparent,transparent 50%,#4b35b2 50%,#6140ff);
@@ -72,15 +72,15 @@ a:hover{
 }
 h2{
 	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	color: #fff;
-	font-size: 45px;
+	font-size: 60px;
 	font-weight: 600;
 }
 .text{
 	color: #fff;
-	font-size: 20px;
-	line-height: 23px;
+	font-size: 22px;
+	line-height: 27px;
 }
 .text1{
 	margin-top: 20px;
