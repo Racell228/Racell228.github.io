@@ -1,0 +1,87 @@
+body{
+	background-color: #3b2897;
+	font-family: ProximaNova;
+}
+h1,h2,h3,h4,h5,p{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+.logo p{
+	background-color: #442ead;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 26px;
+	width: 290px;
+	text-align: center;
+	padding: 16px 0;
+	margin-top: 20px;
+}
+.main{
+	width: 550px;
+}
+.illustration img{
+	width: 650px;
+	margin-top: 30px;
+}
+.features{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.features img{
+	width: 80px;
+	display: block;
+	margin: 0 auto;
+}
+.features p{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 140px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	line-height: 22px;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 28px;
+	background-color: #6140ff;
+	width: 290px;
+	text-align: center;
+	padding: 16px 0;
+	display: block;
+	margin-top: 50px;
+	border-radius: 3px;
+	background-image: linear-gradient(to left,
+	transparent,transparent 50%,#4b35b2 50%,#6140ff);
+	background-position: 100% 0;
+ 	background-size: 200% 100%;
+ 	transition: all .25s ease-in;
+
+	letter-spacing: 0.5px;
+}
+a:hover{
+	background-position: 0 0;
+	transition: 0.5s;
+}
+h2{
+	margin-top: 60px;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 45px;
+	font-weight: 600;
+}
+.text{
+	color: #fff;
+	font-size: 20px;
+	line-height: 23px;
+}
+.text1{
+	margin-top: 20px;
+}
