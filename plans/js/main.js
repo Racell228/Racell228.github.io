@@ -168,3 +168,28 @@ if(window.matchMedia('(max-width: 576px)').matches){
     nextArrow: '<button type="button" class="right btn-juliet"><img src="img/arrow_right.png" alt=""></button>'
   });
 }
+$('.menu-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+});
+// $('.scroll_up').click(function(){
+//   var el = $(this).attr('href');
+//   $('html,body').animate({
+//     scrollTop: $(el).offset().top + $("header").height()}, 1000);
+//   return false;
+// });
+var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+jQuery(function(f){
+    var element = f('.up_arrow');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 700 ? 'In': 'Out')](100);           
+    });
+}); 
