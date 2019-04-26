@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>correct-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-100.0%" y="-127.3%" width="300.0%" height="360.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="v-1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Чек-боксы" transform="translate(-106.000000, -36.000000)" fill="#6772E5">
+            <g id="check-mark" transform="translate(104.000000, 30.000000)">
+                <g id="correct-symbol" filter="url(#filter-1)" transform="translate(6.000000, 8.000000)">
+                    <path d="M11.7708081,1.28665463 L10.7190339,0.234880361 C10.5748172,0.0905553047 10.3994221,0.0183656885 10.1932551,0.0183656885 C9.98689842,0.0183656885 9.81150339,0.0905553047 9.66728668,0.234880361 L4.59386005,5.31597291 L2.32011738,3.03448307 C2.17573815,2.89010384 2.00045147,2.81799549 1.79428442,2.81799549 C1.58798194,2.81799549 1.41269526,2.89010384 1.26831603,3.03448307 L0.216541761,4.08628442 C0.0721625282,4.23063657 0,4.40597743 0,4.61225282 C0,4.81836569 0.0721625282,4.99386907 0.216541761,5.13819413 L3.01611738,7.93771558 L4.06797291,8.98948984 C4.21227088,9.13392325 4.38761174,9.2060316 4.59386005,9.2060316 C4.80002709,9.2060316 4.97536795,9.13373363 5.11974718,8.98948984 L6.17157562,7.93771558 L11.7708081,2.33851016 C11.9150519,2.19413093 11.9873499,2.01881716 11.9873499,1.81254176 C11.9874582,1.60637472 11.9150519,1.43103386 11.7708081,1.28665463 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
