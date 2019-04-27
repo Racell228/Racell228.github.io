@@ -2448,6 +2448,9 @@ footer .head {
 	.row_1 p {
 		width: 220px;
 	}
+	.sample_plan_item {
+		margin-top: 0;
+	}
 }
 @media screen and (max-width: 576px) {
 	.customer_slider img {
@@ -2562,19 +2565,6 @@ footer .head {
 	.work_examples_img {
 		text-align: center;
 	}
-	.up_arrow {
-		width: 50px;
-		height: 50px;
-	}
-	.scroll_up {
-		width: 50px;
-		height: 50px;
-	}
-	.scroll_up img {
-	    width: 25px;
-	    top: 17px;
-	    left: 13px;
-	}	
 	.licence img {
 		width: 80%;
     	height: auto;
