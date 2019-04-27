@@ -2742,6 +2742,8 @@ footer .head {
   	z-index: 99;
   	top: 70px;
   	background-color: green;
+  	overflow-y:scroll;
+  	overflow-x: hidden;
 }
 .window_mobile_static {
 	transform: translateY(-300%);

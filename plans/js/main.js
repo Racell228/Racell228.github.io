@@ -172,12 +172,7 @@ $('.menu-btn').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('menu-btn_active');
 });
-// $('.scroll_up').click(function(){
-//   var el = $(this).attr('href');
-//   $('html,body').animate({
-//     scrollTop: $(el).offset().top + $("header").height()}, 1000);
-//   return false;
-// });
+
 var t;
 function up() {
   var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
