@@ -2605,10 +2605,10 @@ footer .head {
 		font-size: 15px;
 	}
 	.request {
-		width: 212px;
+		width: 242px;
 		padding-left: 18px;
 		padding-right: 18px;
-		height: 318px;
+		height: 278px;
 	}
 	.have {
 		line-height:16px;
@@ -2643,7 +2643,7 @@ footer .head {
 		font-size: 14px;
 		margin-top: 12px;
 		line-height: 1;
-		width: auto;
+		width: 218px;
 	}
 	.form_question input {
     	height: 33px;
@@ -2656,7 +2656,7 @@ footer .head {
 		margin-top: 20px;
     }
     .form_question {
-    	width: 248px;
+    	width: 304px;
     	height: 313px;
     }
     .request_recall input {
