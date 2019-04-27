@@ -2813,7 +2813,9 @@ header {
 .thank_you {
 	text-align: center;
 	background-image: url(../img/back.png);
-	padding-bottom:calc(100% - 305px);
+	width: 100%;
+	height: calc(100% - 150px);
+	position: absolute;
     padding-top: 150px;
     overflow: hidden;
     background-position-x: 50%;
