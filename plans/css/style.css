@@ -1982,6 +1982,13 @@ footer .head {
 	.about_us {
 		padding-left: 0;
 	}
+	.footer {
+		display: block;
+		height: 70px;
+	}
+	.thank_you {
+		padding-top: 150px;
+	}
 }
 @media screen and (max-width: 932px) {
 	.our_adv_item {
@@ -2460,6 +2467,9 @@ footer .head {
 	.sample_plan h3 {
     	margin-top: 0;
     }
+    .footer {
+    	display: none;
+    }
 }
 @media screen and (max-width: 576px) {
 	.customer_slider img {
@@ -2801,11 +2811,13 @@ header {
 	margin-right: 14px;
 }
 .thank_you {
-	height: 100%;
 	text-align: center;
 	background-image: url(../img/back.png);
-	padding-bottom: 330px;
+	padding-bottom:calc(100% - 305px);
     padding-top: 150px;
+    overflow: hidden;
+    background-position-x: 50%;
+
 }
 .thank_you h2 {
 	margin: 0;
@@ -2845,15 +2857,6 @@ header {
 } 
 .thank_you a:hover {
 	background: linear-gradient(to bottom, #004700 1%,#2eb62e 100%);
-}
-@media screen and (max-width: 992px) {
-	.footer {
-		display: block;
-		height: 70px;
-	}
-	.thank_you {
-		padding-top: 150px;
-	}
 }
 @media screen and (max-width: 590px) {
 	.footer .logo_foot {
