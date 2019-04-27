@@ -1085,6 +1085,7 @@ footer .btn {
   	top: 100px;
     left: 50%;
     margin-left: -195px;
+    overflow: auto;
 	
 }
 .work_examples_img div {
