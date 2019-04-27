@@ -1286,7 +1286,7 @@ input[type="tex"]::-moz-placeholder {
 }
 .calculator {
 	width: 600px;
-  	height: 890px;
+  	height: 500px;
   	border-radius: 20px;
   	box-shadow: 1.5px 2.6px 0 0 #929090;
    background: linear-gradient(to bottom, #f6f3f3 0%,#f6f3f3 64%,#ffffff 100%);
