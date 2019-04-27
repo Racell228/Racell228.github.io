@@ -2446,6 +2446,10 @@ footer .head {
 	.row_1 p {
 		width: 220px;
 	}
+	.close_reg {
+	right: 35px;
+    top: 25px;
+	}
 }
 @media screen and (max-width: 576px) {
 	.customer_slider img {
