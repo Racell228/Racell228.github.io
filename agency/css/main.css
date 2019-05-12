@@ -1091,6 +1091,7 @@ textarea[name="description"]::-moz-placeholder {
 		flex-direction: row;
     	justify-content: space-around;
     	margin-left: 0;
+    	width: 330px;
 	}
 	.foot__social {
 		display: flex;
@@ -1111,11 +1112,6 @@ textarea[name="description"]::-moz-placeholder {
 	}
 	.foot__info {
 		margin-top: 25px;
-	}
-	.foot__law {
-		position: relative;
-		bottom: 43px;
-    	left: 50px;
 	}
 	.foot__law_text {
 		width: auto;
@@ -1185,6 +1181,12 @@ textarea[name="description"]::-moz-placeholder {
 	}
 	.left__img {
 		width: 25px;
+	}
+	.foot__logo_emblem {
+		margin-top: 0;
+	}
+	.foot__logo {
+		width: 340px;
 	}
 	/*about*/
 	.about__video_iframe {
@@ -1317,6 +1319,7 @@ textarea[name="description"]::-moz-placeholder {
 	.project__item {
 		width: 47%;
 		margin-top: 20px;
+		cursor: pointer;
 	}
 	.project__item:hover {
 		box-shadow: 0px 0px 50px 0px rgba(168, 167, 167, 1);
@@ -1467,6 +1470,9 @@ textarea[name="description"]::-moz-placeholder {
 	}
 	.nav__link {
 		font-size: 18px;
+	}
+	.foot__law {
+		position: static;
 	}
 	.offer {
     	left: 100px;
