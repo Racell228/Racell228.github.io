@@ -8,15 +8,7 @@ body {
 html {
 	overflow-x: hidden; 
 }
-::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
-}
 
-html {
-    -ms-overflow-style: none;  /* IE 10+ */
-    scrollbar-width: none; /* Firefox */
-}
 p,h1,h2,h4,h5,hr {
 	margin: 0;
 	padding: 0;
@@ -24,6 +16,15 @@ p,h1,h2,h4,h5,hr {
 :active, :hover, :focus {
     outline: 0;
     outline-offset: 0;
+}
+.offer__container::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+.offer__container {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
 }
 p {
 	font-size: 16px;
@@ -357,6 +358,9 @@ footer {
 	width: 220px;
 	margin: auto;
 }
+.foot__info {
+	width: 100%;
+}
 .foot__social_m {
 		display: none;
 }
@@ -486,10 +490,6 @@ nav {
 }
 .right-bar__news_title:hover {
 	color: #b5b333;
-}
-.nav__link:hover {
-	border-bottom: 1px solid #fff;
-    transition: 0.1s
 }
 .news__item_title:hover {
 	color: #b5b333;
@@ -661,7 +661,8 @@ nav {
 .offer__input {
 	display: block;
 	width: 91%;
-	height: 44px;
+	padding-top: 15px;
+    padding-bottom: 15px;
 	padding-left: 20px;
 	border: 2px solid #f7aa02;
 	border-radius: 3px;
@@ -828,6 +829,7 @@ textarea[name="description"]::-moz-placeholder {
 	.offer {
 		width: calc(100% - 60px);
 	}
+	
 }
 @media screen and (min-width: 480px) {
 	
@@ -935,6 +937,9 @@ textarea[name="description"]::-moz-placeholder {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+	.foot__info {
+		width: auto;
+	} 
 	/*about*/
 	.about__video_iframe {
 		height: 300px;
@@ -982,19 +987,13 @@ textarea[name="description"]::-moz-placeholder {
 	.project__item:nth-child(4) {
 		margin-right: 0;
 	}
-	.foot {
-		display: block;
-	}
 	.foot__href {
-		float: left;
-		margin-left: 20px;
+		margin-left: 40px;
 	}
 	.foot__logo {
-		float: right;
-		margin-right: 30px;
+		margin-left: 190px;
 	}
 	.foot__idea {
-		clear: both;
 		width: 178px;
 		margin: auto;
 		margin-top: 30px;
@@ -1088,11 +1087,10 @@ textarea[name="description"]::-moz-placeholder {
 		display: none;
 	}
 	.foot__logo {
-		float: none;
 		display: flex;
 		flex-direction: row;
-		width: 50%;
     	justify-content: space-around;
+    	margin-left: 0;
 	}
 	.foot__social {
 		display: flex;
@@ -1101,18 +1099,23 @@ textarea[name="description"]::-moz-placeholder {
 		display: block;
 		text-align: right;
 	}
-	.foot__info {
-		float: right;
-		margin-top: -165px;
-	}
 	.foot {
 		padding-top: 40px;
 		padding-right: 20px;
 	}
 	.foot__idea {
-		clear: none;
-		margin-top: 180px;
-		left: 60px;
+		margin-top: -90px;
+		left: 210px;
+		bottom: 60px;
+		margin-left: 100px;
+	}
+	.foot__info {
+		margin-top: 25px;
+	}
+	.foot__law {
+		position: relative;
+		bottom: 43px;
+    	left: 50px;
 	}
 	.foot__law_text {
 		width: auto;
@@ -1240,7 +1243,9 @@ textarea[name="description"]::-moz-placeholder {
 	}
 
 } 
+
 @media screen and (min-width: 960px) {
+
 	.head__menu {
 		display: none;
 	}
@@ -1313,6 +1318,10 @@ textarea[name="description"]::-moz-placeholder {
 		width: 47%;
 		margin-top: 20px;
 	}
+	.project__item:hover {
+		box-shadow: 0px 0px 50px 0px rgba(168, 167, 167, 1);
+		transition: 0.3s;
+	}
 	.project__item_title {
 		font-size: 26px;
 	}
@@ -1324,15 +1333,19 @@ textarea[name="description"]::-moz-placeholder {
 		margin: 0;
 		margin-bottom: 30px;
 	}
-	.right-bar__last {
-    	float: right;
-	}
 	.right-bar__youtube {
-		clear: both;
 		width: calc(100% - 20px);
-    	float: right;
     	margin-top: 50px;
     	height: 199px;
+    	margin-left: 20px;
+	}
+	.nav__link:hover {
+		border-bottom: 1px solid #fff;
+    	transition: 0.1s
+	}
+	.foot__href_link-project:hover {
+		text-decoration: underline;
+    	transition: 0.1s
 	}
 	.right-bar__news_img {
 		width: 100%;
@@ -1418,9 +1431,6 @@ textarea[name="description"]::-moz-placeholder {
 	.foot__href_link {
 		margin: 0;
 	}
-	.foot__info {
-		margin-top: -145px;
-	}
 	.foot__law {
 		margin-top: 30px;
 		margin-bottom: 0;
@@ -1438,15 +1448,19 @@ textarea[name="description"]::-moz-placeholder {
 	h3 {
 		font-size: 22px;
 	}
-	nav {
+	.nav__container {
 		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 70px;
+	}
+	nav {
 		background-color: #f7aa02;
 		margin: 0 -20px;
 		height: 70px;
-		align-items: center;
-		justify-content: space-around;
 		position: static;
 		width: auto;
+		display: block;
 	}
 	.nav__contact {
 		display: none;
@@ -1501,6 +1515,9 @@ textarea[name="description"]::-moz-placeholder {
 		margin-top: 20px;
 		margin-bottom: 50px;
 	}
+	.nav__container {
+		height: 80px;
+	}
 	nav {
 		height: 80px;
 	}
@@ -1530,6 +1547,16 @@ textarea[name="description"]::-moz-placeholder {
 	}
 	.news__item_title {
 		font-size: 26px;
+	}
+}
+@media screen and (min-width: 1100px) {
+	.foot__project {
+		width: 19%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.foot__project {
+		width: 22%;
 	}
 }
 @media screen and (min-width: 1370px)  {
@@ -1599,8 +1626,24 @@ textarea[name="description"]::-moz-placeholder {
 	.right-bar__news_title {
 		font-size: 24px;
 	}
+	.foot__project {
+		width: 26%;
+	}
 	/*contacts*/
 	.contacts__offise_img {
 		margin-left: 50px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.container {
+   	 	width: 1440px;
+	}
+	.flexbox {
+		width: 1400px;
+    	margin: auto;
+	}
+	.nav__container {
+		width: 1440px;
+		margin: auto;
 	}
 }
