@@ -32,17 +32,17 @@ body {
 }
 
 
-.count p .time5 p {
+.count .time5 p {
     font-size: 14px;
     margin-left: 17px;
     margin-right: 20px;
     position: relative;
     bottom: 7px;
 }
-.count p .time5 p:first-child {
+.count .time5 p:first-child {
     right: 11px;
 }
-.count p .time5 p:nth-child(2) {
+.count .time5 p:nth-child(2) {
     right: 12px;
 }
 .time5 {
