@@ -45,7 +45,7 @@ body {
 .count p .time5 p:nth-child(2) {
     right: 12px;
 }
-.count p .time5 {
+.time5 {
     display: flex;
     justify-content: center;
 }
