@@ -34,16 +34,13 @@ body {
 
 .count .time5 p {
     font-size: 14px;
-    margin-left: 17px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 60px;
     position: relative;
     bottom: 7px;
 }
 .count .time5 p:first-child {
-    right: 11px;
-}
-.count .time5 p:nth-child(2) {
-    right: 12px;
+    right: -22px;
 }
 .time5 {
     display: flex;
