@@ -1,0 +1,195 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 100%;
+    font-family: "Roboto", Arial, sans-serif;
+}
+html, body {
+    min-height: 100%;
+}
+body {
+    background: url("back.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.back {
+    max-width: 1170px;
+   
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+   /* position: absolute;*/
+
+   
+   margin-top: 5%;
+   margin-bottom: 5%;
+   
+    /*max-width: 90%;*/
+    /*max-height: 90%;*/
+    overflow-y: auto;
+
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+
+
+h1,h2 {
+    text-align: center;
+    color: #fff;
+}
+h1 {
+    font-size: 36px;
+} h2 {font-size: 22px;font-weight: 300;/* margin-top: 15px; */}
+/*.images {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images .image {
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+.images .image img {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.images .image .img {
+    position: relative;
+}*/
+.price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 3px 0 10px 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.name {
+    color: #fff;
+    padding: 10px;
+}
+.name span {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+table {
+border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+border: 1px solid white; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+width: 100%;
+}
+
+th, td {
+border: 1px solid white;
+color: white;
+padding: 1%;
+}
+
+th, td:first-child
+{
+    width: 30%;
+}
+
+th, td:nth-child(2)
+{
+    width: 30%;
+
+}
+
+th, td:nth-child(3)
+{
+    width: 10%;
+}
+
+
+td img
+{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+
+   /* max-width: 150px;
+    max-height: 150px;*/
+}
+
+td p:first-child
+{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+td p:nth-child(2)
+{
+    color: white;
+    font-size: 18px;
+    padding-left: 2%;
+    text-align: center;
+}
+
+
+td:nth-child(3)
+{
+    text-align: center;
+}
+
+
+
+/*table
+{
+    border: 2px solid white;
+}
+
+th {
+    border-collapse: collapse;
+     border:3px solid white;
+}
+
+td
+{
+border: 2px solid white;
+    width: 35%;
+    color: white;
+    
+
+
+}*/
+

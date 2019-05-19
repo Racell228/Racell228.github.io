@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1100">
+    <title>Рослини Хижаки</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" media="all" href="css/animate.css">
+    <script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</head>
+<body>
+	<div class="block1">
+	<header>
+    	<div class="wrapper clearfix">
+    	    <div class="logo"><span class="yellow">Рослини</span> Хижаки</div>
+    	    <!-- <p class="call">+38 (093) 918 06 35</p> -->
+    	    <a href="#modal" class="btn open_modal">Замовити дзвінок</a>
+    	</div>
+    </header>
+    <div class="wrapper clearfix">
+
+		<div class="h1_bg" id="up"><h1>Акція!!! Велика рослина <sapn class="red">Венерина Мухоловка </sapn> всього <sapn class="red">від 199грн </sapn>+ Комплект в Подарунок: Книга По Догляду і Ґрунт! <sapn class="red"></sapn></h1></div>
+    <div class="p_bg"><p>До кінця акції залишилось</p>
+       <script src="//megatimer.ru/get/1eadcd4d394d28b411c9544a232fb711.js"></script></div>
+        <div class="trig">
+            <div class="triger wow bounceIn" data-wow-delay="0.5s">
+                <img src="images/booker.png" alt="">
+                <p>Книга по догляду</p>
+            </div>
+            <div class="triger wow bounceIn" data-wow-delay="0.7s">+</div>
+            <div class="triger wow bounceIn" data-wow-delay="1.2s">
+                <img src="images/grunt.png" alt="">
+                <p>Спеціальный ґрунт</p>
+            </div>
+            <div class="triger wow bounceIn" data-wow-delay="1.4s">+</div>
+            <div class="triger wow bounceIn" data-wow-delay="1.9s">
+                <img src="images/semki.png" alt="">
+                <p>Рослина в горщику</p>
+            </div>
+        </div>
+        <a href="#modal2" class="btn btn-1 open_modal">Замовити зараз</a>
+
+    	<div class="plant"></div>
+         <div class="up" id="btn_up"><a href="#up" class="scrollto"><img src="images/up.png"></a></div>
+    	</div>
+    </div>
+    <div class="block2">
+    	<div class="wrapper clearfix">
+    		<div class="bl1 bl">
+    			<img src="images/img1.jpg" alt="Никаких насекомых">
+    			<p>Ваш помічник<br>у <span>знищенні</span>
+					 комах</p>
+    		</div>
+    		<div class="bl2 bl">
+    			<img src="images/img2.jpg" alt="Экзотическое украшение">
+    			<p>Екзотична<br>
+				<span>прикраса </span>будинку</p>
+    		</div>
+    		<div class="bl3 bl">
+    			<img src="images/img3.jpg" alt="Оригинальный подарок">
+    			<p><span>Оригінальний</span><br>
+					подарунок</p>
+    		</div>
+    	</div>
+    </div>
+    <div class="block3">
+    	<div class="wrapper clearfix">
+    		<div class="green_line"></div>
+    		<h1>Коротко про Венерину<br>Мухоловку</h1>
+    		<div class="green_line"></div>
+    		<div class="text3">
+    		<p><span>Dioneа muscipula (Венерина мухоловка)</span> – багаторічна трав'яниста комахоїдна рослина, єдиний представник свого роду із сімейства<span> Росичкових (Droseraceae)</span>. Наукова назва виду<span> (muscipula)</span> перекладається з латині як <span>«мишоловка»</span>. Цю назву рослина ймовірно отримала в результаті помилки ботаніка, який власне хотів написати muscicipula (пастка мух). Діона, в грецькій міфології була матір'ю Афродіти, в римському варіанті Венери - римської богині любові і рослин. Цей вид належить до мало чисельної  групи рослин, які здатні до швидких рухів.</p>
+    		<p>В природі <span>Венерина мухоловка </span>виростає на торф'яних трясовинних болотах на Атлантичному узбережжі США, в штатах Північна і Південна Кароліна. Відома також популяція цих рослин у Флориді, але цей штат не є істинною батьківщиною рослин. Насіння Венериної мухоловки було завезене і висіяне тут одним садівником в <span>1930-х роках</span>.</p>
+    		</div>
+    		<img src="images/block3_img.png" height="624" width="538" alt="Венера мухоловка">
+    		<iframe width="640" height="360" src="https://www.youtube.com/embed/-xvKGhaMVLM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    	</div>
+    </div>
+    <div class="block4">
+			<div class="green_line2"></div>
+    			<h1>Догляд за рослиною</h1>
+    		<div class="green_line2"></div>
+    		<div class="uhod1 uhod wow fadeInLeft" data-wow-offset="200">
+    			<img src="images/uhod_1.png" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="200" alt="">
+    			<h2>Місцезнаходження</h2>
+    			<p>Венерина мухоловка (dioneamuscipula) віддає превагу світлому місцю розташування. Відмінним варіантом буде 4-5 годин прямого ранкового і вечірнього сонця. А ось від прямих променів полуденного сонця необхідно притінювати. Гарне освітлення є обов'язковою умовою яскравого забарвлення листя і досягнення ними максимальних розмірів.</p>
+    		</div>
+    		<div class="uhod2 uhod wow fadeInLeft" data-wow-offset="200">
+    			<img src="images/uhod_2.png" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="200" alt="">
+    			<h2>Температура</h2>
+    			<p>Оптимальна температура для мухоловки влітку - 22-25 ° C, зимовий мінімум 5-10 °C. Рослина утворює підземні псевдо бульби, тому вона може зникнути взимку і знову почати рости навесні.</p>
+    		</div>
+    		<div class="uhod3 uhod wow fadeInLeft" data-wow-offset="200">
+    			<img src="images/uhod_3.png" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="200" alt="">
+    			<h2>Поливання</h2>
+    			<p>Мухоловки потребують регулярного поливу через піддон. Земляний шар ґрунту ніколи не повинен пересихати, але надмірна вологість може нашкодити. Вода для поливу повинна бути дистильованою, або дощовою, в разі, якщо ви впевнені, що вона чиста.</p>
+    		</div>
+    		<div class="uhod4 uhod wow fadeInLeft" data-wow-offset="200">
+    			<img src="images/uhod_4.png" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="200" alt="">
+    			<h2>Підживлення</h2>
+    			<p><span class="red">Важливо знати, що рослину можна годувати тільки живими комахами!</span>  Спеціально рослину не обов'язково підгодовувати, якщо вона стоїть на відкритій місцевості, зловить сама, але в разі підгодівлі, не більше 5 комах в місяць. Так само у пастки є ресурс до 5-7 захлопувань, (тому просто так закривати пастки не бажано), після чого листок жовтіє - чорніє і відмирає. Забрати його можна після того, як він повністю відокремився від всієї рослини.</p>
+    		</div>
+    		<div class="uhod5 uhod wow fadeInLeft" data-wow-offset="200">
+    			<img src="images/uhod_5.png" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="200" alt="">
+    			<h2>Ґрунт</h2>
+    			<p>Для висаджування рослин не можна використовувати звичайні земляні суміші (на основі торфу, універсальні). Природний pH для хижих рослин 3,5-4,5. Субстратом для Венериної мухоловки є суміш: верховий торф + перліт в співвідношенні 2:1 або 1:1.</p>
+    		</div>
+    </div>
+    <div class="block5">
+    	<div class="wrapper clearfix">
+    		<div class="action">
+    		    <div class="count">
+    		        <p>До кінця акції залишилось</p>
+    		        <script src="//megatimer.ru/get/4574bd98edb6ea62a7bf151439df5a13.js"></script>
+    		    </div>
+                    <div class="triger">
+                        <img src="images/booker.png" alt="">
+                        <p>Книга по догляду</p>
+                    </div>
+                    <div class="triger">+</div>
+                    <div class="triger">
+                        <img src="images/grunt.png" alt="">
+                        <p>Спеціальний ґрунт</p>
+                    </div>
+                    <div class="triger">+</div>
+                    <div class="triger">
+                        <img src="images/semki.png" alt="">
+                        <p>Корм</p>
+                    </div>
+    		</div>
+    		<div class="form2">
+    			<h2>Заповніть заявку</h2>
+    			<div class="small_green"></div>
+    			<form action="done.php" method="post" class="form">
+                    <input type="text" name="name" placeholder="Введіть ім’я" class="name" required>
+                    <input type="tel" name="phone" placeholder="Введіть телефон" class="phone valid_phone" required>
+                    <input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+                    <button class="btn">Замовити</button>
+                </form>
+    		</div>
+    	</div>
+    </div>
+    <div class="block6">
+    	<div class="wrapper clearfix">
+    		<div class="green_line3"></div>
+    		<h1>Схема роботи</h1>
+    		<div class="green_line3"></div><br>
+    		<div class="odin whys wow fadeInLeft" data-wow-offset="200" data-wow-delay="0">
+    			<img src="images/odin.png" height="181" width="134" alt="">
+    			<p>Ви залишаєте<br>заявку</p>
+    		</div>
+    		<div class="dva whys wow fadeInLeft" data-wow-offset="200" data-wow-delay="0.5s">
+    			<img src="images/dva.png" height="182" width="135" alt="">
+    			<p>Вибираєте<br>рослину</p>
+    		</div>
+    		<div class="tre whys wow fadeInLeft" data-wow-offset="200" data-wow-delay="1s">
+    			<img src="images/tre.png" height="183" width="168" alt="">
+    			<p>Оплачуєте<br>замовлення</p>
+    		</div>
+    		<div class="chetire whys wow fadeInLeft" data-wow-offset="200" data-wow-delay="1.5s">
+    			<img src="images/chetire.png" height="181" width="140" alt="">
+    			<p>Отримуєте рослину<br>поштою</p>
+    		</div>
+    	</div>
+    </div>
+    <div class="block7">
+    	<div class="wrapper clearfix">
+    		<div class="green_line4"></div>
+    		<h1>Відгуки клієнтів</h1>
+    		<div class="green_line4"></div>
+            <div class="flex">
+    		<div class="feed">
+                <div class="text-feed">
+                    <div class="flex1">
+                    <img src="images/feed-1.jpg" alt="">
+                    <div class="fio">
+                        <h2>Христина, 31 рік</h2>
+                        <h3>Київ</h3>
+                    </div>
+                    </div>
+                    <p>Не думала, що можна так позбавлятися від комах в будинку! Замовила п'ять квіток, з безкоштовною доставкою, чекаю, що вийде. Цікавий експеримент, але квіти однозначно незвичайні</p>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="text-feed">
+                    <div class="flex1">
+                    <img src="images/feed-3.jpg" alt="">
+                    <div class="fio">
+                        <h2>Валентина Степанівна, 61 рік</h2>
+                        <h3>Харків</h3>
+                    </div>
+                    </div>
+                        <p>Поповнила домашню оранжерею Венериною мухоловкою. Я вже маю досвід догляду за подібними рослинами, тому з задоволенням придбала. Хоча на подарунок замовляти не стала - хотіла невістці подарувати, хоч і ціна дуже приємна. Шкода, що в місті таких не продають, а потрібно замовляти. Придбала п'ять квіток, декілька з них віднесла в міську оранжерею - і доставку отримала безкоштовну. Дякую!</p>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="text-feed">
+                    <div class="flex1">
+                    <img src="images/feed-2.jpg" alt="">
+                    <div class="fio">
+                        <h2>Таміла Миколаївна, учитель</h2>
+                        <h3>Луцьк</h3>
+                    </div>
+                    </div>
+                        <p>Хотіла на уроці ботаніки показати учням шостих класів щось цікаве. Тому з директором погодили купівлю кількох примірників, на третій клас квітка нам дісталася безкоштовно. Дуже задоволені, діток зацікавили, і шкільний бюджет в нормі. Дякуємо вам!</p>
+                </div>
+            </div>          
+            </div>
+    	</div>
+    </div>
+
+    <div class="block8">
+    	<div class="wrapper clearfix">
+    		<div class="books">
+    		    <div class="count">
+    		        <p>До кінця акції залишилось</p>
+    		        <script src="//megatimer.ru/get/397bf0c6e44adadc8355808fe45c14be.js"></script>
+    		    </div>
+                    <div class="triger">
+                        <img src="images/booker.png" alt="">
+                        <p>Книга по догляду</p>
+                    </div>
+                    <div class="triger">+</div>
+                    <div class="triger">
+                        <img src="images/grunt.png" alt="">
+                        <p>Спеціальный ґрунт</p>
+                    </div>
+                    <div class="triger">+</div>
+                    <div class="triger">
+                        <img src="images/semki.png" alt="">
+                        <p>Рослина в горщику</p>
+                    </div>
+    		    <div class="small_green"></div>
+    		    <form action="done.php" method="post" class="form">
+                    <input type="text" name="name" placeholder="Введіть ім’я" class="name" required>
+                    <input type="tel" name="phone" placeholder="Введіть телефон" class="phone valid_phone" required>
+                    <input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+                    <button class="btn">Замовити</button>
+                </form>
+    		</div>
+    	</div>
+    </div>
+
+    <footer>
+    	<div class="wrapper clearfix">
+    	<div class="logo"><span class="yellow">Рослини</span> Хижаки</div>
+        <!-- p class="call">+38 (093) 918 06 35</p> -->
+    	<a href="#modal" class="btn_footer btn open_modal">Замовити дзвінок</a>
+    	</div>
+    </footer>
+
+
+
+    <div id="modal" class="modal_div"><!-- Само окно -->
+     <div class="modal_close"></div>
+      <!-- Тут любое содержимое -->
+      <h3>Замовити зворотній дзвінок</h3>
+       <p class="fp">Заповніть форму і ми зателефонуємо Вам найближчим часом</p>
+        <form action="done.php" method="post" class="form">
+	       <input type="text" name="name" placeholder="Введіть ім’я" class="name" required>
+	       <input type="tel" name="phone" placeholder="Введіть телефон" class="phone valid_phone" required>
+	        <input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+	       <button class="btn">Замовити</button>
+        </form>
+    </div>
+
+    <div id="modal2" class="modal_div"><!-- Само окно -->
+     <div class="modal_close"></div>
+      <!-- Тут любое содержимое -->
+      <h3>Отримай потрійний подарунок</h3>
+       <p class="fp">Заповніть форму і ми зателефонуємо Вам найближчим часом</p>
+        <form action="done.php" method="post" class="form">
+	       <input type="text" name="name" placeholder="Введіть ім’я" class="name" required>
+	       <input type="tel" name="phone" placeholder="Введіть телефон" class="phone valid_phone" required>
+	       <input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+	       <button class="btn">Отримати </button>
+        </form>
+    </div>
+
+    <div id="overlay"></div>
+
+
+      <!-- Валидация на js -->
+			<script src="masked-input1.js"></script>
+			<script src="masked-input.js"></script>
+	  <!-- Валидация на js -->
+</body>
+</html>
