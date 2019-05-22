@@ -666,6 +666,7 @@ header{
 
 .buy h2 {
 	width: 80%;
+	margin-bottom: 20px;
 }
 .buy_text {
 	text-align: right;
