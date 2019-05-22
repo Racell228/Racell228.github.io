@@ -193,3 +193,8 @@ border: 2px solid white;
 
 }*/
 
+@media screen and (max-width: 410px){
+    h1{
+    font-size: 30px;
+    }
+}
