@@ -856,3 +856,17 @@ input[type="text"]::-webkit-input-placeholder {
    	color:#5f6779; 
    	font-size: 20px;
 }
+@media (max-width: 480px) {
+	.window h2 {
+		font-size: 34px;
+	}
+	.window {
+		padding: 30px 10px;
+		left: 5%;
+		width: 90%;
+		top: 7%;
+	}
+	.thank {
+		height: calc(100vh + 350px);
+	}
+}

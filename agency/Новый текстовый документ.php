@@ -301,3 +301,36 @@ function register_post_infrastructure(){
 		'query_var'           => true,
 	) );
 }
+$(document).ready(function(){
+  $('.foundation__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="left btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg" class="left__img" alt=""></button>',
+    nextArrow: '<button type="button" class="right btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg" class="right__img" alt=""></button>'
+  });
+});
+$(document).ready(function(){
+  $('.partner_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 2000,
+     prevArrow: '<button type="button" class="left btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg" class="left__img" alt=""></button>',
+    nextArrow: '<button type="button" class="right btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg"  class="right__img" alt=""></button>'
+  });
+});
+if(window.matchMedia('(min-width: 768px)').matches){
+  $('.partner_slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="left btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg" class="left__img" alt=""></button>',
+    nextArrow: '<button type="button" class="right btn-juliet"><img src="wp-content/themes/shepetiv/assets/img/arrow_right.svg"  class="right__img" alt=""></button>'
+  });
+}
