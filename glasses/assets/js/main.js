@@ -12,3 +12,6 @@ jQuery(document).ready(function() {
     return false;
   });
 });
+
+document.getElementById('i1').value = document.location.href;
+document.forms.form1.i1.value = document.location.href; 

@@ -34,10 +34,11 @@
 			</div>
 			<div class="eTimer"></div>
 			<div class="form">
-				<form name="MyForm" action="mail1.php" method="post" id="form1">
-					<input type="text" name="name" required placeholder="Введіть ім’я...">
-					<input type="text" name="number" required placeholder="Введіть телефон...">
-					<button type="submit" id="submit" class="form_btn">Замовити</button>
+				<form name="MyForm" class="qRvb7bCdXiPeT" action="done.php" method="post">
+					<input type="text" data-label="Имя" name="name" required placeholder="Введіть ім’я...">
+					<input type="text" name="phone" class="valid_phone" data-label="Тeлeфoн" required placeholder="Введіть телефон...">
+					<input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+					<button type="submit" id="submit" class="yxvrQT44nC form_btn">Замовити</button>
 				</form>
 			</div>
 	</section>
@@ -148,10 +149,11 @@
 		<section class="buy" id="call">
 		<h2>У Вас є <span>запитання</span> стосовно товару?<br> Залиште свої контакті дані у формі нижче та ми<span> зателефонуємо</span> Вам!</h2>
 		<div class="form">
-				<form name="MyForm" action="mail1.php" method="post" id="form1">
-					<input type="text" name="name" required placeholder="Введіть ім’я...">
-					<input type="text" name="number" required placeholder="Введіть телефон...">
-					<button type="submit" id="submit" class="form_btn">Зателефонувати</button>
+				<form name="MyForm" class="qRvb7bCdXiPeT" action="done.php" method="post">
+					<input type="text" data-label="Имя" name="name" required placeholder="Введіть ім’я...">
+					<input type="text" name="phone" class="valid_phone" data-label="Тeлeфoн" required placeholder="Введіть телефон...">
+					<input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+					<button type="submit" id="submit" class="yxvrQT44nC form_btn">Замовити</button>
 				</form>
 			</div>
 	</section>
@@ -207,10 +209,11 @@
 			</div>
 		</div>
 		<div class="form">
-				<form name="MyForm" action="mail1.php" method="post" id="form1">
-					<input type="text" name="name" required placeholder="Введіть ім’я...">
-					<input type="text" name="number" required placeholder="Введіть телефон...">
-					<button type="submit" id="submit" class="form_btn">Замовити</button>
+<form name="MyForm" class="qRvb7bCdXiPeT" action="done.php" method="post">
+					<input type="text" data-label="Имя" name="name" required placeholder="Введіть ім’я...">
+					<input type="text" name="phone" class="valid_phone" data-label="Тeлeфoн" required placeholder="Введіть телефон...">
+					<input type="hidden" name="clickid" value="<?php echo $_GET['clickid'] ?>">
+					<button type="submit" id="submit" class="yxvrQT44nC form_btn">Замовити</button>
 				</form>
 			</div>
 	</section>
@@ -233,6 +236,8 @@ etType: 1, etDate: "23.05.2019.0.0", etTitleText: "До кінця акції з
 </script>
 
 <script src="assets/js/main.js"></script>
+<script src="masked-input1.js"></script>
+<script src="masked-input.js"></script>
 </body>
 
 </html>

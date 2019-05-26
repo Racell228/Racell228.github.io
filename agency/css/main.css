@@ -246,8 +246,8 @@ h4 {
 .right-bar__youtube {
 	width: 300px;
 	margin: auto;
-	height: 140px;
-	background-color: red;
+	height: 170px;
+	background-color: #ff0000;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -792,6 +792,19 @@ textarea[name="description"]::-moz-placeholder {
 }
 .card__button_like {
 	margin-right: 20px;
+}
+.right-bar__youtube_title {
+	color: #fff;
+	text-align: center;
+	padding-top: 20px;
+}
+.right-bar__youtube_btn {
+	background-color: #fff;
+	width: 250px;
+	margin: auto;
+	height: 60px;
+	border-radius: 3px;
+	margin-top: 30px;
 }
 @media screen and (min-width: 350px) {
 	body {
@@ -1342,6 +1355,10 @@ textarea[name="description"]::-moz-placeholder {
     	height: 199px;
     	margin-left: 20px;
 	}
+	.right-bar__youtube_btn {
+		width: 180px;
+	}
+
 	.nav__link:hover {
 		border-bottom: 1px solid #fff;
     	transition: 0.1s
@@ -1554,6 +1571,10 @@ textarea[name="description"]::-moz-placeholder {
 	.news__item_title {
 		font-size: 26px;
 	}
+	.right-bar__youtube_title {
+		width: 240px;
+		margin: auto;
+	}
 }
 @media screen and (min-width: 1100px) {
 	.foot__project {
@@ -1563,6 +1584,9 @@ textarea[name="description"]::-moz-placeholder {
 @media screen and (min-width: 1200px) {
 	.foot__project {
 		width: 22%;
+	}
+	.right-bar__youtube_btn {
+		width: 230px;
 	}
 }
 @media screen and (min-width: 1370px)  {
