@@ -77,7 +77,7 @@ error_reporting(-1);
 
 $phone = $_POST['phone']; //Получаем телефон юзера, заполненного на форме 
 
-$offer = "Солнцезащитные очки + антиблик"; //Что передаем на сервер
+$offer = "Сонцезахисні окуляри + антиблік"; //Что передаем на сервер
 $offer_eng = "solnce2131o4u9fw";// На английском название оффера (по нему будем смотреть дубликат) - не передается в кц
 
         if (isset($_POST['name']))//проверяем существует ли имя на ленде
@@ -116,10 +116,10 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
 
           if ($phone_valid == false)
           {
-            $line1 = "Ошибка! Заказ не может быть принят!";
+            $line1 = "Помилка! Ваше замовлення не прийнято! ";
             $color1 = "#f50000"; //Цвет заголовка. Красный
 
-            $line2 = "Причина: Ваш телефон не верен. Вероятнее в нем присутствуют символы английского или русского алфавита!";
+            $line2 = "Причина: Ваш телефон введено невірно. Ймовірно, в ньому пристуні символи англійського чи українського алфавіту.";
 
 
             $date = date("m.d.y"); ;
@@ -130,7 +130,7 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
             $mytext.= "Товар: ". $offer . ", ";
             $mytext.= "Имя: ". $name . ", ";
             $mytext.= "Телефон: ".$phone. ", ";
-            $mytext.= "Причина: "."Есть символы англ/русского алфавита.". ";\r\n";
+            $mytext.= "Причина: "."Пристуні символи англійського чи українського алфавіту". ";\r\n";
 
             $go_bad = fwrite($fp_bad, $mytext); // Запись в файл
             fclose($fp_bad); //Закрытие файла
@@ -154,11 +154,11 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
 
             if ($dublicate_phone==true && $dublicate_offer==true)
             {
-              $line1 = "Такие данные уже есть в системе";
+              $line1 = "Введені Вами дані уже пристуні в системі";
               $color1 = "#5c58d2";
 
-              $line2 = "Вероятно вы отправляли идентичный заказ. <br>&nbsp;Если вы считаете, что есть необходимость изменить данные, отправьте их снова.";
-              $line2.= "<br>Данные которые вы уже отправляли:"."Телефон: ". $phone;
+              $line2 = "Ймовірно, Ви надсилали ідентичне замовлення. <br>&nbsp;Якщо Ви вважаєте, що є необхідність змінити дані, надішліть їх знову.";
+              $line2.= "<br><span>Дані, які ви вже надсилали:</span><br>"."Телефон: ". $phone;
 
               //Пишемся в дубликат!
               $date = date("m.d.y"); ;
@@ -169,7 +169,7 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
               $mytext.= "Товар: ". $offer . ", ";
               $mytext.= "Имя: ". $name . ", ";
               $mytext.= "Телефон: ".$phone. ", ";
-              $mytext.= "Причина: "."Дубликат.". ";\r\n";
+              $mytext.= "Причина: "."Дублікат.". ";\r\n";
 
               $go_dubl = fwrite($fp_dubl, $mytext); // Запись в файл
               fclose($fp_dubl); //Закрытие файла
@@ -180,10 +180,10 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
             }
             else 
             {
-              $line1 = "Спасибо";
+              $line1 = "Дякуємо";
               $color1 = "#212121";
 
-              $line2 = "Ваш заказ принят к обработке. Наш менеджер свяжется с вами в ближайшее время!";
+              $line2 = "Ваше замовлення принято в обробку. Наш менеджер зателефонує Вам найближчим часом.";
 
               //echo "good!!";
 
@@ -233,7 +233,7 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
               $go = fwrite($fp, $mytext); // Запись в файл
               fclose($fp); //Закрытие файла
 
-              header('Location: thanks/index.html');
+              header('Location: thanks.html');
             }
             
 
@@ -243,10 +243,10 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
         }
         else 
         {
-          $line1 = "Ошибка! Заказ не может быть принят!";
+          $line1 = "Помилка! Замовлення не може бути прийнято!";
           $color1 = "#f50000"; //Цвет заголовка. Красный
 
-          $line2 = "Причина: Телефон слишком короткий, вероятнее он введен не верно.";
+          $line2 = "Причина: Телефон дуже короткий, ймовірно, його введено невірно.";
 
 
           $date = date("m.d.y"); ;
@@ -272,6 +272,8 @@ $offer_eng = "solnce2131o4u9fw";// На английском название о
 <head>
     <meta charset="UTF-8">
 	<title>Информация о заказе</title>
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 <style type="text/css">
@@ -340,10 +342,18 @@ a.button8:active {
 <p style="text-align:center">&nbsp;</p>
 <p style="text-align:center">&nbsp;</p>
 
-<p style="text-align:center"><span style="font-size:48px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:<?php echo $color1 ?>"><?php echo $line1 ?></span></span></span></p>
+<h2 style="text-align:center">
+      <span >
+        <?php echo $line1 ?>
+      </span>
+</h2>
 
-<p style="text-align:center"><span style="font-size:28px"><span style="font-family:Trebuchet MS,Helvetica,sans-serif"><span style="color:#000000"><span style="color:#808080"><?php echo $line2 ?></span></span></span></span></p>
+<h3 style="text-align:center">
+  <span style="color:#333740;">
+    <?php echo $line2 ?>
+  </span>
+</h3>
 
-<div style="background: #454545; padding: .5em 5px;"><a href="index.html" class="button8">Вернуться на сайт</a><br></div>
+<div style="text-align: center; margin-top: 50px; padding: .5em 5px;"><a class="btn" href="index.html" style="padding: 20px 40px;" class="button8">Повернутись на головну</a><br></div>
 </body>
 </html>

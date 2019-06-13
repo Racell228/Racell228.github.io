@@ -70,13 +70,14 @@ a.btn:hover{
 }
 
 a.btn{
+	width: 300px;
 	color: #fff;
 	border-radius: 100px;
 	font-size: 22px;
 	font-weight: 700;
 	text-align: center;
 	background-color: rgba(24, 163, 221, 0.8);
-	padding: 20px 40px;
+	padding: 20px 0;
 }
 
 hr{
@@ -249,11 +250,27 @@ header{
 	border-radius: 100px;
 	height: 60px;
 	border: none;
-	padding-left: 40px;
+	padding-left: 30px;
 	padding-top: 5px;
 	width: 25%;
 	margin-left: 4%;
     margin-right: 4%;
+}
+input[type="text"]::-webkit-input-placeholder { 
+	color: #5f6779; 
+	font-size: 20px;
+}
+   input[type="text"]:-ms-input-placeholder {
+    color:#5f6779; 
+    font-size: 20px;
+}
+   input[type="text"]::-ms-input-placeholder { 
+   	color:#5f6779; 
+   	font-size: 20px;
+}
+   input[type="text"]::placeholder { 
+   	color:#5f6779; 
+   	font-size: 20px;
 }
 .form_btn {
 	width: 245px;
@@ -290,10 +307,27 @@ header{
 	.form input {
 		margin-left: 2%;
 		margin-right: 2%;
+		font-size: 
 	}
 	.form {
 		text-align: center;
 	}
+	input[type="text"]::-webkit-input-placeholder { 
+	color: #5f6779; 
+	font-size: 16px;
+}
+   input[type="text"]:-ms-input-placeholder {
+    color:#5f6779; 
+    font-size: 16px;
+}
+   input[type="text"]::-ms-input-placeholder { 
+   	color:#5f6779; 
+   	font-size: 16px;
+}
+   input[type="text"]::placeholder { 
+   	color:#5f6779; 
+   	font-size: 16px;
+}
 }
 @media (max-width: 800px){
 
@@ -840,22 +874,7 @@ footer a.btn{
 .btn_up img {
 	width: 80px;
 }
-input[type="text"]::-webkit-input-placeholder { 
-	color: #5f6779; 
-	font-size: 20px;
-}
-   input[type="text"]:-ms-input-placeholder {
-    color:#5f6779; 
-    font-size: 20px;
-}
-   input[type="text"]::-ms-input-placeholder { 
-   	color:#5f6779; 
-   	font-size: 20px;
-}
-   input[type="text"]::placeholder { 
-   	color:#5f6779; 
-   	font-size: 20px;
-}
+
 @media (max-width: 480px) {
 	.window h2 {
 		font-size: 34px;

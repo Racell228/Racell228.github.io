@@ -188,3 +188,12 @@ jQuery(function(f){
         element['fade'+ (f(this).scrollTop() > 700 ? 'In': 'Out')](100);           
     });
 }); 
+
+$(document).ready(function() {
+  $('.mobile_menu a').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu').removeClass('window_mobile_translate');
+      $('.mobile_menu').addClass('window_mobile_static');
+      $('.menu-btn').toggleClass('menu-btn_active');
+  });
+});
