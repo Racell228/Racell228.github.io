@@ -79,38 +79,3 @@
 	from {transform: rotate(-7deg);}
 	to {transform: rotate(0deg);}
 }
-.picture{
-	position: relative;
-}
-.portal{
-	position: absolute;
-	left: 1px;
-}
-.vector{
-	position: relative;
-	z-index: 2;
-}
-.vector img{
-	width: 624px;
-}
-.svg {
-	width: 800px;
-	height: 600px;
-}
-@media screen and (max-width: 640px) {
-	.svg-wrapper {
-		position: relative;
-		font-size: calc(400px / 800);
-	}
-	.vector img {
-    	width: 424px;
-	}
-}
-@media screen and (max-width: 420px) {
-	.svg-wrapper {
-		font-size: calc(300px / 800);
-	}
-	.vector img {
-    	width: 314px;
-	}
-}
