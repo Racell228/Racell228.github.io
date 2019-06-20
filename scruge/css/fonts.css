@@ -17,8 +17,18 @@
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
+    font-family: 'Borsok';
+    src: url('../fonts/Borsok.eot');
+    src: url('../fonts/Borsok.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Borsok.woff') format('woff'),
+        url('../fonts/Borsok.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*@font-face {
     font-family: 'Borsok';
     src:url("https://dafonttop.com/wp-data/b/60/9060/file/boorsok.ttf") format("woff"),
     url("https://dafonttop.com/wp-data/b/60/9060/file/boorsok.ttf") format("opentype"),
@@ -26,3 +36,4 @@
     font-weight: 400;
     font-style: normal;
 }
+*/
