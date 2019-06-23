@@ -19,21 +19,8 @@
 }
 @font-face {
     font-family: 'Borsok';
-    src: url('../fonts/Borsok.eot');
-    src: url('../fonts/Borsok.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Borsok.woff') format('woff'),
-        url('../fonts/Borsok.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*@font-face {
-    font-family: 'Borsok';
-    src:url("https://dafonttop.com/wp-data/b/60/9060/file/boorsok.ttf") format("woff"),
-    url("https://dafonttop.com/wp-data/b/60/9060/file/boorsok.ttf") format("opentype"),
-    url("https://dafonttop.com/wp-data/b/60/9060/file/boorsok.ttf") format("truetype");
+    src: local('../fonts/boorsok'), url('boorsok.otf') format('otf'),
+    url('../fonts/boorsok.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
-*/

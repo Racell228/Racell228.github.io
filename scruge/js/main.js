@@ -7,28 +7,32 @@ $(document).ready(function() {
       event.preventDefault();
       $('.mobile_menu').toggleClass('window_mobile_translate').siblings().removeClass('window_mobile_translate');
       $('.mobile_menu').removeClass('window_mobile_static');
+      $('html').toggleClass('hidden').siblings().removeClass('hidden');
+
   });
-});
-$(document).ready(function() {
-  $('.close_reg').click(function(event) {
-      event.preventDefault();
-      $('.mobile_menu').removeClass('window_mobile_translate');
-      $('.mobile_menu').addClass('window_mobile_static');
-  });
-});
-jQuery(window).scroll(function() { 
-    var the_top = jQuery(document).scrollTop();
-    if (the_top > 50) {
-        jQuery('header').addClass('fixed');
-    }
-    else {
-        jQuery('header').removeClass('fixed');
-    }
 });
 $(document).ready(function() {
   $('.language').click(function(event) {
       event.preventDefault();
       $('.language_view').toggleClass('view').siblings().removeClass('view');
       $('.language_img').toggleClass('view_img').siblings().removeClass('view_img');
+  });
+});
+
+
+$(document).ready(function() {
+  $('.privacy').click(function(event) {
+      event.preventDefault();
+      $('.privacy_content').toggleClass('answer').siblings().removeClass('answer');
+      $('.privacy_arrow').toggleClass('answer_img').siblings().removeClass('answer_img');
+      $('.doc_foot').toggleClass('doc_foot_view1').siblings().removeClass('doc_foot_view1');
+  });
+});
+$(document).ready(function() {
+  $('.terms').click(function(event) {
+      event.preventDefault();
+      $('.terms_content').toggleClass('answer').siblings().removeClass('answer');
+      $('.terms_arrow').toggleClass('answer_img').siblings().removeClass('answer_img');
+      $('.doc_foot').toggleClass('doc_foot_view2').siblings().removeClass('doc_foot_view2');
   });
 });
