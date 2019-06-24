@@ -111,7 +111,7 @@ p,div,h1,h2,h3,h4,h5 {
 .hero__flex {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 .hero__flex_info-h1 {
 	color: #FE8974;
@@ -123,9 +123,10 @@ p,div,h1,h2,h3,h4,h5 {
 	font-size: 36px;
 	text-transform: uppercase;
 	margin-top: 20px;
+	text-align: right;
 }
 .description {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .plan_title {
 	font-size: 52px;
@@ -375,6 +376,11 @@ footer {
 	    margin-top: 0;
 	}
 }
+@media screen and (max-width: 1119px) {
+	.hero__flex_info-h2 {
+		text-align: left;
+	}
+}
 @media screen and (max-width: 1041px) {
 	.head_href a {
 		margin-left: 10px;
@@ -393,6 +399,16 @@ footer {
 	}
 }
 @media screen and (max-width: 992px) {
+	.hero__flex {
+		flex-direction: column;
+	}
+	.hero__flex_info-h1 {
+		text-align: center;
+	}
+	.hero__flex_info-h2 {
+		text-align: center;
+		margin-bottom: 50px;
+	}
 	.plan_item h2 {
 	    font-size: 32px;
 	    line-height: 38px;
@@ -475,12 +491,22 @@ footer {
 	.plan_title {
 		font-size: 26px;
 		line-height: 35px;
+		margin-top: 30px;
+		font-size: 34px;
 	}
 	.plan_item__text1 {
 		padding-left: 0;
 	}
 	.plan_item__text2 {
 		margin-left: 0;
+
+	}
+	.hero__flex_info-h1 {
+		font-size: 34px;
+	}
+	.hero__flex_info-h2 {
+		font-size: 28px;
+		margin-bottom: 30px;
 	}
 	.plan_item img {
 		margin-left: -90px;
@@ -763,6 +789,8 @@ footer {
 .terms_arrow,.privacy_arrow{
     transform: rotate(270deg);
     transition: 0.5s;
+    position: relative;
+    top: -5px;
 }
 .answer_img{
 	transform: rotate(360deg);
