@@ -691,6 +691,9 @@ footer {
 	font-weight: 600;
 	margin-bottom: 40px;
 }
+.contacts_flex_item-href {
+	text-decoration: none;
+}
 .contacts_flex_item-img {
 	width: 111px;
 	display: block;

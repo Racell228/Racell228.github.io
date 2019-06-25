@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.privacy').click(function(event) {
+  $('.privacy_href').click(function(event) {
       event.preventDefault();
       $('.privacy_content').toggleClass('answer').siblings().removeClass('answer');
       $('.privacy_arrow').toggleClass('answer_img').siblings().removeClass('answer_img');
@@ -29,7 +29,7 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  $('.terms').click(function(event) {
+  $('.terms_href').click(function(event) {
       event.preventDefault();
       $('.terms_content').toggleClass('answer').siblings().removeClass('answer');
       $('.terms_arrow').toggleClass('answer_img').siblings().removeClass('answer_img');
