@@ -14,11 +14,16 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.language').click(function(event) {
       event.preventDefault();
-      $('.language_view').toggleClass('view').siblings().removeClass('view');
-      $('.language_img').toggleClass('view_img').siblings().removeClass('view_img');
+      $('.language_view').addClass('view');
+      $('.language_img').addClass('view_img');
   });
 });
-
+$(document).mouseup(function (e) {
+    var container = $(".language_view");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
 
 $(document).ready(function() {
   $('.privacy_href').click(function(event) {
