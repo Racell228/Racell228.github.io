@@ -1,6 +1,6 @@
 .svg-wrapper {
 	position: relative;
-	font-size: calc(600px / 800);
+	font-size: calc(500px / 800);
 }
 .svg-wrapper svg {
 	display: block;
@@ -91,7 +91,7 @@
 	z-index: 2;
 }
 .vector img{
-	width: 624px;
+	width: 524px;
 }
 .svg {
 	width: 800px;

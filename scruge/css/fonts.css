@@ -17,10 +17,18 @@
     font-weight: 600;
     font-style: normal;
 }
+/*
 @font-face {
-    font-family: 'Borsok';
-    src: local('../fonts/boorsok'), url('boorsok.otf') format('otf'),
-    url('../fonts/boorsok.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Gilam';
+    src: url('../fonts/Gilam.eot');
+    src: url('../fonts/Gilam.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilam.woff') format('woff'),
+        url('../fonts/Gilam.ttf') format('truetype');
+}*/
+@font-face {
+    font-family: 'Panton';
+    src: url('../fonts/Panton.eot');
+    src: url('../fonts/Panton.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Panton.woff') format('woff'),
+        url('../fonts/Panton.ttf') format('truetype');
 }

@@ -2,7 +2,7 @@ html {
 	overflow-x: hidden;
 }
 body {
-	font-family: 'Borsok';
+	font-family: 'Panton';
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden; 
@@ -60,7 +60,7 @@ p,div,h1,h2,h3,h4,h5 {
 	width: 126px;
 	text-align: center;
     padding: 17px 0;
-    font-family: 'Borsok';
+    font-family: 'Panton';
     text-transform: uppercase;
     border: 2px solid #000;
 }
@@ -116,7 +116,7 @@ p,div,h1,h2,h3,h4,h5 {
 }
 .hero__flex_info-h1 {
 	color: #FE8974;
-	font-size: 54px;
+	font-size: 50px;
 	text-transform: uppercase;
 }
 .hero__flex_info-h2 {
@@ -127,7 +127,7 @@ p,div,h1,h2,h3,h4,h5 {
 	text-align: right;
 }
 .description {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .plan_title {
 	font-size: 52px;
@@ -277,7 +277,7 @@ footer {
     background: linear-gradient(to top, #f76c57, #ffbcb0);
 }
 .border1 {
-    height: 280px;
+    height: 340px;
     width: 40px;
     border-radius: 30px;
     margin-right: 50px;
@@ -573,7 +573,7 @@ footer {
 	width: 186px;
 	text-align: center;
     padding: 20px 0;
-    font-family: Borsok;
+    font-family: 'Panton';
     letter-spacing: 2px;
     text-transform: uppercase;
 
@@ -614,7 +614,7 @@ footer {
 .program span {
 	font-size: 26px;
 	color: #75A6D1;
-	font-family: Borsok;
+	font-family: 'Panton';
 	text-transform: uppercase;
 }
 .program_txt {
@@ -628,7 +628,7 @@ footer {
     width: 290px;
     text-align: center;
     padding: 22px 0;
-    font-family: Borsok;
+    font-family: 'Panton';
     font-size: 20px;
     letter-spacing: 2px;
     text-decoration: none;
@@ -653,6 +653,11 @@ form {
 	display: flex;
 	justify-content: space-between;
 }
+@media screen and (max-width: 1100px) {
+	.logo-text {
+		font-size: 26px;
+	}
+}
 @media screen and (max-width: 992px) {
 	.program p {
 		width: 80%;
@@ -668,6 +673,20 @@ form {
 		margin-bottom: 80px;
 	}
 }
+@media screen and (max-width: 680px) {
+	form {
+		flex-direction: column;
+		width: auto;
+	}
+	.input {
+		margin: auto;
+	}
+	.program .button {
+    	margin: auto;
+    	margin-top: 40px;
+    	margin-bottom: 80px;
+	}
+}
 @media screen and (max-width: 630px) {
 	.program p {
 		width: auto;
@@ -680,8 +699,15 @@ form {
 	.program .button {
 		margin-bottom: 70px;
 	}
+	.logo-text {
+		font-size: 18px;
+	}
 }
-
+@media screen and (max-width: 380px) {
+	.logo-text {
+		display: none;
+	}
+}
 
 
 
