@@ -35,3 +35,11 @@ $(document).ready(function() {
       $('.doc_foot').toggleClass('doc_foot_view2').siblings().removeClass('doc_foot_view2');
   });
 });
+jQuery(document).ready(function() {
+  jQuery(".more_btn").click(function () {
+    elementClick = jQuery(this).attr("href")
+    destination = jQuery(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+    return false;
+  });
+});

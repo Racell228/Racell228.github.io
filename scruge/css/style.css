@@ -54,19 +54,19 @@ p,div,h1,h2,h3,h4,h5 {
 	align-items: center;
 }
 .head_href .button {
-	background: linear-gradient(91.43deg, rgba(254, 137, 116, 0.5) 0.3%, #F76C57 99.6%);
+	background-color: #f15740;
 	border-radius: 30px;
 	color: #fff;
-	width: 126px;
-	text-align: center;
-    padding: 17px 0;
+	width: 147px;
+    text-align: center;
+    padding: 10px 0;
     font-family: 'Panton';
     text-transform: uppercase;
-    border: 2px solid #000;
 }
 .head_href .button:hover {
 	color: #fff;
-	background: linear-gradient(90deg, #F76C57 0%, rgba(254, 137, 116, 0.5) 100%);
+	box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
 }
 .language {
 	width: 50px;
@@ -109,15 +109,23 @@ p,div,h1,h2,h3,h4,h5 {
     height: 15px;
    	margin-left: 10px;
 }
+.hero_title {
+	width: 500px;
+	margin-right: 50px;
+}
+.hero_title-ru {
+	margin-right: 50px;
+}
 .hero__flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 .hero__flex_info-h1 {
 	color: #FE8974;
 	font-size: 50px;
 	text-transform: uppercase;
+	text-align: right;
 }
 .hero__flex_info-h2 {
 	color: #0C355E;
@@ -144,7 +152,7 @@ p,div,h1,h2,h3,h4,h5 {
 	line-height:28px;
 	text-align: center;
 	color: #FFFFFF;
-	background: linear-gradient(90deg, rgba(254, 137, 116, 0.5) 0%, #F76C57 100%);
+	background-color: #f15740;
 	border-radius: 30px;
 	transition: 0.5s;
 	text-decoration: none;
@@ -154,10 +162,9 @@ p,div,h1,h2,h3,h4,h5 {
     padding: 16px 0;
     margin: auto;
     margin-bottom: 200px;
-    border: 2px solid #000;
 }
 .more_btn:hover {
-	background: linear-gradient(90deg, #F76C57 0%, rgba(254, 137, 116, 0.5) 100%);
+	box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.3);
 	transition: 0.5s;
 }
 .plan_item {
@@ -482,6 +489,12 @@ footer {
 	.plan_item__text1 {
 		width: auto;
 	}
+	.hero_title {
+		margin: 0;
+	}
+	.hero_title-ru {
+		margin: 0;
+	}
 
 
 }
@@ -597,6 +610,8 @@ footer {
 	font-size: 36px;
 	text-decoration: none;
 	color: #0C355E;
+	font-family: Borsok;
+    padding-left: 10px;
 }
 .head_logotype {
 	display: flex;
@@ -614,16 +629,16 @@ footer {
 .program span {
 	font-size: 26px;
 	color: #75A6D1;
-	font-family: 'Panton';
+	font-family: 'Borsok';
 	text-transform: uppercase;
 }
 .program_txt {
 	margin: 159px 0;
 }
 .program .button{
-	background: linear-gradient(91.43deg, rgba(254, 137, 116, 0.5) 0.3%, #F76C57 99.6%);
+	background-color: #f15740;
     border-radius: 30px;
-    border: 2px solid #000;
+    border:none;
     color: #fff;
     width: 290px;
     text-align: center;
@@ -636,9 +651,13 @@ footer {
     margin-bottom: 100px;
     text-transform: uppercase;
 } 
+.program .button:hover {
+	box-shadow: 6px 4px 10px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+}
 .input {
 	border-radius: 30px;
-    border: 2px solid #000;
+    border: 1px solid #0C355E;;
     font-size: 20px;
     width: 260px;
     height: 60px;
@@ -806,7 +825,7 @@ form {
 .documents_title {
 	font-size: 68px;
 	line-height: 103.27%;
-	color: #000;
+	color: #263556;
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 60px;
