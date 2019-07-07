@@ -32,9 +32,9 @@
 @font-face {
     font-family: 'ExposureCThree';
     src: url('../fonts/ExposureCThree.eot');
-    src: local('☺'), 
-    url('../fonts/ExposureCThree.woff') format('woff'), 
-    url('../fonts/ExposureCThree.ttf') format('truetype'),
-    font-weight: normal;
+    src: url('../fonts/ExposureCThree.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ExposureCThree.woff') format('woff'),
+        url('../fonts/ExposureCThree.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
