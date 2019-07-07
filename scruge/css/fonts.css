@@ -21,9 +21,9 @@
 @font-face {
     font-family: 'Borsok';
     src:   url('../fonts/boorsok.ttf') format('truetype');
-    src: url('Borsok.eot');
-    src: url('Borsok.eot?#iefix') format('embedded-opentype'),
-        url('Borsok.woff') format('woff');
+    src: url('../fonts/boorsok.eot');
+    src: url('../fonts/boorsok.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/boorsok.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
