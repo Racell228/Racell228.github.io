@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div class="calculator">
+		<div class="close_reg"><img src="img/close_green.png" alt=""></div>
+		<div class="calculator_container">
+			<h2>Заявка</h2>
+			<hr>
+			<p class="head_p">На быстрый заказ плана эвакуации</p>
+			<form action="" class="calculator_form" id="form--calc">
+				<input type="text" placeholder="Имя...">
+				<input type="text" placeholder="Телефон..." class="calculator_form_tel">
+				<input type="text" placeholder="E-mail...">
+				<input type="text" placeholder="Адрес объекта..." class="calculator_form_place">
+				<input type="textarea" placeholder="Текст заявки..." class="textarea">
+				<div class="calc__group--input">
+					<div class="block_radio">
+					  <p>Размер:</p>
+				      <input type="radio" name="test1" id="radio1" value="400" checked><label class="radio" for="radio1">План эвакуации 400х300мм/ А3 на пластике</label>
+				      <input type="radio" id="radio2" name="test1" value="500"><label for="radio2" class="radio">План эвакуации 600х400мм/ А2 на пластике</label>
+			      </div>
+			    </div>
+			    <div class="calc__group--input">
+			    	<div class="group_amount">
+				        <label class="amount">Количество:<input type="text" name="test2" value="1"></label>
+				        <p>*Разработка макетов <span>входит в стоимость планов!</span></p>
+				    </div>
+			    </div>
+			    <div class="additionally">
+			    	<p>Доп. услуги:</p>
+				    <div class="calc__group--input">
+				    	
+				      <input id="checked"  type="checkbox" name="test5" value="100" ><label class="checkbox" for="checked">Алюминивая рамка Nielsen</label>
+				    </div>
+				    <div class="calc__group--input">
+				      <input id="check" type="checkbox" name="test5" value="200" ><label class="checkbox specialist" for="check">Вызов специалиста</label>
+				    </div>
+					
+			    </div>
+			    <hr class="bottom_form_hr">
+			    <div class="bottom_form">
+
+				    <div class="form_discount">
+				    	<p class="personal_discount">Ваша персональная скидка:</p> 
+				    	<p class="personal_percent">10%</p>
+				    </div>
+				    <div class="summ">
+				    	<span>Cумма:</span>
+				    	<div id="summ">0</div>  
+				    </div> 
+			    </div>
+			    <button class="calculator_form_btn"  action="mail1.php" method="post">Оставить заявку</button>
+			</form>
+		</div>
+</div>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
