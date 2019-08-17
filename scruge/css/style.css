@@ -188,6 +188,9 @@ p,div,h1,h2,h3,h4,h5 {
     text-transform: uppercase;
     margin-bottom: 60px;
 }
+.plan_title_en {
+	width: 780px;
+}
 .more_btn {
 	line-height:28px;
 	text-align: center;

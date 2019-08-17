@@ -17,18 +17,6 @@
     font-weight: 600;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Borsok';
-    src:   url('../fonts/boorsok.ttf') format('truetype');
-    src: url('../fonts/boorsok.eot');
-    src: url('../fonts/boorsok.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/boorsok.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 @font-face {
     font-family: 'ExposureCThree';
     src: url('../fonts/ExposureCThree.eot');
