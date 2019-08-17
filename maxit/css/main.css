@@ -1,0 +1,278 @@
+html {
+	overflow-x: hidden;
+}
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+}
+h2 {
+	font-size: 62px;
+	text-align: center;
+	color: #685B9E;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.container {
+	width: 1440px;
+	position: relative;
+	margin: auto;
+}
+.hero img {
+	width: 100%;
+}
+.fitness {
+	position: relative;
+	height: 657px;
+	margin-top: 180px;
+}
+.fitness_title {
+	text-align: left;
+}
+.fitness_flex {
+	display: flex;
+}
+.fitness_image-container {
+	position: absolute;
+}
+.fitness_description {
+	width: 600px;
+    margin:  70px 30px 0 auto;
+}
+.fintess_image {
+	width: 1000px;
+}
+.hero_mobile {
+	display: none;
+}
+.fitness_image-container {
+    position: absolute;
+    left: -240px;
+}
+.yoga {
+	margin-top: 180px;
+}
+.yoga_title {
+	margin-bottom: 90px;
+}
+.yoga_video {
+	width: 1065px;
+    height: 600px;
+    display: block;
+    margin: auto;
+}
+.href {
+	background:linear-gradient(to right, #8273c3 100%, #8273c3);
+    background-position: -600px 0;
+    background-repeat: no-repeat;
+	background-color: #685B9E;
+    width: 360px;
+    display: block;
+    margin: auto;
+    padding: 36px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: 0.5s;
+   
+}
+.advantages {
+	margin-top: 180px;
+}
+.advantages_flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 1440px;
+    margin: auto;
+}
+.advantages_item {
+	margin: 40px 60px 20px 60px;
+}
+.advantages_item-img{
+    width: 190px;
+}
+.advantages_item img{
+	height: 140px;
+}
+.advantages_item p {
+	width: 267px;
+}
+footer {
+	background-color: #4B3434;
+	margin-top: 90px;
+}
+.footer_text {
+	color: #fff;
+	text-align: center;
+	padding: 39px 0;
+	margin: 0;
+	font-size: 16px;
+}
+.href:hover {
+	background-position: 0 0;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 1440px) {
+	.container {
+		width: 100%;
+	}
+	.fitness_image-container {
+		left: -282px;
+    	width: 70%;
+	}
+	.fintess_image {
+    	width: 100%;
+	}
+	.advantages_flex {
+		width: auto;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.fitness_description {
+		width: 480px;
+	}
+	h2 {
+		font-size: 52px;
+	}
+	body {
+	    font-size: 18px;
+	}
+	.fitness_image-container {
+    	left: -232px;
+	}
+	.yoga_video {
+		width: 950px;
+	}
+	.href {
+		width: 300px;
+		font-size: 22px;
+		padding: 24px 0;
+	}
+}
+@media screen and (max-width: 992px) {
+	.fitness {
+		height: auto;
+	}
+	.fitness_image-container {
+		position: static;
+		width: 100%;
+		order: 2;
+	}
+	.fitness_description {
+	    margin: auto;
+    	width: auto;
+	}
+	.fitness_flex-tab {
+		display: flex;
+    	flex-direction: column;
+	}
+	.fitness_title {
+	    text-align: center;
+	    width: 600px;
+	    margin: auto;
+	}
+	.fitness_text {
+		padding: 0 40px;
+   		text-align: center;
+   		line-height: 30px;
+    	font-size: 20px;
+    	max-width: 750px;
+    	margin: 50px 0 70px 0;
+	}
+	.yoga_video {
+	    width: 90%;
+	    height: auto;
+	}
+	.fitness  {
+		margin-top: 120px;
+	}
+	.yoga {
+    	margin-top: 120px;
+	}
+	.advantages {
+    	margin-top: 120px;
+	}
+	footer {
+		margin-top: 50px;
+	}
+	.yoga_title {
+    	margin-bottom: 50px;
+	}
+	h2 {
+		margin-bottom: 50px;
+	}
+	.href {
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 772px) {
+	h2 {
+		font-size: 42px;
+	}
+	.advantages_item {
+    	margin: 40px 20px 20px 20px;
+	}
+	.fitness,.yoga,.advantages {
+    	margin-top: 80px;
+	}
+}
+@media screen and (max-width: 620px) {
+	.fitness_title {
+		width: auto;
+	}
+	.fitness_text {
+		line-height: 28px;
+		font-size: 20px;
+		margin: 30px 0 50px 0;
+	}
+	h2 {
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 450px) {
+	footer {
+    	margin-top: 0px;
+	}
+	h2 {
+    	font-size: 34px;
+	}
+	.fitness_text {
+		padding: 0 20px;
+		font-size: 18px;
+	}
+	.footer_text {
+		font-size: 14px;
+	}
+	.advantages_item {
+    	margin: 0px 20px 40px 20px;
+	}
+	.fitness,.yoga,.advantages {
+    	margin-top: 60px;
+	}
+	.href {
+		width: 240px;
+		padding: 14px 0;
+		font-size: 18px;
+	}
+	.hero_image {
+		display: none;
+	}
+	.hero_mobile {
+		display: block;
+	}
+
+
+}
