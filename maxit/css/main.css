@@ -66,7 +66,7 @@ h2 {
 }
 .button_flex {
 	display: flex;
-	max-width: 700px;
+	max-width: 500px;
 	margin: auto;
 }
 .href {
@@ -273,6 +273,7 @@ footer {
 	}
 	.button_flex {
 		display: block;
+		margin-top: 30px;
 	}
 	.href {
     	margin-top: 24px;
@@ -282,6 +283,9 @@ footer {
 	}
 	.hero_mobile {
 		display: block;
+	}
+	.yoga_title {
+    	margin-bottom: 30px;
 	}
 
 
