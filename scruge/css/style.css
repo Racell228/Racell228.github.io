@@ -251,6 +251,16 @@ p,div,h1,h2,h3,h4,h5 {
 	padding-left: 50px;
 	display: flex;
 }
+.plan_item_image {
+	position: relative;
+}
+.plan_item_image-absolute {
+  width: 353px;
+  top: 116px;
+  position: absolute;
+  margin: 0;
+  right: 14px;
+}
 .appstore {
 	position: relative;
 	margin-top: 100px;
