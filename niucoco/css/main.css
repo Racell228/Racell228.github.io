@@ -75,12 +75,17 @@ header {
 }
 .hero h1 {
 	font-size: 46px;
-    max-width: 850px;
-    color: #fff;
-    text-align: center;
-    margin: auto;
-    padding-top: 140px;
-    height: 100px;
+  max-width: 850px;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  height: 100px;
+  line-height: 70px;
+}
+.hero_p {
+	margin-top: 60px;
+	margin-bottom: 0;
 }
 .join {
 	width: 276px;
@@ -96,11 +101,37 @@ header {
 	margin: auto;
 	width: 100%;
 }
+.logos {
+	max-width: 900px;
+  margin: 60px auto 0;
+  padding: 50px 100px;
+  background-color: #fff;
+}
+.logos_flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.logos h2{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #D1AF39;
+}
+.logos_item{
+	width: 27%;
+	margin: 30px 20px 0 20px;
+}
+.logos_img{
+	width: 160px;
+	margin: auto;
+}
 .meet_niucoco {
 	max-width: 900px;
-    margin: auto;
-    padding: 50px 100px;
-    background-color: #fff;
+  margin: auto;
+  padding: 50px 100px;
+  background-color: #fff;
 }
 .meet_niucoco h2 {
 	margin: 0;
@@ -143,9 +174,9 @@ header {
 }
 .for_all {
 	max-width: 900px;
-    margin: auto;
-    padding: 60px 100px;
-    background-color: #fff;
+  margin: 60px auto;
+  padding: 60px 100px;
+  background-color: #fff;
 }
 .for_all-flex {
 	display: flex;
@@ -161,6 +192,10 @@ header {
 }
 .for_all-flex .goods_item {
 	margin: 0 65px 0 0;
+}
+.for_all .btn {
+	width: 276px;
+    margin: 50px auto 0;
 }
 .rewievs h2 {
 	margin: 60px 0 0;
@@ -188,8 +223,6 @@ header {
 .footer_product {
 	max-width: 900px;
     margin: 60px auto;
-    padding: 30px 100px 60px 100px;
-    background-color: #fff;
 }
 .footer_product .goods_items {
 	justify-content: space-around;
@@ -204,7 +237,35 @@ header {
     font-weight: 300;
     font-size: 14px;
 }
+.results {
+		max-width: 900px;
+    margin: 60px auto;
+    padding: 1px 100px 20px 100px;
+    background-color: #fff;
+}
+.results h2{
+	margin-bottom: 60px;
+	text-align: center;
+}
+.results_items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.results_item {
+	display: flex;
+	margin: auto;
+}
+.results_item img {
+	width: 200px;
+}
+.results_item p {
+	text-align: center;
+	margin: 10px 0 40px;
+}
+@media screen and (max-width:1100px) {
 
+}
 @media screen and (max-width:900px) {
 	.meet_niucoco {
 		padding: 50px 20px;
@@ -247,6 +308,20 @@ header {
 		margin-top: 40px;
 	}
 }
+@media screen and (max-width:768px) {
+	.hero h1 {
+		font-size: 38px;
+		line-height: 54px;
+	}
+}
+@media screen and (max-width:700px) {
+	.logos_item {
+    width: 170px;
+	}
+	.logos {
+		padding: 50px 20px;
+	}
+}
 @media screen and (max-width:620px) {
 	h2 {
 		margin: 30px 0 0;
@@ -285,6 +360,10 @@ header {
 	.footer_product .goods_items {
 		margin-top: 0;
 	}
+	.results {
+		padding: 1px 0;
+	}
+	
 }
 @media screen and (max-width:500px) {
 	header .header_btn {
@@ -295,11 +374,20 @@ header {
 	}
 	header {
 		display: block;
-        height: auto;
-        padding-top: 20px;
+    height: auto;
+    padding-top: 20px;
+	}
+	.hero h1 {
+    padding: 90px 20px;
+	}
+
+}
+@media screen and (max-width:440px) {
+	.results_item img {
+    width: 140px;
 	}
 }
-@media screen and (max-width:360px) {
+@media screen and (max-width:373px) {
 	.goods_items {
     	width: 280px;
 	}
@@ -308,5 +396,7 @@ header {
 	}
 	.hero h1 {
    		padding: 90px 20px;
+   		font-size: 30px;
+      line-height: 44px;
 	}
 }
