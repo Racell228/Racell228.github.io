@@ -35,6 +35,7 @@ h1 {
 }
 h2 {
 	font-size: 30px;
+	line-height: 43px;
 }
 h3 {
 	font-size: 22px;
@@ -180,7 +181,7 @@ header {
 }
 .niococo_txt-text {
 	margin-top: 30px;
-	line-height: 20px; 
+	line-height: 23px; 
 }
 .video_item {
 	width: 800px;
@@ -213,10 +214,11 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 80px 0;
+	margin-top: 60px;
 }
 .completely_item {
 	width: 393px;
-	height: 543px;
+	height: 613px;
 	padding: 0 100px;
 	background-color: #fff;
 	margin: auto;
@@ -228,7 +230,13 @@ header {
 	margin-bottom: 60px;
 }
 .completely_title {
-	padding: 80px 0 60px;
+	padding: 60px 0 30px;
+}
+.completely_txt {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 16px;
+  line-height: 23px;
 }
 .completely_btn {
 	width: 270px;
@@ -256,6 +264,12 @@ header {
 	text-align: center;
 	margin-top: 80px;
 	text-transform: uppercase;
+}
+.results_subtitle {
+	text-align: center;
+	font-weight: 500;
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 .results_btn {
 	width: 270px;
@@ -420,6 +434,10 @@ footer p {
 	}
 	.completely_item_flex {
 		justify-content: space-around;
+	}
+	.completely_txt {
+		padding: 0 20px;
+		margin-bottom: 10px;
 	}
 	.completely_item_flex img {
 		margin-top: 30px;
