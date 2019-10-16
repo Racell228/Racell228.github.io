@@ -172,7 +172,7 @@ header {
 	background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  background-position: center;
+  background-position: right;
 }
 .niococo_txt {
 	width: 600px;
@@ -288,7 +288,8 @@ header {
 	margin: 18px 0 14px;
 }
 .reviews_text {
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 20px;
 }
 .reviews_btn {
 	width: 270px;
@@ -297,7 +298,7 @@ header {
 }
 footer p {
 	text-align: center;
-	font-size: 18px;
+	font-size: 14px;
 	margin: 40px 0;
 }
 .niucoco_image {
@@ -343,7 +344,6 @@ footer p {
 	.niococo_txt {
 		width: 450px;
 		padding: 70px 20px;
-		background-color: #EAEAEC;
 	}
 
 }
