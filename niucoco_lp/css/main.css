@@ -250,11 +250,9 @@ header {
 	margin-top: 80px;
 }
 .completely {
-	background-image: url(../img/completely_bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
 	padding: 80px 0;
 	margin-top: 60px;
+	display: flex;
 }
 .completely_item {
 	width: 393px;
@@ -262,26 +260,32 @@ header {
 	padding: 0 100px;
 	background-color: #fff;
 	margin: auto;
-	border: 1.5px solid #D1AF39;
 }
 .completely_item_flex {
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 	align-items: center;
 	margin-bottom: 60px;
+}
+.completely_item_flex img {
+	width: 120px;
+	margin-right: 70px;
 }
 .completely_title {
 	padding: 60px 0 30px;
 }
 .completely_txt {
 	margin-bottom: 40px;
-	text-align: center;
 	font-size: 16px;
   line-height: 23px;
 }
 .completely_btn {
 	width: 270px;
-	margin: auto;
+}
+.video_item1 {
+	width: 800px;
+    margin: auto;
+    display: block;
 }
 .results_text {
 	font-size: 18px;
