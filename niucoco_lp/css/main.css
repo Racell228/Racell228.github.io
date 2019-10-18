@@ -115,6 +115,8 @@ hr {
 }
 .hero {
 	background-image: url(../img/hero_bg.png);
+	background-size: cover;
+  background-position-x: right;
 }
 .hero_table_item {
 	display: flex;
