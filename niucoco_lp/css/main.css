@@ -35,7 +35,8 @@ a:hover {
 	opacity: 0.8;
 }
 h1 {
-	font-size: 62px;
+	font-size: 50px;
+	color: #fff;
 }
 h2 {
 	font-size: 30px;
@@ -56,7 +57,7 @@ header {
 }
 hr {
 	margin: 0;
-	border: 1px solid #D1AF39;
+	border: 2px solid #D1AF39;
 	background-color: #D1AF39;
 }
 .header_flex {
@@ -112,6 +113,9 @@ hr {
 	left: 0px;
 	transform: rotate(180deg);
 }
+.hero {
+	background-image: url(../img/hero_bg.png);
+}
 .hero_table_item {
 	display: flex;
 	margin: 20px 0;
@@ -124,6 +128,10 @@ hr {
 	font-weight: 500;
 	margin: 40px 0;
 	line-height: 36px;
+	color: #fff;
+}
+.hero h4 {
+	color: #fff;
 }
 .hero_btn {
 	width: 164px;
@@ -363,6 +371,8 @@ hr {
 .reviews_title {
 	text-align: center;
 	text-transform: uppercase;
+	max-width: 460px;
+  margin: auto;
 }
 .reviews_item {
 	width: 384px;
@@ -419,7 +429,7 @@ footer p {
 		margin: 10px 0;
 	}
 	h1 {
-		font-size: 42px;
+		font-size: 34px;
 	}
 	.hero_txt_subtitle {
     font-size: 18px;
@@ -641,7 +651,7 @@ footer p {
 }
 @media screen and (max-width:420px) {
 	h1 {
-		font-size: 32px;
+		font-size: 26px;
 	}
 	.hero_txt_subtitle {
 		font-size: 16px;
