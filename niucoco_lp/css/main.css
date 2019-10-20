@@ -418,9 +418,6 @@ footer p {
 		font-size: 22px;
 		margin: 20px 0;
 	}
-	h1 {
-		font-size: 52px;
-	}
 	.hero_img {
 		width: 100%;
 	}
@@ -438,6 +435,7 @@ footer p {
 	}
 	h1 {
 		font-size: 34px;
+		line-height: 48px;
 	}
 	.hero_txt_subtitle {
     font-size: 18px;
@@ -502,6 +500,8 @@ footer p {
 	}
 	.products_item {
 		margin: 10px;
+		min-height: 300px;
+    padding-bottom: 30px;
 	}
 	.shipping_href {
 		font-size: 16px;
@@ -556,6 +556,10 @@ footer p {
 	}
 }
 @media screen and (max-width:650px) {
+	h1 {
+		font-size: 34px;
+    line-height: 43px;
+	}
 	.completely {
     padding: 40px 0;
   }
@@ -596,12 +600,12 @@ footer p {
 		margin: 20px auto;
 	}
 	.trio_items {
-		margin: 40px 0 0;
+		margin: 20px 0 0;
 	}
 	.shipping {
 		right: 0;
-		padding-bottom: 40px;
-    margin: 30px 0;
+		padding-bottom: 30px;
+    margin: 20px 0;
 	}
 	.shipping_subtitle {
 		margin-bottom: 25px;
@@ -609,8 +613,11 @@ footer p {
 	.shipping_href {
 		margin-top: 0;
 	}
+	.shipping img {
+		margin: 30px 0 30px;
+	}
 	.trio_title {
-		padding-top: 40px;
+		padding-top: 30px;
 	}
 	.video_logo {
 	margin: 0 auto 40px;
@@ -619,7 +626,7 @@ footer p {
 		margin-top: 40px;
 	}
 	.products {
-		padding: 40px 0;
+		padding: 30px 0;
 	}
 }
 @media screen and (max-width:566px) {
@@ -632,7 +639,7 @@ footer p {
 }
 @media screen and (max-width:500px) {
 	.products_item {
-		padding: 0 20px;
+		padding: 0 20px 20px;
 	}
 	.products_item_flex img {
 		margin-right: 10px;
@@ -651,7 +658,7 @@ footer p {
     width: 150px;
 	}
 	.niococo_txt {
-		padding: 40px 20px;
+		padding: 30px 20px;
 	}
 	.niococo_txt-text {
 		margin-top: 20px;
@@ -660,15 +667,59 @@ footer p {
 @media screen and (max-width:420px) {
 	h1 {
 		font-size: 26px;
+    line-height: 33px;
 	}
 	.hero_txt_subtitle {
 		font-size: 16px;
 	}
+	.hero_txt {
+		margin: 20px auto 0;
+	}
+	.hero_next {
+		margin-top: 30px;
+    margin-bottom: 30px;
+	}
 	.hero_next .hero_txt_subtitle {
 		font-size: 16px;
+		line-height: 27px;
+	}
+	.hero_btn {
+		margin: 30px 0 0;
+	}
+	.completely_item {
+		padding: 30px 10px;
+	}
+	.completely_title {
+		padding: 0 0 20px;
 	}
 	.completely_item_flex img {
 		width: 120px;
+		margin-top: 20px;
+	}
+	.video_item {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.video_logo img {
+		width: 160px;
+	}
+	.results_title {
+		margin-top: 30px;
+	}
+	.results_item {
+		margin: 30px 10px 0;
+	}
+	.results_btn {
+		margin: 30px auto 30px;
+	}
+	.reviews {
+		padding: 30px 0;
+	}
+	.reviews_item {
+		margin: 30px 10px 0;
+	}
+	.reviews_btn {
+		margin: 30px auto 0;
 	}
 }
 @media screen and (max-width:380px) {
