@@ -282,6 +282,7 @@ hr {
 	justify-content: space-between;
 	width:799px;
 	flex-wrap: wrap;
+	align-items: center;
 	margin: 0 auto 80px;
 }
 .video_logo_title {
