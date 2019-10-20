@@ -556,7 +556,7 @@ footer p {
 		justify-content: space-evenly;
 	}
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width:657px) {
 	h1 {
 		font-size: 34px;
     line-height: 43px;
