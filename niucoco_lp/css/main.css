@@ -415,6 +415,9 @@ footer p {
 }
 
 @media screen and (max-width:1353px) {
+	.hero {
+		background-position-x: 40%;
+	}
 	.hero_txt_subtitle {
 		font-size: 22px;
 		margin: 20px 0;
@@ -522,6 +525,9 @@ footer p {
 	}
 }
 @media screen and (max-width:900px) {
+	.hero {
+		background-position-x: right;
+	}
 	.hero_flex {
 			flex-direction: column;
 		}
