@@ -173,6 +173,23 @@ header {
 	color: #D1AF39;
 	margin: 0 0 0 10px;
 }
+.niococo_flex {
+	display: flex;
+}
+.niococo {
+	background-image: url(../img/niucoco.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: right;
+	background-position-y: center;
+}
+.niococo_txt {
+	width: 560px;
+	padding: 40px 0;
+}
+.niucoco_image {
+	display: none;
+}
 .for_all {
 	max-width: 900px;
   margin: 60px auto;
@@ -263,8 +280,31 @@ header {
 	text-align: center;
 	margin: 10px 0 40px;
 }
+@media screen and (max-width:1224px) {
+	.niococo_txt {
+		width: 450px;
+		padding: 70px 20px;
+	}
+}
 @media screen and (max-width:1100px) {
-
+	.niococo {
+		background-image: none;
+		height: auto;
+	}
+	.niococo_flex {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.niucoco_image {
+		width: 100%;
+		display: block;
+	}
+	.niococo_txt {
+		width: calc(100% - 40px);
+	}
+	.dry_img {
+	width: 400px;
+	}
 }
 @media screen and (max-width:900px) {
 	.meet_niucoco {
@@ -390,6 +430,12 @@ header {
 	.logos_img {
 		width: 100%;
 	}
+	.niococo_txt {
+		padding: 30px 20px;
+	}
+	.niococo_txt-text {
+		margin-top: 20px;
+	}
 	.results h2 {
 		margin-bottom: 30px;
 	}
@@ -404,6 +450,9 @@ header {
 	}
 }
 @media screen and (max-width:373px) {
+	.header_btn {
+		width: 280px;
+	}	
 	.goods_items {
     	width: 280px;
 	}
@@ -413,5 +462,5 @@ header {
 	.hero h1 {
     font-size: 24px;
     line-height: 34px;
-	}	
+	}
 }
