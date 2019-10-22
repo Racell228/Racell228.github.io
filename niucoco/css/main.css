@@ -33,6 +33,7 @@ p {
 }
 h2 {
 	font-size: 26px;
+	line-height: 36px;
 	font-weight: 500;
 	margin: 60px 0 0;
 }
@@ -117,7 +118,7 @@ header {
 	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	color: #D1AF39;
+	text-transform: uppercase;
 }
 .logos_item{
 	width: 27%;
@@ -245,7 +246,6 @@ header {
 }
 .results h2{
 	margin-bottom: 60px;
-	text-align: center;
 }
 .results_items {
 	display: flex;
@@ -292,8 +292,13 @@ header {
 	.for_all-flex h2 {
 		text-align: center;
 	}
+	.hero {
+		background-size: cover;
+		height: auto;
+	}
 	.hero h1 {
-		padding: 140px 20px;
+		padding: 50px 20px;
+    	height: auto;
 	}
 	.footer_product {
 		padding: 50px 20px;
@@ -319,13 +324,14 @@ header {
     width: 170px;
 	}
 	.logos {
-		padding: 50px 20px;
+		padding: 50px 0;
 	}
 }
 @media screen and (max-width:620px) {
 	h2 {
 		margin: 30px 0 0;
 		font-size: 22px;
+		line-height: 32px;
 	}
 	p {
 		margin: 15px 0;
@@ -342,8 +348,8 @@ header {
 		background-position-x: center;
 	}
 	.hero h1 {
-		font-size: 36px;
-		line-height: 48px;
+    font-size: 28px;
+    line-height: 40px;
 	}
 	.goods_items {
 		width: 320px;
@@ -377,10 +383,20 @@ header {
     height: auto;
     padding-top: 20px;
 	}
-	.hero h1 {
-    padding: 90px 20px;
+	.logos_item {
+		width: 40%;
+		margin: 30px 5px 0;
 	}
-
+	.logos_img {
+		width: 100%;
+	}
+	.results h2 {
+		margin-bottom: 30px;
+	}
+	.footer_product {
+		padding: 0 20px;
+		margin: auto;
+	}
 }
 @media screen and (max-width:440px) {
 	.results_item img {
@@ -395,8 +411,7 @@ header {
 		width: 280px;
 	}
 	.hero h1 {
-   		padding: 90px 20px;
-   		font-size: 30px;
-      line-height: 44px;
-	}
+    font-size: 24px;
+    line-height: 34px;
+	}	
 }

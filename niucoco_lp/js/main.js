@@ -14,5 +14,6 @@ $('.slider-nav').slick({
   slidesToShow: 6,
   slidesToScroll: 1,
   asNavFor: '.hero_slider',
-  focusOnSelect: true
+  focusOnSelect: true,
+   
 });
