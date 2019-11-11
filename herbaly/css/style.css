@@ -1,8 +1,13 @@
+
+html {
+	overflow-x: hidden;
+}
 body{
 	margin: 0;
 	padding: 0;
 	font-family: ProximaNova;
 	font-weight: normal; 
+	overflow-x: hidden;
 	
 }
 h1,h2,h3,h4,h5,p{
@@ -15,13 +20,16 @@ a{
 }
 section{
 	background-image: url(../img/bg.png);
-	width: 1920px;
-	height: 9215px;
+    width: 100%;
+    min-height: 9215px;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .container{
-	width: 1550px;
+	max-width: 1550px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 .logo{
 	float: left;
@@ -109,6 +117,12 @@ li{
 .books{
 	padding-top: 150px;
 	position: relative;
+}
+.books img {
+	width: 90%;
+    margin: auto;
+    text-align: center;
+    display: block;
 }
 h2{
 	font-size: 60px;
@@ -499,7 +513,6 @@ width: 860px;
 	.container {
 		width: 100%;
 		margin: 0;
-		margin-left: 20px;
 	}
 	html {
 		overflow-x: hidden;
