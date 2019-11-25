@@ -388,6 +388,7 @@ footer a {
 	}
 	.cannabiodies_wrapper  {
 		flex-direction: column;
+		align-items: center;
 	}
 	.cannabiodies_image  {
 		margin: auto;
