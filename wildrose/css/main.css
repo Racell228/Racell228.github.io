@@ -141,6 +141,9 @@ header {
 .testimonals_text p:last-child {
 	margin-top: 30px;
 }
+.testimonals_text p {
+	font-size: 20px;
+}
 .help {
 	background-color: #DC7460;
 	color: #fff;
@@ -156,6 +159,7 @@ header {
 	text-align: center;
 	width: 140px;
 	margin-top: 40px;
+	margin-right: 40px;
 }
 .help_review {
 	background-color: #fff;
@@ -495,6 +499,13 @@ footer a {
 	}
 	h3 {
 		font-size: 26px;
+	}
+	.help_text_symptoms {
+		justify-content: space-around;
+	}
+	.help_text_symptoms_item {
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 	.help_review {
 		padding: 50px;
