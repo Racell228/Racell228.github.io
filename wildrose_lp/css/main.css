@@ -63,6 +63,28 @@ a:hover {
 	margin: auto;
 	padding: 0 20px;
 }
+.bar {
+	position: fixed;
+	background-color: #DC7460;
+	width: 100%;
+	color: #fff;
+	display: block;
+	z-index: 999999;
+	font-size: 20px;
+	margin: auto;
+}
+.bar h5 {
+	margin: 20px auto;
+	text-align: center;
+}
+.bar a {
+	width: auto;
+	padding: 0;
+}
+.bar a:hover {
+	color: rgba(255,255,255,0.9);
+	background-color: transparent;
+}
 .head_logo {
 	position: absolute;
   top: 60px;
@@ -143,7 +165,8 @@ header {
 	margin-top: 30px;
 }
 .testimonals_text p {
-	font-size: 20px;
+	font-size: 18px;
+    line-height: 30px;
 }
 .help {
 	background-color: #DC7460;
@@ -329,28 +352,6 @@ footer a {
 	line-height: 24px;
 	color: #000;
 	text-align: center;
-}
-.bar {
-	position: fixed;
-	background-color: #DC7460;
-	width: 100%;
-	color: #fff;
-	display: block;
-	z-index: 999999;
-	font-size: 20px;
-	margin: auto;
-}
-.bar h5 {
-	margin: 20px auto;
-	text-align: center;
-}
-.bar a {
-	width: auto;
-	padding: 0;
-}
-.bar a:hover {
-	color: rgba(255,255,255,0.9);
-	background-color: transparent;
 }
 @media screen and (max-width: 1300px) {
 	h4 {
