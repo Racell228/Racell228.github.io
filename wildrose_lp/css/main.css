@@ -85,6 +85,27 @@ a:hover {
 	color: rgba(255,255,255,0.9);
 	background-color: transparent;
 }
+.bar_f {
+	background-color: #DC7460;
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    padding: 1px 0;
+}
+.bar_f h5 {
+	margin: 20px auto;
+	text-align: center;
+}
+.bar_f a {
+	width: auto;
+	padding: 0;
+}
+.bar_f a:hover {
+	color: rgba(255,255,255,0.9);
+	background-color: transparent;
+}
 .head_logo {
 	position: absolute;
   top: 60px;
@@ -159,14 +180,24 @@ header {
 	align-items: center;
 }
 .testimonals_text h2 {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .testimonals_text p:last-child {
 	margin-top: 30px;
 }
 .testimonals_text p {
-	font-size: 18px;
-    line-height: 30px;
+	font-size: 16px;
+    line-height: 26px;
+}
+.testimonals_text h3 {
+	font-size: 26px;
+    max-width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 36px;
+}
+.testimonals a {
+	width: 284px;
 }
 .help {
 	background-color: #DC7460;
@@ -340,7 +371,7 @@ footer h2 {
   margin: auto;
 }
 footer a {
-	width: 340px;
+	width: 234px;
 	margin: 60px auto 0;
 }
 .copyright {
