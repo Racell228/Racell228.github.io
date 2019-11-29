@@ -93,6 +93,9 @@ a:hover {
     font-size: 20px;
     margin: auto;
     padding: 1px 0;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
 }
 .bar_f h5 {
 	margin: 20px auto;
@@ -376,7 +379,7 @@ footer a {
 }
 .copyright {
 	background-color: #F5F5F5;
-	padding: 40px 0;
+	padding: 40px 0 100px;
 }
 .copyright p {
 	font-size: 16px;
@@ -629,6 +632,11 @@ footer a {
 		font-size: 13px;
 		margin: 15px auto;
 	}
+	.bar_f h5{
+		font-size: 13px;
+		margin: 15px auto;
+		max-width: 90%;
+	}
 	footer a {
     width: 270px;
     font-size: 16px;
@@ -663,6 +671,10 @@ footer a {
 	}
 	footer {
 		padding: 50px 0;
+	}
+	.testimonals_text h3  {
+    	text-align: center;
+    	max-width: 100%;
 	}
 }
 @media screen and (max-width: 400px) {
