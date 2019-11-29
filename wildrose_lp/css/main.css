@@ -65,7 +65,7 @@ a:hover {
 }
 .head_logo {
 	position: absolute;
-  top: 0;
+  top: 60px;
   left: calc(50% - 84px);
 }
 .hero {
@@ -78,6 +78,7 @@ header {
 	width: 100%;
   background-color: #000;
   height: 84px;
+  margin-top: 60px;
 }
 .hero_wrapper {
 	display: flex;
@@ -316,7 +317,7 @@ footer h2 {
   margin: auto;
 }
 footer a {
-	width: 380px;
+	width: 340px;
 	margin: 60px auto 0;
 }
 .copyright {
@@ -328,6 +329,28 @@ footer a {
 	line-height: 24px;
 	color: #000;
 	text-align: center;
+}
+.bar {
+	position: fixed;
+	background-color: #DC7460;
+	width: 100%;
+	color: #fff;
+	display: block;
+	z-index: 999999;
+	font-size: 20px;
+	margin: auto;
+}
+.bar h5 {
+	margin: 20px auto;
+	text-align: center;
+}
+.bar a {
+	width: auto;
+	padding: 0;
+}
+.bar a:hover {
+	color: rgba(255,255,255,0.9);
+	background-color: transparent;
 }
 @media screen and (max-width: 1300px) {
 	h4 {
@@ -570,21 +593,27 @@ footer a {
 	}
 }
 @media screen and (max-width: 420px) {
+	.bar h5{
+		font-size: 13px;
+		margin: 15px auto;
+	}
 	footer a {
     width: 270px;
     font-size: 16px;
 	}
 	h1 {
-		font-size: 26px;
+	font-size: 26px;
     line-height: 42px;
     margin: 100px 0 30px;
 	}
 	.head_logo {
 		left: calc(50% - 55px);
     width: 110px;
+        top: 46px;
 	}
 	header {
 		height: 59px;
+		margin-top: 46px;
 	}
 	.hero_wrapper a {
 		margin-bottom: 60px;
