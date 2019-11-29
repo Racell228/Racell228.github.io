@@ -1,0 +1,661 @@
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'ProximaNova';
+	overflow-x: hidden;
+}
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	animation-duration: 4s;
+ 	animation-delay: 4s;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+p {
+	font-size: 22px;
+	padding: 0;
+	margin: 0;
+	line-height: 34px;
+}
+h1 {
+	font-size: 58px;
+	line-height: 82px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	margin:  210px 0 80px;
+  max-width: 1065px;
+  text-transform: uppercase;
+}
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 40px;
+	line-height: 60px;
+}
+h3	{
+	padding: 0;
+	margin: 0;
+	font-size: 32px;
+}
+a	{
+	display: block;
+	text-decoration: none;
+	width: 234px;
+	padding: 18px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: #DC7460;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+}
+a:hover {
+	background-color: #ca604c;
+	transition: 0.5s;
+}
+.container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+}
+.head_logo {
+	position: absolute;
+  top: 0;
+  left: calc(50% - 84px);
+}
+.hero {
+	background-image: url(../img/hero_bg.png);
+	background-position-x: center;
+	height: 730px;
+
+}
+header {
+	width: 100%;
+  background-color: #000;
+  height: 84px;
+}
+.hero_wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.designed p {
+	max-width: 1100px;
+  text-align: center;
+  margin: 60px auto;
+}
+.refuse {
+	background-image: url(../img/tincture_bg.png);
+	background-position-x: center;
+	color: #fff;
+	padding: 80px 0;
+}
+.refuse_title {
+	max-width: 730px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.hero_slider {
+	margin-left: 100px;
+}
+.slider_item {
+	display: flex!important;
+}
+.slider_item_text {
+	margin: 90px 0 65px 65px;
+}
+.slider_item_text-txt {
+	margin:35px 0 60px 0;
+	max-width: 603px;
+	font-weight: 400;
+}
+.slick-prev:before, .slick-next:before {
+	font-family: none!important;
+	font-size: 0!important;
+}
+.slick-arrow {
+	background-color: transparent;
+	border: none;
+	top: calc(50% - 21px);
+	position: absolute;
+}
+.left {
+	left: -100px;
+}
+.right {
+	right: 0;
+  transform: rotate(180deg);
+}
+.testimonals_wrapper {
+	display: flex;
+	align-items: center;
+}
+.testimonals_text h2 {
+	margin-bottom: 40px;
+}
+.testimonals_text p:last-child {
+	margin-top: 30px;
+}
+.testimonals_text p {
+	font-size: 20px;
+}
+.help {
+	background-color: #DC7460;
+	color: #fff;
+	padding: 60px 0;
+	margin-top: -5px;
+}
+.help_text_symptoms {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.help_text_symptoms_item {
+	text-align: center;
+	width: 140px;
+	margin-top: 40px;
+	margin-right: 40px;
+}
+.help_review {
+	background-color: #fff;
+	padding: 80px;
+	color: #000;
+	height: 280px;
+}
+.help_text {
+	max-width: 680px;
+}
+.help_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.help_review p {
+	width: 425px;
+	margin-top: 50px;
+	text-align: center;
+}
+.help_review img {
+	display: block;
+	margin: auto;
+}
+.help_text_sub_title {
+	margin: 30px 0 0;
+	font-size: 18px;
+}
+.help_text_symptoms_item p {
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 20px;
+}
+.benefit {
+	color: #000;
+	text-align: center;
+	margin: 80px 0;
+}
+.benefit_wrapper {
+	display: flex;
+	justify-content: center;
+	max-width: 1110px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.benefit_item {
+	margin: 80px 80px 0;
+}
+.benefit_item p { 
+	margin-top: 20px;
+}
+.benefit h2 {
+	margin-bottom: -20px;
+}
+.cannabiodies {
+	background-color: #DC7460;
+	color: #fff;
+}
+.cannabiodies_text h2 {
+	text-transform: uppercase;
+	line-height: 60px;
+}
+.cannabiodies_image {
+	align-self: flex-end;
+	display: flex;
+}
+.cannabiodies_text p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 35px;
+}
+.cannabiodies_wrapper {
+	display: flex;
+}
+.cannabiodies_text {
+	max-width: 666px;
+	padding: 80px 0;
+}
+p.cannabiodies_text_bold {
+	font-size: 18px;
+	font-weight: 600;
+	font-style: italic;
+}
+.cannabiodies_text_bold span {
+	font-style: normal;
+	font-weight: 400;
+}
+h4 {
+	font-size: 22px;
+	background-color: #F5F5F5;
+	padding: 22px 50px 22px 20px;
+	margin: 0;
+	transition: 0.5s;
+}
+.faq {
+	margin: 80px 0 50px;
+}
+.faq h2 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.faq_item_active {
+	color: #fff;
+	background-color: #DC7460;
+}
+.faq_answer {
+	font-size: 18px;
+	background-color: #F5F5F5;
+	line-height: 28px;
+	padding: 30px 20px;
+}
+.faq_answer_span {
+	color: #DC7460;
+	margin-right: 5px;
+}
+.faq_item {
+	max-width: 630px;
+	max-height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 30px;
+}
+.faq_answer_active {
+	max-height: 999999px;
+}
+.faq_item_arrow {
+	position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+}
+.faq_item_arrow_active {
+	color: #fff;
+	transform: rotate(90deg);
+	transition: 0.5s;
+}
+.faq_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+footer {
+	background-image: url(../img/footer_bg.png);
+	color: #fff;
+	padding: 80px 0;
+	background-size: cover;
+	background-position: center;
+}
+footer h2 {
+	text-transform: uppercase;
+	max-width: 670px;
+  text-align: center;
+  margin: auto;
+}
+footer a {
+	width: 380px;
+	margin: 60px auto 0;
+}
+.copyright {
+	background-color: #F5F5F5;
+	padding: 40px 0;
+}
+.copyright p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	text-align: center;
+}
+@media screen and (max-width: 1300px) {
+	h4 {
+		height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+	}
+	.faq_item {
+		max-width: 500px;
+	}
+	.faq_wrapper {
+		justify-content: space-evenly;
+	}
+	.testimonals_text  p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.help_text {
+		padding-right: 20px;
+	}
+	.help_review {
+		padding: 60px;
+	}
+}
+@media screen and (max-width: 1150px) {
+	.slider_item_text {
+    margin: 40px auto 0px auto;
+    width: 500px;
+    text-align: center;
+	}
+	.hero_slider {
+		margin-left: 0;
+	}
+	.left {
+		left: 0;
+	}
+	.slider_item {
+		display: inline-block!important ;
+	}
+	.slider_item_text a {
+		margin: auto;
+	}
+	.refuse {
+		background-size: cover;
+		padding: 60px 0;
+	}
+	.slick-slide img {
+		margin: auto;
+	}
+	.testimonals_text {
+		margin: 40px 0;
+	}
+	.testimonals_text p {
+		font-size: 18px;
+	}
+	.help_wrapper {
+		flex-direction: column;
+	}
+	.help_review {
+		margin-top: 50px;
+	}
+	.cannabiodies_wrapper  {
+		flex-direction: column;
+		align-items: center;
+	}
+	.cannabiodies_image  {
+		margin: auto;
+	}
+	.cannabiodies_text {
+		max-width: inherit;
+    padding: 80px 20px;
+	}
+	.slider_item_text-txt {
+		margin: 30px 0;
+	}
+	.testimonals_text h2 {
+		margin-bottom: 20px;
+	}
+	.help_text {
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.faq_wrapper  {
+		flex-direction: column;
+	}
+	.faq_item {
+		margin: 0 auto 30px auto;
+	}
+	.faq_item {
+		max-width: 670px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.testimonals_wrapper {
+		flex-direction: column;
+	}
+	.testimonals_image  {
+		display: block;
+		margin: auto;
+	}
+	.testimonals_text h2 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.testimonals_text p {
+		max-width: 90%;
+		margin: auto;
+	}
+	.testimonals_text {
+    margin: 60px 0;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	p {
+		font-size: 18px;
+		line-height: 30px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 48px;
+	}
+	.help_review {
+		padding: 40px 80px 10px 80px;
+	}
+	h1 {
+		font-size: 48px;
+		max-width: 90%;
+    line-height: 62px;
+    margin: 170px 0 80px;
+	}
+	.hero {
+		height: auto;
+	}
+	.hero_wrapper a {
+		margin-bottom: 100px;
+	}
+	.refuse_title {
+    margin: 0 auto 30px;
+    line-height: 28px;
+    max-width: 90%;
+	}
+	.slider_item_text-txt {
+		line-height: 30px;
+	}
+	.help_text_sub_title {
+		line-height: 30px;
+	}
+	.cannabiodies_text {
+		padding: 50px 20px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.testimonals_image img  {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.slick-slide img {
+		height: 200px;
+	}
+	.right__img, .left__img {
+		width: 30px;
+	}
+	.slider_item_text {
+		width: auto;
+	}
+	h3 {
+		font-size: 26px;
+	}
+	.help_text_symptoms {
+		justify-content: space-around;
+	}
+	.help_text_symptoms_item {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.help_review {
+		padding: 50px;
+	}
+	.cannabiodies_image img  {
+		width: 100%;
+	}
+	.cannabiodies_text h2 {
+		text-align: center;
+		line-height: 50px;
+	}
+	footer a {
+		margin: 30px auto 0;
+	}
+}
+@media screen and (max-width: 550px) {
+	h4 {
+		padding: 22px 59px 22px 20px;
+	}
+	h1 {
+		font-size: 38px;
+		line-height: 56px;
+		margin: 170px 0 50px;
+	}
+	.slider_item_text-txt {
+		margin: 20px 0 30px;
+		font-size: 16px;
+    line-height: 26px;
+	}
+	.refuse {
+		padding: 40px 0;
+	}
+	.refuse_title {
+		font-size: 16px;
+    line-height: 26px;
+	}
+	.testimonals_text p {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 500px) { 
+	.help_review {
+		padding: 50px 0;
+		width: 100%;
+	}
+	.help_review p {
+		padding: 0 20px;
+		width: auto;
+	}
+	.faq_answer {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.faq_item {
+		margin: 0 auto 15px auto;
+	}
+	.faq {
+		margin: 40px 0 30px;
+	}
+	.faq h2 {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 420px) {
+	footer a {
+    width: 270px;
+    font-size: 16px;
+	}
+	h1 {
+		font-size: 26px;
+    line-height: 42px;
+    margin: 100px 0 30px;
+	}
+	.head_logo {
+		left: calc(50% - 55px);
+    width: 110px;
+	}
+	header {
+		height: 59px;
+	}
+	.hero_wrapper a {
+		margin-bottom: 60px;
+	}
+	a {
+		font-size: 18px;
+	}
+	.hero {
+		background-size: cover;
+	}
+	.designed p {
+		margin: 30px auto;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	footer {
+		padding: 50px 0;
+	}
+}
+@media screen and (max-width: 400px) {
+	.slick-arrow {
+		top: calc(24% - 21px);
+	}
+	.cannabiodies_text p {
+		margin-top: 25px;
+	}
+	.cannabiodies_text h2 {
+		font-size: 26px;
+		line-height: 42px;
+	}
+	.cannabiodies_text {
+		padding: 30px 20px;
+	}
+	footer h2 {
+		font-size: 26px;
+		line-height: 42px;
+	}
+	.testimonals_text p:last-child {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 360px) {
+	.slider_item_text {
+		margin: 10px auto 0px auto;
+	}
+	.slider_item_text-txt {
+		margin: 15px 0 15px 0;
+	}
+	.refuse_title {
+		margin: 0 auto 20px;
+	}
+	.help_text_symptoms_item {
+		width: 120px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	.faq_item_arrow {
+		top: 20px;
+    right: 20px;
+    font-size: 20px;
+	}
+	.testimonals_text p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.testimonals_text {
+    margin: 40px 0;
+	}
+	.testimonals_text h2 {
+		margin-bottom: 20px;
+	}
+
+}
