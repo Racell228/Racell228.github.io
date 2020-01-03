@@ -1,0 +1,8 @@
+.mus-oboz-box{
+	float: left;
+	margin: 0 0 0 15px;
+	@include media('<tablet') {
+		float: none;
+		margin: 0 auto 15px;
+	}
+}
