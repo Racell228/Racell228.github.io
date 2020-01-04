@@ -128,18 +128,6 @@ a:not(class) {
   left: 100%;
   display: block;
 }
-/*.drop:after {
-  position: absolute;
-  content: "";
-  top: -54px;
-  left: -281px;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: -1;
-
-}
-*/
 .catalog-list a {
   display: block;
   padding: 10px 35px 10px 10px;
@@ -194,7 +182,6 @@ a:not(class) {
   height: 100%;
   top: 0;
   left: 100%;
-  /*box-shadow: 0 0 6px rgba(0,0,0,0.3);*/
 }
 
 .catalog-list .catalog-tabset li.active a {
@@ -275,215 +262,6 @@ a:not(class) {
 .catalog-list .catalog-tabset li.active .drop_arrow:before {
   background-color: #fff;
 }
-
-
-
-
-@media (max-width: 767px) {
-  .catalog-m-active {
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 767px) {
-  .catalog-m-active .mobile-popup {
-    left: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .catalog-m-active .catalog-list-m .btn-back-item {
-    left: 0;
-  }
-}
-
-.catalog-m-opener {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1;
-  margin: 0 0 8px;
-  padding: 0 0 0 30px;
-  color: #009241;
-}
-
-@media (min-width: 768px) {
-  .catalog-m-opener {
-    display: none;
-  }
-}
-
-.catalog-m-opener:before, .catalog-m-opener:after,
-.catalog-m-opener span:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 25px;
-  height: 3px;
-  background: #009241;
-  border-radius: 3px;
-}
-
-.catalog-m-opener:before {
-  top: 2px;
-}
-
-.catalog-m-opener:after {
-  top: 7px;
-}
-
-.catalog-m-opener span:before {
-  top: 12px;
-}
-
-.catalog-m {
-  overflow: hidden;
-}
-
-.mobile-popup {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  z-index: 150;
-  width: 100%;
-  height: 100%;
-  background: #dff1e7;
-  -webkit-transition: left .5s ease;
-  -o-transition: left .5s ease;
-  transition: left .5s ease;
-  overflow: hidden;
-}
-
-.mobile-popup a.mobile-popup-close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 24px;
-  height: 24px;
-  z-index: 50;
-  text-indent: -9999px;
-  overflow: hidden;
-  display: block;
-}
-
-.mobile-popup a.mobile-popup-close:before, .mobile-popup a.mobile-popup-close:after {
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #697de5;
-  position: absolute;
-  top: 11px;
-  left: 0;
-}
-
-.mobile-popup a.mobile-popup-close:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.mobile-popup a.mobile-popup-close:after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.mobile-popup-holder {
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100%;
-  padding: 68px 0 0;
-}
-
-.catalog-list-m {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  width: 100%;
-}
-
-.catalog-list-m ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-}
-
-.catalog-list-m li {
-  border-bottom: 1px solid #429755;
-}
-
-.catalog-list-m li:last-child {
-  border: none;
-}
-
-.catalog-list-m a {
-  display: block;
-  padding: 7px 20px 7px 10px;
-}
-
-.catalog-list-m a:hover {
-  text-decoration: none;
-}
-
-.catalog-list-m a.item-opener {
-  position: relative;
-}
-
-.catalog-list-m a.item-opener:before {
-  content: '>';
-  position: absolute;
-  top: 50%;
-  right: 6px;
-  line-height: 1;
-  margin: -7px 0 0;
-}
-
-.catalog-list-m .btn-back {
-  display: inline !important;
-  padding: 0;
-}
-
-.catalog-list-m .btn-back-item {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  background: #bfe3cf;
-  border-bottom: 1px solid #429755;
-  width: 100%;
-  z-index: 10;
-  height: 68px;
-  padding: 7px 30px 0 10px;
-  overflow: hidden;
-  -webkit-transition: left .5s ease;
-  -o-transition: left .5s ease;
-  transition: left .5s ease;
-}
-
-.catalog-list-m .btn-back-item span {
-  position: relative;
-  margin: 0 4px 0 0;
-}
-
-.catalog-list-m .btn-back-item span:last-child {
-  padding: 0;
-  margin: 0;
-}
-
-.catalog-list-m .btn-back-item span:last-child:after {
-  display: none;
-}
-
-.catalog-list-m .btn-back-item span:after {
-  content: '-';
-}
 .cat-tab_name {
   font-weight: 500;
   margin: 0 0 5px 0;
@@ -532,4 +310,23 @@ a:not(class) {
   z-index: -1;
   left: 40px;
   background-color:transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+	.sidebar {
+		display: none;
+	}
 }
