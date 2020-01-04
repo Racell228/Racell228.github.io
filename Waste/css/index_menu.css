@@ -49,9 +49,10 @@ a:not(class) {
 }
 .sidebar {
   width: calc(245px + 15px);
-  position: relative;
+  position: sticky;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   z-index: 2;
+  top: 100px;
 }
 
 @media (max-width: 767px) {
@@ -510,4 +511,25 @@ a:not(class) {
 }
 .cat-tab_quanity_value {
   font-style: italic;
+}
+
+.drop:before {
+	content: "";
+  position: absolute;
+  top: -50px;
+  height: calc(100% + 100px);
+  width: calc(100% + 40px);
+  z-index: -1;
+  left: 0;
+  background-color:transparent;
+}
+.sub-drop:before {
+	content: "";
+  position: absolute;
+  top: -50px;
+  height: calc(100% + 100px);
+  width: 100%;
+  z-index: -1;
+  left: 40px;
+  background-color:transparent;
 }

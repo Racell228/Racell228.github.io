@@ -30,6 +30,14 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 0;
+	
+}
+header {
+	position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 9999;
 }
 .header_logo {
 	width: 240px;
@@ -48,6 +56,10 @@ a {
 }
 .header_menu_item:last-child img {
 	opacity: 0.3;
+}
+.header_menu_item:last-child img:hover {
+	opacity: 1;
+	transition: 1s;
 }
 .heder_horizontal {
 	height: 1px;
@@ -186,3 +198,7 @@ a {
 .content_card_item_link:hover {
 	text-decoration: underline;
 }
+.header_menu_item:hover {
+	text-decoration: underline;
+}
+
