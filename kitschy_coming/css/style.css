@@ -11,6 +11,9 @@ header img{
 	margin: 46px auto 46px 0;
 	width: 240px;
 }
+.logo_mob {
+	display: none;
+}
 .coming {
 	color: #FFFEE9;
 	position: absolute;
@@ -31,4 +34,71 @@ header img{
 	top: 70px;
 	z-index: -1;
 	left: 180px;
+}
+
+@media screen and (max-width:1370px) {
+	body {
+	    margin: 0 100px;
+	    width: calc(100% - 200px);
+	}
+	.coming img {
+	    top: 90px;
+	    left: 60px;
+	    width: 800px;
+	}
+}
+@media screen and (max-width:768px) {
+	.coming h2 {
+		font-size: 80px;
+    	margin-bottom: 30px;
+	}
+	.coming p {
+		font-size: 20px;
+	}
+	body {
+		margin: 0 40px;
+    	width: calc(100% - 80px);
+	}
+	header img {
+		width: 180px;
+	}
+	.coming img {
+    	top: 60px;
+    	left: 50px;
+    	width: 750px;
+	}
+}
+@media screen and (max-width:580px) {
+	.logo_desk {
+		display: none;
+	}
+	.logo_mob {
+		display: block;
+	    margin: 30px auto;
+	    width: 100px;
+	}
+	.coming img {
+	    top: 60px;
+    	left: 0px;
+    	width: 500px;
+	}
+	.coming h2 {
+		font-size: 44px;
+    	line-height: 120%;
+	}
+	.coming p {
+		font-size: 16px;
+	}
+	.coming {
+		bottom: 50px;
+	}
+	.coming img {
+		top: 20px;
+    	left: 30px;
+    	width: 590px;
+	}
+	body {
+    	margin: 0 20px;
+    	width: calc(100% - 40px);
+	}
 }
