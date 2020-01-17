@@ -1,0 +1,54 @@
+.subscribe-ru-form{
+	overflow: hidden;
+	background: #e0f6c4;
+	text-align: center;
+	font: 10px/1.2 Verdana, Geneva, Tahoma, sans-serif;
+	width: 220px;
+	padding: 4px 0;
+	border-radius: 6px;
+	float: left;
+	@include media('<tablet') {
+		float: none;
+		margin: 0 auto 15px;
+	}
+	form{
+		margin: 0;
+	}
+	table{
+		margin: 0;
+		width: 100%;
+		table-layout: fixed;
+	}
+	td{
+		padding: 5px 10px;
+		text-align: center;
+		border: none;
+		vertical-align: middle;
+		&.text-left{
+			text-align: left;
+		}
+		&.text-right{
+			text-align: right;
+		}
+	}
+	a{
+		color: $black;
+	}
+	.subscribe-ru-title{
+		display: inline-block;
+		vertical-align: top;
+		font: bold 14px/1.2 "Trebuchet MS", Helvetica, sans-serif;
+	}
+	input{
+		font: 12px "Trebuchet MS", Helvetica, sans-serif;
+
+		&[type="email"]{
+			display: block;
+			width: 100%;
+			border-color: #3b6e22;
+		}
+		&[type="submit"]{
+			padding: 2px 5px;
+		}
+	}
+}

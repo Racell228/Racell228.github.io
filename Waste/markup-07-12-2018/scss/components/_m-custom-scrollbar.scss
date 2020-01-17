@@ -1,0 +1,22 @@
+.mCustomScrollBox{
+	overflow: hidden;
+	height: 100%;
+	outline: none;
+}
+.mCSB_container{
+	overflow: hidden;
+	width: auto;
+	height: auto;
+}
+.mCSB_draggerContainer{
+	position: absolute;
+	top: 16px;
+	right: 5px;
+	bottom: 16px;
+	width: 3px;
+}
+.mCSB_dragger{
+	width: 100%;
+	background: rgba($blue, .25);
+	border-radius: 2px;
+}
