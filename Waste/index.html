@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 
@@ -14,17 +16,18 @@
 	<div class="container">
 		<div class="header_menu">
 			<img src="img/waste_logo.svg" class="header_logo">
+			<img src="img/waste_logo_mob.svg" class="header_logo_mob">
 			<div class="header_menu_item">
-				<a href="#"><img src="img/icon1.png"> Добавить</a>
+				<a href="#"><img src="img/icon1.png"> <span>Добавить</span></a>
 			</div>
 			<div class="header_menu_item">
-				<a href="#"><img src="img/icon2.png"> Вход / Регистрация</a>
+				<a href="#"><img src="img/icon2.png"> <span>Вход / Регистрация</span></a>
 			</div>
 			<div class="header_menu_item">
-				<a href="#"><img src="img/icon3.png"> Поиск</a>
+				<a href="#"><img src="img/icon3.png"> <span>Поиск</span></a>
 			</div>
 			<div class="header_menu_item">
-				<a href="#"><img src="img/icon4.png"> Избранное</a>
+				<a href="#"><img src="img/icon4.png"> <span>Избранное</span></a>
 			</div>
 		</div>
 	</div>
@@ -1446,7 +1449,26 @@
 				<li><a href="#">Статьи</a></li>
 				<li><a href="#">Законодательство</a></li>
 			</ul>
-			
+			<ul class="index_content_nav_slider">
+				<li><a href="#">Мероприятия</a></li>
+				<li><a href="#">Издания</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Законодательство</a></li>
+			</ul>
+			<div class="mobile_menu">
+				<h3 class="mobile_menu_title">Объявления, Визитки</h3>
+				<a href="#" class="mobile_menu_link">Вторсырье <span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Секонд-хенд <span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Технологии, оборудование <span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Продукция из вторсырья <span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Услуги<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Запчасти, узлы<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Средства защиты<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Средства измерений<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Готовый бизнес<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Инвестиции<span class="drop_arrow"></span></a>
+				<a href="#" class="mobile_menu_link">Работа<span class="drop_arrow"></span></a>
+			</div>
 			<div class="content_banners">
 				<div class="content_banners_item"></div>
 				<div class="content_banners_item"></div>
@@ -1523,7 +1545,7 @@
 		<footer class="container">
 			<div class="footer_flex">
 				<div class="subscribe_form2">
-				<!-- 	<form target="_top" action="https://subscribe.ru/member/quick" method="get">
+					<form target="_top" action="https://subscribe.ru/member/quick" method="get">
 					<input type="hidden" name="action" value="quick">
 					<input type="hidden" name="src" value="list_tech.waste">
 					<table style="border:2px solid #6fa80d;background:#e0f6c4;width:200px;" cellspacing=0 cellpadding=0>
@@ -1537,11 +1559,11 @@
 					  <td align="right" style="padding: 5px 10px 5px 10px;"><input  type="submit" value="Подписаться" style="background-color:#6fa80d;border:1px solid #3b6e22;color:#FFFFFF;font-size:12px;font-family:Trebuchet MS, Verdana, Arial; width:100px;"></td>
 					</tr>
 					</table>
-					</form>   -->
+					</form>  
 
 
 
-					<script src="//static-login.sendpulse.com/apps/fc3/build/loader.js" sp-form-id="2ed679583308969da7aad97c631d6f274dd06d3e65a56e47f04a4a50527dbc2b"></script>  
+					<!-- <script src="//static-login.sendpulse.com/apps/fc3/build/loader.js" sp-form-id="2ed679583308969da7aad97c631d6f274dd06d3e65a56e47f04a4a50527dbc2b"></script>   -->
 
 
 
@@ -1591,6 +1613,60 @@
 
 
 
+<div class="mobile_menu_step1">
+	<div class="mobile_menu_step_container">
+		<div class="mobile_menu_step_title_overlay">
+			<a href="#" class="mobile_menu_step_title">Объявления, Визитки</a>
+			<a href="#" class="close_menu"></a>
+		</div>
+		<a href="#" class="mobile_menu_step_link">Вторсырье <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Секонд-хенд <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Технологии, оборудование <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Продукция из вторсырья <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Услуги <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Запчасти, узлы <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Средства защиты <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Средства измерений <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Готовый бизнес <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Инвестиции <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Работа <span class="drop_arrow"></span></a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="mobile_menu_step2">
+	<div class="mobile_menu_step_container">
+		<div class="mobile_menu_step_title_overlay">
+			<a href="#" class="back_on_step"></a>
+			<a href="#" class="mobile_menu_step_title back_to_firststep">Объявления, Визитки</a>
+			<a href="#" class="close_menu"></a>
+		</div>
+		<div class="mobile_menu_step_title_overlay">
+			<a href="#" class="mobile_menu_step2_title">Технологии, оборудование</a>
+		</div>
+		<a href="#" class="mobile_menu_step_link">Полимеры <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Макулатура <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Металлы <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Стекло <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Шины, резины <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Древесина <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Пищевые отходы <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Солома, шелуха, навоз и т.п. 
+	биомасса <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Текстиль, кожа <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Нефтепродукты <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Углерод, графит, уголь <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Шламы, шлаки, щебень, золы <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Огнеупоры, абразивы <span class="drop_arrow"></span></a>
+		<a href="#" class="mobile_menu_step_link">Кислоты, соли, щелочи,  <span class="drop_arrow"></span></a>
+	</div>
+</div>
 
 
 
@@ -1604,6 +1680,49 @@
 
 
 
+
+<div class="mobile_menu_step3">
+	<div class="mobile_menu_step_container">
+	<div class="mobile_menu_step_title_overlay">
+		<a href="#" class="back_on_step"></a>
+		<a href="#" class="mobile_menu_step_title back_to_firststep">Объявления, Визитки</a>
+		<a href="#" class="close_menu"></a>
+	</div>
+	<div class="mobile_menu_step3_title2_overlay mobile_menu_step_title_overlay">
+		<a href="#" class="back_on_step"></a>
+		<a href="#" class="mobile_menu_step2_title back_to_secondstep">Технологии, оборудование</a>
+	</div>
+	<div class="mobile_menu_step_title_overlay mobile_menu_step3_title3_overlay">
+		<a href="#" class="mobile_menu_step3_title">Полимеры</a>
+	</div>
+	<a href="#" class="mobile_menu_step_link">
+		<p class="mobile_menu_step_link_title">Объявления: Предлагаю</p>
+		<span class="mobile_menu_step_link_qianity">Количество: <span class="mobile_menu_step_link_qianity_value">4420</span></span>
+		<span class="mobile_menu_step_link_date">Дата последнего: <span class="mobile_menu_step_link_date_value">18.03.19</span></span>
+	</a>
+	<a href="#" class="mobile_menu_step_link">
+		<p class="mobile_menu_step_link_title">Объявления: Предлагаю</p>
+		<span class="mobile_menu_step_link_qianity">Количество: <span class="mobile_menu_step_link_qianity_value">4420</span></span>
+		<span class="mobile_menu_step_link_date">Дата последнего: <span class="mobile_menu_step_link_date_value">18.03.19</span></span>
+	</a>
+	<a href="#" class="mobile_menu_step_link">
+		<p class="mobile_menu_step_link_title">Объявления: Предлагаю</p>
+		<span class="mobile_menu_step_link_qianity">Количество: <span class="mobile_menu_step_link_qianity_value">4420</span></span>
+		<span class="mobile_menu_step_link_date">Дата последнего: <span class="mobile_menu_step_link_date_value">18.03.19</span></span>
+	</a>
+	<a href="#" class="mobile_menu_step_link">
+		<p class="mobile_menu_step_link_title">Объявления: Предлагаю</p>
+		<span class="mobile_menu_step_link_quanity">Количество: <span class="mobile_menu_step_link_qianity_value">4420</span></span>
+		<span class="mobile_menu_step_link_date">Дата последнего: <span class="mobile_menu_step_link_date_value">18.03.19</span></span>
+	</a>
+</div>
+</div>
+
+
+
+
+
+<div class="body_overlay"></div>
 
 
 
@@ -1618,7 +1737,9 @@
 
 				
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.js"></script>
 	<script src="js/jquery-migrate-1.4.1.min.js"></script>
 	<script src="js/jquery.main.js"></script>
+
 </body>
 </html>

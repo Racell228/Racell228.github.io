@@ -36,35 +36,60 @@ function initTouchNav() {
 		});
 	});
 }
-
-(function($){
-	$(document).ready(function(){
-		enquire.register("screen and (max-width: 960px)", {
-			match : function() {
-				$('.banner-hor').insertBefore($('.main-box'));
-			},
-			unmatch : function() {
-				$('.banner-hor').prependTo($('.main-holder'));
-			}
-		});
-
-		$('.header-tools-opener').click(function(e) {
-			$('.header-tools-cell').toggleClass('expanded');
-			$('.header-tools-slide').slideToggle();
-			e.preventDefault();
-		});
-
-		$('.catalog-m-opener').click(function(e) {
-			$('body').addClass('catalog-m-active');
-			e.preventDefault();
-		});
-		$('.catalog-m-close').click(function(e) {
-			$('body').removeClass('catalog-m-active');
-			e.preventDefault();
-		});
-	});
-})(jQuery);
-
+$(document).ready(function() {
+  $('.close_menu').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step3').hide();
+      $('.mobile_menu_step2').hide();
+      $('.mobile_menu_step1').hide();
+      $('.body_overlay').hide();
+      $('body').removeClass('body_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.mobile_menu_link').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step2').show();
+      $('.body_overlay').show();
+      $('body').addClass('body_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.mobile_menu_step2 .mobile_menu_step_link').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step3').show();
+      $('.mobile_menu_step2').hide();
+  });
+});
+$(document).ready(function() {
+  $('.mobile_menu_step1 .mobile_menu_step_link').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step2').show();
+      $('.mobile_menu_step1').hide();
+  });
+});
+$(document).ready(function() {
+  $('.back_to_firststep').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step1').show();
+      $('.mobile_menu_step2').hide();
+      $('.mobile_menu_step3').hide();
+  });
+});
+$(document).ready(function() {
+  $('.back_to_secondstep').click(function(event) {
+      event.preventDefault();
+      $('.mobile_menu_step2').show();
+      $('.mobile_menu_step3').hide();
+  });
+});
+$(document).ready(function(){
+  $('.index_content_nav_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+     centerMode: true
+  });
+});
 $(window).on('load', function () {
 	$('.catalog .drop-holder').mCustomScrollbar();
 });
