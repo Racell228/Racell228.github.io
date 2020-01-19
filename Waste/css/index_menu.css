@@ -97,6 +97,7 @@ a:not(class) {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-top: 1px;
 }
 
 .catalog-list ul {
@@ -294,8 +295,8 @@ a:not(class) {
 .drop:before {
 	content: "";
   position: absolute;
-  top: -50px;
-  height: calc(100% + 100px);
+  top: -20px;
+  height: calc(100% + 40px);
   width: calc(100% + 40px);
   z-index: -1;
   left: 0;
@@ -304,8 +305,8 @@ a:not(class) {
 .sub-drop:before {
 	content: "";
   position: absolute;
-  top: -50px;
-  height: calc(100% + 100px);
+  top: -20px;
+  height: calc(100% + 40px);
   width: 100%;
   z-index: -1;
   left: 40px;
