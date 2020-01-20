@@ -24,6 +24,7 @@ header img{
     bottom: 140px;
     width: 100vw;
     overflow: hidden;
+    padding-top: 200px;
 
 }
 .coming h2 {
@@ -38,7 +39,7 @@ header img{
 }
 .coming img {
 	position: absolute;
-	top: 90px;
+	top: 107px;
     left: 200px;
     z-index: -1;
 }
@@ -100,7 +101,7 @@ header img{
 		bottom: 50px;
 	}
 	.coming img {
-		top: 20px;
+		top: 120px;
     	left: 30px;
     	width: 590px;
 	}
