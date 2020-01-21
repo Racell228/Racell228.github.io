@@ -51,7 +51,7 @@ a:not(class) {
   width: calc(245px + 15px);
   position: sticky;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 2;
+  z-index: 9999;
   top: 100px;
 }
 

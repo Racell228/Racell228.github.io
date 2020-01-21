@@ -4,20 +4,26 @@
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,700,800,900|Playfair+Display:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<header class="container">
 		<div class="header_flex">
 			<div class="header_logo">
-				<img src="img/logo.svg">
+				<img src="img/logo.svg" class="logo">
+				<img src="img/logo_mobile.svg" class="logo_mobile">
 			</div>
 			<div class="header_menu">
-				<div>
+				<div class="mobile_burger">
+					<span></span>
+				</div>
+				<div class="header_menu_links">
 					<a href="#">about us</a>
 					<a href="#">work</a>
 					<a href="#">contact us</a>
 				</div>
-				<a href="#"><img src="img/search.svg" class="header_search"></a>
+				<a href="#"><img src="img/search.svg" class="header_search header_search_black"></a>
+				<a href="#"><img src="img/search_mobile.svg" class="header_search header_search_white"></a>
 			</div>
 		</div>
 	</header>
@@ -27,6 +33,7 @@
 				<h1 class="hero_title">hi! meet <span> kitschy!</span></h1>
 				<img src="img/hero_image.png" class="hero_img">
 			</div>
+			<hr class="hero_hr">
 			<p>we are a <span>branding & marketing agency</span> that focuses on <span>conscious beauty and wellness brands.</span> we are visual  storytellers who create cool content and campaigns with the purpose of <span>building online communities that we monetize into sales.</span> </p>
 		</div>
 	</section>
@@ -142,8 +149,8 @@
 				</div>
 				<div class="contacts_adress">
 					<h3>contact</h3>
-					<a href="#">hello@kitschy.com</a>
-					<a href="#">+ 514 972 081</a>
+					<a href="mailto:hello@kitschy.com">hello@kitschy.com</a>
+					<a href="tel:+ 514 972 081">+ 514 972 081</a>
 					<p>address line 1, street name, building name</p>
 					<p>postcal code, montreal, quebec</p>
 				</div>
@@ -155,5 +162,9 @@
 			<p>copyright 2020 © kitschy</p>
 		</div>
 	</footer>
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

@@ -74,19 +74,25 @@ header {
 .content {
 	width: 100%;
 	margin-left: 30px;
-	margin-top: 92px;
+	margin-top: 130px;
 }
 .index_content_nav {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	padding: 0;
-	margin: 18px 0 9px;
+	padding: 19px 0 0 0;
+	margin: auto;
+}
+.index_content_nav li:first-child {
+	margin-left: 290px;
+}
+.index_content_nav li {
+	padding-bottom: 10px;
 }
 .index_content_nav li a {
 	color: #1a1618;
 	font-size: 16px;
-  	font-weight: 500;
+  font-weight: 500;
 }
 .content_banners {
 	display: flex;
@@ -230,6 +236,7 @@ header {
 	}
 	.content {
 		margin-left: 0;
+		margin-top: 92px;
 	}
 	.container {
 		padding: 0;
@@ -256,33 +263,6 @@ header {
 	}
 	.index_content_nav {
 		margin: 9px 0 23px;
-	}
-}
-@media screen and (max-width: 650px) {
-	.footer_flex {
-		flex-direction: column;
-		width: auto;
-	}
-	.subscribe_form2 {
-		margin-top: 40px;
-	}
-	.footer_line {
-		margin: 40px 0 0 0;
-	}
-	.content_banners {
-		flex-direction: column;
-		margin: 0 0 30px 0;
-	}
-	.content_banners_item {
-		margin: 30px auto 0;
-	}
-	.header_menu_item img {
-		margin-right: 0;
-	}
-	.header_menu {
-		padding: 10px;
-	}
-	.index_content_nav {
 		display: none;
 	}
 	.index_content_nav_slider li {
@@ -296,19 +276,9 @@ header {
 	}
 	.index_content_nav_slider  {
 		padding: 0 10px;
-	}
-	.header_logo {
-		display: none;
-	}
-	.header_logo_mob {
-		display: block;
-		width: 90px;
-	}
-	.index_content_nav_slider {
-  	display: block!important;
-	}
-	.index_content_nav {
-		display: none;
+		display: block!important;
+		width: 610px;
+    margin: auto;
 	}
 	.index_content_nav_wrapper {
     -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -340,6 +310,45 @@ header {
     margin: 0 10px;
     border: 1px solid rgba(0, 0, 0, 0.09);
   }
+}
+@media screen and (max-width: 650px) {
+	.footer_flex {
+		flex-direction: column;
+		width: auto;
+	}
+	.subscribe_form2 {
+		margin-top: 40px;
+	}
+	.index_content_nav_slider {
+		width: auto;
+	}
+	.footer_line {
+		margin: 40px 0 0 0;
+	}
+	.content_banners {
+		flex-direction: column;
+		margin: 0 0 30px 0;
+	}
+	.content_banners_item {
+		margin: 30px auto 0;
+	}
+	.header_menu_item img {
+		margin-right: 0;
+	}
+	.header_menu {
+		padding: 10px;
+	}
+	.header_logo {
+		display: none;
+	}
+	.header_logo_mob {
+		display: block;
+		width: 90px;
+	}
+	.index_content_nav {
+		display: none;
+	}
+	
   .content_banners_item {
   	height: 60px;
   }
