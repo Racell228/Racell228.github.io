@@ -1,5 +1,6 @@
 @import url('index_menu.css');
 
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0;
@@ -66,7 +67,7 @@ header {
   background-color: #429755;
   color: #429755;
   border: transparent;
-  margin: 0 0 15px 0;
+  margin: 0 0 16px 0;
 }
 .index_content {
 	display: flex;
@@ -82,6 +83,12 @@ header {
 	list-style: none;
 	padding: 19px 0 0 0;
 	margin: auto;
+}
+.fixed_nav {
+	position: fixed;
+	top: 92px;
+	width: 100%;
+	background-color: #fff;
 }
 .index_content_nav li:first-child {
 	margin-left: 290px;

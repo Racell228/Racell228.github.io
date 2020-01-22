@@ -51,10 +51,14 @@ a:not(class) {
   width: calc(245px + 15px);
   position: sticky;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 9999;
+  z-index: 999;
   top: 100px;
 }
-
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .sidebar {
+    position: relative;
+  }
+}
 @media (max-width: 767px) {
   .sidebar {
     width: auto;
@@ -153,6 +157,7 @@ a:not(class) {
 .catalog-list .drop {
   position: absolute;
   top: auto;
+  z-index: 999;
   display: none;
   width: calc(100% + 18px);
   height: 100%;
