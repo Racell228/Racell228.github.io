@@ -384,8 +384,11 @@ a:not(class) {
 		display: block;
 		position: relative;
 		font-size: 16px;
-    font-weight: 500;
 	}
+  .mobile_menu_step_link_qianity {
+    font-size: 14px;
+    font-style: italic;
+  }
 	.mobile_menu_step_title_overlay {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 		position: relative;
@@ -459,12 +462,15 @@ a:not(class) {
 	.mobile_menu_step_link_title {
 		font-size: 16px;
 		font-weight: 500;
+    margin-bottom: 8px;
 	}
 	.mobile_menu_step_link_quanity {
 		font-size: 14px;
+    font-style: italic;
 	}
 	.mobile_menu_step_link_date {
 		font-size: 14px;
+    font-style: italic;
 	}
   .mobile_menu_step2 .mobile_menu_step_link {
     padding: 15px 60px;
@@ -491,5 +497,10 @@ a:not(class) {
   .mobile_menu_step_container {
     height: 100%;
     overflow: scroll;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mobile_menu_step_link_quanity {
+    display: block;
   }
 }

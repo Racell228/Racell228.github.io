@@ -45,6 +45,10 @@ h2	{
 	margin: 0;
 	line-height: 90rem;
 }
+h3 {
+	font-size: 40rem;
+	margin: 0;
+}
 .container {
 	width: 1600rem;
 	padding: 0 20rem;
@@ -234,6 +238,7 @@ span {
 .contacts {
 	color: #333333;
 	margin-top: 65rem;
+	margin-bottom: 220rem;
 }
 .contacts_flex {
 	display: flex;
@@ -254,7 +259,6 @@ footer {
 	background-color: #1F3A5D;
 	padding: 50rem 0;
 	color: #fff;
-	margin-top: 220rem;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -274,6 +278,95 @@ footer {
 		font-size: 1px;
 	}
 }
+
+
+
+
+
+
+
+/*project*/
+
+
+
+.project_hero {
+	background-image: url(../img/project_hero.png);
+	width: 100%;
+	height: 955rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.project_overview_descr {
+	-webkit-column-width: 200rem;
+    -moz-column-width:  200rem;
+    column-width:  200rem;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 15rem;
+    -moz-column-gap: 15rem;
+    column-gap: 15rem;
+    width: 1800rem;
+}
+.project_overview_container {
+	display: flex;
+	justify-content: space-between;
+}
+.project_overview h3 {
+	margin: 70rem 0 40rem 0;
+}
+.project_overview_info {
+	width: 600rem;
+	margin-left: 80rem;
+	justify-content: space-between;
+	display: flex;
+}
+.slick-slide {
+	margin: 0 20rem;
+}
+.slider {
+	margin-top: 120rem;
+}
+.slick-dots li {
+	width: 63rem!important;
+	height: 10rem !important;
+}
+.slick-active {
+	background-color:#AAAAAA!important;
+}
+.slick-dots li {
+	background-color: #E5E5E5;
+}
+.slick-dots li button {
+	display: none!important;
+}
+.slick-dots {
+	bottom: -45rem!important;
+}
+.pagination_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pagination {
+	margin-top: 120rem;
+	margin:  120rem 0 75rem 0;
+	background-color: #E5E5E5;
+	padding: 75rem 0;
+}
+.pagination_arrow {
+	position: relative;
+	top: 3rem;
+	margin: 0 15rem;
+}
+.pagination_arrow img {
+	width: 22rem;
+}
+
+
+
+
+
 @media screen and (max-width: 1100px) {
 	.container {
 		width: auto;

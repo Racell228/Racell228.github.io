@@ -199,7 +199,7 @@ header {
 .footer_law {
 	font-size: 14px;
 	text-align: center;
-	margin: 45px 0;
+	margin: 30px 0;
 	line-height: 21px;
 }
 .footer_law span {
@@ -316,6 +316,9 @@ header {
     z-index: 100;
     margin: 0 10px;
     border: 1px solid rgba(0, 0, 0, 0.09);
+  }
+  .footer_law {
+  	padding: 0 20px;
   }
 }
 @media screen and (max-width: 650px) {
