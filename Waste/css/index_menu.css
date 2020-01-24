@@ -362,6 +362,7 @@ a:not(class) {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 		font-size: 16px;
 		position: relative;
+    font-weight: 500;
 	}
 	.mobile_menu_title {
 		background-color: #429755;
@@ -384,6 +385,7 @@ a:not(class) {
 		display: block;
 		position: relative;
 		font-size: 16px;
+    font-weight: 500;
 	}
   .mobile_menu_step_link_qianity {
     font-size: 14px;
@@ -466,11 +468,13 @@ a:not(class) {
 	}
 	.mobile_menu_step_link_quanity {
 		font-size: 14px;
+    font-weight: 400;
     font-style: italic;
 	}
 	.mobile_menu_step_link_date {
 		font-size: 14px;
     font-style: italic;
+    font-weight: 400;
 	}
   .mobile_menu_step2 .mobile_menu_step_link {
     padding: 15px 60px;
@@ -497,6 +501,22 @@ a:not(class) {
   .mobile_menu_step_container {
     height: 100%;
     overflow: scroll;
+  }
+  .mobile_menu_step_container_title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: #fff;
+  }
+  .mobile_menu_step1_link_overlay {
+    margin-top: 53px;
+  }
+  .mobile_menu_step2_link_overlay {
+    margin-top: 106px;
+  }
+  .mobile_menu_step3_link_overlay {
+    margin-top: 159px;
   }
 }
 @media screen and (max-width: 450px) {

@@ -372,9 +372,6 @@ footer {
 		width: auto;
 		padding: 0 60rem;
 	}
-	.logo {
-		width: 320rem;
-	}
 	.header_menu a {
     margin: 0 30rem;
 	}
@@ -464,6 +461,19 @@ footer {
 		font: 700 30rem 'Playfair Display';
 		color: #333333;
 	}
+
+
+	/*project*/
+
+
+
+	.project_overview_descr {
+		width: 1300rem;
+		-webkit-column-gap: 30rem;
+    -moz-column-gap: 30rem;
+    column-gap: 30rem;
+	}
+
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -737,6 +747,42 @@ footer {
 	}
 	.menu_show a:first-child {
 		margin-top: 30%;
+	}
+
+
+
+
+
+
+
+	/*project*/
+
+
+
+	.transparent {
+		background-color: transparent;
+		position: absolute!important;
+    width: calc(100% - 72rem)!important;
+	}
+	.transparent .header_search_black {
+		display: block;
+		margin-left: 15rem;
+	}
+	.transparent .mobile_burger span {
+		background-color: #000;
+	}
+	.transparent .mobile_burger span:before, .transparent .mobile_burger span:after {
+		background-color: #000;
+	}
+	.project_hero {
+		height: 440rem;
+	}
+	.menu-btn_active span {
+		background-color: transparent!important;
+	}
+	.transparent .menu_show {
+		padding-top: 100rem;
+		height: calc(100vh - 100rem);
 	}
 
 }
