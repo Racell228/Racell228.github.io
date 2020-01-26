@@ -2,6 +2,12 @@ $('.mobile_burger').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('menu-btn_active');
   $(".header_menu_links").toggleClass('menu_show');
+  $(".mobile_burger_project").toggleClass('mobile_burger_project_active');
+  $(".header_project .logo_mobile").toggle();
+  $(".header_project .project_logo_mobile").toggle();
+  $("html,body").toggleClass('overflow');
+
+
 });
 
 $('.slider').slick({

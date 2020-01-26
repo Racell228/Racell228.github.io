@@ -9,20 +9,25 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
-	<header class="container transparent">
+	<header class="container transparent header_project">
 		<div class="header_flex">
 			<div class="header_logo">
-				<img src="img/logo.svg" class="logo">
-				<img src="img/logo_mobile_black.svg" class="logo_mobile">
+				<a href="index.html">
+					<img src="img/logo.svg" class="logo">
+					<img src="img/logo_mobile_black.svg" class="logo_mobile">
+					<img src="img/logo_mobile.svg" class="project_logo_mobile">
+			</a>
 			</div>
 			<div class="header_menu">
-				<div class="mobile_burger">
+				<div class="mobile_burger mobile_burger_project">
 					<span></span>
 				</div>
 				<div class="header_menu_links">
-					<a href="index.html">about us</a>
-					<a href="portfolio.html">work</a>
-					<a href="contacts.html">contact us</a>
+					<div class="header_menu_links_overlay">
+						<a href="index.html">about us</a>
+						<a href="portfolio.html" class="header_menu_links_active">work</a>
+						<a href="contacts.html">contact us</a>
+					</div>
 				</div>
 				<a href="#"><img src="img/search.svg" class="header_search header_search_black"></a>
 			</div>
