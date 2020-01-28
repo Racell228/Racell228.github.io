@@ -37,6 +37,14 @@ function initTouchNav() {
 	});
 }
 $(document).ready(function() {
+  $('.header_search_link').click(function(event) {
+      event.preventDefault();
+      $('.header_search_icon').toggle();
+      $('.header_search_close').toggle();
+      $('.search').toggle();
+  });
+});
+$(document).ready(function() {
   $('.close_menu').click(function(event) {
       event.preventDefault();
       $('.mobile_menu_step3').hide();

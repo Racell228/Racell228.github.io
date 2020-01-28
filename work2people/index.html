@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<section class="hero">
@@ -12,27 +13,29 @@
 			<div class="logo">
 				<img src="img/logo.svg" alt="">
 			</div>
-			<h1>Find your perfect job in IT</h1>
+			<h1>Find your job</h1>
 			<div class="inputs">
-					<input type="text" placeholder="Job title" class="input_hero_item">
+					<input type="text" placeholder="Title, Keyword, Company name" class="input_hero_item">
 				<select class="hero_select">
 					<option>Toronto</option>
 					<option>Toronto</option>
 					<option>Toronto</option>
 				</select>
 				<button class="hero_button">Search</button>
+				<div class="radio">
+					<input type="radio" name="search" id="hero_radio1" class="hero_radio" checked>
+					<label for="hero_radio1" class="hero_radio_label">Search job name</label>
+					<input type="radio" name="search" class="hero_radio" id="hero_radio2">
+					<label for="hero_radio2" class="hero_radio_label">Search job descriptions</label>
+					<input type="radio" name="search" class="hero_radio" id="hero_radio3">
+					<label for="hero_radio3" class="hero_radio_label">Search all</label>
+				</div>
 			</div>
-			<div class="radio">
-				<input type="radio" name="search" id="hero_radio1" class="hero_radio" checked>
-				<label for="hero_radio1" class="hero_radio_label">Search job name</label>
-				<input type="radio" name="search" class="hero_radio" id="hero_radio2">
-				<label for="hero_radio2" class="hero_radio_label">Search job descriptions</label>
-			</div>
+			
 		</div>
 	</section>
 	<section class="companies">
 		<div class="container">
-			<h2>Best companies work</h2>
 			<div class="companies_logo">
 				<img src="img/logotype/companies_img1.png">
 				<img src="img/logotype/companies_img2.png">
