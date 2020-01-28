@@ -245,11 +245,11 @@ header {
 	z-index: 999999;
 	display: none;
 }
-.top_input input::-webkit-input-placeholder {
+.search_input::-webkit-input-placeholder {
   color: #333333;
   font: 400 16px 'Montserrat';
 } 
-.top_input input::-moz-placeholder {
+.search_input::-moz-placeholder {
   color: #333333;
   font: 400 16px 'Montserrat';
 }
@@ -260,13 +260,17 @@ header {
 	display: flex;
 	background-color: #fff;
 	justify-content: space-between;	
+	padding: 0 20px 20px 20px;
+  max-width: 1160px;
+  margin: auto;
 }
 .search_input {
 	padding: 15px 25px;
   display: block;
   width: 100%;
   margin-right: 20px;
-  border: 1px solid #acacac;
+  border: 1px solid #ededed;
+  box-shadow: 1px 1px 0px rgba(170, 170, 170, 0.3);
 }
 .search_href {
 	width: 155px;
@@ -275,6 +279,8 @@ header {
   padding: 14px 0;
   background-color: #1c8835;
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 950px) {
@@ -282,8 +288,9 @@ header {
 		padding: 20px;
 	}
 	.search {
-		top: 92px;
+		top: 79px;
 	}
+
 	.mobile_menu {
 		display: block;
 	}
@@ -368,6 +375,9 @@ header {
   }
 }
 @media screen and (max-width: 650px) {
+	.search_input {
+		margin-right: 0;
+	}
 	.footer_flex {
 		flex-direction: column;
 		width: auto;
