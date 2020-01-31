@@ -47,6 +47,11 @@ header {
 	border-top-right-radius: 5rem;
 	border-bottom-right-radius: 5rem; 
 }
+.header_radio_container {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .header_radio_label {
 	font-size: 18rem;
 	color: #fff;
@@ -67,11 +72,8 @@ header {
 	background-position-y: -26rem;
 }
 .header_radio {
-	display: flex;
-  flex-wrap: wrap;
   width: 360rem;
   margin-left: 68rem;
-  justify-content: space-between;
 }
 .search_page {
 	margin: 65rem 0;
@@ -248,7 +250,15 @@ header {
 }
 
 
-
+.mobile_filters {
+	display: none;
+}
+.close_filters {
+	display: none;
+}
+.hidden {
+		overflow: hidden;
+	}
 @media screen and (max-width: 900px) {
 	
 	.filters_checkbox_item {
@@ -334,6 +344,7 @@ header {
 	.header_form {
 		flex-direction: column;
     margin: 0 20rem;
+    position: relative;
 	}
 	.header_input {
 		width: calc(100% - 45rem);
@@ -361,7 +372,7 @@ header {
 		width:  auto;
 		margin: 20rem 0 20rem 28rem;
 	}
-	.filters {
+	.filters_container {
 		display: none;
 	}
 	.results_active_filters {
@@ -410,5 +421,119 @@ header {
 		width: 100%;
     font-size: 16rem;
     padding: 15rem 0;
+	}
+	.header_radio_label:after {
+		background-image: url(../img/sprite_radio_m.png);
+		background-position-y: -23rem;
+	}
+	.header_radio_item:checked + .header_radio_label:after {
+		background-position-y: 0rem;
+	}
+	.mobile_filters {
+		display: block;
+		position: absolute;
+    right: 20rem;
+    top: 47rem;
+    width: 20rem;
+	}
+	.filters_container {
+		width: calc(100% - 40rem);
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    padding: 20rem;
+    height: calc(100% - 40rem);
+		overflow: scroll;
+		z-index: 99;
+	}
+	.close_filters {
+		position: absolute;
+		right: 30rem;
+		top: 30rem;
+		display: block;
+	}
+	.close_filters img {
+		width: 20rem;
+	}
+	.filters h3 {
+		font-size: 26rem;
+	}
+	.filters h4 {
+		font-size: 20rem;
+		margin: 20rem 0;
+	}
+	.filters_checkbox_item {
+		font-size: 16rem;
+		max-width: 90%;
+	}
+	.checkbox_label:before {
+    background-size: 17rem;
+    width: 17rem;
+    height: 17rem;
+	}
+	.checkbox:checked + .checkbox_label:before {
+    background-position-y: 17rem;
+    background-position-x: 17rem;
+	}
+	.filters {
+		height: 100%;
+		overflow: scroll;
+		width: auto;
+	}
+	.hidden {
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 380px) {
+	.header_radio {
+		-webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+    margin:  0;
+	}
+	.header_radio_container {
+		display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    margin: 20rem 0 0;
+    padding-bottom: 20rem;
+	}
+	.header_radio_label {
+		margin-left: 50rem;
+	}
+	.header_radio_label:nth-child(2) {
+		margin-left: 30rem;
+	}
+	.results_active_filters_container {
+		-webkit-transition: -webkit-transform 0.25s ease-out;
+    transition: -webkit-transform 0.25s ease-out;
+    transition: transform 0.25s ease-out;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+	}
+	.results_active_filters_overlay {
+		display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    width: 100%;
+	}
+	.header_input {
+		font: 400 16rem  'Rubik';
+		background-size: 16rem;
+		background-position: 15rem 18rem;
+
+	}
+	.header_select {
+		font: 400 16rem  'Rubik';
+		background-position: 15rem 15rem;
+		background-size: 14rem;
+	}
+	.results {
+		width: 100%;
 	}
 }
