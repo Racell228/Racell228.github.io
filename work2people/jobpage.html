@@ -4,6 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -11,9 +12,9 @@
 	<header>
 		<div class="container">
 			<div class="header_flex">
-				<a href="#" class="header_logo_link"><img src="img/logo.svg" class="header_logo"></a>
+				<a href="index.html" class="header_logo_link"><img src="img/logo.svg" class="header_logo"></a>
 				<div class="header_form">
-					<input type="text" class="header_input" placeholder="Java-developer">
+					<input type="text" class="header_input" value="Java-developer">
 					<a href="#"><img src="img/mobile_filters.png" class="mobile_filters"></a>
 					<select class="header_select">
 						<option>Toronto</option>
@@ -123,23 +124,26 @@
 
 <div class="attach_overlay">
 	<div class="attach">
-		<a href="#" class="close_modal"></a>
-		<h4>Attach you resume here</h4>
-		<div class="attach_file">
-			<input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
-			<label for="file">
-				<strong><img src="img/file_input.png" class="file_img">Choose a file</strong>
-				<span></span></label>
-		</div>
-		<div class="attach_inputs">
-			<input type="text" placeholder="Your name"  class="input_text">
-			<input type="text" placeholder="Your surname" class="input_text">
-			<input type="text" placeholder="E-mail" class="input_text">
-			<p class="attach_text">We will send you the list of jobs you applied for</p>
-		</div>
-		<div class="attach_buttons">
-			<a href="#" class="attach_cancel">Cancel</a>
-			<a href="#" class="attach_apply">Apply</a>
+		<div class="modal_scroll">
+			<a href="#" class="close_modal"></a>
+			<h4>Attach you resume here</h4>
+			<div class="attach_file">
+				<input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+				<label for="file">
+					<strong><img src="img/file_input.png" class="file_img">Choose a file</strong>
+					<span></span>
+				</label>
+			</div>
+			<div class="attach_inputs">
+				<input type="text" placeholder="Your name"  class="input_text">
+				<input type="text" placeholder="Your surname" class="input_text">
+				<input type="text" placeholder="E-mail" class="input_text">
+				<p class="attach_text">We will send you the list of jobs you applied for</p>
+			</div>
+			<div class="attach_buttons">
+				<a href="#" class="attach_cancel">Cancel</a>
+				<a href="#" class="attach_apply">Apply</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -147,6 +151,74 @@
 
 
 
+<div class="done_overlay">
+	<div class="done">
+		<div class="modal_scroll">
+		<a href="#" class="close_modal"></a>
+		<h2>Congratulations!</h2>
+		<h4>Your resume was successfully sent! </h4>
+		<img src="img/attach_done.png">
+	</div>
+	</div>
+</div>
+
+<div class="error_overlay">
+	<div class="error">
+		<div class="modal_scroll">
+		<a href="#" class="close_modal"></a>
+		<h2>Failed to upload.</h2>
+		<h4>Please try again later.</h4>
+		<img src="img/attach_error.png">
+	</div>
+	</div>
+</div>
+
+
+
+
+<div class="filters_container filters_container_mobile">
+					<div class="filters">
+						<a href="#" class="close_filters"><img src="img/close.svg" ></a>
+						<h3>Filters</h3>
+						<div class="filters_checkbox">
+							<h4>Company name</h4>
+							<input type="checkbox" id="checkbox1"  name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox1">Google</label>
+							<input type="checkbox" id="checkbox2" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox2">Amazon</label>
+							<input type="checkbox" id="checkbox3" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox3">Booking</label>
+							<input type="checkbox" id="checkbox4" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox4">Microsoft</label>
+							<input type="checkbox" id="checkbox5" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox5">EPAM / Epam System</label>
+						</div>
+						<div class="filters_checkbox">
+							<h4>Position name</h4>
+							<input type="checkbox" id="checkbox_position1"  name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox_position1">Programmer</label>
+							<input type="checkbox" id="checkbox_position2" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox_position2">Tester</label>
+							<input type="checkbox" id="checkbox_position3" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox_position3">Director</label>
+							<input type="checkbox" id="checkbox_position4" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox_position4">Java-developer</label>
+							<input type="checkbox" id="checkbox_position5" name="Company" class="checkbox">
+							<label class="checkbox_label filters_checkbox_item" for="checkbox_position5">Motion designer</label>
+						</div>
+						<div class="filters_select">
+							<h4>Location</h4>
+							    	<p>
+										<select class="turnintodropdown_demo2">
+												<option>Toronto1</option>
+												<option>Toronto2</option>
+												<option>Toronto3</option>
+												<option>Toronto4</option>
+										</select>
+									</p>
+						</div>
+					</div>
+				</div>
 
 
 
@@ -154,5 +226,6 @@
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 </body>
 </html>
