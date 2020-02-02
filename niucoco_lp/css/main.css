@@ -53,11 +53,10 @@ p  {
 	font-size: 14px;
 }
 header {
-	background-color: #F6F6F6;
 }
 hr {
 	margin: 0;
-	border: 2px solid #D1AF39;
+	border: 1px solid #D1AF39;
 	background-color: #D1AF39;
 }
 .header_flex {
@@ -74,10 +73,10 @@ hr {
 	padding-bottom: 35px;
 }
 .hero h1 {
-	color: #ffe89a;
+	color: #5E5049;
 }
 .hero h2 {
-	color: #fff;
+	color: #5E5049;
 }
 .hero_flex {
 	display: flex;
@@ -120,9 +119,7 @@ hr {
 	transform: rotate(180deg);
 }
 .hero {
-	background-image: url(../img/hero_bg.png);
-	background-size: cover;
-  background-position-x: 0%;
+	background-color: #F6F6F6;
 }
 .hero_table_item {
 	display: flex;
@@ -138,7 +135,7 @@ hr {
 	line-height: 36px;
 }
 .hero h4 {
-	color: #fff;
+	color: #5E5049;
 }
 .hero_btn {
 	width: 180px;
@@ -245,21 +242,22 @@ hr {
 }
 .niococo_flex {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .niococo {
-	background-image: url(../img/niucoco.png);
-	background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  background-position-x: right;
+	background-color: #f6f6f6;
+	padding: 50px 0;
 }
 .niococo_txt {
-	width: 600px;
-	padding-top: 120px;
+	max-width: 600px;
 }
 .niococo_txt-text {
 	margin-top: 30px;
 	line-height: 23px; 
+}
+.niucoco_image {
+	width: 40%;
 }
 .video_item {
 	width: 800px;
@@ -409,9 +407,6 @@ footer p {
 	text-align: center;
 	font-size: 14px;
 	margin: 40px 0;
-}
-.niucoco_image {
-	display: none;
 }
 
 @media screen and (max-width:1353px) {
@@ -642,6 +637,9 @@ footer p {
 	}
 	.slider-nav .slick-slide.slick-current:after {
 		width: 16.6%;
+	}
+	.niococo_txt {
+		padding: 50px 20px 10px;
 	}
 }
 @media screen and (max-width:500px) {
