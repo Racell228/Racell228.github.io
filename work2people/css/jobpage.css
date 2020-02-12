@@ -1,0 +1,387 @@
+.jobpage {
+	margin: 60rem 0;
+}
+.job_flex {
+	display: flex;
+	justify-content: space-between;
+}
+.job {
+	width: 100%;
+	margin-right: 90rem; 
+}
+.job p {
+	line-height: 28rem;
+}
+.job span {
+	margin-top: 20rem;
+	font-weight: 700;
+	display: block;
+}
+.job h2 {
+	margin:  30rem 0;
+	line-height: 130%;
+}
+.job a {
+	font-size: 18rem;
+	color: #2373B7;
+	display: block;
+}
+.back_to_search {
+	position: relative;
+	margin-left: 20rem;
+}
+.back_to_search:after, .back_to_search:before {
+	content: "";
+	display: block;
+	width: 10rem;
+	height: 2rem;
+	position: absolute;
+	left: -20rem;
+	background-color: #2373B7;
+}
+.back_to_search:after {
+	transform: rotate(45deg);
+	bottom: 7rem;
+}
+.back_to_search:before {
+	transform: rotate(-45deg);
+	top: 7rem;
+}
+.original_job {
+	margin: 40rem 0;
+}
+.job a.job_apply {
+	width: 252rem;
+	color: #fff;
+	background-color: #F7941F;
+	text-align: center;
+	padding: 16rem 0;
+}
+.more_jobs .results_overlay {
+	display: block;
+}
+.more_jobs h3 {
+	margin-bottom: 27rem;
+}
+.attach {
+	position: fixed;
+  top: calc(50% - 296rem);
+  left: calc(50% - 248rem);
+  width: 395rem;
+  height: 492rem;
+  background-color: #fff;
+  padding: 50rem;
+}
+.attach_overlay {
+	position: fixed;
+	width: 100%;
+	display: none;
+	height: 100%;
+	background-color: rgba(33,50,64, 0.6);
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+.attach h4 {
+	margin-bottom: 30rem;
+}
+.attach_inputs {
+	margin: 50rem 0;
+}
+.attach_inputs input {
+	width: 100%;
+	padding: 17rem 0 17rem 20rem;
+	margin-bottom: 20rem;
+	border: 1rem solid #E5E5E5;
+	font: 400 18rem 'Rubik'; 
+}
+.attach_text {
+	font-size: 14rem;
+	font-weight: 300;
+	color: #777777;
+	margin: -10rem 0 0 20rem;
+}
+.attach_buttons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.attach_cancel {
+	color: #2373B7;
+	font-size: 18rem;
+}
+.attach_apply {
+	font-size: 18rem;
+	font-weight: 500;
+	color: #fff;
+	background-color: #F7941F;
+	padding: 15rem 0;
+	width: 118rem;
+	text-align: center;
+	border-radius: 3rem;
+}
+
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 18rem;
+ 	font-weight: 500;
+ 	color: #000;
+ 	padding: 15rem 0;
+  text-overflow: ellipsis;
+	white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+}
+.inputfile + label {
+	cursor: pointer; 
+}
+.inputfile + label strong {
+	background-color: #2373B7;
+	font-size: 18rem;
+ 	font-weight: 500;
+ 	padding: 15rem 34rem;
+ 	color: #fff;
+ 	border-radius: 3rem;
+ 	margin-right: 20rem;
+}
+
+.inputfile + label * {
+	pointer-events: none;
+}
+.file_img {
+	position: relative;
+	top: 3rem;
+  margin-right: 14rem;
+  width: 18rem;
+}
+
+.close_modal {
+	position: absolute;
+	width: 20rem;
+	height: 20rem;
+	display: block;
+	top: -30rem;
+  right: -30rem;
+}
+.close_modal:before, .close_modal:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	width: 30rem;
+  height: 3rem;
+	background-color: #fff;
+	display: block;
+}
+.close_modal:before {
+	transform: rotate(45deg);
+}
+.close_modal:after {
+	transform: rotate(-45deg);
+}
+
+.done {
+	position: fixed;
+	top: calc(50% - 248rem);
+	left: calc(50% - 226rem);
+	width: 452rem;
+	height: 396rem;
+	padding: 50rem;
+	background-color: #fff;
+	text-align: center;
+}
+.done h4 {
+	margin-top: 20rem;
+	margin-bottom: 50rem;
+}
+.done  img {
+	width: 220rem;
+	display: block;
+	margin: auto;
+}
+.done_overlay {
+	position: fixed;
+	width: 100%;
+	display: none;
+	height: 100%;
+	background-color: rgba(33,50,64, 0.6);
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+
+.error {
+	position: fixed;
+	top: calc(50% - 248rem);
+	left: calc(50% - 226rem);
+	width: 452rem;
+	height: 396rem;
+	padding: 50rem;
+	background-color: #fff;
+	text-align: center;
+}
+.error h4 {
+	margin-top: 20rem;
+	margin-bottom: 50rem;
+}
+.error  img {
+	width: 220rem;
+	display: block;
+	margin: auto;
+}
+.error_overlay {
+	position: fixed;
+	width: 100%;
+	display: none;
+	height: 100%;
+	background-color: rgba(33,50,64, 0.6);
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+.filters_container_mobile {
+	display: none;
+}
+.close_modal:hover:after, .close_modal:hover:before {
+	opacity: 0.6;
+	transition: 0.3s;
+}
+@media screen and (max-width: 900px) {
+	.job h2 {
+		font-size: 42rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.job_flex {
+		flex-direction: column;
+	}
+	.job h2 {
+    font-size: 38rem;
+	}
+	.jobpage {
+    margin: 50rem 0;
+	} 
+	.more_jobs {
+		margin-top: 40rem;
+	}
+	.attach {
+    top: 60rem;
+    left: 20rem;
+    width: calc(100% - 80rem);
+    height: auto;
+    padding: 30rem 20rem;
+    overflow: scroll;
+	}
+	.attach_inputs input {
+		width: calc(100% - 23rem);
+		font: 400 16rem 'Rubik';
+	}
+	.attach h4 {
+		font-size: 20rem;
+		text-align: center;
+	}
+	.inputfile + label strong {
+		display: block;
+		margin-right: 0;
+	}
+	.inputfile + label {
+		width: 100%;
+		text-align: center;
+	}
+	.inputfile + label span {
+		margin-top: 10rem;
+    display: block;
+	}
+	.attach_inputs {
+    margin: 30rem 0;
+	}
+	.attach_buttons {
+		flex-direction: column-reverse;
+	}
+	.attach_apply {
+		margin-bottom: 15rem;
+	}
+	.done {
+		top: 60rem;
+    left: 20rem;
+    width: calc(100% - 80rem);
+    height: auto;
+    padding: 30rem 20rem;
+    overflow: scroll;
+	}
+	.done h4 {
+		font-size: 20rem;
+		margin-bottom: 30rem;
+	}
+	.error {
+		top: 60rem;
+    left: 20rem;
+    width: calc(100% - 80rem);
+    height: auto;
+    padding: 30rem 20rem;
+    overflow: scroll;
+	}
+	.error h4 {
+		font-size: 20rem;
+		margin-bottom: 30rem;
+	}
+	.close_modal {
+		top: 20rem;
+    right: 20rem;
+	}
+	.close_modal:before, .close_modal:after {
+		background-color: #F7941F;
+	}
+}
+
+@media screen and (max-width: 480px)  {
+	.attach_apply {
+		width: 100%;
+	}
+	.done h4 {
+		font-size: 20rem;
+		margin-bottom: 30rem;
+		line-height: 140%;
+	}
+	.done img {
+		width: 130rem;
+	}
+	.error img {
+		width: 130rem;
+	}
+}
+@media screen and (max-width:380px)  {
+	.modal_scroll {
+		height: 410rem;
+		overflow: scroll;
+	}
+	.job h2 {
+    font-size: 30rem;
+	}
+	.attach h4 {
+    margin-bottom: 15rem;
+	}
+	.attach_inputs {
+    margin: 20rem 0;
+	} 
+	.done .modal_scroll {
+		height: auto;
+	}
+	.error .modal_scroll {
+		height: auto;
+	}
+	.done {
+		padding: 50rem 20rem 30rem;
+	}
+	.error {
+		padding: 50rem 20rem 30rem;
+	}
+}
