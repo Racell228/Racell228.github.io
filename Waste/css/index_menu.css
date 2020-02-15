@@ -381,28 +381,28 @@ a:not(class) {
 
 
 
- .catalog-list li > a:active {
+ .catalog-list li > a:focus {
   background-color: #429755;
   color: #fff;
  }
- .catalog-list .catalog-tabset li a:active {
+ .catalog-list .catalog-tabset li a:focus {
   background-color: #429755;
   color: #fff;
  }
- .catalog-list a:active {
+ .catalog-list a:focus {
   background-color: #429755;
   color: #fff;
  }
- .catalog-list a:active .cat-tab_name {
+ .catalog-list a:focus .cat-tab_name {
     color: #fff;
  }
- .catalog-list a:active .cat-tab_value {
+ .catalog-list a:focus .cat-tab_value {
   color: #fff;
  }
- .catalog-list li:active  .sidebar_arrow:before {
+ .catalog-list li:focus  .sidebar_arrow:before {
   background-color: #fff;
  }
-.catalog-list li:active  .sidebar_arrow:after {
+.catalog-list li:focus  .sidebar_arrow:after {
   background-color: #fff;
  }
 }
