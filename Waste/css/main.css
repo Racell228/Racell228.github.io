@@ -282,6 +282,7 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
+
 @media screen and (min-width: 950px) {
 	.mobile_menu_step1,.mobile_menu_step2,.mobile_menu_step3 {
 		display: none!important;

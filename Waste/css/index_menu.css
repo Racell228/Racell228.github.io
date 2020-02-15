@@ -349,6 +349,31 @@ a:not(class) {
   overflow: scroll;
 }
 
+
+
+@media (pointer:coarse){
+ .catalog-list li.hover > a {
+  background-color: transparent;
+  color: #3c2824;
+ }
+ .catalog-list .catalog-tabset li.active a {
+  background-color: transparent;
+  color: #3c2824;
+ }
+ .catalog-list a:hover {
+  background-color: transparent;
+  color: #3c2824;
+ }
+ .catalog-list a:hover .cat-tab_name {
+    color: #3c2824;
+ }
+ .catalog-list li:hover  .sidebar_arrow:before {
+  background-color: #fff;
+ }
+.catalog-list li:hover  .sidebar_arrow:after {
+  background-color: #fff;
+ }
+}
 @media screen and (max-width: 950px) {
   .header_menu_item span {
     display: none;
