@@ -376,6 +376,35 @@ a:not(class) {
 .catalog-list li:hover  .sidebar_arrow:after {
   background-color: #3c2824;
  }
+
+
+
+
+
+ .catalog-list li > a:active {
+  background-color: #429755;
+  color: #fff;
+ }
+ .catalog-list .catalog-tabset li a:active {
+  background-color: #429755;
+  color: #fff;
+ }
+ .catalog-list a:active {
+  background-color: #429755;
+  color: #fff;
+ }
+ .catalog-list a:active .cat-tab_name {
+    color: #fff;
+ }
+ .catalog-list a:active .cat-tab_value {
+  color: #fff;
+ }
+ .catalog-list li:active  .sidebar_arrow:before {
+  background-color: #fff;
+ }
+.catalog-list li:active  .sidebar_arrow:after {
+  background-color: #fff;
+ }
 }
 @media screen and (max-width: 950px) {
   .header_menu_item span {
