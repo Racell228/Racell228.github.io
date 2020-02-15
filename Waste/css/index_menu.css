@@ -367,6 +367,9 @@ a:not(class) {
  .catalog-list a:hover .cat-tab_name {
     color: #3c2824;
  }
+ .catalog-list a:hover .cat-tab_value {
+  color: #3c2824;
+ }
  .catalog-list li:hover  .sidebar_arrow:before {
   background-color: #3c2824;
  }
