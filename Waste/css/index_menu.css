@@ -368,10 +368,10 @@ a:not(class) {
     color: #3c2824;
  }
  .catalog-list li:hover  .sidebar_arrow:before {
-  background-color: #fff;
+  background-color: #3c2824;
  }
 .catalog-list li:hover  .sidebar_arrow:after {
-  background-color: #fff;
+  background-color: #3c2824;
  }
 }
 @media screen and (max-width: 950px) {
