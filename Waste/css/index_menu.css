@@ -381,7 +381,7 @@ a:not(class) {
 
 
 
- .catalog-list li > a:focus {
+/* .catalog-list li:focus  a{
   background-color: #429755;
   color: #fff;
  }
@@ -404,7 +404,7 @@ a:not(class) {
  }
 .catalog-list li:focus  .sidebar_arrow:after {
   background-color: #fff;
- }
+ }*/
 }
 @media screen and (max-width: 950px) {
   .header_menu_item span {
