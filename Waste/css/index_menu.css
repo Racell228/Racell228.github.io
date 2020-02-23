@@ -352,29 +352,21 @@ a:not(class) {
 
 
 @media (pointer:coarse){
- .catalog-list li.hover > a {
-  background-color: transparent;
-  color: #3c2824;
- }
  .catalog-list .catalog-tabset li.active a {
-  background-color: transparent;
-  color: #3c2824;
- }
- .catalog-list a:hover {
-  background-color: transparent;
-  color: #3c2824;
- }
- .catalog-list a:hover .cat-tab_name {
-    color: #3c2824;
- }
- .catalog-list a:hover .cat-tab_value {
-  color: #3c2824;
+  background-color: #429755;
+  color: #fff;
  }
  .catalog-list li:hover  .sidebar_arrow:before {
   background-color: #3c2824;
  }
 .catalog-list li:hover  .sidebar_arrow:after {
   background-color: #3c2824;
+ }
+  .catalog-list li.hover  .sidebar_arrow:before {
+  background-color: #fff;
+ }
+.catalog-list li.hover .sidebar_arrow:after {
+  background-color: #fff;
  }
 
 

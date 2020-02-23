@@ -1,0 +1,145 @@
+
+.head_menu:hover {
+	opacity: 0.8;
+}
+.head_menu-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    width: 100%;
+    z-index: 9999999999;
+    background: linear-gradient(to right, #a6a7cf 0%,#82b1ff 100%);
+}
+.head_menu-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 240px;
+}
+
+.head_menu-back {
+	position: absolute;
+	top: 25px;
+	right: 130px;
+    transform: rotate(180deg);
+}
+.head_menu-back:hover {
+	opacity: 0.8;
+}
+.head_menu-left-link {
+	font-size: 40px;
+	color: #fff;
+	margin-top: 15px;
+	margin-bottom: 35px;
+	position: relative;
+}
+.head_menu-mid-link {
+	font-size: 22px;
+	color: #fff;
+	margin-top: 25px;
+	position: relative;
+}
+.underline {
+	position: relative;
+}
+.underline:after {
+    background: linear-gradient(to right,#fff, #fff );
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:0%;
+    position:absolute;
+	transition: 0.5s;
+	margin-top: 3px;
+}
+.underline:hover:after {
+    width: 50px;
+}
+.head_menu-right-link {
+	font-size: 22px;
+	color: #fff;
+	margin-top: 25px;
+	position: relative;
+}
+.head_menu-social {
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+.head_menu-social a:hover{
+	opacity: 0.8;	
+}
+.hero_bg-mobile {
+	display: none;
+}
+.bg_mobile_small {
+	display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.head_menu-container {
+    	margin-top: 200px;
+	}
+	.head_menu-right-link, .head_menu-mid-link {
+		font-size: 18px;
+	}
+	.head_menu-left-link {
+		font-size: 32px;
+		margin-bottom: 28px;
+	}
+	.head_menu-back {
+    	right: 20px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.head_menu-container {
+		flex-direction: column;
+    	margin: 120px auto 0;
+    	width: 250px;
+    	text-align: center;
+    	height: 100%;
+    	overflow: scroll;
+	}
+	.head_menu-body {
+		overflow: scroll;
+	}
+	.head_menu-social {
+		margin: 50px auto 20px;
+	}
+}
+@media screen and (max-width: 500px)  {
+	.head_menu-back {
+		right: 20px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.head_menu-left-link {
+		margin: 5px 0 25px;
+    	font-size: 24px;
+	}
+	.head_menu-mid-link {
+		font-size: 18px;
+	}
+	.head_menu-social {
+		margin: 40px auto 0;
+	}
+	.head_menu-container {
+		text-align: center;
+	}
+	.head_menu-right-link {
+		font-size: 18px;
+	}
+	.head_menu-container {
+		width: 260px;
+	}
+	.head_menu-container {
+		margin: 80px auto 0;
+	}
+	.back_arrow {
+		width: 30px;
+	}
+}

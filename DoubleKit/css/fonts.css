@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../fonts/MuseoSans.eot');
+	src: url('../fonts/MuseoSans.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans.woff') format('woff'),
+	url('../fonts/MuseoSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo Sans300';
+	src: url('../fonts/MuseoSans300.eot');
+	src: url('../fonts/MuseoSans300.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MuseoSans300.woff') format('woff'),
+	url('../fonts/MuseoSans300.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/MontserratAlternates-Regular.eot');
+	src: url('../fonts/MontserratAlternates-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MontserratAlternates-Regular.woff') format('woff'),
+	url('../fonts/MontserratAlternates-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

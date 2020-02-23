@@ -1,0 +1,316 @@
+.about_hero {
+	background-image: url(../img/about/hero.svg);
+	background-size: cover;
+	height: 600px;
+    padding-top: 100px;
+}
+.body_about .hero_flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+}
+.about_hero_img {
+	width: 650px;
+}
+.about_hero_text {
+	margin-right: 20px;
+}
+.about_team h2 {
+	margin: 100px 0;
+	text-align: center;
+}
+.body_about .hero_flex p {
+	margin-top: 30px;	
+}
+.team_img {
+	width: 470px;
+}
+.team_item {
+	display: flex;
+}
+.team_item_description {
+	margin: 0 0 0 50px;
+	width: 580px;
+}
+.team_item_program {
+	width: 100px;
+}
+.team_item_program:last-child {
+	width: 150px;
+}
+.about_profession {
+	margin: 20px 0;
+	font-size: 20px;
+}
+.about_description {
+	margin-bottom: 35px;
+	font-size: 16px;
+	font-weight: 300;
+}
+.about_program {
+	margin: 35px 0 25px 0;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 20px;
+}
+.about_programs {
+	width: 530px;
+    justify-content: space-between;
+}
+.about_skills_item h4 {
+	color: #A6A7CF;
+	opacity: 0.3;
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+}
+.about_skills {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.about_skills_item {
+	position: relative;
+	margin-right: 40px;
+	width: 200px;
+}
+.about_skills_item-prof {
+	margin-top: 65px;
+}
+.about_skills_item-time {
+	font-size: 16px;
+	margin-top: 5px;
+}
+.team_item_program p {
+	font-size: 16px;
+	line-height: 22px;
+}
+.team_item-next .team_item_description {
+	margin: 0 50px 0 0;
+}
+.team_item-next {
+	margin-top: 100px;
+}
+
+@media screen and (min-width: 1650px) {
+	.about_hero {
+		background-image: none;
+        background: linear-gradient(to right, #a6a7cf 0%,#82b1ff 100%);
+	    height: auto;
+	    padding: 100px 0;
+	}
+}
+@media screen and (max-width: 1340px) {
+	.about_hero_text {
+		width: 625px;
+	}
+	.about_hero_text h3 {
+		max-width: 625px;
+		font-size: 50px;
+    	line-height: 66px;
+	}
+	.about_hero_img {
+		width: 100%;
+	}
+	.body_about .hero_flex p {
+    	margin-top: 40px;
+    }
+    .about_team h2 {
+    	margin: 100px 0 70px;
+    }
+}
+@media screen and (max-width: 1380px) {
+	.about_hero_img {
+		width: 500px;
+	}
+}
+@media screen and (max-width: 1140px) {
+	.team_item {
+		flex-direction: column;
+	}
+	.team_item_img {
+		text-align: center;
+	}
+	.team_item_description {
+		margin: 20px auto 0;
+	}
+	.team_item_description h3 {
+		text-align: center;
+	}
+	.about_profession {
+		text-align: center;
+	}
+	.about_description {
+		text-align: center;
+	}
+	.team_item-next .team_item_description {
+		margin: 20px auto 0;
+	}
+	.team_item-next {
+		flex-direction: column-reverse;
+	}
+	.about_hero_text h3 {
+    	font-size: 42px;
+    	line-height: 58px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.body_about .hero_flex {
+		flex-direction: column-reverse;
+	}
+	.about_hero {
+		height: 1000px; 
+	}
+	.about_hero_img {
+		width: 100%;
+	}
+	.about_hero_text {
+		margin-top: 40px;
+		text-align: center;
+	}
+	.body_about .hero_flex p{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px){
+	.about_hero {
+		background-image: none;
+        background: linear-gradient(to right, #a6a7cf 0%,#82b1ff 100%);
+    	height: auto;
+    	padding: 70px 0;
+	}
+	.about_hero_text {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.about_hero_text h3 {
+		margin: 50px auto 30px;
+	}
+	.about_hero_img {
+		width: 80%;
+    	margin: auto;
+    	display: block;
+	}
+	.body_about .hero_flex p {
+		margin-top: 0;
+	}
+	.about_skills {
+    	margin-bottom: 50px;
+	}
+	.about_skills_item:first-child {
+		margin-right: 60px;
+	}
+	.about_team h2 {
+		margin: 70px 0 50px;
+	}
+}
+@media screen and (max-width: 700px){
+	.about_hero_text h3 {
+    line-height: 40px;
+    text-align: center;
+    font-size: 32px;
+    width: auto;
+	}
+	.about_hero_text {
+		width: auto;
+	}
+	.team_item-next {
+		margin-top: 40px;
+	}
+}
+@media screen and (max-width: 610px) {
+	.team_item_description {
+		width: 380px;
+	}
+	.about_programs {
+		width: 330px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: left;
+    text-align: center;
+	}
+	.team_item_program {
+		margin: 10px auto 30px;
+	}
+	.team_item_program {
+		width: 120px;
+	}
+	.about_program {
+		text-align: center;
+	}
+	.about_skills {
+		text-align: center;
+	}
+	.team_item_description h3 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+}
+@media screen and (max-width: 520px) {
+	.team_img {
+		width: 100%;
+	}
+	.about_hero_img {
+		width: 100%;
+	}
+	.about_hero_text {
+		max-width: 100%;
+	}
+	.about_hero_text h3 {
+		margin: 30px auto;
+	}
+}
+@media screen and (max-width: 420px) {
+	.about_hero_text h3 {
+		font-size: 26px;
+    	line-height: 36px;
+	}
+	.about_hero_text p {
+    	font-size: 16px;
+    	line-height: 26px;
+	}
+	.about_skills_item h4 {
+		font-size: 60px;
+		top: 20px;
+	}
+	.about_skills_item p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.team_item_description {
+    width: 280px;
+	}
+	.team_item_program {
+		font-size: 14px;
+	}
+	.about_programs {
+		width: 280px;
+	}
+	.team_item_description {
+		width: 100%;
+	}
+	.about_skills {
+		margin-bottom: 10px;
+	}
+	.about_skills_item {
+    	margin: 0 10px;
+	}
+	.about_skills_item:first-child {
+    	margin-right: 30px;
+	}
+	.about_hero {
+		padding: 50px 0;
+	}
+	.body_about .hero_flex p {
+    	margin-top: 30px;
+	}
+	.about_team h2 {
+		margin: 70px 0 50px;
+	}
+	.team_item-next {
+		margin-top: 40px;
+	}
+}
+

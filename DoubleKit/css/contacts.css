@@ -1,0 +1,323 @@
+.contacts_hero {
+	background-image: url(../img/about/hero.svg);
+	background-size: cover;
+    height: 640px;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+.contacts_hero-left {
+	max-width: 500px;
+	color: #fff;
+}
+.contacts_hero-left p {
+	margin-top: 30px;
+}
+.contacts_hero-image {
+	margin-top: 20px;
+}
+.contacts {
+	margin-top: 50px;
+}
+.contacts_title {
+	text-align: center;
+	max-width: 670px;
+  margin: 100px auto 40px;
+  font-size: 34px;
+}
+.contacts_info {
+	margin-left: 25px;
+}
+.contacts_left {
+	width: 330px;
+}
+.contacts_info-title {
+	font-size: 16px;
+	font-family: 'Museo Sans';
+}
+.contacts_info-text {
+	font-size: 20px;
+}
+.contacts_info-text span {
+	font-size: 28px;
+}
+.contacts_info-descr {
+	font-size: 16px;
+}
+.contacts_right {
+	width: 410px;
+}
+.contacts_info img {
+	width: 38px;
+	margin-right: 15px;
+}
+.contacts_info img:hover {
+	opacity: 0.8;
+}
+.contacts_item {
+	margin-top: 40px;
+}
+.contacts_social {
+	margin-left: 30px;
+}
+.contacts_info-social {
+	width: 130px;
+	margin-top: 10px;
+}
+.contacts_link {
+	font-size: 22px;
+}
+.contacts_link {
+	width: 405px;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 30px;
+  margin: 80px auto 0;
+  color: #fff;
+}
+.personal {
+	margin-top: 140px;
+}
+.personal_title {
+	text-align: center;
+	max-width: 670px;
+  margin: 0 auto 80px;
+  font-size: 34px;
+}
+.personal_head {
+	align-items: center;
+}
+.personal_head_avatar {
+	margin-right: 30px;
+	width: 150px;
+}
+.personal_item {
+	width: 440px;
+}
+.personal_head p {
+	font-size: 16px;
+	line-height: 130%;
+	margin-top: 15px;
+}
+.personal_info_img {
+	margin-right: 15px;
+}
+.personal_info p {
+	font-family: 'Museo Sans';
+	font-size: 16px;
+}
+.personal_info_subtitle {
+	font-size: 20px;
+}
+.personal_info_subtitle span {
+	font-size: 28px;
+}
+.personal_info-social img {
+	width: 37px;
+	margin-right: 12px;
+}
+.personal_info-social a:hover {
+	opacity: 0.8;
+}
+.personal_info-social {
+	width: 280px;
+	margin-top: 10px;
+}
+.personal_info_item {
+	margin-top: 35px;
+}
+
+
+@media screen and (min-width: 1650px) {
+	.contacts_hero {
+		background-image: none;
+        background: linear-gradient(to right, #a6a7cf 0%,#82b1ff 100%);
+	    height: auto;
+	    padding: 100px 0;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.contacts_middle {
+		order: 1;
+  	width: 100%;
+  	text-align: center;
+}
+.contacts_middle img {
+	  width: 50%;
+    margin-bottom: 40px;
+	}
+.contacts_left {
+		order: 2;
+	}
+.contacts_flex {
+		flex-wrap: wrap;
+	}
+.contacts_right {
+		order: 2;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.contacts_hero_flex {
+		flex-direction: column-reverse;
+	}
+	.contacts_hero {
+		padding-bottom: 130px;
+		height: auto;
+		background-position-x: 90%;
+	}
+	.personal {
+		margin-top: 100px;
+	}
+	.contacts_title {
+		margin: 70px auto 50px;
+	}
+	.contacts_middle img {
+		margin-bottom: 10px;
+	}
+	.contacts_link {
+		margin: 50px auto 0;
+	}
+	.personal_title {
+		margin: 0 auto 50px;
+	}
+	.contacts_hero-left {
+		max-width: 80%;
+    text-align: center;
+	}
+	.contacts_hero-left h3 {
+		margin-top: 40px;
+	}
+}
+@media screen and (max-width: 950px) {
+	.personal_flex {
+		flex-direction: column;
+	}
+	.personal_item:last-child {
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.contacts_left {
+		margin: auto;
+		width: 410px;
+	}
+	.contacts_right {
+		margin: auto;
+		width: 410px;
+	}
+}
+@media screen and (max-width: 768px) {
+		.contacts_hero {
+			background-image: none;
+	    background: linear-gradient(to right, #a6a7cf 0%,#82b1ff 100%);
+	    height: auto;
+	    padding: 70px 0;
+		}
+}
+@media screen and (max-width: 700px){
+	.contacts_hero-left h3 {
+		text-align: center;
+	}
+	.personal_title {
+		width: auto;
+	}
+}
+@media screen and (max-width: 580px){
+	.contacts_hero-left {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 460px) {
+	.contacts_hero {
+		padding: 50px 0;
+	}
+	.contacts_hero-left p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.contacts_hero-left h3 {
+		margin-top: 30px;
+		font-size: 28px;
+    line-height: 36px;
+	}
+	.contacts_title {
+		font-size: 26px;
+		margin: 50px auto 30px;
+	}
+	.personal_head p {
+		margin-top: 5px;
+	}
+	.contacts_item {
+		margin-top: 20px;
+	}
+	.personal {
+		margin-top: 60px;
+	}
+	.personal_title {
+		font-size: 26px;
+	}
+	.personal_item {
+		width: 280px;
+	}
+	.personal_head {
+		flex-direction: column;
+	}
+	.personal_head {
+		text-align: center;
+	}
+	.personal_head_avatar {
+		margin: 0 0 5px 0;
+	}
+	.personal_info_subtitle {
+		font-size: 16px;
+	}
+	.personal_info-social img {
+    width: 30px;
+    margin-right: 10px;
+	}
+	.personal_info_item {
+		margin-top: 15px;
+	}
+	.personal_title {
+		margin: 0 auto 30px;
+	}
+	.contacts_middle img {
+		width: 100%;
+	}
+	.contacts_item_social {
+		flex-direction: column;
+		margin: 20px 0 0;
+    width: 200px;
+	}
+	.contacts_social {
+		margin: 20px 0 0;
+	}
+	.contacts_link {
+		margin: 30px auto 0;
+		width: 100%;
+	}
+	.contacts_info-text {
+		font-size: 16px;
+	}
+	.contacts_info-descr {
+		font-size: 14px;
+    line-height: 140%;
+    margin-top: 7px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.contacts_hero-image {
+		width: 100%;
+	}
+	.contacts_link {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.contacts_title {
+		font-size: 22px;
+	}
+	.personal_title {
+		font-size: 22px;
+	}
+}
