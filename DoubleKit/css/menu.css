@@ -127,17 +127,13 @@
 	.head_menu-social {
 		margin: 40px auto 0;
 	}
-	.head_menu-container {
-		text-align: center;
-	}
 	.head_menu-right-link {
 		font-size: 18px;
 	}
 	.head_menu-container {
-		width: 260px;
-	}
-	.head_menu-container {
 		margin: 80px auto 0;
+		text-align: center;
+		width: 260px;
 	}
 	.back_arrow {
 		width: 30px;
