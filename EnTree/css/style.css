@@ -102,7 +102,9 @@ a {
 	stroke-opacity: 0.3;
 }
 .media_hero .play polygon {
-	fill: #fff;
+	fill: none;
+  stroke: #fff;
+  stroke-width: 4rem;
 }
 .media_hero .pause line {
 	stroke: #fff;
@@ -545,7 +547,9 @@ a {
 	stroke: #198C7A;
 }
 .media_slider .play polygon {
-	fill:  #198C7A;
+	fill: none;
+	stroke: #198C7A;
+  stroke-width: 4rem;
 }
 .questions {
 	background-color: #EFFAFF;
