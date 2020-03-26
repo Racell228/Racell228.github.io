@@ -46,3 +46,9 @@ $(document).ready(function() {
       $('html').removeClass("hidden");
   });
 });
+$(document).ready(function() {
+  $('.lang').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('lang_visible');
+  });
+});

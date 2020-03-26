@@ -63,6 +63,43 @@ a {
 	width: 172rem;
 	padding-top: 20rem;
 }
+.header {
+	display: flex;
+	align-items: center;
+}
+.lang {
+	display: flex;
+	flex-direction: column;
+	width: 56rem;
+	height: 50rem;
+	overflow: hidden;
+	margin-left: 30rem;
+	position: relative;
+	padding-left: 10rem;
+	z-index: 2;
+}
+.lang_visible {
+	overflow: visible;
+  position: absolute;
+  left: 172rem;
+  height: 150rem;
+  border-radius: 10rem;
+  
+  top: 15rem;
+  background-color: #fff;
+}
+.lang a {
+	margin: 20rem 0 0;
+}
+.lang a img {
+	width: 40rem;
+}
+.lang_arrow {
+	position: absolute;
+	width: 8rem;
+	top: 30rem;
+  right: 1rem;
+}
 .hero {
 	background: linear-gradient(268.05deg, #DAF4FF 10.97%, #FFFFFF 90.82%);
 }
@@ -797,6 +834,36 @@ footer h4 {
 	}
 	h1 {
 		font-size: 24rem;
+	}
+	.header {
+		justify-content: space-between;
+	}
+	.lang a {
+    margin: 12rem 0 0;
+	}
+	.lang a img {
+		width: 28rem;
+	}
+	.lang a:first-child {
+		margin-top: 15rem;
+	}
+	.lang_arrow {
+		top: 35rem;
+    right: 18rem;
+	}
+	.lang_visible {
+		right: 0;
+		left: auto;
+		top: 6rem;
+	}
+	.lang {
+		width: 37rem;
+    height: 47rem;
+    background-color: #fff;
+    border-radius: 40rem;
+	}
+	.lang_visible {
+		height: 115rem;
 	}
 	.hero_text h1 {
     margin: 25rem 0;
