@@ -18,6 +18,9 @@ function(){
 function(){
   $("body").removeClass("body_overlay");
 });
+
+
+
 // tabs init
 function initTabs() {
 	jQuery('.catalog-list').contentTabs({
