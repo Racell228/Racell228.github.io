@@ -350,12 +350,19 @@ a:not(class) {
 }
 
 
-
 @media (pointer:coarse){
  .catalog-list .catalog-tabset li.active a {
   background-color: #429755;
   color: #fff;
  }
+ .catalog-list a:hover {
+  background-color: #fff;
+  color: #3c2824;
+ }
+.cat-tab a:hover {
+  background-color: #429755;
+  color: #fff;
+}
  .catalog-list li:hover  .sidebar_arrow:before {
   background-color: #3c2824;
  }

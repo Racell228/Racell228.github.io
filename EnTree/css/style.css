@@ -66,6 +66,8 @@ a {
 .header {
 	display: flex;
 	align-items: center;
+	z-index: 20!important;
+    position: relative;
 }
 .lang {
 	display: flex;
@@ -780,6 +782,13 @@ footer h4 {
 }
 .animated {
 	opacity: 0;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.slick-arrow,.play,.submit,.window_close {
+	cursor: pointer;
 }
 /*.hero_play:hover {
 	background: #3E8DD1;

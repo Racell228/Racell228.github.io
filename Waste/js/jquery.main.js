@@ -11,6 +11,11 @@ function initDotDotDot() {
 		watch: 'window'
 	});
 }
+
+
+
+
+
 $('.catalog-list').hover(
 function(){
   $("body").addClass("body_overlay");
@@ -39,6 +44,7 @@ function initTouchNav() {
 		});
 	});
 }
+
 $(document).ready(function() {
   $('.header_search_link').click(function(event) {
       event.preventDefault();
@@ -910,48 +916,6 @@ PlatformDetect.addModule({
 	}
 }); 
 
- 
-// All Mobile detect rules
- PlatformDetect.addRule({ type: 'allmobile', css: 'allmobile.css', });
-
-/*
-== malihu jquery custom scrollbar plugin == 
-Version: 3.1.0 
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller 
-Author: malihu
-Author URI: http://manos.malihu.gr
-License: MIT License (MIT)
-*/
-
-/*
-Copyright 2010 Manos Malihutsakis (email: manos@malihu.gr)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-/*
-The code below is fairly long, fully commented and should be normally used in development. 
-For production, use either the minified jquery.mCustomScrollbar.min.js script or 
-the production-ready jquery.mCustomScrollbar.concat.min.js which contains the plugin 
-and dependencies (minified). 
-*/
-
 ;(function(factory){
 	if(typeof module!=="undefined" && module.exports){
 		module.exports=factory;
@@ -976,12 +940,7 @@ and dependencies (minified).
 	init();
 }(function(){
 	
-	/* 
-	----------------------------------------
-	PLUGIN NAMESPACE, PREFIX, DEFAULT SELECTOR(S) 
-	----------------------------------------
-	*/
-	
+
 	var pluginNS="mCustomScrollbar",
 		pluginPfx="mCS",
 		defaultSelector=".mCustomScrollbar",
@@ -990,290 +949,77 @@ and dependencies (minified).
 		
 	
 	
-	/* 
-	----------------------------------------
-	DEFAULT OPTIONS 
-	----------------------------------------
-	*/
-	
 		defaults={
-			/*
-			set element/content width/height programmatically 
-			values: boolean, pixels, percentage 
-				option						default
-				-------------------------------------
-				setWidth					false
-				setHeight					false
-			*/
-			/*
-			set the initial css top property of content  
-			values: string (e.g. "-100px", "10%" etc.)
-			*/
+			
 			setTop:0,
-			/*
-			set the initial css left property of content  
-			values: string (e.g. "-100px", "10%" etc.)
-			*/
+			
 			setLeft:0,
-			/* 
-			scrollbar axis (vertical and/or horizontal scrollbars) 
-			values (string): "y", "x", "yx"
-			*/
+			
 			axis:"y",
-			/*
-			position of scrollbar relative to content  
-			values (string): "inside", "outside" ("outside" requires elements with position:relative)
-			*/
+			
 			scrollbarPosition:"inside",
-			/*
-			scrolling inertia
-			values: integer (milliseconds)
-			*/
+			
 			scrollInertia:950,
-			/* 
-			auto-adjust scrollbar dragger length
-			values: boolean
-			*/
+			
 			autoDraggerLength:true,
-			/*
-			auto-hide scrollbar when idle 
-			values: boolean
-				option						default
-				-------------------------------------
-				autoHideScrollbar			false
-			*/
-			/*
-			auto-expands scrollbar on mouse-over and dragging
-			values: boolean
-				option						default
-				-------------------------------------
-				autoExpandScrollbar			false
-			*/
-			/*
-			always show scrollbar, even when there's nothing to scroll 
-			values: integer (0=disable, 1=always show dragger rail and buttons, 2=always show dragger rail, dragger and buttons), boolean
-			*/
+			
 			alwaysShowScrollbar:0,
-			/*
-			scrolling always snaps to a multiple of this number in pixels
-			values: integer
-				option						default
-				-------------------------------------
-				snapAmount					null
-			*/
-			/*
-			when snapping, snap with this number in pixels as an offset 
-			values: integer
-			*/
+			
 			snapOffset:0,
-			/* 
-			mouse-wheel scrolling
-			*/
+			
 			mouseWheel:{
-				/* 
-				enable mouse-wheel scrolling
-				values: boolean
-				*/
+				
 				enable:true,
-				/* 
-				scrolling amount in pixels
-				values: "auto", integer 
-				*/
+				
 				scrollAmount:"auto",
-				/* 
-				mouse-wheel scrolling axis 
-				the default scrolling direction when both vertical and horizontal scrollbars are present 
-				values (string): "y", "x" 
-				*/
+				
 				axis:"y",
-				/* 
-				prevent the default behaviour which automatically scrolls the parent element(s) when end of scrolling is reached 
-				values: boolean
-					option						default
-					-------------------------------------
-					preventDefault				null
-				*/
-				/*
-				the reported mouse-wheel delta value. The number of lines (translated to pixels) one wheel notch scrolls.  
-				values: "auto", integer 
-				"auto" uses the default OS/browser value 
-				*/
+				
 				deltaFactor:"auto",
-				/*
-				normalize mouse-wheel delta to -1 or 1 (disables mouse-wheel acceleration) 
-				values: boolean
-					option						default
-					-------------------------------------
-					normalizeDelta				null
-				*/
-				/*
-				invert mouse-wheel scrolling direction 
-				values: boolean
-					option						default
-					-------------------------------------
-					invert						null
-				*/
-				/*
-				the tags that disable mouse-wheel when cursor is over them
-				*/
+				
 				disableOver:["select","option","keygen","datalist","textarea"]
 			},
-			/* 
-			scrollbar buttons
-			*/
+			
 			scrollButtons:{ 
-				/*
-				enable scrollbar buttons
-				values: boolean
-					option						default
-					-------------------------------------
-					enable						null
-				*/
-				/*
-				scrollbar buttons scrolling type 
-				values (string): "stepless", "stepped"
-				*/
+				
 				scrollType:"stepless",
-				/*
-				scrolling amount in pixels
-				values: "auto", integer 
-				*/
+				
 				scrollAmount:"auto"
-				/*
-				tabindex of the scrollbar buttons
-				values: false, integer
-					option						default
-					-------------------------------------
-					tabindex					null
-				*/
+				
 			},
-			/* 
-			keyboard scrolling
-			*/
+			
 			keyboard:{ 
-				/*
-				enable scrolling via keyboard
-				values: boolean
-				*/
+				
 				enable:true,
-				/*
-				keyboard scrolling type 
-				values (string): "stepless", "stepped"
-				*/
+			
 				scrollType:"stepless",
-				/*
-				scrolling amount in pixels
-				values: "auto", integer 
-				*/
+				
 				scrollAmount:"auto"
 			},
-			/*
-			enable content touch-swipe scrolling 
-			values: boolean, integer, string (number)
-			integer values define the axis-specific minimum amount required for scrolling momentum
-			*/
+			
 			contentTouchScroll:25,
-			/*
-			advanced option parameters
-			*/
+			
 			advanced:{
-				/*
-				auto-expand content horizontally (for "x" or "yx" axis) 
-				values: boolean, integer (the value 2 forces the non scrollHeight/scrollWidth method, the value 3 forces the scrollHeight/scrollWidth method)
-					option						default
-					-------------------------------------
-					autoExpandHorizontalScroll	null
-				*/
-				/*
-				auto-scroll to elements with focus
-				*/
+				
 				autoScrollOnFocus:"input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']",
-				/*
-				auto-update scrollbars on content, element or viewport resize 
-				should be true for fluid layouts/elements, adding/removing content dynamically, hiding/showing elements, content with images etc. 
-				values: boolean
-				*/
+				
 				updateOnContentResize:true,
-				/*
-				auto-update scrollbars each time each image inside the element is fully loaded 
-				values: "auto", boolean
-				*/
+				
 				updateOnImageLoad:"auto",
-				/*
-				auto-update scrollbars based on the amount and size changes of specific selectors 
-				useful when you need to update the scrollbar(s) automatically, each time a type of element is added, removed or changes its size 
-				values: boolean, string (e.g. "ul li" will auto-update scrollbars each time list-items inside the element are changed) 
-				a value of true (boolean) will auto-update scrollbars each time any element is changed
-					option						default
-					-------------------------------------
-					updateOnSelectorChange		null
-				*/
-				/*
-				extra selectors that'll release scrollbar dragging upon mouseup, pointerup, touchend etc. (e.g. "selector-1, selector-2")
-					option						default
-					-------------------------------------
-					releaseDraggableSelectors	null
-				*/
-				/*
-				auto-update timeout 
-				values: integer (milliseconds)
-				*/
+				
 				autoUpdateTimeout:60
 			},
-			/* 
-			scrollbar theme 
-			values: string (see CSS/plugin URI for a list of ready-to-use themes)
-			*/
+			
 			theme:"light",
-			/*
-			user defined callback functions
-			*/
+			
 			callbacks:{
-				/*
-				Available callbacks: 
-					callback					default
-					-------------------------------------
-					onCreate					null
-					onInit						null
-					onScrollStart				null
-					onScroll					null
-					onTotalScroll				null
-					onTotalScrollBack			null
-					whileScrolling				null
-					onOverflowY					null
-					onOverflowX					null
-					onOverflowYNone				null
-					onOverflowXNone				null
-					onImageLoad					null
-					onSelectorChange			null
-					onBeforeUpdate				null
-					onUpdate					null
-				*/
+				
 				onTotalScrollOffset:0,
 				onTotalScrollBackOffset:0,
 				alwaysTriggerOffsets:true
 			}
-			/*
-			add scrollbar(s) on all elements matching the current selector, now and in the future 
-			values: boolean, string 
-			string values: "on" (enable), "once" (disable after first invocation), "off" (disable)
-			liveSelector values: string (selector)
-				option						default
-				-------------------------------------
-				live						false
-				liveSelector				null
-			*/
+			
 		},
-	
-	
-	
-	
-	
-	/* 
-	----------------------------------------
-	VARS, CONSTANTS 
-	----------------------------------------
-	*/
 	
 		totalInstances=0, /* plugin instances amount */
 		liveTimers={}, /* live option timers */
@@ -1290,45 +1036,27 @@ and dependencies (minified).
 	
 	
 	
-	/* 
-	----------------------------------------
-	METHODS 
-	----------------------------------------
-	*/
-	
 		methods={
 			
-			/* 
-			plugin initialization method 
-			creates the scrollbar(s), plugin data object and options
-			----------------------------------------
-			*/
+		
 			
 			init:function(options){
 				
 				var options=$.extend(true,{},defaults,options),
 					selector=_selector.call(this); /* validate selector */
 				
-				/* 
-				if live option is enabled, monitor for elements matching the current selector and 
-				apply scrollbar(s) when found (now and in the future) 
-				*/
 				if(options.live){
 					var liveSelector=options.liveSelector || this.selector || defaultSelector, /* live selector(s) */
 						$liveSelector=$(liveSelector); /* live selector(s) as jquery object */
 					if(options.live==="off"){
-						/* 
-						disable live if requested 
-						usage: $(selector).mCustomScrollbar({live:"off"}); 
-						*/
+						
 						removeLiveTimers(liveSelector);
 						return;
 					}
 					liveTimers[liveSelector]=setTimeout(function(){
-						/* call mCustomScrollbar fn on live selector(s) every half-second */
+						
 						$liveSelector.mCustomScrollbar(options);
 						if(options.live==="once" && $liveSelector.length){
-							/* disable live after first invocation */
 							removeLiveTimers(liveSelector);
 						}
 					},500);
@@ -1336,7 +1064,6 @@ and dependencies (minified).
 					removeLiveTimers(liveSelector);
 				}
 				
-				/* options backward compatibility (for versions < 3.0.0) and normalization */
 				options.setWidth=(options.set_width) ? options.set_width : options.setWidth;
 				options.setHeight=(options.set_height) ? options.set_height : options.setHeight;
 				options.axis=(options.horizontalScroll) ? "x" : _findAxis(options.axis);
@@ -1350,34 +1077,27 @@ and dependencies (minified).
 				
 				_theme(options); /* theme-specific options */
 				
-				/* plugin constructor */
 				return $(selector).each(function(){
 					
 					var $this=$(this);
 					
-					if(!$this.data(pluginPfx)){ /* prevent multiple instantiations */
+					if(!$this.data(pluginPfx)){ 
 					
-						/* store options and create objects in jquery data */
+						
 						$this.data(pluginPfx,{
-							idx:++totalInstances, /* instance index */
-							opt:options, /* options */
-							scrollRatio:{y:null,x:null}, /* scrollbar to content ratio */
-							overflowed:null, /* overflowed axis */
-							contentReset:{y:null,x:null}, /* object to check when content resets */
-							bindEvents:false, /* object to check if events are bound */
-							tweenRunning:false, /* object to check if tween is running */
-							sequential:{}, /* sequential scrolling object */
-							langDir:$this.css("direction"), /* detect/store direction (ltr or rtl) */
-							cbOffsets:null, /* object to check whether callback offsets always trigger */
-							/* 
-							object to check how scrolling events where last triggered 
-							"internal" (default - triggered by this script), "external" (triggered by other scripts, e.g. via scrollTo method) 
-							usage: object.data("mCS").trigger
-							*/
+							idx:++totalInstances, 
+							opt:options,
+							scrollRatio:{y:null,x:null},
+							overflowed:null,
+							contentReset:{y:null,x:null},
+							bindEvents:false,
+							tweenRunning:false,
+							sequential:{}, 
+							langDir:$this.css("direction"),
+							cbOffsets:null, 
+							
 							trigger:null,
-							/* 
-							object to check for changes in elements in order to call the update method automatically 
-							*/
+							
 							poll:{size:{o:0,n:0},img:{o:0,n:0},change:{o:0,n:0}}
 						});
 						
@@ -1405,16 +1125,7 @@ and dependencies (minified).
 				});
 				
 			},
-			/* ---------------------------------------- */
 			
-			
-			
-			/* 
-			plugin update method 
-			updates content and scrollbar(s) values, events and status 
-			----------------------------------------
-			usage: $(selector).mCustomScrollbar("update");
-			*/
 			
 			update:function(el,cb){
 				
@@ -1512,16 +1223,7 @@ and dependencies (minified).
 				});
 				
 			},
-			/* ---------------------------------------- */
 			
-			
-			
-			/* 
-			plugin scrollTo method 
-			triggers a scrolling event to a specific value
-			----------------------------------------
-			usage: $(selector).mCustomScrollbar("scrollTo",value,options);
-			*/
 		
 			scrollTo:function(val,options){
 				
@@ -1555,11 +1257,7 @@ and dependencies (minified).
 						/* translate yx values to actual scroll-to positions */
 						to[0]=_to.call(this,to[0],"y");
 						to[1]=_to.call(this,to[1],"x");
-						
-						/* 
-						check if scroll-to value moves the dragger instead of content. 
-						Only pixel values apply on dragger (e.g. 100, "100px", "-=100" etc.) 
-						*/
+					
 						if(methodOptions.moveDragger){
 							to[0]*=d.scrollRatio.y;
 							to[1]*=d.scrollRatio.x;
@@ -1590,12 +1288,6 @@ and dependencies (minified).
 			
 			
 			
-			/*
-			plugin stop method 
-			stops scrolling animation
-			----------------------------------------
-			usage: $(selector).mCustomScrollbar("stop");
-			*/
 			stop:function(){
 				
 				var selector=_selector.call(this); /* validate selector */
@@ -1613,17 +1305,6 @@ and dependencies (minified).
 				});
 				
 			},
-			/* ---------------------------------------- */
-			
-			
-			
-			/*
-			plugin disable method 
-			temporarily disables the scrollbar(s) 
-			----------------------------------------
-			usage: $(selector).mCustomScrollbar("disable",reset); 
-			reset (boolean): resets content position to 0 
-			*/
 			disable:function(r){
 				
 				var selector=_selector.call(this); /* validate selector */
@@ -1651,16 +1332,7 @@ and dependencies (minified).
 				});
 				
 			},
-			/* ---------------------------------------- */
 			
-			
-			
-			/*
-			plugin destroy method 
-			completely removes the scrollbar(s) and returns the element to its original state
-			----------------------------------------
-			usage: $(selector).mCustomScrollbar("destroy"); 
-			*/
 			destroy:function(){
 				
 				var selector=_selector.call(this); /* validate selector */
