@@ -204,6 +204,8 @@ a {
 }
 .themes_wrapper {
 	display: flex;	
+	position: relative;
+  z-index: 2;
 }
 .themes_text h2{
 	color: #2F75B2;
@@ -592,6 +594,9 @@ a {
 	background-color: #EFFAFF;
 	padding: 60rem 0 80rem;
 }
+.questions .container {
+	max-width: 812rem;
+}
 .questions h2 {
 	text-align: center;
 	margin-bottom: 60rem;
@@ -645,11 +650,12 @@ footer {
 	margin: auto;
 	background-color: #fff;
 	box-shadow: 0px 7px 20px rgba(19, 67, 108, 0.1);
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 }
 .footer_form h2 {
 	margin-bottom: 20rem;
+	font-size: 30rem;
 }
 footer h4 {
 	font-weight: 500;
@@ -657,8 +663,8 @@ footer h4 {
 }
 .input {
 	display: block;
-	width: 450rem;
-	padding: 20rem 0rem  20rem 15rem;
+	width: 440rem;
+	padding: 20rem 0rem  20rem 25rem;
 	background: #F9F9F9;
 	border: 1px solid #EDEDED;
 	border-radius: 40px;
@@ -675,7 +681,7 @@ footer h4 {
 	border: none;
 	color: #fff;
 	background: #2F75B2;
-	font-size: 17rem;
+	font: 400 17rem  Rubik;
 }
 .politic {
 	color: #2F75B2;
@@ -765,10 +771,28 @@ footer h4 {
 .footer_form h4 {
 	color: #616161;
 	font-weight: 400;
+  font-size: 17rem;
+  max-width: 300rem;
+  margin: auto;
 }
 .hidden {
 	overflow: hidden;
 }
+.animated {
+	opacity: 0;
+}
+/*.hero_play:hover {
+	background: #3E8DD1;
+}
+.hero_play:active {
+	background: #23659E;
+}
+.hero_download:hover {
+	background: #3E8DD1;
+}
+.hero_download:active {
+	background: #23659E;
+}*/
 @media screen and (max-width: 1000px) {
 	html {
 		font-size: 0.089445vw;
@@ -914,6 +938,7 @@ footer h4 {
 	}
 	h2 {
 		font-size: 24rem;
+		line-height: 120%;
 	}
 	.themes_text {
 		margin-left: 0;
@@ -1102,7 +1127,15 @@ footer h4 {
     padding: 40rem 10rem;
 	}
 	.input {
-		width: 265rem;
+		width: 255rem;
+		padding: 10rem 0 10rem 25rem;
+		font: 300 14rem Rubik;
+	}
+	.footer_form h5 {
+		font-size: 12rem;
+	}
+	.politic {
+		font-size: 12rem;
 	}
 	.submit {
 		width: 280rem;
@@ -1123,6 +1156,16 @@ footer h4 {
     left: calc(50% - 150rem);
     height: 95%;
     overflow: scroll;
+	}
+	.footer_form h2 {
+		font-size: 24rem;
+	}
+	.form_logo {
+		width: 130rem
+	}
+	.submit {
+		padding: 10rem 0 10rem 15rem;
+		font-size: 14rem; 
 	}
 }
 @media screen and (max-width: 480px) {

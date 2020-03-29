@@ -52,3 +52,55 @@ $(document).ready(function() {
       $(this).toggleClass('lang_visible');
   });
 });
+
+
+
+
+$(window).scroll(function() {
+  $('.up').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+950) {
+       $(this).addClass("fadeInUp");
+     }
+     else {
+      $(this).removeClass("fadeInUp");
+     }
+  });
+});
+$(window).scroll(function() {
+  $('.down').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+950) {
+       $(this).addClass("fadeInDown");
+     }
+     else {
+      $(this).removeClass("fadeInDown");
+     }
+  });
+});
+$(window).scroll(function() {
+  $('.anleft').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+950) {
+       $(this).addClass("fadeInLeft");
+     }
+     else {
+      $(this).removeClass("fadeInLeft");
+     }
+  });
+});
+$(window).scroll(function() {
+  $('.anright').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+950) {
+       $(this).addClass("fadeInRight");
+     }
+     else {
+      $(this).removeClass("fadeInRight");
+     }
+  });
+});
