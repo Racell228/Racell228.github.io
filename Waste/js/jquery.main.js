@@ -16,7 +16,7 @@ function initDotDotDot() {
 
 
 
-$('.catalog-list').hover(
+$('.catalog-list li').hover(
 function(){
   $("body").addClass("body_overlay");
 },
@@ -24,6 +24,12 @@ function(){
   $("body").removeClass("body_overlay");
 });
 
+// $(document).ready(function() {
+//   $('.catalog-list').click(function(event) {
+//       event.preventDefault();
+//       $('body').addClass("body_");
+//   });
+// });
 
 
 // tabs init
