@@ -49,8 +49,17 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.lang').click(function(event) {
       event.preventDefault();
-      $(this).toggleClass('lang_visible');
+      $(this).addClass('lang_visible');
   });
+});
+
+$(document).click( function(e){
+    if ( $(e.target).closest('.lang').length ) {
+        // клик внутри элемента 
+        return;
+    }
+    // клик снаружи элемента 
+    $('.lang').removeClass('lang_visible');
 });
 
 

@@ -502,8 +502,8 @@ a {
 .reviews_tree {
 	position: absolute;
   top: -60rem;
-  left: -94rem;
-  width: 646rem;
+  left: -101rem;
+  width: 619rem;
 }
 .slick-arrow {
 	background-image: url(../img/slider_arrow.png);

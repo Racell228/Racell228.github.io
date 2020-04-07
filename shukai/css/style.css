@@ -1,0 +1,551 @@
+html {
+	font-size: 0.069445vw;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+h1	{
+	font-size: 22rem;
+	margin: 0;
+	color: #30384D;
+	font-family: Geometria600;
+}
+h2 {
+	font-size: 18rem;
+	color: #326CFF;
+	margin: 0;
+	font-family: Geometria600;
+}
+h3 {
+	font-size: 16rem;
+	color: #326CFF;
+	margin: 0;
+	font-family: Geometria600;
+}
+a	{
+	font-size: 16rem;
+	color: #326CFF;
+	margin: 0;
+	font-family: Geometria400;
+	text-decoration: none;
+	line-height: 100%;
+}
+p {
+	font-size: 14rem;
+	margin: 0;
+	color: #30384D;
+	font-family: Geometria400;
+	line-height: 140%;
+}
+.container {
+	max-width: 1200rem;
+	margin: auto;
+}
+header {
+	background: linear-gradient(180deg, #7CA1FF 15.1%, #4277FF 99.99%, rgba(124, 161, 255, 0) 100%);
+}
+.time_item {
+  background-color: #fff;
+  padding: 7rem 20rem;
+  border-radius: 100rem;
+  font-size: 16rem;
+  font: 400 16rem Geometria600;
+  color: #30384D;
+}
+.time_item_city {
+	color: rgba(48, 56, 77, 0.6);
+	font: 400 16rem Geometria400;
+}
+.time_item_current .time_item_city {
+	color: #30384D;
+	font: 400 16rem Geometria600;
+}
+.header_flex {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50rem;
+}
+.lang {
+	display: flex;
+	justify-content: space-between;
+	width: 120rem;
+	margin-left: auto;
+	margin-top: 30rem;
+}
+.lang_item {
+	padding: 7rem;
+}
+.lang_item img {
+	width: 40rem;
+}
+.lang_item_active {
+	border: 1px solid rgba(50, 108, 255, 0.3);
+	border-radius: 2px;
+}
+.index_logo {
+	width: 275rem;
+	display: block;
+	margin: 60rem  auto 0;
+}
+.search_form {
+	position: relative;
+	margin: 30rem auto 0;
+	width: 590rem;
+}
+.submit {
+	width: 48rem;
+  height: 48rem;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.search_input {
+  box-shadow: 0px 4px 4px rgba(69, 65, 46, 0.2);
+  border-radius: 500px;
+  display: block;
+  width: calc(100% - 30rem);
+  padding: 14rem 0 14rem 30rem;
+  font-size: 16rem;
+  font: 400 16rem Geometria400;
+  border: 1px solid #EAF0FF;
+}
+.hero_content_href {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	width: 560rem;
+  align-items: center;
+  margin-top: 40rem;
+}
+.search_image {
+	color: #C6C6C6;
+	font-family: Geometria600;
+	background: #F3F3F3;
+	border-radius: 500px;
+	padding: 17rem 45rem;
+}
+.btn_lucky {
+	font-family: Geometria600;
+	background: linear-gradient(180deg, #7CA1FF 14.58%, #326CFF 100%);
+	border-radius: 500px;
+	color: #fff;
+	padding: 17rem 45rem;
+}
+.index_image {
+	height: 205rem;
+	width: 100%;
+	margin-top: 100rem;
+	background: url(../img/main.svg);
+	background-size: cover;
+}
+footer {
+	text-align: center;
+	padding: 30rem 0;
+	background-color: #F3F3F3;
+}
+
+/*search page*/
+
+.search_header {
+	align-items: center;
+    display: flex;
+    margin: 30rem 0 60rem;
+
+}
+.search_logo {
+	width: 131rem;
+	margin-right: 70rem;
+}
+.search_header .search_form {
+	margin: 0;
+}
+.search_controls_btn {
+	color: #000;
+	padding-bottom: 12rem;
+}
+.search_controls_btn:first-child {
+	margin-right:  55rem;
+}
+.search_result_item {
+	display: none;
+}
+.search_result_text {
+	max-width: 800rem;
+}
+.search_result_item:first-child {
+	display: block;
+}
+.search_result {
+	margin-top: 40rem;
+}
+.search_result_item h1 {
+	margin-bottom: 10rem;
+}
+.search_result_text_item {
+	border-bottom: 1px solid #EAF0FF;
+	padding: 20rem 0;
+}
+.search_result_text .search_result_title{
+	font-size: 18rem;
+	display: block;
+	font-family: 'Geometria600';
+	line-height: 130%;
+}
+.search_result_text .search_result_link {
+	display: block;
+	margin: 10rem 0;
+}
+.search_result_descr  {
+	font-size: 14rem;
+}
+.search_result_descr time {
+	color: rgba(48, 56, 77, 0.6);
+}
+.search_result_descr span {
+	font-family: 'Geometria600';
+}
+.search_result_text_item span {
+	font-family: 'Geometria700';
+}
+.search_result_image_flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.search_result_image_item {
+	width: 285rem;
+	margin: 30rem 0 0;
+}
+.search_result_image_title {
+	font-family: 'Geometria600';
+	margin: 10rem 0 4rem;
+	display: block;
+	line-height: 120%;
+}
+.search_result_image_title span {
+	font-family: 'Geometria700';
+}
+.search_result_image_item img {
+	width: 100%;
+}
+.search_result_image_link {
+	font-size: 14rem;
+}
+.search_result_pagination {
+	display: flex;
+	width: 712rem;	
+	align-items: center;
+	margin: 40rem auto 60rem;
+}
+.result_pagination_page {
+	display: flex;
+	margin: 0 40rem;
+	align-items: center;
+}
+.result_pagination_page a {
+	color: #30384D;
+	display: block;
+	margin: 0 20rem;
+	font-family: 'Geometria600';
+}
+.result_pagination_btn {
+	background-color: #f3f3f3;
+	padding: 15rem 35rem;
+	font-family: 'Geometria600';
+	color: #C6C6C6;
+	border-radius: 100rem;
+}
+.result_pagination_page .pagination_page_active {
+	width: 40rem;
+	height: 40rem;
+	background: linear-gradient(180deg, #7CA1FF 26.56%, #326CFF 100%);
+	box-shadow: 2px 3px 7px rgba(6, 21, 58, 0.2);
+	color: #fff;
+	border-radius: 100rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem;
+}
+.controls_active {
+	border-bottom: 3px solid #7CA1FF;
+}
+.search_controls {
+	border-bottom: 1px solid #EAF0FF;
+  padding-bottom: 15rem;
+}
+a:hover {
+	text-decoration: underline;
+}
+.result_pagination_btn:hover,.search_image:hover {
+	text-decoration: none;
+	color: #30384D;
+	transition: 0.3s;
+}
+.btn_lucky:hover,.pagination_page_active:hover {
+	text-decoration: none;
+	box-shadow: 3px 5px 7px rgba(6, 21, 58, 0.2);
+	transition: 0.3s;
+}
+.submit:hover {
+	cursor: pointer;
+}
+.search_controls_btn:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #7CA1FF;
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 0.080445vw;
+	}
+	.lang_item img {
+		width: 50rem;
+	}
+	.container {
+		width: calc(100% - 60rem);
+    padding: 0 30rem;
+    max-width: none;
+	}
+	.index_logo {
+		width: 325rem;
+	}
+	.search_form {
+		width: 850rem;
+	}
+	.search_input {
+	    padding: 18rem 0 18rem 30rem;
+	    font: 400 20rem Geometria400;
+	}
+	.btn_lucky {
+		padding: 22rem 45rem;
+	}
+	.search_image {
+		padding: 22rem 45rem;
+	}
+	.submit {
+		width: 60rem;
+	    height: 60rem;
+	    top: 2rem;
+	}
+	a {
+		font-size: 20rem;
+	}
+	.hero_content_href {
+		width: 650rem;
+	}
+	p {
+		font-size: 18rem;
+	}
+
+
+	/*search page*/
+	.search_controls_btn {
+		font-size: 24em;
+	}
+	.search_result_text .search_result_title {
+		font-size: 22rem;
+	}
+	.search_result_descr {
+		font-size: 18rem;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size:  0.102045vw;
+	}
+	.submit {
+		width: 66rem;
+	    height: 66rem;
+	    right: 1rem;
+	    top: 5rem;
+	}
+	.lang_item img {
+		width: 60rem;
+	}
+	.lang {
+		width: 190rem;
+	}
+	.index_logo {
+		width: 350rem;
+	}
+	.search_input {
+		padding: 20rem 0 20rem 30rem;
+    font: 400 24rem Geometria400;
+	}
+	.btn_lucky {
+		padding: 25rem 45rem;
+	}
+	.search_image {
+		padding: 25rem 45rem;
+	}
+	a {
+		font-size: 24rem;
+	}
+	.hero_content_href {
+		width: 710rem;
+	}
+	p {
+		font-size: 22rem;
+	}
+	.index_image {
+		background: url(../img/main_tab.svg);
+	    background-size: cover;
+	    height: 260rem;
+	}
+
+
+	/*search page */
+
+
+	.search_result_image_item {
+		width: 445rem;
+	}
+	.search_result_image_link {
+		font-size: 20rem;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	html {
+    font-size: 0.277785vw;
+	}
+	.container {
+		width: calc(100% - 40rem);
+    padding: 0 20rem;
+	}
+	.lang_item img {
+		width: 28rem;
+	}
+	.lang {
+    width: 100rem;
+	}
+	.index_logo {
+		margin: 45rem auto 0;
+		width: 220rem;
+	}
+	.search_form {
+   		width: 100%;
+	}
+	.search_input {
+		width: 288rem;
+		font: 400 14rem Geometria400;
+		padding: 13rem 0 12rem 30rem;
+	}
+	.submit {
+		right: 2rem;
+    width: 42rem;
+    height: 42rem;
+    top: 2rem;
+	}
+	a {
+		font-size: 14rem;
+	}
+	.hero_content_href {
+    width: auto;
+    flex-direction: column;
+	} 
+	.btn_lucky {
+		padding: 15rem 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 15rem;
+	}
+	.search_image {
+		padding: 15rem 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+	}
+	p {
+		font-size: 14rem;
+	}
+	.time_item {
+		display: none;
+	}
+	.time_item_current {
+		display: block;
+		padding: 10rem 0;
+    width: 100%;
+    text-align: center;
+	}
+	.index_image {
+	    background: url(../img/main_mob.svg);
+	    background-size: cover;
+	    height: 165rem;
+	    margin-top: 45rem;
+	}
+	footer {
+		padding: 22rem 0;
+	}
+
+
+	/*search page*/
+
+
+
+	.search_header {
+		flex-direction: column;
+		margin: 30rem 0 40rem;
+	}
+	.search_logo {
+		margin: 20rem 0;
+	}
+	.search_controls_btn {
+		font-size: 14rem;
+	}
+	.search_controls_btn:first-child {
+		margin-right: 45rem;
+	}
+	.search_controls {
+		text-align: center;
+	}
+	h1  {
+		font-size: 18rem;
+	}
+	.search_result_item h1 {
+		margin: 0;
+	}
+	.search_result_text .search_result_title {
+		font-size: 16rem;
+	}
+	.search_result_descr {
+		font-size: 14rem;
+	}
+	.result_pagination_page {
+		margin: 15rem 0;
+	}
+	.result_pagination_page a {
+		display: none;
+	}
+	.result_pagination_page p {
+		display: none;
+	}
+	.result_pagination_btn {
+		padding: 11rem 22rem;
+	}
+	.search_result_pagination {
+		justify-content: space-between;
+		width: auto;
+		margin: 30rem auto 40rem;
+	}
+	.search_result_image_title {
+		font-size: 16rem;
+	}
+	.search_result_image_link {
+		font-size: 14rem;
+	}
+
+}
