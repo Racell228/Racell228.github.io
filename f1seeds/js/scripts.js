@@ -61,6 +61,30 @@ jQuery(function($){
 });
 
 
+// $(document).ready(function() {
+//   $('.header__basket_link').click(function(event) {
+//       event.preventDefault();
+//       $(this).addClass('header_basket_empty');
+//       $('.bascket_num').addClass('bascket_num_active');
+//       $('.basket__modal_empty').show();
+//   });
+// });
+
+// jQuery(function($){
+//   $(document).mouseup(function (e){
+//     var div = $(".basket__modal_empty"); 
+//     if (!div.is(e.target) 
+//         && div.has(e.target).length === 0) { 
+//       div.hide(); 
+//     };
+//     $('.header__basket_link').removeClass('header_basket_empty');
+//     $('.bascket_num').removeClass('bascket_num_active');
+//   });
+// });
+
+
+
+
 var inputs = document.querySelectorAll('.inputfile');
 Array.prototype.forEach.call(inputs, function(input){
   var label  = input.nextElementSibling,
