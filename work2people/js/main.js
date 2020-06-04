@@ -50,7 +50,6 @@ $(function(){
   $('.filters_checkbox h4').on('click', function(){
     $(this).find('span').toggleClass('rotate_arrow');
     $(this).parent().toggleClass('filters_checkbox_active');
-    
     $(this).parent().removeClass('filters_checkbox_show_all');
     $(this).parent().find('.filters_more_company').show();
   });

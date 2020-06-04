@@ -13,14 +13,54 @@
 	<header>
 		<div class="container">
 			<div class="header_wrapper">
+				<a href="#" class="mobile_burger"><img src="img/mobile_burger.svg" class="mobile_burger_img">Меню</a>
+				<div class="show_menu_mobile">
+					<a href="#" class="show_menu_mobile_btn"><img src="img/close.svg" class="show_menu_mobile_img">Меню</a>
+					<div class="subheader_item subheader_sales subheader_sales_mobile">
+						<img class="subheader__item_img" src="img/sales.svg">
+						<a href="#" class="subheader_item_link">Акционные предложения</a>
+					</div>
+					<div class="header_links show_menu_mobile_item">
+						<a href="#" class="header_links-item">О нас</a>
+						<a href="#" class="header_links-item">Доставка</a>
+						<a href="#" class="header_links-item">Оплата</a>
+						<a href="#" class="header_links-item">Отзывы (267)</a>
+					</div>
+					<div class="subheader_right show_menu_mobile_item">
+						<div class="subheader_right_menu">
+							<a href="#" class="subheader_right_menu-link">Семена оптом</a>
+							<a href="#" class="subheader_right_menu-link">Прайс-лист</a>
+							<a href="#" class="subheader_right_menu-link">Новости</a>
+							<a href="#" class="subheader_right_menu-link">Гарантия</a>
+							<a href="#" class="subheader_right_menu-link">Контакты</a>
+						</div>
+						<div class="subheader_lang">
+							<select class="subheader_select">
+								<option>Рус</option>
+								<option>Укр</option>
+								<option>Англ</option>
+							</select>
+						</div>
+						<div class="subheader_currency">
+							<select class="subheader_select">
+								<option>грн</option>
+								<option>руб</option>
+								<option>дол</option>
+							</select>
+						</div>
+					</div>
+				</div>
 				<div class="header_logo">
-					<a href="#"><img src="img/logo.svg"></a>
+					<a href="#">
+						<img src="img/logo.svg" class="logo">
+						<img src="img/logo_mobile.svg" class="logo_mobile">
+					</a>
 				</div>
 				<div class="header_links">
-					<a href="#">О нас</a>
-					<a href="#">Доставка</a>
-					<a href="#">Оплата</a>
-					<a href="#">Отзывы (267)</a>
+					<a href="#" class="header_links-item">О нас</a>
+					<a href="#" class="header_links-item">Доставка</a>
+					<a href="#" class="header_links-item">Оплата</a>
+					<a href="#" class="header_links-item">Отзывы (267)</a>
 				</div>
 				<div class="header_search">
 					<form class="search_form">
@@ -35,17 +75,24 @@
 					</form>
 				</div>
 				<div class="header_phones">
-					<a href="#">+38 096 988 11 98</a>
-					<a href="#">+38 095 949 85 05</a>
-					<a href="#">+38 093 971 51 74</a>
+					<a href="#" class="header_phones-item">+38 096 988 11 98</a>
+					<a href="#" class="header_phones-item">+38 095 949 85 05</a>
+					<a href="#" class="header_phones-item">+38 093 971 51 74</a>
+					<div class="header_phones_modal">
+						<a href="#" class="header_phones_modal-mail">shop@f1seeds.com.ua</a>
+						<a href="#" class="header_phones_modal-tg"><img src="img/telegram.svg" class="header_phones_modal-img">@f1seeds_bot</a>
+						<hr class="header_phones_modal-line">
+						<p class="header_phones_modal-text">Оставьте заявку - мы перезвоним:</p>
+						<a href="#" class="header_phones_modal-btn">Заказ звонка</a>
+					</div>
 				</div>
 				<div class="header_account">
-					<img src="img/profile_icon.svg">
+					<img src="img/profile_icon.svg" class="profile_icon">
 					<div class="signin">
-						<a href="#">Вход</a>
+						<a href="#" class="header_account_link">Вход</a>
 					</div>
 					<div class="signup">
-						<a href="#">Регистрация</a>
+						<a href="#" class="header_account_link">Регистрация</a>
 					</div>
 				</div>
 				<div class="header__bascet">
@@ -125,7 +172,7 @@
 		<div class="container">
 			<div class="subheader_wrapper">
 				<div class="subheader_left">
-					<div class="subheader_item subheader_taste arrow">
+					<div class="subheader_item qqq subheader_taste arrow">
 						<img class="subheader__item_img" src="img/taste.svg">
 						<a href="#" class="subheader_item_link">По вкусу</a>
 						<div class="subheader__modal">
@@ -311,7 +358,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="subheader_item subheader_genetic arrow">
+					<div class="subheader_item qqq subheader_genetic arrow">
 						<img class="subheader__item_img" src="img/genetic.svg">
 						<a href="#" class="subheader_item_link">По генетике</a>
 						<div class="subheader__modal">
@@ -452,9 +499,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="subheader_item subheader_sales">
+					<div class="subheader_item qqq subheader_sales">
 						<img class="subheader__item_img" src="img/sales.svg">
-						<a href="#">Акционные предложения</a>
+						<a href="#" class="subheader_item_link">Акционные предложения</a>
 					</div>
 				</div>
 				<div class="subheader_right">
@@ -480,13 +527,16 @@
 						</select>
 					</div>
 				</div>
+				<a href="#" class="subheader_right_open">Прочее</a>
 			</div>
 		</div>
 	</section>
 	<section class="home_hero">
 		<div class="container">
+			<a href="#" class="mobile_menu"><img src="img/mobile_menu.svg" class="mobile_menu_img">Каталог</a>
 			<div class="hero_wrapper">
 				<nav id="menu" class="menu">
+					<a  class="mobile_menu_title"><img src="img/mobile_menu_active.svg" class="mobile_menu_img">Каталог</a>
 					<a  class="menu_title">99,9% проверенные сорта</a>
 					<ul>
 						<li class="menu__parent menu__item">
@@ -1893,6 +1943,7 @@
 					</div>
 				</a>
 			</div>
+			<a href="#" class="choice__more_link"><img src="img/cat_arrow.svg" class="choice__more_img">Открыть все 24 категории</a>
 		</div>
 	</section>
 	<section class="choice choice_taste">
@@ -2069,12 +2120,13 @@
 					</div>
 				</a>
 			</div>
+			<a href="#" class="choice__more_link choice_taste__more_link"><img src="img/cat_arrow2.svg" class="choice__more_img">Открыть все 24 категории</a>
 		</div>
 	</section>
 	<section class="try">
 		<div class="container">
 			<div class="try__header">
-				<h2 class="product_title">Попробуйте наши</h2>
+				<h2 class="product_title try__product_title">Попробуйте наши</h2>
 				<div class="product_nav try__header_product_nav">
 					<a href="#try__slider1" class="product_nav-link try__product_nav-link product_nav_link-active">новинки</a>
 					<a href="#try__slider2" class="product_nav-link try__product_nav-link">акции</a>
@@ -2717,7 +2769,7 @@
 		<div class="container">
 			<div class="footer__overlay">
 				<div class="footer__left">
-					<div>
+					<div class="footer__left_item1">
 						<h4 class="foooter__title">F1Seeds</h4>
 						<a href="#" class="footer__link">О нас</a>
 						<a href="#" class="footer__link">Оплата</a>
@@ -2727,7 +2779,7 @@
 						<a href="#" class="footer__link">Полезные ресурсы</a>
 						<a href="#" class="footer__link">Производители</a>
 					</div>
-					<div>
+					<div class="footer__left_item2">
 						<h4 class="foooter__title">Служба поддержки</h4>
 						<a href="#" class="footer__link">Связаться с нами</a>
 						<a href="#" class="footer__link">Карта сайта</a>
@@ -2744,14 +2796,13 @@
 						<a href="#" class="footer__link footer__nav_link"><img src="img/footer_img5.svg" class="footer__link_img">Отзывы покупателей</a>
 						<a href="#" class="footer__link footer__nav_link"><img src="img/footer_img4.svg" class="footer__link_img">Связаться с администратором</a>
 					</div>
-				</div>
-				<div class="footer__right">
-					<a href="#" class="footer__tel">+38 096 998 11 98</a>
-					<a href="#" class="footer__tel">+38 095 949 85 05</a>
-					<a href="#" class="footer__tel">+38 093 971 51 74</a>
-					<p class="footer__text footer__text_support">Отвечаем на звонки и работаем 24/7</p>
-					<p class="footer__text">Telegram: <a href="#" class="footer__telegram"> @f1seeds_bot</a></p>
-				</div>
+					<div class="footer__right">
+						<a href="#" class="footer__tel">+38 096 998 11 98</a>
+						<a href="#" class="footer__tel">+38 095 949 85 05</a>
+						<a href="#" class="footer__tel">+38 093 971 51 74</a>
+						<p class="footer__text footer__text_support">Отвечаем на звонки и работаем 24/7</p>
+						<p class="footer__text">Telegram: <a href="#" class="footer__telegram"> @f1seeds_bot</a></p>
+					</div>
 			</div>
 			<div class="footer__foot">
 				<div class="footer__foot_banks">
@@ -2761,10 +2812,12 @@
 					<img class="footer__foot_banks2 footer__foot_banks_item" src="img/footer_bank2.svg">
 				</div>
 				<p class="footer__foot_text">Интернет-магазин F1Seeds - семена канабиса оптом и в розницу 2000-2020</p>
-				<a href="#"><img src="img/facebook.svg" class="footer__foot_social"></a>
+				<a href="#" class="footer__foot_social_link"><img src="img/facebook.svg" class="footer__foot_social"></a>
 			</div>
 		</div>
 	</footer>
+	<div class="body_overlay"></div>
+	<div class="body_overlay1"></div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
