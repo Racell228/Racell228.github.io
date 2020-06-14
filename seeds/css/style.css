@@ -2867,6 +2867,10 @@ review modal
 .header_links-item:hover {
 	color: #24A300;
 }
+.news__article_more-blog:hover {
+	background: #1F1F1F;
+	color: #fff;
+}
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
