@@ -4898,6 +4898,11 @@ review modal
 	}
 	.card_info-character {
 		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: start;
+	}
+	.card_info-rewievs-head_txt {
+		width: auto;
 	}
 	.card_info-character-text  {
 		margin-right: 20rem;
