@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -532,7 +533,7 @@
 						</select>
 					</div>
 				</div>
-				<a href="#" class="subheader_right_open">Прочее</a>
+				<a href="#" class="subheader_right_open">Прочее<span class="subheader_right_open-more">...</span></a>
 			</div>
 		</div>
 	</section>
@@ -597,6 +598,12 @@
 				<a href="#" class="fs-14 catalog_filters_link_help catalog_filters_link catalog_filters_link_hide"><img src="img/help.svg" class="catalog_filters_link-img">Помощь в подборе</a>
 				<a href="#" class="fs-14 catalog_filters_link_comparison catalog_filters_link catalog_filters_link_hide"><img src="img/comparison.svg" class="catalog_filters_link-img">Товаров в сравнении (0)</a>
 				<h2 class="catalog_filters_title">Фильтр</h2>
+				<div class="filter_item">
+					<p class="fs-15 filter_item_title">Цена</p>
+					<div class="filter_item_overlay">
+						<div id="r-slider"></div>
+					</div>
+				</div>
 				<div class="filter_item">
 					<p class="fs-15 filter_item_title">Гибрит</p>
 					<div class="filter_item_overlay">
@@ -1268,6 +1275,7 @@
 	<div class="body_overlay3"></div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>

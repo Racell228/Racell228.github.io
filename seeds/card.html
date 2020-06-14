@@ -102,9 +102,9 @@
 					</div>
 				</div>
 				<div class="header__bascet">
-					<a href="#" class="header__basket_link">
+					<a href="#" class="header__basket_link_empty">
 						<img src="img/basket.svg" class="header__basket_image">
-						<span class="bascket_num bascket_num_full">1</span>
+						<span class="bascket_num bascket_num_empty">0</span>
 					</a>
 					<div class="basket__modal_empty basket__modal">
 						<h4 class="basket__modal_empty-title">Корзина пуста</h4>
@@ -532,7 +532,7 @@
 						</select>
 					</div>
 				</div>
-				<a href="#" class="subheader_right_open">Прочее</a>
+				<a href="#" class="subheader_right_open">Прочее<span class="subheader_right_open-more">...</span></a>
 			</div>
 		</div>
 	</section>
@@ -1214,6 +1214,47 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal modal_card">
+		<div class="review-modal_overlay"></div>
+		<div class="review-modal">
+			<p class="review-modal-title fs-16">Отзыв о товаре</p>
+			<a href="#" class="review-modal_close"><img  class="review-modal_close-img" src="img/close_modal.svg"></a>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label">Имя</label>
+				<input type="text" class="review-modal_item-input">
+			</div>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label">Почта <span class="review-modal_item-label-span ">Не отображается на сайте</span></label>
+				<input type="text" class="review-modal_item-input">
+			</div>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label">Ваш отзыв</label>
+				<textarea class="review-modal_item-input review-modal_item-textarea"></textarea>
+			</div>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label review-modal_item-label-plus">+ Достоинства</label>
+				<textarea class="review-modal_item-input review-modal_item-textarea  review-modal_item-textarea-feedback"></textarea>
+			</div>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label review-modal_item-label-minus">- Недостатки</label>
+				<textarea class="review-modal_item-input review-modal_item-textarea  review-modal_item-textarea-feedback"></textarea>
+			</div>
+			<div class="review-modal_item">
+				<label class="fs-16 review-modal_item-label">Ваша оценка</label>
+				<div class="review-modal_item-stars">
+					<img src="img/star.svg" class="review-modal_item-stars-item">
+					<img src="img/star.svg" class="review-modal_item-stars-item">
+					<img src="img/star.svg" class="review-modal_item-stars-item">
+					<img src="img/star.svg" class="review-modal_item-stars-item">
+					<img src="img/star.svg" class="review-modal_item-stars-item">
+				</div>
+			</div>
+			<a href="#" class="review-modal_item-link">Отправить отзыв</a>
+		</div>
+	</div>
+
+
 	<div class="body_overlay"></div>
 	<div class="body_overlay1"></div>
 	<script src="js/jquery-3.3.1.min.js"></script>

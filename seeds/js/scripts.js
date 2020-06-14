@@ -180,26 +180,27 @@ jQuery(function($){
     $('.bascket_num').removeClass('bascket_num_active');
   });
 });
-// $(document).ready(function() {
-//   $('.header__basket_link').click(function(event) {
-//       event.preventDefault();
-//       $(this).addClass('header_basket_empty');
-//       $('.bascket_num').addClass('bascket_num_active');
-//       $('.basket__modal_empty').show();
-//   });
-// });
+$(document).ready(function() {
+  $('.header__basket_link_empty').click(function(event) {
+      event.preventDefault();
+      $(this).addClass('header_basket_empty');
+      $('.bascket_num').addClass('bascket_num_active');
+      $('.basket__modal_empty').show();
+  });
+});
 
-// jQuery(function($){
-//   $(document).mouseup(function (e){
-//     var div = $(".basket__modal_empty"); 
-//     if (!div.is(e.target) 
-//         && div.has(e.target).length === 0) { 
-//       div.hide(); 
-//     };
-//     $('.header__basket_link').removeClass('header_basket_empty');
-//     $('.bascket_num').removeClass('bascket_num_active');
-//   });
-// });
+jQuery(function($){
+  $(document).mouseup(function (e){
+    var div = $(".basket__modal_empty"); 
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) { 
+      div.hide(); 
+    };
+    $('.header__basket_link_empty').removeClass('header_basket_empty');
+    $('.header__basket_link').removeClass('header_basket_empty');
+    $('.bascket_num').removeClass('bascket_num_active');
+  });
+});
 
 
 $(document).ready(function() {
@@ -290,3 +291,121 @@ $(document).ready(function() {
       $('.show_menu_mobile').hide();
   });
 });
+
+
+$(document).ready(function() {
+  $('.card_info-rewievs-head-btn').click(function(event) {
+      event.preventDefault();
+      $('.modal_card').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.review-modal_close').click(function(event) {
+      event.preventDefault();
+      $('.modal_card').hide();
+      $('html,body').removeClass('modal_overflow');
+  });
+});
+
+
+$(document).ready(function() {
+  $('.feedback_head_active-btn').click(function(event) {
+      event.preventDefault();
+      $('.modal_feedback').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.review-modal_close').click(function(event) {
+      event.preventDefault();
+      $('.modal_feedback').hide();
+      $('html,body').removeClass('modal_overflow');
+  });
+});
+
+$(function() {
+
+  (function quantityProducts() {
+    var $quantityArrowMinus = $(".quantity-arrow-minus");
+    var $quantityArrowPlus = $(".quantity-arrow-plus");
+    var $quantityNum = $(".quantity-num");
+
+    $quantityArrowMinus.click(quantityMinus);
+    $quantityArrowPlus.click(quantityPlus);
+
+    function quantityMinus() {
+      if ($quantityNum.val() > 1) {
+        $quantityNum.val(+$quantityNum.val() - 1);
+      }
+    }
+
+    function quantityPlus() {
+      $quantityNum.val(+$quantityNum.val() + 1);
+    }
+  })();
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // ======== Slider with one handle
+    
+    const priceSlider = document.getElementById('r-slider');
+
+    noUiSlider.create(priceSlider, {
+        start: [0, 200],
+        tooltips: true,
+        connect: true,
+        padding: 0,
+        range: {
+            'min': 0,
+            'max': 200
+        },
+        pips: {
+            mode: 'values',
+            values: [50, 100, 150],
+            density: 4
+        }
+    });
+
+    priceSlider.noUiSlider.on('change', (values, handle) => {
+        goSearch();
+    });
+
+
+    discountSlider.noUiSlider.on('change', (values, handle) => {
+        goSearch();
+    });
+
+    // ======== Search filters
+    
+    function goSearch() {
+        let winHref = window.location.href.split('?')[0];
+        winHref += `?pricerange=${priceSlider.noUiSlider.get()}`;
+        winHref += `&mindiscount=${discountSlider.noUiSlider.get()}`;
+        window.location.href = winHref;
+    }
+
+    // ======== Slider reset
+    
+    const resetButton = document.getElementById('reset');
+    resetButton.onclick = (e) => {
+        priceSlider.noUiSlider.reset();
+        discountSlider.noUiSlider.reset();
+    };
+
+    // ======== Slider set
+    
+    const params = new URLSearchParams(window.location.search);
+    const minDiscount = params.get("mindiscount");
+    const priceRange = params.get("pricerange");
+
+    if (minDiscount) {
+        discountSlider.noUiSlider.set(parseInt(minDiscount));
+    }
+    if (priceRange) {
+        priceSlider.noUiSlider.set(priceRange.split(','));
+    }
+});
+
