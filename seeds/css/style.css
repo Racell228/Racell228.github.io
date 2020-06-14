@@ -1634,6 +1634,7 @@ footer {
 	display: flex;
 	margin-top: 30rem;
 	justify-content: space-between;
+	width: 700rem;
 }
 .card_descr_info_item-value {
 	font-weight: 600;
@@ -3323,6 +3324,9 @@ review modal
 
 
 	**********/
+	.card_descr_info_item {
+		width: auto;
+	}
 	.card_descr_info {
 		margin-left: 30rem;
 	}
