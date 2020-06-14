@@ -2871,6 +2871,17 @@ review modal
 	background: #1F1F1F;
 	color: #fff;
 }
+.busket_empty {
+	padding: 40rem 0;
+	background: #F3F3F3;
+	text-align: center;
+	border-radius: 4px;
+}
+.basket_empty-link {
+	display: inline;
+	color: #24A300;
+	text-decoration: underline;
+}
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
