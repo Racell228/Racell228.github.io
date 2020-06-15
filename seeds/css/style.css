@@ -2666,24 +2666,26 @@ busket
 	margin: 20rem 0 10rem;
 }
 .form-input-text {
-	width: 553rem;
+	width: 513rem;
 	border: 1px solid #C8C8C8;
 	border-radius: 4px;
-	padding: 15rem 0;
+	padding: 15rem 20rem;
 }
 .form_input_select {
-	padding: 15rem 20rem;
 	width: 368rem;
 	border: 1px solid #C8C8C8;
 	border-radius: 4px;
+}
+.form_input_select .jq-selectbox__select {
+	padding: 15rem 20rem;
 }
 .form_input_select  .jq-selectbox__trigger {
 	content: '';
     position: absolute;
     border: 4rem solid transparent;
     border-top: 5rem solid #000;
-   	top: 9rem;
-    right: 2rem;
+	top: 50%;
+    right: 20rem;
     transition: 0.2s;
 }
 .form_input_select-option {
@@ -2906,6 +2908,14 @@ review modal
 }
 .hidden_text {
 	display: none;
+}
+.header_links-item-active {
+	color:  #24A300;
+}
+.card_descr_sale-item:hover {
+	background-color: #24A300;
+	transition: 0.5s;
+	color: #fff;
 }
 @media screen and (max-width: 1200px) {
 	html {
@@ -4439,7 +4449,7 @@ review modal
 		width: calc(100% - 40rem);
 	}
 	.form-input-text {
-		width: 100%;
+		width: calc(100% - 40rem);
 	}
 	.form_input_select-option {
 		margin: 0;
@@ -5084,7 +5094,6 @@ review modal
 		width: 100%;
 	}
 	.form_input_select {
-	    padding: 15rem 20rem;
 	    width: calc(100% - 40rem);
 	}
 	.form_bottom {
