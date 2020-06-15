@@ -148,7 +148,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.mobile_burger').click(function(event) {
       event.preventDefault();
-      $('.show_menu_mobile').show(500);
+      $('.show_menu_mobile').show(400);
       $('html,body').addClass('body_overflow2');
       $('.body_overlay1').show();
   });
@@ -158,8 +158,9 @@ jQuery(function($){
   $(document).mouseup(function (e){
     var div = $(".show_menu_mobile"); 
     var close = $('.show_menu_mobile_btn');
-    if (!div.is(e.target)  && div.has(e.target).length === 0 || close.is(e.target))  { 
-      div.hide(500);
+    var close1 = $('.show_menu_mobile_img');
+    if (!div.is(e.target)  && div.has(e.target).length === 0 || close.is(e.target) || close1.is(e.target))  { 
+      div.hide(400);
       $('html,body').removeClass('body_overflow2');
       $('.body_overlay1').hide();
     }
