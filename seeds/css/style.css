@@ -1571,6 +1571,7 @@ footer {
 	padding: 10rem 14rem;
 	border-radius: 4px;
 	position: relative;
+	font-weight: 500;
 }
 .filter_item_title:after {
 	content: '';
@@ -2180,6 +2181,7 @@ footer {
 	margin-top: 30rem;
 	font-weight: 700;
 	border: none;
+	cursor: pointer;
 }
 /***********
 	
@@ -2881,6 +2883,29 @@ review modal
 	display: inline;
 	color: #24A300;
 	text-decoration: underline;
+}
+.hover_green:hover,.catalog__list_pagination_more:hover,.catalog__list_pagination_link:hover,
+.breadrcrumb_link:hover {
+	color: #24A300;
+	transition: 0.5s;
+}
+.hover_black:hover,.breadrcrumb_link-current:hover {
+	color: #000;
+	transition: 0.5s;
+}
+.btn_hover:hover {
+	background-color: #000;
+	transition: 0.5s;
+}
+.btn_hover_green:hover {
+	background-color: #24A300;
+	transition: 0.5s;
+}
+.catalog__list_pagination_link-active:hover{
+	color: #fff;
+}
+.hidden_text {
+	display: none;
 }
 @media screen and (max-width: 1200px) {
 	html {

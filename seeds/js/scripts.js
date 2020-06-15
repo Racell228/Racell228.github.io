@@ -86,7 +86,13 @@ $(document).ready(function() {
       $(id).fadeIn(0).siblings(0).fadeOut(0);
   });
 });
-
+$(document).ready(function() {
+  $('.link_more').click(function(event) {
+      event.preventDefault();
+      $(this).parent().find('.hidden_text').toggle(400);
+      $(this).hide();
+  });
+});
 
 $(document).ready(function() {
   $('.subheader_right_open').click(function(event) {
