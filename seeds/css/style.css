@@ -2887,7 +2887,7 @@ review modal
 	text-decoration: underline;
 }
 .hover_green:hover,.catalog__list_pagination_more:hover,.catalog__list_pagination_link:hover,
-.breadrcrumb_link:hover {
+.breadrcrumb_link:hover,.product_item_buynow:hover {
 	color: #24A300;
 	transition: 0.5s;
 }
@@ -2916,6 +2916,9 @@ review modal
 	background-color: #24A300;
 	transition: 0.5s;
 	color: #fff;
+}
+.product_item_buynow:hover {
+
 }
 @media screen and (max-width: 1200px) {
 	html {
