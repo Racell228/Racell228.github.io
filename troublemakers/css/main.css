@@ -8,6 +8,10 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 }
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
 p,a,h1,h2,h3,h4,h5,ul,li {
 	margin: 0;
 	padding: 0
@@ -31,9 +35,11 @@ header {
 	position: relative;
 
 
+	/*******
 
-/*Homepage*/
+	 Homepage 
 
+	********/
 }
 .header_bg {
 	background-color: #020202;
@@ -615,6 +621,7 @@ footer {
 }
 video{
 	object-fit: inherit;
+	width: 100%;
 }
 .project_video {
 	width: 100%;
@@ -677,6 +684,44 @@ video{
 .project_audio-player {
 	width: 815rem;
 	margin-top: 130rem;
+	display: flex;
+}
+.ppq-audio-player .player-bar {
+	width: 630rem;
+}
+.ppq-audio-player {
+	display: flex;
+	align-items: center;
+}
+.player-time-duration {
+	display: none;
+}
+.ppq-audio-player .player-bar .player-bar-played {
+	background: #DA4B40;
+}
+.ppq-audio-player .play-pause-btn .play-pause-icon {
+	margin-right: 25rem;
+	width: 60rem;
+	height: 60rem;
+}
+.player-time-current {
+	display: none;
+}
+.ppq-audio-player .player-bar {
+	height: 2px;
+}
+.ppq-audio-player .player-bar .player-bar-played:after {
+	content: "";
+	width: 40rem;
+	height: 40rem;
+	display: block;
+	background-image: url(../img/audio_time.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40rem;
+	position: absolute;
+	right: -20rem;
+    top: -20rem;
 }
 .project_audio-player-audio {
 	width: 815rem;
@@ -753,9 +798,18 @@ video{
 	background-position: center;
 	background-size: auto 100%;
 	background-repeat: no-repeat;
-	
+	margin-right: 55rem;
 	transition: 0.5s;
 	position: relative;
+}
+.project_item_slider {
+	margin-left: 177rem;
+}
+.slick-arrow {
+	display: none!important;
+}
+.project_item_slider  .slick-track{
+	padding-bottom: 20rem!important;
 }
 .project_items-slider-title {
 	color: #fff;
@@ -778,6 +832,93 @@ video{
 	opacity: 1;
 	transition: 0.5s;
 }
+.project_item_slider {
+	width: 1830rem;
+}
+
+
+
+
+
+
+
+#video_holder{
+    position: relative;
+    width: 100%;
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 10;
+}
+#overlay.o .overlay_btn{
+    display: none;
+}
+.overlay_btn {
+	position: absolute;
+	left: calc(50% - 244rem);
+	top: calc(50% - 164rem);
+	display: flex;
+	align-items: center;
+}
+.overlay_btn-img {
+	width: 58rem;
+	margin: auto;
+	transition: 0.5s;
+}
+.overlay_btn-txt {
+	font-size: 25rem;
+	font-weight: 700;
+	color: #fff;
+	margin-left: 50rem;
+}
+.overlay_btn-img-wrapper {
+	padding: 208rem 213rem;
+	border-radius: 1000px;
+	transition: 0.5s;
+	display: flex;
+	border: 2px solid #fff;
+}
+#overlay:hover .overlay_btn-img-wrapper{
+	padding: 88rem 93rem;
+	transition: 0.5s;
+}
+#overlay:hover .overlay_btn {
+	left: calc(50% - 174rem);
+    top: calc(50% - 64rem);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1211,8 +1352,11 @@ video{
 		margin-top: 60rem;
 	}
 	.projects_related {
-		padding-top: 150rem;
-		padding-bottom: 70rem;
+		padding: 110rem 60rem 70rem;
+	}
+	.project_item_slider {
+		margin-left: 0;
+		width: auto;
 	}
 	.projects_related-flex {
 		flex-direction: column;
@@ -1258,6 +1402,19 @@ video{
 	}
 	.project_details-awards {
 		width: 100%;
+	}
+	.overlay_btn-img {
+		width: 40rem;
+	}
+	.overlay_btn-txt {
+		font-size: 18rem;
+	}
+	.overlay_btn-img-wrapper {
+  	  	padding: 138rem 141rem;
+	}
+	.overlay_btn {
+		left: calc(50% - 224rem);
+    	top: calc(50% - 125rem);
 	}
 
 
@@ -1643,6 +1800,45 @@ video{
 	.project_details-awards-list:first-child {
 		margin-top: 55rem;
 	}
+	.projects_related {
+	    padding: 70rem 36rem;
+	}
+	.project_items-slider-img {
+		margin-bottom: 70rem;
+		height: 240rem;
+	}
+	.projects_related-title {
+		margin-bottom: 70rem;
+	}
+	.ppq-audio-player {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.ppq-audio-player .player-bar {
+		margin-left: 20rem;
+		margin-top: 45rem;
+		width: calc(100% - 20rem);
+	}
+	.overlay_btn-txt {
+		display: none;
+	}
+	.overlay_btn-img {
+		width: 24rem;
+	}
+	video {
+		height: 400rem;
+	}
+	.overlay_btn-img-wrapper {
+   	 	padding: 82rem 84rem;
+	}
+	.overlay_btn {
+	    left: calc(50% - 94rem);
+	    top: calc(50% - 65rem);
+	}
+	#overlay:hover .overlay_btn {
+    	left: calc(50% - 104rem);
+    }
 
 
 

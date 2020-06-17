@@ -5,7 +5,7 @@
 	<title>Aura</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="img/favicon">
 	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -75,10 +75,20 @@
 			</div>
 		</div>
 	</section>
-	<section class="project_video">
-		<video class="project_video-item" controls="controls" poster="img/work_item1.jpg">
-	   		<source src="http://www.hdclub.ua/files/avpedia_test/dolby-test-tones_7_1_4.mp4">
-  		</video>
+	<section class="project_video wrapper">
+	    <div id="video_holder">
+		    <div id="overlay">
+		    	<div class="overlay_btn">
+		    		<div class="overlay_btn-img-wrapper">
+		    			<img src="img/play_video.svg" class="overlay_btn-img">
+		    		</div>
+		    		<p class="overlay_btn-txt">PLAY VIDEO</p>
+		    	</div>
+		    </div>
+		    <video  tabindex="0" id="video">
+		    <source src="videoplayback.mp4" />          
+		    </video>
+		</div>
 	</section>
 	<section class="project_images">
 		<div class="container project_images-flex">
@@ -97,9 +107,7 @@
 				<p class="project_audio-text-paragraph">Appropriately orchestrate extensible benefits with next-generation quality vectors.</p>
 			</div>
 			<div class="project_audio-player">
-				<audio class="project_audio-player-audio" controls>
-				    <source src="https://www.kozco.com/tech/piano2-Audacity1.2.5.mp3">.
-				 </audio>
+				<audio preload="auto" src="piano.mp3"></audio>
 			</div>
 		</div>
 	</section>
@@ -177,33 +185,36 @@
 				<h3 class="project_items-title">RELATED PROJECTS</h3>
 			</div>
 			<div class="project_item_slider">
-				<div class="owl-carousel owl-theme">
-					<a href="#">
-						<div class="project_items-slider-img" style="background-image: url(img/work_item1.jpg);">
-							<h5 class="project_items-slider-title">SUPERREAL</h5>
-						</div>
-					</a>
-					<a href="#">
-						<div class="project_items-slider-img" style="background-image: url(img/work_item2.jpg);">
-							<h5 class="project_items-slider-title">WONDERBOX</h5>
-						</div>
-					</a>
-					<a href="#">
-						<div class="project_items-slider-img" style="background-image: url(img/work_item3.jpg);">
-							<h5 class="project_items-slider-title">GENERATIONS MTL</h5>
-						</div>
-					</a>
-					<a href="#">
-						<div class="project_items-slider-img" style="background-image: url(img/work_item3.jpg);">
-							<h5 class="project_items-slider-title">GENERATIONS MTL</h5>
-						</div>
-					</a>
-					<a href="#">
-						<div class="project_items-slider-img" style="background-image: url(img/work_item3.jpg);">
-							<h5 class="project_items-slider-title">GENERATIONS MTL</h5>
-						</div>
-					</a>
-				</div>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item1.jpg);">
+						<h5 class="project_items-slider-title">SUPERREAL</h5>
+					</div>
+				</a>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item2.jpg);">
+						<h5 class="project_items-slider-title">WONDERBOX</h5>
+					</div>
+				</a>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item3.jpg);">
+						<h5 class="project_items-slider-title">GENERATIONS MTL</h5>
+					</div>
+				</a>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item1.jpg);">
+						<h5 class="project_items-slider-title">SUPERREAL</h5>
+					</div>
+				</a>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item2.jpg);">
+						<h5 class="project_items-slider-title">WONDERBOX</h5>
+					</div>
+				</a>
+				<a href="#">
+					<div class="project_items-slider-img" style="background-image: url(img/work_item3.jpg);">
+						<h5 class="project_items-slider-title">GENERATIONS MTL</h5>
+					</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -253,6 +264,9 @@
 		</div>
 	</section>
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>	
+<script src="js/audio.js"></script>
+<script src="js/slick.min.js"></script>	
 <script src="js/main.js"></script>	
+
 </body>
+</html>

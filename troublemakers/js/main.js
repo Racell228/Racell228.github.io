@@ -7,14 +7,6 @@ $(document).ready(function() {
 	  $('body,html').toggleClass('overflow');
   });
 });
-// $(document).ready(function() {
-//   $(".category_item-headline").click(function () {
-//     elementClick = $(this).attr("href")
-//     destination = $(elementClick).offset().top;
-//     $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
-//     return false;
-//   });
-// });
 $(document).ready(function() {
   $('.filter_link').click(function(event) {
       event.preventDefault();
@@ -30,13 +22,6 @@ $(document).ready(function() {
       $(this).find('.category_arrow-down').toggleClass('arrow_rotate');
   });
 });  
-
-
-
-
-
-
-
 $(document).ready(function() {
   $(".down-arrow").click(function () {
     elementClick = $(this).attr("href")
@@ -45,9 +30,6 @@ $(document).ready(function() {
     return false;
   });
 });
-
-
-
 if(window.matchMedia('(max-width: 768px)').matches){
   $(document).ready(function() {
   $('.project_details-credits').click(function(event) {
@@ -65,3 +47,55 @@ $(document).ready(function() {
   });
 });  
 }
+if(window.matchMedia('(min-width: 835px)').matches){
+$('.project_item_slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  nav:false,
+  infinite: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+}
+$('audio').initAudioPlayer();
+
+
+var overlay = document.getElementById('overlay');
+var vid = document.getElementById('video');
+
+if(overlay.addEventListener){
+    overlay.addEventListener("click", play, false)
+  }else if(overlay.attachEvent){
+    overlay.attachEvent("onclick", play)
+  }
+
+function play() { 
+    if (vid.paused){
+        vid.play(); 
+        overlay.className = "o";
+        $('#video').attr("controls", "controls");
+    }else {
+        vid.pause(); 
+        overlay.className = "";
+        $('#video').removeAttr("controls", "controls");
+    }
+} 
