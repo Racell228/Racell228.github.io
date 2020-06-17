@@ -863,6 +863,7 @@ video{
 	top: calc(50% - 164rem);
 	display: flex;
 	align-items: center;
+	transition: 0.5s;
 }
 .overlay_btn-img {
 	width: 58rem;
