@@ -2811,6 +2811,7 @@ review modal
 }
 .review-modal-title {
 	margin-bottom: 24rem;
+	font-weight: 500;
 }
 .review-modal_item-input {
 	width: 647rem;
@@ -2917,8 +2918,35 @@ review modal
 	transition: 0.5s;
 	color: #fff;
 }
-.product_item_buynow:hover {
-
+.modal_help_wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.modal_help_item_title {
+	font-weight: 500;
+	margin-bottom: 20rem;
+}
+.modal_help_item {
+	width: 280rem;
+	margin-top: 60rem;
+}
+.modal_help_item:first-child {
+	margin-top: 0;
+}
+.modal_help_btn {
+    text-align: center;
+    background-color: #1F1F1F;
+    border-radius: 40px;
+    padding: 14rem 0;
+    font-size: 18rem;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.4s;
+    border: none;
+    width: 300rem;
+    margin: 80rem auto 0;
+    display: block;
 }
 @media screen and (max-width: 1200px) {
 	html {
@@ -5154,5 +5182,13 @@ review modal
 	.review-modal_close {
 		right: 15rem;
 		top: 15rem;
+	}
+	.modal_help_item {
+		margin-top: 40rem;
+	}
+	.modal_help_btn {
+		font-size: 16rem;
+		margin: 40rem auto 0;
+		padding: 10rem 0;
 	}
 }

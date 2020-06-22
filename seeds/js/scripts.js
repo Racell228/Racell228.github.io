@@ -330,7 +330,20 @@ $(document).ready(function() {
       $('html,body').removeClass('modal_overflow');
   });
 });
-
+$(document).ready(function() {
+  $('.catalog_filters_link_help').click(function(event) {
+      event.preventDefault();
+      $('.modal_help').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.review-modal_close').click(function(event) {
+      event.preventDefault();
+      $('.modal_help').hide();
+      $('html,body').removeClass('modal_overflow');
+  });
+});
 $(function() {
 
   (function quantityProducts() {
