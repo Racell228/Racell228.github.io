@@ -2931,9 +2931,7 @@ review modal
 	width: 280rem;
 	margin-top: 60rem;
 }
-.modal_help_item:first-child {
-	margin-top: 0;
-}
+
 .modal_help_btn {
     text-align: center;
     background-color: #1F1F1F;
@@ -5185,6 +5183,9 @@ review modal
 	}
 	.modal_help_item {
 		margin-top: 40rem;
+	}
+	.modal_help_item:first-child {
+		margin-top: 0;
 	}
 	.modal_help_btn {
 		font-size: 16rem;

@@ -331,7 +331,7 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  $('.catalog_filters_link_help').click(function(event) {
+  $('.catalog_filters_link_help,.help__left_btn').click(function(event) {
       event.preventDefault();
       $('.modal_help').show();
       $('html,body').addClass('modal_overflow');
