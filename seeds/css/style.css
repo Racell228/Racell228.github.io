@@ -5214,6 +5214,7 @@ review modal
     right: 0;
     z-index: 9999;
     position: absolute;
+    display: none;
 }
 #live-search li {
 	display: flex;
@@ -5255,6 +5256,7 @@ review modal
 @media screen and (max-width: 992px) {
 	#live-search .product-name {
 		font-size: 18rem;
+		width: 1370rem;
 	}
 	#live-search .special {
 		font-size: 18rem;
@@ -5267,7 +5269,7 @@ review modal
 		padding: 12rem 0;
 	}
 	.live-search {
-		width: 425rem;
+		width: calc(100% - 150rem);
 	}
 	.header_search .header_search {
 	    top: 95rem;
@@ -5280,6 +5282,7 @@ review modal
 @media screen and (max-width: 768px) {
 	#live-search .product-name {
 		font-size: 13rem;
+		width: 460rem;
 	}
 	#live-search .special {
 		font-size: 13rem;
@@ -5291,8 +5294,12 @@ review modal
 		font-size: 15rem;
 		padding: 12rem 0;
 	}
+	.header_search .header_search {
+		top: 58rem;
+	    left: 120rem;
+	}
 	.live-search {
-		width: 406rem;
+    	width: calc(100% - 120rem);
 	}
 }
 @media screen and (max-width: 450px)  {
@@ -5301,5 +5308,8 @@ review modal
 	}
 	#live-search .product-name {
 		width: 190rem;
+	}
+	.header_search .header_search {
+		left: 0;
 	}
 }

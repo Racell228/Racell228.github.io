@@ -367,3 +367,9 @@ $(function() {
 
 });
 
+$(document).ready(function() {
+  $('.header_search').click(function(event) {
+      event.preventDefault();
+      $(this).find('.header_search').toggle(500);
+  });
+});
