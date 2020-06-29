@@ -5267,6 +5267,8 @@ review modal
 	.live-search_btn {
 		font-size: 20rem;
 		padding: 12rem 0;
+		width: 400rem;
+    	margin-left: auto;
 	}
 	.live-search {
 		width: calc(100% - 150rem);
@@ -5293,6 +5295,8 @@ review modal
 	.live-search_btn {
 		font-size: 15rem;
 		padding: 12rem 0;
+		width: 100%;
+		margin: 0 20rem;
 	}
 	.header_search .header_search {
 		top: 58rem;
