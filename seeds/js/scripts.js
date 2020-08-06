@@ -17,7 +17,7 @@ $(function() {
     }
   });
 });
-$(function() {
+$(document).ready(function() {
   var owl = $(".product_slider .owl-carousel");
   owl.owlCarousel({
     items: 5,
@@ -80,8 +80,7 @@ $(function() {
 $(document).ready(function() {
   $('.categories__sliders_item:first-child').show();
   $('.product_nav-link').click(function(event) {
-      event.preventDefault();
-      $(this).addClass('product_nav_link-active').siblings().removeClass('product_nav_link-active');
+      $(this).addClass('active').siblings().removeClass('active');
       var id = $(this).attr('href');
       $(id).fadeIn(0).siblings(0).fadeOut(0);
   });
@@ -89,7 +88,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.link_more').click(function(event) {
       event.preventDefault();
-      $(this).parent().find('.hidden_text').toggle(400);
+      $(this).parent().find('.hemp_hidden').addClass('active');
       $(this).hide();
   });
 });
@@ -98,7 +97,7 @@ $(document).ready(function() {
   $('.subheader_right_open').click(function(event) {
       event.preventDefault();
       $('.subheader_right').addClass('subheader_right_show');
-      $(this).addClass('subheader_right_open-active');
+      $(this).addClass('active');
   });
 });
 
@@ -109,7 +108,7 @@ jQuery(function($){
         && div.has(e.target).length === 0) { 
       div.removeClass('subheader_right_show');
     };
-    $('.subheader_right_open').removeClass('subheader_right_open-active');
+    $('.subheader_right_open').removeClass('active');
   });
 });
 $(document).ready(function() {
@@ -132,8 +131,10 @@ jQuery(function($){
   });
 });
 $(document).ready(function() {
+  $('select').styler();
+})
+$(document).ready(function() {
   $('.menu__parent').click(function(event) {
-      event.preventDefault();
       $(this).find('.menu__child').toggle(500);
   });
 });
@@ -221,9 +222,7 @@ $(document).ready(function() {
       $('.show_menu_mobile').hide();
   });
 });
-$(function() {
-  $('select').styler();
-});
+
 $(document).ready(function() {
   $('.filter_item_title').click(function(event) {
       event.preventDefault();

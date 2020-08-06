@@ -1,0 +1,27 @@
+@font-face {
+font-family: 'M PLUS Rounded  1C Regular';
+src: url('../fonts/RoundedMplus1c-Regular.eot');
+src: url('../fonts/RoundedMplus1c-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/RoundedMplus1c-Regular.woff') format('woff'),
+url('../fonts/RoundedMplus1c-Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: 'M PLUS Rounded  1C Medium';
+src: url('../fonts/RoundedMplus1c-Medium.eot');
+src: url('../fonts/RoundedMplus1c-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/RoundedMplus1c-Medium.woff') format('woff'),
+url('../fonts/RoundedMplus1c-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: 'M PLUS Rounded  1C Extra Bold';
+src: url('../fonts/RoundedMplus1c-ExtraBold.eot');
+src: url('RoundedMplus1c-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/RoundedMplus1c-ExtraBold.woff') format('woff'),
+url('../fonts/RoundedMplus1c-ExtraBold.ttf') format('truetype');
+font-weight: 800;
+font-style: normal;
+}

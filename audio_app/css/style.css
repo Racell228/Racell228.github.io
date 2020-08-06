@@ -1,0 +1,407 @@
+html {
+	font-size: 0.069445vw;
+	overflow-x: hidden;
+}
+body {
+	overflow-x: hidden;
+	font-family: 'Noto Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #363E43;
+	background-color: #F4F4F4;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+h1,h2,h3,h4,h5,p,a {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-size: 14rem;
+	line-height: 130%;
+}
+.container {
+	width: 1240rem;
+	margin: auto;
+	position: relative;
+}
+header {
+	background-image: url(../img/hero_bg.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 50rem;
+}
+.header_overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20rem;
+}
+.header_logo {
+	display: flex;
+	align-items: center;
+}
+.header_logo_image {
+	width: 72rem;
+}
+.header_logo_text {
+	font-size: 20rem;
+	font-weight: 500;
+	color: #fff;
+	font-family: 'M PLUS Rounded  1C Medium';
+	margin:0 0 0 10rem;
+}
+.header_nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 700rem;
+    margin: auto;
+}
+.header_nav_link {
+	font-size: 16rem;
+	font-weight: 300;
+	color: #363E43;
+}
+.header_help {
+	width: 40rem;
+}
+.hero {
+	display: flex;
+}
+h1 {
+	font-size: 48rem;
+	font-family: 'M PLUS Rounded  1C Extra Bold';
+	line-height: 125%;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 40rem;
+}
+h1 span {
+	font-weight: 500;
+	text-transform: none;
+	display: block;
+	font-family: 'M PLUS Rounded  1C Medium';
+}
+.hero_stock {
+	display: flex;
+	align-items: center;
+	margin-top: 40rem;
+}
+.hero_stock_image {
+	width: 66rem;
+	margin-right: 30rem;
+}
+.hero_stock_text {
+	font-size: 26rem;
+	font-weight: 400;
+	color: #363E43; 
+	line-height: 150%;
+}
+.hero_stock_text span {
+	font-weight: 800;
+	display: block;
+}
+.hero_adv {
+	display: flex;
+	align-items: center;
+	margin-top: 40rem;
+}
+.hero_adv_item {
+	display: flex;
+	align-items: center;
+	margin-right: 30rem;
+}
+.hero_adv_item-img {
+	width: 64rem;
+	margin-right: 12rem;
+}
+.hero_adv_item-text {
+	font-size: 18rem;
+	line-height: 150%;
+	color: #000000;
+}
+.app_btn {
+	display: flex;
+	align-items: center;
+	margin-top: 50rem;
+}
+.btn {
+	width: 280rem;
+	padding: 15rem 0;
+	font-family: 'M PLUS Rounded  1C Extra Bold';
+	font-size: 21rem;
+	line-height: 150%;
+	color: #fff;
+	text-align: center;
+	background: #EA3135;
+	border-radius: 10px;
+}
+.apple_logo {
+	width: 15rem;
+	margin-right: 13rem;
+}
+.app_btn_text {
+	margin-left: 18rem;
+	display: flex;
+	align-items: center;
+}
+.appstore {
+	display: flex;
+	align-items: center;
+	margin-top: 40rem;
+}
+.appstore_text {
+	font-size: 18rem;
+	font-weight: 500;
+	margin-right: 22rem;
+}
+.scroll {
+	position: absolute;
+	bottom: -20rem;
+	left: calc(50% - 30rem);
+	text-align: center;
+}
+.scroll_image {
+	width: 15rem;
+}
+.scroll_text {
+	font-size: 10rem;
+	color: #363E43;
+	margin-top: 15rem;
+}
+.hero_phone {
+	width: 500rem;
+}
+h2 {
+	font-size: 36rem;
+	font-family: 'M PLUS Rounded  1C Extra Bold';
+	color: #000;
+}
+.books_wave {
+	width: 44rem;
+	margin:  20rem 0;
+}
+.books_descr {
+	width: 240rem;
+}
+.books  {
+	margin: 130rem 0 100rem;
+}
+.books_overlay {
+	margin-top: 80rem;
+}
+.books_item_overlay {
+	width:950rem;
+	margin-left: auto;
+}
+.books_overlay {
+	display: flex;
+}
+.books_item {
+	padding: 20rem 30rem;
+	background-color: #fff;
+	margin: 0 20rem;
+	border-radius: 10px;
+	min-height: 350rem!important;
+}
+.books_item_image {
+	width: 100%;
+}
+.books_item_author {
+	font-size: 16rem;
+	margin: 10rem 0;
+	color: #363E43;
+}
+h3 {
+	font-family: 'M PLUS Rounded  1C Extra Bold';
+	font-size: 21rem;
+	color: #0F1721;
+}
+.slider_arrow {
+	background-image: url(../img/slider_arrow.svg);
+	width: 30rem;
+	height: 14rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	background-color: transparent;
+	border: none;
+}
+.right {
+	transform: rotate(180deg);
+	position: absolute;
+    bottom: 10rem;
+    left: -240rem;
+}
+.left {
+	position: absolute;
+    bottom: 10rem;
+    left: -290rem;
+}
+.books_btn {
+	margin:80rem auto 0;
+	display: block;
+}
+.girl_book {
+	width: 100%;
+}
+.find {
+	padding: 100rem 0 130rem;
+	text-align: center;
+	background-image: url(../img/find_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.find_adv {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 90rem;
+}
+.find_adv_item {
+	width: 172rem;
+}
+.find_adv_img {
+	width: 100%;
+}
+.find_adv_text {
+	margin-top: 40rem;
+}
+.reviews_title {
+	text-align: center;
+	margin-bottom: 35rem;
+}
+.reviews {
+	padding: 100rem 0;
+	background-image: url(../img/reviews_bg.svg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.reviews_star_img {
+	width: 15rem;
+	margin: 0 2rem 0 3rem;
+}
+.reviews_item {
+	width: 250rem;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20rem;
+	margin:  0 20rem;
+}
+.reviews_item_head {
+	margin-top: 15rem;
+	font-size: 16rem;
+	font-family: 'M PLUS Rounded  1C Regular';
+}
+.reviews_stars {
+	display: flex;
+}
+.reviews_item_text {
+	margin-top: 20rem;
+}
+.left_review {
+	position: absolute;
+	bottom: -40rem;
+	left: calc(50% - 40rem);
+}
+.right_rewiew {
+	position: absolute;
+	bottom: -40rem;
+	left: calc(50% - -5rem);
+    transform: rotate(180deg);
+}
+.reviews_btn {
+	display: block;
+	margin: 70rem auto 0;
+}
+.questions {
+	padding: 90rem 0 80rem;
+	background-image: url(../img/find_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.questions_title {
+	text-align: center;
+	margin-bottom: 50rem;
+}
+.questions_item {
+	margin-top: 15rem;
+}
+.questions_item_title {
+	font-weight: 500;
+	color: #000;
+}
+.questions_item_overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.questions_item_close {
+	width: 55rem;
+	height: 55rem;
+	background-image: url(../img/question_show.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.questions_item_close.active {
+	background-image: url(../img/question_hide.svg);
+}
+.questions_item_answer {
+	display: none;
+	margin-top: 20rem;
+}
+.istall {
+	background-image: url(../img/install_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.install_overwiev {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.install_overwiev_left {
+	width: 500rem;
+}
+.install_overwiev_subtitle {
+	font-size: 18rem;
+	color: #000;
+}
+.install_overwiev_text {
+	margin-top: 30rem;
+}
+.install_image {
+	width: 792rem;
+}
+footer {
+	background: #0F1721;
+	padding: 38rem 0;
+}
+.footer_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer_item{
+	color: #fff;
+	font-size: 16rem;
+	font-weight: 400;
+}
+.footer_info {
+	text-decoration: underline;
+}
+.footer_politic {
+	text-decoration: underline;
+}
