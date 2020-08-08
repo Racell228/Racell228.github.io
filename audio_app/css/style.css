@@ -224,6 +224,7 @@ h2 {
 	margin: 0 20rem;
 	border-radius: 10px;
 	min-height: 350rem!important;
+	cursor: pointer;
 }
 .books_item_image {
 	width: 100%;
@@ -248,6 +249,10 @@ h3 {
 	display: block;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
+}
+.slider_arrow:hover {
+	background-image: url(../img/slider_arrow_hover.svg);
 }
 .right {
 	transform: rotate(180deg);
@@ -352,6 +357,7 @@ h3 {
 }
 .questions_item {
 	margin-top: 15rem;
+	cursor: pointer;
 }
 .questions_item_title {
 	font-weight: 500;
@@ -656,6 +662,14 @@ footer {
 		margin: 20rem auto 0;
 		overflow: scroll;
     	height: 85%;
+	}
+	.left {
+	    bottom: -30rem;
+	    left: 445rem;
+	}
+	.right {
+	    bottom: -29rem;
+	    left: 490rem;
 	}
 }
 @media screen and (max-width: 480px){
