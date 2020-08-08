@@ -142,6 +142,15 @@ h1 span {
 	text-align: center;
 	background: #EA3135;
 	border-radius: 10px;
+	transition: 0.5s;
+}
+.btn:hover {
+	background: #F6565A;
+	transition: 0.5s;
+}
+.btn:active {
+	background: #EA3135;
+	transition: 0.5s;
 }
 .apple_logo {
 	width: 15rem;
@@ -156,6 +165,9 @@ h1 span {
 	display: flex;
 	align-items: center;
 	margin-top: 40rem;
+}
+.appstore_stars_item {
+	width: 27rem;
 }
 .appstore_text {
 	font-size: 18rem;
@@ -324,11 +336,13 @@ h3 {
 	margin: 70rem auto 0;
 }
 .questions {
-	padding: 90rem 0 80rem;
+	padding: 90rem 0 130rem;
 	background-image: url(../img/find_bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index: 2;
+	position: relative;
 }
 .questions_title {
 	text-align: center;
@@ -362,10 +376,19 @@ h3 {
 	margin-top: 20rem;
 }
 .istall {
-	background-image: url(../img/install_bg.jpg);
+	/*background-image: url(../img/install_bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	position: relative;
+	z-index: 4;
+}
+.install_bg {
+	position: absolute;
+    top: -55rem;
+    left: -100rem;
+    z-index: -1;
+    width: 1440rem;
 }
 .install_overwiev {
 	display: flex;
@@ -404,4 +427,165 @@ footer {
 }
 .footer_politic {
 	text-decoration: underline;
+}
+.modal {
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+}
+.html_hidden {
+	overflow: hidden;
+}
+.modal_content {
+	width: 730rem;
+	padding: 40rem;
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 10% auto 0;
+	display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.modal_left {
+	width: 220rem;
+	margin-right: 60rem;
+}
+.book_image {
+	width: 100%;
+}
+.modal_right p {
+	margin-bottom: 30rem;
+}
+.modal_right .bold{
+	font-weight: 800;
+}
+.modal_right .italic {
+	font-style: italic;
+}
+.modal_left_author {
+	margin-top: 13rem;
+	margin-bottom: 9rem;
+	font-size: 16rem;
+}
+.modal_left_name {
+	margin-bottom: 25rem;
+}
+.modal_book_descr {
+	display: flex;
+	margin-top: 14rem;
+}
+.modal_book_descr_option {
+	font-size: 10rem;
+	width: 120rem;
+}
+.modal_book_descr_quanity {
+	width: 100rem;
+	font-family: 'M PLUS Rounded  1C Extra Bold';
+	font-size: 12rem;
+}
+.modal_book_btn {
+	display: block;
+    width: 150rem;
+    margin-top: 20rem;
+}
+.modal_close {
+	position: absolute;
+	top: 10rem;
+	right: 10rem;
+	width: 20rem;
+}
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 0.076445vw;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 0.102041vw;
+	}
+	.container {
+		width: calc(100% - 40rem);
+    	margin: 0 20rem;
+	}
+	.header_nav {
+		display: none;
+	}
+	.header_help {
+		display: none;
+	}
+	h1 {
+		font-size: 38rem;
+	}
+	.hero_phone {
+		width: 400rem;
+	}
+	.hero_adv_item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.hero_adv_item-img {
+		margin:0 auto 10rem;
+	}
+	.hero_stock_text {
+		font-size: 24rem;
+	}
+	.scroll {
+		display: none;
+	}
+	.books_overlay {
+		flex-direction: column;
+	}
+	.books_descr {
+	    width: 500rem;
+	    text-align: center;
+	    margin:0 auto 60rem;
+	}
+	p {
+		font-size: 20rem;
+	}
+	h3 {
+		font-size: 26rem;
+	}
+	.books_item_author {
+		font-size: 18rem;
+	}
+	.books_item {
+		min-height: 410rem!important;
+	}
+	.find_adv {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 50rem;
+	}
+	.find_adv_img {
+    	width: 170rem;
+	} 
+	.find_adv_item {
+		margin-top: 40rem;
+		width: 242rem;
+	}
+	.questions_item_close {
+		width: 75rem;
+		height: 75rem;
+	}
+	.install_overwiev_left {
+    	width: 910rem;
+	}
+	.install_overwiev {
+		flex-direction: column;
+		margin-top: 60rem;
+	}
+	.install_bg {
+		left: -590rem;
+	    width: 2270rem;
+	    top: -115rem;
+	}
+	.footer_overlay {
+		justify-content: space-around;
+	}
 }
