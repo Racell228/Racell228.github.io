@@ -46,6 +46,8 @@ header {
 .header_logo {
 	display: flex;
 	align-items: center;
+	position: relative;
+    z-index: 999;
 }
 .header_logo_image {
 	width: 72rem;
@@ -588,6 +590,73 @@ footer {
 	.footer_overlay {
 		justify-content: space-around;
 	}
+	.mobile_burger {
+		width: 35rem;
+   		height: 23rem;
+		position: relative;
+		transition: 0.5s;
+		z-index: 999;
+	}
+	.mobile_burger.active span{
+		background-color: transparent;
+	}
+	.mobile_burger span {
+		width: 100%;
+		background-color: #000;
+		height: 2rem;
+		display: block;
+		margin-top: 11rem;
+		transition: 0.5s;
+	}
+	.mobile_burger span:after, .mobile_burger span:before {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2rem;
+		background-color: #000;
+		display: block;
+		content: "";
+		transition: 0.5s;
+	}
+	.mobile_burger span:before{
+		bottom: 0;
+		transition: 0.5s;
+	}
+	.mobile_burger span:after {
+		top: 0;
+		transition: 0.5s;
+	}
+	.mobile_burger.active span:before {
+	    bottom: 11rem;
+	    transform: rotate(45deg);
+	    transition: 0.5s;
+	}
+	.mobile_burger.active span:after {
+    	top: 9rem;
+    	transform: rotate(-45deg);
+    	transition: 0.5s;
+	}
+	.header_nav_active {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		background: #F9CE46;
+		width: 100%;
+	    left: 0;
+	    height: 100vh;
+   		top: 0;
+   		justify-content: center;
+   		z-index: 99;
+	}
+	.header_nav_link {
+		font-size: 30rem;
+		margin: 20rem 0;
+	}
+	.modal_content {
+		margin: 20rem auto 0;
+		overflow: scroll;
+    	height: 85%;
+	}
 }
 @media screen and (max-width: 480px){
 	html {
@@ -719,5 +788,66 @@ footer {
 	}
 	.footer_politic {
 		margin: 20rem 0;
+	}
+	.books {
+    	margin: 130rem 0 60rem;
+	}
+	.find {
+		padding: 60rem 0;
+	}
+	.find_adv {
+		margin-top: 20rem;
+	}
+	.reviews {
+		padding: 60rem 0;
+	}
+	.questions {
+		padding: 60rem 0 100rem;
+	}
+	.header_nav_link {
+	    font-size: 20rem;
+	    margin: 10rem 0;
+	}
+	.modal_content {
+		width: 300rem;
+		flex-direction: column;
+		padding: 30rem;
+	}
+	.modal_left {
+		width: auto;
+		margin-right: 0;
+	}
+	.book_image {
+    	width: 220rem;
+    	display: block;
+    	margin: auto;
+	}
+	.modal_left_author {
+		text-align: center;
+	}
+	.modal_left_name {
+		width: 200rem;
+		margin: 0 auto 25rem;
+	}
+	.modal_book_descr_option {
+		width: 140rem;
+		font-size: 12rem;
+	}
+	.modal_book_descr_quanity {
+		font-size: 14rem;
+		width: 152rem;
+	}
+	.modal_right {
+		margin-top: 30rem;
+	}
+	.modal_right p {
+    	margin-bottom: 20rem;
+    	font-size: 14rem;
+	}
+}
+@media screen and (max-width: 375px) {
+	.header_nav_link {
+	    font-size: 30rem;
+	    margin: 20rem 0;
 	}
 }

@@ -56,6 +56,14 @@ jQuery(document).ready(function() {
     return false;
   });
 });
+jQuery(document).ready(function() {
+  jQuery(".scroll_nav").click(function () {
+    elementClick = jQuery(this).attr("href")
+    destination = jQuery(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
+    return false;
+  });
+});
 $(document).ready(function() {
   $('.books_item').click(function(event) {
       event.preventDefault();
@@ -67,6 +75,21 @@ $(document).ready(function() {
   $('.modal_close').click(function(event) {
       event.preventDefault();
       $('.modal').hide(400);
+      $('html').removeClass('html_hidden');
+  });
+}); 
+$(document).ready(function() {
+  $('.mobile_burger').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('active');
+      $('.header_nav').toggleClass('header_nav_active');
+      $('html').toggleClass('html_hidden');
+  });
+}); 
+$(document).ready(function() {
+  $('.scroll_nav').click(function(event) {
+      $('.mobile_burger').removeClass('active');
+      $('.header_nav').removeClass('header_nav_active');
       $('html').removeClass('html_hidden');
   });
 }); 
