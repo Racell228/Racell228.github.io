@@ -4,7 +4,16 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="left slider_arrow"></button>',
-    nextArrow: '<button type="button" class="right slider_arrow"></button>'
+    nextArrow: '<button type="button" class="right slider_arrow"></button>',
+    responsive: [
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
   });
 });
 $(document).ready(function(){
@@ -19,6 +28,13 @@ $(document).ready(function(){
       breakpoint: 769,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1,
       }
     }

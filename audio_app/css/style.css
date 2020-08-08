@@ -589,3 +589,135 @@ footer {
 		justify-content: space-around;
 	}
 }
+@media screen and (max-width: 480px){
+	html {
+	    font-size: 0.266531vw;
+	}
+	.container {
+		width: calc(100% - 30rem);
+    	margin: 0 15rem;
+	}
+	.header_logo_image {
+    	width: 56rem;
+	} 
+	header {
+		background-image: url(../img/hero_bg_mobile.svg);
+	}
+	h1 {
+		font-size: 36rem;
+	}
+	.hero {
+		flex-direction: column;
+	}
+	.hero_stock_image {
+		width: 43rem;
+		margin-right: 15rem;
+	}
+	.hero_stock_text {
+		font-size: 18rem;
+	}
+	.hero_adv_item-text {
+		font-size: 16rem;
+	}
+	.hero_adv_item-img {
+    	margin: 0 0 10rem;
+	} 
+	.hero_adv_item {
+		margin-right: 0;
+	}
+	.hero_stock {
+		margin-top: 30rem;
+	}
+	.hero_adv {
+		align-items: end;
+	}
+	.hero_adv {
+		margin-top: 20rem;
+	}
+	.app_btn {
+		flex-direction: column;
+	}
+	.app_btn_text {
+		margin-top: 10rem;
+		margin-left: 0;
+		font-size: 14rem;
+	}
+	.appstore {
+		width: 240rem;
+	    margin: 20rem auto 0;
+	}
+	.app_btn {
+		margin-top: 20rem;
+	}
+	.hero_phone {
+    	width: 350rem;
+    	position: relative;
+	    top: 140rem;
+	    margin-top: -100rem;
+	}
+	.books_descr {
+		width: 100%;
+	}
+	p {
+		font-size: 18rem;
+	}
+	.books_item_overlay {
+		width: 100%;
+	}
+	.books_item {
+		margin: 0 10rem;
+		min-height: 370rem!important;
+		padding: 20rem 45rem;
+	}
+	.books_item_author {
+		font-size: 16rem;
+	}
+	h3 {
+		font-size: 21rem;
+	}
+	.left {
+		bottom: -34rem;
+    	left: 130rem;
+	}
+	.right {
+		bottom: -35rem;
+    	left: 180rem;
+	}
+	.find_adv_item {
+		width: 154rem;
+		margin-top: 30rem;
+	}
+	.find_adv_img {
+		width: 100%;
+	}
+	.find_adv_text {
+		font-size: 14rem;
+	}
+	.questions_item_title {
+		max-width: 280rem;
+	}
+	.install_overwiev_text {
+		font-size: 14rem;
+		margin-top: 15rem;
+	}
+	.install_overwiev_left {
+		width: 100%;
+	}
+	.install_image {
+    	width: 400rem;
+	}
+	.install_bg {
+	    left: -705rem;
+	    width: 1640rem;
+	    top: -65rem;
+	}
+	.install_overwiev {
+		margin-top: 20rem;
+	}
+	.footer_overlay {
+		flex-direction: column;
+	}
+	.footer_politic {
+		margin: 20rem 0;
+	}
+}
