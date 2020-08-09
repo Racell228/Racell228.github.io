@@ -71,6 +71,9 @@ header {
 	font-weight: 300;
 	color: #363E43;
 }
+.header_nav_link:hover {
+	font-weight: 700;
+}
 .header_help {
 	width: 40rem;
 }
@@ -454,7 +457,7 @@ footer {
 	padding: 40rem;
 	background-color: #fff;
 	border-radius: 10px;
-	margin: 10% auto 0;
+	margin: 30rem auto 0;
 	display: flex;
     justify-content: space-between;
     position: relative;
@@ -584,6 +587,9 @@ footer {
 	.install_overwiev_left {
     	width: 910rem;
 	}
+	.install_overwiev_text {
+		font-size: 18rem;
+	}
 	.install_overwiev {
 		flex-direction: column;
 		margin-top: 60rem;
@@ -670,6 +676,10 @@ footer {
 	.right {
 	    bottom: -29rem;
 	    left: 490rem;
+	}
+	.modal_book_descr_option {
+   	 	font-size: 12rem;
+  		width: 150rem;
 	}
 }
 @media screen and (max-width: 480px){
