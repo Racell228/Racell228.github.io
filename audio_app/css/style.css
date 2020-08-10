@@ -23,7 +23,7 @@ a {
 }
 p {
 	font-size: 14rem;
-	line-height: 130%;
+	line-height: 150%;
 }
 .container {
 	width: 1240rem;
@@ -58,6 +58,7 @@ header {
 	color: #fff;
 	font-family: 'M PLUS Rounded  1C Medium';
 	margin:0 0 0 10rem;
+	line-height: 125%;
 }
 .header_nav {
 	display: flex;
@@ -87,6 +88,7 @@ h1 {
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 40rem;
+	color: #0F1721;
 }
 h1 span {
 	font-weight: 500;
@@ -164,7 +166,9 @@ h1 span {
 .app_btn_text {
 	margin-left: 18rem;
 	display: flex;
+	color: #000;
 	align-items: center;
+	width: 220rem;
 }
 .appstore {
 	display: flex;
@@ -173,10 +177,13 @@ h1 span {
 }
 .appstore_stars_item {
 	width: 27rem;
+	margin: 0 5rem;
 }
 .appstore_text {
 	font-size: 18rem;
 	font-weight: 500;
+
+	color: #222;
 	margin-right: 22rem;
 }
 .scroll {
@@ -238,7 +245,7 @@ h2 {
 	color: #363E43;
 }
 h3 {
-	font-family: 'M PLUS Rounded  1C Extra Bold';
+	font-family: 'M PLUS Rounded  1C Medium';
 	font-size: 21rem;
 	color: #0F1721;
 }
@@ -323,12 +330,14 @@ h3 {
 	margin-top: 15rem;
 	font-size: 16rem;
 	font-family: 'M PLUS Rounded  1C Regular';
+	font-weight: 400;
 }
 .reviews_stars {
 	display: flex;
 }
 .reviews_item_text {
 	margin-top: 20rem;
+	color: #000;
 }
 .left_review {
 	position: absolute;
@@ -412,9 +421,13 @@ h3 {
 .install_overwiev_subtitle {
 	font-size: 18rem;
 	color: #000;
+	font-weight: 400;
+	line-height: 150%;
+	width: 320rem;
 }
 .install_overwiev_text {
 	margin-top: 30rem;
+	line-height: 150%;
 }
 .install_image {
 	width: 792rem;
@@ -471,6 +484,7 @@ footer {
 }
 .modal_right p {
 	margin-bottom: 30rem;
+	line-height: 150%;
 }
 .modal_right .bold{
 	font-weight: 800;
@@ -498,11 +512,24 @@ footer {
 	width: 100rem;
 	font-family: 'M PLUS Rounded  1C Extra Bold';
 	font-size: 12rem;
+	position: relative;
+}
+.modal_book_descr_quanity-publ:after {
+	content: "";
+    width: 4rem;
+    height: 8rem;
+    display: block;
+    background-image: url(../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 7rem;
 }
 .modal_book_btn {
 	display: block;
     width: 150rem;
-    margin-top: 20rem;
+    margin-top: 35rem;
 }
 .modal_close {
 	position: absolute;
@@ -547,6 +574,9 @@ footer {
 	}
 	.scroll {
 		display: none;
+	}
+	.app_btn_text {
+		font-size: 18rem;
 	}
 	.books_overlay {
 		flex-direction: column;
@@ -615,7 +645,7 @@ footer {
 	.mobile_burger span {
 		width: 100%;
 		background-color: #000;
-		height: 2rem;
+		height: 1rem;
 		display: block;
 		margin-top: 11rem;
 		transition: 0.5s;
@@ -681,6 +711,12 @@ footer {
    	 	font-size: 12rem;
   		width: 150rem;
 	}
+	.install_image {
+    	width: 759rem;
+	}
+	.modal_book_descr_quanity-publ:after {
+		right: -7rem;
+	}
 }
 @media screen and (max-width: 480px){
 	html {
@@ -736,11 +772,11 @@ footer {
 		font-size: 14rem;
 	}
 	.appstore {
-		width: 240rem;
+		width: 290rem;
 	    margin: 20rem auto 0;
 	}
 	.app_btn {
-		margin-top: 20rem;
+		margin-top: 30rem;
 	}
 	.hero_phone {
     	width: 350rem;
@@ -764,6 +800,7 @@ footer {
 	}
 	.books_item_author {
 		font-size: 16rem;
+		margin: 20rem 0 10rem;
 	}
 	h3 {
 		font-size: 21rem;
@@ -797,7 +834,7 @@ footer {
 		width: 100%;
 	}
 	.install_image {
-    	width: 400rem;
+    	width: 360rem;
 	}
 	.install_bg {
 	    left: -705rem;
@@ -828,6 +865,10 @@ footer {
 	.questions {
 		padding: 60rem 0 100rem;
 	}
+	.reviews_item_text {
+		font-size: 12rem;
+		margin-top: 15rem;
+	}
 	.header_nav_link {
 	    font-size: 20rem;
 	    margin: 10rem 0;
@@ -852,6 +893,10 @@ footer {
 	.modal_left_name {
 		width: 200rem;
 		margin: 0 auto 25rem;
+		text-align: center;
+	}
+	.modal_book_btn {
+		width: 300rem;
 	}
 	.modal_book_descr_option {
 		width: 140rem;
@@ -859,7 +904,7 @@ footer {
 	}
 	.modal_book_descr_quanity {
 		font-size: 14rem;
-		width: 152rem;
+		width: 142rem;
 	}
 	.modal_right {
 		margin-top: 30rem;
@@ -867,6 +912,19 @@ footer {
 	.modal_right p {
     	margin-bottom: 20rem;
     	font-size: 14rem;
+	}
+	.questions_item_answer p {
+		font-size: 14rem;
+	}
+	.modal_book_descr_quanity-publ:after {
+		width: 6rem;
+		height: 12rem;
+	}
+	.header_nav_active {
+		padding-top: 20rem;
+	}
+	.header_nav_link {
+		color: #000;
 	}
 }
 @media screen and (max-width: 375px) {
