@@ -284,6 +284,7 @@ h2 {
 	background-size: cover;
 	padding: 210rem 0;
 	margin-top: 127rem;
+	overflow-x: hidden;
 }
 .confidence_title {
 	text-align: center;
@@ -312,6 +313,7 @@ h3 {
 }
 .production {
 	margin: 110rem 0 165rem;
+	overflow-x: hidden;
 }
 .production_btn {
 	width: 468rem;
@@ -453,6 +455,7 @@ h3 {
 }
 .order {
 	margin: 130rem 0 170rem;
+	overflow-x: hidden;
 }
 .order_title {
 	text-align: center;
@@ -645,7 +648,7 @@ footer {
 }
 .footer_icon2_bg {
 	position: absolute;
-    right: -430rem;
-    top: -410rem;
+    right: -390rem;
+    top: 10rem;
     width: 330rem;
 }

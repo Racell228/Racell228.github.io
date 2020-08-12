@@ -426,14 +426,14 @@ h3 {
     left: -100rem;
     z-index: -1;
     width: 1440rem;
+    height: 570rem;
 }
 .install_overwiev {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 .install_overwiev_left {
 	width: 500rem;
+	padding-top: 40rem;
 }
 .install_overwiev_subtitle {
 	font-size: 18rem;
@@ -441,13 +441,14 @@ h3 {
 	font-weight: 400;
 	line-height: 150%;
 	width: 320rem;
+	margin-top: 10rem;
 }
 .install_overwiev_text {
 	margin-top: 30rem;
 	line-height: 150%;
 }
 .install_image {
-	width: 792rem;
+	width: 642rem;
 }
 footer {
 	background: #0F1721;
@@ -456,18 +457,21 @@ footer {
 .footer_overlay {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 .footer_item{
 	color: #fff;
 	font-size: 16rem;
 	font-weight: 400;
 }
+.footer_data {
+	margin-left: auto;
+}
 .footer_info {
 	text-decoration: underline;
 }
 .footer_politic {
 	text-decoration: underline;
+	margin-left: 280rem;
 }
 .modal {
 	position: fixed;
@@ -557,6 +561,12 @@ footer {
 .header_help_mobile {
 	display: none;
 }
+.mobile_burger_active {
+	display: none;
+}
+.mobile_burger_passive {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
 		font-size: 0.076445vw;
@@ -597,6 +607,7 @@ footer {
 	}
 	.app_btn_text {
 		font-size: 18rem;
+		width: 270rem;
 	}
 	.books_overlay {
 		flex-direction: column;
@@ -648,24 +659,32 @@ footer {
 		left: -590rem;
 	    width: 2270rem;
 	    top: -115rem;
+	    height: 1100rem;
 	}
 	.footer_overlay {
 		justify-content: space-around;
 	}
 	.mobile_burger {
-		width: 41rem;
-   		height: 30rem;
+		/*width: 41rem;
+   		height: 30rem;*/
 		position: relative;
 		transition: 0.5s;
 		z-index: 999;
-		background-image: url(../img/burger_mobile.svg);
+		/*background-image: url(../img/burger_mobile.svg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: cover;*/
 	}
-	.mobile_burger.active {
+	/*.mobile_burger.active {
 		background-image: url(../img/mobile_menu_close.svg);
 		width: 36rem;
     	height: 36rem;
+	}*/
+	.mobile_burger_active {
+		width: 36rem;	
+	}
+	.mobile_burger_passive {
+		width: 43rem;
+		display: block;
 	}
 	.header_nav_active {
 		display: flex;
@@ -709,9 +728,13 @@ footer {
 	}
 	.header_help_mobile {
 		display: block;
+		margin-top: 20rem;
 	}
 	.header_help_mobile_img {
 		width: 40rem;
+	}
+	.footer_politic {
+		margin-left: 130rem;
 	}
 }
 @media screen and (max-width: 480px){
@@ -751,6 +774,9 @@ footer {
 		margin-right: 0;
 		width: 100rem;
 	}
+	.hero_adv_item:first-child {
+		width: 75rem;
+	}
 	.hero_stock {
 		margin-top: 30rem;
 	}
@@ -768,6 +794,7 @@ footer {
 		margin-top: 10rem;
 		margin-left: 0;
 		font-size: 14rem;
+		width: 220rem;
 	}
 	.appstore {
 		width: 290rem;
@@ -830,6 +857,8 @@ footer {
 	}
 	.install_overwiev_left {
 		width: 100%;
+		padding-top: 0;
+		margin-top: -10rem;
 	}
 	.install_image {
     	width: 360rem;
@@ -838,6 +867,7 @@ footer {
 	    left: -705rem;
 	    width: 1640rem;
 	    top: -65rem;
+	    height: 753rem;
 	}
 	.install_overwiev {
 		margin-top: 20rem;
@@ -934,6 +964,9 @@ footer {
 	}
 	#boxercontainer {
 		min-height: auto;
+	}
+	.footer_data {
+		margin-left: 0;
 	}
 }
 @media screen and (max-width: 375px) {

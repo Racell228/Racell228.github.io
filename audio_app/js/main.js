@@ -81,7 +81,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.mobile_burger').click(function(event) {
       event.preventDefault();
-      $(this).toggleClass('active');
+      $('.mobile_burger_passive').toggle();
+      $('.mobile_burger_active').toggle();
       $('.header_nav').toggleClass('header_nav_active');
       $('html').toggleClass('html_hidden');
   });
