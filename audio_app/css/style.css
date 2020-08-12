@@ -71,6 +71,8 @@ header {
 	font-size: 16rem;
 	font-weight: 300;
 	color: #363E43;
+	width: 100rem;
+    text-align: center;
 }
 .header_nav_link:hover {
 	font-weight: 700;
@@ -202,6 +204,21 @@ h1 span {
 }
 .hero_phone {
 	width: 500rem;
+}
+#boxercontainer {
+  width: 500rem;
+  max-width: 900rem;
+  margin: 0 auto;
+  position: relative;
+  min-height: 480rem;
+}
+#boxercontainer img { 
+  position: absolute;
+  bottom: 35rem;
+  right: 50rem;
+  width: 100%;
+  padding: 1rem;
+  z-index: 2;
 }
 h2 {
 	font-size: 36rem;
@@ -537,6 +554,9 @@ footer {
 	right: 10rem;
 	width: 20rem;
 }
+.header_help_mobile {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
 		font-size: 0.076445vw;
@@ -633,50 +653,19 @@ footer {
 		justify-content: space-around;
 	}
 	.mobile_burger {
-		width: 35rem;
-   		height: 23rem;
+		width: 41rem;
+   		height: 30rem;
 		position: relative;
 		transition: 0.5s;
 		z-index: 999;
+		background-image: url(../img/burger_mobile.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
-	.mobile_burger.active span{
-		background-color: transparent;
-	}
-	.mobile_burger span {
-		width: 100%;
-		background-color: #000;
-		height: 1rem;
-		display: block;
-		margin-top: 11rem;
-		transition: 0.5s;
-	}
-	.mobile_burger span:after, .mobile_burger span:before {
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 2rem;
-		background-color: #000;
-		display: block;
-		content: "";
-		transition: 0.5s;
-	}
-	.mobile_burger span:before{
-		bottom: 0;
-		transition: 0.5s;
-	}
-	.mobile_burger span:after {
-		top: 0;
-		transition: 0.5s;
-	}
-	.mobile_burger.active span:before {
-	    bottom: 11rem;
-	    transform: rotate(45deg);
-	    transition: 0.5s;
-	}
-	.mobile_burger.active span:after {
-    	top: 9rem;
-    	transform: rotate(-45deg);
-    	transition: 0.5s;
+	.mobile_burger.active {
+		background-image: url(../img/mobile_menu_close.svg);
+		width: 36rem;
+    	height: 36rem;
 	}
 	.header_nav_active {
 		display: flex;
@@ -693,6 +682,7 @@ footer {
 	.header_nav_link {
 		font-size: 30rem;
 		margin: 20rem 0;
+		width: auto;
 	}
 	.modal_content {
 		margin: 20rem auto 0;
@@ -716,6 +706,12 @@ footer {
 	}
 	.modal_book_descr_quanity-publ:after {
 		right: -7rem;
+	}
+	.header_help_mobile {
+		display: block;
+	}
+	.header_help_mobile_img {
+		width: 40rem;
 	}
 }
 @media screen and (max-width: 480px){
@@ -753,6 +749,7 @@ footer {
 	} 
 	.hero_adv_item {
 		margin-right: 0;
+		width: 100rem;
 	}
 	.hero_stock {
 		margin-top: 30rem;
@@ -762,6 +759,7 @@ footer {
 	}
 	.hero_adv {
 		margin-top: 20rem;
+		justify-content: space-between;
 	}
 	.app_btn {
 		flex-direction: column;
@@ -925,6 +923,17 @@ footer {
 	}
 	.header_nav_link {
 		color: #000;
+	}
+	#boxercontainer img {
+	    position: relative;
+	    bottom: auto;
+	    right: auto;
+	    width: 350rem;
+	    padding: 1rem;
+	    z-index: 2;
+	}
+	#boxercontainer {
+		min-height: auto;
 	}
 }
 @media screen and (max-width: 375px) {

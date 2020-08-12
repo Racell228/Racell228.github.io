@@ -5410,3 +5410,29 @@ review modal
 		left: 0;
 	}
 }
+
+.card_descr_info_buy {
+	display: flex;
+	justify-content: space-between;
+	width: 292rem;
+	align-items: center;
+	padding: 10rem 30rem;
+	background: #F3F3F3;
+	margin-top: 30rem;
+	border-radius: 4px;
+	font-weight: 300;
+}
+.card_descr_info_quanity {
+	color: #24A300;
+	font-weight: 500;
+}
+@media screen and (max-width: 992px)  {
+	.card_descr_info_buy {
+		width: 420rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.card_descr_info_buy {
+		width: 285rem;
+	}
+}
