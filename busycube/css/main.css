@@ -25,6 +25,9 @@ p {
 	font-size: 16rem;
 	line-height: 150%;
 }
+.hidden {
+	overflow: hidden;
+}
 .container {
 	width: 1440rem;
 	position: relative;
@@ -56,6 +59,9 @@ header{
 	color: #fff;
 	display: flex;
 	align-items: center;
+	transition: 0.5s;
+	position: relative;
+    z-index: 22;
 }
 .header_tel-img {
 	margin-right: 15rem;
@@ -72,7 +78,7 @@ header{
 	width: 892rem;
 }
 .hero_image {
-	width: 800rem;
+	width: 850rem;
     position: relative;
     top: -130rem;
     left: 40rem;
@@ -160,6 +166,7 @@ h4 {
 	padding: 21rem 0;
 	margin-top: 25rem;
 	margin-left: 40rem;
+	transition: 0.5s;
 	font-size: 16rem;
 }
 .jq-selectbox__select-text {
@@ -179,14 +186,20 @@ h4 {
 	width: calc(100% - 40rem);
     background: #fff;
     border-radius: 20rem;
+    top: 95rem;
     left: 40rem;
     box-shadow: 0px 5px 24px rgba(96, 58, 0, 0.25);
+}
+.jq-selectbox__dropdown .select_option:hover {
+	background: linear-gradient(90deg, #FFA927 0%, #FFCF27 100%);
+	border-radius: 71px;
+	color: #fff;
 }
 .jq-selectbox__dropdown ul {
 	padding: 0;
 }
 .jq-selectbox__dropdown .select_option {
-	padding: 10rem 0 10rem 20rem;
+	padding: 15rem 0 15rem 20rem;
 	color: #473C2A;
 }
 .jq-selectbox__trigger {
@@ -213,15 +226,18 @@ h4 {
 }
 .form_quanity {
 	color: #FFA927;
-	font-size: 15rem;
-	font-weight: 500;
-	margin: 30rem 0 0 110rem;
+    font-size: 18rem;
+    font-weight: 500;
+    margin: 25rem 0 0 95rem;
 }
 .form_politic {
 	font-size: 12rem;
 	line-height: 150%;
 	text-decoration: underline;
 	color: rgba(64, 58, 48, 0.7);
+}
+.overview{
+	margin-top: -100rem;
 }
 .overview_overlay {
 	display: flex;
@@ -268,7 +284,7 @@ h2 {
 }
 .overview_image {
 	width: 700rem;
-	border-radius: 30rem;
+	border-radius: 20rem;
 }
 .overview_image_title {
 	text-align: center;
@@ -289,6 +305,15 @@ h2 {
 	text-align: center;
 	padding: 21rem 0;
 	display: block;
+	transition: 0.5s;
+}
+.footer_tel:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+.header_tel:hover {
+	opacity: 0.7;
+	transition: 0.5s;
 }
 .overview_btn {
 	margin: 80rem auto 0;
@@ -439,9 +464,10 @@ h3 {
 	position: absolute;
 	top: 0;
 	letter-spacing: 0;
-	width: 100%;
+	width: 110%;
 	height: 100%;
 	content: "";
+	z-index: 9;
 	background-color: rgba(255,255,255, 0.5);
 	transition: 0.5s;
 }
@@ -520,10 +546,20 @@ h3 {
     top: 30rem;
     right: -240rem;
     width: 892rem;
-    z-index: -1;
+    z-index: -2;
+}
+.footer_hero .hero_flex_left {
+	width: 607rem;
 }
 .footer_hero .hero_image {
 	top: 70rem;
+	z-index: -1;
+}
+.footer_hero .hero_overlay {
+	align-items: center;
+}
+.footer_hero .hero_left{
+	margin-bottom: 100rem;
 }
 footer {
 	padding: 30rem 0;
@@ -546,12 +582,19 @@ footer {
 }
 .footer_politic {
 	color: #fff;
-	text-decoration: underline;
 	font-size: 14rem;
+}
+.footer_politic:hover {
+	text-decoration: underline;
 }
 .footer_social_img {
 	margin: 0 10rem;
 	width: 35rem;
+	transition: 0.5s;
+}
+.footer_social_img:hover {
+	opacity: 0.7;
+	transition: 0.5s;
 }
 .footer_tel_img {
 	width: 35rem;
@@ -894,6 +937,48 @@ footer {
 	width: 54rem;
 	transform: rotate(-75deg);
 }
+.form_submit:hover {
+	background: linear-gradient(90deg, #FFA927 0%, #FFCF27 100%);
+	box-shadow: 0px 30px 34px rgba(255, 202, 39, 0.5);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btn:hover {
+	background: linear-gradient(90deg, #FFA927 0%, #FFCF27 100%);
+	box-shadow: 0px 30px 34px rgba(255, 202, 39, 0.5);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.modal_politic_icon2 {
+	position: absolute;
+	top: 20rem;
+	right: 30rem;
+	width: 54rem;
+	transform: matrix(0.25, -0.98, 0.96, 0.27, 0, 0);
+}
+.modal_politic h4 {
+	color: #473C2A;
+	margin-bottom: 15rem;
+}
+.modal_politic p {
+	margin-bottom: 25rem;
+	color: rgba(64, 58, 48, 0.7);
+}
+.modal_politic .form_window {
+	width: 870rem;
+	left: calc(50% - 505rem);
+	padding: 0;
+}
+.modal_politic_container {
+	overflow-x: auto;
+	max-height: 470rem;
+	padding: 60rem 70rem;
+}
+.modal_politic .form_window_title {
+	max-width: 600rem;
+	width: auto;
+	margin: 0 auto 50rem;
+}
 @media screen and (max-width: 992px) {
 	.container {
 		margin: 0 80rem;
@@ -912,6 +997,9 @@ footer {
 	}
 	p {
 		font-size: 18rem;
+	}
+	.overview {
+		margin-top: 0;
 	}
 	.form_quanity {
 		font-size: 18rem;
@@ -1010,7 +1098,7 @@ footer {
 		margin-left: 28rem;
 	}
 	.form_input {
-		padding: 18rem 0 18rem 40rem;
+		padding: 21rem 0 21rem 40rem;
 	}
 	.form_politic {
    	 	font-size: 12rem;
@@ -1044,7 +1132,7 @@ footer {
 	} 
 	.overview_icon_bg {
 	    left: 600rem;
-	    top: 830rem;
+	    top: 680rem;
 	}
 	.overview_btn {
 		margin: 50rem auto 0;
@@ -1091,7 +1179,7 @@ footer {
 		margin-top: 80rem;
 	}
 	.confidence {
-		background-position: -1860rem 0;
+		
 		margin-top: 100rem;
 	}
 	.production {
@@ -1122,9 +1210,6 @@ footer {
 	}
 	.card_btn {
 		margin: 40rem auto 0;
-	}
-	.card {
-		background-position: -1390rem 0;
 	}
 	.reviews_icon_bg {
 		display: none;
@@ -1169,7 +1254,7 @@ footer {
 		margin: 40rem auto 0;
 	}
 	.warranty {
-		background-position: -1200rem 0;
+		
 	}
 	.order_overlay {
 		flex-wrap: wrap;
@@ -1190,7 +1275,7 @@ footer {
 	    left: -30rem;
 	    top: auto;
 	    bottom: 120rem;
-	    z-index: -1;
+	    z-index: -2;
 	    width: 768rem;
 	}
 	.footer_hero .hero_image {
@@ -1199,6 +1284,12 @@ footer {
 	}
 	.footer_hero .hero_overlay{
 		flex-direction: column;
+	}
+	.footer_hero .hero_flex_left {
+    	width: 487rem;
+	}
+	.footer_hero .hero_left {
+		margin-bottom: 0;
 	}
 	.order {
 		margin: 130rem 0;
@@ -1211,7 +1302,7 @@ footer {
 	}
 	.footer_social {
 		order: 3;
-		width: 50%;
+		width: 60%;
 		margin-top: 30rem;
 	}
 	.footer_politic {
@@ -1222,11 +1313,10 @@ footer {
 		margin-top: 120rem;
 	}
 	.present {
-		background-image: url(../img/confidence_bg.svg);
+		background-image: url(../img/present_bg_tab.svg);
 	    background-repeat: no-repeat;
 	    background-size: cover;
-	    padding: 210rem 0;
-	    background-position: -1170rem 0;
+	    padding: 120rem 0 210rem;
 	}
 	.present_title {
 		text-align: center;
@@ -1245,17 +1335,22 @@ footer {
 	.present_fixed {
 		display: flex;
 		align-items: center;
+		position: absolute;
+		width: 100%;
 	}
 	.present_fixed_img {
 		width: 100rem;
 	}
 	.present_fixed_zigzag {
-		width: 180rem;
-		margin-left: 60rem;
+		width: 139rem;
+		margin-left: 98rem;
 	}
 	.present_fixed_text {
-		color: #473C2A;
+		color: #FF493E;
 		margin-left: auto;
+		font-family: 'Caveat', cursive;
+		font-size: 38rem;
+		width: 270rem;
 	}
 	.present_icon2_bg {
 		position: absolute;
@@ -1275,6 +1370,25 @@ footer {
 		left: calc(50% - 370rem);
 		top: 90rem;
 	}
+	.modal_politic_container {
+		width: auto;
+		padding: 30rem;
+		max-height: 400rem;
+	}
+	.modal_politic .form_window {
+		width: 710rem;
+		left: calc(50% - 355rem);
+		top: 90rem;
+	}
+	.modal_politic .modal_form_icon {
+		display: none;
+	}
+	.modal_politic .modal_politic_icon2 {
+		display: none;
+	}
+	.modal_politic .form_window_title {
+		margin: 0 auto 30rem;
+	}
 	.modal .form_input {
 		width: 270rem;
 	}
@@ -1289,6 +1403,7 @@ footer {
 	.thank {
 		height: auto;
 		overflow: visible;
+		background: linear-gradient(180deg, #FFCF27 0%, #FFA927 100%);
 	}
 	.thank_content_overlay {
 		flex-direction: column-reverse;
@@ -1323,6 +1438,20 @@ footer {
 		right: 10rem;
     	bottom: auto;
     	top: 380rem;
+	}
+	.confidence {
+		background-image: url(../img/confidence_bg_tab.svg);
+		padding: 150rem 0 210rem;
+		margin-bottom: 100rem;
+	}
+	.card {
+		background-image: url(../img/card_bg_tab.svg);
+	}
+	.warranty {
+		background-image: url(../img/warranty_bg_tab.svg);
+	}
+	.thank_content_title {
+		text-align: center;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1375,12 +1504,14 @@ footer {
 	}
 	.jq-selectbox__select-text {
 		margin-left: 0;
-		padding: 19rem 0 17rem 40rem;
+		padding: 22rem 0 20rem 40rem;
 		width: 296rem!important;
+		margin-top: 17rem;
 	}
 	.form_submit {
 		margin-left: 0;
-		padding: 18rem 0;
+		margin-top: 17rem;
+		padding: 21rem 0;
 	}
 	.form_accept {
 		order: 8;
@@ -1411,6 +1542,7 @@ footer {
 	    width: calc(100% - 40rem);
 	    padding: 21rem 20rem;
 	    margin: 40rem auto 0;
+	    line-height: 150%;
 	}
 	.gift_icon2_bg {
 		width: 60rem;
@@ -1430,13 +1562,18 @@ footer {
 	.warranty_icon3_bg {
 		display: none;
 	}
+	.warranty {
+		background-image: url(../img/warranty_bg_mob.svg);
+		padding: 170rem 0;
+	}
 	.gift_btn {
     	margin: 40rem auto 0;
     	width: calc(100% - 40rem);
     	padding: 21rem 20rem;
 	}
 	.confidence {
-		margin-top: 0;
+		background-image: url(../img/confidence_bg_mob.svg);
+		margin-bottom: 0;
 	}
 	.confidence_title {
 		margin-bottom: 0;
@@ -1448,9 +1585,14 @@ footer {
     	width: 240rem;
     	padding: 21rem 47rem;
     	margin: 40rem auto;
+    	line-height: 150%;
+    }
+    .present {
+    	background-image: url(../img/present_bg_mob.svg);
     }
     .card {
-    	margin-top: 0;
+    	margin-top: 80rem;
+    	padding: 150rem 0;
     }
     .card_slider .owl-carousel {
     	width: 335rem;
@@ -1482,9 +1624,6 @@ footer {
 	}
 	.card_btn {
 		width: 335rem;
-	}
-	.card {
-    	background-position: -1490rem 0;
 	}
 	.owl-prev, .owl-next {
     	width: 45rem;
@@ -1519,7 +1658,7 @@ footer {
 		margin: 40rem 0 20rem;
 	}
 	.order {
-    	margin: 40rem 0 100rem;
+    	margin: 80rem 0 100rem;
 	}
 	.order_item {
     	margin-top: 60rem;
@@ -1559,9 +1698,6 @@ footer {
 		width: 100%;
 		left: 0;
 	}
-	.footer_hero_bg_tel {
-		display: block;
-	}
 	.footer_hero_bg_mobile {
 		display: none;
 	}
@@ -1570,7 +1706,7 @@ footer {
 	    position: absolute;
 	    bottom: 120rem;
 	    left: -20rem;
-	    z-index: -1;
+	    z-index: -2;
 	    width: 375rem;
 	}
 	.hero_bg_tel {
@@ -1598,17 +1734,24 @@ footer {
 		width: 64rem;
 	}
 	.present_fixed_zigzag {
-		width: 90rem;
-		margin-left: 20rem;
+    	width: 66rem;
+    	margin-left: 40rem;
 	}
 	.present_fixed_text {
-		margin-left: 20rem;
+		margin-left: 28rem;
+		font-size: 22rem;
+	}
+	.footer_hero {
+		margin-top: 0;
 	}
 	.form_window {
 	    width: 300rem;
-	    padding: 20rem;
+	    padding: 40rem 20rem;
 	    left: calc(50% - 170rem);
 	    top: 90rem;
+	}
+	.form_input {
+		margin-top: 17rem;
 	}
 	.form_window_title {
 		width: auto;
@@ -1631,6 +1774,9 @@ footer {
 	.thank_icon6_bg {
 		display: none;
 	}
+	.thank {
+		background: linear-gradient(180deg, #FFCF27 0%, #FFA927 100%);
+	}
 	.thank h1 {
 		text-align: center;
 	}
@@ -1639,5 +1785,18 @@ footer {
 	}
 	.modal_form_icon {
 		display: none;
+	}
+	.footer_hero .hero_flex_left {
+    	width: 187rem;
+	}
+	.modal_politic .form_window {
+		width: 300rem;
+	    padding: 20rem;
+	    left: calc(50% - 170rem);
+	    top: 90rem;
+	}
+	.modal_politic_container {
+		padding: 0;
+		max-height: 440rem;
 	}
 }

@@ -58,39 +58,39 @@ $(function() {
   });
 });
 $(document).ready(function() {
-  $('.overview_btn').click(function(event) {
+  $('.overview_btn,.gift_btn,.production_btn,.card_btn,.warranty_btn').click(function(event) {
       event.preventDefault();
       $('.modal_form').show();
+      $('html,body').addClass('hidden');
+  });
+});  
+// $(document).mouseleave(function(e){
+//     if (e.clientY < 10) {
+//         $('.modal_exit').show();
+//         $('html,body').addClass('hidden');
+//     }    
+// }); 
+$(document).ready(function() {
+  $('.footer_politic,.form_politic').click(function(event) {
+      event.preventDefault();
+      $('.modal_politic').show();
+      $('html,body').addClass('hidden');
   });
 });  
 $(document).ready(function() {
-  $('.gift_btn').click(function(event) {
+  $('.present_fixed').click(function(event) {
       event.preventDefault();
-      $('.modal_exit').show();
+      $('.modal_present').show();
+      $('html,body').addClass('hidden');
   });
 });  
 $(document).ready(function() {
   $('.close_btn').click(function(event) {
       event.preventDefault();
-      $('.modal_form,.modal_exit').hide();
+      $('.modal_form,.modal_exit,.modal_politic,.modal_present').hide();
+      $('html,body').removeClass('hidden');
   });
 });  
-// var overlay = document.getElementById('overlay');
-// var vid = document.getElementById('video');
-
-// if(overlay.addEventListener){
-//     overlay.addEventListener("click", play, false)
-//   }else if(overlay.attachEvent){
-//     overlay.attachEvent("onclick", play)
-//   }
-
-// function play() { 
-//     if (vid.paused){
-//         vid.play(); 
-//         overlay.className = "o";
-//     }else {
-//         vid.pause(); 
-//         overlay.className = "";
-//     }
-// } 
-
+jQuery(function($){
+   $(".tel").mask("+7 (999) 999 - 99 - 99");
+   });
