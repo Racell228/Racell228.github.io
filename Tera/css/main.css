@@ -177,6 +177,12 @@ header.active .header_lang_item {
 	left: 0;
 	width: 743rem;
 	z-index: 1;
+} 
+.slider_item_bg {
+	background-image: url(../img/slider_item.jpg);
+	height: 600rem;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .slider_item_content {
 	left: 150rem;
@@ -454,6 +460,9 @@ header.active .header_lang_item {
 	position: absolute;
     bottom: -50rem;
 }
+.reviews_title {
+	margin-bottom: 20rem;
+}
 .reviews_slider .left {
 	right: 105rem;
 	transform: rotate(180deg);
@@ -577,11 +586,12 @@ footer {
 	font-weight: 600;
 	font-size: 16rem;
 	color: #fff;
+	margin: 6rem 0;
 }
 .footer_link {
 	font-size: 16rem;
 	color: #CFCFCF;
-	margin: 4rem 0;
+	margin: 2rem 0;
 	display: block;
 }
 .footer_licence_item {
@@ -873,8 +883,13 @@ footer {
 	h1 {
 		font-size: 50rem;
 	}
+	.slider_item_bg  {
+		background-position-x: -660rem;
+		height: 680rem;
+	}
 	.slider_item_subtitle {
 		font-size: 30rem;
+		margin: 50rem 0 30rem;
 		width: 200rem;
 	}
 	.slider_item_btn {
@@ -888,9 +903,9 @@ footer {
 		width: 16rem;
 	}
 	.slider_logo {
-	    top: 230rem;
+	    top: 380rem;
     	left: 7rem;
-    	width: 455rem;
+    	width: 355rem;
 	}
 	.slider_number {
 		display: none;
@@ -922,7 +937,7 @@ footer {
 		max-width: 330rem;
 	}
 	.services_item {
-		width: 154rem;
+		width: 174rem;
 	}
 	h4 {
 		font-size: 18rem;
@@ -980,6 +995,7 @@ footer {
 	.reviews {
     	padding: 50rem 0;
     	background: url(../img/reviews_bg_mob.png);
+    	background-size: cover;
 	}
 	.reviews_slider .slick-arrow {
 		width: 50rem;
