@@ -7,7 +7,7 @@ $(function() {
     items: 1,
     margin: 10,
     dots: true,
-    nav: true
+    nav: true,
   });
 });
 jQuery(document).ready(function($) {
@@ -26,6 +26,8 @@ jQuery(document).ready(function($) {
       for (let btn of btns) {
           btn.addEventListener('click', function () {
               owlJq.trigger('to.owl.carousel', [$(this).index()]);
+              $('.card_slider_nav_btn').removeClass('active')
+              $(this).addClass('active');
           })
       }
   };
@@ -96,4 +98,38 @@ jQuery(function($){
 });
 $(".video_holder").click(function() {
   $(this).find('.overlay').hide();
+});
+
+
+
+$(document).ready(function(){   
+    var $element = $('#present');
+    let counter = 0;
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop() + $(window).height();
+  //Если скролл до конца елемента
+  //var offset = $element.offset().top + $element.height();
+  //Если скролл до начала елемента
+  var offset = $element.offset().top
+ 
+  if (scroll > offset && counter == 0) {
+    $('.present_fixed').addClass('present_fixed_show');
+    counter = 1;
+  }
+});
+});
+
+
+$(document).ready(function(){   
+    var $element = $('#present');
+    let counter = 0;
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop() + $(window).height();
+  //Если скролл до конца елемента
+  var offset = $element.offset().top + $element.height() + 250;
+  if (scroll > offset && counter == 0) {
+    $('.present_fixed_text,.present_fixed_zigzag').hide();
+    counter = 1;
+  }
+});
 });

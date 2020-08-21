@@ -396,6 +396,12 @@ h3 {
 	height: 96rem;
 	border-radius: 10px;
 	margin-bottom: 5rem;
+	display: block;
+	position: relative;
+}
+.card_slider_nav_btn.active {
+	opacity: 0.7;
+	background-color: #fff;
 }
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
 	display: inline-block!important;
@@ -1128,6 +1134,9 @@ footer {
 	.overview_title {
 		margin-bottom: 30rem;
 	}
+	.overlay {
+		display: none;
+	}
 	.overview_text {
     	margin-bottom: 15rem;	
 	} 
@@ -1334,10 +1343,16 @@ footer {
 		margin: 40rem auto 15rem;
 	}
 	.present_fixed {
-		display: flex;
+		display: none;
 		align-items: center;
-		position: absolute;
-		width: 100%;
+		position: fixed;
+		margin: 0 30rem;
+    	width: calc(100% - 60rem);
+    	bottom: 30rem;
+    	z-index: 9999;
+	}
+	.present_fixed_show {
+		display: flex;
 	}
 	.present_fixed_img {
 		width: 100rem;
@@ -1747,6 +1762,10 @@ footer {
 	.present_fixed_text {
 		margin-left: 28rem;
 		font-size: 22rem;
+	}
+	.present_fixed {
+		width: calc(100% - 30rem);
+		margin: 0;
 	}
 	.footer_hero {
 		margin-top: 0;
