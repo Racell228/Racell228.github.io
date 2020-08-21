@@ -51,3 +51,11 @@ jQuery(window).scroll(function() {
         $('.burger_white').show();
     }
 });
+$(".header_burger").click(function() {
+  $(".mobile_overlay").show();
+  $("html,body").toggleClass('overflow');
+});
+$(".close_burger").click(function() {
+  $(".mobile_overlay").hide();
+  $("html,body").removeClass('overflow');
+});
