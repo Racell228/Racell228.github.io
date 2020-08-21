@@ -93,4 +93,7 @@ $(document).ready(function() {
 });  
 jQuery(function($){
    $(".tel").mask("+7 (999) 999 - 99 - 99");
-   });
+});
+$(".video_holder").click(function() {
+  $(this).find('.overlay').hide();
+});

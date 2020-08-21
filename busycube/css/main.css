@@ -474,6 +474,7 @@ h3 {
 .reviews_slider .owl-item.center:before {
 	opacity: 0;
 	transition: 0.5s;
+	display: none;
 }
 .reviews_slider_item_title {
 	text-align: center;
@@ -1629,6 +1630,12 @@ footer {
     	width: 45rem;
     	height: 45rem;
     	top: calc(50% - 22rem);
+	}
+	.play_btn {
+		width: 100rem;
+	    height: 100rem;
+	    top: calc(50% - 90rem);
+	    left: calc(50% - 45rem);
 	}
 	.owl-next {
     	right: 10rem;
