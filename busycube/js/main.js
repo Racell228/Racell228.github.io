@@ -107,11 +107,7 @@ $(document).ready(function(){
     let counter = 0;
 $(window).scroll(function() {
   var scroll = $(window).scrollTop() + $(window).height();
-  //Если скролл до конца елемента
-  //var offset = $element.offset().top + $element.height();
-  //Если скролл до начала елемента
   var offset = $element.offset().top
- 
   if (scroll > offset && counter == 0) {
     $('.present_fixed').addClass('present_fixed_show');
     counter = 1;
