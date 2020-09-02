@@ -10,6 +10,21 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $('.single_left').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows:false,
+  });
+});
+$('.slider_next').on('click', function() {
+  $('.single_left').slick('slickNext');
+});
+$('.slider_prev').on('click', function() {
+  $('.single_left').slick('slickPrev');
+});
+$(document).ready(function(){
   $('.reviews_slider').slick({
     infinite: false,
     slidesToShow: 3,
@@ -59,3 +74,12 @@ $(".close_burger").click(function() {
   $(".mobile_overlay").hide();
   $("html,body").removeClass('overflow');
 });
+
+
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+  $(".nav_link:first-child").click(function() {
+  $('nav').toggleClass('active');
+  $(this).toggleClass('nav_active');
+});
+}
