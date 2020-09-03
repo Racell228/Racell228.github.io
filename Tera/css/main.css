@@ -1093,6 +1093,9 @@ building
 .building_advantages_item_text {
 	font-size: 16rem;
 }
+.building_advantages_item_text-p {
+	width: 240rem;
+}
 /********
 Systems
 ***********/
@@ -1774,6 +1777,9 @@ b {
 	}
 	.subheader_container {
     	width: 1070rem;
+	}
+	.building_advantages_item_text-p  {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 768px) {
