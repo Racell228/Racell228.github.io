@@ -970,6 +970,10 @@ nav {
 	margin-top: 30rem;
 	width: 380rem;
 }
+.general_reasons_item_text {
+	z-index: 1;
+	position: relative;
+}
 .general_reasons_item_number {
 	color: #E6AF6F;
     opacity: 0.5;
@@ -1188,6 +1192,10 @@ Contacts
 	background-color: #fff;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 	padding: 29rem 32rem;
+	width: 370rem;
+}
+.contacts_form_textarea {
+	height: 90rem;
 }
 .contacts_form_input {
 	font-family: Jost;
@@ -1236,11 +1244,16 @@ Contacts
 }
 .projects_item_image {
 	background-image: url(../img/project_image.png);
-	background-size: cover;
+	background-size: 100%;
 	background-position: center;
 	height: 258rem;
 	width: 100%;
+	transition: 0.5s;
 	background-repeat: no-repeat;
+}
+.projects_item_image:hover {
+	background-size: 110%;
+	transition: 0.5s;
 }
 .projects_item_title {
 	color: #2B303A;
@@ -1262,7 +1275,7 @@ Contacts
 	font-weight: 400;
 }
 .single_right_item_img {
-	width: 50rem;
+	height: 50rem;
 }
 .single_right_item_title {
 	font-weight: 400;
@@ -2708,6 +2721,7 @@ b {
 	}
 	.contacts_form {
 		padding: 29rem 20rem;
+		width: auto;
 	}
 	.contacts_form_textarea {
 		height: 90rem;
@@ -2716,6 +2730,7 @@ b {
 		margin-left: 0;
 		width: 100%;
     	height: 400rem;
+    	margin-top: 30rem;
 	}
 	.contacts {
 		padding: 50rem 0;

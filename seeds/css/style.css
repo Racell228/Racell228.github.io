@@ -3017,6 +3017,11 @@ review modal
     margin: 80rem auto 0;
     display: block;
 }
+
+
+/*****
+Finder
+*****/
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
