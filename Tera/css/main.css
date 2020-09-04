@@ -79,6 +79,9 @@ header.active .header_lang_item {
 .burger_black {
 	display: none;
 }
+.header_white {
+	background-color: #fff;
+}
 .header_container {
 	display: flex;
 	align-items: center;
