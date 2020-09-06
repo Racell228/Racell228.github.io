@@ -4,6 +4,9 @@ html {
 body {
 	font-family: 'Proxima Nova';
 	color: #2A1B3C;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
 }
 .container {
 	width: 1560rem;
@@ -23,12 +26,43 @@ h1,h2,h3,h4,h5,p {
 }
 a {
 	text-decoration: none;
+	font-weight: 600;
+	font-size: 18rem;
+	color: #2A1B3C;
+}
+.text-link:hover {
+	text-decoration: underline;
+	transition: 0.5s;
 }
 h1 {
 	font-size: 40rem;
 	font-weight: 700;
 	line-height: 135.8%;
-	color: #fff;
+}
+h2 {
+	font-size: 26rem;
+	line-height: 150%;
+	font-weight: 700;
+}
+h3 {
+	font-size: 22rem;
+	line-height: 150%;
+	font-weight: 700;	
+}
+h4 {
+	font-size: 20rem;
+	line-height: 120%;
+	font-weight: 700;	
+}
+h5 {
+	font-size: 18rem;
+	line-height: 150%;
+	font-weight: 700;	
+}
+h6 {
+	font-size: 16rem;
+	line-height: 150%;
+	font-weight: 700;
 }
 p {
 	font-size: 18rem;
@@ -47,6 +81,9 @@ p {
 .index_banner_text {
 	padding-left: 90rem;
 	width: 560rem;
+}
+.index_banner_text h1 {
+	color: #fff;
 }
 .index_banner_text_txt {
 	color: rgba(255, 255, 255, 0.7);
@@ -92,9 +129,10 @@ h2 {
 .index_category_item_link {
 	color: #D93F87;
 	text-decoration: underline;
-	margin-top: 4rem;
+	margin-top: 10rem;
 	display: block;
 	font-size: 18rem;
+	font-weight: 600;
 }
 .index_category {
 	margin-top: 57rem;
@@ -154,7 +192,7 @@ header {
 	font-weight: 700;
 	color: #44318D;
 }
-p {
+.header_phones_numbers_date {
 	font-size: 16rem;
 	line-height: 150%;
 }
@@ -209,6 +247,7 @@ p {
 	margin: 22rem 0 17rem;
 	display: block;
 	color: #2A1B3C;
+	line-height: 150%;
 }
 .products_item_price_current {
 	font-size: 22rem;
@@ -250,4 +289,190 @@ p {
 	display: block;
 	text-align: center;
 	margin-top: 15rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.articles {
+	margin-top: 80rem;
+}
+.articles_items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40rem;
+}
+.articles_item {
+	width: 507rem;
+}
+.articles_item-img {
+	width: 100%;
+}
+.articles_item-title {
+	margin-top: 35rem;
+	margin-bottom: 15rem;
+}
+.articles_item-link {
+	color: #D93F87;
+}
+.articles_item-text {
+	margin-bottom: 15rem;
+}
+
+
+
+
+footer {
+	margin-top: 100rem;
+	background-color: #2A1B3C;
+	padding: 60rem 0;
+}
+footer h4 {
+	color: #fff;
+}
+.footer_items {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.footer_items-column {
+	display: flex;
+	flex-direction: column;
+}
+.footer_items-column-logo {
+	width: 200rem;
+	margin-bottom: 25rem;
+}
+.footer_items-column-phone h4 {
+	margin-bottom: 8rem;
+}
+.footer_items-column-text {
+	font-size: 16rem;
+	color: rgba(255, 255, 255, 0.7);
+	margin-top: 7rem;
+	font-weight: 300;
+}
+.footer_items-column {
+	display: flex;
+	flex-direction: column;
+}
+.footer_items-column-title {
+	margin-bottom: 20rem;
+}
+.footer_items-column-link {
+	font-size: 16rem;
+	margin-bottom: 10rem;
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: 300;	
+}
+.footer_items-column-social {
+	display: flex;
+}
+.footer_items-column-social-img {
+	width: 40rem;
+	margin-right: 20rem;
+}
+
+
+
+/*Blog*/
+
+.blog_items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.blog .articles_item {
+	margin-top: 50rem;
+}
+.pagination {
+	display: flex;
+	justify-content: space-between;
+}
+.blog_pagination {
+	margin-top: 60rem;
+}
+.pagination_items {
+	display: flex;
+}
+.pagination_items a:hover {
+	color: #D93F87;
+	transition: 0.5s;	
+}
+.pagination_items .active {
+	color: #D93F87;
+}
+.pagination_items-link {
+	margin-right: 15rem;
+}
+
+
+
+
+/*Article*/
+
+.article_columns {
+	display: flex;
+	justify-content: space-between;
+}
+.article_columns-content {
+	width: 1200rem;
+}
+
+
+
+.article_columns-related {
+	background-color: #fff;
+	box-shadow: 0px 4px 24px rgba(45, 33, 90, 0.15);
+	border-radius: 10rem;
+	width: 370rem;
+	padding: 30rem 40rem 45rem;
+}
+.article_columns-related-title {
+	margin-bottom: 30rem;
+}
+.article_columns-related-link {
+	position: relative;
+	padding: 15rem 0;
+	display: block;
+}
+.article_columns-related-link:before {
+    content: "";
+    width: 368rem;
+    height: 1rem;
+    background-color: #E8E8E8;
+    top: 0;
+    position: absolute;
+}
+.article_columns-related-link:after {
+	content: "";
+    width: 368rem;
+    height: 1rem;
+    background-color: #E8E8E8;
+    bottom: 0rem;
+    position: absolute;
+    left: 0;
 }
