@@ -3022,6 +3022,31 @@ review modal
 /*****
 Finder
 *****/
+.search_page_form {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 1400rem;
+}
+.search_page_form .form_input_text {
+	margin-right: 60rem;
+}
+.search_page_form .form_delivery {
+	margin-left: 0;
+}
+.search_page_form  .form_input_select-option {
+	margin: 0;
+}
+.search_page_form_checkbox {
+	margin-top: 50rem;
+} 
+.search_page_form .form_bottom_buy {
+	margin-top: 30rem;
+}
+.search_page_title {
+	margin-top: 40rem;
+}
+
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
@@ -4606,6 +4631,20 @@ Finder
 	.review-modal_item-stars {
 		width: 427rem;
 	}
+	.search_page_form .form_delivery {
+		order: 0;
+		margin-top: 0;
+	}
+	.search_page_form {
+		width: 100%;
+	}
+	.search_page_form .form_bottom_buy {
+		width: 350rem;
+    	margin-left: 90rem;
+	}
+	.search_page_form_checkbox {
+    	margin-top: 30rem;
+	}
 }
 @media screen and (max-width: 450px)  {
 	html {
@@ -5289,6 +5328,19 @@ Finder
 		font-size: 16rem;
 		margin: 40rem auto 0;
 		padding: 10rem 0;
+	}
+	.search_page_form .form_input_text {
+		margin-right: 0;
+	}
+	.search_page_form  .form_input_select {
+		width: 100%;
+	}
+	.search_page_form_checkbox {
+    	margin-top: 10rem;
+	}
+	.search_page_form .form_bottom_buy {
+    	width: 100%;
+    	margin-left: 0;
 	}
 }
 #live-search .product-name {

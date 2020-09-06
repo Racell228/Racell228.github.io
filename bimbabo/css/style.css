@@ -1,0 +1,253 @@
+html {
+	font-size: 0.05208383vw;
+}
+body {
+	font-family: 'Proxima Nova';
+	color: #2A1B3C;
+}
+.container {
+	width: 1560rem;
+	margin: 0 180rem;
+}
+.logo {
+	width: 223rem;
+	padding: 28rem 0;
+}
+.logo_link {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+h1,h2,h3,h4,h5,p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 40rem;
+	font-weight: 700;
+	line-height: 135.8%;
+	color: #fff;
+}
+p {
+	font-size: 18rem;
+	line-height: 149.8%;
+}
+
+.index_banner_overlay {
+	display: flex;
+	justify-content: space-between;
+	background: #D93F87;
+	border-radius: 10px;
+	align-items: center;
+	padding-top: 20rem;
+	position: relative;
+}
+.index_banner_text {
+	padding-left: 90rem;
+	width: 560rem;
+}
+.index_banner_text_txt {
+	color: rgba(255, 255, 255, 0.7);
+	margin-top: 40rem;
+}
+.index_banner_btn {
+	font-size: 18rem;
+	line-height: 147.4%;
+	color: #fff;
+	background: #44318D;
+	border-radius: 70px;
+	padding: 17rem 74rem;
+	width: 172rem;
+    text-align: center;
+	display: block;
+	margin-top: 50rem;
+}
+.arrow_next {
+	position: absolute;
+	bottom: 20rem;
+	left: calc(50% - 23rem);
+	width: 46rem;
+}
+.index_banner_image_item {
+	width: 830rem;
+}
+h2 {
+	font-size: 26rem;
+}
+.index_category_item {
+	display: block;
+	width: 375rem;
+}
+.index_category_item_img {
+	width: 100%;
+}
+.index_category_item_title {
+	margin-top: 35rem;
+}
+.index_category_item_text {
+	margin-top: 10rem;
+}
+.index_category_item_link {
+	color: #D93F87;
+	text-decoration: underline;
+	margin-top: 4rem;
+	display: block;
+	font-size: 18rem;
+}
+.index_category {
+	margin-top: 57rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	padding-bottom: 100rem;
+}
+.head_banner {
+	padding: 13rem 0;
+	background: #44318D;
+}
+.head_banner_overlay {
+	display: flex;
+	align-items: center;
+}
+.head_bunner_item {
+	color: #fff;
+	font-size: 16rem;
+	display: block;
+	margin-right: 20rem;
+}
+header {
+	padding: 30rem 0 20rem;
+}
+.header_overlay {
+	display: flex;
+	flex-wrap: wrap;
+}
+.header_search {
+	background: #FFFFFF;
+	border: 1.5px solid #E8E8E8;
+	border-radius: 70px;
+}
+.header_search_input {
+	width: 274rem;
+	color: #948D9D;
+	font-size: 17rem;
+	padding: 20rem 0 20rem 35rem;
+	border: none;
+	font-size: 17rem;
+}
+.jq-selectbox__select-text {
+	font-size: 17rem;
+}
+.header_phones {
+	display: flex;
+	align-items: end;
+	margin-left: 44rem;
+}
+.header_phones_img {
+	width: 27rem;
+	margin-right: 15rem;
+}
+.header_phones_numbers_tel {
+	font-size: 18rem;
+	font-weight: 700;
+	color: #44318D;
+}
+p {
+	font-size: 16rem;
+	line-height: 150%;
+}
+.header_submenu {
+	display: flex;
+	align-items: center;
+	width: 571rem;
+	justify-content: space-between;
+}
+.header_submenu_item {
+	font-weight: 700;
+	font-size: 18rem;
+	line-height: 147.4%;
+	color: #2A1B3C;
+}
+.header_login {
+	display: flex;
+	align-items: center;
+}
+.header_login_image {
+	width: 36rem;
+	margin-right: 15rem;
+}
+.header_login_link {
+	font-size: 18rem;
+}
+.header_cart_image {
+	width: 36rem;
+	margin-right: 15rem;
+}
+.header_cart {
+	display: flex;
+	align-items: center;
+}
+.products_item {
+	width: 256rem;
+	padding: 0 20rem 25rem;
+	background: #FFFFFF;
+	border: 1.5px solid #E8E8E8;
+	border-radius: 10px;
+}
+.products_item_image {
+	width: 100%;
+}
+.products_item_price {
+	display: flex;
+	align-items: center;
+}
+.products_item_title {
+	font-size: 16rem;
+	font-weight: 700;
+	margin: 22rem 0 17rem;
+	display: block;
+	color: #2A1B3C;
+}
+.products_item_price_current {
+	font-size: 22rem;
+	font-weight: 700;
+	color: #D93F87;
+}
+.products_item_price_old {
+	color: #948D9D;
+	text-decoration: line-through;
+	font-size: 16rem;
+	margin-left: 15rem;
+}
+.products_item:hover .product_item_buy_overlay {
+	display: block;
+    max-height: 999999rem;
+    opacity: 1;
+    transition: 0.5s;
+}
+.product_item_buy_overlay {
+	margin-top: 27rem;
+	display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.products_item_buy {
+	font-size: 16rem;
+	font-weight: 700;
+	background: #D93F87;
+	text-align: center;
+	color: #fff;
+	display: block;
+	padding: 15rem 0;
+	border-radius: 50px;
+}
+.products_item_fast_buy {
+	font-size: 16rem;
+	color: #2A1B3C;
+	display: block;
+	text-align: center;
+	margin-top: 15rem;
+}
