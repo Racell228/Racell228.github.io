@@ -25,7 +25,7 @@ body {
 	text-align: center;
 	margin: auto;
 }
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 }
 a {
@@ -520,6 +520,9 @@ header {
 	color: #2A1B3C;
 	font-size: 18rem;
 }
+.signin_head_nav_item.active {
+	color: #D93F87;
+}
 .signin_body {
 	margin-top: 20rem;
 	display: flex;
@@ -536,11 +539,179 @@ header {
 	font-family: 'Proxima Nova';
 	margin-top: 20rem;
 }
+.signin_body_inputs_check {
+	margin-top: 30rem;
+}
 .checkbox_label {
 	font-size: 16px;
 	line-height: 150.3%;
 	color: #948D9D;
+	display: block;
+	margin-top: 15rem;
 }
+.checkbox_label:before {
+    content: "";
+    display: inline-block;
+    width: 22rem;
+    position: relative;
+    top: 3rem;
+    height: 22rem;
+    background-image: url(../img/sprite_checkbox.svg);
+    background-size: 22rem;
+    background-position-y: 22rem;
+    margin-right: 15rem;
+    background-position-x: 22rem;
+}
+.checkbox:checked + .checkbox_label:before {
+    background-position-y: 0;
+    background-position-x: 0;
+}
+.checkbox {
+	display: none;
+}
+.submit {
+	font-family: 'Proxima Nova';
+	font-size: 18rem;
+	color: #fff;
+	width: 450rem;
+	padding: 19rem 0;
+	background: #D93F87;
+	border-radius: 50px;
+	border: none;
+	font-weight: 700;
+	margin-top: 20rem;
+}
+.signin_body_inputs_submit {
+	margin-top: 30rem;
+}
+.signin_body_or {
+	font-size: 22rem;
+	line-height: 140%;
+	margin: 113rem 30rem;
+	font-weight: 700;
+}
+.signin_body_accouns_item {
+	display: flex;
+	justify-content: center;
+	padding: 16rem 0;
+	font-size: 18rem;
+	color: #fff;
+	font-weight: 700;
+	line-height: 147.4%;
+	background: #44318D;
+	border-radius: 50px;
+	margin-top: 20rem;
+	width: 450rem;
+}
+.signin_body_accouns_item_img {
+	width: 23rem;
+	margin-right: 16rem;
+}
+.signin {
+	display: none;
+}
+.signin_body_inputs_forgot {
+	font-size: 16rem;
+	color: #D93F87;
+	margin-top: 20rem;
+	text-align: center;
+	display: block;
+}
+.personal_head {
+	display: flex;
+	align-items: center;
+}
+.personal_head_name {
+	margin-right: 24rem;
+}
+.personal_head_links {
+	font-size: 18rem;
+	color: #2A1B3C;
+	line-height: 149.8%;
+	margin-left: 54rem;
+}
+.personal_head_links.active {
+	color: #D93F87;
+}
+.personal_orders_head {
+	display: flex;
+	border-bottom: 1.5px solid #E8E8E8;
+	padding-bottom: 20rem;
+	margin-bottom: 20rem;
+}
+.personal_orders {
+	margin-top: 40rem;
+}
+.orders_number {
+	width: 140rem;
+	margin-right: 75rem;
+}
+.orders_data {
+	width: 140rem;
+	margin-right: 75rem;
+}
+.orders_product {
+	width: 354rem;
+	margin-right: 75rem;
+}
+.orders_price {
+	width: 140rem;
+	margin-right: 75rem;
+}
+.orders_status {
+	width: 140rem;
+	margin-right: 75rem;
+}
+.personal_orders_item {
+	display: flex;
+	border-bottom: 1.5px solid #E8E8E8;
+	margin-bottom: 20rem;
+}
+.orders_number p {
+	font-size: 16rem;
+}
+.orders_data p {
+	color: #948D9D;
+	font-size: 16rem;
+}
+.orders_product h6{
+	margin-bottom: 20rem;
+}
+.orders_price h6 {
+	color: #D93F87;
+}
+.orders_status h6 {
+	color: #44BA42;
+}
+.personal_info_input {
+	width: 255rem;
+}
+.personal_info {
+	width: 928rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .articles {
 	margin-top: 80rem;
@@ -574,6 +745,7 @@ footer {
 	margin-top: 100rem;
 	background-color: #2A1B3C;
 	padding: 60rem 0;
+	display: block!important;
 }
 footer h4 {
 	color: #fff;
@@ -655,7 +827,6 @@ footer h4 {
 }
 
 
-
 /*Article*/
 
 .article p {
@@ -668,22 +839,20 @@ footer h4 {
 	margin-top: 20rem;
 	margin-bottom: 5rem;
 }
-.article ul {
+ul {
 	font-size: 18rem;
 	list-style: none;
 	padding-left: 15rem;
+	margin: 0;
 }
-.article ul li {
-	margin: 15rem 0;
+ul li {
+	margin: 10rem 0;
 }
-.article ul li:before {
+ul li:before {
 	content: "•";
 	color: #D93F87;
 	font-size: 24rem;
 	margin-right: 5rem;
-}
-.article p b {
-	font-weight: 700;
 }
 .article_columns {
 	display: flex;
@@ -716,6 +885,7 @@ footer h4 {
 }
 .article_columns-related-title {
 	margin-bottom: 30rem;
+	width: 300rem;
 }
 .article_columns-related-link {
 	position: relative;
@@ -784,9 +954,6 @@ footer h4 {
 
 
 /*Delivery*/
-p b {
-	font-weight: 700;
-}
 .delivery h1 {
 	margin-bottom: 40rem;
 }
@@ -798,9 +965,6 @@ p b {
 }
 .delivery p:last-child {
 	margin: 15rem 0 0;
-}
-.delivery_content {
-	width: 1200rem;
 }
 .delivery_content-item {
 	border-radius: 10rem;
@@ -820,4 +984,41 @@ p b {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+
+
+
+
+/*Text pages style*/
+.text_page h1 {
+	margin-bottom: 40rem;
+}
+.text_page h2 {
+	margin-top: 35rem;
+	margin-bottom: 20rem;
+}
+.text_page h3 {
+	margin-top: 30rem;
+}
+.text_page p {
+	margin: 15rem 0;
+}
+.text_page a {
+	color: #D93F87;
+}
+.text_page a:hover {
+	text-decoration: underline;
+	transition: 0.5s;
+}
+.text_content {
+	width: 1200rem;
+}
+p b {
+	font-weight: 700;
+}
+p i {
+	font-style: italic;
 }

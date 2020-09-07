@@ -10,13 +10,41 @@
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 </head>
 <body>
-	<section class="signin">
+	<section class="signin" id="signin">
+		<div class="container">
+			<div class="signin_head">
+				<h1>Вход</h1>
+				<div class="signin_head_nav">
+					<a href="#signin" class="signin_head_nav_item active">Уже авторизованы?</a>
+					<a href="#reg" class="signin_head_nav_item">Зарегистрироваться</a>
+				</div>
+			</div>
+			<div class="signin_body">
+				<div class="signin_body_inputs">
+					<form action="">
+						<input type="text" class="input" placeholder="Логин*">
+						<input type="text" class="input" placeholder="Пароль*">
+						<input type="submit" value="Войти" class="submit">
+						<a href="#" class="signin_body_inputs_forgot">Забыли пароль?</a>
+					</form>
+
+				</div>
+				<p class="signin_body_or">Или</p>
+				<div class="signin_body_accouns">
+					<a href="#" class="signin_body_accouns_item"><img src="img/social1.svg" class="signin_body_accouns_item_img">Войти через Google</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social2.svg" class="signin_body_accouns_item_img">Войти через Facebook</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social3.svg" class="signin_body_accouns_item_img">Войти через Вконтакте</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="signin" id="reg">
 		<div class="container">
 			<div class="signin_head">
 				<h1>Регистрация</h1>
 				<div class="signin_head_nav">
-					<a href="#" class="signin_head_nav_item">Уже авторизованы?</a>
-					<a href="#" class="signin_head_nav_item">Зарегистрироваться</a>
+					<a href="#signin" class="signin_head_nav_item">Уже авторизованы?</a>
+					<a href="#reg" class="signin_head_nav_item active">Зарегистрироваться</a>
 				</div>
 			</div>
 			<div class="signin_body">
@@ -34,13 +62,14 @@
 							<input type="checkbox" id="checkbox2" name="Company" class="checkbox">
 							<label class="checkbox_label" for="checkbox2">Подписаться на рассылку</label>
 						</div>
+						<input type="submit" value="Зарегистрироваться" class="submit signin_body_inputs_submit">
 					</form>
 				</div>
-				<div class="signin_body_or">
-					
-				</div>
+				<p class="signin_body_or">Или</p>
 				<div class="signin_body_accouns">
-					
+					<a href="#" class="signin_body_accouns_item"><img src="img/social1.svg" class="signin_body_accouns_item_img">Зарегистрироваться через Google</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social2.svg" class="signin_body_accouns_item_img">Зарегистрироваться через Facebook</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social3.svg" class="signin_body_accouns_item_img">Зарегистрироваться через Вконтакте</a>
 				</div>
 			</div>
 		</div>

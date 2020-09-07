@@ -14,3 +14,11 @@ $(document).ready(function(){
     // autoplaySpeed: 10000,
   });
 });
+$(document).ready(function() {
+  $('.signin:first-child').show();
+  $('.signin_head_nav_item').click(function(event) {
+      $(this).addClass('www').siblings().removeClass('www');
+      var id = $(this).attr('href');
+      $(id).fadeIn(0).siblings(0).fadeOut(0);
+  });
+});
