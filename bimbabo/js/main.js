@@ -22,3 +22,11 @@ $(document).ready(function() {
       $(id).fadeIn(0).siblings(0).fadeOut(0);
   });
 });
+$(document).ready(function() {
+  $('.personal_items:first-child').show();
+  $('.personal_head_links').click(function(event) {
+      $(this).addClass('active').siblings().removeClass('active');
+      var id1 = $(this).attr('href');
+      $(id1).fadeIn(0).siblings(0).fadeOut(0);
+  });
+});
