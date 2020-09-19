@@ -279,6 +279,7 @@ header {
 }
 .header_login_link {
 	font-size: 18rem;
+	color: #D93F87;
 }
 .header_cart_image {
 	width: 36rem;
@@ -517,7 +518,6 @@ header {
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0px 4px 24px rgba(45, 33, 90, 0.15);
-    overflow: hidden;
 }
 .subheader_nav_parent_overlay {
 	border-right: 1px solid transparent;
@@ -538,38 +538,7 @@ header {
 	display: none;
 	right: 40rem;
 }
-.subheader_nav_announcement_head {
-	display: inline-block;
-    width: 282rem;
-    text-align: center;
-    border: 1.5px solid #E8E8E8;
-    border-radius: 10px;
-    padding: 13rem 0;
-}
-.subheader_nav_announcement_head_image {
-	height: 165rem;
-}
-.subheader_nav_announcement_overlay {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.subheader_nav_announcement_body {
-	margin-top: 35rem;
-}
-.subheader_nav_announcement_item {
-	display: flex;
-	align-items: center;
-	margin-top: 20rem;
-}
-.subheader_nav_announcement_item_image {
-	width: 100rem;
-	margin-right: 20rem;
-}
-.subheader_nav_announcement_item_price {
-	color: #D93F87;
-	margin-top: 15rem;
-}
+
 .slider_arrow {
 	width: 47rem;
 	height: 95rem;
@@ -656,8 +625,6 @@ header {
 	top: 0;
     z-index: 999;
     background: #fff;
-    height: 100vh;
-    border-left: 1px solid #E8E8E8;
 }
 .subheader_nav_parent:hover .subheader_nav_child {
 	display: block;
@@ -691,9 +658,7 @@ header {
 	left: 100%;
 	top: 0;
     z-index: 999;
-    height: 100vh;
     background: #fff;
-    border-left: 1px solid #E8E8E8;
 }
 .subheader_nav_child_item:hover .subheader_nav_child2 {
 	display: block;
@@ -709,6 +674,7 @@ header {
 	transition: 0.3s;
 	color: #fff;
 }
+
 .subheader_nav_parent {
 	position: relative;
 	width: 292rem;
@@ -807,7 +773,7 @@ header {
 	background: #44318D;
 	border-radius: 50px;
 	margin-top: 20rem;
-	width: 420rem;
+	width: 450rem;
 }
 .signin_body_accouns_item_img {
 	width: 23rem;
@@ -1019,41 +985,13 @@ footer h4 {
 }
 .footer_items-column-social {
 	display: flex;
-	margin-top: 20rem;
 }
 .footer_items-column-social-img {
 	width: 40rem;
 	margin-right: 20rem;
 }
-.footer_subscribe_form {
-	width: 300rem;
-	position: relative;
-}
-.footer_subscribe_form_input {
-	width: calc(100% - 25rem);
-	display: block;
-	background-color: #fff;
-	border-radius: 50px;
-	padding: 17rem 0 14rem 25rem;
-	border: none;
-	font-family: 'Proxima Nova';
-	font-weight: 400;
-	font-size: 16rem; 
-}
-.footer_subscribe_form_submit {
-	width: 50rem;
-	height: 100%;
-	border-radius: 100px;
-	background-color: transparent;
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-image: url(../img/subscribe_btn.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border: none;
-}
+
+
 
 /*Blog*/
 
@@ -1363,90 +1301,6 @@ p i {
 .submit {
 	cursor: pointer;
 }
-/*
-	busket
-*/
-.busket_new_overlay {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.busket_new_overlay {
-	width: 928rem;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.busket_new_title {
-	margin-bottom: 10rem;
-}
-.busket_new {
-	margin-top: 40rem;
-}
-.busket_new_title2 {
-	margin-top: 70rem;
-	margin-bottom: 30rem;
-}
-.busket_new_select_pay {
-	width: 300rem;
-	padding: 16rem 30rem;
-	border: 1px solid #E8E8E8;
-	border-radius: 60px;
-}
-.busket_new_select_delivery {
-	width: 476rem;
-}
-.busket_textarea {
-	width: 100%;
-	height: 100rem;
-	border-radius: 10px;
-}
-.busket_new_promo {
-	width: 100%;
-}
-.busket_new_details {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	align-items: center;
-	margin-top: 40rem;
-	padding: 20rem 0;
-	border-bottom: 1px solid #E8E8E8;
-	width: 100%;
-	border-top: 1px solid #E8E8E8;
-}
-.busket_new_details h5 {
-	width: 50%;
-}
-.busket_new_details span {
-	color: #D93F87;
-}
-.busket_new_total {
-	border-bottom: 1px solid #E8E8E8;
-	padding: 20rem 0;
-	width: 100%;
-}
-.busket_new_total span {
-	color: #D93F87;
-}
-.checkbox_label a {
-	color: #D93F87;
-	font-size: 16rem;
-}
-
-.checkbox_label_busket {
-	display: flex;
-	align-items: center;
-}
-.checkbox_label_busket span{
-	width: 840rem;
-    display: inline-block;
-}
-.busket_new_submit {
-	width: 263rem;
-	margin-top: 30rem;
-}
-
 
 
 

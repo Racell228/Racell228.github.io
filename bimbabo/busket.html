@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bimbabo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+</head>
+<body>
+	
+	<section class="signin" id="constant">
+		<div class="container">
+			<div class="signin_head">
+				<h1>Корзина</h1>
+				<div class="signin_head_nav">
+					<a href="#constant" class="signin_head_nav_item active">Я новый покупатель</a>
+					<a href="#new" class="signin_head_nav_item">Я постоянный клиент</a>
+				</div>
+			</div>
+			<form action="" class="busket_new">
+				<h3 class="busket_new_title">1. Контактные данные</h3>
+				<div class="busket_new_overlay">
+					<input type="text" class="input" placeholder="Логин*">
+					<input type="text" class="input" placeholder="Фамилия*">
+					<input type="text" class="input" placeholder="Телефон*">
+					<input type="text" class="input" placeholder="E-mail*">
+				</div>
+				<h3 class="busket_new_title2">2. Способ оплаты и доставки</h3>
+				<div class="busket_new_overlay">
+					<select  class="busket_new_select_pay">
+						<option>Выберите способ оплаты</option>
+						<option>Выберите способ оплаты</option>
+						<option>Выберите способ оплаты</option>
+						<option>Выберите способ оплаты</option>
+					</select>
+					<select  class="busket_new_select_pay busket_new_select_delivery">
+						<option>Новой почтой по Киеву и Украине - 45 грн</option>
+						<option>Новой почтой по Киеву и Украине - 45 грн</option>
+						<option>Новой почтой по Киеву и Украине - 45 грн</option>
+						<option>Новой почтой по Киеву и Украине - 45 грн</option>
+					</select>
+					<input type="text" class="input" placeholder="Город*">
+					<input type="text" class="input" placeholder="Улица*">
+					<input type="text" class="input personal_info_input" placeholder="Дом*">
+					<input type="text" class="input personal_info_input" placeholder="Квартира">
+					<input type="text" class="input personal_info_input" placeholder="Индекс*">
+					<textarea class="input busket_textarea" placeholder="Комментарии*"></textarea>
+					<input type="text" class="input busket_new_promo" placeholder="Промо-код или скидочный купон (если есть)">
+				<div class="busket_new_details">
+					<h5>Итого за товары: <span>825 грн</span></h5>
+					<h5>Скидка за баллы: <span>0 грн</span></h5>
+					<h5>Стоимость доставки:  <span>35 грн</span></h5>
+					<h5>Общая скидка: <span>0 грн</span></h5>
+				</div>
+				<h2 class="busket_new_total">К оплате:<span> 675.00 грн</span></h2>
+				<div class="signin_body_inputs_check">
+					<input type="checkbox" id="checkbox1"  name="Company" class="checkbox">
+					<label class="checkbox_label checkbox_label_busket" for="checkbox1"><span>Оформляя заказ вы соглашаетесь с <a href="#">Правилами Пользования</a>. Мы свяжемся с Вами в ближайшее время, после оформления заказа. В случае, если выбрана оплата Privatе24, Вы будете направлены на страницу оплаты.</span></label>
+				</div>
+				<input type="submit" class="submit busket_new_submit" value="Оформить заказ">
+				</div>
+				
+			</form>
+		</div>
+	</section>
+	<section class="signin" id="new">
+		<div class="container">
+			<div class="signin_head">
+				<h1>Корзина</h1>
+				<div class="signin_head_nav">
+					<a href="#constant" class="signin_head_nav_item">Я новый покупатель</a>
+					<a href="#new" class="signin_head_nav_item active">Я постоянный клиент</a>
+				</div>
+			</div>
+			<div class="signin_body">
+				<div class="signin_body_inputs">
+					<form action="">
+						<input type="text" class="input" placeholder="Логин*">
+						<input type="text" class="input" placeholder="Пароль*">
+						<input type="submit" value="Войти" class="submit">
+						<a href="#" class="signin_body_inputs_forgot">Забыли пароль?</a>
+					</form>
+
+				</div>
+				<p class="signin_body_or">Или</p>
+				<div class="signin_body_accouns">
+					<a href="#" class="signin_body_accouns_item"><img src="img/social1.svg" class="signin_body_accouns_item_img">Войти через Google</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social2.svg" class="signin_body_accouns_item_img">Войти через Facebook</a>
+					<a href="#" class="signin_body_accouns_item"><img src="img/social3.svg" class="signin_body_accouns_item_img">Войти через Вконтакте</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<footer>
+		<div class="container">
+			<div class="footer_items">
+				<div class="footer_items-column">
+					<img class="footer_items-column-logo" src="img/logo_office-white.svg" alt="">
+					<a class="footer_items-column-phone" href="tel:+38 093 360 21 81"><h4>(093) 360-21-81</h4></a>
+					<a class="footer_items-column-phone" href="tel:+38 098 211 74 84"><h4>(098) 211-74-84</h4></a>
+					<a class="footer_items-column-phone" href="tel:+38 044 360 21 81"><h4>(044) 360-21-81</h4></a>
+					<p class="footer_items-column-text">пн-пт с 9:00 до 18:00</p>
+				</div>
+				<div class="footer_items-column">
+					<h4 class="footer_items-column-title">О компании</h4>
+					<a class="footer_items-column-link text-link" href="#">О нас</a>
+					<a class="footer_items-column-link text-link" href="#">Новости и статьи</a>
+					<a class="footer_items-column-link text-link" href="#">Поставщикам</a>
+					<a class="footer_items-column-link text-link" href="#">Контакты</a>
+				</div>
+				<div class="footer_items-column">
+					<h4 class="footer_items-column-title">Доставка и оплата</h4>
+					<a class="footer_items-column-link text-link" href="#">Доставка</a>
+					<a class="footer_items-column-link text-link" href="#">Оплата</a>
+				</div>
+				<div class="footer_items-column">
+					<h4 class="footer_items-column-title">Сервис и поддержка</h4>
+					<a class="footer_items-column-link text-link" href="#">Система скидок</a>
+					<a class="footer_items-column-link text-link" href="#">Бонусные баллы</a>
+					<a class="footer_items-column-link text-link" href="#">Помощь</a>
+					<a class="footer_items-column-link text-link" href="#">Возврат товара</a>
+				</div>
+				<div class="footer_items-column">
+					<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+					<div class="footer_items-column-social">
+						<a target="blank" href="https://www.facebook.com/bimbabo.shop/"><img class="footer_items-column-social-img" src="img/facebook.svg" alt=""></a>
+						<a target="blank" href="https://www.instagram.com/bimbabo_shop/"><img class="footer_items-column-social-img" src="img/instagram.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
