@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Система скидок</title>
+	<link rel="shortcut icon" href="img/favicon.ico">	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
@@ -11,23 +12,69 @@
 
 
 <body>
-	<section class="bonus text_page">
+
+	<div class="container">
+		<div class="breadcrumbs breadcrumbs_blog">
+			<a href="#" class="breadcrumbs_link">Главная</a>
+			<p class="breadcrumbs_current">Система скидок</p>
+		</div>
+	</div>
+	
+	<section class="bonus">
 		<div class="container">
-			<div class="text_content">
-				<h1>Система скидок</h1>
-				<h2>Система скидок действует для всех клиентов!</h2>
-				<p>Для получения скидок Вам нет необходимомти регистрироваться, если вы не имеетет свою индивидульную скидку (согласовывается с менеджером).</p>
-				<p>По каждому Вашему заказу в зависимости от суммы заказа Вам будет предоставлена скидка.</p>
-				<p>Чем больше заказ тем больше скидка. Так при заказе от 5000грн. - скидка 5%, при заказе от 10000грн. - скидка 7%.</p>
-				<h2>Категории товара накоторые начисляется скидка</h2>
-				<ul>
-					<li>на бумажные изделия (кроме бумаги А5, А4, А3)</li>
-					<li>на офисные принадлежности</li>
-					<li>на папки и сстемы архивации</li>
-					<li>на письменные принадлежности</li>
-					<li>упаковочные материалы</li>
-					<li>оборудование и техника для офиса</li>				
-				</ul>				
+			<div class="page_flex">			
+				<div class="text_content text_page">
+					<h1>Система скидок</h1>
+					<h2>Система скидок действует для всех клиентов!</h2>
+					<p>Для получения скидок Вам нет необходимомти регистрироваться, если вы не имеетет свою индивидульную скидку (согласовывается с менеджером).</p>
+					<p>По каждому Вашему заказу в зависимости от суммы заказа Вам будет предоставлена скидка.</p>
+					<p>Чем больше заказ тем больше скидка. Так при заказе от 5000грн. - скидка 5%, при заказе от 10000грн. - скидка 7%.</p>
+					<h2>Категории товара накоторые начисляется скидка</h2>
+					<ul>
+						<li>на бумажные изделия (кроме бумаги А5, А4, А3)</li>
+						<li>на офисные принадлежности</li>
+						<li>на папки и сстемы архивации</li>
+						<li>на письменные принадлежности</li>
+						<li>упаковочные материалы</li>
+						<li>оборудование и техника для офиса</li>				
+					</ul>	
+				</div>	
+				<div class="product_sidebar">
+					<h2>Это интересно</h2>
+					<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>	
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>	
+				</div>				
+			</div>		
 		</div>
 	</section>
 
@@ -61,12 +108,23 @@
 					<a class="footer_items-column-link text-link" href="#">Возврат товара</a>
 				</div>
 				<div class="footer_items-column">
-					<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+					<div class="footer_subscribe">
+						<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+						<form action="" class="footer_subscribe_form">
+							<input type="text" placeholder="E-mail" class="footer_subscribe_form_input">
+							<input type="submit" value="" class="footer_subscribe_form_submit">
+						</form>
+					</div>
+					
 					<div class="footer_items-column-social">
 						<a target="blank" href="https://www.facebook.com/bimbabo.shop/"><img class="footer_items-column-social-img" src="img/facebook.svg" alt=""></a>
 						<a target="blank" href="https://www.instagram.com/bimbabo_shop/"><img class="footer_items-column-social-img" src="img/instagram.svg" alt=""></a>
 					</div>
 				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>2015-2020 © Все права защищены</p>
+				<p>Разработка сайта: <a target="blank" href="https://doublekit.site/">Double Kit</a></p>
 			</div>
 		</div>
 	</footer>

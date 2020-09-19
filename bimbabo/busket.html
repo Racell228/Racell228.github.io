@@ -3,15 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bimbabo</title>
+	<title>Корзина</title>
+	<link rel="shortcut icon" href="img/favicon.ico">	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 </head>
 <body>
-	
+
 	<section class="signin" id="constant">
+
+	<div class="container">
+		<div class="breadcrumbs breadcrumbs_blog">
+			<a href="#" class="breadcrumbs_link">Главная</a>
+			<p class="breadcrumbs_current">Корзина</p>
+		</div>
+	</div>
+
 		<div class="container">
 			<div class="signin_head">
 				<h1>Корзина</h1>
@@ -67,6 +76,14 @@
 		</div>
 	</section>
 	<section class="signin" id="new">
+
+	<div class="container">
+		<div class="breadcrumbs breadcrumbs_blog">
+			<a href="#" class="breadcrumbs_link">Главная</a>
+			<p class="breadcrumbs_current">Корзина</p>
+		</div>
+	</div>
+		
 		<div class="container">
 			<div class="signin_head">
 				<h1>Корзина</h1>
@@ -129,12 +146,23 @@
 					<a class="footer_items-column-link text-link" href="#">Возврат товара</a>
 				</div>
 				<div class="footer_items-column">
-					<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+					<div class="footer_subscribe">
+						<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+						<form action="" class="footer_subscribe_form">
+							<input type="text" placeholder="E-mail" class="footer_subscribe_form_input">
+							<input type="submit" value="" class="footer_subscribe_form_submit">
+						</form>
+					</div>
+					
 					<div class="footer_items-column-social">
 						<a target="blank" href="https://www.facebook.com/bimbabo.shop/"><img class="footer_items-column-social-img" src="img/facebook.svg" alt=""></a>
 						<a target="blank" href="https://www.instagram.com/bimbabo_shop/"><img class="footer_items-column-social-img" src="img/instagram.svg" alt=""></a>
 					</div>
 				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>2015-2020 © Все права защищены</p>
+				<p>Разработка сайта: <a target="blank" href="https://doublekit.site/">Double Kit</a></p>
 			</div>
 		</div>
 	</footer>

@@ -3,143 +3,175 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bimbabo</title>
+	<title>Личный кабинет</title>
+	<link rel="shortcut icon" href="img/favicon.ico">	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 </head>
 <body>
+
+	<div class="container">
+		<div class="breadcrumbs breadcrumbs_blog">
+			<a href="#" class="breadcrumbs_link">Главная</a>
+			<p class="breadcrumbs_current">Личный кабинет</p>
+		</div>
+	</div>
+
 	<section class="personal">
 		<div class="container">
-			<div class="personal_head">
-				<h1 class="personal_head_name">Иван Петров</h1>
-				<a href="#personal_orders" class="personal_head_links active">Мои заказы</a>
-				<a href="#personal_info" class="personal_head_links">Личные данный</a>
-				<a href="#personal_password" class="personal_head_links">Сменить пароль</a>
-				<a href="#personal_points" class="personal_head_links">Баллы</a>
-			</div>
-			<div>
-			<div class="personal_orders personal_items" id="personal_orders">
-				<div class="personal_orders_head">
-					<div class="orders_number">
-						<h5>№ заказа</h5>
+			<div class="page_flex">
+				<div class="text_content">
+					<div class="personal_head">
+						<h1 class="personal_head_name">Иван Петров</h1>
+						<a href="#personal_orders" class="personal_head_links active">Мои заказы</a>
+						<a href="#personal_info" class="personal_head_links">Личные данный</a>
+						<a href="#personal_password" class="personal_head_links">Сменить пароль</a>
+						<a href="#personal_points" class="personal_head_links">Баллы</a>
 					</div>
-					<div class="orders_data">
-						<h5>Дата</h5>
+					<div>
+					<div class="personal_orders personal_items" id="personal_orders">
+						<div class="personal_orders_head">
+							<div class="orders_number">
+								<h5>№ заказа</h5>
+							</div>
+							<div class="orders_data">
+								<h5>Дата</h5>
+							</div>
+							<div class="orders_product">
+								<h5>Товары</h5>
+							</div>
+							<div class="orders_price">
+								<h5>Стоимость</h5>
+							</div>
+							<div class="orders_status">
+								<h5>Статус</h5>
+							</div>
+						</div>
+						<div class="personal_orders_item">
+							<div class="orders_number">
+								<p>325</p>
+							</div>
+							<div class="orders_data">
+								<p>01.06.2020</p>
+							</div>
+							<div class="orders_product">
+								<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
+								<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
+							</div>
+							<div class="orders_price">
+								<h6>375 грн</h6>
+							</div>
+							<div class="orders_status">
+								<h6>Получено</h6>
+							</div>
+						</div>
+						<div class="personal_orders_item">
+							<div class="orders_number">
+								<p>325</p>
+							</div>
+							<div class="orders_data">
+								<p>01.06.2020</p>
+							</div>
+							<div class="orders_product">
+								<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
+								<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
+							</div>
+							<div class="orders_price">
+								<h6>375 грн</h6>
+							</div>
+							<div class="orders_status">
+								<h6>Получено</h6>
+							</div>
+						</div>
 					</div>
-					<div class="orders_product">
-						<h5>Товары</h5>
+					<div class="personal_info personal_items" id="personal_info">
+						<div class="personal_info_overlay">
+							<input type="text" class="input" value="Иван">
+							<input type="text" class="input" value="Петров">
+							<input type="text" class="input" value="(099)-018-12-47">
+							<input type="text" class="input" value="petrov@gmail.com">
+							<input type="text" class="input" value="Киев">
+							<input type="text" class="input" value="пр. Победы">
+							<input type="text" class="input personal_info_input" value="25">
+							<input type="text" class="input personal_info_input" value="132">
+							<input type="text" class="input personal_info_input" value="02096">
+							<input type="submit" value="Сохранить" class="submit">
+						</div>
 					</div>
-					<div class="orders_price">
-						<h5>Стоимость</h5>
+					<div class="personal_info personal_items" id="personal_password">
+						<div class="personal_info_overlay">
+							<input type="password" class="input" placeholder="Текущий пароль">
+							<input type="password" class="input" placeholder="Новый пароль">
+							<input type="submit" value="Обновить" class="submit">
+						</div>
 					</div>
-					<div class="orders_status">
-						<h5>Статус</h5>
+					<div class="personal_points personal_items" id="personal_points">
+						<div class="personal_points_head">
+							<div class="personal_points_name">
+								<h5>Заказ</h5>
+							</div>
+							<div class="personal_points_plus">
+								<h5>Начислено</h5>
+							</div>
+							<div class="personal_points_minus">
+								<h5>Списано</h5>
+							</div>
+							<div class="personal_points_data">
+								<h5>Дата</h5>
+							</div>
+						</div>
+						<div class="personal_points_item">
+							<div class="personal_points_name">
+								<p>Бонус за регистрацию</p>
+							</div>
+							<div class="personal_points_plus">
+								<h6>30</h6>
+							</div>
+							<div class="personal_points_minus">
+								<p>0</p>
+							</div>
+							<div class="personal_points_data">
+								<p>2020-08-03 21:33:59</p>
+							</div>
+						</div>
+						<div class="personal_points_item">
+							<div class="personal_points_name">
+								<p>Бонус за регистрацию</p>
+							</div>
+							<div class="personal_points_plus">
+								<h6>30</h6>
+							</div>
+							<div class="personal_points_minus">
+								<p>0</p>
+							</div>
+							<div class="personal_points_data">
+								<p>2020-08-03 21:33:59</p>
+							</div>
+						</div>
+					</div>
 					</div>
 				</div>
-				<div class="personal_orders_item">
-					<div class="orders_number">
-						<p>325</p>
+				<div class="product_sidebar">
+					<h2>Это интересно</h2>
+					<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
 					</div>
-					<div class="orders_data">
-						<p>01.06.2020</p>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
 					</div>
-					<div class="orders_product">
-						<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
-						<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
 					</div>
-					<div class="orders_price">
-						<h6>375 грн</h6>
-					</div>
-					<div class="orders_status">
-						<h6>Получено</h6>
-					</div>
-				</div>
-				<div class="personal_orders_item">
-					<div class="orders_number">
-						<p>325</p>
-					</div>
-					<div class="orders_data">
-						<p>01.06.2020</p>
-					</div>
-					<div class="orders_product">
-						<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
-						<h6>Крем тональный для лица Max Factor Colour Adapt, 040 Creamy Ivory</h6>
-					</div>
-					<div class="orders_price">
-						<h6>375 грн</h6>
-					</div>
-					<div class="orders_status">
-						<h6>Получено</h6>
-					</div>
-				</div>
-			</div>
-			<div class="personal_info personal_items" id="personal_info">
-				<div class="personal_info_overlay">
-					<input type="text" class="input" value="Иван">
-					<input type="text" class="input" value="Петров">
-					<input type="text" class="input" value="(099)-018-12-47">
-					<input type="text" class="input" value="petrov@gmail.com">
-					<input type="text" class="input" value="Киев">
-					<input type="text" class="input" value="пр. Победы">
-					<input type="text" class="input personal_info_input" value="25">
-					<input type="text" class="input personal_info_input" value="132">
-					<input type="text" class="input personal_info_input" value="02096">
-					<input type="submit" value="Сохранить" class="submit">
-				</div>
-			</div>
-			<div class="personal_info personal_items" id="personal_password">
-				<div class="personal_info_overlay">
-					<input type="password" class="input" placeholder="Текущий пароль">
-					<input type="password" class="input" placeholder="Новый пароль">
-					<input type="submit" value="Обновить" class="submit">
-				</div>
-			</div>
-			<div class="personal_points personal_items" id="personal_points">
-				<div class="personal_points_head">
-					<div class="personal_points_name">
-						<h5>Заказ</h5>
-					</div>
-					<div class="personal_points_plus">
-						<h5>Начислено</h5>
-					</div>
-					<div class="personal_points_minus">
-						<h5>Списано</h5>
-					</div>
-					<div class="personal_points_data">
-						<h5>Дата</h5>
-					</div>
-				</div>
-				<div class="personal_points_item">
-					<div class="personal_points_name">
-						<p>Бонус за регистрацию</p>
-					</div>
-					<div class="personal_points_plus">
-						<h6>30</h6>
-					</div>
-					<div class="personal_points_minus">
-						<p>0</p>
-					</div>
-					<div class="personal_points_data">
-						<p>2020-08-03 21:33:59</p>
-					</div>
-				</div>
-				<div class="personal_points_item">
-					<div class="personal_points_name">
-						<p>Бонус за регистрацию</p>
-					</div>
-					<div class="personal_points_plus">
-						<h6>30</h6>
-					</div>
-					<div class="personal_points_minus">
-						<p>0</p>
-					</div>
-					<div class="personal_points_data">
-						<p>2020-08-03 21:33:59</p>
-					</div>
-				</div>
-			</div>
+				</div>		
+				</div>				
 			</div>
 		</div>
 	</section>
@@ -178,12 +210,23 @@
 					<a class="footer_items-column-link text-link" href="#">Возврат товара</a>
 				</div>
 				<div class="footer_items-column">
-					<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+					<div class="footer_subscribe">
+						<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
+						<form action="" class="footer_subscribe_form">
+							<input type="text" placeholder="E-mail" class="footer_subscribe_form_input">
+							<input type="submit" value="" class="footer_subscribe_form_submit">
+						</form>
+					</div>
+					
 					<div class="footer_items-column-social">
 						<a target="blank" href="https://www.facebook.com/bimbabo.shop/"><img class="footer_items-column-social-img" src="img/facebook.svg" alt=""></a>
 						<a target="blank" href="https://www.instagram.com/bimbabo_shop/"><img class="footer_items-column-social-img" src="img/instagram.svg" alt=""></a>
 					</div>
 				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>2015-2020 © Все права защищены</p>
+				<p>Разработка сайта: <a target="blank" href="https://doublekit.site/">Double Kit</a></p>
 			</div>
 		</div>
 	</footer>

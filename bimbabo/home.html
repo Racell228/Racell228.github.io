@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bimbabo</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -24,15 +25,16 @@
 		<div class="container">
 			<div class="header_overlay">
 				<div class="header_logo">
-					<img src="img/logo_header.svg" class="header_logo_image">
+					<a href="#"><img src="img/logo_header.svg" class="header_logo_image"></a>
 				</div>
 				<form action="" class="header_search">
 					<input type="text" class="header_search_input" placeholder="Что вы хотите найти...">
 					<select name="" id="" class="header_search_select">
 						<option value="">Во всех категориях</option>
-						<option value="">Во всех категориях</option>
-						<option value="">Во всех категориях</option>
-						<option value="">Во всех категориях</option>
+						<option value="">Офис & HORECA</option>
+						<option value="">Бьюти</option>
+						<option value="">Школа</option>
+						<option value="">Игрушки</option>
 					</select>
 					<input type="submit" class="header_search_submit" value="">
 				</form>
@@ -58,7 +60,7 @@
 				</div>
 				<div class="header_submenu">
 					<a href="#" class="header_submenu_item">Офис & HORECA</a>
-					<a href="#" class="header_submenu_item">Бьюти</a>
+					<a href="#" class="header_submenu_item active">Бьюти</a>
 					<a href="#" class="header_submenu_item">Школа</a>
 					<a href="#" class="header_submenu_item">Игрушки</a>
 				</div>
@@ -71,26 +73,30 @@
 						<img src="img/header_cart.svg" class="header_cart_image">
 						<p class="header_cart_image_number">2</p>
 					</div>
-					<a href="#" class="header_login_link">70 грн <img src="img/header_search_arrov.svg" class="header_cart_arrow"></a>
+					<a href="#" class="header_login_link header_login_link-cart">70 грн <img src="img/header_search_arrov.svg" class="header_cart_arrow"></a>
 					<div class="header_cart_body">
-						<div class="header_cart_body_item">
-							<img src="img/cart_image.png" class="header_cart_body_item_image">
-							<div class="header_cart_body_item_name">
-								 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
-								 <p class="header_cart_body_item_number">1 шт.</p>
-								 <h5 class="header_cart_body_item_price">89 грн</h5>
+						<a href="#">
+							<div class="header_cart_body_item">
+								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
+								<div class="header_cart_body_item_name">
+									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+									 <p class="header_cart_body_item_number">1 шт.</p>
+									 <h5 class="header_cart_body_item_price">89 грн</h5>
+								</div>
+								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
 							</div>
-							<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
-						</div>
-						<div class="header_cart_body_item">
-							<img src="img/cart_image.png" class="header_cart_body_item_image">
-							<div class="header_cart_body_item_name">
-								 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
-								 <p class="header_cart_body_item_number">1 шт.</p>
-								 <h5 class="header_cart_body_item_price">89 грн</h5>
+						</a>
+						<a href="#">
+							<div class="header_cart_body_item">
+								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
+								<div class="header_cart_body_item_name">
+									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл, паприка, 25 мл</h6>
+									 <p class="header_cart_body_item_number">1 шт.</p>
+									 <h5 class="header_cart_body_item_price">89 грн</h5>
+								</div>
+								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
 							</div>
-							<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
-						</div>
+						</a>
 						<div class="header_cart_body_total">
 							<h5 class="header_cart_body_total_text">Итого: <span>326 грн</span></h5>
 							<a href="#" class="header_cart_body_total_link">Перейти в корзину</a>
@@ -209,22 +215,22 @@
 					<div class="subheader_nav_announcement">
 						<div class="subheader_nav_announcement_overlay">
 							<a href="#" class="subheader_nav_announcement_head">
-								<img src="img/subheader_nav_announcement.png" class="subheader_nav_announcement_head_image">
+								<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement.png);"></div>
 							</a>
 							<a href="#" class="subheader_nav_announcement_head">
-								<img src="img/subheader_nav_announcement2.png" class="subheader_nav_announcement_head_image">
+								<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement2.png);"></div>
 							</a>
 						</div>
 						<div class="subheader_nav_announcement_body">
 							<a href="#" class="subheader_nav_announcement_item">
-								<img src="img/cart_product.png" class="subheader_nav_announcement_item_image">
+								<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
 								<div>
 									<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
 									<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
 								</div>
 							</a>
 							<a href="#" class="subheader_nav_announcement_item">
-								<img src="img/cart_product.png" class="subheader_nav_announcement_item_image">
+								<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
 								<div>
 									<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
 									<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
@@ -249,7 +255,7 @@
 			<div class="products_overlay">
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -265,7 +271,39 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+						<p class="products_item_sale">7%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent </a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -281,11 +319,11 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
-					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
 					<div class="products_item_price"> 
 						 <p class="products_item_price_current">110 грн</p>
 						 <p  class="products_item_price_old">130 грн</p>
@@ -297,7 +335,23 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -313,7 +367,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -329,7 +383,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -342,7 +396,23 @@
 						<a href="#" class="products_item_buy">В корзину</a>
 						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
 					</div>
-				</div>
+				</div>	
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>							
 			</div>
 		</div>
 	</section>
@@ -352,7 +422,7 @@
 			<div class="products_overlay">
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -368,7 +438,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -384,11 +454,11 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
-					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
 					<div class="products_item_price"> 
 						 <p class="products_item_price_current">110 грн</p>
 						 <p  class="products_item_price_old">130 грн</p>
@@ -400,7 +470,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -416,7 +486,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -432,7 +502,7 @@
 				</div>
 				<div class="products_item">
 					<div class="products_item_image_overlay">
-						<img src="img/product_item.png" class="products_item_image">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
 						<p class="products_item_sale">14%</p>
 						<p class="products_item_points">20 баллов</p>
 					</div>
@@ -446,6 +516,70 @@
 						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
 					</div>
 				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent </a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>	
+				<div class="products_item">
+					<div class="products_item_image_overlay">
+						<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+						<p class="products_item_sale">14%</p>
+						<p class="products_item_points">20 баллов</p>
+					</div>
+					<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+					<div class="products_item_price"> 
+						 <p class="products_item_price_current">110 грн</p>
+						 <p  class="products_item_price_old">130 грн</p>
+					</div>
+					<div class="product_item_buy_overlay">
+						<a href="#" class="products_item_buy">В корзину</a>
+						<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
@@ -520,6 +654,10 @@
 						<a target="blank" href="https://www.instagram.com/bimbabo_shop/"><img class="footer_items-column-social-img" src="img/instagram.svg" alt=""></a>
 					</div>
 				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>2015-2020 © Все права защищены</p>
+				<p>Разработка сайта: <a target="blank" href="https://doublekit.site/">Double Kit</a></p>
 			</div>
 		</div>
 	</footer>
