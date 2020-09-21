@@ -11,107 +11,127 @@
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 </head>
 <body>
-
-	<section class="signin" id="constant">
-
 	<div class="container">
-		<div class="breadcrumbs breadcrumbs_blog">
-			<a href="#" class="breadcrumbs_link">Главная</a>
-			<p class="breadcrumbs_current">Корзина</p>
-		</div>
-	</div>
-
-		<div class="container">
-			<div class="signin_head">
-				<h1>Корзина</h1>
-				<div class="signin_head_nav">
-					<a href="#constant" class="signin_head_nav_item active">Я новый покупатель</a>
-					<a href="#new" class="signin_head_nav_item">Я постоянный клиент</a>
-				</div>
+			<div class="breadcrumbs breadcrumbs_blog">
+				<a href="#" class="breadcrumbs_link">Главная</a>
+				<p class="breadcrumbs_current">Корзина</p>
 			</div>
-			<form action="" class="busket_new">
-				<h3 class="busket_new_title">1. Контактные данные</h3>
-				<div class="busket_new_overlay">
-					<input type="text" class="input" placeholder="Логин*">
-					<input type="text" class="input" placeholder="Фамилия*">
-					<input type="text" class="input" placeholder="Телефон*">
-					<input type="text" class="input" placeholder="E-mail*">
-				</div>
-				<h3 class="busket_new_title2">2. Способ оплаты и доставки</h3>
-				<div class="busket_new_overlay">
-					<select  class="busket_new_select_pay">
-						<option>Выберите способ оплаты</option>
-						<option>Выберите способ оплаты</option>
-						<option>Выберите способ оплаты</option>
-						<option>Выберите способ оплаты</option>
-					</select>
-					<select  class="busket_new_select_pay busket_new_select_delivery">
-						<option>Новой почтой по Киеву и Украине - 45 грн</option>
-						<option>Новой почтой по Киеву и Украине - 45 грн</option>
-						<option>Новой почтой по Киеву и Украине - 45 грн</option>
-						<option>Новой почтой по Киеву и Украине - 45 грн</option>
-					</select>
-					<input type="text" class="input" placeholder="Город*">
-					<input type="text" class="input" placeholder="Улица*">
-					<input type="text" class="input personal_info_input" placeholder="Дом*">
-					<input type="text" class="input personal_info_input" placeholder="Квартира">
-					<input type="text" class="input personal_info_input" placeholder="Индекс*">
-					<textarea class="input busket_textarea" placeholder="Комментарии*"></textarea>
-					<input type="text" class="input busket_new_promo" placeholder="Промо-код или скидочный купон (если есть)">
-				<div class="busket_new_details">
-					<h5>Итого за товары: <span>825 грн</span></h5>
-					<h5>Скидка за баллы: <span>0 грн</span></h5>
-					<h5>Стоимость доставки:  <span>35 грн</span></h5>
-					<h5>Общая скидка: <span>0 грн</span></h5>
-				</div>
-				<h2 class="busket_new_total">К оплате:<span> 675.00 грн</span></h2>
-				<div class="signin_body_inputs_check">
-					<input type="checkbox" id="checkbox1"  name="Company" class="checkbox">
-					<label class="checkbox_label checkbox_label_busket" for="checkbox1"><span>Оформляя заказ вы соглашаетесь с <a href="#">Правилами Пользования</a>. Мы свяжемся с Вами в ближайшее время, после оформления заказа. В случае, если выбрана оплата Privatе24, Вы будете направлены на страницу оплаты.</span></label>
-				</div>
-				<input type="submit" class="submit busket_new_submit" value="Оформить заказ">
-				</div>
-				
-			</form>
 		</div>
-	</section>
-	<section class="signin" id="new">
-
-	<div class="container">
-		<div class="breadcrumbs breadcrumbs_blog">
-			<a href="#" class="breadcrumbs_link">Главная</a>
-			<p class="breadcrumbs_current">Корзина</p>
-		</div>
-	</div>
-		
-		<div class="container">
-			<div class="signin_head">
-				<h1>Корзина</h1>
-				<div class="signin_head_nav">
-					<a href="#constant" class="signin_head_nav_item">Я новый покупатель</a>
-					<a href="#new" class="signin_head_nav_item active">Я постоянный клиент</a>
-				</div>
-			</div>
-			<div class="signin_body">
-				<div class="signin_body_inputs">
-					<form action="">
-						<input type="text" class="input" placeholder="Логин*">
-						<input type="text" class="input" placeholder="Пароль*">
-						<input type="submit" value="Войти" class="submit">
-						<a href="#" class="signin_body_inputs_forgot">Забыли пароль?</a>
+	<div class="container busket_flex">
+		<div>
+			<section class="signin" id="constant">
+				<div>
+					<div class="signin_head">
+						<h1>Корзина</h1>
+						<div class="signin_head_nav">
+							<a href="#constant" class="signin_head_nav_item active">Я новый покупатель</a>
+							<a href="#new" class="signin_head_nav_item">Я постоянный клиент</a>
+						</div>
+					</div>
+					<form action="" class="busket_new">
+						<h3 class="busket_new_title">1. Контактные данные</h3>
+						<div class="busket_new_overlay">
+							<input type="text" class="input" placeholder="Логин*">
+							<input type="text" class="input" placeholder="Фамилия*">
+							<input type="text" class="input" placeholder="Телефон*">
+							<input type="text" class="input" placeholder="E-mail*">
+						</div>
+						<h3 class="busket_new_title2">2. Способ оплаты и доставки</h3>
+						<div class="busket_new_overlay">
+							<select  class="busket_new_select_pay">
+								<option>Выберите способ оплаты</option>
+								<option>Выберите способ оплаты</option>
+								<option>Выберите способ оплаты</option>
+								<option>Выберите способ оплаты</option>
+							</select>
+							<select  class="busket_new_select_pay busket_new_select_delivery">
+								<option>Новой почтой по Киеву и Украине - 45 грн</option>
+								<option>Новой почтой по Киеву и Украине - 45 грн</option>
+								<option>Новой почтой по Киеву и Украине - 45 грн</option>
+								<option>Новой почтой по Киеву и Украине - 45 грн</option>
+							</select>
+							<input type="text" class="input" placeholder="Город*">
+							<input type="text" class="input" placeholder="Улица*">
+							<input type="text" class="input personal_info_input" placeholder="Дом*">
+							<input type="text" class="input personal_info_input" placeholder="Квартира">
+							<input type="text" class="input personal_info_input" placeholder="Индекс*">
+							<textarea class="input busket_textarea" placeholder="Комментарии*"></textarea>
+							<input type="text" class="input busket_new_promo" placeholder="Промо-код или скидочный купон (если есть)">
+						<div class="busket_new_details">
+							<h5>Итого за товары: <span>825 грн</span></h5>
+							<h5>Скидка за баллы: <span>0 грн</span></h5>
+							<h5>Стоимость доставки:  <span>35 грн</span></h5>
+							<h5>Общая скидка: <span>0 грн</span></h5>
+						</div>
+						<h2 class="busket_new_total">К оплате:<span> 675.00 грн</span></h2>
+						<div class="signin_body_inputs_check">
+							<input type="checkbox" id="checkbox1"  name="Company" class="checkbox">
+							<label class="checkbox_label checkbox_label_busket" for="checkbox1"><span>Оформляя заказ вы соглашаетесь с <a href="#">Правилами Пользования</a>. Мы свяжемся с Вами в ближайшее время, после оформления заказа. В случае, если выбрана оплата Privatе24, Вы будете направлены на страницу оплаты.</span></label>
+						</div>
+						<input type="submit" class="submit busket_new_submit" value="Оформить заказ">
+						</div>
+						
 					</form>
+				</div>
+			</section>
+			<section class="signin" id="new">
+				<div>
+					<div class="signin_head">
+						<h1>Корзина</h1>
+						<div class="signin_head_nav">
+							<a href="#constant" class="signin_head_nav_item">Я новый покупатель</a>
+							<a href="#new" class="signin_head_nav_item active">Я постоянный клиент</a>
+						</div>
+					</div>
+					<div class="signin_body">
+						<div class="signin_body_inputs">
+							<form action="">
+								<input type="text" class="input" placeholder="Логин*">
+								<input type="text" class="input" placeholder="Пароль*">
+								<input type="submit" value="Войти" class="submit">
+								<a href="#" class="signin_body_inputs_forgot">Забыли пароль?</a>
+							</form>
 
+						</div>
+						<p class="signin_body_or">Или</p>
+						<div class="signin_body_accouns">
+							<a href="#" class="signin_body_accouns_item"><img src="img/social1.svg" class="signin_body_accouns_item_img">Войти через Google</a>
+							<a href="#" class="signin_body_accouns_item"><img src="img/social2.svg" class="signin_body_accouns_item_img">Войти через Facebook</a>
+							<a href="#" class="signin_body_accouns_item"><img src="img/social3.svg" class="signin_body_accouns_item_img">Войти через Вконтакте</a>
+						</div>
+					</div>
 				</div>
-				<p class="signin_body_or">Или</p>
-				<div class="signin_body_accouns">
-					<a href="#" class="signin_body_accouns_item"><img src="img/social1.svg" class="signin_body_accouns_item_img">Войти через Google</a>
-					<a href="#" class="signin_body_accouns_item"><img src="img/social2.svg" class="signin_body_accouns_item_img">Войти через Facebook</a>
-					<a href="#" class="signin_body_accouns_item"><img src="img/social3.svg" class="signin_body_accouns_item_img">Войти через Вконтакте</a>
-				</div>
-			</div>
+			</section>
 		</div>
-	</section>
-
+		<div class="thank_order">
+			<h2>Ваш заказ</span></h2>
+			<div class="thank_order-products">
+				<div class="thank_order-products-item">
+					<div class="product_item-bg thank_order-products-item-img" style="background-image: url(img/product_image1.png);"></div>
+					<div class="thank_order-products-item-info">
+						<h5>Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h5>
+						<p class="thank_order-products-item-info-code">Код товара: </p><h6 class="thank_order-products-item-info-barcode">81504ing</h6>
+						<div class="thank_order-products-item-info-price">
+							<p>1 шт.</p>
+							<h3>89 грн</h3>
+						</div>
+					</div>
+				</div>
+				<div class="thank_order-products-item">
+					<div class="product_item-bg thank_order-products-item-img" style="background-image: url(img/product_image2.png);"></div>
+					<div class="thank_order-products-item-info">
+						<h5>Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h5>
+						<p class="thank_order-products-item-info-code">Код товара: </p><h6 class="thank_order-products-item-info-barcode">81504ing</h6>
+						<div class="thank_order-products-item-info-price">
+							<p>1 шт.</p>
+							<h3>89 грн</h3>
+						</div>
+					</div>
+				</div>							
+			</div>
+			<h2 class="busket_new_total">Итого за товары: <span>825 грн</span></h2>						
+		</div>
+	</div>
 
 
 
