@@ -2767,12 +2767,10 @@ select {
 		margin-top: 20rem;
 	}
 	.product_item_buy_overlay {
-		display: block;
-	}
-	.product_item_buy_overlay {
     	display: block;
     	position: static;
     	box-shadow: none;
+    	padding-top: 20rem;
 	}
 	.products_item:hover .product_item_buy_overlay {
 		padding-bottom: 0;
@@ -2781,7 +2779,7 @@ select {
 		margin-bottom: auto;
 	}
 	.products_item_empty .product_item_buy_overlay {
-		margin-top: auto;
+		margin-bottom: 60rem;
 	}
 	.products_item_buy {
 		width: 100%;
