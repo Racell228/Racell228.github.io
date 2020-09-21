@@ -53,9 +53,31 @@ $(document).ready(function() {
 $(function() {
 
   (function quantityProducts() {
-    var $quantityArrowMinus = $(".quantity-arrow-minus");
-    var $quantityArrowPlus = $(".quantity-arrow-plus");
-    var $quantityNum = $(".quantity-num");
+    var $quantityArrowMinus = $(".quantity-arrow-minus1");
+    var $quantityArrowPlus = $(".quantity-arrow-plus1");
+    var $quantityNum = $(".quantity-num1");
+
+    $quantityArrowMinus.click(quantityMinus);
+    $quantityArrowPlus.click(quantityPlus);
+
+    function quantityMinus() {
+      if ($quantityNum.val() > 1) {
+        $quantityNum.val(+$quantityNum.val() - 1);
+      }
+    }
+
+    function quantityPlus() {
+      $quantityNum.val(+$quantityNum.val() + 1);
+    }
+  })();
+
+});
+$(function() {
+
+  (function quantityProducts() {
+    var $quantityArrowMinus = $(".quantity-arrow-minus2");
+    var $quantityArrowPlus = $(".quantity-arrow-plus2");
+    var $quantityNum = $(".quantity-num2");
 
     $quantityArrowMinus.click(quantityMinus);
     $quantityArrowPlus.click(quantityPlus);
@@ -83,7 +105,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.modal_close').click(function(event) {
       event.preventDefault();
-     $('.fastbuy').hide(400);
+     $('.fastbuy,.politic').hide(400);
     $('html,body').removeClass('hidden');
   });
 });  
@@ -103,7 +125,7 @@ jQuery(document).ready(function($) {
   let outs = document.querySelectorAll('.single_slider');
   for (let out of outs) {
       let owl = out.querySelector('.owl-carousel');
-      let btns = out.querySelectorAll(':scope .card_slider_nav_btn');
+      let btns = out.querySelectorAll(':scope .single_slider_nav_btn');
       let owlJq = $(owl);
       owlJq.owlCarousel({
           items: 1,
@@ -115,10 +137,18 @@ jQuery(document).ready(function($) {
       for (let btn of btns) {
           btn.addEventListener('click', function () {
               owlJq.trigger('to.owl.carousel', [$(this).index()]);
-              $('.card_slider_nav_btn').removeClass('active')
+              $('.single_slider_nav_btn').removeClass('active')
               $(this).addClass('active');
           })
       }
   };
 
 });
+
+$(document).ready(function() {
+  $('.politic-js').click(function(event) {
+      event.preventDefault();
+      $('.politic').show(400);
+      $('html,body').addClass('hidden');
+  });
+});  
