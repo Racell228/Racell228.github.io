@@ -2062,7 +2062,10 @@ p {
 	border-radius: 10rem;
 	height: 140rem;
 }
-
+.single_right {
+	position: sticky;
+	top: 30rem;
+}
 .single_slider {
 	width: 600rem;
 	margin-right: 32rem;
