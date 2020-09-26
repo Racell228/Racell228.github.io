@@ -3,18 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Возврат товара</title>
-	<link rel="shortcut icon" href="img/favicon.ico">	
+	<title>Bimbabo</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 </head>
-
 <body>
-	<header>
+	<div class="head_banner">
+		<div class="container">
+			<div class="head_banner_overlay">
+				<a href="#" class="head_bunner_item">Бонусные баллы</a>
+				<a href="#" class="head_bunner_item">Связаться</a>
+				<a href="#" class="head_bunner_item">Помощь</a>
+				<a href="#" class="head_bunner_item">Возврат товара</a>
+			</div>
+		</div>
+	</div>
+	<header class="index_header">
 		<div class="container">
 			<div class="header_overlay">
 				<div class="header_logo">
@@ -54,7 +61,66 @@
 				</div>
 				<div class="header_catalog">
 					<a href="#" class="header_catalog_btn"><img src="img/header_burger.svg"> Каталог</a>
-					<div class="subheader_nav">
+				</div>
+				<div class="header_submenu">
+					<a href="#" class="header_submenu_item">Офис & HORECA</a>
+					<a href="#" class="header_submenu_item active">Бьюти</a>
+					<a href="#" class="header_submenu_item">Школа</a>
+					<a href="#" class="header_submenu_item">Игрушки</a>
+				</div>
+				<div class="header_login">
+					<img src="img/header_login.svg" class="header_login_image">
+					<a href="#" class="header_login_link">Вход / регистрация</a>
+				</div>
+				<div class="header_cart">
+					<div class="header_cart_image_overlay">
+						<img src="img/header_cart.svg" class="header_cart_image">
+						<p class="header_cart_image_number">2</p>
+					</div>
+					<a href="#" class="header_login_link header_login_link-cart">70 грн <img src="img/header_search_arrov.svg" class="header_cart_arrow"></a>
+					<div class="header_cart_body">
+						<a href="#">
+							<div class="header_cart_body_item">
+								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
+								<div class="header_cart_body_item_name">
+									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+									 <p class="header_cart_body_item_number">1 шт.</p>
+									 <h5 class="header_cart_body_item_price">89 грн</h5>
+								</div>
+								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
+							</div>
+						</a>
+						<a href="#">
+							<div class="header_cart_body_item">
+								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
+								<div class="header_cart_body_item_name">
+									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл, паприка, 25 мл</h6>
+									 <p class="header_cart_body_item_number">1 шт.</p>
+									 <h5 class="header_cart_body_item_price">89 грн</h5>
+								</div>
+								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
+							</div>
+						</a>
+						<div class="header_cart_body_total">
+							<h5 class="header_cart_body_total_text">Итого: <span>326 грн</span></h5>
+							<a href="#" class="header_cart_body_total_link">Перейти в корзину</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="breadcrumbs breadcrumbs_blog">
+			<a href="#" class="breadcrumbs_link">Главная</a>
+			<a href="#" class="breadcrumbs_link">Бьюти</a>
+			<p class="breadcrumbs_current">Косметика для волос</p>
+		</div>
+	</div>
+	<section class="subheader">
+		<div class="container"> 
+			<div class="subheader_overlay">
+				<div class="subheader_nav">
 					<div class="subheader_nav_parent_overlay">
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
@@ -122,8 +188,8 @@
 						</div>
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item2.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Парфюмерия</a>
+								<img src="img/subheader_nav_item_school2.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Рюкзаки</a>
 							</div>
 							<div class="subheader_nav_child">
 								<div class="subheader_nav_child_item">
@@ -186,130 +252,8 @@
 						</div>
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item3.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Макияж</a>
-							</div>
-							<div class="subheader_nav_child">
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="subheader_nav_child">
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
-										</div>
-									</div>
-								</div>
-								<div class="subheader_nav_child_item">
-									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
-									<div class="subheader_nav_child2">
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-										<div class="subheader_nav_child2_item">
-											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div class="subheader_nav_parent">
-							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item4.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent" >Уход за кожей</a>
+								<img src="img/subheader_nav_item_school3.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Сумки</a>
 							</div>
 							<div class="subheader_nav_child">
 								<div class="subheader_nav_child_item">
@@ -372,8 +316,8 @@
 						</div>
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item5.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent" >Косметика для волос</a>
+								<img src="img/subheader_nav_item_school4.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Пеналы, косметички, кошельки</a>
 							</div>
 							<div class="subheader_nav_child">
 								<div class="subheader_nav_child_item">
@@ -436,8 +380,8 @@
 						</div>
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item6.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Мужская косметика</a>
+								<img src="img/subheader_nav_item_school5.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent" >Ланчбоксы бутылки термосы</a>
 							</div>
 							<div class="subheader_nav_child">
 								<div class="subheader_nav_child_item">
@@ -500,8 +444,136 @@
 						</div>
 						<div class="subheader_nav_parent">
 							<div class="subheader_nav_parent_item">
-								<img src="img/subheader_nav_item7.svg" class="subheader_nav_item_img">
-								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Organic</a>
+								<img src="img/subheader_nav_item_school6.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Школьные принадлежности</a>
+							</div>
+							<div class="subheader_nav_child">
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subheader_nav_parent">
+							<div class="subheader_nav_parent_item">
+								<img src="img/subheader_nav_item_school7.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Творчество</a>
+							</div>
+							<div class="subheader_nav_child">
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции2</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции3</a>
+										</div>
+									</div>
+								</div>
+								<div class="subheader_nav_child_item">
+									<a href="#" class="subheader_nav_link subheader_nav_link_child">Акции</a>
+									<div class="subheader_nav_child2">
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+										<div class="subheader_nav_child2_item">
+											<a href="#" class="subheader_nav_link subheader_nav_link_child2">Акции4</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subheader_nav_parent">
+							<div class="subheader_nav_parent_item">
+								<img src="img/subheader_nav_item_school8.svg" class="subheader_nav_item_img">
+								<a href="#" class="subheader_nav_link subheader_nav_link_parent">Рисование для детей</a>
 							</div>
 							<div class="subheader_nav_child">
 								<div class="subheader_nav_child_item">
@@ -590,90 +662,263 @@
 						</div>
 					</div>
 				</div>
-				</div>
-				<div class="header_submenu">
-					<a href="#" class="header_submenu_item">Офис & HORECA</a>
-					<a href="#" class="header_submenu_item active">Бьюти</a>
-					<a href="#" class="header_submenu_item">Школа</a>
-					<a href="#" class="header_submenu_item">Игрушки</a>
-				</div>
-				<div class="header_login">
-					<img src="img/header_login.svg" class="header_login_image">
-					<a href="#" class="header_login_link">Вход / регистрация</a>
-				</div>
-				<div class="header_cart">
-					<div class="header_cart_image_overlay">
-						<img src="img/header_cart.svg" class="header_cart_image">
-						<p class="header_cart_image_number">0</p>
-					</div>
-					<a href="#" class="header_login_link header_login_link-cart">70 грн <img src="img/header_search_arrov.svg" class="header_cart_arrow"></a>
-					<div class="header_cart_body">
-						<h4 class="header_cart_body_title">Ваша корзина пуста</h4>
-						<p class="header_cart_body_empty">Добавляйте понравившиеся товары в корзину</p>
-					</div>
+				<div class="subheader_slider">
+					<img src="img/slider_image.png">
+					<img src="img/slider_image.png">
+					<img src="img/slider_image.png">
+					<img src="img/slider_image.png">
+					<img src="img/slider_image.png">
 				</div>
 			</div>
 		</div>
-	</header>
-	<div class="container">
-		<div class="breadcrumbs breadcrumbs_blog">
-			<a href="#" class="breadcrumbs_link">Главная</a>
-			<p class="breadcrumbs_current">Возврат товара</p>
-		</div>
-	</div>
-
-	<section class="refund">
+	</section>
+	<section class="category">
 		<div class="container">
-			<div class="page_flex">			
-				<div class="text_content text_page">
-					<h1>Возврат товара</h1>
-					<h2>Срок возврата</h2>
-					<p>Товар, купленный в интернет-магазине BimBaBo.com, подлежит возврату не позднее 14-ти календарных дней с момента его получения покупателем.</p>
-					<h2>Условия для возврата</h2>
-					<ul>
-						<li>заполненное заявление на возврат товара;</li>
-						<li>товарный вид и целостность возвращаемых изделий и упаковки.</li>
-					</ul>
-					<h2>Категории товаров, не подлежащие возврату или обмену</h2>
-					<p><i>Данные правила не распространяются на товары, причиной возврата которых явилось несоответствие заказу или был обнаружен брак</i></p>
-					<ul>
-						<li>товары для новорожденных (пеленки, соски, бутылочки для кормления и т.д.);</li>
-						<li>мягкие игрушки;</li>
-						<li>парфюмерно-косметические товары;</li>
-						<li>предметы личной гигиены: зубные щетки; бритвы; расчески; гребешки; массажные щетки; инструменты для маникюра и педикюра;</li>					
-					</ul>
-					<p><i>Если Вы получили товар ненадлежащего качества, напишите нам об этом на <a href="#">support@bimbabo.com</a> или напишете прямо <a href="#">здесь</a>, и мы оформим возврат товара.</i></p>
-					<h2>Правила возврата товара с гарантийным талоном (негарантийный случай):</h2>
-					<ul>
-						<li>целостность товара и упаковки;</li>
-						<li>на товаре нет следов использования: царапин, сколов, потертостей;</li>
-						<li>сохранность ярлыков, гарантийного талона и заводской маркировки</li>				
-					</ul>
-					<h2>Правила возврата при гарантийном случае:</h2>
-					<p>Необходимо обратиться в авторизированные производителем или поставщиком товара сервисные центры; адреса сервисных центров приводятся в гарантийном талоне; снованием для гарантийного обслуживания в сервисном центре является гарантийный талон.</p>
-					<p>Если на протяжении гарантийного срока товар вышел из строя по вине производителя и не подлежит ремонту в сервисном центре, мы вернем деньги.</p>
-					<p>Возврат такого Товара возможен только при наличии:</p>
-					<ul>
-						<li>товарного чека по заказу покупателя;</li>
-						<li>гарантийного талона;</li>
-						<li>товара в полной комплектации;</li>
-						<li>заключения сервисного центра о том, что условия эксплуатации не нарушались и товар имеет дефект, т.е. не подлежит ремонту.</li>		
-					</ul>
-					<p><b>Важно!</b> Если присланный Вами товар не подлежит возврату (несоответствие требуемым условиям), товар будет отправлен Вам обратно, при этом все расходы на доставку оплачиваете Вы.</p>
-					<h2>Способы возврата товара</h2>
-					<p><b>Вариант 1:</b> Отправить нам товар вместе с заполненным заявлением на возврат любой курьерской службой. Обратите внимание, если Вы укажете оплату наложенным платежом, мы не получим эту посылку. Такие посылки возвращаются отправителю.</p>
-					<p><b>Вариант 2:</b> Приносите самостоятельно товар вместе с заполненным заявлением к нам в офис:</p>
-					<h2>Способы возврата денег</h2>
-					<h3>На банковскую карту</h3>
-					<p>Если Вы оплачивали покупку банковской картой, мы автоматически вернем Вам на нее деньги.</p>
-					<h3>На бунусный счет</h3>
-					<p>Если Вы оплачивали покупку банковской картой, мы автоматически вернем Вам на нее деньги.</p>
-					<p>Деньги будут зачислены на Ваш персональный бонусный счет, их можно будет использовать для покупок в BimBaBo.com. Чтобы вернуть деньги таким способом, Вам обязательно необходимо сделать отметку в соответствующей графе заявления на возврат.</p>
-
+			<div class="category_head">
+				<h1 class="category_head_title">Косметика для волос</h1>
+				<div class="category_head_overlay">
+					<a href="#" class="category_head_item">
+						<div class="category_head_item_image" style="background-image: url(img/category_img.png);"></div>
+						<h3 class="category_head_item_link">Маски для волос</h3>
+					</a>
+					<a href="#" class="category_head_item">
+						<div class="category_head_item_image" style="background-image: url(img/category_img.png);"></div>
+						<h3 class="category_head_item_link">Маски для волос</h3>
+					</a>
+					<a href="#" class="category_head_item">
+						<div class="category_head_item_image" style="background-image: url(img/category_img.png);"></div>
+						<h3 class="category_head_item_link">Маски для волос</h3>
+					</a>
+					<a href="#" class="category_head_item">
+						<div class="category_head_item_image" style="background-image: url(img/category_img.png);"></div>
+						<h3 class="category_head_item_link">Маски для волос</h3>
+					</a>
+					<a href="#" class="category_head_item">
+						<div class="category_head_item_image" style="background-image: url(img/category_img.png);"></div>
+						<h3 class="category_head_item_link">Маски для волос</h3>
+					</a>
 				</div>
-				<div class="product_sidebar">
-					<h2>Это интересно</h2>
-					<div class="product_sidebar_overlay">
+			</div>
+			<div class="category_filters_mobile">
+				<h2 class="category_filters_mobile_number">1155 товаров</h2>
+				<h3 class="category_filters_mobile_btn filters_mobile-js">Фильтры</h3>
+				<h3 class="category_filters_mobile_btn sorting_mobile-js">Сортировка</h3>
+			</div>
+			<div class="category_body">
+				<div class="category_body_filters">
+					<h2 class="category_body_filters_title">Фильтры</h2>
+					<div class="category_body_filters_item_overlay">
+						<div class="category_body_filters_item">
+							<h3 class="category_body_filters_item_name">Цена</h3>
+							<div class="category_body_filters_item_inputs">
+								<input type="checkbox" id="checkbox1"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox1">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox2"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox2">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox3"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox3">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox4"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox4">До 100 грн  <span>(13)</span></label>
+							</div>
+						</div>
+						<div class="category_body_filters_item">
+							<h3 class="category_body_filters_item_name">Бренд</h3>
+							<div class="category_body_filters_item_inputs">
+								<input type="checkbox" id="checkbox5"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox5">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox6"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox6">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox7"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox7">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox8"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox8">До 100 грн  <span>(13)</span></label>
+							</div>
+						</div>
+						<div class="category_body_filters_item">
+							<h3 class="category_body_filters_item_name">Коллекция</h3>
+							<div class="category_body_filters_item_inputs">
+								<input type="checkbox" id="checkbox9"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox9">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox10"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox10">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox11"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox11">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox12"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox12">До 100 грн  <span>(13)</span></label>
+							</div>
+						</div>
+						<div class="category_body_filters_item">
+							<h3 class="category_body_filters_item_name">Тип волос</h3>
+							<div class="category_body_filters_item_inputs">
+								<input type="checkbox" id="checkbox13"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox13">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox14"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox14">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox15"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox15">До 100 грн  <span>(13)</span></label>
+								<input type="checkbox" id="checkbox16"  name="Company" class="checkbox">
+								<label class="checkbox_label" for="checkbox16">До 100 грн  <span>(13)</span></label>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="category_filters_submit submit">Применить</a>
+					<img src="img/close_modal.svg" class="filter_close">
+				</div>
+				<div class="category_body_products">
+					<div class="category_body_products_head">
+						<h5>1155 товаров</h5>
+						<div class="category_body_products_head_select category_body_products_head_select">
+							<p>Сортировать:</p>
+							<select class="category_body_products_head_select_item">
+								<option>От дешёвых к дорогим</option>
+								<option>По популярности</option>
+								<option>От дорогих к дешёвым</option>
+							</select>
+						</div>
+						<div class="category_body_products_head_checkbox">
+							<input type="checkbox" id="checkbox17"  name="Company" class="checkbox">
+							<label class="checkbox_label" for="checkbox17">Только акционные</label>
+						</div>
+						<div class="category_body_products_head_select">
+							<p>Показывать на странице:</p>
+							<select class="category_body_products_head_select_item category_body_products_head_select_number">
+								<option>100</option>
+								<option>50</option>
+								<option>20</option>
+							</select>
+						</div>
+						<a href="#" class="category_filters_submit submit">Применить</a>
+						<img src="img/close_modal.svg" class="filter_close">
+					</div>
+					<div class="products_overlay">
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+								<p class="products_item_sale">7%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent </a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent </a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image2.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent </a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
+						<div class="products_item">
+							<div class="products_item_image_overlay">
+								<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+								<p class="products_item_sale">14%</p>
+								<p class="products_item_points">20 баллов</p>
+							</div>
+							<a href="#" class="products_item_title">Краска для волос Indola Permanent Caring Color 5.03 светло-коричневый натуральный золотистый, 60 мл</a>
+							<div class="products_item_price"> 
+								 <p class="products_item_price_current">110 грн</p>
+								 <p  class="products_item_price_old">130 грн</p>
+							</div>
+							<div class="product_item_buy_overlay">
+								<a href="#" class="products_item_buy">В корзину</a>
+								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
+							</div>
+						</div>
 						<div class="products_item">
 							<div class="products_item_image_overlay">
 								<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
@@ -692,7 +937,7 @@
 						</div>	
 						<div class="products_item">
 							<div class="products_item_image_overlay">
-								<div class="products_item_image" style="background-image: url(img/product_image1.png);"></div>
+								<div class="products_item_image" style="background-image: url(img/product_image3.png);"></div>
 								<p class="products_item_sale">14%</p>
 								<p class="products_item_points">20 баллов</p>
 							</div>
@@ -705,12 +950,58 @@
 								<a href="#" class="products_item_buy">В корзину</a>
 								<a href="#" class="products_item_fast_buy">Купить в один клик</a>
 							</div>
-						</div>	
+						</div>							
 					</div>
-				</div>				
+					<div class="pagination blog_pagination">
+						<div class="pagination_items">
+							<a class="pagination_items-link" href="#"><h5>1</h5></a>
+							<a class="pagination_items-link active" href="#"><h5>2</h5></a>
+							<a class="pagination_items-link" href="#"><h5>3</h5></a>
+							<a class="pagination_items-link" href="#"><h5>4</h5></a>
+							<a class="pagination_items-link" href="#"><h5>5</h5></a>
+							<h5 class="pagination_items-link">...</h5>
+							<a class="pagination_items-link" href="#"><h5>20</h5></a>
+
+						</div>
+						<a class="text-link articles_item-link text-link" href="#">Показать все товары</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="category_bottom">
+				<h3>Макияж подчеркнет вашу индивидуальность</h3>
+				<p>Покупка косметики для макияжа – это как покупка первоклассной одежды. Вы не можете покупать только одежду, Вам нужна и декоративная косметика, чтобы с помощью макияжа показать не только естественную красоту, а и повысить уверенность в себе. Ведь кто не хотел бы, выглядеть привлекательной в глазах окружающих? Самое главное в макияже – необходимо подобрать идеальный оттенок, который соответствует Вашему типу кожи.</p>
+				<p>В интернет-магазине БимБаБо представлен достаточно большой ассортимент декоративной косметики, который уже давно зарекомендовали себя на рынке – это и помада, и тушь для ресниц, и тени, и подводки для глаз, пудра и т.д. – в общем, все необходимое для достижения замечательного внешнего вида.</p>
+				<h3>Макияж: Что делает вас красивой</h3>
+				<p>Признают это или нет, но каждая женщина хочет выглядеть красиво. Каждая женщина мечтает получать комплименты от мужчин вокруг нее. И мейк ап, конечно же, способствует этому. Но, для достижения данного желания Вы должны подобрать соответствующий продукт, который соответствует Вашему тону кожи. Помимо этого выбранная Вами декоративная косметика должна не утрачивать своих качеств на протяжении всего дня.</p>
+				<p>Перечислим какие из продуктов должны входить в комплект для макияжа</p>
+				<h3>Косметика для лица</h3>
+				<p>Румяна – используется для корректировки овала лица и придания ему здорового и цветущего вида.
+				Корректор – необходим для маскировки темных кругов, возрастных пятен, больших пор и других мелких дефектов кожи лица.
+				Косметика для глаз</p>
+				<p>Тушь для глаз – поможет затемнить, утолщить, удлинить, и/или разредить ресницы.
+				Тени для век – помогут добавить глубину и размерность Вашим глазам, дополнить цвет глаз, или просто привлечь внимание к глазам.
+				Карандаши для глаз – можно удлинить глаза, применив карандаш для глаз с тенью соответствующие Вашим глазам.</p>
+				<h3>Косметика для губ:</h3>
+				<p>Помада – косметический продукт, содержащие пигменты, масла, воски и смягчающие вещества, которые придают цвет, текстуру и защиту губам.</p>
+				<p>Блеск для губ – используется, когда женщина хочет иметь блеск на губах, но не хочет эффект интенсивного, сплошного цвета губ.
+				Карандаши для губ – помогает предотвратить растекание помады или блеска для губ , особенно это уместно для любительниц темных помад.</p>
 			</div>
 		</div>
 	</section>
+
+
+
 
 	<footer>
 		<div class="container">

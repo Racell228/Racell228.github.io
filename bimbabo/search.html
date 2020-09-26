@@ -29,6 +29,7 @@
 			<div class="header_overlay">
 				<div class="header_logo">
 					<a href="#"><img src="img/logo_header.svg" class="header_logo_image"></a>
+					<a href="#"><img src="img/logo_mobile.svg" class="header_logo_image_mobile"></a>
 				</div>
 				<form action="" class="header_search">
 					<input type="text" class="header_search_input" placeholder="Что вы хотите найти...">
@@ -613,36 +614,12 @@
 				<div class="header_cart">
 					<div class="header_cart_image_overlay">
 						<img src="img/header_cart.svg" class="header_cart_image">
-						<p class="header_cart_image_number">2</p>
+						<p class="header_cart_image_number">0</p>
 					</div>
 					<a href="#" class="header_login_link header_login_link-cart">70 грн <img src="img/header_search_arrov.svg" class="header_cart_arrow"></a>
 					<div class="header_cart_body">
-						<a href="#">
-							<div class="header_cart_body_item">
-								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
-								<div class="header_cart_body_item_name">
-									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
-									 <p class="header_cart_body_item_number">1 шт.</p>
-									 <h5 class="header_cart_body_item_price">89 грн</h5>
-								</div>
-								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
-							</div>
-						</a>
-						<a href="#">
-							<div class="header_cart_body_item">
-								<div class="header_cart_body_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
-								<div class="header_cart_body_item_name">
-									 <h6 class="header_cart_body_item_title">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл, паприка, 25 мл</h6>
-									 <p class="header_cart_body_item_number">1 шт.</p>
-									 <h5 class="header_cart_body_item_price">89 грн</h5>
-								</div>
-								<img src="img/cart_delete.svg" class="header_cart_body_item_delete_img">
-							</div>
-						</a>
-						<div class="header_cart_body_total">
-							<h5 class="header_cart_body_total_text">Итого: <span>326 грн</span></h5>
-							<a href="#" class="header_cart_body_total_link">Перейти в корзину</a>
-						</div>
+						<h4 class="header_cart_body_title">Ваша корзина пуста</h4>
+						<p class="header_cart_body_empty">Добавляйте понравившиеся товары в корзину</p>
 					</div>
 				</div>
 			</div>
@@ -658,10 +635,15 @@
 	<section class="category">
 		<div class="container">
 			<h1 class="search_head_title">Результаты поиска по запросу “Краска”</h1>
+			<div class="category_filters_mobile">
+				<h2 class="category_filters_mobile_number">1155 товаров</h2>
+				<h3 class="category_filters_mobile_btn filters_mobile-js">Фильтры</h3>
+				<h3 class="category_filters_mobile_btn sorting_mobile-js">Сортировка</h3>
+			</div>
 			<div class="category_body">
 				<div class="category_body_filters">
 					<h2 class="category_body_filters_title">Фильтры</h2>
-					<div>
+					<div class="category_body_filters_item_overlay">
 						<div class="category_body_filters_item">
 							<h3 class="category_body_filters_item_name">Цена</h3>
 							<div class="category_body_filters_item_inputs">
@@ -714,7 +696,9 @@
 								<label class="checkbox_label" for="checkbox16">До 100 грн  <span>(13)</span></label>
 							</div>
 						</div>
-						</div>
+					</div>
+					<a href="#" class="category_filters_submit submit">Применить</a>
+					<img src="img/close_modal.svg" class="filter_close">
 				</div>
 				<div class="category_body_products">
 					<div class="category_body_products_head">
@@ -739,6 +723,8 @@
 								<option>20</option>
 							</select>
 						</div>
+						<a href="#" class="category_filters_submit submit">Применить</a>
+						<img src="img/close_modal.svg" class="filter_close">
 					</div>
 					<div class="products_overlay">
 						<div class="products_item">
@@ -926,33 +912,33 @@
 	<footer>
 		<div class="container">
 			<div class="footer_items">
-				<div class="footer_items-column">
+				<div class="footer_items-column footer_logo">
 					<img class="footer_items-column-logo" src="img/logo_office-white.svg" alt="">
 					<a class="footer_items-column-phone" href="tel:+38 093 360 21 81"><h4>(093) 360-21-81</h4></a>
 					<a class="footer_items-column-phone" href="tel:+38 098 211 74 84"><h4>(098) 211-74-84</h4></a>
 					<a class="footer_items-column-phone" href="tel:+38 044 360 21 81"><h4>(044) 360-21-81</h4></a>
 					<p class="footer_items-column-text">пн-пт с 9:00 до 18:00</p>
 				</div>
-				<div class="footer_items-column">
+				<div class="footer_items-column footer_items-column_text">
 					<h4 class="footer_items-column-title">О компании</h4>
 					<a class="footer_items-column-link text-link" href="#">О нас</a>
 					<a class="footer_items-column-link text-link" href="#">Новости и статьи</a>
 					<a class="footer_items-column-link text-link" href="#">Поставщикам</a>
 					<a class="footer_items-column-link text-link" href="#">Контакты</a>
 				</div>
-				<div class="footer_items-column">
+				<div class="footer_items-column footer_items-column_text">
 					<h4 class="footer_items-column-title">Доставка и оплата</h4>
 					<a class="footer_items-column-link text-link" href="#">Доставка</a>
 					<a class="footer_items-column-link text-link" href="#">Оплата</a>
 				</div>
-				<div class="footer_items-column">
+				<div class="footer_items-column footer_items-column_text">
 					<h4 class="footer_items-column-title">Сервис и поддержка</h4>
 					<a class="footer_items-column-link text-link" href="#">Система скидок</a>
 					<a class="footer_items-column-link text-link" href="#">Бонусные баллы</a>
 					<a class="footer_items-column-link text-link" href="#">Помощь</a>
 					<a class="footer_items-column-link text-link" href="#">Возврат товара</a>
 				</div>
-				<div class="footer_items-column">
+				<div class="footer_items-column footer_subscribe_overlay">
 					<div class="footer_subscribe">
 						<h4 class="footer_items-column-title">Подписаться на рассылку</h4>
 						<form action="" class="footer_subscribe_form">
@@ -1021,6 +1007,136 @@
 		</div>
 	</div>
 
+
+
+
+	<div class="mobile_menu_container">
+		<div class="mobile_menu_step mobile_menu_step1">
+			<img src="img/close_modal.svg" class="mobile_menu_close">
+			<h3 class="mobile_menu_title">Каталог</h3>
+			<a href="#"><h5 class="mobile_menu_category">Офис & HORECA</h5></a>
+			<div class="mobile_menu_category_active">
+				<h5 class="mobile_menu_category active">Бьюти</h5>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item1.svg" class="mobile_menu_category_link_img"> Акции</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item2.svg" class="mobile_menu_category_link_img"> Парфюмерия</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item3.svg" class="mobile_menu_category_link_img"> Макияж</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item4.svg" class="mobile_menu_category_link_img"> Уход за кожей</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item5.svg" class="mobile_menu_category_link_img"> Косметика для волос</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item6.svg" class="mobile_menu_category_link_img"> Мужская косметика</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link2"><img src="img/subheader_nav_item7.svg" class="mobile_menu_category_link_img"> Organic</a>
+			</div>
+			<a href="#"><h5 class="mobile_menu_category">Школа</h5></a>
+			<a href="#"><h5 class="mobile_menu_category">Игрушки</h5></a>
+			<div class="mobile_menu_phones">
+				<div class="header_phones">
+					<img src="img/header_tel.svg" class="header_phones_img">
+					<div class="header_phones_numbers_pverlay">
+						<a href="tel:+38 098 211 74 84" class="header_phones_numbers_tel">(098) 211-74-84</a>
+						<p class="header_phones_numbers_date">пн-пт с 9:00 до 18:00</p>
+					</div>
+				</div>
+				<div class="header_phones">
+					<div class="header_phones_numbers_pverlay">
+						<a href="tel:+38 044 360 21 81" class="header_phones_numbers_tel">(044) 360-21-81</a>
+						<p class="header_phones_numbers_date">Для жителей г. Киев</p>
+					</div>
+				</div>
+				<div class="header_phones">
+					<img src="img/header_viber.svg" class="header_phones_img">
+					<div class="header_phones_numbers_pverlay">
+						<a href="tel:+38 093 360 21 81" class="header_phones_numbers_tel">(093) 360-21-81</a>
+						<p class="header_phones_numbers_date">On-line 24/7</p>
+					</div>
+				</div>
+			</div>
+			<div class="mobile_menu_foot">
+				<a href="#" class="mobile_menu_foot_item">Бонусные баллы</a>
+				<a href="#" class="mobile_menu_foot_item">Связаться</a>
+				<a href="#" class="mobile_menu_foot_item">Помощь</a>
+				<a href="#" class="mobile_menu_foot_item">Возврат товара</a>
+			</div>
+		</div>
+		<div class="mobile_menu_step mobile_menu_step2">
+			<img src="img/close_modal.svg" class="mobile_menu_close">
+			<a href="#" class="mobile_menu_step_back mobile_menu_step_back1">Назад</a>
+			<h5 class="mobile_menu_category active mobile_menu_subcategory">Макияж</h5>
+			<div class="mobile_menu_category_active">
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link3">Макияж для глаз</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link3">Макияж для лица</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link3">Макияж для губ</a>
+				<a href="#" class="mobile_menu_category_link mobile_menu_category_link3">Аксессуары для макияжа</a>
+			</div>
+			<div class="subheader_nav_announcement">
+				<div class="subheader_nav_announcement_overlay">
+					<a href="#" class="subheader_nav_announcement_head">
+						<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement.png);"></div>
+					</a>
+					<a href="#" class="subheader_nav_announcement_head">
+						<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement2.png);"></div>
+					</a>
+				</div>
+				<div class="subheader_nav_announcement_body">
+					<a href="#" class="subheader_nav_announcement_item">
+						<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
+						<div>
+							<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+							<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
+						</div>
+					</a>
+					<a href="#" class="subheader_nav_announcement_item">
+						<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
+						<div>
+							<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+							<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="mobile_menu_step mobile_menu_step3">
+			<img src="img/close_modal.svg" class="mobile_menu_close">
+			<a href="#" class="mobile_menu_step_back mobile_menu_step_back2">Назад</a>
+			<h5 class="mobile_menu_category active mobile_menu_subcategory">Макияж для глаз</h5>
+			<div class="mobile_menu_category_active">
+				<a href="#" class="mobile_menu_category_link">Тушь для ресниц</a>
+				<a href="#" class="mobile_menu_category_link">Тени для век</a>
+				<a href="#" class="mobile_menu_category_link">Карандаш для глаз</a>
+				<a href="#" class="mobile_menu_category_link">Карандаш для бровей</a>
+				<a href="#" class="mobile_menu_category_link">Гель и тушь для бровей</a>
+				<a href="#" class="mobile_menu_category_link">Подводка для глаз</a>
+				<a href="#" class="mobile_menu_category_link">Уход за бровями и ресницами</a>
+				<a href="#" class="mobile_menu_category_link">Основа для век и ресниц</a>
+				<a href="#" class="mobile_menu_category_link">Тени и пудра для бровей</a>
+				<a href="#" class="mobile_menu_category_link">Краска для бровей и ресниц</a>
+			</div>
+			<div class="subheader_nav_announcement">
+				<div class="subheader_nav_announcement_overlay">
+					<a href="#" class="subheader_nav_announcement_head">
+						<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement.png);"></div>
+					</a>
+					<a href="#" class="subheader_nav_announcement_head">
+						<div class="subheader_nav_announcement_head_image product_item-bg" style="background-image: url(img/subheader_nav_announcement2.png);"></div>
+					</a>
+				</div>
+				<div class="subheader_nav_announcement_body">
+					<a href="#" class="subheader_nav_announcement_item">
+						<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image1.png);"></div>
+						<div>
+							<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+							<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
+						</div>
+					</a>
+					<a href="#" class="subheader_nav_announcement_item">
+						<div class="subheader_nav_announcement_item_image product_item-bg" style="background-image: url(img/product_image2.png);"></div>
+						<div>
+							<h6 class="subheader_nav_announcement_item_name">Тонирующая маска ING Professional Color 3 в 1, паприка, 25 мл</h6>
+							<h3 class="subheader_nav_announcement_item_price">89 грн</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 
 
