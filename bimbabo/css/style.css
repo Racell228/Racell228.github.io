@@ -2750,6 +2750,9 @@ select {
 .header_logo_image_mobile {
 	display: none;
 }
+.mobile_menu_step {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
     	font-size: 0.06058383vw;
