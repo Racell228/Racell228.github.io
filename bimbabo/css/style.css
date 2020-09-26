@@ -3551,6 +3551,9 @@ select {
 		display: block;
 		margin-right: 5rem;
 	}
+	.header_cart_body:after {
+		display: none;
+	}
 }
 @media screen and (max-width: 480px) {
 	html {
