@@ -1789,7 +1789,6 @@ p {
 }
 
 .single_left-hero {
-	margin-top: 20rem;
 	margin-bottom: 40rem;
 	display: flex;
 	justify-content: space-between;
@@ -3333,6 +3332,7 @@ select {
 	.single_left-hero {
 		width: 100%;
 		flex-wrap: wrap;
+		margin-top: 20rem;
 	}
 	.single_left-hero div {
 		width: 50%;
