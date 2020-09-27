@@ -10,8 +10,8 @@ $(document).ready(function(){
     arrows:true,
     prevArrow: '<button type="button" class="left slider_arrow"></button>',
     nextArrow: '<button type="button" class="right slider_arrow"></button>',
-    // autoplay:true,
-    // autoplaySpeed: 10000,
+    autoplay:true,
+    autoplaySpeed: 10000,
   });
 });
 $(document).ready(function() {
@@ -236,3 +236,29 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     });
   });  
 }
+$(document).ready(function() {
+    $('.index_banner_btn,.arrow_next').click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({scrollTop: 700 },"slow");
+    });
+  });
+
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if(height > 200){
+$('.single_right').addClass('single_fixed');
+} else{
+  $('.single_right').removeClass('single_fixed');
+}
+});
+
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+var top = $('.single_overlay').height();
+if(height > top - 400){
+  $('.single_right').addClass('single_absolute');
+} else{
+  $('.single_right').removeClass('single_absolute');
+}
+});
+
