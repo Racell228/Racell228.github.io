@@ -2270,6 +2270,24 @@ input[type="number"] {
 	border-radius: 10rem;
 }
 .busket_new_promo {
+	width: calc(100% - 31rem);
+}
+.busket_promo_overlay {
+	width: 100%;
+	position: relative;
+}
+.busket_promo_btn {
+	position: absolute;
+    right: -3rem;
+    top: 0;
+    width: 263rem;
+    text-align: center;
+}
+.busket_new_points_btn {
+	opacity: 0.4;
+	margin-top: 0;
+}
+.busket_new_points {
 	width: 100%;
 }
 .busket_new_details {
@@ -3462,6 +3480,9 @@ select {
 	.busket_new_submit {
 		width: 263rem;
 	}
+	.busket_promo_btn {
+		width: 263rem;
+	}
 	.jq-selectbox__dropdown {
 		width: 100%!important;
 	}
@@ -3941,6 +3962,12 @@ select {
 	.signin_body_or {
 		margin: 35rem 0 25rem;
 		font-size: 18rem;
+	}
+	.busket_promo_btn {
+		position: static;
+		display: block;
+	    width: 100%;
+	    margin-top: 20rem;
 	}
 	/*
 		category
