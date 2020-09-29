@@ -1318,7 +1318,7 @@ header {
 
 
 footer {
-	margin-top: 50rem;
+	margin-top: 100rem;
 	background-color: #2A1B3C;
 	padding: 60rem 0;
 	display: block!important;
@@ -2966,6 +2966,9 @@ select {
 	}
 	.articles_item-text {
 		white-space: normal;
+	}
+	footer {
+		margin-top: 50rem;
 	}
 	.footer_items {
 		flex-wrap: wrap;
