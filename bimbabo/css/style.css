@@ -2967,9 +2967,7 @@ select {
 	.articles_item-text {
 		white-space: normal;
 	}
-	footer {
-		margin-top: 50rem;
-	}
+
 	.footer_items {
 		flex-wrap: wrap;
 	}
@@ -3789,6 +3787,9 @@ select {
 	.articles_item-title {
 		margin-top: 30rem;
 	}
+	footer {
+		margin-top: 50rem;
+	} 
 	.footer_logo {
 		text-align: center;
 	}
