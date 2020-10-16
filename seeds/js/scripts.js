@@ -306,14 +306,35 @@ $(document).ready(function() {
       $('html,body').addClass('modal_overflow');
   });
 });
+
 $(document).ready(function() {
   $('.review-modal_close').click(function(event) {
       event.preventDefault();
-      $('.modal_card').hide();
+      $('.modal_card,.modal_fast_buy,.modal_signin').hide();
       $('html,body').removeClass('modal_overflow');
   });
 });
-
+$(document).ready(function() {
+  $('.signup').click(function(event) {
+      event.preventDefault();
+      $('.modal_signup-js').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.card_descr_discount_actions_fastbuy').click(function(event) {
+      event.preventDefault();
+      $('.modal_fast_buy').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
+$(document).ready(function() {
+  $('.signin').click(function(event) {
+      event.preventDefault();
+      $('.modal_signin-js').show();
+      $('html,body').addClass('modal_overflow');
+  });
+});
 
 $(document).ready(function() {
   $('.feedback_head_active-btn').click(function(event) {
@@ -371,4 +392,34 @@ $(document).ready(function() {
       event.preventDefault();
       $(this).find('.header_search').toggle(500);
   });
+});
+
+
+$(document).ready(function() {
+  $('.account_item:first-child').show();
+  $('.account_nav_item').click(function(event) {
+    event.preventDefault();
+      $(this).addClass('active').siblings().removeClass('active');
+      var id = $(this).attr('href');
+      $(id).fadeIn(0).siblings(0).fadeOut(0);
+  });
+});
+
+
+
+$('img.img-svg').each(function(){
+  var $img = $(this);
+  var imgClass = $img.attr('class');
+  var imgURL = $img.attr('src');
+  $.get(imgURL, function(data) {
+    var $svg = $(data).find('svg');
+    if(typeof imgClass !== 'undefined') {
+      $svg = $svg.attr('class', imgClass+' replaced-svg');
+    }
+    $svg = $svg.removeAttr('xmlns:a');
+    if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+      $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+    }
+    $img.replaceWith($svg);
+  }, 'xml');
 });

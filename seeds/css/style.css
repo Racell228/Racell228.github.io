@@ -3046,7 +3046,235 @@ Finder
 .search_page_title {
 	margin-top: 40rem;
 }
-
+.modal_fast_buy_content {
+	position: fixed;
+	top: 20rem;
+	left: calc(50% - 570rem);
+	background-color: #fff;
+	padding: 35rem;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	width: 1070rem;
+	z-index: 99999;
+}
+.modal_fast_buy_image_item {
+	width: 370rem;
+}
+.modal_fast_buy_flex {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 40rem;
+}
+.modal_fast_buy_image {
+	margin-right: 30rem;
+}
+.modal_fast_buy_flex .card_descr_info_item  {
+	flex-direction: column;
+	margin-top: 0;
+}
+.modal_fast_buy_flex .card_descr_info_item-overlay {
+	margin-top: 10rem;
+}
+.modal_fast_buy_opt {
+	position: relative;
+	margin-top: 55rem;
+}
+.modal_fast_buy_opt .card_descr_sale-descr {
+	top: 10rem;
+}
+.modal_fast_buy_opt .card_descr_sale-overlay {
+	margin-top: 20rem;
+	flex-wrap: wrap;
+}
+.modal_fast_buy_opt .card_descr_sale-item {
+	margin-top: 10rem;
+}
+.modal_fast_buy_info .card_descr_discount_left {
+	margin-top: 36rem;
+}
+.modal_fast_buy_form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20rem;
+}
+.modal_fast_buy_form_item_input {
+	border: 1px solid #C8C8C8;
+	border-radius: 4px;
+	width: 100%;
+	height: 48rem;
+}
+.modal_fast_buy_form_item {
+	width: 513rem;
+	margin-top: 30rem;
+}
+.modal_fast_buy_form_item_label {
+	margin-bottom: 10rem;
+	display: block;
+}
+.modal_fast_buy_form_submit {
+	width: 100%;
+}
+.modal_fast_buy_form_submit_item {
+	background: #1F1F1F;
+    font-size: 18rem;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 700;
+    padding: 15rem 0;
+    width: 300rem;
+    display: block;
+    margin: 50rem auto 0;
+    border: none;
+}
+.sign_in_input {
+	border: 1px solid #C8C8C8;
+    border-radius: 4px;
+    width: calc(100% - 20rem);
+    height: 48rem;
+    padding-left: 20rem;
+}
+.modal_signin_content {
+    width: 640rem;
+    padding: 40rem;
+    left: calc(50% - 350rem);
+}
+.modal_signin_title {
+	margin-bottom: 10rem;
+}
+.modal_signin_label {
+	margin-top: 30rem;
+}
+.sign_in_password_overlay {
+	display: flex;
+	justify-content: space-between;
+}
+.sign_in_password_forget {
+	margin-top: 30rem;
+	margin-bottom: 10rem;
+	color: #24A300;
+}
+.sign_in_btn {
+	color: #fff;
+    font-size: 18rem;
+    padding: 15rem 0;
+    text-align: center;
+    background-color: #1F1F1F;
+    border-radius: 40px;
+    width: 367rem;
+    font-weight: 700;
+    margin: 40rem auto;
+}
+.sign_in_signup_title {
+	margin: auto;
+	text-align: center;
+}
+.sign_in_signup_btn {
+	color: #24A300;
+	margin: 8rem auto 0;
+	display: block;
+	font-size: 18rem;
+	text-align: center;
+}
+.modal_signup_politic {
+	margin-top: 42rem;
+}
+.modal_signup_politic_href {
+	color: #24A300;
+	display: inline;
+}
+.modal_signup_content {
+	height: 80%;
+	overflow: auto;
+}
+.account_head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 40rem 0;
+}
+.account_out {
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 14rem 0;
+    border-radius: 40px;
+    width: 214rem;
+}
+.account_nav {
+	display: flex;
+	align-items: center;
+	margin-bottom: 70rem;
+}
+.account_nav_item_image {
+	height: 54rem;
+	display: block;
+	margin: auto;
+}
+.account_nav_item {
+	padding: 34rem 20rem 20rem;
+	width: 222rem;
+	text-align: center;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.24);
+	border-radius: 6px;
+	margin-right: 30rem;
+	cursor: pointer;
+	display: block;
+}
+.account_nav_item_title {
+	margin-top: 30rem;
+	color: #000;
+}
+.account_personal_item {
+	width: 400rem;
+	margin-right: 40rem;
+}
+.account_personal {
+	display: flex;
+	width: 1320rem;
+	flex-wrap: wrap;
+}
+.account_item_title {
+	width: 100%;
+}
+.account_item_subtitle {
+	margin-top: 70rem;
+}
+.account_personal_btn {
+	font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 14rem 0;
+    border-radius: 40px;
+    width: 400rem;
+    margin-top: 60rem;
+}
+.account_personal_btn_overlay {
+	width: 100%;
+}
+.account {
+	margin-bottom: 100rem;
+}
+.account_personal_password {
+	display: block;
+}
+.price_table-btn_date {
+	color: #000;
+	font-weight: 500;
+	font-size: 18rem;
+}
+.account_item {
+	display: none;
+}
+.account_nav_item.active .account_nav_item_image{
+	fill: #24A300;
+}
+.account_nav_item.active .account_nav_item_title {
+	font-weight: 600;
+}
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
@@ -3572,6 +3800,9 @@ Finder
 		width: 20rem;
 		height: 20rem;
 		background-size: 20rem;
+	}
+	.account_out {
+		width: 284rem;
 	}
 
 }
@@ -4645,6 +4876,59 @@ Finder
 	.search_page_form_checkbox {
     	margin-top: 30rem;
 	}
+	.modal_fast_buy_content {
+	    left: calc(50% - 350rem);
+	    width: 640rem;
+	    overflow-y: auto;
+   	 	height: 80%;
+	}
+	.modal_fast_buy_flex {
+		flex-direction: column;
+	}
+	.modal_fast_buy_flex .card_descr_info_item {
+		position: static;
+		margin-top: 40rem;
+	}
+	.modal_fast_buy_image {
+		margin: auto;
+	}
+	.modal_fast_buy_opt {
+		margin-top: 40rem;
+	}
+	.modal_fast_buy_form_item {
+		width: 100%;
+	}
+	.account_nav_item {
+		margin-right: 0;
+		width: 130rem;
+	}
+	.account_nav {
+		justify-content: space-between;
+	}
+	.account_nav_item_image {
+		height: 27rem;
+	}
+	.account_nav_item_title {
+		margin-top: 20rem;
+	}
+	.account_personal_item {
+		width: 360rem;
+		margin-right: 0;
+	}
+	.account_personal {
+		width: auto;
+		justify-content: space-between;
+	}
+	.account_personal_btn {
+		width: 360rem;
+	}
+	.sign_in_btn {
+		width: 100%;
+	}
+	.modal_signin_content {
+		left: calc(50% - 360rem);
+		height: 80%;
+	}
 }
 @media screen and (max-width: 450px)  {
 	html {
@@ -5341,6 +5625,65 @@ Finder
 	.search_page_form .form_bottom_buy {
     	width: 100%;
     	margin-left: 0;
+	}
+	.modal_fast_buy_image_item {
+    	width: 100%;
+	}	
+	.modal_fast_buy_content {
+		left: calc(50% - 175rem);
+    	width: 310rem;
+    	padding: 20rem;
+	}
+	.modal_fast_buy_flex {
+		margin-top: 20rem;
+	}
+	.modal_fast_buy_flex .card_descr_info_item {
+		margin-top: 20rem;
+	}
+	.modal_fast_buy_opt {
+   	 	margin-top: 20rem;
+	}
+	.modal_fast_buy_opt .card_descr_sale-descr {
+		position: static;
+	}
+	.modal_fast_buy_opt .card_descr_sale-item {
+		padding: 8rem 15rem;
+	}
+	.modal_fast_buy_info .card_descr_discount_quanity {
+    	margin-right: 20rem;
+	} 
+	.modal_fast_buy_form_item {
+		margin-top: 20rem;
+	}
+	.modal_fast_buy_form {
+		margin-top: 0;
+	}
+	.modal_fast_buy_info .card_descr_discount_left {
+	    margin-top: 20rem;
+	}
+	.modal_fast_buy_form_submit_item {
+		margin: 20rem auto 0;
+	}
+	.account_nav {
+		flex-wrap: wrap;
+		margin-bottom: 60rem;
+	}
+	.account_nav_item {
+		margin-top: 18rem;
+		width: 125rem;
+	}
+	.account_head {
+		margin: 40rem 0 20rem;
+	}
+	.account_personal_subscribe {
+		margin-top: 20rem;
+	}
+	.account_personal_btn {
+		margin-top: 20rem;
+		width: 345rem;
+	}
+	.account_personal_item {
+		width: 100%;
 	}
 }
 #live-search .product-name {
