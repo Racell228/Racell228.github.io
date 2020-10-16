@@ -1133,6 +1133,9 @@ footer {
     background-size: contain;
     top: 0;
 }
+.index_description-text_mobile {
+    display: none;
+}
 .index_description-img {
     width: 1240rem;
     margin: auto;
@@ -1277,6 +1280,9 @@ footer {
 .index_review-item-img {
     width: 90rem;
     margin-right: 30rem;
+}
+.index_review-item-text {
+    width: calc(100% - 120rem);
 }
 .index_review-item p {
     color: #fff;
@@ -1439,16 +1445,20 @@ footer {
 		margin-left: 40rem;
 		margin-top: 20rem;
 	}
+    .client_steps-item-pin-mob {
+        top: 70rem;
+    }
 	.client_steps-item {
 		margin-top: 50rem;
+        align-items: flex-start;
 	}
     .client_steps-item b {
         font-weight: 600;
     }
 	.client_steps-items:before {
 		width: 2rem;
-    	height: calc(100% - 50rem);
-    	top: 50rem;
+    	height: calc(100% - 120rem);
+        top: 120rem;
     	left: 10rem;
 	}
 	.client_faq {
@@ -1993,7 +2003,7 @@ footer {
     .parent_promotion-text {
         margin: 60rem auto 30rem;
         width: calc(100% - 90rem);
-        padding: 10rem 25rem 25rem;
+        padding: 35rem 25rem;
     }
     .parent_promotion-text-paragraph {
         margin: 20rem 0;
@@ -2061,7 +2071,7 @@ footer {
 
     /*Index*/
     .index_description {
-        padding: 60rem 0 100rem;
+        padding: 60rem 0 70rem;
         border-radius: 30rem 30rem 0 0;
         margin-top: -40rem;
         overflow: hidden;
@@ -2086,13 +2096,19 @@ footer {
         background-color: #fff;
         border-radius: 20rem;
         padding: 30rem 25rem;
-        margin-bottom: 35rem;
+        margin-bottom: 30rem;
     }
     .index_description-text p:last-child {
         margin-bottom: 0;
     }
     .index_description-img {
         order: 2;
+    }
+    .index_description-text_desktop {
+        display: none;
+    }
+    .index_description-text_mobile {
+        display: block;
     }
     .index_selector {
         padding: 60rem 0 100rem;
@@ -2143,13 +2159,20 @@ footer {
         position: relative;
     }
     .index_review-title {
-        margin-bottom: 10rem;
+        margin-bottom: 30rem;
         text-align: center;
     }
     .index_review-item {
         padding: 25rem;
         flex-wrap: wrap;
         text-align: center;
+        margin: 0 10rem;
+    }
+    .index_review .container {
+        width: 355rem;
+    }
+    .index_review-item-text {
+        width: 100%;
     }
     .index_review-item-img {
         margin: 0 auto 20rem;
@@ -2169,14 +2192,15 @@ footer {
         background-image: url(../img/slider_arrow.png);
         background-size: cover;
         background-repeat: no-repeat;
+        z-index: 9999;
 
     }
     .slick-arrow.left {
-        left:5rem;
+        left:12rem;
         transform: rotate(-90deg);
     }
     .slick-arrow.right {
-        right:5rem;
+        right:11rem;
         transform: rotate(90deg);
     }
     .slick-dots button {
