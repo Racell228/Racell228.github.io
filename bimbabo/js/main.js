@@ -186,11 +186,20 @@ $(document).ready(function() {
 }); 
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-    $(document).ready(function() {
+     $(document).ready(function() {
     $('.header_catalog').click(function(event) {
+        event.preventDefault();
+        $('.mobile_menu_step0').show(400);
+        $('html,body').addClass('hidden');
+    });
+  }); 
+
+    $(document).ready(function() {
+    $('.mobile_menu_category').click(function(event) {
         event.preventDefault();
         $('.mobile_menu_step1').show(400);
         $('html,body').addClass('hidden');
+        $('.mobile_menu_step0').hide(400);
     });
   });  
     $(document).ready(function() {
@@ -211,12 +220,23 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     });
   });  
     $(document).ready(function() {
+    $('.mobile_menu_step_back0').click(function(event) {
+        event.preventDefault();
+        $('.mobile_menu_step0').show(400);
+        $('html,body').addClass('hidden');
+        $('.mobile_menu_step3').hide(400);
+        $('.mobile_menu_step2').hide(400);
+        $('.mobile_menu_step1').hide(400);
+    });
+  }); 
+    $(document).ready(function() {
     $('.mobile_menu_step_back2').click(function(event) {
         event.preventDefault();
         $('.mobile_menu_step2').show(400);
         $('html,body').addClass('hidden');
         $('.mobile_menu_step1').hide(400);
         $('.mobile_menu_step3').hide(400);
+        $('.mobile_menu_step0').hide(400);
     });
   }); 
     $(document).ready(function() {
@@ -226,12 +246,13 @@ if (window.matchMedia("(max-width: 768px)").matches) {
         $('html,body').addClass('hidden');
         $('.mobile_menu_step3').hide(400);
         $('.mobile_menu_step2').hide(400);
+        $('.mobile_menu_step0').hide(400);
     });
   }); 
     $(document).ready(function() {
     $('.mobile_menu_close').click(function(event) {
         event.preventDefault();
-        $('.mobile_menu_step1,.mobile_menu_step2,.mobile_menu_step3').hide(400);
+        $('.mobile_menu_step1,.mobile_menu_step2,.mobile_menu_step3,.mobile_menu_step0').hide(400);
         $('html,body').removeClass('hidden');
     });
   });  
