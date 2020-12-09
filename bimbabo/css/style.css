@@ -2336,9 +2336,7 @@ input[type="number"] {
 	top: 54rem!important;
 }
 
-select {
-	display: none;
-}
+
 .quantity-block_busket {
 	width: 90rem;
 	padding: 5rem 0;
