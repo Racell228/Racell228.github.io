@@ -464,6 +464,7 @@ header {
 .header_cart_body_total {
 	display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header_cart_body_total_link {
 	font-size: 16rem;
@@ -4355,8 +4356,13 @@ input[type="number"] {
 	right: 630rem;
 }
 .add .thank_order-products-item {
-	margin: 30rem 0;
 	border-top: 1px solid #E8E8E8;
+}
+.add_title {
+	margin-bottom: 30rem;
+}
+.add .header_cart_body_total {
+	margin-top: 30rem;
 }
 @media screen and (max-width: 992px) {
 	.add .modal_close {
@@ -4378,5 +4384,12 @@ input[type="number"] {
 	}
 	.add .modal_close {
     	right: 0rem;
+	}
+	.add_title {
+		text-align: center;
+		margin-bottom: 20rem;
+	}
+	.add .header_cart_body_total {
+		margin-top: 20rem;
 	}
 }

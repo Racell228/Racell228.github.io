@@ -118,16 +118,23 @@ $(document).ready(function(){
 }
 
 $(document).ready(function() {
-  $('.hero_text_btn').click(function(event) {
+  $('.decision_btn').click(function(event) {
       event.preventDefault();
-        $('.modal').show();
+        $('.modal_lesen').show();
+        $('html,body').addClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.company_content_btn').click(function(event) {
+      event.preventDefault();
+        $('.modal_company').show();
         $('html,body').addClass('hidden');
   });
 });
 $(document).ready(function() {
   $('.modal_close').click(function(event) {
       event.preventDefault();
-        $('.modal').hide();
+        $('.modal_lesen,.modal_company').hide();
         $('html,body').removeClass('hidden');
   });
 });

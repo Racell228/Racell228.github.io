@@ -69,6 +69,12 @@ a {
 	border-radius: 100rem;
 	font-weight: 700;
 	margin-right: 20rem;
+	transition: 0.4s;
+}
+.header_button_login:hover {
+	border: 2px solid #02283F;
+	color: #02283F;
+	transition: 0.4s;
 }
 .header_button_registration {
 	padding: 13rem 36rem;
@@ -660,6 +666,9 @@ h5 {
 .company_image {
 	position: relative;
 }
+.company_image_img {
+	width: 610rem;
+}
 .questions {
 	padding: 100rem 0;
 	background: #F7F8FE;
@@ -717,17 +726,15 @@ h5 {
 	transition: 0.5s;
 }
 .question_btn {
-	display: flex;
-    align-items: center;
-    padding: 21rem 0;
+	padding: 23rem 36rem;
+    border: 2px solid #1E4BFF;
     color: #fff;
     background-color: #1E4BFF;
     font-weight: 700;
     border-radius: 100rem;
-    text-align: center;
-    width: 260rem;
     margin: 50rem auto 0;
-    justify-content: center;
+    width: 270rem;
+    text-align: center;
 }
 .question_bg {
 	position: absolute;
@@ -805,7 +812,6 @@ h5 {
 	padding: 40rem 45rem;
 	margin: auto;
 	background-color: #fff;
-	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
 	border-radius: 10px;
 	text-align: center;
 }
@@ -828,12 +834,13 @@ h5 {
 	border: none;
 	background-color: transparent;
 	background-image: url(../img/slider_arrow_active.svg);
-	background-size: cover;
+	background-size: 50rem;
 	width: 50rem;
 	height: 50rem;
 	position: absolute;
 	top: calc(50% - 25rem);
 	z-index: 9;
+	cursor: pointer;
 }
 .slick-disabled {
 	background-image: url(../img/slider_arrow_disable.svg);
@@ -1206,10 +1213,12 @@ Text page
 }
 .text_page_title {
 	text-align: center;
+
 }
 .text_page_subtitle {
 	text-align: center;
-	margin-top: 10rem;
+	max-width: 720rem;
+	margin: 10rem auto 0;
 }
 .text_page_content {
 	margin: 60rem auto 0;
@@ -1278,6 +1287,7 @@ Modal
 	position: absolute;
 	top: 30rem;
 	right: 30rem;
+	cursor: pointer;
 }
 .hidden {
 	overflow: hidden;
@@ -1326,17 +1336,22 @@ Modal
 	.losung_wrapper {
 		flex-direction: column;
 	}
+	.video_bg  {
+		top: 203rem;
+    	right: 10rem;
+	}
 	.losung_item {
 	    width: auto;
 	    margin-left: 20rem;
 	    position: relative;
 	    display: flex;
     	align-items: center;
+    	margin-top: 10rem;
 	}
 	.losung_items_line {
-		width: 170rem;
-	    top: 115rem;
-	    left: -55rem;
+		width: 210rem;
+	    top: 155rem;
+	    left: -75rem;
 	    transform: rotate(90deg);
 	}
 	.losung_item_circle {
@@ -1359,10 +1374,11 @@ Modal
 		padding: 0 40rem 40rem;
 	}
 	.economic_table_head {
-	    width: 560rem;
+	    width: 580rem;
 	}
 	.economic_table_body {
-		width: 530rem;
+		width: 580rem;
+		padding: 26rem 40rem;
 	}
 	.economic_table_body_item {
     	width: 140rem;
@@ -1387,6 +1403,9 @@ Modal
 		width: 400rem;
 		margin: auto;
 	}
+	.risk_content_nav_item {
+		padding-bottom: 14rem;
+	}
 	.risk_content_text {
 		margin-top: 40rem;
 	}
@@ -1398,10 +1417,12 @@ Modal
     	margin-top: 40rem;
 	}
 	.help_item_big {
-    	width: 100%;
+    	width: 80%;
+    	margin: 50rem auto 0;
 	} 
 	.help_item_small {
-		width: 100%;
+		width: 80%;
+    	margin: 50rem auto 0;
 	}
 	.company_overlay {
 		flex-direction: column-reverse;
@@ -1577,11 +1598,15 @@ Modal
 		margin:0 auto auto;
 	}
 	.header_button_registration {
-		margin-top: 30rem;
+		margin-top: 15rem;
+		width: 230rem;
+		text-align: center;
 	}
 	.header_button_login {
-		margin-top: 30rem;
+		margin-top: 50rem;
 		margin-right: 0;
+		width: 230rem;
+		text-align: center;
 	}
 	.header_nav_link {
 		margin-left: 0;
@@ -1870,7 +1895,7 @@ Modal
 	    margin-top: 30rem;
 	}
 	.help {
-		padding: 60rem 0;
+		padding: 60rem 0 50rem;
 	}
 	.help_item_content {
 		position: static;
@@ -1899,9 +1924,10 @@ Modal
 	.slider_arrow {
 		width: 40rem;
 		height: 40rem;
+		background-size: 40rem;
 	}
 	.company {
-		padding: 60rem 0;
+    	padding: 0 0 60rem;
 	}
 	.company_bg {
 		display: none;
@@ -1964,6 +1990,12 @@ Modal
 	}
 	.review_slider {
 		width: 100%;
+	}
+	.left_review {
+    	left: -10rem;
+	}
+	.right_rewiew {
+    	right: -10rem;
 	}
 	.review_slider_item_author {
 		font-size: 14rem;
