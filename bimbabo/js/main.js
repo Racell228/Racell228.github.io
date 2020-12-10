@@ -108,9 +108,16 @@ $(document).ready(function() {
   });
 });  
 $(document).ready(function() {
+  $('.products_item_buy').click(function(event) {
+      event.preventDefault();
+      $('.add').show(400);
+      $('html,body').addClass('hidden');
+  });
+});  
+$(document).ready(function() {
   $('.modal_close').click(function(event) {
       event.preventDefault();
-     $('.fastbuy,.politic').hide(400);
+     $('.fastbuy,.politic,.add').hide(400);
     $('html,body').removeClass('hidden');
   });
 });  

@@ -2825,6 +2825,7 @@ input[type="number"] {
 .busket_title {
 	display: none;
 }
+
 @media screen and (max-width: 992px) {
 	html {
     	font-size: 0.06058383vw;
@@ -4342,4 +4343,40 @@ input[type="number"] {
 		margin-bottom: 0;
 	}
 
+}
+
+.add .modal_content {
+	width: 480rem;
+	left: calc(50% - 280rem);
+	max-height: 530rem;
+    overflow: auto;
+}
+.add .modal_close {
+	right: 630rem;
+}
+.add .thank_order-products-item {
+	margin: 30rem 0;
+	border-top: 1px solid #E8E8E8;
+}
+@media screen and (max-width: 992px) {
+	.add .modal_close {
+    	right: 480rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.add .modal_close {
+    	right: 50rem;
+	}
+	.add .modal_content {
+		max-height: 60%;
+	}
+}
+@media screen and (max-width: 480px)  {
+	.add .modal_content {
+	    width: 300rem;
+	    left: calc(50% - 170rem);
+	}
+	.add .modal_close {
+    	right: 0rem;
+	}
 }

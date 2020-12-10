@@ -18,7 +18,7 @@ body {
 	width: 1240rem;
 	margin: auto;
 }
-h1,h2,h3,h4,h5,p {
+h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 	padding: 0;
 }
@@ -703,6 +703,7 @@ h5 {
 .question_item_question_arrow.active {
 	transition: 0.5s;
 	transform: rotate(270deg);
+	color: #1E4BFF;
 }
 .question_item_answer {
 	margin-top: 15rem;
@@ -1068,6 +1069,221 @@ footer {
 	justify-content: space-between;
 	width: 768rem;
 }
+.economic_table_body_item_label {
+	display: none;
+}
+/****
+
+	Contacts
+
+****/
+.contact_title {
+	text-align: center;
+}
+.contact_subtitle {
+	text-align: center;
+	margin-top: 10rem;
+}
+.contact {
+	margin-top: 70rem;
+}
+.contact_input {
+	padding: 19rem 0 19rem 20rem;
+	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+	border-radius: 10px;
+	border: none;
+	background-color: #fff;
+	font-size: 18rem;
+	color: #728896;
+	font-family: 'Gilroy';
+	margin-top: 20rem;
+	display: block;
+}
+.contact_input_small {
+	width: 330rem;
+}
+.contact_input_big {
+	width: 100%;
+}
+.contact_input_textarea {
+	width: 100%;
+	height: 140rem;
+}
+.contact_inputs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 720rem;
+	padding: 50rem;
+	background-color: #F7F8FE;
+	border-radius: 20px 0px 0px 20px;
+}
+.contact_input_submit {
+	padding: 23rem 36rem;
+    border: 2px solid #1E4BFF;
+    color: #fff;
+    background-color: #1E4BFF;
+    font-weight: 700;
+    border-radius: 100rem;
+    margin: 20rem auto 0;
+    width: 350rem;
+    font-family: 'Gilroy';
+    font-size: 18rem;
+    text-align: center;
+}
+.contact_overlay {
+	margin-top: 60rem;
+	display: flex;
+}
+.contact_items_item_image {
+	width: 25rem;
+	margin-right: 25rem;
+}
+.contact_items_item_link {
+	font-size: 16rem;
+	color: #fff;
+	font-weight: 300;
+}
+.contact_items_item {
+	display: flex;
+	margin-top: 30rem;
+	align-items: end;
+}
+.contact_items {
+	background: #1E4BFF;
+	border-radius: 0px 20px 20px 0px;
+	padding: 50rem;
+	position: relative;
+}
+.contact_items_title {
+	color: #fff;
+	font-size: 28rem;
+	margin-bottom: 40rem;
+}
+.contact_bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 340rem;
+}
+
+
+
+/*******
+
+Question
+
+******/
+
+
+.question_head_overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 60rem;
+}
+.question_head_image_item {
+	width: 569rem;
+	margin-left: 84rem;
+}
+.question_head_text_text {
+	margin-top: 30rem;
+}
+.question_head {
+	margin-bottom: 100rem;
+}
+
+
+
+/*******
+
+Text page
+
+******/
+
+.text_page {
+	margin-top: 70rem;
+}
+.text_page_title {
+	text-align: center;
+}
+.text_page_subtitle {
+	text-align: center;
+	margin-top: 10rem;
+}
+.text_page_content {
+	margin: 60rem auto 0;
+	padding: 50rem;
+	width: 720rem;
+	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+	border-radius: 20px;
+	background: #fff;
+}
+.text_page_content_title {
+	font-size: 28rem;
+	color: #02283F;
+	flex-wrap: 700;
+	margin-bottom: 20rem;
+}
+h6 {
+	font-size: 18rem;
+	margin-top: 30rem;
+	color: #728896;
+	margin-top: 30rem;
+	font-weight: 400;
+}
+
+/********
+
+Modal
+
+********/
+
+
+
+
+.modal {
+	display: none;
+}
+.modal_overlay {
+	background-color: rgba(247,248,254, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 999;
+}
+.modal_content {
+	position: fixed;
+	top: 100rem;
+	left: calc(50% - 410rem);
+	width: 720rem;
+	padding: 50rem;
+	background-color: #fff;
+	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+	border-radius: 10px;
+	z-index: 9999;
+	height: 390rem;
+    overflow: auto;
+}
+.modal_content p {
+	margin-top: 30rem;
+}
+.modal_title {
+	font-size: 28rem;
+}
+.modal_close {
+	width: 25rem;
+	position: absolute;
+	top: 30rem;
+	right: 30rem;
+}
+.hidden {
+	overflow: hidden;
+}
+
+
 @media screen and (max-width: 992px) {
 	html {
     	font-size: 0.07138383vw;
@@ -1365,6 +1581,7 @@ footer {
 	}
 	.header_button_login {
 		margin-top: 30rem;
+		margin-right: 0;
 	}
 	.header_nav_link {
 		margin-left: 0;
@@ -1373,6 +1590,65 @@ footer {
 	}
 	.hidden {
 		overflow: hidden;
+	}
+	/******
+
+	Contact
+
+	******/
+
+	.contact_overlay {
+		flex-direction: column;
+	}
+	.contact_inputs {
+		width: calc(100% - 100rem);
+		border-radius: 20px;
+	}
+	.contact_input_small {
+		width: 100%;
+	}
+	.contact_items {
+		border-radius: 20px;
+	}
+
+
+	/*******
+
+	Question
+
+	******/
+	.question_head_overlay {
+		flex-direction: column;
+	}
+	.question_head_text_title {
+		text-align: center;
+	}
+	.question_head_image {
+		width: 100%;
+		margin-top: 40rem;
+	}
+	.question_head_image_item {
+		margin-left: 0;
+		width: 100%;
+	}
+	/*******
+
+	Text_page
+
+	******/
+	.text_page_content {
+		margin: 40rem auto 0;
+		width: calc(100% - 100rem);
+	}
+	/*******
+
+	Modal
+
+	******/
+	.modal_content {
+		left: calc(50% - 350rem);
+    	width: 600rem;
+    	top: 50rem;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -1523,6 +1799,35 @@ footer {
 	}
 	.economic_table {
 		margin-top: 30rem;
+		padding: 30rem 20rem;
+	}
+	.economic_table_body_item_label {
+		display: block;
+		color: #728896;
+		font-size: 14rem;
+		margin-top: 20rem;
+		margin-bottom: 5rem;
+	}
+	.economic_table_body_item_label:first-child {
+		margin-top: 0;
+	}
+	.economic_table_body {
+		width: 235rem!important;
+		flex-direction: column;
+		border-radius: 10rem;
+		padding: 30rem;
+	}
+	.economic_table {
+		width: 100%;
+	}
+	.economic_table_head {
+		display: none!important;
+	}
+	.economic_table_btn  {
+		display: none!important;
+	}
+	.economic_table_body:nth-child(n+4) {
+		display: flex;
 	}
 	.progress {
 		padding: 60rem 0;
@@ -1652,5 +1957,185 @@ footer {
 	}
 	.review {
 		padding: 60rem 0;
+	}
+	.review_slider_item  {
+		width: 255rem;
+		padding: 35rem 40rem 40rem;
+	}
+	.review_slider {
+		width: 100%;
+	}
+	.review_slider_item_author {
+		font-size: 14rem;
+	}
+	.review_slider_item_img {
+		width: 100rem;
+	}
+	.review_slider_item_text {
+		margin: 15rem 0;
+	}
+	.review_partners {
+		margin-top: 40rem;
+		flex-wrap: wrap;
+	}
+	.review_company1 {
+		display: none;
+	}
+	.review_partners img {
+		margin-top: 20rem;
+	}
+	.partners {
+		padding: 60rem 0;
+	}
+	.partners_item {
+		max-width: 100%;
+	}
+	.partners_item_image {
+		width: 232rem;
+		margin: auto;
+	}
+	.partners_item_title {
+	    margin-top: 20rem;
+	    margin-bottom: 10rem;
+	}
+	.partners_bg {
+		display: none!important;
+	}
+	.partners .slider_arrow {
+	    top: 140rem;
+	}
+	.partners_btn {
+		margin: 40rem auto 0;
+	}
+	.legislation {
+		padding: 60rem 0;
+	}
+	.legislation_overlay {
+		flex-direction: column;
+	}
+	.legislation_item {
+		margin-right: 0;
+		margin-top: 10rem;
+	}
+	.legislation_overlay {
+		margin-top: 10rem;
+	}
+	.legislation_bg {
+	    top: auto;
+	    right: 13rem;
+	    width: 61rem;
+	    bottom: 50rem;
+	    z-index: 1;
+	}
+	.legislation_overlay {
+		position: relative;
+		z-index: 2;
+	}
+	.footer {
+		padding: 60rem 0;
+	}
+	.footer_bg {
+		display: none;
+	}
+	.footer_bg2 {
+		display: none;
+	}
+	.footer_btn {
+		margin: 30rem auto 0;
+	}
+	.footer_subtitle {
+		margin: 20rem auto 0;
+	}
+	footer {
+		padding: 60rem 0;
+	}
+	.footer_links {
+		width: auto;
+		flex-direction: column;
+	}
+	.footer_links_items {
+		margin-top: 20rem;
+		text-align: center;
+	}
+	.footer_logo {
+	    margin: 0 auto 20rem;
+	}
+	.header_burger.active span:after {
+		bottom: 7rem;
+	}
+	.header_burger.active span:before {
+		top: 10rem;
+	}
+	.slick-dots li {
+		width: 7rem;
+		height: 7rem;
+		margin: 0 7rem;
+	}
+	/******
+
+	Contact
+
+	******/
+
+	.contact_inputs {
+		padding: 20rem;
+		width: calc(100% - 40rem);
+	}
+	.contact_items_item {
+		flex-direction: column;
+	}
+	.contact_items_item_image {
+		margin-right: 0;
+		margin-bottom: 20rem;
+	}
+	/*******
+
+	Text_page
+
+	******/ 
+	.text_page_content {
+		padding: 20rem;
+		width: calc(100% - 40rem);
+	}
+	/*******
+
+	Modal
+
+	******/
+	.modal_content {
+		padding: 25rem;
+		left: calc(50% - 170rem);
+	    width: 285rem;
+	    top: 50rem;
+	    height: 80%;
+	}
+	.modal_close {
+		width: 20rem;
+		top: 10rem;
+    	right: 10rem;
+	}
+	.modal_title {
+		font-size: 24rem;
+	}
+	.decision .slider_arrow{
+		top: 60rem;
+	}
+	.header_button {
+		width: 335rem;
+	}
+	.header_button_login {
+		width: 100%;
+		padding: 12rem 0;
+		text-align: center;
+	}
+	.header_button_registration {
+		width: 100%;
+		text-align: center;
+		padding: 12rem 0;
+	}
+	.btn {
+		width: 100%;
+		padding-left: 0;
+    	padding-right: 0;
 	}
 }

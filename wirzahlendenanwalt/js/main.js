@@ -91,6 +91,43 @@ $(document).ready(function(){
 	  nextArrow: '<button type="button" class="slider_arrow right"></button>'
 	});
 });
+$(document).ready(function(){
+  $('.partners_overlay').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="slider_arrow left"></button>',
+    nextArrow: '<button type="button" class="slider_arrow right"></button>'
+  });
+});
+$(document).ready(function(){
+  $('.economic_table').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<button type="button" class="slider_arrow left"></button>',
+    nextArrow: '<button type="button" class="slider_arrow right"></button>'
+  });
+});
 } else {
   /* the viewport is less than 400 pixels wide */
 }
+
+$(document).ready(function() {
+  $('.hero_text_btn').click(function(event) {
+      event.preventDefault();
+        $('.modal').show();
+        $('html,body').addClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.modal_close').click(function(event) {
+      event.preventDefault();
+        $('.modal').hide();
+        $('html,body').removeClass('hidden');
+  });
+});
