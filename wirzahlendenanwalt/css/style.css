@@ -1,5 +1,5 @@
 html {
-	font-size: 0.069445vw;
+	font-size: 0.061445vw;
 	padding: 0;
 	margin: 0;
 	font-family: 'Gilroy';
@@ -56,15 +56,19 @@ a {
 }
 .header_nav_link {
 	margin-left: 40rem;
+	font-size: 14rem;
 }
 .header_button {
 	display: flex;
 	align-items: center;
 	margin-left: 40rem;
 }
+.hero_title_mobile {
+	display: none;
+}
 .header_button_login {
 	color: #1E4BFF;
-	padding: 12rem 36rem;
+	padding: 8rem 36rem;
 	border: 2px solid #1E4BFF;
 	border-radius: 100rem;
 	font-weight: 700;
@@ -77,7 +81,7 @@ a {
 	transition: 0.4s;
 }
 .header_button_registration {
-	padding: 13rem 36rem;
+	padding: 8rem 36rem;
 	border: 2px solid #1E4BFF;
 	color: #fff;
 	background-color: #1E4BFF;
@@ -1307,6 +1311,12 @@ Modal
 	    width: 728rem;
 	    margin: 0 20rem;
 	}
+	.hero_title_desktop {
+		display: none;
+	}
+	.hero_title_mobile {
+		display: block;
+	}
 	.hero_wrapper {
 		flex-direction: column-reverse;
 	}
@@ -1320,9 +1330,15 @@ Modal
 	    text-align: center;
 	    margin: auto;
 	}
-	.hero_text h1 {
+	.hero_image h1 {
 	    width: 454rem;
-	    margin: auto;
+	    margin: 0 auto 30rem;
+	}
+	.hero_bg {
+		top: 170rem;
+	}
+	.hero_text_p {
+		margin-top: 0;
 	}
 	.hero_text_btn {
 		margin: 50rem auto 0;
@@ -1701,8 +1717,9 @@ Modal
 	h1 {
 		font-size: 32rem;
 	}
-	.hero_text h1 {
+	.hero_image h1 {
 		width: auto;
+		text-align: center;
 	}
 	.hero_text {
 		width: auto;
@@ -1719,9 +1736,10 @@ Modal
 	}
 	.hero {
 		margin-bottom: 50rem;
+		margin-top: 40rem;
 	} 
 	.video {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	h2	{
 		font-size: 28rem;
@@ -1735,7 +1753,7 @@ Modal
 		margin-top: 20rem;
 	}
 	.advantages_wrapper {
-		margin: 60rem auto;
+		margin: 30rem auto 50rem;
 	}
 	.advantages_wrapper {
 		flex-wrap: wrap;
@@ -1750,10 +1768,10 @@ Modal
 		width: 150rem;
 	}
 	.losung {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.losung_wrapper {
-		margin-top: 45rem;
+		margin-top: 0;
 	}
 	.losung_item {
 		margin-left: 0;
@@ -1770,6 +1788,7 @@ Modal
 	.losung_footer {
 	    width: auto;
 	    flex-direction: column;
+	    margin: 40rem auto 0;
 	}
 	.losung_footer_left {
 		border: none;
@@ -1792,10 +1811,10 @@ Modal
 	    left: 30rem;
 	}
 	.quote {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.decision {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.right {    
 		right: 0;
@@ -1820,7 +1839,7 @@ Modal
 		margin-top: 40rem;
 	}
 	.economic {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.economic_table {
 		margin-top: 30rem;
@@ -1855,7 +1874,7 @@ Modal
 		display: flex;
 	}
 	.progress {
-		padding: 60rem 0;
+		padding: 0 0 40rem;
 	}
 	.progress_item {
 		width: 145rem;
@@ -1870,7 +1889,7 @@ Modal
 		font-size: 32rem;
 	}
 	.risk {
-		padding: 60rem 0;
+		padding: 50rem 0 40rem;
 	}
 	.risk_content_nav {
 		width: auto;
@@ -1895,7 +1914,7 @@ Modal
 	    margin-top: 30rem;
 	}
 	.help {
-		padding: 60rem 0 50rem;
+		padding: 50rem 0 40rem;
 	}
 	.help_item_content {
 		position: static;
@@ -1927,7 +1946,7 @@ Modal
 		background-size: 40rem;
 	}
 	.company {
-    	padding: 0 0 60rem;
+    	padding: 0 0 50rem;
 	}
 	.company_bg {
 		display: none;
@@ -1954,7 +1973,7 @@ Modal
     	margin: 30rem auto 0;
 	} 
 	.questions {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	h5 {
 		font-size: 18rem;
@@ -1963,26 +1982,27 @@ Modal
 		display: none;
 	}
 	.safety {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.safety_bg {
 		display: none;
 	}
 	.safety_item {
 		max-width: 100%;
+		margin-top: 30rem;
 	}
 	.safety_item_image {
 		margin: 0 auto 30rem;
 	}
 	.safety .slider_arrow {
-		top: 105rem;
+		top: 65rem;
 	}
 	.safety_btn {
 		margin: 40rem auto 0;
 		width: 250rem;
 	}
 	.review {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.review_slider_item  {
 		width: 255rem;
@@ -1990,6 +2010,7 @@ Modal
 	}
 	.review_slider {
 		width: 100%;
+		margin-top: 40rem;
 	}
 	.left_review {
     	left: -10rem;
@@ -2017,7 +2038,7 @@ Modal
 		margin-top: 20rem;
 	}
 	.partners {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.partners_item {
 		max-width: 100%;
@@ -2040,7 +2061,7 @@ Modal
 		margin: 40rem auto 0;
 	}
 	.legislation {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.legislation_overlay {
 		flex-direction: column;
@@ -2064,7 +2085,7 @@ Modal
 		z-index: 2;
 	}
 	.footer {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.footer_bg {
 		display: none;
@@ -2079,7 +2100,7 @@ Modal
 		margin: 20rem auto 0;
 	}
 	footer {
-		padding: 60rem 0;
+		padding: 50rem 0;
 	}
 	.footer_links {
 		width: auto;
@@ -2169,5 +2190,11 @@ Modal
 		width: 100%;
 		padding-left: 0;
     	padding-right: 0;
+	}
+	.question_head {
+    	margin-bottom: 40rem;
+	}
+	.questions_page {
+    	padding: 1rem 0 60rem;
 	}
 }
