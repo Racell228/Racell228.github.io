@@ -90,7 +90,7 @@ a {
 }
 .hero {
 	margin-top: 50rem;
-	margin-bottom: 100rem;
+	margin-bottom: 70rem;
 }
 header {
 	padding: 20rem 0;
@@ -124,6 +124,7 @@ p {
 .hero_wrapper {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 80rem;
 }
 .hero_image_img {
 	width: 570rem;
