@@ -62,7 +62,12 @@ header {
 	padding: 8rem 21rem;
 	margin-right: 20rem;
 	letter-spacing: 0.2em;
+	transition: 0.5s;
 	text-transform: uppercase;
+}
+.header_buttons_login:hover {
+	color: #FF690F;
+	transition: 0.5s;
 }
 .header_buttons_registration {
 	font-size: 14rem;
@@ -74,6 +79,12 @@ header {
 	border-radius: 100px;
 	padding: 8rem 23rem;
 	font-weight: 700;
+	transition: 0.5s;
+}
+.header_buttons_registration:hover {
+	background-color: #0063A1;
+	border: 2rem solid #0063A1;
+	transition: 0.5s;
 }
 h1 {
 	font-size: 44rem;
@@ -138,6 +149,9 @@ ul li:before {
 }
 .hero_button_overlay {
 	width: 404rem;
+}
+.bold {
+	font-weight: 700;
 }
 .hero_btn_placeholder {
 	font-size: 14rem;
@@ -251,14 +265,13 @@ h2 {
 }
 .news_title {
 	text-align: center;
-	text-transform: uppercase;
 	position: relative;
 	z-index: 2;
 }
 .news {
-	padding: 100rem 0;
+	padding: 80rem 0;
 	background-color: #F0F0FF;
-	margin-top: 100rem;
+	margin-top: 80rem;
 }
 .news_slider {
 	margin-top: 50rem;
@@ -327,8 +340,8 @@ h2 {
 }
 .news_bg {
 	position: absolute;
-	width: 1430rem;
-	top: -100rem;
+	width: 1320rem;
+	top: -80rem;
 	left: -100rem;
 }
 .example_title {
@@ -340,7 +353,7 @@ h2 {
 	margin: 20rem auto 0;
 }
 .example {
-	padding: 140rem 0 120rem;
+	padding: 90rem 0 80rem;
 }
 h5 {
 	font-size: 18rem;
@@ -404,7 +417,6 @@ h5 {
 	max-width: 823rem;
 	text-align: center;
 	margin: auto;
-	text-transform: uppercase;
 }
 .registration {
 	padding: 80rem 0;
@@ -416,7 +428,7 @@ h5 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 342rem;
+	width: 362rem;
 	margin: 40rem auto 0;
 }
 .safety_text {
@@ -496,7 +508,7 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 342rem;
+	width: 362rem;
 }
 .safety_download_item {
 	height: 50rem;
@@ -511,12 +523,12 @@ h5 {
     position: relative;
    	margin-top: -250rem;
    	z-index: 1;
-    padding: 360rem 0 100rem;
+    padding: 310rem 0 60rem;
 }
 .safety_bottom_bg {
 	position: absolute;
 	width: 1432rem;
-	top: 15rem;
+	top: -55rem;
     left: -100rem;
 	z-index: -1;
 }
@@ -532,7 +544,7 @@ h5 {
 	border-radius: 30rem;
 }
 .understand_text {
-	width: 595rem;
+	width: 585rem;
 }
 .understand_text_title {
 	color: #fff;
@@ -556,6 +568,7 @@ h5 {
 	border: none;
 	width: 465rem;
 	cursor: pointer;
+	text-transform: uppercase;
 	margin-top: 20rem
 }
 .understand_image {
@@ -618,12 +631,12 @@ h5 {
 .info {
 	background-image: url(../img/info_bg.svg);
 	background-repeat: no-repeat;
-	padding: 300rem 0 100rem;
+	padding: 300rem 0 80rem;
 	margin-top: -170rem;
 	background-size: cover;
 }
 .clients {
-	padding: 100rem 0;
+	padding: 80rem 0;
 }
 .clients_title {
 	max-width: 820rem;
@@ -648,7 +661,7 @@ h5 {
 .experience {
 	background-image: url(../img/experience_bg.svg);
 	background-size: cover;
-	padding: 100rem 0;
+	padding: 80rem 0 50rem;
 }
 .experience_title {
 	text-align: center;
@@ -748,6 +761,9 @@ h5 {
 }
 .question_item.showall {
 	display: block;
+}
+.question_item_question_title {
+	text-transform: uppercase;
 }
 .question_item_question {
 	display: flex;
@@ -1067,6 +1083,7 @@ footer {
 }
 .close_modal {
 	position: fixed;
+	cursor: pointer;
     width: 30rem;
     top: 120rem;
     z-index: 999999;
