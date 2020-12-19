@@ -1297,8 +1297,174 @@ Modal
 .hidden {
 	overflow: hidden;
 }
-
-
+.login .header_logo{
+	padding-top: 40rem;
+}
+.login_overlay {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.login_left_item {
+	display: flex;
+	align-items: center;
+	max-width: 526rem;
+	margin-top: 40rem;
+}
+.login_left_item_image {
+	width: 100rem;
+    box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+    border-radius: 453px;
+    margin-right: 25rem;
+}
+.login_left_title {
+	margin-top: 70rem;
+	margin-bottom: 10rem;
+}
+.login_left_item_text_text {
+	margin-top: 10rem;
+}
+.login_right {
+	padding: 50rem;
+	background: #F7F8FE;
+	max-width: 500rem;
+	border-radius: 20px 0px 0px 20px;
+}
+.login_right_title {
+	margin-top: 80rem;
+}
+.login_right_subtitle {
+	margin-top: 10rem;
+}
+.login_form {
+	margin-top: 40rem;
+}
+.login_right_input {
+	margin-top: 20rem;
+	display: block;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+	border-radius: 10px;
+	font-size: 18rem;
+	line-height: 151.6%;
+	padding: 18rem 0 18rem 20rem;
+	color: #728896;
+	width: calc(100% - 20rem);
+}
+.login_right_submit {
+	padding: 23rem 36rem;
+    border: 2px solid #1E4BFF;
+    color: #fff;
+    background-color: #1E4BFF;
+    font-weight: 700;
+    border-radius: 100rem;
+    margin-top: 40rem;
+    width: 100%;
+    text-align: center;
+}
+.login_right_register {
+	background: #FFFFFF;
+	border: 2px solid #1E4BFF;
+	border-radius: 60rem;
+	font-weight: 700;
+	font-size: 18rem;
+	padding: 18rem 0;
+	line-height: 151.6%;
+	margin-top: 20rem;
+	text-align: center;
+	color: #1E4BFF;
+}
+.login_right_forget {
+	margin-top: 20rem;
+	text-align: center;
+}
+.login_left_bg {
+	position: absolute;
+    top: 220rem;
+    left: -200rem;
+    width: 258rem;
+    transform: rotate(-180deg);
+    z-index: -1;
+}
+.login_form_alert {
+	padding: 20rem;
+	font-size: 16rem;
+	line-height: 151.6%;
+	background: #FFE0E0;
+	border-radius: 10px;
+	color: #FF3434;
+	display: flex;
+    align-items: center;
+    margin: 40rem 0;
+}
+.login_form_alert_image {
+	width: 20rem;
+	margin-right: 20rem;
+}
+.registration_left_section_text {
+	margin-top: 15rem;
+}
+.registration_left_section {
+	max-width: 525rem;
+}
+.register_advantage {
+	justify-content: space-between;
+	display: flex;
+	margin-top: 33rem;
+	max-width: 525rem;
+}
+.register_advantage_item {
+	width: 100rem;
+	text-align: center;
+}
+.register_advantage_item_image {
+	width: 90rem;
+	margin: auto;
+	border: 1px solid #F6F5FF;
+	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+	border-radius: 100rem;
+}
+.register_advantage_item_title {
+	margin-top: 15rem;
+}
+.register_advantage_item:first-child h5 {
+	width: 70rem;
+	margin: 15rem auto 0;
+}
+.register_bottom_value {
+	color: #1E4BFF;
+	font-weight: 500;
+	font-size: 40rem;
+	line-height: 120%;
+	border-right: 2rem solid rgba(30, 75, 255, 0.1);
+	padding-right: 25rem;
+	margin-right: 25rem;
+}
+.register_bottom {
+	display: flex;
+	align-items: center;
+	margin-top: 60rem;
+}
+.registration_input_alert {
+	margin-top: 10rem;
+	font-size: 16rem;
+	line-height: 151.6%;
+	color: #FF3434;
+}
+.register_input_check {
+	position: absolute;
+	right: 20rem;
+	top: 20rem;
+	height: 20rem;
+	z-index: 5;
+}
+.registration_input_overlay {
+	position: relative;
+}
+.header_logo_login_mobile {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
     	font-size: 0.07138383vw;
@@ -1691,6 +1857,65 @@ Modal
 		left: calc(50% - 350rem);
     	width: 600rem;
     	top: 50rem;
+	}
+	.login_overlay {
+		flex-direction: column-reverse;
+	}
+	.login_right {
+		max-width: 100%;
+	}
+	.header_logo_login_mobile {
+		display: flex;
+		order: 2;
+		margin: 30rem auto;
+	}
+	.header_logo_desctop {
+		display: none;
+	}
+	.login .header_logo {
+		padding: 0;
+	}
+	.login_right_title {
+		margin-top: 0;
+		text-align: center;
+	}
+	.login_right_subtitle {
+		text-align: center;
+		margin-top: 20rem;
+	}
+	.login_left_item {
+	    flex-direction: column;
+	    margin: 40rem auto;
+	    text-align: center;
+	}
+	.login_left_item_image {
+		margin-right: 0;
+		margin-bottom: 25rem;
+	}
+	.login_left_title {
+		text-align: center;
+	}
+	.registration_left_section_text {
+		text-align: center;
+	}
+	.registration_left_section {
+		margin: auto;
+	}
+	.register_advantage {
+		margin: 33rem auto 0;
+		max-width: 100%;
+	}
+	.register_bottom {
+		flex-direction: column;
+	}
+	.register_bottom_value {
+		padding-right: 0;
+		margin-right: 0;
+		border: none;
+		margin-bottom: 15rem;
+	}
+	.register_bottom {
+		padding-bottom: 40rem;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -2197,5 +2422,38 @@ Modal
 	}
 	.questions_page {
     	padding: 1rem 0 60rem;
+	}
+	.login_right {
+		padding: 30rem 20rem;
+	}
+	.login_form_alert {
+		margin: 20rem 0;
+		flex-direction: column;
+    	text-align: center;
+	}
+	.login_form_alert_image {
+		margin-right: 0;
+		margin-bottom: 10rem;
+	}
+	.login_left_bg {
+		display: none;
+	}
+	.login_right_submit {
+		margin-top: 20rem;
+	}
+	.login_form {
+		margin-top: 20rem;
+	}
+	.login_left_title {
+		margin-top: 40rem;
+	}
+	.register_advantage {
+		flex-wrap: wrap;
+	}
+	.register_advantage_item {
+		width: 160rem;
+	}
+	.register_bottom_label {
+		text-align: center;
 	}
 }
