@@ -1,4 +1,15 @@
 $(document).ready(function(){
+  $('.hero_image').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+});
+$(document).ready(function(){
   $('.news_slider').slick({
     infinite: false,
     slidesToShow: 3,
@@ -56,10 +67,14 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="right_arrow slider_arrow"></button>',
     responsive: [
     {
-      breakpoint: 481,
+      breakpoint: 769,
       settings: {
         slidesToShow: 1,
+        centerMode: false,
+        variableWidth: false,
         infinite: false,
+        focusOnSelect: false,
+        touchMove: false,
       }
     }
   ]

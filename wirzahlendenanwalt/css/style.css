@@ -1343,25 +1343,34 @@ Modal
 	margin-top: 20rem;
 	display: block;
 	border: none;
+	font-family: 'Gilroy';
 	background: #FFFFFF;
 	box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
 	border-radius: 10px;
 	font-size: 18rem;
 	line-height: 151.6%;
 	padding: 18rem 0 18rem 20rem;
-	color: #728896;
+	color: #02283F;
 	width: calc(100% - 20rem);
 }
 .login_right_submit {
 	padding: 23rem 36rem;
     border: 2px solid #1E4BFF;
     color: #fff;
+    font-size: 18rem;
+    cursor: pointer;
+    font-family: 'Gilroy';
     background-color: #1E4BFF;
     font-weight: 700;
     border-radius: 100rem;
     margin-top: 40rem;
     width: 100%;
     text-align: center;
+}
+.login_right_submit:hover {
+	background-color: #fff;
+	transition: 0.5s;
+	color: #1E4BFF;
 }
 .login_right_register {
 	background: #FFFFFF;
@@ -1374,6 +1383,14 @@ Modal
 	margin-top: 20rem;
 	text-align: center;
 	color: #1E4BFF;
+}
+.login_right_register:hover {
+	border: 2px solid #02283F;
+	color: #02283F;
+	transition: 0.5s;
+}
+input[type="text"]::-webkit-input-placeholder {
+    color: #728896;
 }
 .login_right_forget {
 	margin-top: 20rem;
@@ -1464,6 +1481,80 @@ Modal
 }
 .header_logo_login_mobile {
 	display: none;
+}
+.forgot_overlay {
+	width: 510rem;
+	padding: 40rem 50rem 60rem;
+	background: #F7F8FE;
+	margin: auto;
+	border-radius: 20px 0px 0px 20px;
+}
+.forgot_title {
+	margin-top: 60rem;
+	margin-bottom: 20rem;
+}
+.forgot_done {
+	margin-top: 40rem;
+	display: flex;
+	align-items: center;
+	background-color: rgba(30, 75, 255, 0.1);
+	color: #1E4BFF;
+	border-radius: 10rem;
+	padding: 20rem 25rem;
+}
+.forgot_wrong {
+	margin-top: 40rem;
+	display: flex;
+	align-items: center;
+	background: #FFE0E0;
+	color: #FF3434;
+	border-radius: 10rem;
+	padding: 20rem 25rem;
+}
+.forgot_alert_img {
+	width: 20rem;
+	margin-right: 20rem;
+}
+.forgot_input {
+	margin-top: 30rem;
+    display: block;
+    border: none;
+    font-family: 'Gilroy';
+    background: #FFFFFF;
+    box-shadow: 5px 9px 34px rgba(18, 53, 75, 0.06);
+    border-radius: 10px;
+    font-size: 18rem;
+    line-height: 151.6%;
+    padding: 18rem 0 18rem 20rem;
+    color: #02283F;
+    width: calc(100% - 20rem);
+}
+.forgot_submit {
+	padding: 23rem 36rem;
+    border: 2px solid #1E4BFF;
+    color: #fff;
+    font-size: 18rem;
+    cursor: pointer;
+    font-family: 'Gilroy';
+    background-color: #1E4BFF;
+    font-weight: 700;
+    border-radius: 100rem;
+    margin-top: 30rem;
+    width: 100%;
+    text-align: center;
+}
+.forgot_bg1 {
+	position: absolute;
+	top: 250rem;
+	left: 0;
+	width: 278rem;
+	transform: rotate(180deg);
+}
+.forgot_bg2 {
+	position: absolute;
+	top: 62rem;
+	right: 0;
+	width: 278rem;
 }
 @media screen and (max-width: 992px) {
 	html {
@@ -1916,6 +2007,12 @@ Modal
 	}
 	.register_bottom {
 		padding-bottom: 40rem;
+	}
+	.forgot_bg1 {
+		display: none;
+	}
+	.forgot_bg2 {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -2455,5 +2552,32 @@ Modal
 	}
 	.register_bottom_label {
 		text-align: center;
+	}
+	.forgot_overlay {
+		width: calc(100% - 40rem);
+    	padding: 40rem 20rem 40rem;
+        margin-bottom: 40rem;
+	}
+	.forgot_title {
+		margin-top: 40rem;
+	}
+	.forgot_done {
+		flex-direction: column;
+		text-align: center;
+	}
+	.forgot_wrong {
+		flex-direction: column;
+		text-align: center;
+	}
+	.forgot_alert_img {
+		margin-right: 0;
+		margin-bottom: 10rem;
+	}
+	.forgot_submit {
+		font-size: 16rem;
+		padding: 18rem 36rem;
+	}
+	.forgot_input {
+		font-size: 16rem;
 	}
 }
