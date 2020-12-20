@@ -1543,6 +1543,12 @@ input[type="text"]::-webkit-input-placeholder {
     width: 100%;
     text-align: center;
 }
+.forgot_submit:hover {
+	border: 2px solid #1E4BFF;
+    background-color: #fff;
+    color: #1E4BFF;
+    transition: 0.4s;
+}
 .forgot_bg1 {
 	position: absolute;
 	top: 250rem;

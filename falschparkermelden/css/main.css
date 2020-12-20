@@ -950,6 +950,7 @@ footer {
 .footer_item_link_label {
 	color: #fff;
     margin-top: 10rem;
+    opacity: 0.7;
     margin-left: 30rem;
 }
 .text_page {
@@ -1162,6 +1163,7 @@ footer {
 	color: #FFFFFF;
 	border: none;
 	width: 100%;
+	cursor: pointer;
 	margin-top: 15rem;
 }
 .contact_right_title {
@@ -1290,6 +1292,9 @@ footer {
 .registration_login_link {
 	color: #0063A1;
 	font-weight: 700;
+}
+.registration_login_link:hover {
+	text-decoration: underline;
 }
 .registration_alert {
 	font-size: 13rem;
