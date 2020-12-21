@@ -134,6 +134,16 @@ ul li:before {
 	left: -20rem;
 	top: 5rem;
 }
+.hero_ul li {
+	font-size: 20rem;
+    font-weight: 600;
+    color: #0063A1;
+}
+.hero_ul li:before {
+    width: 20rem;
+    height: 15rem;
+    background-size: 20rem;
+}
 .btn {
 	padding: 22rem 0;
 	text-transform: uppercase;
@@ -168,8 +178,9 @@ ul li:before {
 .hero_ul {
 	display: flex;
 	justify-content: space-between;
-    max-width: 500rem;
+    max-width: 420rem;
     margin-bottom: 45rem;
+    margin-top: 30rem;
 }
 .hero_overlay {
 	display: flex;
@@ -182,7 +193,7 @@ ul li:before {
 }
 .hero_image {
 	position: relative;
-	width: 600rem;
+	width: 540rem;
 }
 .hero_image_item {
 	width: 266rem;
@@ -238,6 +249,7 @@ h2 {
     left: -100rem;
     top: 60rem;
     z-index: -1;
+    display: none;
 }
 .grey {
 	font-weight: 700;
@@ -423,9 +435,9 @@ h5 {
 	text-transform: uppercase;
 	font-size: 14rem;
 	font-weight: 700;
-	background: #F8CBB0;
+	background: #ffe0cd;
 	color: #FF690F;
-	opacity: 0.4;
+	opacity: 0.6;
 	border-radius: 100px;
 }
 .safety_text_nav_item.active {
@@ -823,11 +835,11 @@ h5 {
 }
 .started_item_logo {
 	display: block;
-	margin-top: 18rem;
+	margin-top: 30rem;
 	width: 254rem;
 }
 .started_item_image {
-	height: 276rem;
+	height: 370rem;
 }
 .started_item {
 	text-align: center;
@@ -865,7 +877,7 @@ h5 {
 	background-color: #FF690F;
 }
 .started_item_text {
-	margin-top: 17rem;
+	margin-top: 29rem;
 }
 .started_item_text_step {
 	margin-top: 6rem;
@@ -876,6 +888,7 @@ h5 {
 	left: 0;
 	top: 140rem;
 	z-index: 2;
+	display: none;
 }
 .started_btn {
 	width: 404rem;
@@ -894,7 +907,7 @@ h5 {
 	display: block;
 }
 footer {
-	padding: 80rem 0;
+	padding: 70rem 0 55rem;
 	background-color: #0063A1;
 }
 .footer_logo {
@@ -923,10 +936,11 @@ footer {
 	justify-content: space-between;
 }
 .footer_copyright {
-	margin-top: 36rem;
-	font-size: 14rem;
-	color: #FFFFFF;
-	opacity: 0.7;
+	margin-top: 10rem;
+    text-align: center;
+    font-size: 14rem;
+    color: #FFFFFF;
+    opacity: 0.7;
 }
 .footer_item_place {
 	display: flex;
@@ -935,6 +949,7 @@ footer {
 .footer_item_place_text p{
 	color: #FFFFFF;
 	opacity: 0.7;
+	font-size: 14rem;
 }
 .footer_item_image {
 	width: 20rem;
@@ -949,9 +964,8 @@ footer {
 }
 .footer_item_link_label {
 	color: #fff;
-    margin-top: 10rem;
-    opacity: 0.7;
     margin-left: 30rem;
+    font-size: 14rem;
 }
 .text_page {
 	padding: 100rem 0;
@@ -1084,7 +1098,7 @@ footer {
 .text_page_container_impressum .black {
 	color: #252525;
 }
-.text_page_container_impressum a {
+.text_page_container_impressum a, .text_page a {
 	color: #0063A1;
 	font-weight: 700;
 }
@@ -1170,6 +1184,9 @@ footer {
 	color: #fff;
 	margin-bottom: 40rem;
 }
+.contact_left_title {
+	color: #252525;
+}
 .contact_right_link {
 	font-weight: 700;
 	font-size: 18rem;
@@ -1192,7 +1209,7 @@ footer {
 }
 .login {
 	padding: 40rem 0 100rem;
-	background: #0063A1;
+	background: #FF7624;
 	min-height: calc(100vh - 140rem);
 }
 .login_overlay {
@@ -1284,6 +1301,7 @@ footer {
 	left: -100rem;
 	top: -100rem;
 	z-index: 1;
+	display: none;
 }
 .registration_login {
 	margin-top: 30rem;
@@ -1731,15 +1749,24 @@ footer {
 	}
 	.contact_overlay {
 		flex-direction: column;
+		padding: 40rem;
 	}
 	.contact {
     	margin: 0rem 0 40rem;
 	}
 	.contact_right {
-		width: 475rem;
+		width: calc(100% - 120rem);
 	}
 	.contact_form {
-    	padding: 0rem 0 40rem 40rem;
+    	padding: 10rem 0 50rem 0;
+    	width: 100%;
+    }
+    .contact_left_title {
+    	text-align: center;
+    	margin-bottom: 30rem;
+    }
+    .contact_input, .contact_textarea {
+    	width: calc(100% - 80rem);
     }
     .hero {
     	margin-top: 0;
@@ -2174,18 +2201,27 @@ footer {
 	.modal_content h2 {
 		font-size: 20rem;
 	}
+	.contact_overlay {
+		padding: 20rem;
+	}
 	.contact_form {
 		width: 100%;
-		padding: 0 0 30rem 0;
+		padding: 10rem 0 40rem 0;
 	}
 	.contact_textarea {
-		height: 100rem
+		height: 100rem;
+		width: calc(100% - 50rem);
+		padding: 23rem 25rem;
 	}
 	.contact_input {
-		padding: 16rem 40rem;
+		padding: 16rem 25rem;
+		width: calc(100% - 50rem);
 	}
 	.contact_submit {
 		padding: 15rem 0;
+	}
+	.contact_left_title {
+		margin-bottom: 10rem;
 	}
 	.contact_right {
     	width: calc(100% - 40rem);
