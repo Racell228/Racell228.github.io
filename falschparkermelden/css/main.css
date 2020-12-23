@@ -265,7 +265,7 @@ h2 {
 }
 .news {
 	padding: 80rem 0;
-	background-color: #F0F0FF;
+	background-color: #E5EFF6;
 	margin-top: 80rem;
 }
 .news_slider {
@@ -819,7 +819,7 @@ h5 {
 }
 .started {
 	padding: 80rem 0;
-	background-color: #F0F0FF;
+	background-color: #E5EFF6;
 	position: relative;
 }
 .started_title {
@@ -969,7 +969,7 @@ footer {
 }
 .text_page {
 	padding: 100rem 0;
-	background: #F5F5FF;
+	background: #E5EFF6;
 }
 .text_page_container {
 	width: 800rem;
@@ -1124,7 +1124,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 20rem;
-	background: #F5F5FF;
+	background: #E5EFF6;
 	border-radius: 20px;
 }
 .contact_form {
@@ -1219,7 +1219,7 @@ footer {
 .login_window {
 	width: 480rem;
 	padding: 60rem;
-	background: #F5F5FF;
+	background: #E5EFF6;
 	border-radius: 30rem;
 	margin: auto;
 }
