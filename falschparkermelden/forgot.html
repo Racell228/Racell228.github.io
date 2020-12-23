@@ -15,16 +15,16 @@
 
 
 
-	<section class="login">
+	<section class="login forgot">
 		<div class="container">
 			<div class="login_overlay">
-				<a href="index.html"><img src="img/login_logo.svg" class="login_logo"></a>
 				<div class="login_window">
+					<a href="index.html"><img src="img/logo.svg" class="header_logo"></a>
 					<h2 class="login_window_title forgot_title">Passwort vergessen?</h2>
 					<p class="forgot_subtitle">Teilen Sie uns bitte Ihre E-Mail-Adresse mit. Sie erhalten dann innerhalb von wenigen Minuten per E-Mail einen Link, um ein neues Passwort festzulegen.</p>
 					<form>
 						<input type="text" class="login_window_input" placeholder="Deine E-Mail Adresse">
-						<input type="submit" class="login_window_submit" value="Passwort anfordern">
+						<input type="submit" class="login_window_submit forgot_submit" value="Passwort anfordern">
 					</form>
 				</div>
 			</div>
@@ -32,6 +32,26 @@
 		</div>
 	</section>
 
+	<div class="forgot_done modal_orange modal">
+		<div class="modal_overlay"></div>
+		<img src="img/modal_close_white.svg" class="close_modal">
+		<div class="modal_content">
+			<h2 class="modal_title">Die E-Mail zur Änderung des Passwortes wurde anversandt.</h2>
+			<p class="modal_text">Unsere E-Mail-Nachricht sollte innerhalb weniger Minuten bei Ihnen eintreffen. Falls nicht, kontrollieren Sie bitte auch den Spam-/Werbe-Ordner Ihres E-Mail-Programms. Der Link in der E-Mail ist 24 Stunden gültig.</p>
+			<a href="index.html" class="modal_btn forgot_done_btn btn">Weiter</a>
+		</div>
+	</div>
+
+
+	<div class="forgot_wrong modal_orange modal">
+		<div class="modal_overlay"></div>
+		<img src="img/modal_close_white.svg" class="close_modal">
+		<div class="modal_content">
+			<h2 class="modal_title">Ohh, das hat leider nicht geklappt!</h2>
+			<p class="modal_text">Leider konnten wir deine Eingabe nicht verarbeiten. Bitte prüfe nochmal alle Angaben und versuche es erneut.</p>
+			<a href="index.html" class="modal_btn forgot_done_btn btn">Weiter</a>
+		</div>
+	</div>
 
 
 

@@ -157,8 +157,28 @@ $(document).ready(function() {
         $('html,body').addClass('hidden');
   });
 });  
-
-
+$(document).ready(function() {
+  $('.contact_submit').click(function(event) {
+      event.preventDefault();
+        $('.contact_thank').show();
+        $('html,body').addClass('hidden');
+  });
+});  
+$(document).ready(function() {
+  $('.forgot_submit').click(function(event) {
+      event.preventDefault();
+        $('.forgot_done').show();
+        $('html,body').addClass('hidden');
+  });
+});  
+$(document).ready(function() {
+  $('.forgot_done_btn').click(function(event) {
+      event.preventDefault();
+        $('.forgot_wrong').show();
+        $('.forgot_done').hide();
+        $('html,body').addClass('hidden');
+  });
+});  
 $(document).ready(function() {
   $('.close_modal').click(function(event) {
       event.preventDefault();

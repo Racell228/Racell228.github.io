@@ -689,8 +689,8 @@ header {
     width: 108rem;
     height: 453rem;
     position: absolute;
-    top: -233rem;
-    left: -18rem;
+    top: -239rem;
+    left: 0rem;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .home_slider .owl-nav .owl-next:after {
@@ -698,8 +698,8 @@ header {
     width: 108rem;
     height: 453rem;
     position: absolute;
-    top: -200rem;
-    left: -18rem;
+    top: -192rem;
+    left: 0rem;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .home_slider .owl-nav .owl-next:hover:after {
@@ -799,6 +799,9 @@ header {
 	position: absolute;
   right: 0;
   top: -30rem;
+}
+.owl-nav span {
+	display: none!important;
 }
 .product_slider .owl-nav span {
 	display: none!important;
@@ -1061,6 +1064,7 @@ header {
 	width: 1000rem;
 	border: none;
 	background-color: #A8A8A8;
+	margin: 0;
 	color: #A8A8A8;
 	height: 1px;
 	position: absolute;
@@ -2310,6 +2314,7 @@ footer {
 .price_table_sorting {
 	display: flex;
 	margin-top: 40rem;
+	position: relative;
 }
 .price_table_sorting-overlay {
 	display: flex;
@@ -2386,6 +2391,26 @@ footer {
 .price_table-filter:after {
 	transform: rotate(180deg);
 	top: 0;
+}
+.price_table-item-overlay {
+	margin-bottom: 30rem;
+}
+.price_table-item-order {
+	display: flex;
+	background: #24A300;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16rem 45rem 16rem 16rem;
+}
+.price_table-item-order_number {
+	font-size: 18rem;
+	color: #fff;
+	font-weight: 600;
+}
+.price_table-item-order_data {
+	font-size: 18rem;
+	color: #fff;
+	font-weight: 500;
 }
 .price_table-item {
 	display: flex;
@@ -3275,6 +3300,92 @@ Finder
 .account_nav_item.active .account_nav_item_title {
 	font-weight: 600;
 }
+.comparaton {
+	margin-bottom: 100rem;
+}
+.comparaton_title {
+	margin: 40rem 0 75rem;
+}
+.comparaton_table_label_item {
+	padding: 20rem 30rem;
+	background-color: #F3F3F3;
+	min-height: 22rem;
+	white-space: normal;
+	border-right: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+}
+.comparaton_table_label_item:nth-child(2n) {
+	background-color: #fff;
+}
+.comparaton_table_label_item:last-child{
+	border-bottom: 1px solid #AAAAAA;
+}
+.comparaton_table_labels {
+	width: 293rem;
+	border-top: 1px solid #AAAAAA;
+}
+.comparaton_table_item {
+	width: 450rem;
+	border-top: 1px solid #AAAAAA;
+}
+.comparaton_table_label_image .product_item_image {
+	width: 310rem;
+	margin: auto;
+}
+.comparaton_table_label_image {
+	padding: 40rem;
+	min-height: 310rem;
+	border-right: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+}
+.comparaton_table_label_item_characteristic {
+	border: none;
+}
+.comparaton_table_label_button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20rem 30rem;
+}
+.comparaton_table_label_button_busket {
+	padding: 10rem 0;
+	font-weight: 700;
+	background: #1F1F1F;
+	border-radius: 40px;
+	color: #fff;
+	width: 170rem;
+	text-align: center;
+}
+.comparaton_table_label_button_delete {
+	padding: 10rem 0;
+	font-weight: 700;
+	background: #E40000;
+	border-radius: 40px;
+	color: #fff;
+	width: 170rem;
+	text-align: center;
+}
+.comparaton_table_label_item_description {
+	height: 102rem;
+	overflow: hidden;
+}
+.details p{
+	margin-top: 10rem;
+} 
+.details a {
+	display: inline-block;
+	color: #24A300;
+}
+.details h3  {
+	margin-top: 20rem;
+}
+.details ul li {
+	list-style: none;
+	margin: 10rem 0;
+}
+.details ul {
+	padding: 0;
+}
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 0.057084vw;
@@ -3337,6 +3448,9 @@ Finder
 	    border-top: 7rem solid #fff;
 	    top: 10rem;
 	    left: 0rem;
+	}
+	.price_table-item-order {
+		padding: 16rem 80rem 16rem 16rem;
 	}
 	.header_search {
 		order: 10;
@@ -3804,6 +3918,15 @@ Finder
 	.account_out {
 		width: 284rem;
 	}
+	.comparaton_table_label_item_description {
+	    height: 200rem;
+	}
+	.comparaton_table_label_item {
+		min-height: 29rem;
+	}
+	.comparaton_table_labels {
+		width: 380rem;
+	}
 
 }
 @media screen and (max-width: 768px) {
@@ -4086,6 +4209,13 @@ Finder
 	    width: calc(100% - 40rem);
 	    box-shadow: none;
 	    padding: 0 20rem;
+	}
+	.price_table-item-order {
+		padding: 16rem;
+	}
+	.price_table-item-overlay {
+		margin-bottom: 0;
+		margin-top: 30rem;
 	}
 	.mobile_menu {
 		display: flex;
@@ -4929,6 +5059,39 @@ Finder
 		left: calc(50% - 360rem);
 		height: 80%;
 	}
+	.comparaton_table_label_item_characteristic {
+		white-space: nowrap;
+	}
+	.comparaton_table_label_item_characteristic h3 {
+		font-size: 16rem;
+	}
+	.comparaton_table_labels {
+    	width: 250rem;
+	}
+	.comparaton_table_item {
+		width: 260rem;
+	}
+	.comparaton_table_label_item {
+    	min-height: 20rem;
+	}
+	.comparaton_table_label_image .product_item_image {
+		width: 100%;
+	}
+	.comparaton_table_label_image {
+		min-height: 199rem;
+		padding: 30rem;
+	}
+	.comparaton_table_label_button {
+		padding: 10rem;
+	}
+	.comparaton_table_label_button_delete {
+		font-size: 14rem;
+		width: 110rem;
+	}
+	.comparaton_table_label_button_busket {
+		font-size: 14rem;
+		width: 110rem;
+	}
 }
 @media screen and (max-width: 450px)  {
 	html {
@@ -5695,9 +5858,13 @@ Finder
 }
 .live-search {
 	background: #FFFFFF;
-	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
-	width: 406rem;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 406rem;
+    position: absolute;
+    top: 40rem;
+    z-index: 99999;
+    right: 0;
 }
 .header_search {
 	position: relative;
@@ -5746,6 +5913,32 @@ Finder
 #live-search .product-image img {
 	width: 50rem;
 }
+.export-dropdown {
+	font-size: 14rem;
+    position: absolute;
+    top: 40rem;
+    right: 0;
+    width: 187rem;
+    display: none;
+    background-color: #fff;
+    padding: 8rem 0;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+    z-index: 9999;
+}
+.price-list-export-btn:hover {
+	background-color: #E9E9E9;
+}
+.price-list-export-btn:hover  i {
+	color: #24A300;
+}
+.price-list-export-btn i {
+	margin-right: 14rem;
+}
+.price-list-export-btn {
+	padding: 18rem 12rem;
+	background-color: #fff;
+}
 @media screen and (max-width: 992px) {
 	#live-search .product-name {
 		font-size: 18rem;
@@ -5764,7 +5957,8 @@ Finder
     	margin-left: auto;
 	}
 	.live-search {
-		width: calc(100% - 150rem);
+		width: 100%;
+		top: 100rem;
 	}
 	.header_search .header_search {
 	    top: 95rem;
@@ -5772,6 +5966,10 @@ Finder
 	    left: 150rem;
 	    z-index: 9999;
 	    position: absolute;
+	}
+	.export-dropdown {
+		width: 207rem;
+		top: 45rem;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -5781,6 +5979,9 @@ Finder
 	}
 	#live-search .special {
 		font-size: 13rem;
+	}
+	.export-dropdown {
+		width: 177rem;
 	}
 	#live-search .price {
 		font-size: 16rem;
@@ -5796,7 +5997,7 @@ Finder
 	    left: 120rem;
 	}
 	.live-search {
-    	width: calc(100% - 120rem);
+    	top: 60rem;
 	}
 }
 @media screen and (max-width: 450px)  {
@@ -5808,6 +6009,12 @@ Finder
 	}
 	.header_search .header_search {
 		left: 0;
+	}
+	.export-dropdown {
+	    width: 177rem;
+	    top: 115rem;
+	    right: auto;
+	    left: 0;
 	}
 }
 

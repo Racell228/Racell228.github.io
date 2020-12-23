@@ -44,7 +44,17 @@ $(document).ready(function() {
     }
   });
 });
-
+$(function() {
+  var owl = $(".comparaton .owl-carousel");
+  owl.owlCarousel({
+    items: 4,
+    margin: 0,
+    loop: false,
+    autoWidth:true,
+    dots: false,
+    nav: false,
+  });
+});
 $(function() {
   var owl = $(".news_slider .owl-carousel");
   owl.owlCarousel({
@@ -393,8 +403,12 @@ $(document).ready(function() {
       $(this).find('.header_search').toggle(500);
   });
 });
-
-
+$(document).ready(function() {
+  $('.price_table_download').click(function(event) {
+      event.preventDefault();
+      $('.export-dropdown').toggle();
+  });
+});
 $(document).ready(function() {
   $('.account_item:first-child').show();
   $('.account_nav_item').click(function(event) {
