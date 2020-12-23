@@ -1242,7 +1242,7 @@ footer {
 	margin: auto;
 }
 .forgot  .header_logo {
-	margin: 0 auto 100rem;
+	margin: 0 auto 60rem;
 	display: block;
 }
 .login_window {
@@ -1828,6 +1828,10 @@ footer {
     }
     .login_section {
     	margin-top: 40rem;
+    	max-width: 600rem;
+    }
+    .registration_section {
+    	max-width: 600rem;
     }
     .registration_section_image {
     	width: 100%;
@@ -1836,7 +1840,7 @@ footer {
     	margin-top: 40rem;
     }
     .registration_section .clients_overley {
-    	margin-top: 40rem;
+    	margin-top: 0;
     	width: 560rem;
     }
     .modal_orange .modal_content {
@@ -1844,6 +1848,10 @@ footer {
     }
     .modal_orange .close_modal {
     	right: 105rem;
+    }
+    .login .header_logo {
+    	margin: auto;
+    	display: block;
     }
 }
 @media screen and (max-width: 480px) {
