@@ -1823,6 +1823,9 @@ footer {
     .hero {
     	margin-top: 0;
     }
+    .login {
+    	padding: 30rem 0 60rem;
+    }
     .login_overlay {
     	flex-direction: column-reverse;
     }
@@ -1852,6 +1855,9 @@ footer {
     .login .header_logo {
     	margin: auto;
     	display: block;
+    }
+    .forgot .header_logo{
+    	margin: 0 auto 40rem;
     }
 }
 @media screen and (max-width: 480px) {
@@ -2313,6 +2319,9 @@ footer {
 	    width: calc(100% - 40rem);
 	    padding: 40rem 20rem;
 	}
+	.login_overlay {
+		margin-top: 40rem;
+	}
 	.login_logo {
     	width: 343rem;
     	margin: 0 auto 40rem;
@@ -2322,8 +2331,8 @@ footer {
     	font-size: 14rem;
     }
     .login_window_input {
-    	padding: 17rem 20rem;
-    	width: calc(100% - 40rem);
+    	padding: 17rem 30rem;
+    	width: calc(100% - 60rem);
     	font-size: 14rem;
     }
     .login_window_submit {
@@ -2335,7 +2344,7 @@ footer {
     	padding: 15rem 0;
     }
     .login {
-    	padding: 30rem 0 50rem; 
+    	padding: 30rem 0; 
     	min-height: calc(100vh - 80rem);
 	}
 	.login_window_alert {
@@ -2363,4 +2372,7 @@ footer {
 	.modal_orange .close_modal {
 		right: 35rem;
 	}
+	.forgot .header_logo{
+    	margin: 0 auto 30rem;
+    }
 }	
