@@ -1393,6 +1393,9 @@ footer {
     top: 135rem;
     right: 455rem;
 }
+.hero_text_title_tablet {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
 		font-size: 0.074445vw;
@@ -1455,10 +1458,16 @@ footer {
 		bottom: 9rem;
 	}
 	.hero_overlay {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		padding: 40rem 40rem 0 40rem;
 		border-radius: 30rem;
 		background-position: center;
+	}
+	.hero_text_title_tablet {
+		display: block;
+	}
+	.hero_text_title {
+		display: none;
 	}
 	h1 {
 		text-align: center;
@@ -1470,7 +1479,7 @@ footer {
 		margin: 20rem auto 40rem;
 	}
 	.hero_ul {
-		margin: 0 auto 45rem;
+		margin: 30rem auto 45rem;
 	}
 	.hero_button_overlay {
 		margin: auto;
@@ -1886,10 +1895,16 @@ footer {
 	.hero_ul {
 		flex-wrap: wrap;
 		justify-content: center;
-		    margin: 0 auto 30rem;
+		margin: 20rem auto 30rem;
 	}
 	.hero_ul li {
 		margin: 10rem auto 0;
+		font-size: 14rem;
+	}
+	.hero_ul li:before {
+	    width: 15rem;
+	    height: 10rem;
+	    background-size: 15rem;
 	}
 	.hero_button_overlay {
     	width: auto;
@@ -1903,6 +1918,9 @@ footer {
 	}
 	.hero_image {
 	    width: 100%;
+	}
+	.hero_text {
+		width: 100%;
 	}
 	h2 {
 		font-size: 24rem;
