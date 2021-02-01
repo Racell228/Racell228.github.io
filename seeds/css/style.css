@@ -921,10 +921,16 @@ header {
 	display: flex;
 	justify-content: space-between;
 	width: 57rem;
-  align-items: center;
+  	align-items: center;
 }
-.product_item_action img {
+.product_item_action svg {
 	width: 16rem!important;
+}
+.wishlist.active svg {
+	fill: #24A300;
+}
+.compare.active svg {
+	fill: #24A300;
 }
 .product_item_info {
 	margin-top: 20rem;
