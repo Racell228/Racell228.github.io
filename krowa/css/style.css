@@ -69,7 +69,7 @@ a {
 	width: 30rem;
 }
 .hero_overlay_logo {
-	width: 260rem;
+	width: 200rem;
 	margin: 40rem auto auto;
 }
 .hero_overlay_titles {
@@ -84,6 +84,17 @@ a {
 	background-color: #fff;
 	z-index: 9999;
 }
+.header_fixed .header_nav_link_logo {
+    width: 150rem;
+    transition: 0.5s;
+    position: relative;
+    top: -6rem;
+}
+.header_fixed .header_nav {
+	padding: 10rem 0;
+	transition: 0.5s;
+}
+
 .hero_overlay_subtitle {
 	font-size: 60rem;
 	margin: 20rem 0 30rem;
@@ -121,7 +132,7 @@ a {
 	content: "";
 	z-index: 3;
 	background-color: #000;
-	opacity: 0.6;
+	opacity: 0.4;
 }
 .btn {
 	font-family: 'IntroHead';
@@ -422,6 +433,7 @@ footer {
 .footer_info_title {
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 45rem;
+	text-transform: capitalize;
 }
 .footer_social_link {
 	height: 40rem;
@@ -440,7 +452,7 @@ footer {
 	margin-bottom: 60rem;
 }
 .footer_links_item {
-	max-width: 150rem;
+	max-width: 155rem;
 }
 .footer_links_item_link {
 	font-size: 18rem;
@@ -801,6 +813,7 @@ Contacs
 .ecology_item_text {
 	line-height: 160%;
 	color: rgba(35, 31, 32, 0.6);
+	font-weight: 400;
 }
 .ecology_photos_item {
 	width: 360rem;
@@ -940,9 +953,19 @@ Contacs
 .work {
 	margin: 70rem 0 60rem;
 }
-.work_image_item {
-	width: 390rem;
+.work_image {
+	width: 340rem;
+	padding: 0 0 50rem 45rem; 
 	margin-right: 100rem;
+	height: 435rem;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+}
+.work_text {
+	max-width: 650rem;
 }
 .work_overlay {
 	display: flex;
@@ -1023,12 +1046,37 @@ Contacs
 .team_head {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
-.team_head_left_item {
-	width: 310rem;
+.team_head_item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.team_head_right_item {
-	width: 270rem;
+.team_head_item {
+	width: 230rem;
+	height: 320rem;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 40rem;
+}
+.team_head_item_right {
+	width: 192rem;
+	height: 270rem;
+	margin-top: 50rem;
+}
+.team_head_item_title {
+	margin-top: auto;
+	text-transform: uppercase;
+	font-family: 'IntroHead';
+	text-shadow: -0.6px 1.9px 5px rgba(0, 0, 0, 0.63);
+}
+.team_head_item_text {
+	font-size: 15rem;
+	line-height: 120%;
+	text-shadow: -0.6px 1.9px 5px rgba(0, 0, 0, 0.63);
+	margin-top: 10rem;
 }
 .team_head_text {
 	width: 450rem;
@@ -1244,8 +1292,8 @@ Contacs
 	top: -20rem;
     left: 420rem;
     width: 90rem;
-    -webkit-animation: table_bg 15s infinite;
-  	animation: table_bg 15s infinite;
+    -webkit-animation: table_bg 5s 1;
+  	animation: table_bg 5s 1;
 }
    
 @-webkit-keyframes table_bg {
@@ -1255,7 +1303,7 @@ Contacs
   }
   50% {
    transform: rotate(0deg);
-   width: 120rem;
+   width: 80rem;
   }
   100% {
     transform: rotate(265deg);
@@ -1267,8 +1315,8 @@ Contacs
 	top: 300rem;
     left: 430rem;
     width: 60rem;    
-    -webkit-animation: table_bg_next 15s infinite;
-  	animation: table_bg_next 15s infinite;
+    -webkit-animation: table_bg_next 8s 1;
+  	animation: table_bg_next 8s 1;
 }
    
 @-webkit-keyframes table_bg_next {
@@ -1278,7 +1326,7 @@ Contacs
   }
   50% {
    transform: rotate(0deg);
-   width: 120rem;
+   width: 80rem;
   }
   100% {
     transform: rotate(-265deg);
@@ -1298,8 +1346,8 @@ Contacs
     top: 540rem;
     right: -120rem;
     width: 100rem;
-    -webkit-animation: table_bg_four 5s infinite;
-  	animation: table_bg_four 5s infinite;
+    -webkit-animation: table_bg_four 5s 1;
+  	animation: table_bg_four 5s 1;
 }
 @-webkit-keyframes table_bg_four {
   0% {
@@ -1318,8 +1366,8 @@ Contacs
     top: 690rem;
     left: -120rem;
     width: 100rem;
-    -webkit-animation: table_bg_three 5s infinite;
-  	animation: table_bg_three 5s infinite;
+    -webkit-animation: table_bg_three 7s 1;
+  	animation: table_bg_three 7s 1;
 }
 @-webkit-keyframes table_bg_three {
   0% {
@@ -1359,6 +1407,7 @@ Contacs
 }
 .about_head_text_item {
 	color: #231f20;
+	font-weight: 400;
 }
 .about_endeavors {
 	margin-top: 100rem;
@@ -1378,30 +1427,37 @@ Contacs
 .about_endeavors_subtitle {
 	text-align: center;
 	font-size: 20rem;
+	font-weight: 400;
 	color: #231f20;
 }
 .about_endeavors_overlay {
 	display: flex;
 	margin-top: 60rem;
+	width: 1210rem;
+    margin-left: -40rem;
 }
 .about_endeavors_item {
 	width: 310rem;
-	padding: 35rem;
-	border: 1rem solid #eaeaea;
-	margin-top: 30rem;
+	padding: 50rem;
+	border: 2rem solid #eaeaea;
+	margin-top: 50rem;
+}
+.about_endeavors_item p {
+    line-height: 162%;
+    color: #231f20;
 }
 .about_endeavors_item_center {
-	width: 280rem;
-	padding: 50rem;
+	width: 300rem;
+	padding: 70rem 50rem;
 	background-color: #d52228;
 	position: relative;
-	top: 15rem;
+	top: 25rem;
 }
 .about_endeavors_item_center:after {
 	content: "";
     display: block;
     width: 85%;
-    height: 85%;
+    height: 86%;
     border: 3rem solid #fff;
     position: absolute;
     left: 25rem;
@@ -1412,19 +1468,20 @@ Contacs
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 50rem;
+	font-family: 'IntroHead';
 }
 .about_endeavors_item_center_text {
-	text-shadow: -0.6px 1.9px 5px rgba(0, 0, 0, 0.63);
 	color: #fff;
+	font-weight: 400;
 	margin-top: 30rem;
 }
 .about_photos {
 	display: flex;
 	justify-content: space-between;
-	margin: 90rem 0 4rem;
+	margin: 90rem 0 5rem;
 }
 .about_photos_item {
-	width: 380rem;
+	width: 378rem;
 }
 .about_bg {
 	position: absolute;
@@ -1437,8 +1494,8 @@ Contacs
 	top: 180rem;
 	right: -105rem;
 	width: 55rem;
-	-webkit-animation: about_bg_circle 15s infinite;
-  	animation: about_bg_circle 15s infinite;
+	-webkit-animation: about_bg_circle 7s 1;
+  	animation: about_bg_circle 7s 1;
 }
 @-webkit-keyframes about_bg_circle {
   0% {
@@ -1447,7 +1504,7 @@ Contacs
   }
   50% {
    transform: rotate(0deg);
-   width: 95rem;
+   width: 65rem;
   }
   100% {
     transform: rotate(265deg);
@@ -1460,8 +1517,8 @@ Contacs
     right: 40rem;
     width: 60rem;
     transform: rotate(265deg);
-    -webkit-animation: about_bg 15s infinite;
-  	animation: about_bg 15s infinite;
+    -webkit-animation: about_bg 9s 1;
+  	animation: about_bg 9s 1;
 }
 @-webkit-keyframes about_bg {
   0% {
@@ -1470,7 +1527,7 @@ Contacs
   }
   50% {
    transform: rotate(0deg);
-   width: 120rem;
+   width: 80rem;
   }
   100% {
     transform: rotate(265deg);
@@ -1500,9 +1557,6 @@ Contacs
 	position: absolute;
     top: 395rem;
     width: 120rem;
-}
-.hero_burger {
-	display: none;
 }
 .burger_menu {
 	display: none;
@@ -1541,6 +1595,72 @@ Contacs
 	width: 100%;
 	height: 600rem;
 }
+.burger_menu {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: 999999;
+		overflow-y: auto;
+		background-color: #000;
+	}
+	.burger_menu_head {
+		display: flex;
+		justify-content: space-between;
+		width: calc(100% - 60rem);
+		margin: auto;
+		align-items: center;
+		margin-top: 30rem;
+	}
+	.burger_menu_head_logo {
+		width: 225rem;
+	}
+	.burger_menu_head_close {
+		width: 30rem;
+	}
+	.burger_menu_nav_link {
+		font-size: 20rem;
+		color: #fff;
+		display: block;
+		margin-top: 30rem;
+		text-align: center;
+		font-family: 'IntroHead';
+		text-transform: uppercase;
+	}
+	.burger_menu_nav {
+		margin-top: 70rem;
+	}
+	.burger_menu_hr {
+		margin: 50rem auto;
+		width: 120rem;
+		display: block;
+		height: 1rem;
+		background-color: #fff;
+	}
+	.burger_menu_social_link {
+		width: 35rem;
+	}
+	.burger_menu_social {
+		width: 250rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: auto;
+	}
+	.burger_menu_btn {
+		color: #fff;
+		font-family: 'IntroHead';
+		font-size: 17rem;
+		background-color: #d51c29; 
+		width: 180rem;
+		padding: 12rem 0;
+		text-align: center;
+		margin: 70rem auto;
+		display: block;
+		transition: 1s;
+	}
 @media screen and (max-width: 992px) {
 	html {
 	    font-size: 0.072084vw;
@@ -1891,7 +2011,7 @@ Contacs
 	.team_owner_contact {
     	max-width: 443rem;
 	}
-	.work_image_item {
+	.work_image {
 	 	width: 280rem;
 	 	margin-right: 50rem;
 	}
@@ -1947,14 +2067,18 @@ Contacs
 	.about_endeavors_item_center {
 		order: 1;
 		top: 55rem;
+		z-index: 2;
 	}
 	.about_endeavors_item {
 		order: 2;
 		width: 270rem;
+		padding: 35rem;
 	}
 	.about_endeavors_overlay {
 		flex-wrap: wrap;
 		margin-top: 0;
+		width: auto;
+		margin-left: 0;
 		justify-content: space-around;
 	}
 	.about_photos {
@@ -2339,7 +2463,7 @@ Contacs
 	.work_bg3 {
 		display: none;
 	}
-	.work_image_item {
+	.work_image {
 		width: 100%;
 		margin-right: 0;
 	}
@@ -2381,12 +2505,16 @@ Contacs
 		margin-top: 50rem;
 	}
 	.about_endeavors_bg {
-    	top: 100rem;
+    	top: 120rem;
     	left: 130rem;
     	width: 80rem;
 	}
+	.about_endeavors_item {
+		margin-top: 20rem;
+	}
 	.about_endeavors_item_center {
 		top: 0;
+		width: calc(100% - 100rem);
 	}
 	.about_endeavors_overlay {
 		margin-top: 60rem;

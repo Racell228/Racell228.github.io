@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.welcome_slider').slick({
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     prevArrow: '<button type="button" class="left"></button>',
     nextArrow: '<button type="button" class="right"></button>',
     dots: false,
@@ -39,7 +39,7 @@ jQuery(window).scroll(function() {
 });
 
 $(document).ready(function() {
-  $('.mobile_header_open').click(function(event) {
+  $('.mobile_header_open,.hero_burger').click(function(event) {
       event.preventDefault();
       $('.burger_menu').show(400);
        $('html').addClass('hidden');
@@ -101,6 +101,18 @@ $(window).scroll(function() {
      }
      else {
       $(this).removeClass("fadeInRight");
+     }
+  });
+});
+$(window).scroll(function() {
+  $('.titleup').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+850) {
+       $(this).addClass("active");
+     }
+     else {
+     
      }
   });
 });
