@@ -105,14 +105,23 @@ $(window).scroll(function() {
   });
 });
 $(window).scroll(function() {
-  $('.titleup').each(function(){
+  $('.bd').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
      if (imagePos < topOfWindow+850) {
-       $(this).addClass("active");
+       $(this).addClass("fadeInDown");
      }
      else {
-     
+      $(this).removeClass("fadeInDown");
      }
+  });
+});
+$(document).ready(function() {
+  $('select').styler();
+})
+$(document).ready(function() {
+  $('.modal_close').click(function(event) {
+      event.preventDefault();
+      $('.modal').hide(400);
   });
 });

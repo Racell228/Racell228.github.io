@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -44,10 +45,10 @@
 	<section class="welcome">
 		<div class="container">
 			<div class="welcome_overlay">
-				<div class="welcome_text animated anleft">
-					<h2 class="welcome_text_title">WITAJCIE</h2>
-					<h3 class="welcome_text_subtitle">W ZDROWEJ KROWIE</h3>
-					<p>Jesteśmy miejscem, w którym każdy znajdzie coś dla siebie, z radością obsługujemy rodziny z dziećmi, organizujemy urodziny, eventy, czy spotkania biznesowe.</p>
+				<div class="welcome_text">
+					<h2 class="welcome_text_title  animated up">WITAJCIE</h2>
+					<h3 class="welcome_text_subtitle animated up">W ZDROWEJ KROWIE</h3>
+					<p class="animated up">Jesteśmy miejscem, w którym każdy znajdzie coś dla siebie, z radością obsługujemy rodziny z dziećmi, organizujemy urodziny, eventy, czy spotkania biznesowe.</p>
 				</div>
 				<div class="welcome_slider animated anright">
 					<div class="welcome_slider_item_overlay">
@@ -102,10 +103,10 @@
 	</section>
 	<section class="social">
 		<img src="img/social1.png" class="social_img1 animated anleft">
-		<div class="social_text animated up">
-			<h2 class="social_title">OBSERWUJ NAS</h2>
-			<h3 class="social_subtitle">NA INSTAGRAMIE</h3>
-			<p class="social_text_text">Aby dobrze zjeść - musisz nas odwiedzić. Jednak, aby zobaczyć co tym razem ciekawego dzieje się w Zdrowej Krowie, wystarczy, że zajrzysz na nasz instagramowy profil. Przekonaj się!</p>
+		<div class="social_text">
+			<h2 class="social_title animated up">OBSERWUJ NAS</h2>
+			<h3 class="social_subtitle animated up">NA INSTAGRAMIE</h3>
+			<p class="social_text_text animated up">Aby dobrze zjeść - musisz nas odwiedzić. Jednak, aby zobaczyć co tym razem ciekawego dzieje się w Zdrowej Krowie, wystarczy, że zajrzysz na nasz instagramowy profil. Przekonaj się!</p>
 			<h3 class="social_links_title">Znajdź nas TU:</h3>
 			<div class="social_links">
 				<a href="#"><img src="img/social_link1.svg" class="social_link"></a>
@@ -206,7 +207,24 @@
 		<p class="mobile_header_title">#ZdrowaKrowa</p>
 		<a href="#"><img src="img/burger_black.svg" class="mobile_header_open"></a>
 	</div>
+	<div class="modal">
+	 	<div class="modal_overlay"></div>
+	 	<a href="#"><img src="img/close.png" class="modal_close"></a>
+	 	<div class="modal_contant">
+	 	 	<img src="img/modal_img.png" class="modal_image">
+	 	 	<h2 class="modal_title">Restauracje</h2>
+	 	 	<p class="modal_text">Wybierz lokalizację, która twoim zdaniem będzie najbliżej Ciebie</p>
+	 	 	<select class="modal_select">
+	 	 		<option>Wybierz miasto z listy..</option>
+	 	 		<option>Zdrowa Krowa Katowice - Gliwicka </option>
+	 	 		<option>Zdrowa Krowa - Warszawa Port Praski</option>
+	 	 		<option>Zdrowa Krowa Rybnik</option>
+	 	 	</select>
+	 	 	<a href="#" class="btn modal_btn">Wybierz</a>
+	 	</div>
+	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slick.min.js"></script>
 </body>
