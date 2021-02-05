@@ -125,3 +125,11 @@ $(document).ready(function() {
       $('.modal').hide(400);
   });
 });
+
+
+$('#scroll').click(function(){
+  var el = $(this).attr('href');
+  $('html,body').animate({
+    scrollTop: $(".hero").height() + 20}, 1000);
+  return false;
+});

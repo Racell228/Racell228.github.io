@@ -106,7 +106,7 @@ a {
 }
 .hero_overlay_btn {
 	font-size: 15rem;
-	margin: auto auto 50rem;
+	margin: auto auto 150rem;
 }
 .hero_video {
 	width: 100%;
@@ -114,6 +114,12 @@ a {
 	object-fit: cover;
 	position: relative;
 	z-index: 2;
+}
+.hero_overlay_scroll {
+    position: absolute;
+    bottom: 40rem;
+    left: calc(50% - 15rem);
+    width: 30rem;
 }
 .hero_video_overlay {
 	position: absolute;
@@ -1016,14 +1022,16 @@ Contacs
 	font-size: 20rem;
 }
 .work_text_item_link {
-	color: #d52228;
+	color: #231f20;
 	font-weight: 700;
 	font-size: 20rem;
 	transition: 0.5s;
+	text-decoration: underline;
 }
 .work_text_item_link:hover {
-	color: #000;
+	color: #d52228;
 	transition: 0.5s;
+	text-decoration: none;
 }
 .work_bg {
 	width: 100rem;
@@ -2042,6 +2050,15 @@ Contacs
 	}
 	.download_text {
 		font-size: 16rem;
+	}
+	.hero_overlay_btn {
+		margin: auto auto 90rem;
+	}
+	.hero_overlay_scroll {
+	    position: absolute;
+	    bottom: 30rem;
+	    left: calc(50% - 10rem);
+	    width: 20rem;
 	}
 	.ecology_subtitle {
     	margin: 20rem 0 15rem;
