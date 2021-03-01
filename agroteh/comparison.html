@@ -216,81 +216,124 @@
 			</div>
 		</div>
 	</div>
-	<section class="categories internal">
+
+	<section class="comparison">
 		<div class="container">
-			<h2>Категории товаров</h2>
-			<div class="categories_overlay">
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory1.png" class="categories_item_image">
-					<h3 class="categories_item_title">Электроинструменты</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory2.png" class="categories_item_image">
-					<h3 class="categories_item_title">Насосы и помпы</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory3.png" class="categories_item_image">
-					<h3 class="categories_item_title">Строительное оборудование</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory4.png" class="categories_item_image">
-					<h3 class="categories_item_title">Ручной инструмент</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory5.png" class="categories_item_image">
-					<h3 class="categories_item_title">Измерительный инструмент</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory6.png" class="categories_item_image">
-					<h3 class="categories_item_title">Компрессоры</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory7.png" class="categories_item_image">
-					<h3 class="categories_item_title">Бензорезы</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory8.png" class="categories_item_image">
-					<h3 class="categories_item_title">Труборезы</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory9.png" class="categories_item_image">
-					<h3 class="categories_item_title">Расходники</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory10.png" class="categories_item_image">
-					<h3 class="categories_item_title">Сетевые фильтры и удлинители</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory11.png" class="categories_item_image">
-					<h3 class="categories_item_title">Diferite</h3>
-				</a>
-				<a href="#" class="categories_item categories_item_small">
-					<img src="img/subcategory12.png" class="categories_item_image">
-					<h3 class="categories_item_title">Makita</h3>
-				</a>
-			</div>
-			<a href="#" class="internal_btn btn">Назад</a>
-		</div>
-	</section>
-	<section class="subscribe">
-		<div class="container">
-			<div class="subscribe_overlay">
-				<div class="subscribe_descr">
-					<h2 class="subscribe_descr_title">Хочешь получать от нас новости?</h2>
-					<p class="subscribe_descr_text">Подпишись на новости, чтобы не упускать новых акций и спецпредложений!</p>
+			<h2>Сравнение товаров</h2>
+			<div class="comparison_overlay">
+				<div class="comparison_filter">
+					<h4 class="comparison_filter_title">Показывать</h4>
+					<a href="#" class="comparison_filter_link">Инструменты</a>
+					<a href="#" class="comparison_filter_delete">Очистить все</a>
+					<h4 class="comparison_filter_title">Показывать</h4>
+					<div class="comparison_filter_switch">
+						<p>Все параметри</p>
+						<div class="comparison_filter_switch_item">
+							<input type="checkbox" id="switch">
+							<label for="switch" class="comparison_filter_switch_item_label"></label>
+						</div>
+						<p>Различия</p>
+					</div>
+					<div class="comparison_characteristic">
+						<h4 class="comparison_filter_title">Характеристики</h4>
+						<p class="comparison_characteristic_item">Тип установки</p>
+						<p class="comparison_characteristic_item">Тип насоса</p>
+						<p class="comparison_characteristic_item">Макс. производительность</p>
+						<p class="comparison_characteristic_item">Мощность</p>
+						<p class="comparison_characteristic_item">Качество воды</p>
+						<p class="comparison_characteristic_item">Макс. температура жидкости</p>
+						<p class="comparison_characteristic_item">Вес</p>
+						<p class="comparison_characteristic_item">Размеры (ВхШхГ)</p>
+					</div>
 				</div>
-				<form class="subscribe_form">
-					<input type="text" class="contacts_form_input" placeholder="Ваше имя">
-					<input type="text" class="contacts_form_input" placeholder="Ваш e-mail">
-					<input type="submit" class="contacts_form_submit btn" value="Подписаться">
-					<input type="checkbox" id="checkbox">
-					<label for="checkbox" class="contacts_form_checkbox">
-						<span>Я согласен с <a href="#" class="contacts_form_checkbox_link">политикой конфиденциальности</a></span>
-					</label>
-				</form>
+				<div class="product_overlay">
+					<div class="product_item">
+						<a href="#" class="product_item_delete"><img src="img/close_red.svg" class="product_item_delete_img"></a>
+						<div class="product_item_image_overlay" style="background-image: url(img/product_item.png);"></div>
+						<a href="#" class="product_item_category">Садовый инструмент</a>
+						<p class="product_item_title">Бензопила Байкал Профи ББП-5800</p>
+						<div class="product_item_price">
+							<p class="product_item_price_current">21700 ₽</p>
+							<p class="product_item_price_old">25040 ₽</p>
+						</div>
+						<div class="product_item_actions">
+							<a href="#" class="product_item_actions_comparison"><img src="img/comparison.svg" class="product_item_actions_img"></a>
+							<a href="#" class="product_item_actions_favorite"><img src="img/favorite.svg" class="product_item_actions_img"></a>
+							<a href="#" class="product_item_actions_buy btn"><img src="img/cart_btn.svg" class="btn_img">Купить</a>
+						</div>
+						<div class="product_item_characteristics">
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Поверхностный </p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Самовсасывающий</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">2.1 м3/ч</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">370 Вт</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Чистая</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">45 °C</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">5.6 кг</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">143x263,5x130 мм</p>
+							</div>
+						</div>
+					</div>
+					<div class="product_item">
+						<a href="#" class="product_item_delete"><img src="img/close_red.svg" class="product_item_delete_img"></a>
+						<div class="product_item_image_overlay" style="background-image: url(img/product_item2.png);"></div>
+						<a href="#" class="product_item_category">Садовый инструмент</a>
+						<p class="product_item_title">Бензопила Байкал Профи ББП-5800</p>
+						<div class="product_item_price">
+							<p class="product_item_price_current">21700 ₽</p>
+							<p class="product_item_price_old">25040 ₽</p>
+						</div>
+						<div class="product_item_actions">
+							<a href="#" class="product_item_actions_comparison"><img src="img/comparison.svg" class="product_item_actions_img"></a>
+							<a href="#" class="product_item_actions_favorite"><img src="img/favorite.svg" class="product_item_actions_img"></a>
+							<a href="#" class="product_item_actions_buy btn"><img src="img/cart_btn.svg" class="btn_img">Купить</a>
+						</div>
+						<div class="product_item_characteristics">
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Поверхностный </p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Самовсасывающий</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">2.1 м3/ч</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">370 Вт</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">Чистая</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">45 °C</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">5.6 кг</p>
+							</div>	
+							<div class="product_item_characteristics_item">
+								<p class="product_item_characteristics_item_descr">143x263,5x130 мм</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+
 	<footer>
 		<div class="container">
 			<div class="foter_overlay">

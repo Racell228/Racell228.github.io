@@ -25,9 +25,9 @@ $(document).ready(function(){
     dots: false,
     responsive: [
     {
-      breakpoint: 481,
+      breakpoint: 769,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
       }
     }
@@ -126,11 +126,76 @@ $(function() {
 
 });
 
+$('body').on('click', '#password_show', function(){
+  if ($(this).is(':checked')){
+    $('#password').attr('type', 'text');
+  } else {
+    $('#password').attr('type', 'password');
+  }
+}); 
 $(document).ready(function() {
-  var input = document.getElementById('password');
-  // inputType = input.getAttribute('type');
-  $('.modal_password_show').click(function(event) {
-      input.setAttribute("type", "text");
+  $('.modal_close').click(function(event) {
+      $('.modal').hide(400);
   });
 });
 
+$(document).ready(function() {
+  $('.head_profile').click(function(event) {
+      $('.modal_signin').show(400);
+  });
+});
+
+$(function() {
+  var owl = $(".single_slider .owl-carousel");
+  owl.owlCarousel({
+    items: 1,
+    margin: 10,
+    dots: true,
+    nav: true,
+  });
+});
+jQuery(document).ready(function($) {
+  let outs = document.querySelectorAll('.single_slider');
+  for (let out of outs) {
+      let owl = out.querySelector('.owl-carousel');
+      let btns = out.querySelectorAll(':scope .single_slider_nav_item_overlay');
+      let owlJq = $(owl);
+      owlJq.owlCarousel({
+          items: 1,
+          loop: false,
+          margin: 10,
+          nav: false,
+          dots: false,
+      });
+      for (let btn of btns) {
+          btn.addEventListener('click', function () {
+              owlJq.trigger('to.owl.carousel', [$(this).index()]);
+              $('.single_slider_nav_item_overlay').removeClass('active')
+              $(this).addClass('active');
+          })
+      }
+  };
+});
+$(document).ready(function() {
+  $('.single_characteristic_show_more').click(function(event) {
+      event.preventDefault();
+      $('.single_characteristic_hide').show(400);
+  });
+});
+
+
+$(document).ready(function() {
+  $('.single_tabs_item:first-child').show();
+  $('.single_tabs_nav_item').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('active').siblings().removeClass('active');
+      var id = $(this).attr('href');
+      $(id).fadeIn(0).siblings().fadeOut(0);
+  });
+});
+$(document).ready(function() {
+  $('.single_actions_fastbuy').click(function(event) {
+      event.preventDefault();
+      $('.modal_fastbuy').show(400);
+  });
+});
