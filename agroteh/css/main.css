@@ -2036,7 +2036,7 @@ input[type="radio"]:checked + label {
 .internal_btn {
 	display: none;
 }
-@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992px) {
 	html {
 	    font-size: 0.08025vw;
 	}
@@ -2437,4 +2437,4 @@ input[type="radio"]:checked + label {
 		font-size: 12rem;
 		padding: 5rem 10rem;
 	}
-}
+}*/
