@@ -63,7 +63,7 @@ p {
 	width: 200rem;
 	left: 0;
 	background-color: #fff;
-	box-shadow: 0px 2px 33px rgb(0 0 0 / 11%);
+	box-shadow: 0rem 2rem 33rem rgb(0 0 0 / 11%);
 	border-radius: 7rem;
 	padding: 15rem 20rem;
 	display:none;
@@ -132,7 +132,7 @@ p {
 	left: -20rem;
 	width: 100%;
 	background-color: #fff;
-	box-shadow: 0px 2px 33px rgb(0 0 0 / 11%);
+	box-shadow: 0rem 2rem 33rem rgb(0 0 0 / 11%);
 	border-radius: 7rem;
 	padding: 10rem 20rem 20rem 20rem;
 	z-index: 10;
@@ -198,9 +198,9 @@ header {
 	background-color: #fff;
 	color: #3A3A3A;
 	font-size: 13rem;
-	border: 1px solid rgba(133, 135, 143, 0.37);
+	border: 1rem solid rgba(133, 135, 143, 0.37);
 	border-radius: 48rem;
-	font: 400 13.3333px Montserrat;
+	font: 400 13.3333rem Montserrat;
 	width: 381rem;
 }
 .header_search_submit {
@@ -238,9 +238,9 @@ header {
 	width: 300rem;
 	padding: 20rem;
 	background-color: #fff;
-	box-shadow: 0px 2px 33px rgb(0 0 0 / 11%);
+	box-shadow: 0rem 2rem 33rem rgb(0 0 0 / 11%);
 	text-align: center;
-    border-radius:  7px;
+    border-radius:  7rem;
     display: none;
     z-index: 999;
 }
@@ -332,7 +332,7 @@ header {
 	top: 100%;
 	padding-top: 10rem;
 	background: #FFFFFF;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0rem 2rem 8rem rgba(0, 0, 0, 0.1);
 	left: 0;
 	z-index: 20;
 }
@@ -354,7 +354,7 @@ header {
 	z-index: 9;
 	background-color: #fff;
 	left: 100%;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0rem 2rem 8rem rgba(0, 0, 0, 0.1);
 }
 .header_nav_menu_item:hover > a{
 	background-color: #15A333;
@@ -427,7 +427,7 @@ header {
 	line-height: 150%;
 	background: #15A333;
 	text-align: center;
-	border-radius: 31px;
+	border-radius: 31rem;
 	padding: 13rem 0;
 }
 .hero_slider_item_buy {
@@ -461,7 +461,7 @@ header {
 	background-image: url(../img/slider_arrow.svg);
 	background-position: center;
 	background-size: cover;
-	box-shadow: 0px 1px 19px rgba(0, 0, 0, 0.08);
+	box-shadow: 0rem 1rem 19rem rgba(0, 0, 0, 0.08);
 	border-radius: 100%;
 	z-index: 9;
 	cursor: pointer;
@@ -548,7 +548,7 @@ h3 {
 .categories_item {
 	padding: 22rem 26rem;
 	background-color: #fff;
-	box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.11);
+	box-shadow: 0rem 3rem 16rem rgba(0, 0, 0, 0.11);
 	border-radius: 15rem;
 	margin: 45rem 10rem 0 10rem;
 	text-align: center;
@@ -559,7 +559,7 @@ h3 {
 .categories_item:hover {
 	top: -15rem;
 	transition: 0.5s;
-	box-shadow: 0px 3px 31px rgba(0, 0, 0, 0.16);
+	box-shadow: 0rem 3rem 31rem rgba(0, 0, 0, 0.16);
 }
 .categories_item_image {
 	margin: -60rem 0 0;
@@ -598,11 +598,11 @@ h3 {
 }
 .product_item {
 	background: #FFFFFF;
-	box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.11);
+	box-shadow: 0rem 2rem 33rem rgba(0, 0, 0, 0.11);
 	padding: 20rem 25rem;
 	width: 235rem;
     margin: 20rem 5rem 0;
-	border-radius: 7px;
+	border-radius: 7rem;
 	background-color: #fff;
 	position: relative;
 }
@@ -690,8 +690,8 @@ h3 {
 	padding: 20rem 24rem;
 	z-index: 15;
 	left: 0;
-	box-shadow: 0px 19px 33px rgba(0, 0, 0, 0.11);
-	border-radius: 0 0 7px 7px;
+	box-shadow: 0rem 19rem 33rem rgba(0, 0, 0, 0.11);
+	border-radius: 0 0 7rem 7rem;
 }
 .product_item:hover .product_item_characteristics{
 	display: block;
@@ -707,7 +707,7 @@ h3 {
 	display: flex;
 	justify-content: space-between;
 	background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), #475646;
-	border-radius: 7px;
+	border-radius: 7rem;
 	padding: 30rem 55rem;
 }
 .delivery_content {
@@ -765,8 +765,8 @@ h3 {
 }
 .contacts_form_item {
 	background: #FFFFFF;
-	box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.08);
-	border-radius: 11px;
+	box-shadow: 0rem 5rem 26rem rgba(0, 0, 0, 0.08);
+	border-radius: 11rem;
 	padding: 36rem 31rem;
 }
 .contacts_form_text {
@@ -777,8 +777,8 @@ h3 {
 }
 .contacts_form_input {
 	padding: 19rem 24rem;
-	border: 1px solid rgba(133, 135, 143, 0.48);
-	border-radius: 48px;
+	border: 1rem solid rgba(133, 135, 143, 0.48);
+	border-radius: 48rem;
 	color: rgba(133, 135, 143, 0.67);
 	font: 400 14rem 'Montserrat';
 	display: block;
@@ -866,8 +866,8 @@ h4	{
 	background-color: transparent;
 	color: rgba(255, 255, 255, 0.56);
 	font: 400 14rem 'Montserrat';
-	border: 1px solid rgba(255, 255, 255, 0.67);
-	border-radius: 56px;
+	border: 1rem solid rgba(255, 255, 255, 0.67);
+	border-radius: 56rem;
 }
 .footer_info_form_submit {
 	background-color: transparent;
@@ -938,7 +938,7 @@ h4	{
 }
 .footer_hr {
 	margin: 22rem 0;
-	border: 1px solid rgba(255, 255, 255, 0.22);
+	border: 1rem solid rgba(255, 255, 255, 0.22);
 }
 .header_nav_menu_internal {
 	display: none;
@@ -962,10 +962,16 @@ h4	{
 	font-size: 13rem;
 }
 .breadcrumbs_link:after {
-	content: ">";
+	content: "";
 	display: block;
 	font-size: 20rem;
 	margin: 0 10rem;
+	width: 8rem;
+	height: 14rem;
+	background-image: url(../img/menu_arrow.svg);
+	background-size: cover;
+	background-position: center;
+	transform: rotate(-90deg);
 }
 .breadcrumbs_link_icon {
 	width: 16rem;
@@ -991,8 +997,8 @@ h4	{
 	padding: 36rem 80rem 60rem;
 	justify-content: space-between;
 	background: #FFFFFF;
-	box-shadow: 0px 5px 26px rgba(0, 0, 0, 0.08);
-	border-radius: 11px;
+	box-shadow: 0rem 5rem 26rem rgba(0, 0, 0, 0.08);
+	border-radius: 11rem;
 	align-items: center;
 }
 .subscribe {
@@ -1049,7 +1055,7 @@ h4	{
 }
 .jq-selectbox__dropdown {
 	padding: 10rem 0;
-    box-shadow: 0px 5px 26px rgb(0 0 0 / 8%);
+    box-shadow: 0rem 5rem 26rem rgb(0 0 0 / 8%);
     left: -10rem;
     border-radius: 10rem;
     background-color: #fff;
@@ -1079,7 +1085,7 @@ h4	{
 .list_overlay_filter_item {
 	background: #F5F5F5;
 	padding: 20rem;
-	border-radius: 7px;
+	border-radius: 7rem;
 	margin-bottom: 13rem;
 }
 .noUi-tooltip {
@@ -1133,8 +1139,8 @@ h4	{
 .filter_item_inputs_item {
 	padding: 12rem 10rem;
 	background-color: #fff;
-	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.03);
-	border-radius: 5px;
+	box-shadow: 0rem 0rem 18rem rgba(0, 0, 0, 0.03);
+	border-radius: 5rem;
 	border: none;
 	width: 84rem;
 	text-align: right;
@@ -1183,7 +1189,7 @@ h4	{
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: 14rem;
-	filter: drop-shadow(0px 3px 11px rgba(0, 0, 0, 0.2));
+	filter: drop-shadow(0rem 3rem 11rem rgba(0, 0, 0, 0.2));
 	border-radius: 2rem;
 }
 .filter_label_slider {
@@ -1224,8 +1230,8 @@ input:checked  label {
 	text-align: center;
 	width: 100%;
 	background: #FFFFFF;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.19);
-	border-radius: 7px;
+	box-shadow: 0rem 2rem 8rem rgba(0, 0, 0, 0.19);
+	border-radius: 7rem;
 	margin-top: 35rem;
 }
 .list_overlay_product_pagination {
@@ -1243,18 +1249,18 @@ input:checked  label {
 	font-size: 13rem;
 }
 .list_overlay_product_pagination_link {
-	border: 1px solid #D1D1D1;
+	border: 1rem solid #D1D1D1;
 	padding: 5rem 12rem;
 	font-size: 14rem;
 	color: #000;
 	font-weight: 400;
-	border-radius: 4px;
+	border-radius: 4rem;
 	margin-right: 7rem;
 }
 .list_overlay_product_pagination_link.active {
 	color: #fff;
 	background: #15A333;
-	border: 1px solid transparent;
+	border: 1rem solid transparent;
 }
 .forgot_item_image {
 	background-size: contain;
@@ -1270,8 +1276,8 @@ input:checked  label {
 .forgot_item {
 	padding: 30rem 15rem;
 	background: #FFFFFF;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.19);
-	border-radius: 7px;
+	box-shadow: 0rem 2rem 8rem rgba(0, 0, 0, 0.19);
+	border-radius: 7rem;
 	width: 256rem;
 	display: flex;
 	align-items: center;
@@ -1359,8 +1365,8 @@ input:checked  label {
 }
 .busket_item {
 	padding: 34rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	margin-bottom: 30rem;
 }
 .busket_item_overlay {
@@ -1397,6 +1403,7 @@ input:checked  label {
     padding: 8rem 18rem;
     background: #fff;
     width: 56rem;
+    font: 400 20rem 'Montserrat';
     text-align: center;
 }
 .quantity-block {
@@ -1444,7 +1451,7 @@ input::-webkit-inner-spin-button {
 	padding: 11rem 30rem;
 	background: #F5F5F5;
 	margin-top: 25rem;
-	border-radius: 7px;
+	border-radius: 7rem;
 }
 .busket_item_gift_image {
 	width: 48rem;
@@ -1465,8 +1472,8 @@ input::-webkit-inner-spin-button {
 .busket_contact_item {
 	margin-top: 30rem;
 	padding: 23rem 20rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 }
 .busket_contact_title {
 	margin-bottom: 22rem;
@@ -1475,8 +1482,8 @@ input::-webkit-inner-spin-button {
 	font-size: 14rem;
 	color: #000000;
 	padding: 18rem 0 18rem 54rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	display: block;
 	width: calc(100% - 54rem);
 	margin-bottom: 23rem;
@@ -1499,8 +1506,8 @@ input::-webkit-inner-spin-button {
 }
 .busket_contact_input {
 	padding: 18rem 0 18rem 20rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	font: 400 14rem 'Montserrat';
 	color: #85878F;
 	width: 365rem;
@@ -1510,7 +1517,7 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 25rem;
 }
 .busket_contact_input_margin {
-	margin-right: 13rem;
+	margin-right: 9rem;
 }
 .busket_contact_label_img1 {
 	position: absolute;
@@ -1549,7 +1556,7 @@ input::-webkit-inner-spin-button {
 	padding: 20rem;
 	background: #F5F5F5;
 	align-items: flex-end;
-	border-radius: 7px;
+	border-radius: 7rem;
 }
 .busket_overlay {
 	display: flex;
@@ -1589,7 +1596,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 25rem;
 }
 input[type="radio"]:checked + label {
-	border: 1px solid #15A333;
+	border: 1rem solid #15A333;
 }
 .modal {
 	position: fixed;
@@ -1618,7 +1625,7 @@ input[type="radio"]:checked + label {
 	left: calc(50% - 180rem);
 	background-color: #fff;
 	padding: 34rem;
-	border-radius: 7px;
+	border-radius: 7rem;
 }
 .modal_content_title {
 	margin-bottom: 5rem;
@@ -1626,8 +1633,8 @@ input[type="radio"]:checked + label {
 .modal_input {
 	color: #000000;
 	padding: 18rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	margin-top: 20rem;
 	font: 400 14rem 'Montserrat';
 	width: calc(100% - 36rem);
@@ -1670,11 +1677,11 @@ input[type="radio"]:checked + label {
 	font-weight: 700;
 	color: #519AF0;
 	font-size: 15rem;
-	border: 1px solid #519AF0;
+	border: 1rem solid #519AF0;
 	text-align: center;
 	padding: 14rem 0;
 	margin-top: 16rem;
-	border-radius: 27px;
+	border-radius: 27rem;
 }
 .modal_social_title {
 	color: #7B7B7B;
@@ -1700,9 +1707,9 @@ input[type="radio"]:checked + label {
 	font-size: 13rem;
 }
 .single_slider {
-	border: 1px solid #D6D6D6;
+	border: 1rem solid #D6D6D6;
 	padding: 80rem 50rem 80rem 150rem;
-	border-radius: 7px;
+	border-radius: 7rem;
 	width: 241rem;
 	position: relative;
 }
@@ -1725,12 +1732,12 @@ input[type="radio"]:checked + label {
 }
 .single_slider_nav_item_overlay {
 	padding: 9rem 5rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	margin-bottom: 10rem;
 }
 .single_slider_nav_item_overlay.active {
-	border: 1px solid #15A333;
+	border: 1rem solid #15A333;
 }
 .single_characteristic_item {
 	display: flex;
@@ -1756,7 +1763,7 @@ input[type="radio"]:checked + label {
 	height: 100%;
 	top: -7rem;
 	left: 0;
-	border-bottom: 1px dashed #3a3a3a;
+	border-bottom: 1rem dashed #3a3a3a;
 }
 .single_characteristic_item_value {
 	font-size: 13rem;
@@ -1786,8 +1793,8 @@ input[type="radio"]:checked + label {
 }
 .single_actions {
 	padding: 23rem;
-	border: 1px solid #D6D6D6;	
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;	
+	border-radius: 7rem;
 }
 .single_actions_price {
 	font-size: 22rem;
@@ -1808,8 +1815,8 @@ input[type="radio"]:checked + label {
 	color: #519AF0;
 	font-size: 15rem;
 	font-weight: 700;
-	border: 1px solid #519AF0;
-	border-radius: 27px;
+	border: 1rem solid #519AF0;
+	border-radius: 27rem;
 	margin-top: 16rem;
 	text-align: center;
 	margin-bottom: 20rem;
@@ -1863,7 +1870,7 @@ input[type="radio"]:checked + label {
 	position: absolute;
 	bottom: 0;
 	width: 100vw;
-	border: 1px solid rgba(0, 0, 0, 0.14);
+	border: 1rem solid rgba(0, 0, 0, 0.14);
 	height: 0;
 	left: -220rem;
 }
@@ -1896,20 +1903,20 @@ input[type="radio"]:checked + label {
 }
 .modal_fastbuy_overlay {
 	display: flex;
-	border: 1px solid #D6D6D6;
+	border: 1rem solid #D6D6D6;
 	border-radius: 7rem;
 	overflow: hidden;
 }
 .modal_fastbuy_image {
 	width: 150rem;
-	border-right: 1px solid #D6D6D6;
+	border-right: 1rem solid #D6D6D6;
 }
 .modal_fastbuy_name {
 	width: 270rem;
 }
 .modal_fastbuy_price {
 	width: 114rem;
-	border-left: 1px solid #D6D6D6;
+	border-left: 1rem solid #D6D6D6;
 }
 .modal_fastbuy_image_item {
 	width: 110rem;
@@ -1948,10 +1955,10 @@ input[type="radio"]:checked + label {
 	margin-top: 20rem;
 	display: block;
 	padding: 18rem;
-	border: 1px solid #D6D6D6;
-	border-radius: 7px;
+	border: 1rem solid #D6D6D6;
+	border-radius: 7rem;
 	width: calc(100% - 36rem);
-	font: 400 13.3333px Montserrat;
+	font: 400 13.3333rem Montserrat;
 	color: #000;
 }
 .modal_fastbuy_form_label {
@@ -1963,8 +1970,8 @@ input[type="radio"]:checked + label {
 	padding: 18rem 0;
 	color: #519AF0;
 	display: block;
-	border: 1px solid #519AF0;
-	border-radius: 27px;
+	border: 1rem solid #519AF0;
+	border-radius: 27rem;
 	width: 100%;
 	background-color: #fff;
 	margin-top: 17rem;
@@ -1981,7 +1988,7 @@ input[type="radio"]:checked + label {
 	width: 299rem;
 	padding: 20rem;
 	background: #F5F5F5;
-	border-radius: 7px;
+	border-radius: 7rem;
 	margin-right: 25rem;
 }
 .comparison_filter_title {
@@ -2055,12 +2062,12 @@ input[type="radio"]:checked + label {
 .internal_btn {
 	display: none;
 }
-/*@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992rem) {
 	html {
 	    font-size: 0.08025vw;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768rem) {
 	html {
 	    font-size: 0.13021vw;
 	}
