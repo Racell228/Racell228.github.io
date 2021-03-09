@@ -199,3 +199,27 @@ $(document).ready(function() {
       $('.modal_fastbuy').show(400);
   });
 });
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if(height > 330){
+  $('.busket_registration').addClass('busket_registration_fixed');
+} else{
+  $('.busket_registration').removeClass('busket_registration_fixed');
+}
+});
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+var top = $('.busket_overlay').height();
+if(height > top){
+  $('.busket_registration').addClass('busket_registration_absolute');
+} else{
+  $('.busket_registration').removeClass('busket_registration_absolute');
+}
+});
+
+
+$('input[name="busket_contact_item1"]').click(function(){
+  var target = $('#' + $(this).val());
+  $('.busket_contact_item_hide').hide(0);
+  target.fadeIn(500);
+});

@@ -1120,6 +1120,8 @@ h4	{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	right: -17rem;
+    top: -6rem;
 }
 .noUi-target {
 	border: none;
@@ -1475,6 +1477,12 @@ input::-webkit-inner-spin-button {
 	border: 1rem solid #D6D6D6;
 	border-radius: 7rem;
 }
+.busket_contact_item_hide {
+	display: none;
+}
+.busket_contact_item_hide:first-child {
+	display: block;
+}
 .busket_contact_title {
 	margin-bottom: 22rem;
 }
@@ -1561,9 +1569,21 @@ input::-webkit-inner-spin-button {
 .busket_overlay {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 .busket_registration {
 	width: 310rem;
+}
+.busket_registration_fixed {
+	position: fixed;
+	top: 20rem;
+	right: 215rem;
+}
+.busket_registration_absolute {
+	position: absolute;
+	bottom: 80rem;
+	top: auto;
+	right: 0;
 }
 .busket_registration_info_item {
 	width: 50%;
@@ -2063,12 +2083,12 @@ input[type="radio"]:checked + label {
 .internal_btn {
 	display: none;
 }
-/*@media screen and (max-width: 992rem) {
+@media screen and (max-width: 992px) {
 	html {
 	    font-size: 0.08025vw;
 	}
 }
-@media screen and (max-width: 768rem) {
+@media screen and (max-width: 768px) {
 	html {
 	    font-size: 0.13021vw;
 	}
@@ -2261,7 +2281,7 @@ input[type="radio"]:checked + label {
 		justify-content: space-between;
 		width: 100%;
 	}
-	.categories_item_large .categories_item_image{
+	.categories_item_large .categories_item_image {
 		height: 145rem;
 	}
 	.categories_item_big_order {
@@ -2464,4 +2484,59 @@ input[type="radio"]:checked + label {
 		font-size: 12rem;
 		padding: 5rem 10rem;
 	}
-}*/
+	.forgot_overlay {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.forgot_item {
+		margin: 10rem auto;
+	}
+	.single_overlay {
+		flex-direction: column;
+	}
+	.single_characteristic {
+		display: none;
+	}
+	.single_article {
+		display: block;
+	}
+	.owl-dot {
+		width: 9rem;
+		height: 9rem;
+		display: block;
+		border-radius: 100%;
+		background-color: #C1C1C1!important;
+		margin: 0 7rem;
+	}
+	.owl-dots {
+		display: flex;
+		align-items: center;
+		margin-top: 23rem;
+		justify-content: center;
+		margin: 23rem auto 0;
+	}
+	.single_slider_nav {
+		display: none;
+	}
+	.single_slider {
+		padding: 80rem 50rem 60rem 50rem;
+		width: calc(100% - 100rem);
+	}
+	.single_slider_item {
+		width: 376rem;
+		margin: auto;
+	}
+	.owl-dot.active {
+		width: 13rem;
+		height: 13rem;
+		background-color: #15A333!important;
+	}
+	.breadcrumbs_overlay {
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	}
+	.single_actions {
+		display: flex;
+	}
+}

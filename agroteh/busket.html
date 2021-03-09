@@ -281,14 +281,25 @@
 						<form>
 							<div class="busket_contact_item">
 								<h3 class="busket_contact_title">Способ доставки</h3>
-								<input type="radio" name="busket_contact_item1" id="busket_contact_item1" checked>
+								<input type="radio" name="busket_contact_item1" id="busket_contact_item1" checked value="delivery">
 								<label for="busket_contact_item1" class="busket_contact_label">Доставка курьером 425 ₽</label>
-								<input type="radio" name="busket_contact_item1" id="busket_contact_item2">
+								<input type="radio" name="busket_contact_item1" id="busket_contact_item2" value="pickup">
 								<label for="busket_contact_item2" class="busket_contact_label">Самовывоз</label>
-								<h3 class="busket_contact_title">Город/Адрес</h3>
-								<input type="text" class="busket_contact_input busket_contact_input_large" placeholder="*Населенный пункт">
-								<input type="text" class="busket_contact_input busket_contact_input_margin" placeholder="*Введите название улицы">
-								<input type="text" class="busket_contact_input" placeholder="*Дом">
+								<div>
+									<div id="delivery" class="busket_contact_item_hide">
+										<h3 class="busket_contact_title">Город/Адрес</h3>
+										<input type="text" class="busket_contact_input busket_contact_input_large" placeholder="*Населенный пункт">
+										<input type="text" class="busket_contact_input busket_contact_input_margin" placeholder="*Введите название улицы">
+										<input type="text" class="busket_contact_input" placeholder="*Дом">
+									</div>
+									<div id="pickup" class="busket_contact_item_hide">
+										<h3 class="busket_contact_title">Выберите отделение</h3>
+										<input type="radio" name="busket_contact_item11" id="busket_contact_item11" checked>
+										<label for="busket_contact_item11" class="busket_contact_label">Отделение 1</label>
+										<input type="radio" name="busket_contact_item11" id="busket_contact_item12">
+										<label for="busket_contact_item12" class="busket_contact_label">Отделение 2</label>
+									</div>
+								</div>
 							</div>
 							<div class="busket_contact_item">
 								<h3 class="busket_contact_title">Способ оплаты</h3>
