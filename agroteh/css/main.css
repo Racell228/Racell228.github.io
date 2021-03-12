@@ -2539,4 +2539,98 @@ input[type="radio"]:checked + label {
 	.single_actions {
 		display: flex;
 	}
+	.busket_overlay {
+		flex-direction: column;
+	}
+	.busket_contant {
+		width: 100%;
+	}
+	.busket_item_image {
+		width: 122rem;
+		height: 98rem;
+	}
+	.busket_item_info_category {
+		font-size: 12rem;
+	}
+	.busket_item_info_title {
+		font-size: 14rem;
+	}
+	.busket_item_buttons_price {
+		font-size: 18rem;
+		margin-bottom: 7rem;
+	}
+	.quantity-num {
+		width: 52rem;
+		padding: 7rem 18rem;
+		font: 400 13rem 'Montserrat';
+	}
+	.busket_item_gift_image {
+    	width: 42rem;
+	}
+	.busket_item_gift {
+		padding: 10rem 25rem;
+	}
+	.busket_item_gift_text {
+		font-size: 12rem;
+		max-width: 514rem;
+	}
+	.busket_item_gift_price {
+		font-size: 18rem;
+	}
+	.busket_contact_input {
+		width: 317rem;
+	}
+	.busket_contact_title {
+		font-size: 18rem;
+	}
+	.busket_contact_input_large {
+		width: calc(100% - 20rem);
+	}
+	.busket_contact_bottom  {
+		display: none;
+	}
+	.busket_registration_fixed {
+		position: static;
+		width: 100%;
+	}
+	.busket_registration_info {
+		padding: 20rem 50rem;
+	}
+	.busket_registration_checkbox {
+		font-size: 13rem;
+	}
+	.busket_registration_btn {
+		width: 200rem;
+   	 	margin: 30rem auto 0;
+	}
+	.modal_fastbuy .modal_content {
+		width: 455rem;
+		left: calc(50% - 262rem);
+	}
+	.modal_fastbuy .modal_close {
+    	right: 135rem;
+	} 
+	.modal_fastbuy_subtitle {
+		font-size: 16rem;
+	}
+	.modal_fastbuy_image_item {
+    	width: 102rem;
+    	height: 96rem;
+	}
+	.modal_fastbuy_form_label {
+		font-size: 10rem;
+		margin-top: 5rem;
+	}
+	.modal_fastbuy_form_submit {
+		font-size: 12rem;
+		padding: 13rem 0;
+	}
+	.modal_content {
+		top: 50rem;
+		overflow: auto;
+		height: 70%;
+	}
+	.modal_close {
+		top: 65rem;
+	}
 }
