@@ -30,6 +30,15 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
       }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode:true,
+
+      }
     }
   ]
   });
@@ -223,3 +232,47 @@ $('input[name="busket_contact_item1"]').click(function(){
   $('.busket_contact_item_hide').hide(0);
   target.fadeIn(500);
 });
+$(document).ready(function() {
+  $('.show_filter').click(function(event) {
+      event.preventDefault();
+      $('.comparison_filter,.list_overlay_filter').show(400);
+  });
+});
+$(document).ready(function() {
+  $('.filter_close').click(function(event) {
+      event.preventDefault();
+      $('.comparison_filter').hide(400);
+  });
+});
+
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+
+$(document).ready(function() {
+  $('.busket_item_gift_show').click(function(event) {
+    event.preventDefault();
+      $(this).hide();
+      $('.busket_item_gift').addClass('active');
+  });
+});
+
+$(document).ready(function() {
+  $('.mobile_catalog').click(function(event) {
+    event.preventDefault();
+      $('.header_nav_catalog').show();
+  });
+});
+$(document).ready(function() {
+  $('.header_nav_close').click(function(event) {
+    event.preventDefault();
+      $('.header_nav_catalog').hide();
+  });
+});
+$(document).ready(function() {
+  $('.list_overlay_filter_close').click(function(event) {
+    event.preventDefault();
+      $('.list_overlay_filter').hide();
+  });
+});
+

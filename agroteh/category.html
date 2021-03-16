@@ -37,13 +37,14 @@
 						<a href="#" class="head_language_hidden_link"><img src="img/language.svg" class="head_language_flag">Rus</a>
 					</div>
 				</div>
-				<a href="#" class="head_profile"><img src="img/profile.svg" class="head_profile_image">Личный кабинет</a>
+				<a href="#" class="head_profile"><img src="img/profile.svg" class="head_profile_image"><span>Личный кабинет</span></a>
 			</div>
 		</div>
 	</div>
 	<header>
 		<div class="container">
 			<div class="header_overlay">
+				<a href="#" class="header_burger_mobile"><img src="img/burger_black.svg"></a>
 				<a href="#" class="header_logo"><img src="img/logo.svg" class="header_logo_image"></a>
 				<form class="header_search">
 					<input type="text" class="header_search_input" placeholder="Поиск по сайту">
@@ -70,6 +71,7 @@
 					<p class="header_button_text">Корзина</p>
 					<p class="header_button_cart">2</p>
 				</a>
+				<a href="#" class="btn mobile_catalog"><img src="img/burger.svg">Каталог товаров</a>
 			</div>
 		</div>
 	</header>
@@ -78,6 +80,7 @@
 			<div class="header_nav_overlay">
 				<div class="header_nav_catalog">
 					<a href="#" class="header_nav_catalog_open"><img src="img/burger.svg" class="header_nav_catalog_open_image">Каталог товаров</a>
+					<a href="#" class="header_nav_close"><img src="img/close_white.svg"></a>
 					<div class="header_nav_menu header_nav_menu_internal">
 						<div class="header_nav_menu_item">
 							<a href="#" class="header_nav_menu_item_link">
@@ -344,6 +347,37 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal modal_signin">
+		<div class="modal_overlay"></div>
+		<img src="img/close.svg" class="modal_close">
+		<div class="modal_content">
+			<h2 class="modal_content_title">Вход</h2>
+			<input type="e-mail" class="modal_input" placeholder="Электронная почта или телефон">
+			<p class="modal_content_text">Электронная почта в формате my_mail@mail.ru</p>
+			<p class="modal_content_text">Телефон в формате +79001234567</p>
+			<div class="modal_password_overlay">
+				<input  type="password" class="modal_input" placeholder="Пароль" id="password">
+				<input type="checkbox" id="password_show">
+				<label for="password_show"><img src="img/show_password.svg" class="modal_password_show"></label>
+			</div>
+			<div class="modal_forgot">
+				<input type="checkbox" class="modal_forgot_remember" id="remember">
+				<label for="remember" class="contacts_form_checkbox modal_forgot_remember">
+					<span>Запомнить меня</span>
+				</label>
+				<a href="#" class="modal_forgot_link">Я забыл пароль</a>
+			</div>
+			<a href="#" class="btn signin_btn">Войти</a>
+			<a href="#" class="signup_btn">Зарегистрироваться</a>
+			<p class="modal_social_title">Войти через соц. сети</p>
+			<div class="modal_social_overlay">
+				<a href="#" class="modal_social_link"><img src="img/modal_social1.svg"></a>
+				<a href="#" class="modal_social_link"><img src="img/modal_social2.svg"></a>
+				<a href="#" class="modal_social_link"><img src="img/modal_social3.svg"></a>
+				<a href="#" class="modal_social_link"><img src="img/modal_social4.svg"></a>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slick.min.js"></script>
