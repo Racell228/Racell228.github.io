@@ -1,0 +1,9 @@
+@font-face {
+	font-family: IntroHead;  
+	src: url('../fonts/IntroRust-Base.eot');   
+	src: url('../fonts/IntroRust-Base.eot?#iefix') format('embedded-opentype'),       
+	url('../fonts/IntroRust-Base.woff') format('woff'),        
+	url('../fonts/IntroRust-Base.ttf') format('truetype');    
+	font-weight: bold;   
+	font-style: normal;
+}
