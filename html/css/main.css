@@ -1,0 +1,18 @@
+h6 {
+	margin: 0;
+	font-size: 30px;
+}
+.fist_title {
+	color: blue;
+}
+.second_title {
+	color: red;
+	margin-bottom: 20px;
+}
+.image {
+	width: 200px;
+	margin-left: 40px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: block;
+}
