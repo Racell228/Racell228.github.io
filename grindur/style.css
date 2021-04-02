@@ -89,7 +89,7 @@ p {
 .hero_title {
 	margin-top: auto;
 	font-weight: 600;
-	font-size: 90rem;
+	font-size: 98rem;
 	color: #517242;
 	line-height: 100%;
 	font-variant: small-caps;
@@ -100,7 +100,7 @@ p {
 	font-weight: 500;
 	font-size: 16rem;
 	font-family: 'Palanquin Dark', sans-serif;
-	color: #517242;
+	color: #6F6456;
 	text-transform: uppercase;
 }
 .hero_overlay {
@@ -112,7 +112,7 @@ p {
 	position: absolute;
 	top: calc(50% - 80rem);
     left: calc(50% - 235rem);
-    padding: 21rem 0;
+    padding: 11rem 0 21rem;
 }
 .efficiency_slider {
 	width: 590rem;
@@ -204,6 +204,7 @@ p {
 	border-radius: 5rem;
 	font-size: 16rem;
 	display: none;
+	z-index: -1;
 	color:  #7A6D5F;
 	font-weight: 300;
 }
@@ -212,6 +213,8 @@ p {
 }
 .steps {
 	padding: 110rem 0;
+	position: relative;
+	z-index: 3;
 }
 .steps_overlay {
 	display: flex;
@@ -249,7 +252,6 @@ p {
 }
 .make_video {
     width: 650rem;
-    height: 576rem;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -350,7 +352,7 @@ p {
 	padding: 17rem;
 	background-color: #fff;
 	filter: drop-shadow(0px 4px 13px rgba(19, 27, 20, 0.13));
-	animation: prompt 15s infinite;
+	animation: prompt 8s infinite;
 }
 @-webkit-keyframes prompt {
   0% {
@@ -460,4 +462,9 @@ footer {
 	color: #fff;
 	margin-bottom: 20rem;
 	font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+	html {
+   		font-size: 0.081429vw;
+	}
 }

@@ -5,6 +5,8 @@ $(document).ready(function(){
     prevArrow: '<button type="button" class="left"></button>',
     nextArrow: '<button type="button" class="right"></button>',
     dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 });
 $(document).ready(function(){
@@ -16,5 +18,7 @@ $(document).ready(function(){
     dots: false,
     vertical: true,
     verticalSwiping: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 });
