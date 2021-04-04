@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	s<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="index_header">
@@ -18,7 +18,9 @@
 				<a href="#" class="index_header_link">Intresseanmälan</a>
 				<a href="#" class="index_header_link">Om oss</a>
 				<a href="#" class="index_header_link">Kontakt</a>
+				<img src="img/close.svg" class="index_header_close">
 			</div>
+			<img src="img/burger.svg" class="index_header_burger">
 		</div>
 	</header>
 	<section class="hero">
@@ -38,8 +40,8 @@
 					<div class="efficiency_slider_item" style="background-image: url(img/slider_image2.png);"></div>
 				</div>
 				<div class="efficiency_slider efficiency_slider_right">
-					<div class="efficiency_slider_item" style="background-image: url(img/slider_image1.png);"></div>
 					<div class="efficiency_slider_item" style="background-image: url(img/slider_image2.png);"></div>
+					<div class="efficiency_slider_item" style="background-image: url(img/slider_image1.png);"></div>
 				</div>
 			</div>
 		</div>
@@ -55,6 +57,11 @@
 	<section class="steps">
 		<div class="container">
 			<h2 class="steps_title">Vär process...</h2>
+			<div class="arrow-7">
+			    <span></span>
+			    <span></span>
+			    <span></span>
+			</div>
 			<div class="steps_overlay">
 				<div class="steps_item">
 					<p class="steps_item_name">Kunskap</p>
@@ -101,7 +108,7 @@
 				<div class="climate_right">
 					<h3 class="climate_right_title">Energianvänding i Sverige</h3>
 					<div class="climate_diagram">
-						<div>
+						<div class="climate_diagram_description_overlay">
 							<div class="climate_diagram_description">
 								<div class="climate_diagram_description_color red"></div>
 								<p class="climate_diagram_description_text">Bostäder och service: </p>
@@ -109,13 +116,13 @@
 							</div>
 							<div class="climate_diagram_description">
 								<div class="climate_diagram_description_color orange"></div>
-								<p class="climate_diagram_description_text">Bostäder och service: </p>
-								<span class="climate_diagram_description_quanity">39%</span>
+								<p class="climate_diagram_description_text">Transporter: </p>
+								<span class="climate_diagram_description_quanity">23%</span>
 							</div>
 							<div class="climate_diagram_description">
 								<div class="climate_diagram_description_color blue"></div>
-								<p class="climate_diagram_description_text">Bostäder och service: </p>
-								<span class="climate_diagram_description_quanity">39%</span>
+								<p class="climate_diagram_description_text">Industri:  </p>
+								<span class="climate_diagram_description_quanity">38%</span>
 							</div>
 						</div>
 						<img src="img/diagram.svg" class="climate_diagram_item">
@@ -143,6 +150,7 @@
 				</div>
 				<div class="footer_partner">
 					<img src="img/footer_partner1.svg">
+					<img src="img/footer_partner2.svg">
 					<img src="img/footer_partner2.svg">
 				</div>
 				<div class="footer_nav">

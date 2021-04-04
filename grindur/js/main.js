@@ -22,3 +22,24 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
   });
 });
+$(document).ready(function() {
+  $('.index_header_burger').click(function(event) {
+      event.preventDefault();
+      $('.index_header_overlay').show(400);
+  });
+});
+$(document).ready(function() {
+  $('.index_header_close').click(function(event) {
+      event.preventDefault();
+      $('.index_header_overlay').hide(400);
+  });
+});
+if(window.matchMedia('(max-width: 480px)').matches){
+  $(document).ready(function() {
+  $('.steps_item').click(function(event) {
+      event.preventDefault();
+      $(this).find('.steps_item_contant').toggle(400);
+      $(this).toggleClass('active');
+    });
+  });
+}

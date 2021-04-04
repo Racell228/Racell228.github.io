@@ -225,19 +225,24 @@ p {
 .steps_item {
 	margin: 0 6rem;
 	width: 290rem;
-	padding: 20rem 0;
-	background: #F7F6F4;
-	border-radius: 5px;
 	position: relative;
 	text-align: center;
 }
-.steps_item:hover .steps_item_contant {
-	display: block;
+.steps_item_name {
+	padding: 20rem 0;
+	border-radius: 5px;
+	background: #F7F6F4;
 }
-.steps_item:hover {
-	background: #B2A89C;
-	color: #fff;
+@media (min-width: 480px) {
+  	.steps_item:hover .steps_item_contant {
+		display: block;
+	}
+	.steps_item:hover .steps_item_name{
+		background: #B2A89C;
+		color: #fff;
+	}
 }
+
 .make {
 	padding: 110rem 0;
 	background: #E5E2DE;
@@ -463,8 +468,303 @@ footer {
 	margin-bottom: 20rem;
 	font-weight: 300;
 }
+.index_header_burger {
+	display: none;
+}
+.index_header_close {
+	display: none;
+}
+.arrow-7 {
+	width: 60rem;
+    transform: rotate(-90deg);
+    margin: 50rem auto 20rem;
+}
+.arrow-7 span {
+    display: block;
+    width: 30rem;
+    height: 30rem;
+    border-bottom: 5rem solid #6F6456;
+    border-right: 5rem solid #6F6456;
+    transform: rotate(45deg);
+    margin: -16rem -16rem -16rem 10rem;
+    animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20rem,-20rem);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20rem,20rem);
+    }
+}
 @media screen and (max-width: 768px) {
 	html {
-   		font-size: 0.081429vw;
+   		font-size: 0.079429vw;
+	}
+	.index_header_link {
+		font-size: 20rem;
+	}
+	.btn {
+		font-size: 20rem;
+	}
+	p {
+		font-size: 20rem;
+	}
+	.steps_item_contant {
+		font-size: 20rem;
+	}
+	.climate_diagram_description_text {
+		font-size: 20rem;
+	}
+	.climate_diagram_description {
+		width: 130rem;
+	}
+	.footer_info_adress {
+		width: 170rem;
+		font-size: 20rem;
+	}
+	.footer_contact_mail {
+		font-size: 20rem;
+	}
+	.footer_nav_link {
+		font-size: 20rem;
 	}
 }
+@media screen and (max-width: 480px) {
+	html {
+    	font-size: 0.26657vw;
+	}
+	.index_header_overlay {
+		display: none;
+	}
+	.index_header_burger {
+		display: block;
+		width: 55rem;
+		margin-left: auto;
+	}
+	.container {
+		width: auto;
+		margin: 0 20rem;
+	}
+	.hero_title {
+		font-size: 75rem;
+	}
+	.hero_text {
+		font-size: 13rem;
+	}
+	.hero_overlay {
+		width: calc(100% - 32rem);
+		left: calc(50% - 170rem);
+		top: calc(50% - 65rem);
+	}
+	.efficiency {
+    	padding: 70rem 0 85rem;
+	}
+	h2 {
+		font-size: 30rem;
+	}
+	.efficiency_subtitle {
+		font-size: 20rem;
+	}
+	.efficiency_slider {
+		width: 335rem;
+		height: 335rem;
+	}
+	.efficiency_slider_item {
+		height: 335rem!important;
+	}
+	.efficiency_overlay {
+		flex-direction: column;
+		margin-top: 40rem;
+	}
+	.efficiency_slider_right {
+		margin-top: 80rem;
+	}
+	.believe {
+		padding: 70rem 0;
+	}
+	.believe_text {
+		font-size: 18rem;
+	}
+	.believe_bg {
+		margin-top: 10rem;
+		height: 300rem;
+	}
+	.believe_btn {
+		margin: auto;
+	}
+	.btn {
+		width: 100%;
+		padding: 20rem 0;
+		font-size: 16rem;
+	}
+	.steps {
+		padding: 70rem 0;
+	}
+	.steps_overlay {
+		margin-top: 40rem;
+		flex-direction: column;
+	}
+	.steps_item {
+		margin-top: 20rem;
+	}
+	.steps_item:first-child {
+		margin-top: 0;
+	}
+	.steps_item_name {
+		font-size: 17rem;
+	}
+	.steps_item_contant {
+		font-size: 16rem;
+	}
+	.make_overlay {
+		flex-direction: column-reverse;
+	}
+	.make {
+		padding: 70rem 0;
+	}
+	.make_video {
+		width: 100%;
+	}
+	.make_text {
+		width: 100%;
+		margin-top: 40rem;
+	}
+	.make_text_item {
+		margin: 30rem 0;
+		font-size: 18rem;
+		text-align: center;
+	}
+	.make_text_title {
+		text-align: center;
+	}
+	.climate {
+		padding: 70rem 0;
+	}
+	.climate_overlay {
+		flex-direction: column;
+	}
+	.climate_text_item {
+		margin: 20rem 0 30rem;
+		font-size: 18rem;
+		text-align: center;
+	}
+	.climate_text h2 {
+		text-align: center;
+	}
+	.climate_text_quanity {
+    	padding: 28rem 13rem;
+	}
+	h3 {
+		font-size: 24rem;
+	}
+	.climate_right {
+		margin-top: 70rem;
+	}
+	.climate_diagram {
+		flex-direction: column-reverse;
+	}
+	.climate_diagram_item {
+		margin-left: 0;
+		width: 100%;
+	}
+	.climate_right_title {
+		margin-bottom: 20rem;
+	}
+	.climate_diagram_description {
+		width: 80rem;
+		margin-bottom: 0;
+	}
+	.climate_diagram_description_overlay {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40rem;
+	}
+	.climate_diagram_description_text {
+    	font-size: 14rem;
+	}
+	.climate_diagram_description_quanity {
+		font-size: 17rem;
+	}
+	.climate_btn {
+		margin: 20rem auto 0;
+	}
+	.footer_overlay {
+		flex-wrap: wrap;
+	}
+	footer {
+    	padding: 50rem 0 30rem;
+    }
+    .footer_info_img {
+    	margin-bottom: 10rem;
+    }
+    .footer_info_adress {
+    	font-size: 16rem;
+    	width: 290rem;
+    }
+    .footer_contact_tel {
+    	margin-top: 50rem;
+    }
+    .footer_contact_mail {
+    	font-size: 16rem;
+    }
+    .footer_contact_btn {
+    	padding: 16rem 0;
+    }
+    .footer_partner {
+    	width: 100%; 
+    	margin: 35rem 0 50rem;
+    }
+    .footer_nav_link {
+    	font-size: 16rem;
+    }
+    .footer_partner img {
+    	margin-top: 15rem;
+    }
+    .index_header_overlay {
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 100vh;
+    	background-color: #fff;
+    	text-align: center;
+    	padding-top: 100rem;
+    }
+    .index_header_close {
+    	display: block;
+    	position: absolute;
+    	top: 17rem;
+    	right: 17rem;
+    }
+    .index_header_link {
+    	background-color: transparent;
+    	color: #6F6456;
+    	padding: 25rem 0rem;
+    }
+    .index_header {
+    	top: 17rem;
+    }
+    .steps_item_contant {
+    	position: inherit;
+    }
+    .steps_item.active .steps_item_name{
+    	background: #B2A89C;
+    	color: #fff
+    }
+    .arrow-7 {
+    	position: relative;
+    	left: -30rem;
+    }
+}	
