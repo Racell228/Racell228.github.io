@@ -508,6 +508,141 @@ footer {
         transform: rotate(45deg) translate(20rem,20rem);
     }
 }
+.header {
+	padding: 35rem 0;
+	background-color: #fff;
+	box-shadow: 0px 4px 120px rgba(63, 56, 47, 0.17);
+}
+.header_logo {
+	width: 123rem;
+}
+.header_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header_nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 914rem;
+}
+.header_nav_link {
+	font-size: 16rem;
+	font-weight: 500;
+	color: #6F6456;
+	line-height: 120%;
+}
+.breadcrumbs {
+	padding: 40rem 0;
+	display: flex;
+	align-items: center;
+}
+.breadcrumbs_link {
+	color: #908170;
+	font-weight: 300;
+	font-size: 16rem;
+	line-height: 150%;
+	display: flex;
+	align-items: center;
+}
+.breadcrumbs_link:after {
+	content: "";
+	width: 7rem;
+	height: 14rem;
+	display: block;
+	background-image: url(img/breadcrumbs_arrow.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 20rem;
+}
+.breadcrumbs_link_home {
+	width: 17rem;
+	margin-right: 10rem;
+}
+.breadcrumbs_link.current:after  {
+	display: none;
+}
+.breadcrumbs_link.current {
+	font-weight: 500;
+}
+.contact {
+	width: 900rem;
+	margin: 40rem auto 110rem;
+}
+.contact_title {
+	text-align: center;
+	margin-bottom: 50rem;
+}
+.contact_overlay {
+	display: flex;
+	justify-content: space-between;
+	margin: 60rem 0;
+}
+.contact_info {
+	width: 224rem;
+}
+.contact_map_item {
+	border: none;
+	width: 629rem;
+	height: 513rem;
+}
+.contact_info_icon {
+	width: 30rem;
+	margin-right: 20rem;
+}
+.contact_info_phone_item {
+	font-size: 20rem;
+	color: #6F6456;
+	line-height: 120%;
+	margin-bottom: 10rem;
+}
+.contact_info_overlay {
+	margin-bottom: 45rem;
+	display: flex;
+	align-items: flex-start;
+}
+.contact_info_mail_item {
+	font-size: 18rem;
+	color: #6F6456;
+}
+.contact_info_place_title {
+	display: block;
+	font-size: 18rem;
+	font-weight: 700;
+}
+.contact_info_place_text {
+	color: #908170;
+	font-weight: 300;
+	line-height: 150%;
+}
+.contact_text {
+	color: #B2A89C;
+	line-height: 150%;
+}
+.header_logo_nav {
+	display: none;
+}
+.header_nav_close {
+	display: none;
+}
+.register_overlay {
+	padding: 60rem 50rem;
+	background-color: #fff;
+	box-shadow: 0px 4px 120px rgba(63, 56, 47, 0.17);
+	border-radius: 10px;
+}
+.register_title {
+	text-align: center;
+	margin-bottom: 14rem;
+}
+.register_form_input_overlay {
+	margin-top: 30rem;
+}
+.register_form {
+	display: flex;
+}
 @media screen and (max-width: 768px) {
 	html {
    		font-size: 0.079429vw;
@@ -539,6 +674,24 @@ footer {
 	}
 	.footer_nav_link {
 		font-size: 20rem;
+	}
+	.contact_text {
+		font-size: 20rem;
+	}
+	.contact_info_mail_item {
+		font-size: 20rem;
+	}
+	.contact_info_place_title {
+		font-size: 20rem;
+	}
+	.header_nav_link {
+		font-size: 20rem;
+	}
+	.breadcrumbs_link {
+		font-size: 20rem;
+	}
+	.header_nav_close {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -767,4 +920,84 @@ footer {
     	position: relative;
     	left: -30rem;
     }
+    .header_logo {
+    	width: 148rem;
+	}
+	.header_nav {
+		display: none;
+	}
+	.breadcrumbs_link {
+		font-size: 14rem;
+	}
+	.contact {
+		width: auto;
+		margin: 20rem 20rem 70rem;
+	}
+	.breadcrumbs {
+		padding: 20rem 0;
+	}
+	.contact_title {
+	    text-align: left;
+	    margin-bottom: 20rem;
+	}
+	.contact_text {
+    	font-size: 16rem;
+	}
+	.contact_overlay {
+		flex-direction: column;
+	}
+	.contact_overlay {
+		margin: 40rem 0;
+	}
+	.contact_info_phone_item {
+		font-size: 18rem;
+	}
+	.contact_info_overlay {
+		margin-bottom: 30rem;
+	}
+	.contact_info_mail_item {
+		font-size: 18rem;
+	}
+	.contact_info_place_title {
+		font-size: 16rem;
+	}
+	.contact_info_place_text {
+		font-size: 16rem;
+	}
+	.contact_map_item {
+    	width: 335rem;
+    	height: 273rem;
+	}
+	.header {
+    	padding: 15rem 0;
+	}
+	.header_nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 9;
+		text-align: center;
+		padding-top: 100rem;
+	}
+	.header_nav_close {
+		position: absolute;
+		top: 20rem;
+		right: 20rem;
+		width: 55rem;
+		display: block;
+	}
+	.header_nav_link {
+	    color: #6F6456;
+	    padding: 25rem 0rem;
+	}
+	.header_logo_nav {
+		display: block;
+		position: absolute;
+		top: 27rem;
+		left: 20rem;
+		width: 148rem;
+	}
 }	

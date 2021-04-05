@@ -308,7 +308,7 @@ header {
 	padding: 22rem 18rem;
 	font-size: 14rem;
 	color: #fff;
-	width: 216rem;
+	width: 256rem;
 }
 .header_nav_catalog_open_image {
 	width: 18rem;
@@ -317,7 +317,7 @@ header {
 .header_nav_link {
 	font-size: 15rem;
 	color: #3A3A3A;
-	margin-right: 75rem;
+	margin-right: 65rem;
 	padding: 20rem 0;
 }
 .header_nav_link.active {
@@ -421,6 +421,14 @@ header {
 	transform: rotate(180deg);
 	transition: 0.5s;
 }
+.header_nav_menu_item_child2 .header_nav_menu_item_child_overlay2:hover > a .header_nav_menu_item_link_arrow {
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+.header_nav_menu_item_child .header_nav_menu_item_child_overlay:hover > a .header_nav_menu_item_link_arrow {
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
 .header_nav_menu_item_link:hover  {
 	background-color: #15A333;
 	color: #fff;
@@ -444,7 +452,7 @@ header {
 	background-color: #EDFFF1;
 }
 .hero_slider {
-	margin-left: 300rem;
+	margin-left: 350rem;
 }
 .hero_slider_item {
 	display: flex;
@@ -2269,7 +2277,7 @@ input[type="radio"]:checked + label {
 	.header_nav_catalog_open {
 		font-size: 12rem;
 		padding: 15rem 18rem;
-		width: 184rem;
+		width: 146rem;
 	}
 	.header_nav_menu_item_link_image {
 		height: 19rem;

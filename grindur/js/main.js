@@ -26,6 +26,13 @@ $(document).ready(function() {
   $('.index_header_burger').click(function(event) {
       event.preventDefault();
       $('.index_header_overlay').show(400);
+      $('.header_nav').show(400);
+  });
+});
+$(document).ready(function() {
+  $('.header_nav_close').click(function(event) {
+      event.preventDefault();
+      $('.header_nav').hide(400);
   });
 });
 $(document).ready(function() {
