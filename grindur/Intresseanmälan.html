@@ -53,11 +53,60 @@
 					<label class="register_form_input_label">Mobilnummer:</label>
 					<input type="text" class="register_form_input">
 				</div>
-				<div class="register_form_input_overlay">
+				<div class="register_form_textarea_overlay">
 					<label class="register_form_input_label">Eventuellt redan genomförda energiåtgärder (tilläggsisolering, värmepump, solceller, mm):</label>
-					<textarea class="register_form_input"></textarea>
+					<textarea class="register_form_input register_form_textarea"></textarea>
 				</div>
+				<input type="submit" value="Skicka" class="register_form_submit btn">
 			</form>
 		</div>
 		<p class="contact_text">Maecenas non pretium lacus, sit amet porttitor nunc. Fusce finibus neque et nisl posuere auctor. Sed ut nisi blandit neque auctor placerat sit amet non tellus. Ut elementum placerat ligula. Phasellus ultrices sapien id maximus ultricies. Cras dapibus lacus commodo augue tristique laoreet. In ut laoreet nulla, ut tristique purus. Donec lectus turpis, efficitur eu ante a, dapibus facilisis dolor. Aenean semper mauris sit amet lorem vulputate, ut pellentesque augue malesuada. Nam in neque vel lorem faucibus sodales.</p>
 	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_info">
+					<img src="img/footer_logo.svg" class="footer_info_img">
+					<p class="footer_info_adress">Embassy House Linnégatan 89C 115 23  Stockholm</p>
+				</div>
+				<div class="footer_contact">
+					<a href="#" class="footer_contact_tel">070 – 560 20 10</a>
+					<a href="#" class="footer_contact_mail">kontakt@grindur.se</a>
+					<a href="#" class="footer_contact_btn btn">Kontakta oss</a>
+				</div>
+				<div class="footer_partner">
+					<img src="img/footer_partner1.svg">
+					<img src="img/footer_partner2.svg">
+					<img src="img/footer_partner2.svg">
+				</div>
+				<div class="footer_nav">
+					<a href="#" class="footer_nav_link">Vad kan finansieras?</a>
+					<a href="#" class="footer_nav_link">Vem kan fa finansierina?</a>
+					<a href="#" class="footer_nav_link">Intresseanmälan</a>
+					<a href="#" class="footer_nav_link">Om oss</a>
+					<a href="#" class="footer_nav_link">Kontakt</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal modal_done">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close_modal.svg" class="modal_close">
+			<img src="img/done_modal.svg" class="modal_content_img">
+			<h4 class="modal_content_text">Er intresseanmälan är skickad. Vi kontaktar er inom kort.</h4>
+		</div>
+	</div>
+	<div class="modal modal_error">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close_modal.svg" class="modal_close">
+			<img src="img/error_modal.svg" class="modal_content_img">
+			<h4 class="modal_content_text">Intresseanmälan gick inte att skicka. Var god kontrollera uppgifterna.</h4>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
+</body>
+</html>
