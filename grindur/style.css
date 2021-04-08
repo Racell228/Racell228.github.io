@@ -63,6 +63,7 @@ p {
 }
 .hero {
 	height: 100vh;
+	background: #93ad88;
 }
 .hero_video {
 	position: absolute;
@@ -85,6 +86,7 @@ p {
 	background-color: rgb(239,219,149,0.6);
 	border-radius: 100rem;
 	padding: 10rem 30rem;
+	transition: 0.5s;
 }
 .hero_title {
 	margin-top: auto;
@@ -138,6 +140,9 @@ p {
 	height: 22rem;
 	cursor: pointer;
 }
+.slick-arrow:hover {
+	background-image: url(img/slider_arrow_hover.svg);
+}
 .slick-arrow.right {
 	transform: rotate(180deg);
 	right: calc(50% - 30rem);
@@ -154,6 +159,7 @@ p {
 .efficiency_subtitle {
 	text-align: center;
 	font-size: 30rem;
+	font-weight: 300;
 	margin-top: 15rem;
 }
 .efficiency_overlay {
@@ -188,6 +194,7 @@ p {
 	font-size: 16rem;
 	line-height: 120%;
 	border-radius: 120px;
+	transition: 0.5s;
 }
 .believe_btn {
 	width: 220rem;
@@ -206,6 +213,7 @@ p {
 	display: none;
 	z-index: -1;
 	color:  #7A6D5F;
+	line-height: 140%;
 	font-weight: 300;
 }
 .steps_title {
@@ -357,7 +365,7 @@ p {
 	padding: 17rem;
 	background-color: #fff;
 	filter: drop-shadow(0px 4px 13px rgba(19, 27, 20, 0.13));
-	animation: prompt 8s infinite;
+	animation: prompt 3s infinite;
 }
 @-webkit-keyframes prompt {
   0% {
@@ -611,6 +619,7 @@ footer {
 	display: block;
 	font-size: 18rem;
 	font-weight: 700;
+	margin-bottom: 4rem;
 }
 .contact_info_place_text {
 	color: #908170;
@@ -661,8 +670,7 @@ footer {
 .register_form_input {
 	background: #F7F6F4;
 	border-radius: 5px;
-	
-	font-size: 18rem;
+	font-size: 16rem;
 	font-family: 'Rubik', sans-serif;
 	border: none;
 	padding: 15rem 26rem;
@@ -683,6 +691,7 @@ footer {
 	margin: 40rem auto 0;
 	width: 220rem;
 	font-family: 'Rubik', sans-serif;
+	cursor: pointer;
 }
 input[type="text"]::-webkit-input-placeholder {
     color: #D4CFC8;
@@ -728,6 +737,43 @@ textarea::-moz-placeholder {
     right: 40rem;
     width: 30rem;
     z-index: 11;
+}
+.steps_item_name_arrow {
+	display: none;
+}
+.index_header_link:hover {
+	background-color: rgb(239,219,149,0.8);
+	transition: 0.5s;
+}
+.btn:hover {
+	transition: 0.5s;
+	background-color: #c3bcb2;
+}
+.footer_nav_link:hover {
+	text-decoration: underline;
+}
+.footer_contact_btn:hover {
+	opacity: 0.85;
+	transition:0.5s;
+	background-color: #fff;
+}
+.header_nav_link:hover {
+	text-decoration: underline;
+}
+.breadcrumbs_link:hover {
+	text-decoration: underline;
+}
+.breadcrumbs_link.current:hover {
+	text-decoration: none;
+}
+.contact_info_phone_item:hover {
+	text-decoration: underline;
+}
+.contact_info_mail_item:hover {
+	text-decoration: underline;
+}
+.modal_content_text {
+	line-height: 140%;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -866,7 +912,21 @@ textarea::-moz-placeholder {
 	}
 	.steps_item_name {
 		font-size: 17rem;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
 	}
+	.steps_item_name_arrow {
+		display: block;
+		transform: rotate(90deg);
+		margin-left: 15rem;
+		width: 7rem;
+		transition: 0.5s;
+	}
+	.steps_item.active .steps_item_name_arrow{
+		transform: rotate(270deg);
+		transition: 0.5s;
+	} 
 	.steps_item_contant {
 		font-size: 16rem;
 	}
@@ -972,7 +1032,7 @@ textarea::-moz-placeholder {
     	font-size: 16rem;
     }
     .footer_partner img {
-    	margin-top: 15rem;
+    	margin-top: 25rem;
     }
     .index_header_overlay {
     	position: fixed;
@@ -982,7 +1042,7 @@ textarea::-moz-placeholder {
     	height: 100vh;
     	background-color: #fff;
     	text-align: center;
-    	padding-top: 100rem;
+    	padding-top: 160rem;
     }
     .index_header_close {
     	display: block;
@@ -993,6 +1053,7 @@ textarea::-moz-placeholder {
     .index_header_link {
     	background-color: transparent;
     	color: #6F6456;
+    	font-size: 16rem;
     	padding: 25rem 0rem;
     }
     .index_header {
@@ -1069,7 +1130,7 @@ textarea::-moz-placeholder {
 		background-color: #fff;
 		z-index: 9;
 		text-align: center;
-		padding-top: 100rem;
+		padding-top: 160rem;
 	}
 	.header_nav_close {
 		position: absolute;
@@ -1081,6 +1142,7 @@ textarea::-moz-placeholder {
 	.header_nav_link {
 	    color: #6F6456;
 	    padding: 25rem 0rem;
+	    font-size: 16rem;
 	}
 	.header_logo_nav {
 		display: block;
@@ -1103,9 +1165,10 @@ textarea::-moz-placeholder {
 	}
 	.register_form_input_overlay {
 		width: 100%;
+		margin-top: 25rem;
 	}
 	.register_title {
-		margin-bottom: 10rem;
+		margin-bottom: 15rem;
 	}
 	h4 {
 		font-size: 24rem;
