@@ -264,9 +264,10 @@ p {
 	width: 469rem;
 }
 .make_video {
-    width: 650rem;
+    width: 370rem;
     object-fit: cover;
     border-radius: 5px;
+    margin-right: 100rem;
 }
 .make_text_item {
 	margin: 40rem 0 50rem;
@@ -938,6 +939,7 @@ textarea::-moz-placeholder {
 	}
 	.make_video {
 		width: 100%;
+		margin-right: 0;
 	}
 	.make_text {
 		width: 100%;

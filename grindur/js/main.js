@@ -50,3 +50,11 @@ if(window.matchMedia('(max-width: 480px)').matches){
     });
   });
 }
+$(document).ready(function() {
+      $('.register_form_input_defaul').keydown(function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          return false;
+      }
+   });
+});
