@@ -220,11 +220,13 @@ p {
 	text-align: center;
 	line-height: 110%;
 	z-index: 10;
+	font-style: italic;
 }
 .story_item_number {
 	position: absolute;
 	font-family: 'Handofseen';
 	font-size: 73rem;
+	font-style: italic;
 }
 .story_item_number1 {
     top: -80rem;
