@@ -120,7 +120,8 @@
     src: local('Handofseen'), local('Handofseen'),
         url('../fonts/Handofseen/Handofseen.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Handofseen/Handofseen.woff') format('woff'),
-        url('../fonts/Handofseen/Handofseen.ttf') format('truetype');
+        url('../fonts/Handofseen/Handofseen.ttf') format('truetype'),
+        url('../fonts/Handofseen/Handofseen.svg') format('svg'); 
     font-weight: normal;
     font-style: italic;
 }

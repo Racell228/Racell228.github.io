@@ -540,6 +540,7 @@ p {
 	height: 208rem;
 	margin: 30rem 0;
 	position: relative;
+	background-size: cover;
 	z-index: 3;
 }
 .ready_item_text {
@@ -1655,7 +1656,6 @@ footer {
 		transform: rotate(-72deg);
 		z-index: 999999;
 		width: 160rem;
-		display: none;
 	}
 	.story_item_arrow1 {
 	    z-index: 9999;
