@@ -1506,6 +1506,9 @@ footer {
     	width: 290rem;
     	text-align: center;
 	}
+	.head_offer_text_img {
+		display: none;
+	}
 	.head_offer_link {
 		background-color: transparent;
 		color: #2f2e2e;
