@@ -186,13 +186,13 @@ p {
 }
 .meet_position {
 	position: absolute;
-    top: 40rem;
+    top: 10rem;
     left: -50rem;
     width: 300rem;
     font-size: 120rem;
     color: #d6ad45;
     font-family: 'Allura', cursive;
-    transform: rotate(-35deg);
+    transform: rotate(-20deg);
     line-height: 70%;
     font-weight: 400;
 }
@@ -464,6 +464,7 @@ p {
 	font-size: 92rem;
 	position: absolute;
 	font-family: 'Times New Roman';
+	transition: 0.5s;
 }
 .help_item_number1 {
 	right: 50rem;
@@ -478,12 +479,16 @@ p {
 .help_item_number3 {
 	right: 10rem;
     top: -40rem;
-	color: #31bfc7;
+	color: #909191;
 }
 .help_item_number4 {
 	left: 30rem;
     top: -50rem;
 	color: #666666;
+}
+.help_item:hover .help_item_number{
+	color: #31bfc7;
+	transition: 0.5s;
 }
 .ready {
 	max-width: 1920rem;
@@ -540,8 +545,8 @@ p {
 	height: 208rem;
 	margin: 30rem 0;
 	position: relative;
-	background-size: cover;
 	z-index: 3;
+	background-size: cover;
 }
 .ready_item_text {
 	font-size: 18rem;
@@ -604,6 +609,9 @@ p {
     left: 0;
     top: 0;
 }
+.acces_images_mac_mob {
+	display: none;
+}
 .acces_images_ipad {
 	width: 669rem;
 	position: absolute;
@@ -662,6 +670,7 @@ p {
 .slider_item_title {
 	color: #292929;
 	font-size: 35rem;
+	font-weight: 400;
 }
 .slider_item_position {
 	color: #3f3f3f;
@@ -670,7 +679,7 @@ p {
 	margin-top: 13rem;
 }
 .slider_item_hr {
-	margin: 45rem auto;
+	margin: 25rem auto;
 	width: 287rem;
 	height: 0;
 	border: 1rem solid #ffa78b;
@@ -1623,10 +1632,10 @@ footer {
 	.story_item_number2 {
 	    left: auto;
 	    right: 10rem;
-	    top: -40rem;
+	    top: -20rem;
 	}
 	.story_item_number3 {
-    	top: -60rem;
+    	top: -20rem;
     	left: 25rem;
 	}
 	.story_item_number {
@@ -1682,6 +1691,18 @@ footer {
 	.story_item_arrow5 {
     	top: -50rem;
     	left: -50rem;
+	}
+	.story_item2 {
+		z-index: 8;
+	}
+	.story_item3 {
+		z-index: 7;
+	}
+	.story_item4 {
+		z-index: 6;
+	}
+	.story_item6 {
+		z-index: 5;
 	}
 	.story_text {
     	position: static;
@@ -1754,6 +1775,7 @@ footer {
 	}
 	.acces_title {
     	font-size: 41rem;
+    	font-weight: 700;
 	}
 	.acces {
     	margin: 50rem auto 150rem;
@@ -1785,6 +1807,12 @@ footer {
     	position: static;
     	width: 490rem;
     	margin-left: -20rem;
+    	display: none;
+	}
+	.acces_images_mac_mob {
+		display: block;
+		width: 376rem;
+    	margin-left: -20rem;
 	}
 	.acces_images {
 		align-items: flex-start;
@@ -1800,13 +1828,13 @@ footer {
 	}
 	.slider {
 		width: 100%;
-		margin: 25rem auto 0;
+		margin: 40rem auto 0;
 	}
 	.slider_item {
  	  	padding: 25rem;
 	}
 	.slider_item_hr {
-    	margin: 15rem auto;
+    	margin: 10rem auto 25rem;
 	}
 	.slider_btn {
 		top: auto;
@@ -1818,8 +1846,11 @@ footer {
 	.slider_btn.right {
     	right: 20rem;
 	}
+	.slider_item_title {
+		font-size: 35rem;
+	}
 	.testimonials {
-    	padding: 60rem 0 120rem;
+    	padding: 40rem 0 120rem;
 	}
 	.build_title {
     	font-size: 46rem;
@@ -1831,12 +1862,16 @@ footer {
 	.build {
     	padding: 70rem 20rem 50rem;
     	width: calc(100% - 40rem);
+    	margin-bottom: 115rem;
 	}
 	.build_btn {
 	    width: 289rem;
 	    padding: 13rem 43rem;
 	    margin: 40rem -20rem 0;
 	    font-size: 25rem;
+	    margin: -50rem -20rem 0;
+	    position: relative;
+	    top: 165rem;
 	}
 	.chart_item_year {
 		margin: 0 20rem 0 10rem;
