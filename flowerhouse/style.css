@@ -72,6 +72,7 @@ header {
 }
 .product_item {
 	width: 285rem;
+	cursor: pointer;
 	margin: 20rem 10rem 0;
 }
 .product_item_image {
@@ -84,12 +85,20 @@ header {
 .product_item_info {
 	background-color: #634154;
 	padding: 15rem 20rem;
+	position: relative;
+	overflow: hidden;
 }
 .product_item_info_link {
-	display: none;
-	padding: 14rem 0;
+    padding: 30rem 20rem;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: -100%;
+    width: calc(100% - 40rem);
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+    background-color: #634154;
 }
 .product_item_info_city {
 	margin-top: 6rem;
@@ -100,11 +109,10 @@ header {
 	font-size: 20rem;
 	font-weight: 700;
 }
-.product_item:hover .product_item_info_overlay {
-	display: none;
-}
+
 .product_item:hover .product_item_info_link{
-	display: flex;
+	top: 0;
+	transition: 0.5s;
 }
 .product_item_info_link_arrow {
 	transform: rotate(-90deg);

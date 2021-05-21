@@ -574,3 +574,148 @@ footer {
 .faq_item:last-child  {
 	border-radius: 0px 0px 8px 8px;
 }
+@media screen and (max-width: 992px) {
+	html {
+	    font-size: 0.07208383vw;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+    	font-size: 0.13021vw;
+	}
+	.container {
+    	width: calc(100% - 40rem);
+    	margin: 0 20rem;
+	}
+	.header_home_logo {
+		width: 230rem;
+    	padding: 2rem 0;
+	}
+	.hero_home_nav_item {
+		margin-left: 35rem;
+	}
+	.hero {
+		padding: 140rem 0 60rem
+	}
+	.hero_title {
+		font-size: 44rem;
+	}
+	.hero_slider {
+    	width: 330rem;
+	}
+	.hero_text {
+    	max-width: 322rem;
+	}
+	.hero_text_item {
+		margin: 20rem 0;
+	}
+	.hero_link {
+		padding: 14rem;
+	}
+	.upload_head {
+		flex-wrap: wrap;
+	}
+	.upload_head_title {
+		font-size: 30rem;
+	}
+	.upload_head_text {
+		font-size: 26rem;
+		margin: 0 0rem 0 auto;
+	}
+	.upload_head_link {
+		margin: 40rem auto 0;
+		padding: 13rem 0;
+	}
+	.upload {
+    	margin: 50rem 0;
+	}
+	.range {
+    	padding: 22rem 38rem;
+	}
+	.footer_copyright {
+		margin-right: 60rem;
+	}
+	.modal_content {
+	    width: 650rem;
+	    left: calc(50% - 350rem);
+	    top: 50rem;
+	    overflow: auto;
+	    height: 80%;
+	}
+	.modal_upload_image {
+		width: 126rem;
+	}
+	.modal_content_head_hr {
+    	background: #C4C4C4;
+    	height: 0;
+    	width: calc(100% + 47rem);
+	}
+	.modal_upload {
+    	margin: 75rem 0 100rem;
+	}
+	.modal_content_footer_hr {
+		width: calc(100% + 47rem);
+	}
+	.upload_details .modal_content {
+    	top: 50rem;
+	}
+	.modal_upload_details_form {
+		flex-direction: column-reverse;
+	}
+	.modal_upload_details_video_window {
+		width: 100%;
+	}
+	.modal_upload_details_form_item {
+    	width: 100%;
+    	margin-top: 40rem;
+	}
+	.modal_upload_details_form_ul {
+		margin-top: 20rem;
+	}
+	.modal_upload_details_pay {
+		margin-top: 40rem;
+	}
+	.modal_upload_details_pay_overlay {
+		margin: 20rem 0;
+	}
+	.modal_upload_details_pay_overlay img {
+    	width: 70rem;
+    	margin-right: 22rem;
+	}
+	.modal_upload_details_pay_check {
+		font-size: 16rem;
+	}
+	.modal_upload_details_pay_check:before {
+		width: 20rem;
+    	height: 20rem;
+    	background-size: 20rem;
+	}
+	.modal_upload_details_pay_title {
+		font-size: 18rem;
+	}
+	.upload_done_content {
+		flex-direction: column;
+	}
+	.upload_done_content_video_overlay {
+    	width: 100%;
+	} 
+	.upload_done_content_info {
+		margin: 30rem auto 0;
+	}
+	.upload_done_content_info_title {
+		justify-content: center;
+	}
+	.upload_done_content_info_item {
+		justify-content: center;
+	}
+	.upload_done_content_info_subtitle {
+		margin: 30rem 0;
+	}
+	.btn {
+		padding: 10rem 0;
+	}
+	.footer_links {
+		margin-left: auto;
+		width: 360rem;
+	}
+} 
