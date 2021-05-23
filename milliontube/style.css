@@ -718,4 +718,18 @@ footer {
 		margin-left: auto;
 		width: 360rem;
 	}
+	.header_faq_nav_link {
+		margin-left: 35rem;
+	}
+	.faq_item_title {
+		padding: 20rem 40rem;
+	}
 } 
+@media screen and (max-width: 375px) {
+	.modal_content {
+		height: 60%;
+	}
+	.modal_upload {
+	    margin-top: 50%;
+	}
+}
