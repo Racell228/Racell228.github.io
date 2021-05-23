@@ -167,7 +167,7 @@ footer {
 	display: flex;
 }
 .footer_nav_hr {
-	margin: 10rem 0 20rem;
+	margin: 10rem 0 20rem 40rem;
 	width: 34rem;
 	height: 1rem;
 	border: none;
@@ -176,6 +176,9 @@ footer {
 .footer_nav_link {
 	font-size: 16rem;
 	line-height: 240%;
+}
+.parent .footer_nav_link {
+	margin-left: 40rem;
 }
 .footer_contact_mail {
 	margin-bottom: 20rem;
@@ -380,7 +383,7 @@ footer {
 	transition: 0.5s;
 	height: auto;
 	z-index: 9;
-	padding: 0 30rem;
+	padding: 0 30rem 20rem;
 }
 .header_parent:hover .trigger{
 	transform: rotate(180deg);
@@ -429,6 +432,7 @@ footer {
 .footer_nav {
 	transition: 0.5s;
 	position: relative;
+	margin: 0 40rem;
 }
 .footer_nav:after {
 	content: "";
@@ -501,6 +505,10 @@ footer {
 }
 .parent .footer_nav:hover:after{
 	display: none;
+}
+.footer_nav_overlay {
+	display: flex;
+	align-items: flex-start;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -599,7 +607,13 @@ footer {
 	}
 	.footer_nav {
 		width: 100%;
-		margin-top: 30rem;
+		margin: 30rem 0 0;
+	}
+	.parent .footer_nav_link {
+		margin-left: 0;
+	}
+	.footer_nav_overlay {
+		flex-direction: column;
 	}
 	.footer_nav_hr {
 		margin: 10rem 0;
@@ -859,5 +873,8 @@ footer {
 	}
 	.header_parent .footer_nav_link{
 		padding-left: 20rem;
+	}
+	.header_phone_item:hover {
+		text-decoration: none;
 	}
 }
