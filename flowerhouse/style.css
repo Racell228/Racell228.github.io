@@ -444,7 +444,7 @@ footer {
 	transition: 0.5s;
 }
 .footer_nav:hover:after {
-	width: 30rem;
+	width: 34rem;
 	transition: 0.5s;
 }
 .footer_contact_social_item:hover {
