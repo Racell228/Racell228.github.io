@@ -317,13 +317,14 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $('.review-modal_close').click(function(event) {
-      event.preventDefault();
-      $('.modal_card,.modal_fast_buy,.modal_signin').hide();
-      $('html,body').removeClass('modal_overflow');
-  });
-});
+// $(document).ready(function() {
+//   $('.review-modal_close').click(function(event) {
+//       event.preventDefault();
+//       $('.modal_card,.modal_fast_buy,.modal_signin').hide();
+//       $('html,body').removeClass('modal_overflow');
+//   });
+// });
+
 $(document).ready(function() {
   $('.signup').click(function(event) {
       event.preventDefault();
@@ -345,7 +346,14 @@ $(document).ready(function() {
       $('html,body').addClass('modal_overflow');
   });
 });
-
+$(document).click( function(e){
+    if ( $(e.target).closest('.modal_card,.modal_fast_buy,.modal_signin,.signin').length ) {
+        // клик внутри элемента 
+        return;
+    }
+    // клик снаружи элемента 
+    $('.modal_card,.modal_fast_buy,.modal_signin').fadeOut();
+});
 $(document).ready(function() {
   $('.feedback_head_active-btn').click(function(event) {
       event.preventDefault();

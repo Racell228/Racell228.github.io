@@ -68,13 +68,9 @@ a {
 	align-items: center;
 	padding-top: 16rem;
 }
-.header_home_logo {
+.header_home_logo img {
 	margin-right: auto;
-	font-size: 30rem;
 	width: 280rem;
-	padding: 8rem 0;
-	background-color: #fff;
-	text-align: center;
 }
 .header_home {
 	position: absolute;
@@ -587,9 +583,8 @@ footer {
     	width: calc(100% - 40rem);
     	margin: 0 20rem;
 	}
-	.header_home_logo {
+	.header_home_logo img {
 		width: 230rem;
-    	padding: 2rem 0;
 	}
 	.hero_home_nav_item {
 		margin-left: 35rem;
@@ -723,6 +718,9 @@ footer {
 	}
 	.faq_item_title {
 		padding: 20rem 40rem;
+	}
+	.header_home_logo {
+		margin-right: auto;
 	}
 } 
 @media screen and (max-width: 375px) {
