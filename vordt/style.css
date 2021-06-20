@@ -405,8 +405,8 @@ h3 {
 .advantages_hr_vertikal {
 	left: 50%;
 	width: 2rem;
-	top: -100rem;
-	height: calc(100% + 100rem);
+	top: 0rem;
+	height: 100%;
 }
 .advantages_image_hover {
 	display: none;
@@ -803,6 +803,9 @@ h4 {
 .details_text_nav {
 	display: none;
 }
+.burger_black {
+	display: none;
+}
 @media screen and (max-width: 480px) {
 	html {
 	    font-size: 0.266529vw;
@@ -1135,5 +1138,15 @@ h4 {
 	}
 	.blog .slick-arrow.right {
     	right: calc(50% - 33rem);
+	}
+	.burger_black {
+		width: 39rem;
+    	margin-left: 20rem;
+	}
+	.header_black .burger{
+		display: none;
+	}
+	.header_black .burger_black{
+		display: block;
 	}
 }

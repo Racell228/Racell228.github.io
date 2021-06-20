@@ -201,7 +201,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.burger').click(function(event) {
+  $('.burger,.burger_black').click(function(event) {
     event.preventDefault();
       $('.mobile_burger').show(400);
       $('html').addClass('hidden');
