@@ -1034,6 +1034,9 @@ h4 {
 	.blog_item_title {
 		font-size: 16rem;
 	}
+	.blog {
+		height: calc(100vh - 0.4rem)!important;
+	}
 	h4 {
 		font-size: 24rem;
 	}
