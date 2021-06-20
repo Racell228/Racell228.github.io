@@ -323,9 +323,10 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	margin-top: 40rem;
 }
 .details_partners img{
-	height: 86rem;
+	height: 59rem;
 }
 .advantages_item {
 	background-color: #0C0C0C;
@@ -417,6 +418,36 @@ h3 {
 .advantages_item:hover .advantages_image_hover {
 	display: block;
 }
+.advantages_item:hover .advantages_item_text{
+	display: block;
+	transition: 0.5s;
+	
+	opacity: 1;
+}
+.advantages_item_text {
+	position: absolute;
+	width: 374rem;
+	transition: 0.5s;
+	opacity: 0;
+}
+.advantages_item_text1 {
+	bottom: 140rem;
+    right: 30rem;
+    text-align: right;
+}
+.advantages_item_text2 {
+	bottom: 140rem;
+    left: 30rem;
+}
+.advantages_item_text3 {
+	top: 90rem;
+	right: 30rem;
+	text-align: right;
+}
+.advantages_item_text4 {
+	left: 30rem;
+	top: 140rem;
+}
 /*.advantages_item.active {
 	position: absolute;
 	width: 100%;
@@ -478,6 +509,10 @@ h3 {
 .blog_item {
 	position: relative;
 }
+.blog_item:hover .blog_item_image{
+	background-size: 110%;
+	transition: 0.3s;
+}
 .blog_item_image {
 	border-radius: 5rem;
 	background-size: 100%;
@@ -488,10 +523,7 @@ h3 {
 	position: relative;
 	transition: 0.3s;
 }
-.blog_item_image:hover {
-	background-size: 110%;
-	transition: 0.3s;
-}
+
 .blog_item:after {
 	content: "";
 	border-radius: 5rem;
@@ -511,6 +543,7 @@ h3 {
 	height: 270rem;
 	margin: 5rem 0;
 	display: flex!important;
+	cursor: pointer;
 }
 .blog .slick-initialized .slick-slide {
     display: flex;
@@ -806,6 +839,9 @@ h4 {
 .burger_black {
 	display: none;
 }
+.mobile_burger {
+	display: none;
+}
 @media screen and (max-width: 480px) {
 	html {
 	    font-size: 0.266529vw;
@@ -867,7 +903,10 @@ h4 {
 	    z-index: 1;
 	    opacity: 0.4;
 	    top: 90rem;
-	    right: -240rem;
+	    right: 0rem;
+	    overflow: hidden;
+	    width: 410rem;
+	    height: 410rem;
 	}
 	.hero_partners {
 		overflow-x: scroll;
@@ -1022,14 +1061,21 @@ h4 {
 		display: none;
 	}
 	.details_partners img {
-		display: none;
+	    height: 57rem;
+	    margin-right: 40rem;
+	}
+	.details_partners {
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
 	}
 	.hero_image_item {
-		display: none;
+	    width: 410rem;
+	    position: absolute;
+	    right: -250rem;
+	    top: 30rem;
 	}
-	.blog .slick-initialized .slick-slide {
-		margin: 0;
-	}
+	
 	.blog_item_small {
 		height: 172rem;
 	}
@@ -1148,5 +1194,21 @@ h4 {
 	}
 	.header_black .burger_black{
 		display: block;
+	}
+	.advantages_item_text {
+	    position: relative;
+	    top: auto;
+	    left: auto;
+	    bottom: auto;
+	    right: auto;
+	    opacity: 1;
+	    width: calc(100% - 40rem);
+	    text-align: center;
+	    margin: 15rem auto;
+	    order: 1;
+	}
+	.advantages_item {
+		display: flex!important;
+		flex-direction: column;
 	}
 }

@@ -63,6 +63,7 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 1,
         rows: 3,
+        margin: 10,
       }
     },
     ]
