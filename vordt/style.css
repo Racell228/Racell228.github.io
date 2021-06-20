@@ -476,7 +476,9 @@ h3 {
 	height: 100vh!important;
 }
 .blog_item {
-	
+	position: relative;
+}
+.blog_item_image {
 	border-radius: 5rem;
 	background-size: 100%;
 	background-position: center;
@@ -486,7 +488,7 @@ h3 {
 	position: relative;
 	transition: 0.3s;
 }
-.blog_item:hover {
+.blog_item_image:hover {
 	background-size: 110%;
 	transition: 0.3s;
 }
@@ -1118,5 +1120,20 @@ h4 {
 	}
 	.mobile_burger_head_logo img {
 		width: 100rem;
+	}
+	.blog .slick-arrow {
+		top: auto;
+		bottom: -30rem;
+		height: 26rem;
+		width: 26rem;
+	}
+	.blog_slider {
+		margin-top: 50rem;
+	}
+	.blog .slick-arrow.left {
+    	left: calc(50% - 33rem);
+	}
+	.blog .slick-arrow.right {
+    	right: calc(50% - 33rem);
 	}
 }
