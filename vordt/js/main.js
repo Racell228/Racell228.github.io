@@ -198,3 +198,21 @@ $(document).ready(function() {
 } else {
   /* the viewport is less than 400 pixels wide */
 }
+
+
+$(document).ready(function() {
+  $('.burger').click(function(event) {
+    event.preventDefault();
+      $('.mobile_burger').show(400);
+      $('html').addClass('hidden');
+      $('body').addClass('hidden');
+  });
+});
+$(document).ready(function() {
+  $('.mobile_burger_head_close,.header_nav a').click(function(event) {
+    event.preventDefault();
+      $('.mobile_burger').hide(400);
+      $('html').removeClass('hidden');
+      $('body').removeClass('hidden');
+  });
+});
