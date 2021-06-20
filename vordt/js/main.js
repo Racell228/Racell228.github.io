@@ -176,7 +176,7 @@ $(document).ready(function() {
   });
 });
 if (window.matchMedia("(max-width: 481px)").matches) {
-    $(document).ready(function(){
+$(document).ready(function(){
     $('.advantages_overlay').slick({
       infinite: false,
       slidesToShow: 1,
@@ -185,6 +185,15 @@ if (window.matchMedia("(max-width: 481px)").matches) {
       prevArrow: '<button type="button" class="slick_left slick_btn"></button>',
       nextArrow: '<button type="button" class="slick_right slick_btn"></button>'
     });
+});
+$(document).ready(function() {
+  $('.details_text_overlay:first-child').show();
+  $('.details_text_nav_item').click(function(event) {
+    event.preventDefault();
+      $(this).addClass('active').siblings().removeClass('active');
+      var id1 = $(this).attr('href');
+      $(id1).fadeIn(400).siblings(0).fadeOut(0);
+  });
 });
 } else {
   /* the viewport is less than 400 pixels wide */

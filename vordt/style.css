@@ -880,7 +880,7 @@ h4 {
 		margin-right: 0;
 	}
 	section {
-		height: 100vh!important;
+    	height: calc(100vh - 0.4rem)!important;
 	}
 	h2 {
 		font-size: 27rem;
@@ -908,9 +908,6 @@ h4 {
 	.details_text_overlay {
 		margin-top: 35rem;
 		display: none;
-	}
-	.details_text_overlay:first-child {
-		display: block;
 	}
 	.details_image {
 		display: none;
