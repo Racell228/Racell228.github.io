@@ -161,7 +161,7 @@ header {
   width: 40%;
   height: 50%;
   border: 2rem solid #fff;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 .btn:after {
   bottom: 0;
@@ -204,7 +204,7 @@ header {
   width: 40%;
   height: 50%;
   border: 2rem solid #fff;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 .header_nav a.active:after {
   bottom: 0;
@@ -526,10 +526,14 @@ h3 {
 	height: 100vh;
 	transition: 2s;
 }
+.advantages_item.active .advantages_image{
+	display: none;
+}
 .advantages_item.active .advantages_image_hover{
 	z-index: 999;
 	display: block;
 }
+
 .advantages_item.active .advantages_item_title {
 	z-index: 999;
     width: 100vw;
@@ -1162,6 +1166,20 @@ h4 {
 	}
 	.blog_item_title {
 		font-size: 14rem;
+	}
+	.blog_arrow_next {
+	    right: 125rem;
+	    transform: rotate(180deg);
+	    
+	}
+	.blog_arrow_back {
+	    left: 125rem;
+	}
+	.blog_arrow {
+		bottom: -50rem;
+		top: auto;
+		display: flex;
+		align-items: center;
 	}
 	h4 {
 		font-size: 24rem;
