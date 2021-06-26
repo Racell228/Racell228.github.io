@@ -540,7 +540,6 @@ h3 {
     right: 0;
 }
 .blog {
-	height: 100vh!important;
 	background-image: url(img/blog_bg.svg);
 }
 .blog_item {
