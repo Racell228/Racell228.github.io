@@ -42,33 +42,33 @@ $.scrollify({
 $(document).ready(function() {
   $('.advantages_item').click(function(event) {
       event.preventDefault();
-      $(this).find('.advantages_item_content').show(500);
+      // $(this).find('.advantages_item_content').show(500);
       $(this).addClass('active')
       $('html').addClass('hidden');
       $.scrollify.disable();
   });
 });
 // blog slider
-$(document).ready(function(){
-  $('.blog_slider').slick({
-    slidesToShow: 3,
-    rows: 2,
-    slidesToScroll: 1,
-    margin: 10,
-    prevArrow: '<button type="button" class="left"></button>',
-    nextArrow: '<button type="button" class="right"></button>',
-    responsive: [
-    {
-      breakpoint: 481,
-      settings: {
-        slidesToShow: 1,
-        rows: 3,
-        margin: 10,
-      }
-    },
-    ]
-  });
-});
+// $(document).ready(function(){
+//   $('.blog_slider').slick({
+//     slidesToShow: 3,
+//     rows: 2,
+//     slidesToScroll: 1,
+//     margin: 10,
+//     prevArrow: '<button type="button" class="left"></button>',
+//     nextArrow: '<button type="button" class="right"></button>',
+//     responsive: [
+//     {
+//       breakpoint: 481,
+//       settings: {
+//         slidesToShow: 1,
+//         rows: 3,
+//         margin: 10,
+//       }
+//     },
+//     ]
+//   });
+// });
 // header scroll styles
 $(window).scroll(function() {
 var height = $(window).scrollTop();
@@ -193,7 +193,7 @@ $(document).ready(function() {
     event.preventDefault();
       $(this).addClass('active').siblings().removeClass('active');
       var id1 = $(this).attr('href');
-      $(id1).fadeIn(400).siblings(0).fadeOut(0);
+      $(id1).fadeIn(1000).siblings(0).fadeOut(0);
   });
 });
 } else {
