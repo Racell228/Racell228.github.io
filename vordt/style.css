@@ -1126,7 +1126,7 @@ h4 {
 	}
 	.advantages_overlay {
 		display: block;
-		height: 100vh;
+		height: calc(100vh - 55rem);
 	}
 	.contacts_map {
 		display: none;
