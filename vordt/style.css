@@ -783,11 +783,11 @@ h4 {
 .form_submit {
 	width: 525rem;
 	font-family: 'Axiforma';
-	color: #269E80;
+	color: #fff;
 	border: 1rem solid #269E80;
 	border-radius: 5rem;
 	font-size: 18rem;
-	background-color: transparent;
+	background-color: #269E80;
 	height: 69rem;
 	margin-top: 30rem;
 }
@@ -989,12 +989,12 @@ h4 {
 	.hero_partners img:last-child {
 		margin-right: 0;
 	}
-	section {
+	/*section {
     	height: calc(100vh - 53rem)!important;
 	}
 	.blog {
 		height: calc(100vh - 53rem)!important;
-	}
+	}*/
 	h2 {
 		font-size: 27rem;
 	}
@@ -1125,7 +1125,8 @@ h4 {
 		left: calc(50% - 40rem);
 	}
 	.advantages_overlay {
-		align-items: center;
+		display: block;
+		height: 100vh;
 	}
 	.contacts_map {
 		display: none;
