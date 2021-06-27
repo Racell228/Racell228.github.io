@@ -43,9 +43,20 @@ $(document).ready(function() {
   $('.advantages_item').click(function(event) {
       event.preventDefault();
       $(this).find('.advantages_item_hole').addClass('active');
+      $('.advantages_close').addClass('active');
       $(this).addClass('active')
       $('html').addClass('hidden');
       $.scrollify.disable();
+  });
+});
+$(document).ready(function() {
+  $('.advantages_close').click(function(event) {
+      event.preventDefault();
+      $('.advantages_item_hole').removeClass('active');
+      $('.advantages_close').removeClass('active');
+      $('.advantages_item').removeClass('active')
+      $('html').removeClass('hidden');
+      $.scrollify.enable();
   });
 });
 // blog slider
