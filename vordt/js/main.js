@@ -42,7 +42,7 @@ $.scrollify({
 $(document).ready(function() {
   $('.advantages_item').click(function(event) {
       event.preventDefault();
-      // $(this).find('.advantages_item_content').show(500);
+      $(this).find('.advantages_item_hole').addClass('active');
       $(this).addClass('active')
       $('html').addClass('hidden');
       $.scrollify.disable();
