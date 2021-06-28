@@ -592,6 +592,10 @@ h3 {
     transition: 2s;
     position: absolute;
     right: 0;
+    font-size: 34rem;
+}
+.close_advantages {
+	z-index: 9;
 }
 .blog {
 	background-image: url(img/blog_bg.svg);
@@ -1125,6 +1129,9 @@ h4 {
 		width: 100%;
 		text-align: center;
 		margin-top: 30rem;
+	}
+	.advantages_item_overlay {
+		position: relative;
 	}
 	.advantages_item {
 		width: 100%;

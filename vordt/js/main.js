@@ -46,12 +46,14 @@ $(document).ready(function() {
       $('.advantages_close').addClass('active');
       $(this).addClass('active')
       $('html').addClass('hidden');
+      $('.advantages_item').removeClass('close_advantages');
       $.scrollify.disable();
   });
 });
 $(document).ready(function() {
   $('.advantages_close').click(function(event) {
       event.preventDefault();
+      $(this).parent().find('.advantages_item.active').addClass('close_advantages');
       $('.advantages_item_hole').removeClass('active');
       $('.advantages_close').removeClass('active');
       $('.advantages_item').removeClass('active')
