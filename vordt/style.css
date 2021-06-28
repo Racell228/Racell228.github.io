@@ -1175,6 +1175,7 @@ h4 {
 		background-position: center;
 		background-repeat: no-repeat;
 		border: none;
+		z-index: 9;
 		background-color: transparent;
 	}
 	.advantages .slick_right {
@@ -1369,5 +1370,8 @@ h4 {
 		position: relative;
 		border: none;
 		margin-top: 100rem;
+	}
+	.advantages_item.active .advantages_item_title {
+		top: 200rem;
 	}
 }
