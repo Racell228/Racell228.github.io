@@ -31,7 +31,7 @@ $.scrollify({
     // });
     // pagination += "</div>";
     // $(".header_nav").append(pagination);
-    $(".header_nav a").on("click",function() {
+    $(".header_nav a,.hero_btn").on("click",function() {
       $.scrollify.move($(this).attr("href"));
     });
     $(".header_nav a").on("click",$.scrollify.move);
@@ -178,6 +178,16 @@ $(document).ready(function() {
       $.scrollify.disable();
   });
 });
+$(document).ready(function() {
+  $('.hero_btn').click(function(event) {
+    event.preventDefault();
+      $('header').removeClass('header_black');
+      $('.form').show(400);
+      $('html').addClass('hidden');
+      $('body').addClass('hidden');
+      $.scrollify.disable();
+  });
+});
 //close form
 $(document).ready(function() {
   $('.form_close').click(function(event) {
@@ -196,6 +206,7 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
+      arrows: false,
       prevArrow: '<button type="button" class="slick_left slick_btn"></button>',
       nextArrow: '<button type="button" class="slick_right slick_btn"></button>'
     });

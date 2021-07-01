@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,p {
 }
 section {
 	display: flex;
+	position: relative;
 }
 h1 {
 	font-weight: 600;
@@ -147,7 +148,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 120rem;
 }
 .hero_text {
 	max-width: 646rem;
@@ -255,9 +255,10 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 110rem;
-	width: 100%;
+	width: calc(100% - 200rem);
 	margin-bottom: 44rem;
+	position: absolute;
+	bottom: 0;
 }
 .hero_partners img {
 	height: 26rem;
@@ -312,7 +313,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 100rem;
 }
 .details {
 	background-image: url(img/details_bg.svg);
@@ -332,11 +332,13 @@ header {
 }
 
 .details_partners {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	margin-top: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 200rem);
+    margin-bottom: 40rem;
+    position: absolute;
+    bottom: 0;
 }
 .details_partners img{
 	height: 59rem;
@@ -447,10 +449,6 @@ h3 {
 	position: absolute;
 	transition: 0.5s;
 }
-.advantages_item:hover .advantages_item_title {
-	font-size: 40rem;
-	transition: 0.5s;
-}
 .advantages_item_title1 {
 	right: 30rem;
 	bottom: 30rem;
@@ -504,7 +502,7 @@ h3 {
 	position: absolute;
 	width: 374rem;
 	transition: 0.5s;
-	opacity: 0;
+	opacity: 0.1;
 }
 .advantages_item_text1 {
 	bottom: 140rem;
@@ -837,6 +835,21 @@ h4 {
 	position: relative;
 	z-index: 2;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000rem transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);  
+}
 .form_submit {
 	width: 525rem;
 	font-family: 'Axiforma';
@@ -949,6 +962,7 @@ h4 {
 	width: 100%;
 	height: calc(100% - 100rem);
 	padding-top: 100rem;
+	z-index: 18;
 }
 .hidden {
 	overflow: hidden;
@@ -1035,6 +1049,7 @@ h4 {
 		overflow-x: scroll;
 	    overflow-y: hidden;
 	    white-space: nowrap;
+	    width: 100%;
 	}
 	.hero_partners img {
     	height: 22rem;
@@ -1157,6 +1172,17 @@ h4 {
 		justify-content: center;
 		padding: 0;
 		margin: 0 auto 40rem;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.advantages_item.active .advantages_item_title {
+		font-size: 26rem;
+	}
+	.advantages_close {
+		top: 80rem;
+    	left: 20rem;
+    	justify-content: flex-start;
 	}
 	.advantages_hr {
 		display: none!important;
@@ -1200,6 +1226,7 @@ h4 {
 		overflow-x: scroll;
 	    overflow-y: hidden;
 	    white-space: nowrap;
+	    width: 100%;
 	}
 	.hero_image_item {
 	    width: 410rem;
