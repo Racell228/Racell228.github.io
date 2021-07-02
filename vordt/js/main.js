@@ -149,10 +149,10 @@ $('.form_input').blur(function() {
 });
 //select open
 $(document).ready(function() {
-  $('.select').click(function(event) {
-      $('.select_overlay').show(400);
+  $('.select_trigger').click(function(event) {
+      $('.select_overlay').toggle(400);
       $('.select_label').addClass('active');
-      $('.select_trigger').addClass('active');
+      $('.select_trigger').toggleClass('active');
   });
 });
 
@@ -171,7 +171,7 @@ $(function($){
 $(document).ready(function() {
   $('.contacts_right_btn').click(function(event) {
     event.preventDefault();
-      $('.form').show(400);
+      $('.form').show(800);
       $('header').removeClass('header_black');
       $('html').addClass('hidden');
       $('body').addClass('hidden');
@@ -181,11 +181,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.hero_btn').click(function(event) {
     event.preventDefault();
-      $('header').removeClass('header_black');
       $('.form').show(400);
       $('html').addClass('hidden');
       $('body').addClass('hidden');
       $.scrollify.disable();
+      $('header').removeClass('header_black');
   });
 });
 //close form
@@ -217,7 +217,7 @@ $(document).ready(function() {
     event.preventDefault();
       $(this).addClass('active').siblings().removeClass('active');
       var id1 = $(this).attr('href');
-      $(id1).fadeIn(1000).siblings(0).fadeOut(0);
+      $(id1).fadeIn(300).siblings(0).fadeOut(0);
   });
 });
 } else {
@@ -239,5 +239,55 @@ $(document).ready(function() {
       $('.mobile_burger').hide(400);
       $('html').removeClass('hidden');
       $('body').removeClass('hidden');
+  });
+});
+$(document).ready(function(){
+  $('.hero_partners').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    margin: 10,
+    arrows:false,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    responsive: [
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    ]
+  });
+});
+$(document).ready(function(){
+  $('.details_partners').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    margin: 10,
+    arrows:false,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    responsive: [
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    ]
+  });
+});
+
+$(document).ready(function() {
+  $('.header_nav_link').click(function(event) {
+    event.preventDefault();
+      $('.form').hide(400);
+      $('html').removeClass('hidden');
+      $('body').removeClass('hidden');
+      $.scrollify.enable();
   });
 });

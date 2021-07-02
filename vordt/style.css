@@ -514,7 +514,7 @@ h3 {
     left: 30rem;
 }
 .advantages_item_text3 {
-	top: 90rem;
+	top: 140rem;
 	right: 30rem;
 	text-align: right;
 }
@@ -895,6 +895,7 @@ select:-webkit-autofill:focus {
 	height: 7rem;
 	right: 0;
 	transition: 0.3s;
+	cursor: pointer;
 }
 .select_trigger.active {
 	transform: rotate(0);
