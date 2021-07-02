@@ -930,6 +930,7 @@ input {
 }
 .form_item_overlay {
 	position: relative;
+	width: 525rem;
 }
 .form_input_label {
     position: absolute;
