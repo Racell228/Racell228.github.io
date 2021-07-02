@@ -897,6 +897,11 @@ select:-webkit-autofill:focus {
 	transition: 0.3s;
 	cursor: pointer;
 }
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 .select_trigger.active {
 	transform: rotate(0);
 	transition: 0.3s;
