@@ -270,7 +270,7 @@ header {
 	position: absolute;
 	bottom: 0;
 	z-index: 2;
-	left: calc(50% - 180rem);
+	left: 25rem;
 	background: #070707;
 	border: 1rem solid #FFFFFF;
 	padding: 44rem;
@@ -854,12 +854,17 @@ select:-webkit-autofill:focus {
 	width: 525rem;
 	font-family: 'Axiforma';
 	color: #fff;
-	border: 1rem solid #269E80;
 	border-radius: 5rem;
 	font-size: 18rem;
 	background-color: #269E80;
 	height: 69rem;
 	margin-top: 30rem;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.form_submit:hover {
+	background-color: #1e7e66;
+	transition: 0.5s;
 }
 .select_option {
 	position: absolute;

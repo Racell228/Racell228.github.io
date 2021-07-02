@@ -257,7 +257,7 @@
 					</div>
 					<div class="form_item_overlay">
 						<input type="text" class="form_input">
-						<label class="form_input_label">Name (optional)</label>
+						<label class="form_input_label">Contact number, name</label>
 					</div>
 					<div class="form_item_overlay">
 						<input type="text" class="form_input">
@@ -265,15 +265,30 @@
 					</div>
 					<div class="form_item_overlay">
 						<input type="text" class="form_input">
-						<label class="form_input_label">Contact number (optional)</label>
+						<label class="form_input_label">Company (optional)</label>
 					</div>
 					<div class="form_item_overlay">
 						<input type="text" class="form_input">
 						<label class="form_input_label">Link to smart contracts’ source code</label>
 					</div>
-					<div class="form_item_overlay">
-						<input type="text" class="form_input">
-						<label class="form_input_label">Company (optional)</label>
+					
+					<div class="select">
+						<p class="select_label">Employees</p>
+						<img src="img/select_arrow.svg" class="select_trigger">
+						<p class="select_text"></p>
+						<div class="select_overlay">
+							<input type="checkbox" value="1-50; " id="checkbox1" class="select_option">
+							<label for="checkbox1" class="select_option_label">1-50</label>
+							<input type="checkbox" value="51-500; " id="checkbox2" class="select_option">
+							<label for="checkbox2" class="select_option_label">51-500</label>
+							<input type="checkbox" value="501-2000; " id="checkbox3" class="select_option">
+							<label for="checkbox3" class="select_option_label">501-2000</label>
+							<input type="checkbox" value="Open Source Intelligence; " id="checkbox4" class="select_option">
+							<label for="checkbox4" class="select_option_label">2001-7000</label>
+							<input type="checkbox" value="Other; " id="checkbox5" class="select_option">
+							<label for="checkbox5" class="select_option_label">Other</label>
+						</div>
+						
 					</div>
 					<input type="submit" class="form_submit" value="Submit">
 				</form>
