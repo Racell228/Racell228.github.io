@@ -392,6 +392,9 @@ h1,h2,h3,h4,h5,p {
 		margin-top: -20rem;
 		flex-direction: column;
 	}
+	.new p {
+		line-height: 140%;
+	}
 	.new_idea_item {
 		display: flex;
 		align-items: center;
@@ -485,6 +488,7 @@ h1,h2,h3,h4,h5,p {
 	}
 	.new_hero_title {
 		font-size: 30rem;
+		text-align: center;
 	}
 	.new_hero_steps {
 	    margin: 25rem 0 35rem;
