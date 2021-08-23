@@ -15,16 +15,17 @@
 	<header>
 		<div class="container">
 			<div class="header_overlay">
-				<a href="#"><img src="img/logo.svg" class="header_logo"></a>
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="header_logo"></a>
 				<div class="header_nav">
-					<a href="#" class="header_nav_link active">Главная</a>
-					<a href="#" class="header_nav_link">Услуги</a>
-					<a href="#" class="header_nav_link">Портфолио</a>
-					<a href="#" class="header_nav_link">О нас</a>
-					<a href="#" class="header_nav_link">Цены</a>
-					<a href="#" class="header_nav_link">Отзывы</a>
-					<a href="#" class="header_nav_link">FAQ</a>
-					<a href="#" class="header_nav_link">Контакты</a>
+					<a href="#particles-js" class="header_nav_link active" data-section="particles-js">Главная</a>
+					<a href="#services" class="header_nav_link" data-section="services">Услуги</a>
+					<a href="#portfolio" class="header_nav_link" data-section="portfolio">Портфолио</a>
+					<a href="#about" class="header_nav_link" data-section="about">О нас</a>
+					<a href="#price" class="header_nav_link" data-section="price">Цены</a>
+					<a href="#reviews" class="header_nav_link" data-section="reviews">Отзывы</a>
+					<a href="#question" class="header_nav_link" data-section="question">FAQ</a>
+					<a href="#blog" class="header_nav_link" data-section="blog">Блог</a>
+					<a href="#contacts" class="header_nav_link"  data-section="contacts">Контакты</a>
 				</div>
 				<div class="header_lang">
 					<a href="#" class="header_lang_item">EN</a>
@@ -33,7 +34,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="hero" id="particles-js">
+	<section class="hero" id="particles-js" data-section="particles-js">
 		<div class="container">
 			<div class="hero_overlay">
 				<h1 class="hero_title">Создание <span>продающих</span> сайтов любой сложности</h1>
@@ -47,7 +48,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services" data-section="services">
 		<div class="container">
 			<div class="title_overlay">
 				<h2 class="services_title">Наши услуги</h2>
@@ -77,7 +78,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio" data-section="portfolio">
 		<div class="container">
 			<div class="title_overlay">
 				<h2 class="portfolio_title">Портфолио</h2>
@@ -147,8 +148,7 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="about">
+	<section class="about" id="about" data-section="about">
 		<div class="container">
 			<div class="about_overlay">
 				<div class="about_left">
@@ -163,21 +163,21 @@
 				<img src="img/about_img.svg" class="about_image">
 			</div>
 			<div class="about_number_overlay">
-				<div class="about_number">
+				<div class="about_number" id="counter">
 					<div class="about_number_item">
-						<h2 class="about_number_item_quanity">3+</h2>
+						<h2 class="about_number_item_quanity" ><span data-num="3">0</span>+</h2>
 						<p class="about_number_item_text">Лет опыта в дизайне и разработке сайтов</p>
 					</div>
 					<div class="about_number_item">
-						<h2 class="about_number_item_quanity">95+</h2>
+						<h2 class="about_number_item_quanity"><span data-num="95">0</span>+</h2>
 						<p class="about_number_item_text">Реализованных проектов</p>
 					</div>
 					<div class="about_number_item">
-						<h2 class="about_number_item_quanity">120+</h2>
+						<h2 class="about_number_item_quanity"><span data-num="120">0</span>+</h2>
 						<p class="about_number_item_text">Количество довольных клиентов</p>
 					</div>
 					<div class="about_number_item">
-						<h2 class="about_number_item_quanity">12+</h2>
+						<h2 class="about_number_item_quanity"><span data-num="12">0</span>+</h2>
 						<p class="about_number_item_text">Стран, с которыми мы работали</p>
 					</div>
 				</div>
@@ -341,7 +341,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="price">
+	<section class="price" id="price" data-section="price">
 		<div class="container">
 			<div class="price_head_overlay">
 				<div class="title_overlay about_title_overlay">
@@ -383,7 +383,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="reviews">
+	<section class="reviews" id="reviews" data-section="reviews">
 		<div class="container">
 			<div class="title_overlay about_title_overlay">
 				<h2 class="portfolio_title">Отзывы заказчиков</h2>
@@ -441,7 +441,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="question">
+	<section class="question" id="question" data-section="question">
 		<div class="container">
 			<div class="title_overlay about_title_overlay">
 				<h2 class="portfolio_title">Часто задаваемые вопросы</h2>
@@ -710,10 +710,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="blog">
+	<section class="blog" id="blog" data-section="blog">
 		<div class="container">
 			<div class="blog_head">
-				<div class="title_overlay about_title_overlay">
+				<div class="title_overlay">
 					<h2 class="portfolio_title">Блог</h2>
 					<h2 class="title_overlay_item">Блог</h2>
 				</div>
@@ -741,7 +741,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contacts">
+	<section class="contacts" id="contacts" data-section="contacts">
 		<div class="container">
 			<div class="contacts_overlay">
 				<div class="contacts_left">
@@ -805,7 +805,23 @@
 			</div>
 		</div>
 	</section>
-
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="footer_logo"></a>
+				<p class="footer_copyright">© Double Kit, 2021</p>
+				<a href="#" class="footer_policy">Политика конфиденциальности</a>
+				<div class="footer_social">
+					<a href="#"><img src="img/links1.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links2.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links3.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links4.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links5.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links6.svg" class="footer_social_link"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="js/jquery-3.3.1.min.js"></script>
