@@ -17,7 +17,14 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
       }
-    }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
   ]
   });
 });
@@ -130,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //Плавный скрол по секциям
 $(document).ready(function() {
   $('.header_nav_link,.logo_overlay').click(function(){
+    $('header').removeClass('active');
     var el = $(this).attr('href');
     $('html,body').animate({
       scrollTop: $(el).offset().top - $("header").height()}, 1000);
@@ -170,4 +178,19 @@ $(window).scroll(function() {
     }
   });
 });
+});
+
+//Бургер
+$(document).ready(function() {
+  $('.mobile_burger').click(function(event) {
+    event.preventDefault();
+      $('header').addClass('active');
+  });
+});
+//Бургер Закрытие
+$(document).ready(function() {
+  $('.close').click(function(event) {
+    event.preventDefault();
+      $('header').removeClass('active');
+  });
 });
