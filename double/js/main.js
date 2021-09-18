@@ -194,3 +194,16 @@ $(document).ready(function() {
       $('header').removeClass('active');
   });
 });
+
+$(document).ready(function() {
+  $('.modal_form-js').click(function(event) {
+    event.preventDefault();
+      $('.modal_form').show(400);
+  });
+});
+$(document).ready(function() {
+  $('.modal_close').click(function(event) {
+    event.preventDefault();
+      $('.modal').hide(400);
+  });
+}); 

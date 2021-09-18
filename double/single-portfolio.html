@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="header_logo"></a>
+				<div class="header_nav">
+					<a href="#particles-js" class="header_nav_link active" data-section="particles-js">Главная</a>
+					<a href="#services" class="header_nav_link" data-section="services">Услуги</a>
+					<a href="#portfolio" class="header_nav_link" data-section="portfolio">Портфолио</a>
+					<a href="#about" class="header_nav_link" data-section="about">О нас</a>
+					<a href="#price" class="header_nav_link" data-section="price">Цены</a>
+					<a href="#reviews" class="header_nav_link" data-section="reviews">Отзывы</a>
+					<a href="#question" class="header_nav_link" data-section="question">FAQ</a>
+					<a href="#blog" class="header_nav_link" data-section="blog">Блог</a>
+					<a href="#contacts" class="header_nav_link"  data-section="contacts">Контакты</a>
+					<img src="img/close.svg" class="close">
+				</div>
+				<div class="header_lang">
+					<a href="#" class="header_lang_item">EN</a>
+					<a href="#" class="header_lang_item active">RU</a>
+				</div>
+				<img src="img/burger.svg" class="mobile_burger">
+			</div>
+		</div>
+	</header>
+
+
+
+	<section class="portfolio_hero">
+		<div class="container">
+			<div class="portfolio_hero_overlay">
+				<a href="#" class="arrow_back"><img src="img/arrow_back.svg">Вернуться на главную</a>
+				<div class="portfolio_hero_tags">
+					<a href="#" class="portfolio_hero_tags_item">Вёрстка, </a>
+					<a href="#" class="portfolio_hero_tags_item">Сайты “под ключ”</a>
+				</div>
+				<h1 class="portfolio_hero_title">Разработка сайта для платёжной системы <span>«HGC»</span></h1>
+				<div class="portfolio_hero_btn_overlay">
+					<a href="#" class="btn portfolio_hero_btn"><span></span><span></span><span></span><span></span>Заказать похожий проект</a>
+				</div>
+			</div>
+		</div>
+		<div class="video_overlay">
+			<video src="img/portfolio_video.mp4" autoplay muted class="portfolio_video"></video>
+		</div>
+	</section>
+	<section class="sinportfolio">
+		<div class="container">
+			<div class="sinportfolio_about">
+				<div class="title_overlay">
+					<h2 class="portfolio_title">О проекте</h2>
+					<h2 class="title_overlay_item">О проекте</h2>
+				</div>
+				<p class="sinportfolio_about_text">Мы - команда специалистов, которые занимаются разработкой сайтов полного цикла. Успешно реализованных проектов. Мы - команда специалистов, которые занимаются разработкой сайтов полного цикла. Успешно реализованных проектов. </p>
+			</div>
+			<div class="about_number_overlay">
+				<div class="about_number" id="counter">
+					<div class="about_number_item">
+						<h2 class="about_number_item_quanity" ><span data-num="500">0</span>$</h2>
+						<p class="about_number_item_text">Примерная стоимость аналогичного проекта</p>
+					</div>
+					<div class="about_number_item">
+						<h2 class="about_number_item_quanity"><span data-num="14">0</span></h2>
+						<p class="about_number_item_text">Дней понадобилось на работу</p>
+					</div>
+					<div class="about_number_item">
+						<a href="#" class="btn_move sinportfolio_btn">Ссылка на проект</a>
+					</div>
+				</div>
+				<img src="img/about_bg.svg" class="about_number_bg">
+				<div class="about_number_overlay_btn_overlay">
+					<a href="#" class="btn about_number_overlay_btn"><span></span><span></span><span></span><span></span>Заказать похожий проект</a>
+				</div>
+			</div>
+			<img src="img/portfolio_image.svg"  class="sinportfolio_image">
+			<div class="sinportfolio_rewiev">
+				<div class="title_overlay">
+					<h2 class="portfolio_title">Отзыв заказчика</h2>
+					<h2 class="title_overlay_item">Отзыв</h2>
+				</div>
+				<div class="sinportfolio_rewiev_overlay">
+					<div class="sinportfolio_rewiev_text_overlay">
+						<h4 class="sinportfolio_rewiev_title">Дмитрий</h4>
+						<p class="sinportfolio_rewiev_text">Благодарю за качественное выполнение первого этапа проекта. Все на высоком урочне, учтены все правки и пожелания. С радостью приступаю ко второй части реализации нашего проекта.</p>
+					</div>
+					<img src="img/slider_arrow.svg" class="sinportfolio_rewiev_link">
+				</div>
+				<img src="img/about_bg.svg" class="sinportfolio_rewiev_bg">
+			</div>
+			<div class="related">
+				<div class="title_overlay">
+					<h2 class="portfolio_title">Другие наши проекты</h2>
+					<h2 class="title_overlay_item">Другие проекты</h2>
+				</div>
+				<div class="related_overlay">
+					<div class="portfolio_item" style="background-image: url(img/portfolio1.png);">
+						<div class="portfolio_item_content">
+							<div class="portfolio_item_tags_overlay">
+								<a href="#" class="portfolio_item_tag">Вёрстка,</a>
+								<a href="#" class="portfolio_item_tag">Сайты “под ключ”</a>
+							</div>
+							<h4 class="portfolio_item_title">Разработка сайта для платёжной системы «HGC»</h4>
+							<a href="#" class="portfolio_item_link btn_move">Подробнее о проекте</a>
+						</div>
+					</div>
+					<div class="portfolio_item" style="background-image: url(img/portfolio2.png);">
+						<div class="portfolio_item_content">
+							<div class="portfolio_item_tags_overlay">
+								<a href="#" class="portfolio_item_tag">Вёрстка,</a>
+								<a href="#" class="portfolio_item_tag">Сайты “под ключ”</a>
+							</div>
+							<h4 class="portfolio_item_title">Разработка сайта для платёжной системы «HGC»</h4>
+							<a href="#" class="portfolio_item_link btn_move">Подробнее о проекте</a>
+						</div>
+					</div>
+					<div class="portfolio_item" style="background-image: url(img/portfolio3.png);">
+						<div class="portfolio_item_content">
+							<div class="portfolio_item_tags_overlay">
+								<a href="#" class="portfolio_item_tag">Вёрстка,</a>
+								<a href="#" class="portfolio_item_tag">Сайты “под ключ”</a>
+							</div>
+							<h4 class="portfolio_item_title">Разработка сайта для платёжной системы «HGC»</h4>
+							<a href="#" class="portfolio_item_link btn_move">Подробнее о проекте</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts" data-section="contacts">
+		<div class="container">
+			<div class="contacts_overlay">
+				<div class="contacts_left">
+					<div class="title_overlay about_title_overlay">
+						<h2 class="portfolio_title">Контакты</h2>
+						<h2 class="title_overlay_item">Контакты</h2>
+					</div>
+					<div class="contacts_social">
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">E-mail:</p>
+							<a href="#" class="contacts_social_item_link">contact@doublekit.site</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">Skype:</p>
+							<a href="#" class="contacts_social_item_link">@aniuto4ka_98</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">Телефон для связи:</p>
+							<a href="#" class="contacts_social_item_link">+380 99 018 12 47</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">Дополнительный телефон:</p>
+							<a href="#" class="contacts_social_item_link">+380 66 607 78 73</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">Telegram:</p>
+							<a href="#" class="contacts_social_item_link">@anna_zhaborovskaya</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">WhatsApp:</p>
+							<a href="#" class="contacts_social_item_link">+380 99 018 12 47</a>
+						</div>
+						<div class="contacts_social_item">
+							<p class="contacts_social_item_label">Viber:</p>
+							<a href="#" class="contacts_social_item_link">+380 99 018 12 47</a>
+						</div>
+					</div>
+				</div>
+				<div class="contacts_form">
+					<span class="contacts_form_span"></span>
+					<span class="contacts_form_span"></span>
+					<span class="contacts_form_span"></span>
+					<span class="contacts_form_span"></span>
+					<h4 class="contacts_form_title">Заполните форму, если хотите, чтобы мы с вами связались</h4>
+					<form class="contacts_form_item">
+						<select class="contacts_form_select">
+							<option class="contacts_form_option">Выберите удобный способ связи</option>
+							<option class="contacts_form_option">Viber</option>
+							<option class="contacts_form_option">WhatsApp</option>
+							<option class="contacts_form_option">Telegram</option>
+							<option class="contacts_form_option">E-mail</option>
+						</select>
+						<input type="text" class="contacts_form_input" placeholder="Ваш телефон или никнейм (@...)">
+						<input type="checkbox" id="check" class="contacts_form_checkbox">
+						<label for="check" class="contacts_form_check"><span>Ознакомлен(а) с <a href="#">Политикой конфиденциальности</a> и даю согласие на обработку персональных данных</span></label>
+						<div class="contacts_form_submit_overlay">
+							<input type="submit" value="Отправить" class="contacts_form_submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="footer_logo"></a>
+				<p class="footer_copyright">© Double Kit, 2021</p>
+				<a href="#" class="footer_policy">Политика конфиденциальности</a>
+				<div class="footer_social">
+					<a href="#"><img src="img/links1.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links2.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links3.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links4.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links5.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links6.svg" class="footer_social_link"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="sidebar">
+		<a href="#" class="sidebar_link"><img src="img/links1.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links2.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links3.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links4.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links5.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links6.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link modal_form-js"><img src="img/links7.svg" class="sidebar_img"></a>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="modal modal_form">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_content_overlay">
+				<h4 class="contacts_form_title">Заполните форму, если хотите, чтобы мы с вами связались</h4>
+				<form class="contacts_form_item">
+					<select class="contacts_form_select">
+						<option class="contacts_form_option">Выберите удобный способ связи</option>
+						<option class="contacts_form_option">Viber</option>
+						<option class="contacts_form_option">WhatsApp</option>
+						<option class="contacts_form_option">Telegram</option>
+						<option class="contacts_form_option">E-mail</option>
+					</select>
+					<input type="text" class="contacts_form_input" placeholder="Ваш телефон или никнейм (@...)">
+					<input type="checkbox" id="check1" class="contacts_form_checkbox">
+					<label for="check1" class="contacts_form_check"><span>Ознакомлен(а) с <a href="#">Политикой конфиденциальности</a> и даю согласие на обработку персональных данных</span></label>
+					<div class="contacts_form_submit_overlay">
+						<input type="submit" value="Отправить" class="contacts_form_submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal modal_done">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_result">
+				<img src="img/done.svg" class="modal_result_img">
+				<h2 class="modal_result_title">Спасибо!</h2>
+				<h4 class="modal_result_subtitle">Заявка успешно отправлена.</h4>
+				<p class="modal_result_text">Мы свяжемся с вами в ближайшее время!</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal_error">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_result">
+				<img src="img/error.svg" class="modal_result_img">
+				<h2 class="modal_result_title">Ошибка!</h2>
+				<h4 class="modal_result_subtitle">Заявка не отправлена.</h4>
+				<p class="modal_result_text">Проверьте правильность ввода данных и повторите попытку</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/wNumb.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+
+	<script>
+	  var count_particles, stats, update;
+	  stats = new Stats;
+	  stats.setMode(0);
+	  stats.domElement.style.position = 'absolute';
+	  stats.domElement.style.left = '0px';
+	  stats.domElement.style.top = '0px';
+	  document.body.appendChild(stats.domElement);
+	  count_particles = document.querySelector('.js-count-particles');
+	  update = function() {
+	    stats.begin();
+	    stats.end();
+	    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+	      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	    }
+	    requestAnimationFrame(update);
+	  };
+	  requestAnimationFrame(update);
+	</script>
+</body>
+</html>

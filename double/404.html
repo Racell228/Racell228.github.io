@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="header_logo"></a>
+				<div class="header_nav">
+					<a href="#particles-js" class="header_nav_link active" data-section="particles-js">Главная</a>
+					<a href="#services" class="header_nav_link" data-section="services">Услуги</a>
+					<a href="#portfolio" class="header_nav_link" data-section="portfolio">Портфолио</a>
+					<a href="#about" class="header_nav_link" data-section="about">О нас</a>
+					<a href="#price" class="header_nav_link" data-section="price">Цены</a>
+					<a href="#reviews" class="header_nav_link" data-section="reviews">Отзывы</a>
+					<a href="#question" class="header_nav_link" data-section="question">FAQ</a>
+					<a href="#blog" class="header_nav_link" data-section="blog">Блог</a>
+					<a href="#contacts" class="header_nav_link"  data-section="contacts">Контакты</a>
+					<img src="img/close.svg" class="close">
+				</div>
+				<div class="header_lang">
+					<a href="#" class="header_lang_item">EN</a>
+					<a href="#" class="header_lang_item active">RU</a>
+				</div>
+				<img src="img/burger.svg" class="mobile_burger">
+			</div>
+		</div>
+	</header>
+
+
+
+	<section class="error">
+		<img src="img/404.svg" class="error_image">
+		<h4 class="error_text">Страница не найдена</h4>
+		<div class="error_btn_overlay">
+			<a href="#" class="btn error_btn"><span></span><span></span><span></span><span></span>Вернуться на главную</a>
+		</div>
+		<img src="img/error_bg.svg" class="error_bg">
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<a href="#particles-js" class="logo_overlay"><img src="img/logo.svg" class="footer_logo"></a>
+				<p class="footer_copyright">© Double Kit, 2021</p>
+				<a href="#" class="footer_policy">Политика конфиденциальности</a>
+				<div class="footer_social">
+					<a href="#"><img src="img/links1.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links2.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links3.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links4.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links5.svg" class="footer_social_link"></a>
+					<a href="#"><img src="img/links6.svg" class="footer_social_link"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="sidebar">
+		<a href="#" class="sidebar_link"><img src="img/links1.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links2.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links3.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links4.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links5.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link"><img src="img/links6.svg" class="sidebar_img"></a>
+		<a href="#" class="sidebar_link modal_form-js"><img src="img/links7.svg" class="sidebar_img"></a>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="modal modal_form">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_content_overlay">
+				<h4 class="contacts_form_title">Заполните форму, если хотите, чтобы мы с вами связались</h4>
+				<form class="contacts_form_item">
+					<select class="contacts_form_select">
+						<option class="contacts_form_option">Выберите удобный способ связи</option>
+						<option class="contacts_form_option">Viber</option>
+						<option class="contacts_form_option">WhatsApp</option>
+						<option class="contacts_form_option">Telegram</option>
+						<option class="contacts_form_option">E-mail</option>
+					</select>
+					<input type="text" class="contacts_form_input" placeholder="Ваш телефон или никнейм (@...)">
+					<input type="checkbox" id="check1" class="contacts_form_checkbox">
+					<label for="check1" class="contacts_form_check"><span>Ознакомлен(а) с <a href="#">Политикой конфиденциальности</a> и даю согласие на обработку персональных данных</span></label>
+					<div class="contacts_form_submit_overlay">
+						<input type="submit" value="Отправить" class="contacts_form_submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal modal_done">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_result">
+				<img src="img/done.svg" class="modal_result_img">
+				<h2 class="modal_result_title">Спасибо!</h2>
+				<h4 class="modal_result_subtitle">Заявка успешно отправлена.</h4>
+				<p class="modal_result_text">Мы свяжемся с вами в ближайшее время!</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal_error">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/close.svg" class="modal_close">
+			<div class="modal_result">
+				<img src="img/error.svg" class="modal_result_img">
+				<h2 class="modal_result_title">Ошибка!</h2>
+				<h4 class="modal_result_subtitle">Заявка не отправлена.</h4>
+				<p class="modal_result_text">Проверьте правильность ввода данных и повторите попытку</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/wNumb.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+
+	<script>
+	  var count_particles, stats, update;
+	  stats = new Stats;
+	  stats.setMode(0);
+	  stats.domElement.style.position = 'absolute';
+	  stats.domElement.style.left = '0px';
+	  stats.domElement.style.top = '0px';
+	  document.body.appendChild(stats.domElement);
+	  count_particles = document.querySelector('.js-count-particles');
+	  update = function() {
+	    stats.begin();
+	    stats.end();
+	    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+	      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+	    }
+	    requestAnimationFrame(update);
+	  };
+	  requestAnimationFrame(update);
+	</script>
+</body>
+</html>
