@@ -82,6 +82,7 @@
 	</section>
 	<section class="portfolio" id="portfolio" data-section="portfolio">
 		<div class="container">
+			<img src="img/portfolio_bg.svg" class="portfolio_bg">
 			<div class="title_overlay">
 				<h2 class="portfolio_title">Портфолио</h2>
 				<h2 class="title_overlay_item">Портфолио</h2>
@@ -357,25 +358,25 @@
 					<h3 class="prices_table_table">Просчитать примерную стоимость услуг</h3>
 					<form class="prices_table_form">
 						<div class="prices_table_left">
-							<select class="prices_table_select">
-								<option class="prices_table_select_option">Многостраничный сайт</option>
-								<option class="prices_table_select_option">Landing Page</option>
-								<option class="prices_table_select_option">Интернет магазин</option>
+							<select class="prices_table_select" id="site">
+								<option class="prices_table_select_option" value="200">Многостраничный сайт</option>
+								<option class="prices_table_select_option prices_table_select_option_landing" value="100">Landing Page</option>
+								<option class="prices_table_select_option" value="300">Интернет магазин</option>
 							</select>
-							<select class="prices_table_select">
-								<option class="prices_table_select_option">Вёрстка</option>
-								<option class="prices_table_select_option">Сайты “под ключ”</option>
-								<option class="prices_table_select_option">Дизайн</option>
+							<select class="prices_table_select" id="service">
+								<option class="prices_table_select_option" value="1">Вёрстка</option>
+								<option class="prices_table_select_option" value="2">Сайты “под ключ”</option>
+								<option class="prices_table_select_option" value="1">Дизайн</option>
 							</select>
 							<div class="prices_table_slider">
-								<p class="prices_table_slider_title">Количество страниц (без учёта главной)</p>
+								<p class="prices_table_slider_title">Количество <span class="prices_table_slider_title_pages">страниц</span> (без учёта главной)</p>
 								<div id="slider-non-linear"></div>
 								<p id="slider-non-linear-value" class="slider-non-linear-value"></p>
 							</div>
 						</div>
 						<hr class="prices_table_hr">
 						<div class="prices_table_right">
-							<p class="prices_table_price">$ 360</p>
+							<p class="prices_table_price"> 360</p>
 							<p class="prices_table_time">5-7 дней</p>
 							<p class="prices_table_text">В работу входит адаптивность под мобильные и планшеты и 1 месяц гарантии на услуги</p>
 							<a href="#" class="btn_move prices_table_link">Заказать сайт</a>
@@ -387,6 +388,7 @@
 	</section>
 	<section class="reviews" id="reviews" data-section="reviews">
 		<div class="container">
+			<img src="img/review_bg.svg" class="reviews_bg">
 			<div class="title_overlay about_title_overlay">
 				<h2 class="portfolio_title">Отзывы заказчиков</h2>
 				<h2 class="title_overlay_item">Отзывы </h2>
@@ -745,6 +747,7 @@
 	</section>
 	<section class="contacts" id="contacts" data-section="contacts">
 		<div class="container">
+			<img src="img/contacts_bg.svg" class="contacts_bg">
 			<div class="contacts_overlay">
 				<div class="contacts_left">
 					<div class="title_overlay about_title_overlay">

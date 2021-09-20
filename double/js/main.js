@@ -59,9 +59,37 @@ $(document).ready(function() {
     });
     var nonLinearSliderValueElement = document.getElementById('slider-non-linear-value');
     nonLinearSlider.noUiSlider.on('update', function (values, handle) {
-        nonLinearSliderValueElement.innerHTML = values[handle];
+    //Получаем value выбранного селекта Тип Сайта
+    var select_site = document.getElementById('site');
+    var options_site = select_site.options;
+    var selected_site = select_site.options[select_site.selectedIndex];
+    var site_value = selected_site.getAttribute('value');
+    var site_value_num = Number(site_value);
+
+    //Получаем value выбранного селекта Услуга
+    var select_service = document.getElementById('service');
+    var options_service = select_service.options;
+    var selected_service = select_service.options[select_service.selectedIndex];
+    var service_value = selected_service.getAttribute('value');
+    var service_value_num = Number(service_value);
+
+    //Обьявляем переменную ползунок
+    var pages = document.getElementById('slider-non-linear-value');
+    var values_num =  Number(values[handle]);
+
+    var coef = 50;//Цена за страницу
+    var price = (site_value_num * service_value_num) + (coef * values_num ); //Вычесления
+
+    var price_text = $('.prices_table_price');
+    price_text.html(price);
+    nonLinearSliderValueElement.innerHTML = values[handle];
     }); 
 });
+
+
+
+
+
 
 
 //Слайдер отзывы
@@ -207,3 +235,6 @@ $(document).ready(function() {
       $('.modal').hide(400);
   });
 }); 
+
+
+
