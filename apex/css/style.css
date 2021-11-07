@@ -256,6 +256,7 @@ h2 {
 .about_body_overlay {
 	position: relative;
 	z-index: 99;
+	width: 455rem;
 }
 .about_slider_item_text {
 	font-size: 16rem;
@@ -265,9 +266,61 @@ h2 {
 	max-width: 300rem;
 	margin-bottom: 70rem;
 }
-.about_slider_item_image {
-	width: 373rem;
+.about_body_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+.about_slider_item_image_overlay {
+	width: 373rem;
+	height: 373rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	z-index: 99;
+}
+.about_slider_img {
+	width: 216rem;
+}
+.about_slider_border1 {
+	position: absolute;
+	top: 55rem;
+    left: 55rem;
+	width: 269rem;
+	animation: border_left 10s infinite;
+}
+@-webkit-keyframes border_left {
+  0% {
+	transform: rotate(0deg);
+  }
+  50% {
+  	transform: rotate(90deg);
+  }
+  100% {
+  	transform: rotate(0deg);
+  }
+}
+.about_slider_border2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 373rem;
+	animation: border_right 10s infinite;
+}
+@-webkit-keyframes border_right {
+  0% {
+	transform: rotate(0deg);
+  }
+  50% {
+  	transform: rotate(-90deg);
+  }
+  100% {
+  	transform: rotate(0deg);
+  }
+}
+
 .about_body_overlay .slick-arrow {
 	position: absolute;
 	border: none;
