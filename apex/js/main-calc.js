@@ -141,19 +141,19 @@
         switch ($(this).data('port')) {
             case "NJ":
                 $("#port").html(630);
-                $("#sub_t").html("Фрахт - NJ");
+                $("#sub_t").html("(Фрахт - NJ)");
                 break;
             case "GA":
                 $("#port").html(635);
-                $("#sub_t").html("Фрахт - GA");
+                $("#sub_t").html("(Фрахт - GA)");
                 break;
             case "TX":
                 $("#port").html(725);
-                $("#sub_t").html("Фрахт - TX");
+                $("#sub_t").html("(Фрахт - TX)");
                 break;
             case "CA":
                 $("#port").html(850);
-                $("#sub_t").html("Фрахт - CA");
+                $("#sub_t").html("(Фрахт - CA)");
                 break;
             default:
         }

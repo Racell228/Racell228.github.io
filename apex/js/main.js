@@ -110,3 +110,19 @@ $(document).ready(function() {
 $('.escort_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   console.log(nextSlide);
 });
+
+$(document).ready(function() {
+  $('.reviews_item').click(function(event) {
+    event.preventDefault();
+      $(this).addClass('active').siblings(0).removeClass('active')
+  });
+});
+
+$(document).ready(function(){
+  $('.blog_slider').slick({
+    slidesToShow:1,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="left"></button>',
+    nextArrow: '<button type="button" class="right"></button>',
+  });
+});
