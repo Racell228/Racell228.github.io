@@ -117,7 +117,7 @@ h2 {
 .hero_right {
 	position: absolute;
     right: 3rem;
-    top: 70rem;
+    top: 71rem;
     z-index: 99;
 }
 .hero_right_link {
@@ -820,13 +820,17 @@ button.disabled {
 }
 .footer_info_social_link:hover {
 	transition: 0.4s;
-	opacity: 0.6;
+	border: 1rem solid #5F85DB;
 }
 .footer_info_social_link img {
-	width: 40rem;
+	width: 15rem;
 }
 .footer_info_social_link {
 	margin-right: 20rem;
+	padding: 12rem;
+	border-radius: 100%;
+	transition: 0.4s;
+	border: 1rem solid #F3F5F8;
 }
 footer {
 	padding: 70rem 0 40rem;
@@ -1053,6 +1057,18 @@ footer {
 	justify-content: space-between;
 	width: 1110rem;
 	margin-left: -30rem;
+	position: relative;
+}
+.info_nav_fixed {
+	position: fixed;
+	top: 20rem;
+	transition: 0.3s;
+}
+.info_nav_absolute {
+	position: absolute;
+	bottom: 20rem;
+	top:auto;
+	transition: 0.3s;
 }
 .info_nav_title {
 	font-weight: 700;
@@ -1081,7 +1097,7 @@ footer {
 	transition: 0.3s;
 }
 .info_nav_item.active {
-	font-size: 40px;
+	font-size: 40rem;
 	color: #FFFFFF;
 	opacity: 1;
 	transition: 0.3s;
@@ -1096,6 +1112,9 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 5rem;
+}
+.info_content_overlay {
+	margin-left: auto;
 }
 .info_content {
 	width: 635rem;
@@ -1520,7 +1539,7 @@ aside {
     border: 1rem solid #5F85DB;
 }
 .title_calc {
-	margin-top: 250rem;
+	margin-top: 249rem;
 }
 .inputBlock input::-webkit-input-placeholder {
     color: #9ca2b1;
@@ -1539,6 +1558,7 @@ aside {
 	background-color: #000;
 	width: calc(100% - 30rem);
 	color: #F3F5F8;
+	font: 400 14rem 'Open Sans';
 }
 .calcvolume {
 	margin-top: 200rem;

@@ -126,3 +126,24 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="right"></button>',
   });
 });
+
+
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if(height > 200){
+$('.info_nav').addClass('info_nav_fixed');
+} else{
+  $('.info_nav').removeClass('info_nav_fixed');
+}
+});
+
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+var top = $('.info_overlay').height();
+if(height > top ){
+  $('.info_nav').addClass('info_nav_absolute');
+} else{
+  $('.info_nav').removeClass('info_nav_absolute');
+}
+});
+
