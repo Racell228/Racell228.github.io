@@ -116,8 +116,8 @@ h2 {
 }
 .hero_right {
 	position: absolute;
-    right: 3rem;
-    top: 71rem;
+    right: 1rem;
+    top: 72rem;
     z-index: 99;
 }
 .hero_right_link {
@@ -129,6 +129,29 @@ h2 {
 	justify-content: center;
 	flex-direction: column;
 	transition: 0.4s;
+	position: relative;
+}
+.hero_right_link:before {
+	content: "";
+	position: absolute;
+	width: 288rem;
+	height: 6rem;
+	top: -3rem;
+	left: -3rem;
+	display: block;
+	background-image: url(../img/hero_dots_rect.svg);
+	background-size: cover;
+}
+.hero_right_link:last-child:after {
+	content: "";
+	position: absolute;
+	width: 288rem;
+	height: 6rem;
+	bottom: -3rem;
+	left: -3rem;
+	display: block;
+	background-image: url(../img/hero_dots_rect.svg);
+	background-size: cover;
 }
 .hero_right_link:hover .hero_right_link_subtitle {
 	opacity: 1;
@@ -1538,9 +1561,6 @@ aside {
     color: #5F85DB;
     border: 1rem solid #5F85DB;
 }
-.title_calc {
-	margin-top: 249rem;
-}
 .inputBlock input::-webkit-input-placeholder {
     color: #9ca2b1;
     font: 400 14rem 'Open Sans';
@@ -1560,14 +1580,16 @@ aside {
 	color: #F3F5F8;
 	font: 400 14rem 'Open Sans';
 }
-.calcvolume {
-	margin-top: 200rem;
+.inputBlock {
+	width: 330rem;
 }
-.calcyear {
-	margin-top: 126rem;
+.title_calc {
+	margin-top: 50rem;
 }
-.calccapacity {
-	margin-top: 200rem;
+.inputBlock_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .mainBtn {
 	background: #5F85DB;

@@ -46,11 +46,6 @@
                                 <label for="electro">Электро</label>
                             </div>
                         </div>
-
-                        <p class="title title_calc">Расчёт стоимости</p>
-                        <div class="inputBlock">
-                            <input type="text" id="calcCost" placeholder="Введите стоимость, USD">
-                        </div>
                     </div>
                     <div class="calcItem calcItem_volume volume">
                         <p class="title">Объем</p>
@@ -92,9 +87,6 @@
                                 <label for="volume-3-5">3.5</label>
                             </div>
                         </div>
-                        <div class="inputBlock">
-                            <input type="text" id="calcVolume" class="calcvolume" placeholder="Введите объём, л">
-                        </div>
                     </div>
                     <div class="calcItem disabledBlock capacity">
                         <p class="title">Емкость АКБ</p>
@@ -135,10 +127,7 @@
                                 <input type="radio" id="capacity-100" name="engine-capacity" value="100">
                                 <label for="capacity-100">100 kW</label>
                             </div>
-                        </div>
-                        <div class="inputBlock">
-                            <input type="text" id="calcCapacity" class="calccapacity" placeholder="Введите емкость АКБ, кВт/ч">
-                        </div>
+                        </div> 
                     </div>
                     <div class="calcItem calcItem_year">
                         <p class="title">Год</p>
@@ -180,12 +169,22 @@
                                 <label for="year-2021">2021</label>
                             </div>
                         </div>
-                        <div class="inputBlock">
-                            <input type="text" id="calcYear" class="calcyear" placeholder="Введите год">
-                        </div>
                     </div>
-                    
-                    
+                </div>
+                <p class="title title_calc">Расчёт стоимости</p>
+                <div class="inputBlock_overlay">
+                    <div class="inputBlock">
+                        <input type="text" id="calcCost" placeholder="Введите стоимость, USD">
+                    </div>
+                     <div class="inputBlock calcvolume_overlay">
+                        <input type="text" id="calcVolume" class="calcvolume" placeholder="Введите объём, л">
+                    </div>
+                    <div class="inputBlock disabledBlock calc_capacity_overlay">
+                        <input type="text" id="calcCapacity" class="calccapacity" placeholder="Введите емкость АКБ, кВт/ч">
+                    </div>
+                     <div class="inputBlock">
+                        <input type="text" id="calcYear" class="calcyear" placeholder="Введите год">
+                    </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="mainBtn_overlay">

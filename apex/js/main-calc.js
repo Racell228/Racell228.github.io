@@ -237,10 +237,14 @@
     $('input[name="engine-type"]').on('change', function() {
         if($(this).val() == 'electro') {
             $('.volume').addClass('disabledBlock');
+            $('.calcvolume_overlay').addClass('disabledBlock');
             $('.capacity').removeClass('disabledBlock');
+            $('.calc_capacity_overlay').removeClass('disabledBlock');
         } else {
             $('.volume').removeClass('disabledBlock');
+            $('.calcvolume_overlay').removeClass('disabledBlock');
             $('.capacity').addClass('disabledBlock');
+            $('.calc_capacity_overlay').addClass('disabledBlock');
         }
     });
 
