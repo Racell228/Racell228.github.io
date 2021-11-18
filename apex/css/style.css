@@ -379,7 +379,7 @@ h2 {
 .pluses_slider_item_image_overlay {
 	position: relative;
 }
-.pluses_slider_item_image_overlay:after {
+/*.pluses_slider_item_image_overlay:after {
 	position: absolute;
 	bottom: 3rem;
 	left: 0;
@@ -406,7 +406,7 @@ h2 {
   100% {
   	
   }
-}
+}*/
 .pluses_slider_item_image {
 	width: 328rem;
 }
