@@ -185,7 +185,7 @@ function up() {
 jQuery(function(f){
     var element = f('.up_arrow');
     f(window).scroll(function(){
-        element['fade'+ (f(this).scrollTop() > 700 ? 'In': 'Out')](100);           
+        element['fade'+ (f(this).scrollTop() > 1000 ? 'In': 'Out')](100);           
     });
 }); 
 

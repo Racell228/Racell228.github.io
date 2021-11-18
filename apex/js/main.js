@@ -10,6 +10,7 @@ $(document).ready(function(){
   $('.pluses_slider').slick({
     slidesToShow:1,
     slidesToScroll: 1,
+    infinite: false,
     prevArrow: '<button type="button" class="left"></button>',
     nextArrow: '<button type="button" class="right"></button>',
   });
@@ -147,3 +148,28 @@ if(height > top ){
 }
 });
 
+
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+var top = $('.info_overlay').height();
+if(height > top ){
+  $('.info_nav').addClass('info_nav_absolute');
+} else{
+  $('.info_nav').removeClass('info_nav_absolute');
+}
+});
+
+$(function(f){
+    var element = f('.top_arrow');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 1000 ? 'In': 'Out')](100);           
+    });
+}); 
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(300);
+  return false;
+}

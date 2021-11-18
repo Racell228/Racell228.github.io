@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,38 +32,55 @@
 			</div>
 		</div>
 	</header>
-	<section class="hero">
+
+
+	<section class="sale_hero">
 		<div class="container">
-			<div class="hero_content">
-				<a href="#" class="hero_lang"><img src="img/flag1.svg" class="hero_lang_img">Spanish</a>
-				<h1 class="hero_title"> <span>Welcome</span> to Costa del Sol</h1>
-				<div class="hero_form">
-					<select class="hero_form_select">
+			<h2 class="sale_hero_title">FOR rent</h2>
+		</div>
+	</section>
+	<section class="filter filter_rent">
+		<div class="container">
+			<div class="filter_overlay">
+				<div class="filter_item filter_item_overlay">
+					<p class="filter_item_label">Type:</p>
+					<select class="filter_item_select">
 						<option class="hero_form_select_option">Type</option>
 						<option class="hero_form_select_option">Type</option>
 						<option class="hero_form_select_option">Type</option>
 						<option class="hero_form_select_option">Type</option>
 					</select>
-					<select class="hero_form_select">
+				</div>
+				<div class="filter_item filter_item_overlay">
+					<p class="filter_item_label">Size:</p>
+					<select class="filter_item_select">
 						<option class="hero_form_select_option">Size</option>
 						<option class="hero_form_select_option">Size</option>
 						<option class="hero_form_select_option">Size</option>
 						<option class="hero_form_select_option">Size</option>
 					</select>
-					<select class="hero_form_select">
-						<option class="hero_form_select_option">Min price</option>
-						<option class="hero_form_select_option">Min price</option>
-						<option class="hero_form_select_option">Min price</option>
-						<option class="hero_form_select_option">Min price</option>
+				</div>
+				<div class="filter_item filter_item_overlay">
+					<p class="filter_item_label">Check-in month:</p>
+					<select class="filter_item_select">
+						<option class="hero_form_select_option">All</option>
+						<option class="hero_form_select_option">All</option>
+						<option class="hero_form_select_option">All</option>
+						<option class="hero_form_select_option">All</option>
 					</select>
-					<select class="hero_form_select">
-						<option class="hero_form_select_option">Max price</option>
-						<option class="hero_form_select_option">Max price</option>
-						<option class="hero_form_select_option">Max price</option>
-						<option class="hero_form_select_option">Max price</option>
-					</select>
-					<div class="hero_form_rooms">
-						<p class="hero_form_rooms_text">Number of rooms:</p>
+				</div>
+				<div class="filter_item filter_item_overlay filter_item_overlay_range">
+					<p class="filter_item_label">Price:</p>
+					<p class="filter_item_range">$ 0 - $ 15 000 000</p>
+					<div id="nonlinear" class="filter_item_ui"></div>
+					<div class="filter_item_ui_value_overlay">
+						<p id="lower-value" class="filter_item_ui_value"></p>
+						<p id="upper-value" class="filter_item_ui_value"></p>
+					</div>
+				</div>
+				<div class="hero_form_rooms filter_item_rooms">
+					<p class="hero_form_rooms_text">Number of rooms:</p>
+					<div class="rent_checkbox_overlay">
 						<input type="checkbox" id="hero_checkbox1" class="hero_form_rooms_checkbox checkbox">
 						<label for="hero_checkbox1" class="hero_form_rooms_label checkbox_label">1-3</label>
 						<input type="checkbox" id="hero_checkbox2" class="hero_form_rooms_checkbox checkbox">
@@ -74,67 +92,33 @@
 						<input type="checkbox" id="hero_checkbox5" class="hero_form_rooms_checkbox checkbox">
 						<label for="hero_checkbox5" class="hero_form_rooms_label checkbox_label">16-20</label>
 					</div>
-					<input type="submit" class="hero_form_submit" value="Find property">
 				</div>
-			</div>
-		</div>
-		<div class="hero_social">
-			<a href="#" class="hero_social_link"><img src="img/social1.svg" class="hero_social_icon"></a>
-			<a href="#" class="hero_social_link"><img src="img/social2.svg" class="hero_social_icon"></a>
-			<a href="#" class="hero_social_link"><img src="img/social3.svg" class="hero_social_icon"></a>
-		</div>
-	</section>
-	<section class="about">
-		<div class="container">
-			<div class="about_overlay">
-				<div class="about_image">
-					<p class="about_image_text">Costa del Sol</p>
-					<img src="img/about_img.png" class="about_image_item">
-					<div class="about_image_text_overlay">
-						<p class="about_image_text_overlay_border">Costa del Sol</p>
-					</div>
-					<img src="img/about_bg.svg" class="about_bg">
-				</div>
-				<div class="about_content">
-					<p class="about_content_title">About</p>
-					<p class="about_content_text">The Costa del Sol[a] is a region in the south of Spain in the autonomous community of Andalusia, comprising the coastal towns and communities along the coastline of the Province of Málaga and the eastern part of Campo de Gibraltar in Cádiz.</p>
-					<p class="about_content_text">Formerly made up only of a series of small fishing settlements, today the region is a world-renowned tourist destination. The Costa del Sol is situated between two lesser known coastal regions, the Costa de la Luz and the Costa Tropical.</p>
-					<div class="about_content_property">
-						<p class="about_content_property_label">Population (2021):</p>
-						<div class="about_content_property_value_overlay">
-							<a href="#" class="about_content_property_value">1 412 541</a>
-						</div>
-					</div>
-					<div class="about_content_property">
-						<p class="about_content_property_label">Area:</p>
-						<div class="about_content_property_value_overlay">
-							<a href="#" class="about_content_property_value">802,7 km²</a>
-						</div>
-					</div>
-					<div class="about_content_property">
-						<p class="about_content_property_label">The region includes:</p>
-						<div class="about_content_property_value_overlay">
-							<a href="#" class="about_content_property_value">Malaga,</a>
-							<a href="#" class="about_content_property_value">Torremolinos, </a>
-							<a href="#" class="about_content_property_value">Benalmadena,</a>
-							<a href="#" class="about_content_property_value">Fuengirola,</a>
-							<a href="#" class="about_content_property_value">Mijas,</a>
-							<a href="#" class="about_content_property_value">Marbella,</a>
-							<a href="#" class="about_content_property_value">Nerja,</a>
-							<a href="#" class="about_content_property_value">Estepona,</a>
-							<a href="#" class="about_content_property_value">Manilva,</a>
-							<a href="#" class="about_content_property_value">Torrox.</a>
-						</div>
-					</div>
+				<div class="filter_submit_overlay">
+					<a href="#" class="filter_submit">Find property</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="variants">
+	<section class="result">
 		<div class="container">
-			<h2 class="variants_title"><span>Lorem ipsum</span> dolor sit</h2>
-			<p class="variants_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
-			<div class="variants_slider">
+			<div class="result_head">
+				<p class="result_head_label"><span>Results:</span>11 properties founds</p>
+				<a href="#" class="result_head_delete"><img src="img/trash.svg">Delete filtr</a>
+				<div class="result_head_sort">
+					<p class="result_head_sort_label">Sort by:</p>
+					<select class="result_head_sort_select">
+						<option class="hero_form_select_option">Popular</option>
+						<option class="hero_form_select_option">New</option>
+						<option class="hero_form_select_option">Price Up</option>
+						<option class="hero_form_select_option">Price Down</option>
+					</select>
+				</div>
+				<div class="result_head_view">
+					<a href="#" class="result_head_view_item active"><img src="img/result_view1.svg"></a>
+					<a href="#" class="result_head_view_item"><img src="img/result_view2.svg"></a>
+				</div>
+			</div>
+			<div class="result_overlay">
 				<a href="#" class="card">
 					<p class="card_category" style="background: #FFC400;">Rent</p>
 					<div class="card_image" style="background-image: url(img/card1.png);"></div>
@@ -396,86 +380,60 @@
 						</div>
 					</div>
 				</a>
+				<a href="#" class="card">
+					<p class="card_category" style="background: #FFC400;">Rent</p>
+					<div class="card_image" style="background-image: url(img/card1.png);"></div>
+					<div class="card_info">
+						<div class="card_info_head">
+							<p class="card_info_price">$3000 / month</p>
+							<p class="card_info_square">84 m2</p>
+						</div>
+						<p class="card_info_address">C. Cristóbal Ruiz Méndez, Nº27, Esc.3 1ºA</p>
+						<div class="card_properties">
+							<div class="card_properties_item">
+								<img src="img/card_properties1.svg" class="card_properties_icon">
+								<p class="card_properties_value">2</p>
+							</div>
+							<div class="card_properties_item">
+								<img src="img/card_properties2.svg" class="card_properties_icon">
+								<p class="card_properties_value">2</p>
+							</div>
+							<div class="card_properties_item">
+								<img src="img/card_properties3.svg" class="card_properties_icon">
+								<p class="card_properties_value">1</p>
+							</div>
+							<div class="card_properties_item">
+								<img src="img/card_properties4.svg" class="card_properties_icon">
+								<p class="card_properties_value">1</p>
+							</div>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 	</section>
-
-	<section class="reserve">
+	<section class="result_form">
 		<div class="container">
-			<h2 class="reserve_title"><span>Lorem</span> ipsum dolor sit</h2>
-			<p class="reserve_subtitle">Lorem ipsum dolor sit amet</p>
-			<form class="reserve_form">
-				<div class="reserve_form_radio_overlay">
-					<input type="radio" name="reserve_radio" id="radio1" class="radio reserve_radio">
-					<label for="radio1" class="radio_label reserve_radio_label">To rent</label>
-					<input type="radio" name="reserve_radio" id="radio2" class="radio reserve_radio">
-					<label for="radio2" class="radio_label reserve_radio_label">For sale</label>
+			<h2 class="result_form_title"><span>Lorem</span> ipsum dolor sit</h2>
+			<p class="result_form_subtitle">Lorem ipsum dolor sit amet</p>
+			<form class="result_form_item">
+				<div class="result_form_input_overlay">
+					<img src="img/personal_icon.svg" class="result_form_input_img">
+					<input type="text" placeholder="Input name" class="result_form_input">
 				</div>
-				<div class="reserve_form_item">
-					<img src="img/phone_icon.svg" class="reserve_form_icon">
-					<input type="text" class="reserve_form_input" placeholder="Input number">
-					<input type="submit" class="reserve_form_submit" value="Send contact">
+				<div class="result_form_input_overlay">
+					<img src="img/phone_icon.svg" class="result_form_input_img">
+					<input type="text" placeholder="Input number" class="result_form_input">
 				</div>
+				<input type="submit" value="Send contact" class="result_form_submit">
 			</form>
 		</div>
 	</section>
-	<section class="services">
-		<div class="container">
-			<h2 class="services_title">Our sevices</h2>
-			<div class="services_overlay">
-				<div class="services_item">
-					<img src="img/services1.png" class="services_item_img">
-					<h3 class="services_item_title">Lorem ipsum</h3>
-					<p class="services_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
-					<a href="#" class="services_item_link">Detail <img src="img/btn_arrow.svg"></a>
-				</div>
-				<div class="services_item">
-					<img src="img/services2.png" class="services_item_img">
-					<h3 class="services_item_title">Lorem ipsum</h3>
-					<p class="services_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
-					<a href="#" class="services_item_link">Detail <img src="img/btn_arrow.svg"></a>
-				</div>
-				<div class="services_item">
-					<img src="img/services3.png" class="services_item_img">
-					<h3 class="services_item_title">Lorem ipsum</h3>
-					<p class="services_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
-					<a href="#" class="services_item_link">Detail <img src="img/btn_arrow.svg"></a>
-				</div>
-				<div class="services_item">
-					<img src="img/services4.png" class="services_item_img">
-					<h3 class="services_item_title">Lorem ipsum</h3>
-					<p class="services_item_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus</p>
-					<a href="#" class="services_item_link">Detail <img src="img/btn_arrow.svg"></a>
-				</div>
-			</div>
-			<img src="img/about_bg.svg" class="services_bg">
-			<a href="#" class="services_btn">Detail about services<img src="img/btn_arrow_white.svg"></a>
-		</div>
-	</section>
 
-	<section class="gallery">
-		<div class="container">
-			<div class="gallery_overlay">
-				<div class="gallery_text">
-					<h2 class="gallery_title"><span>Lorem</span> ipsum dolor sit</h2>
-					<div class="gallery_text_overlay">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tristique semper etiam pellentesque bibendum tempus volutpat tellus. A mi scelerisque dignissim purus commodo non amet. Tincidunt dictum libero augue velit tortor. Orci pretium convallis amet dui donec massa. Tellus ac diam blandit nisl tellus ut. Sollicitudin aenean eget arcu vehicula semper amet porta augue odio. Aenean lacus tortor magna id ornare risus diam turpis. Id pretium mattis est mollis mi quam nunc vulputate. Orci, elementum id aliquam sed nunc, gravida pretium. Et lectus faucibus aliquet elit est mattis. Id faucibus sit purus, nulla viverra id venenatis ut. </p>
-						<p>Dui hac scelerisque adipiscing dui sagittis, orci, eu in. Placerat turpis condimentum ullamcorper scelerisque accumsan, diam. Amet aliquam consequat sodales sed consectetur mauris, urna. Est orci ut posuere nec. Sed facilisis a amet turpis dui tortor sed sed quam. Quam sed sed sodales lectus duis ultrices. Id libero in massa est, turpis etiam vel platea. Sed quis condimentum enim nullam nam tellus. </p>
-						<p>Ac et laoreet amet, id tristique nec. Vulputate volutpat massa amet lorem nascetur neque dignissim. Id magna et amet neque, faucibus  Est orci ut posuere nec. Sed facilisis a amet turpis dui tortor sed sed quam. Quam sed sed sodales lectus duis ultrices. Id libero in massa est, turpis etiam vel platea. Sed quis condimentum enim nullam nam tellus.</p>
-						<p>Dui hac scelerisque adipiscing dui sagittis, orci, eu in. Placerat turpis condimentum ullamcorper scelerisque accumsan, diam. Amet aliquam consequat sodales sed consectetur mauris, urna. Est orci ut posuere nec. Sed facilisis a amet turpis dui tortor sed sed quam. Quam sed sed sodales lectus duis ultrices. Id libero in massa est, turpis etiam vel platea. Sed quis condimentum enim nullam nam tellus. </p>
-						<p>Ac et laoreet amet, id tristique nec. Vulputate volutpat massa amet lorem nascetur neque dignissim. Id magna et amet neque, faucibus  Est orci ut posuere nec. Sed facilisis a amet turpis dui tortor sed sed quam. Quam sed sed sodales lectus duis ultrices. Id libero in massa est, turpis etiam vel platea. Sed quis condimentum enim nullam nam tellus.</p>
-					</div>
-					<a href="#" class="read_more">Read all <img src="img/btn_arrow.svg"></a>
-				</div>
-				<div class="gallery_item">
-					<img src="img/gallery1.png">
-					<img src="img/gallery2.png">
-					<img src="img/gallery3.png">
-					<img src="img/gallery4.png">
-				</div>
-			</div>
-		</div>
-	</section>
+
+
+
+
 	<footer>
 		<div class="container">
 			<div class="footer_head">
@@ -527,13 +485,10 @@
 	</footer>
 
 
-
-
-
-
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/wNumb.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

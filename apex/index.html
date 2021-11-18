@@ -88,7 +88,9 @@
 			<div class="pluses_slider">
 				<div class="pluses_slider_item">
 					<div class="pluses_slider_item_overlay">
-						<img src="img/pluses_img.svg" class="pluses_slider_item_image">
+						<div class="pluses_slider_item_image_overlay">
+							<img src="img/pluses_img1.svg" class="pluses_slider_item_image">
+						</div>
 						<div class="pluses_slider_item_right">
 							<h2 class="pluses_slider_item_title">Наши преимущества нa рынке</h2>
 							<p class="pluses_slider_item_text">В штате на данный момент работают более 8 компетентных сотрудников. Мы работаем по законам рынка логистики, благодаря чему отношения между нами и клиентами протекают наиболее эффективно, прозрачно и стабильно. </p>
@@ -97,7 +99,9 @@
 				</div>
 				<div class="pluses_slider_item">
 					<div class="pluses_slider_item_overlay">
-						<img src="img/pluses_img.svg" class="pluses_slider_item_image">
+						<div class="pluses_slider_item_image_overlay">
+							<img src="img/pluses_img2.svg" class="pluses_slider_item_image">
+						</div>
 						<div class="pluses_slider_item_right">
 							<h2 class="pluses_slider_item_title">Наши преимущества нa рынке</h2>
 							<p class="pluses_slider_item_text">Наша компания: LTD «APEX» закрепилась на рынке с 2020 г. Мы работаем по прозрачной и отлаженной схеме, благодаря которой мы стабильно доставляем грузы и оформляем все документы.</p>
@@ -106,7 +110,9 @@
 				</div>
 				<div class="pluses_slider_item">
 					<div class="pluses_slider_item_overlay">
-						<img src="img/pluses_img.svg" class="pluses_slider_item_image">
+						<div class="pluses_slider_item_image_overlay">
+							<img src="img/pluses_img3.svg" class="pluses_slider_item_image">
+						</div>
 						<div class="pluses_slider_item_right">
 							<h2 class="pluses_slider_item_title">Наши преимущества нa рынке</h2>
 							<p class="pluses_slider_item_text">Более 600 довольных клиентов прошли через нашу компанию. Работая с нами вы получаете фиксированную сумму на все этапы транспортировки и таможенного обслуживания груза, без скрытых платежей и дополнительных сборов.</p>
@@ -122,11 +128,17 @@
 			<h2 class="services_title">Услуги компании LTD «APEX»</h2>
 			<div class="services_overlay">
 				<a href="#" class="services_item">
-					<img src="img/services1.svg" class="services_item_image">
+					<div class="services_item_image_overlay">
+						<img src="img/services1.svg" class="services_item_image">
+						<img src="img/services1_animation.svg" class="services_item_image_animation">
+					</div>
 					<p class="services_item_text">Торгово-экспидиторские услуги</p>
 				</a>
 				<a href="#" class="services_item">
-					<img src="img/services2.svg" class="services_item_image">
+					<div class="services_item_image_overlay">
+						<img src="img/services2.svg" class="services_item_image2">
+						<img src="img/services2_animation.svg" class="services_item_image2_animation">
+					</div>
 					<p class="services_item_text">Таможенно-брокерские услуги</p>
 				</a>
 			</div>
@@ -318,7 +330,11 @@
 		<div class="modal_content">
 			<div class="modal_content_item">
 				<h2 class="modal_content_title">Наш менеджер свяжется с вами как можно скорее</h2>
-				<a href="#" class="contact_btn modal_thank_btn">хорошо</a>
+				<div class="modal_thank_btn_overlay">
+					<a href="#" class="contact_btn modal_thank_btn">На Главную</a>
+					<a href="#" class="contact_btn modal_thank_btn">В меню</a>
+				</div>
+				
 			</div>
 			<img src="img/modal_image.png" class="modal_content_image">
 		</div>
@@ -355,6 +371,7 @@
 		</div>
 	</div>
 
+	<img src="img/slider_arrow.svg" onclick="return up()" class="top_arrow">
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>

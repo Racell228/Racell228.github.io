@@ -376,6 +376,37 @@ h2 {
     z-index: -1;
     width: 1466rem;
 }
+.pluses_slider_item_image_overlay {
+	position: relative;
+}
+.pluses_slider_item_image_overlay:after {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 0rem;
+	height: 1rem;
+	background-color: #fff;
+	content: "";
+	z-index: -1;
+	animation: pluses_slider 5s infinite;
+}
+
+
+@-webkit-keyframes pluses_slider {
+  0% {
+	bottom: 3rem;
+	left: 0;
+	width: 0rem;
+  }
+  25% {
+  	bottom: 3rem;
+	left: 0;
+	width: 100%;
+  }
+  100% {
+  	
+  }
+}
 .pluses_slider_item_image {
 	width: 328rem;
 }
@@ -405,7 +436,13 @@ h2 {
 	height: 42rem;
 	bottom: 0;
 	z-index: 9;
+	transition: 0.4s;
+	opacity: 1;
 	cursor: pointer;
+}
+.pluses_slider .slick-arrow.slick-disabled {
+	opacity: 0.5;
+	transition: 0.4s;
 }
 .pluses_slider .left{
 	right: 340rem;
@@ -421,8 +458,69 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 }
+.services_item_image_overlay {
+	position: relative;
+	height: 408rem;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services_item_image_animation {
+	width: 340rem;
+	position: absolute;
+	top: 35rem;
+	animation: services_item1 5s infinite;
+	left: 35rem;
+}
+@-webkit-keyframes services_item1 {
+  0% {
+   width: 340rem;
+   top: 35rem;
+   left: 35rem;
+  }
+  50% {
+   width: 380rem;
+   top: 15rem;
+   left: 15rem;
+  }
+  100% {
+    width: 340rem;
+    top: 35rem;
+    left: 35rem;
+  }
+}
 .services_item_image {
 	width: 406rem;
+}
+.services_item_image2 {
+	width: 340rem;
+	margin: auto;
+    display: block;
+}
+.services_item_image2_animation {
+	position: absolute;
+	top: 0rem;
+	left: -10rem;
+	width: 406rem;
+	animation: services_item2 5s infinite;
+}
+@-webkit-keyframes services_item2 {
+  0% {
+  	width: 406rem;
+   	top: 0rem;
+	left: -10rem;
+  }
+  50% {
+   	width: 486rem;
+   	top: -40rem;
+	left: -50rem;
+  }
+  100% {
+   	width: 406rem;
+   	top: 0rem;
+	left: -10rem;
+  }
 }
 .services_title {
 	text-align: center;
@@ -1197,6 +1295,10 @@ footer {
 	margin-top: auto;
 	margin-bottom: 36rem;
 }
+.modal_thank_btn_overlay {
+	display: flex;
+	align-items: center;
+}
 .modal_content_image {
 	width: 637rem;
 }
@@ -1213,6 +1315,7 @@ footer {
 }
 .modal_thank_btn {
 	margin-bottom: auto;
+	margin-right: 30rem;
 }
 .modal_thank .modal_content_title{
 	margin-top: 156rem;
@@ -1612,4 +1715,14 @@ aside {
 }
 #customsTotal {
 	color: #5F85DB;
+}
+.top_arrow {
+	position: fixed;
+	bottom: 50rem;
+	right: 50rem;
+	width: 52rem;
+	transform: rotate(-90deg);
+	z-index: 99;
+	cursor: pointer;
+	display: none;
 }
