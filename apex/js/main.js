@@ -129,35 +129,6 @@ $(document).ready(function(){
 });
 
 
-$(window).scroll(function() {
-var height = $(window).scrollTop();
-if(height > 200){
-$('.info_nav').addClass('info_nav_fixed');
-} else{
-  $('.info_nav').removeClass('info_nav_fixed');
-}
-});
-
-$(window).scroll(function() {
-var height = $(window).scrollTop();
-var top = $('.info_overlay').height();
-if(height > top ){
-  $('.info_nav').addClass('info_nav_absolute');
-} else{
-  $('.info_nav').removeClass('info_nav_absolute');
-}
-});
-
-
-$(window).scroll(function() {
-var height = $(window).scrollTop();
-var top = $('.info_overlay').height();
-if(height > top ){
-  $('.info_nav').addClass('info_nav_absolute');
-} else{
-  $('.info_nav').removeClass('info_nav_absolute');
-}
-});
 
 $(function(f){
     var element = f('.top_arrow');
@@ -172,4 +143,50 @@ function up() {
     t = setTimeout('up()',20);
   } else clearTimeout(300);
   return false;
+}
+
+if (window.matchMedia("(max-width: 481px)").matches) {
+$(document).ready(function(){
+    $('.reviews_overlay').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick_left slick_btn"></button>',
+      nextArrow: '<button type="button" class="slick_right slick_btn"></button>'
+    });
+});
+
+} else {
+      $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if(height > 200){
+      $('.info_nav').addClass('info_nav_fixed');
+      } else{
+        $('.info_nav').removeClass('info_nav_fixed');
+      }
+      });
+
+      $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      var top = $('.info_overlay').height();
+      if(height > top ){
+        $('.info_nav').addClass('info_nav_absolute');
+      } else{
+        $('.info_nav').removeClass('info_nav_absolute');
+      }
+      });
+
+
+      $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      var top = $('.info_overlay').height();
+      if(height > top ){
+        $('.info_nav').addClass('info_nav_absolute');
+      } else{
+        $('.info_nav').removeClass('info_nav_absolute');
+      }
+      });
+
 }
