@@ -1654,6 +1654,12 @@ aside {
 	border-radius: 25rem;
 	padding: 4rem 15rem;
 }
+.selectionBlock_overlay {
+	height: 386rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
 .calcItem_volume .selectionBlock{
 	border-radius: 25rem;
 	padding: 0;
@@ -1705,7 +1711,7 @@ aside {
 	width: 330rem;
 }
 .title_calc {
-	margin-top: 50rem;
+	margin-top: auto;
 }
 .inputBlock_overlay {
 	display: flex;
@@ -1748,6 +1754,9 @@ aside {
 	display: none;
 }
 .servpage_content_head_mobile {
+	display: none;
+}
+.priceBlock_title {
 	display: none;
 }
 @media screen and (max-width: 480px) {
@@ -2362,5 +2371,52 @@ aside {
 		width: 100%;
 		margin-left: 0;
 		flex-direction: column;
+		margin-top: -90rem;
+	}
+	.calcItem {
+		margin: 0;
+		width: 100%;
+	}
+	.selectionBlock_overlay {
+		height: auto;
+	}
+	.title {
+		margin-bottom: 20rem;
+		margin-top: 60rem;
+	}
+	.inputBlock input {
+		width: calc(100% - 40rem);
+	}
+	.calcvolume_overlay {
+		margin-top: 20rem;
+	}
+	.calcCustoms .justify-content-center {
+		margin-top: 0;
+	}
+	.calcyear {
+		margin-top: 20rem;
+	}
+	.calccapacity {
+		margin-top: 20rem;
+	}
+	.priceBlock_title {
+		display: block;
+		font-size: 30rem;
+		line-height: 133%;
+		text-align: center;
+		color: #FFFFFF;
+		margin-top: 20rem;
+	}
+	.total_price_customs .symbol {
+		display: none;
+	}
+	.total_price_customs .item {
+		display: none;
+	}
+	.total_price_customs .total {
+		display: flex;
+		font-size: 14rem;
+		padding: 11rem 0;
+		margin-top: 30rem;
 	}
 }	

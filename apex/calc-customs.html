@@ -32,160 +32,175 @@
                 <div class="row">
                     <div class="calcItem calcItem_type">
                         <p class="title">Тип двигателя</p>
-                        <div class="selectionBlock">
-                            <div class="selectionItem">
-                                <input type="radio" id="gasoline" name="engine-type" value="gasoline" checked>
-                                <label for="gasoline">Бензин</label>
+                        <div class="selectionBlock_overlay">
+                            <div class="selectionBlock">
+                                <div class="selectionItem">
+                                    <input type="radio" id="gasoline" name="engine-type" value="gasoline" checked>
+                                    <label for="gasoline">Бензин</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="diesel" name="engine-type" value="diesel">
+                                    <label for="diesel">Дизель</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="electro" name="engine-type" value="electro">
+                                    <label for="electro">Электро</label>
+                                </div>
                             </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="diesel" name="engine-type" value="diesel">
-                                <label for="diesel">Дизель</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="electro" name="engine-type" value="electro">
-                                <label for="electro">Электро</label>
-                            </div>
+                            <p class="title title_calc">Расчёт стоимости</p>
+                        </div>
+                        
+                        <div class="inputBlock">
+                            <input type="text" id="calcCost" placeholder="Введите стоимость, USD">
                         </div>
                     </div>
                     <div class="calcItem calcItem_volume volume">
                         <p class="title">Объем</p>
-                        <div class="selectionBlock">
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-1-4" name="engine-volume" value="1.4">
-                                <label for="volume-1-4">1.4</label>
+                        <div class="selectionBlock_overlay">
+                            <div class="selectionBlock">
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-1-4" name="engine-volume" value="1.4">
+                                    <label for="volume-1-4">1.4</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-1-5" name="engine-volume" value="1.5">
+                                    <label for="volume-1-5">1.5</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-1-6" name="engine-volume" value="1.6">
+                                    <label for="volume-1-6">1.6</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-1-8" name="engine-volume" value="1.8">
+                                    <label for="volume-1-8">1.8</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-2-0" name="engine-volume" value="2.0">
+                                    <label for="volume-2-0">2.0</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-2-4" name="engine-volume" value="2.4">
+                                    <label for="volume-2-4">2.4</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-2-5" name="engine-volume" value="2.5">
+                                    <label for="volume-2-5">2.5</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-3-0" name="engine-volume" value="3.0">
+                                    <label for="volume-3-0">3.0</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="volume-3-5" name="engine-volume" value="3.5">
+                                    <label for="volume-3-5">3.5</label>
+                                </div>
                             </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-1-5" name="engine-volume" value="1.5">
-                                <label for="volume-1-5">1.5</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-1-6" name="engine-volume" value="1.6">
-                                <label for="volume-1-6">1.6</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-1-8" name="engine-volume" value="1.8">
-                                <label for="volume-1-8">1.8</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-2-0" name="engine-volume" value="2.0">
-                                <label for="volume-2-0">2.0</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-2-4" name="engine-volume" value="2.4">
-                                <label for="volume-2-4">2.4</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-2-5" name="engine-volume" value="2.5">
-                                <label for="volume-2-5">2.5</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-3-0" name="engine-volume" value="3.0">
-                                <label for="volume-3-0">3.0</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="volume-3-5" name="engine-volume" value="3.5">
-                                <label for="volume-3-5">3.5</label>
-                            </div>
+                        </div>
+                        <div class="inputBlock calcvolume_overlay">
+                            <input type="text" id="calcVolume" class="calcvolume" placeholder="Введите объём, л">
                         </div>
                     </div>
                     <div class="calcItem disabledBlock capacity">
                         <p class="title">Емкость АКБ</p>
-                        <div class="selectionBlock">
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-12" name="engine-capacity" value="12">
-                                <label for="capacity-12">12 kW</label>
+                        <div class="selectionBlock_overlay">
+                            <div class="selectionBlock">
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-12" name="engine-capacity" value="12">
+                                    <label for="capacity-12">12 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-15" name="engine-capacity" value="15">
+                                    <label for="capacity-15">15 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-16" name="engine-capacity" value="16">
+                                    <label for="capacity-16">16 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-20" name="engine-capacity" value="20">
+                                    <label for="capacity-20">20 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-25" name="engine-capacity" value="25">
+                                    <label for="capacity-25">25 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-50" name="engine-capacity" value="50">
+                                    <label for="capacity-50">50 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-60" name="engine-capacity" value="60">
+                                    <label for="capacity-60">60 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-75" name="engine-capacity" value="75">
+                                    <label for="capacity-75">75 kW</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="capacity-100" name="engine-capacity" value="100">
+                                    <label for="capacity-100">100 kW</label>
+                                </div>
                             </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-15" name="engine-capacity" value="15">
-                                <label for="capacity-15">15 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-16" name="engine-capacity" value="16">
-                                <label for="capacity-16">16 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-20" name="engine-capacity" value="20">
-                                <label for="capacity-20">20 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-25" name="engine-capacity" value="25">
-                                <label for="capacity-25">25 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-50" name="engine-capacity" value="50">
-                                <label for="capacity-50">50 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-60" name="engine-capacity" value="60">
-                                <label for="capacity-60">60 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-75" name="engine-capacity" value="75">
-                                <label for="capacity-75">75 kW</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="capacity-100" name="engine-capacity" value="100">
-                                <label for="capacity-100">100 kW</label>
-                            </div>
-                        </div> 
+                        </div>
+                        <div class="inputBlock disabledBlock calc_capacity_overlay">
+                            <input type="text" id="calcCapacity" class="calccapacity" placeholder="Введите емкость АКБ, кВт/ч">
+                        </div>
                     </div>
                     <div class="calcItem calcItem_year">
                         <p class="title">Год</p>
-                        <div class="selectionBlock">
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2013" name="year-manufacture" value="2013">
-                                <label for="year-2013">2013</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2014" name="year-manufacture" value="2014">
-                                <label for="year-2014">2014</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2015" name="year-manufacture" value="2015">
-                                <label for="year-2015">2015</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2016" name="year-manufacture" value="2016">
-                                <label for="year-2016">2016</label>
-                            </div>
-                            <div class="selectionItem">
-                                 <input type="radio" id="year-2017" name="year-manufacture" value="2017">
-                                <label for="year-2017">2017</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2018" name="year-manufacture" value="2018">
-                                <label for="year-2018">2018</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2019" name="year-manufacture" value="2019">
-                                <label for="year-2019">2019</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2020" name="year-manufacture" value="2020">
-                                <label for="year-2020">2020</label>
-                            </div>
-                            <div class="selectionItem">
-                                <input type="radio" id="year-2021" name="year-manufacture" value="2021">
-                                <label for="year-2021">2021</label>
+                        <div class="selectionBlock_overlay">
+                            <div class="selectionBlock">
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2013" name="year-manufacture" value="2013">
+                                    <label for="year-2013">2013</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2014" name="year-manufacture" value="2014">
+                                    <label for="year-2014">2014</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2015" name="year-manufacture" value="2015">
+                                    <label for="year-2015">2015</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2016" name="year-manufacture" value="2016">
+                                    <label for="year-2016">2016</label>
+                                </div>
+                                <div class="selectionItem">
+                                     <input type="radio" id="year-2017" name="year-manufacture" value="2017">
+                                    <label for="year-2017">2017</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2018" name="year-manufacture" value="2018">
+                                    <label for="year-2018">2018</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2019" name="year-manufacture" value="2019">
+                                    <label for="year-2019">2019</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2020" name="year-manufacture" value="2020">
+                                    <label for="year-2020">2020</label>
+                                </div>
+                                <div class="selectionItem">
+                                    <input type="radio" id="year-2021" name="year-manufacture" value="2021">
+                                    <label for="year-2021">2021</label>
+                                </div>
                             </div>
                         </div>
+                        <div class="inputBlock">
+                            <input type="text" id="calcYear" class="calcyear" placeholder="Введите год">
+                        </div>
                     </div>
+
                 </div>
-                <p class="title title_calc">Расчёт стоимости</p>
-                <div class="inputBlock_overlay">
-                    <div class="inputBlock">
-                        <input type="text" id="calcCost" placeholder="Введите стоимость, USD">
-                    </div>
-                     <div class="inputBlock calcvolume_overlay">
-                        <input type="text" id="calcVolume" class="calcvolume" placeholder="Введите объём, л">
-                    </div>
-                    <div class="inputBlock disabledBlock calc_capacity_overlay">
-                        <input type="text" id="calcCapacity" class="calccapacity" placeholder="Введите емкость АКБ, кВт/ч">
-                    </div>
-                     <div class="inputBlock">
-                        <input type="text" id="calcYear" class="calcyear" placeholder="Введите год">
-                    </div>
-                </div>
+                
+                <!-- <div class="inputBlock_overlay">
+
+                     
+                    
+                     
+                </div> -->
                 <div class="row justify-content-center">
                     <div class="mainBtn_overlay">
                         <button type="button" id="calculateCustoms" class="mainBtn">рассчитать стоимость</button>
@@ -193,12 +208,12 @@
                 </div>
             </div>
         </div>
-        <div class="total_price">
+        <div class="total_price total_price_customs">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="priceBlock">
-                            <!-- <p>Стоимость растаможки</p> -->
+                            <p class="priceBlock_title">Стоимость растаможки</p>
                             <div class="wrap">
                                 <div class="item">
                                     <div id="customsClearance"></div>
