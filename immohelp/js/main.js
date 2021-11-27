@@ -63,6 +63,9 @@ $(document).ready(function() {
     event.preventDefault();
       $(this).toggleClass('active');
       $(this).find('.faq_item_answer').toggle(400);
+      $(this).find('.faq_item_img_active').toggle();
+      $(this).find('.faq_item_img').toggle();
+      $(this).find('.faq_item_text').toggleClass('active');
   });
 });
 
@@ -112,13 +115,13 @@ $(document).ready(function(){
 $(document).ready(function(){
  var postion = $('#services_overlay').offset().top,
     height = $('#services_overlay').height();
-$(document).on('scroll', function (){
-  var scroll = $(document).scrollTop();
-  if(scroll  > postion - 600) {
-     $('.services_item').addClass('active');
-     }else {
-        
-     }
-})
+    $(document).on('scroll', function (){
+      var scroll = $(document).scrollTop();
+      if(scroll  > postion - 600) {
+         $('.services_item').addClass('active');
+         }else {
+            
+         }
+    })
 });
 

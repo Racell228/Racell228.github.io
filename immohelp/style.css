@@ -1252,8 +1252,18 @@ Sale
 	font-weight: 500;
 	line-height: 175%;
 	color: #000;
+	transition: 0.4s;
+}
+.faq_item_text.active {
+	color: #007F8F;
+	transition: 0.4s;
 }
 .faq_item_img {
+	width: 28rem;
+	margin-left: 28rem;
+}
+.faq_item_img_active {
+	display: none;
 	width: 28rem;
 	margin-left: 28rem;
 }
