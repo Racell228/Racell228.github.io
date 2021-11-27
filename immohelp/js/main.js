@@ -82,3 +82,43 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="right slider_arrow"></button>',
   });
 });
+
+
+$(document).ready(function(){
+  $('.about_text_gallery').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    margin: 10,
+    variableWidth: true,
+    arrows:false,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    swipe: false,
+    focusOnSelect: false,
+    pauseOnHover:false,
+    responsive: [
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    ]
+  });
+});
+
+$(document).ready(function(){
+ var postion = $('#services_overlay').offset().top,
+    height = $('#services_overlay').height();
+$(document).on('scroll', function (){
+  var scroll = $(document).scrollTop();
+  if(scroll  > postion - 600) {
+     $('.services_item').addClass('active');
+     }else {
+        
+     }
+})
+});
+

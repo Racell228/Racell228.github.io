@@ -82,6 +82,7 @@ header {
 	border: 1px solid rgba(0, 127, 143, 0.3);
 	border-radius: 5rem;
 	color: #007F8F;
+	font-weight: 700;
 }
 .header_nav_link.active {
 	padding: 4rem 25rem;
@@ -255,8 +256,8 @@ header {
 .checkbox:checked + .checkbox_label:before {
     background-position: top;
 }
-.checkbox:checked + .checkbox_label {
-	color: rgba(255, 255, 255, 0.4);
+.checkbox:disabled + .checkbox_label {
+	opacity: 0.4;
 }
 .hero_form_submit {
 	font-family: 'Montserrat';
@@ -367,6 +368,7 @@ header {
 	border-radius: 30rem;
 	padding: 20rem;
 	width: 360rem;
+	min-width: 360rem;
 	position: relative;
 }
 .card_image {
@@ -380,6 +382,9 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	margin: 24rem 0;
+}
+.card_info_address {
+	line-height: 171%;
 }
 .card_info_price {
 	font-weight: 600;
@@ -436,7 +441,7 @@ header {
 	margin: 0 -50rem;
 }
 .variants_slider .slick-slide{
-	margin: 0 50rem;
+	margin: 0 20rem;
 }
 .slick-arrow {
 	position: absolute;
@@ -547,7 +552,7 @@ header {
 }
 .reserve_form_input {
 	border: none;
-	color: rgba(0, 127, 143, 0.6);
+	color: #000;
 	font: 500 16rem 'Montserrat';
 	width: 280rem;
 }
@@ -589,6 +594,12 @@ header {
 	text-align: center;
 	padding: 20rem;
 	width: 240rem;
+	opacity: 0;
+	transition: 1s;
+}
+.services_item.active {
+	opacity: 1;
+	transition: 1s;
 }
 .services_overlay {
 	display: flex;
@@ -967,9 +978,7 @@ Sale
 .filter_item_rooms .checkbox_label:before {
 	background-image: url(img/checkbox_sprite_black.svg);
 }
-.filter_item_rooms .checkbox:checked + .checkbox_label {
-	color: rgba(0, 23, 26, 0.4);
-}
+
 .filter_submit_overlay {
 	width: 100%;
 	margin-top: 30rem;
@@ -1108,13 +1117,21 @@ Sale
 	font-weight: 600;
 	font-size: 22rem;
 	color: #007F8F;
-	margin: 0 12rem;
+	margin: 0 6rem;
+}
+.result_pagination_item.active {
+	background: #007F8F;
+	color: #fff;
 }
 .result_pagination_arrow {
 	background-color: #fff;
 }
 .result_pagination_inactive {
 	background-color: #fff;
+}
+.result_form_overlay {
+	width: 1040rem;
+	margin: auto;
 }
 .result_form {
 	background-image: url(img/result_form_bg.png);
@@ -1152,9 +1169,8 @@ Sale
 .result_form_input {
 	border: none;
 	width: 100%;
-	color: #007F8F;
-	font-weight: 500;
-	font-size: 16rem;
+	color: #000;
+	font: 500 16rem 'Montserrat';
 }
 .result_form_input input::-webkit-input-placeholder {
     color: rgba(0, 127, 143, 0.6);
@@ -1607,7 +1623,7 @@ Sale
 .contact_form_input {
 	border: none;
 	font: 500 16rem 'Montserrat';
-	color: rgba(0, 127, 143, 0.6);
+	color: #000;
 }
 .contact_form_input input::-webkit-input-placeholder {
     color: rgba(0, 127, 143, 0.6);
@@ -1764,9 +1780,7 @@ Sale
 }
 .about_text_gallery img {
 	height: 302rem;
-}
-.about_text_gallery img:nth-child(2) {
-	height: 356rem;
+	margin: 0 30rem;
 }
 .team_item {
 	width: 290rem;

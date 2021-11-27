@@ -86,9 +86,9 @@
 				<div class="hero_form_rooms filter_item_rooms">
 					<p class="hero_form_rooms_text">Number of rooms:</p>
 					<div class="rent_checkbox_overlay">
-						<input type="checkbox" id="hero_checkbox1" class="hero_form_rooms_checkbox checkbox">
+						<input type="checkbox" id="hero_checkbox1" class="hero_form_rooms_checkbox checkbox" disabled>
 						<label for="hero_checkbox1" class="hero_form_rooms_label checkbox_label">1-3</label>
-						<input type="checkbox" id="hero_checkbox2" class="hero_form_rooms_checkbox checkbox">
+						<input type="checkbox" id="hero_checkbox2" class="hero_form_rooms_checkbox checkbox" disabled>
 						<label for="hero_checkbox2" class="hero_form_rooms_label checkbox_label">4-6</label>
 						<input type="checkbox" id="hero_checkbox3" class="hero_form_rooms_checkbox checkbox">
 						<label for="hero_checkbox3" class="hero_form_rooms_label checkbox_label">7-10</label>
@@ -419,19 +419,21 @@
 	</section>
 	<section class="result_form">
 		<div class="container">
-			<h2 class="result_form_title"><span>Lorem</span> ipsum dolor sit</h2>
-			<p class="result_form_subtitle">Lorem ipsum dolor sit amet</p>
-			<form class="result_form_item">
-				<div class="result_form_input_overlay">
-					<img src="img/personal_icon.svg" class="result_form_input_img">
-					<input type="text" placeholder="Input name" class="result_form_input">
-				</div>
-				<div class="result_form_input_overlay">
-					<img src="img/phone_icon.svg" class="result_form_input_img">
-					<input type="text" placeholder="Input number" class="result_form_input">
-				</div>
-				<input type="submit" value="Send contact" class="result_form_submit">
-			</form>
+			<div class="result_form_overlay">
+				<h2 class="result_form_title"><span>Lorem</span> ipsum dolor sit</h2>
+				<p class="result_form_subtitle">Lorem ipsum dolor sit amet</p>
+				<form class="result_form_item">
+					<div class="result_form_input_overlay">
+						<img src="img/personal_icon.svg" class="result_form_input_img">
+						<input type="text" placeholder="Input name" class="result_form_input">
+					</div>
+					<div class="result_form_input_overlay">
+						<img src="img/phone_icon.svg" class="result_form_input_img">
+						<input type="text" placeholder="Input number" class="result_form_input">
+					</div>
+					<input type="submit" value="Send contact" class="result_form_submit">
+				</form>
+			</div>
 		</div>
 	</section>
 
