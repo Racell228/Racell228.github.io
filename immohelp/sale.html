@@ -18,6 +18,10 @@
 				<div class="header_nav">
 					<div class="header_nav_parent">
 						<a href="#" class="header_nav_link header_nav_parent_link">Catalog</a>
+						<div class="header_nav_child">
+							<a href="#" class="header_nav_child_link">For sell</a>
+							<a href="#" class="header_nav_child_link">For rent</a>
+						</div>
 					</div>
 					<a href="#" class="header_nav_link">Our Services</a>
 					<a href="#" class="header_nav_link">About Company</a>
@@ -34,6 +38,7 @@
 					</select>
 				</div>
 				<a href="#" class="header_btn">Buy property</a>
+				<a href="#" class="header_menu"><img src="img/menu_icon.svg">Menu</a>
 			</div>
 		</div>
 	</header>
@@ -76,7 +81,7 @@
 				</div>
 				<div class="hero_form_rooms filter_item_rooms">
 					<p class="hero_form_rooms_text">Number of rooms:</p>
-					<input type="checkbox" id="hero_checkbox1" class="hero_form_rooms_checkbox checkbox">
+					<input type="checkbox" id="hero_checkbox1" class="hero_form_rooms_checkbox checkbox" disabled>
 					<label for="hero_checkbox1" class="hero_form_rooms_label checkbox_label">1-3</label>
 					<input type="checkbox" id="hero_checkbox2" class="hero_form_rooms_checkbox checkbox">
 					<label for="hero_checkbox2" class="hero_form_rooms_label checkbox_label">4-6</label>
@@ -97,7 +102,7 @@
 		<div class="container">
 			<div class="result_head">
 				<p class="result_head_label"><span>Results:</span>148 properties founds</p>
-				<a href="#" class="result_head_delete"><img src="img/trash.svg">Delete filtr</a>
+				<a href="#" class="result_head_delete"><img src="img/trash.svg"><span>Delete filtr</span></a>
 				<div class="result_head_sort">
 					<p class="result_head_sort_label">Sort by:</p>
 					<select class="result_head_sort_select">
@@ -622,7 +627,25 @@
 
 
 
-
+	<div class="mobile_menu">
+		<a href="#" class="header_btn header_btn_mobile">Buy property</a>
+		<a href="#" class="close_menu"><img src="img/close.svg">Menu</a>
+		<a href="#" class="mobile_menu_item">Catalog for Sale</a>
+		<a href="#" class="mobile_menu_item">Catalog for Rent</a>
+		<a href="#" class="mobile_menu_item">Our Services</a>
+		<a href="#" class="mobile_menu_item">About Company</a>
+		<a href="#" class="mobile_menu_item">FAQ</a>
+		<a href="#" class="mobile_menu_item">Contact</a>
+		<div class="header_lang header_lang_mobile">
+			<select class="header_lang_item">
+				<option class="header_lang_item_option">ENG</option>
+				<option class="header_lang_item_option">NLD</option>
+				<option class="header_lang_item_option">FRA</option>
+				<option class="header_lang_item_option">RUS</option>
+				<option class="header_lang_item_option">ESP</option>
+			</select>
+		</div>
+	</div>
 
 
 
