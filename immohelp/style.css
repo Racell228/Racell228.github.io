@@ -1123,6 +1123,104 @@ Sale
 	color: #007F8F;
 	margin: 0 6rem;
 }
+.result_list {
+	display: none;
+}
+.card_list {
+	display: flex;
+	align-items: center;
+	padding: 20rem;
+	background: #FBFBFB;
+	border-radius: 30rem;
+	margin-top: 30rem;
+}
+.card_list_img {
+	width: 196rem;
+	height: 163rem;
+	background-image: url(img/card_list.jpg);
+	background-size: cover;
+	border-radius: 18rem;
+}
+.card_list_moreimg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1rem solid #007F8F;
+	border-radius: 18rem;
+	width: 196rem;
+	height: 163rem;
+	margin-left: 20rem;
+}
+.card_list_moreimg_icon {
+	width: 34rem;
+}
+.card_list_moreimg_text {
+	color: #007F8F;
+	font-weight: 500;
+	margin-top: 15rem;
+}
+.card_list_info {
+	margin-left: 60rem;
+	width: 705rem;
+}
+.card_list_title {
+	font-weight: 700;
+	font-size: 24rem;
+	line-height: 120%;
+	color: #181818;
+}
+.card_list_info_overlay {
+	margin: 20rem 0 24rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.card_list_info_price {
+	font-weight: 600;
+	font-size: 24rem;
+	color: #1B1B1B;
+}
+.card_list_info_square {
+	color: #007F8F;
+	font-weight: 600;
+}
+.card_list_place {
+	color: #1B1B1B;
+	width: 400rem;
+}
+.card_list_properties {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+}
+.card_list_properties_item {
+	border: 1rem solid rgba(255, 196, 0, 0.5);
+	border-radius: 14rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60rem;
+	height: 60rem;
+	margin-left: 14rem;
+}
+.card_list_properties_item_icon {
+	height: 16rem;
+}
+.card_list_properties_item_value {
+	color: #007F8F;
+	font-weight: 500;
+	margin-top: 4rem;
+}
+.card_list_place_overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.result_list {
+	margin-top: 30rem;
+}
 .result_pagination_item.active {
 	background: #007F8F;
 	color: #fff;
@@ -2155,7 +2253,7 @@ Sale
 	.mobile_menu {
 		position: fixed;
 		top: 0;
-		left: 0;
+		right: 0;
 		width: calc(100vw - 100rem);
 		height: calc(100vh - 70rem);
 		background-color: #fff;
@@ -2387,6 +2485,26 @@ Sale
 	}
 	.servicepage_item {
 		margin: 100rem 0;
+	}
+	.card_list_info {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 20rem;
+	}
+	.card_list {
+		flex-wrap: wrap;
+	}
+	.card_list_info_overlay {
+		margin: 20rem 0 0;
+	}
+	.card_list {
+		margin-top: 10rem;
+	}
+	.header_btn_mobile {
+		display: none;
+	}
+	.header_lang_mobile {
+		display: none;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -2924,5 +3042,32 @@ Sale
 	}
 	.servicepage_item_title {
 		margin-top: 30rem;
+	}
+	.card_list_img {
+    	width: 150rem;
+    	height: 125rem;
+	}
+	.card_list_moreimg {
+		width: 150rem;
+    	height: 125rem;
+    	margin-left: 10rem;
+	}
+	.card_list {
+		padding: 10rem;
+		margin-top: 30rem;
+	}
+	.card_list_place_overlay {
+		flex-direction: column;
+	}
+	.card_list_place {
+		width: auto;
+		line-height: 170%;
+		margin: 10rem 0;
+	}
+	.card_list_moreimg_text {
+		font-size: 14rem;
+	}
+	.card_list_info_price {
+		font-size: 18rem;
 	}
 }
