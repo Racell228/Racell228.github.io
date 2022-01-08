@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -33,13 +34,12 @@
 					<a href="#" class="header_lang_item active"><img src="img/lang1.svg"></a>
 					<a href="#" class="header_lang_item"><img src="img/lang2.svg"></a>
 				</div>
-				<a href="#" class="header_burger"><img src="img/burger.svg"></a>
 			</div>
 		</div>
 		<div class="sub_header">
 				<div class="sub_header_content">
 					<div class="sub_header_content_overlay">
-						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
+						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -96,7 +96,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#" class="sub_header_nav_item">End-grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
+						<a href="#content1" class="sub_header_nav_item">End-grain boards</a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -153,7 +153,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
+						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -210,7 +210,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
+						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -269,37 +269,242 @@
 				</div>
 		</div>
 	</header>
-	<section class="hero">
-		<div class="hero_content">
-			<h1 class="hero_content_title">Head title</h1>
-			<p class="hero_text">Head subtitle. Wood can be chaped into vertually any shape. The material is durable if cared for in the right way. Welcome to learn more</p>
-			<a href="#" class="hero_link">Learn more <img src="img/arrow_link.svg"></a>
-		</div>
-	</section>
-	<section class="home_content">
+	<section class="personal">
 		<div class="container">
-			<div class="home_content_item">
-				<img src="img/home_img1.jpg" class="home_content_item_img">
-				<div class="home_content_item_overlay">
-					<h2 class="home_content_item_title">Wood craft</h2>
-					<p class="home_content_item_text">Wood can be chaped into vertually any shape. The material is durable if cared for in the right way. Welcome to learn more</p>
-					<a href="#" class="home_content_item_link">Learn more<img src="img/arrow_link.svg"></a>
-				</div>
+			<div class="personal_head">
+				<h2 class="personal_title">User account</h2>
+				<a href="#" class="personal_exit"><span>Logout</span><img src="img/logout.svg"></a>
 			</div>
-			<div class="home_content_item">
-				<div class="home_content_item_overlay">
-					<h2 class="home_content_item_title">Wood care</h2>
-					<p class="home_content_item_text">We show you how to handle you wood product for it to last for many, many years. Our products will last for your whole life and maybe that more generations</p>
-					<a href="#" class="home_content_item_link">Learn more<img src="img/arrow_link.svg"></a>
-				</div>
-				<img src="img/home_img2.jpg" class="home_content_item_img">
+			<div class="personal_nav">
+				<a href="#personal" class="personal_nav_item active">Edit personal data</a>
+				<a href="#password" class="personal_nav_item">Reset password</a>
+				<a href="#wishlist" class="personal_nav_item">Wishlist</a>
+				<a href="#order" class="personal_nav_item">My orders</a>
 			</div>
-			<div class="home_content_item">
-				<img src="img/home_img3.jpg" class="home_content_item_img">
-				<div class="home_content_item_overlay">
-					<h2 class="home_content_item_title">Product development</h2>
-					<p class="home_content_item_text">We continuously develop new articles and variations of the ones we already have. Also, we do special orders for clients</p>
-					<a href="#" class="home_content_item_link">Learn more<img src="img/arrow_link.svg"></a>
+			<div class="personal_overlay">
+				<div class="personal_item" id="personal">
+					<h4 class="personal_item_title">General information</h4>
+					<div>
+						<form>
+							<div class="checkout_content_item_reg">
+								<input type="text" class="checkout_content_item_form_input input" placeholder="First name">
+								<input type="text" class="checkout_content_item_form_input input" placeholder="Last name">
+								<input type="text" class="checkout_content_item_form_input input" placeholder="E-mail">
+								<input type="text" class="checkout_content_item_form_input input tel" value="+" placeholder="Phone number">
+							</div>
+						</form>
+					</div>
+					<h4 class="personal_item_title">Delivery information</h4>
+					<div>
+						<form>
+							<div class="delivery_info">
+								<select class="delivery_info_select">
+									<option class="delivery_info_option">DHL</option>
+									<option class="delivery_info_option">DHL</option>
+									<option class="delivery_info_option">DHL</option>
+									<option class="delivery_info_option">Choose the type of delivery</option>
+								</select>
+								<input type="text" class="checkout_content_item_form_input input" placeholder="Country">
+								<input type="text" class="checkout_content_item_form_input input" placeholder="City">
+								<input type="text" class="checkout_content_item_form_input input" placeholder="Postal code">
+								<input type="text" class="delivery_info_adress input" placeholder="Exact address (street, apartment, suite, etc.)">
+							</div>
+							<div class="checkout_content_item_reg_btns">
+								<input type="submit" class="checkout_content_item_reg_submit submit" value="Save changes">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="personal_item" id="password">
+					<h4 class="personal_item_title">Reset password</h4>
+					<form>
+						<div class="checkout_content_item_reg">
+							<input type="password" class="checkout_content_item_form_input input" placeholder="New password">
+							<input type="password" class="checkout_content_item_form_input input" placeholder="Confirm password">
+						</div>
+						<input type="submit" class="checkout_content_item_login_submit submit" value="Save changes">
+					</form>
+				</div>
+				<div class="personal_item personal_item_wishlist" id="wishlist"> 
+					<h4 class="personal_item_title">Wishlist</h4>
+					<div class="single_related">
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+						<a href="#" class="related_item">
+							<div class="related_item_image" style="background-image: url(img/single_img1.png);"></div>
+							<h5 class="related_item_title">Confusion</h5>
+							<p class="related_item_subtitle">Oak, mable and wainut</p>
+						</a>
+					</div>
+				</div>
+				<div class="personal_item personal_item_order" id="order">
+					<div class="order">
+						<h4 class="order_title">Order #5542344</h4>
+						<p class="order_status">Delivered</p>
+						<p class="order_date">05.12.2021 22:15</p>
+						<div class="order_overlay">
+							<div class="order_content">
+								<div class="checkout_order_item">
+									<div class="checkout_order_item_image" style="background-image: url(img/single_img1.png);"></div>
+									<div class="checkout_order_item_overlay">
+										<a href="#" class="checkout_order_item_title">Confusion</a>
+										<p class="checkout_order_item_subtitle">Oak, mable and wainut</p>
+										<div class="checkout_order_item_info">
+											<p class="checkout_order_item_quanity">1 item</p>
+											<p class="checkout_order_item_price">120,00 €</p>
+										</div>
+									</div>
+								</div>
+								<div class="checkout_order_item">
+									<div class="checkout_order_item_image" style="background-image: url(img/single_img1.png);"></div>
+									<div class="checkout_order_item_overlay">
+										<a href="#" class="checkout_order_item_title">Confusion</a>
+										<p class="checkout_order_item_subtitle">Oak, mable and wainut</p>
+										<div class="checkout_order_item_info">
+											<p class="checkout_order_item_quanity">1 item</p>
+											<p class="checkout_order_item_price">120,00 €</p>
+										</div>
+									</div>
+								</div>
+								<div class="order_content_product_price">
+									<p class="order_content_product_price_label">Products: </p>
+									<p class="order_content_product_price_value">240,00 €</p>
+								</div>
+								<div class="order_content_product_delivery">
+									<p class="order_content_product_delivery_label">Delivery: </p>
+									<p class="order_content_product_delivery_value">25,00 €</p>
+								</div>
+								<div class="order_content_product_total">
+									<p class="order_content_product_total_label">Total:</p>
+									<p class="order_content_product_total_value">480,00 €</p>
+								</div>
+							</div>
+							<div class="order_info">
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">Mike Spencer</p>
+									<p class="order_info_item">test@gmail.com</p>
+									<p class="order_info_item">+124670875342</p>
+								</div>
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">DHL</p>
+									<p class="order_info_item">Stockholm, Sweden</p>
+									<p class="order_info_item">Test street, 21</p>
+									<p class="order_info_item">134631</p>
+								</div>
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">Will be delivered in 3 working days</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="order">
+						<h4 class="order_title">Order #5542344</h4>
+						<p class="order_status">Delivered</p>
+						<p class="order_date">05.12.2021 22:15</p>
+						<div class="order_overlay">
+							<div class="order_content">
+								<div class="checkout_order_item">
+									<div class="checkout_order_item_image" style="background-image: url(img/single_img1.png);"></div>
+									<div class="checkout_order_item_overlay">
+										<a href="#" class="checkout_order_item_title">Confusion</a>
+										<p class="checkout_order_item_subtitle">Oak, mable and wainut</p>
+										<div class="checkout_order_item_info">
+											<p class="checkout_order_item_quanity">1 item</p>
+											<p class="checkout_order_item_price">120,00 €</p>
+										</div>
+									</div>
+								</div>
+								<div class="checkout_order_item">
+									<div class="checkout_order_item_image" style="background-image: url(img/single_img1.png);"></div>
+									<div class="checkout_order_item_overlay">
+										<a href="#" class="checkout_order_item_title">Confusion</a>
+										<p class="checkout_order_item_subtitle">Oak, mable and wainut</p>
+										<div class="checkout_order_item_info">
+											<p class="checkout_order_item_quanity">1 item</p>
+											<p class="checkout_order_item_price">120,00 €</p>
+										</div>
+									</div>
+								</div>
+								<div class="order_content_product_price">
+									<p class="order_content_product_price_label">Products: </p>
+									<p class="order_content_product_price_value">240,00 €</p>
+								</div>
+								<div class="order_content_product_delivery">
+									<p class="order_content_product_delivery_label">Delivery: </p>
+									<p class="order_content_product_delivery_value">25,00 €</p>
+								</div>
+								<div class="order_content_product_total">
+									<p class="order_content_product_total_label">Total:</p>
+									<p class="order_content_product_total_value">480,00 €</p>
+								</div>
+							</div>
+							<div class="order_info">
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">Mike Spencer</p>
+									<p class="order_info_item">test@gmail.com</p>
+									<p class="order_info_item">+124670875342</p>
+								</div>
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">DHL</p>
+									<p class="order_info_item">Stockholm, Sweden</p>
+									<p class="order_info_item">Test street, 21</p>
+									<p class="order_info_item">134631</p>
+								</div>
+								<div class="order_info_personal">
+									<p class="order_info_title">General information:</p>
+									<p class="order_info_item">Will be delivered in 3 working days</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -338,6 +543,7 @@
 
 
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
