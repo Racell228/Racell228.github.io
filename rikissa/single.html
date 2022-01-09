@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 </head>
 <body>
 	<header>
@@ -34,12 +35,14 @@
 					<a href="#" class="header_lang_item active"><img src="img/lang1.svg"></a>
 					<a href="#" class="header_lang_item"><img src="img/lang2.svg"></a>
 				</div>
+				<a href="#" class="header_burger"><img src="img/burger.svg"></a>
 			</div>
 		</div>
 		<div class="sub_header">
 				<div class="sub_header_content">
+					<h4 class="sub_header_title">Product list</h4>
 					<div class="sub_header_content_overlay">
-						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
+						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -96,7 +99,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#content1" class="sub_header_nav_item">End-grain boards</a>
+						<a href="#" class="sub_header_nav_item">End-grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -153,7 +156,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
+						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -210,7 +213,7 @@
 						</div>
 					</div>
 					<div class="sub_header_content_overlay">
-						<a href="#content1" class="sub_header_nav_item">Long grain boards</a>
+						<a href="#" class="sub_header_nav_item">Long grain boards <img src="img/arrow.svg" class="sub_header_nav_item_arrow"></a>
 						<div class="sub_header_content_item_wrapper">
 							<div class="sub_header_content_item">
 								<a href="#" class="nav_single">
@@ -265,29 +268,44 @@
 								</a>
 							</div>
 						</div>
+					</div>
+					<div class="header_nav_mobile">
+						<a href="#" class="header_nav_item_mobile">About</a>
+						<a href="#" class="header_nav_item_mobile">Service</a>
+						<a href="#" class="header_nav_item_mobile">Safe E-purchase</a>
+						<a href="#" class="header_nav_item_mobile">Contacts</a>
+						<img src="img/close_white.svg" class="menu_close">
 					</div>
 				</div>
 		</div>
 	</header>
 	<section class="single">
 		<div class="container">
-			<div class="single_overlay">
-				<div class="single_slider">
+			<div class="single_overlay sticky_overlay">
+				<div class="single_slider sticky">
 					<div class="single_slider_nav">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
+						<img src="img/single1.png">
+						<img src="img/single2.png">
+						<img src="img/single3.png">
+						<img src="img/single4.png">
+						<img src="img/single5.png">
 					</div>
 					<div class="single_slider_item">
-					  	<img src="img/single.jpg">
-					  	<img src="img/single.jpg">
-					  	<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
-						<img src="img/single.jpg">
+					  	<a href="img/single1.png" class="single_slider_item_overlay" data-fancybox="gallery">
+					  		<img src="img/single1.png">
+					  	</a>
+					  	<a href="img/single2.png" class="single_slider_item_overlay" data-fancybox="gallery">
+					  		<img src="img/single2.png">
+					  	</a>
+					  	<a href="img/single3.png" class="single_slider_item_overlay" data-fancybox="gallery">
+					  		<img src="img/single3.png">
+					  	</a>
+					  	<a href="img/single4.png" class="single_slider_item_overlay" data-fancybox="gallery">
+					  		<img src="img/single4.png">
+					  	</a>
+					  	<a href="img/single5.png" class="single_slider_item_overlay" data-fancybox="gallery">
+					  		<img src="img/single5.png">
+					  	</a>
 					</div>
 				</div>
 				<div class="single_info">
@@ -425,6 +443,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
