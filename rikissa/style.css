@@ -150,6 +150,8 @@ a {
 .sub_header_nav_item {
 	transition: 0.5s;
 	padding: 11rem 20rem;
+	color: #766954;
+	font-weight: 400;
 }
 .sub_header_content_item {
 	display: flex;
