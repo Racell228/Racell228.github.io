@@ -41,3 +41,27 @@ $(document).ready(function() {
       $(this).find('.faq_item_answer').toggle(400);
   });
 });
+
+
+$(document).ready(function() {
+  $('.header_burger').click(function(event) {
+    event.preventDefault();
+      $('.header_nav').show(400);
+      $('.header_nav_head').show(400);
+  });
+});
+
+$(document).ready(function() {
+  $('.header_nav_item.parent').click(function(event) {
+    event.preventDefault();
+      $(this).parent().find('.header_nav_child').toggle();
+      $(this).toggleClass('active');
+  });
+});
+$(document).ready(function() {
+  $('.header_nav_close').click(function(event) {
+    event.preventDefault();
+      $('.header_nav').hide(400);
+      $('.header_nav_head').hide(400);
+  });
+});
