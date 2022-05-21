@@ -190,3 +190,17 @@ $(document).ready(function(){
       });
 
 }
+
+
+
+
+$(document).ready(function() {
+  $('.footer_links_item,.menu_item_link').click(function(){
+    $('.menu').hide(400);
+    $('.menu_bg_item').removeClass('active');
+    var el = $(this).attr('href');
+    $('html,body').animate({
+      scrollTop: $(el).offset().top - 100}, 1000);
+    return false;
+  });
+});
