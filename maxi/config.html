@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#" class="header_logo"><img src="img/logo.png"></a>
+				<div class="heder_nav">
+					<a href="#" class="header_nav_link">Home</a>
+					<a href="#" class="header_nav_link">How to register?</a>
+					<a href="#" class="header_nav_link">How to configure?</a>
+					<a href="#" class="header_nav_link">How to pay?</a>
+				</div>
+				<a href="#" class="burger"><img src="img/burger.svg"></a>
+			</div>
+		</div>
+	</header>
+
+	<section class="register config">
+		<div class="container">
+			<div class="register_head">
+				<h1 class="register_head_title">How to configure?</h1>
+				<p class="register_head_text">After registration, you get access to your workspace SMPP simulator "Maxi". Now you can create SMPP customer accounts whose traffic will go through the SMSC simulator, set up a report delivery scheme for them, and monitor SMS traffic.</p>
+			</div>
+			<div class="config_subhead">
+				<p class="config_subhead_title">Below we have described the main steps required to set up the SMS simulator and get it running:</p>
+				<p class="config_subhead_text">Create an account for a client:</p>
+			</div>
+			<div class="config_overlay config_overlay1">
+				<div class="config_content_overlay">
+					<a href="#image1" class="register_content_item">
+						<p class="register_content_item_num">1</p>
+						<p class="register_content_item_text">In the side menu, click on the “Accounts” section, then on the “Create an account” button</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image2" class="register_content_item">
+						<p class="register_content_item_num">2</p>
+						<p class="register_content_item_text">In the Account field, enter the name you have chosen for the client (use English characters, underscores and numbers)</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image2" class="register_content_item">
+						<p class="register_content_item_num">3</p>
+						<p class="register_content_item_text">In the Name field, enter the client's name. This field can be used to describe which reports will be generated or for whom</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image2" class="register_content_item">
+						<p class="register_content_item_num">4</p>
+						<p class="register_content_item_text">In the Phone field, enter the client's contact number in international format, while this field is for storing the phone - but in the future, notifications may come to this number</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image2" class="register_content_item">
+						<p class="register_content_item_num">5</p>
+						<p class="register_content_item_text">In the E-mail field, enter the contact e-mail address - will be used to send notifications related to the account</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<p class="config_subhead_text config_content_text">The fields “URL for send API SMS State” and “URL for send RestAPI SMS State” are used if you connect to the client via API or REST API. Links are inserted here, where SMS delivery reports will be sent to the client.</p>
+					<a href="#image3" class="register_content_item">
+						<p class="register_content_item_num">6</p>
+						<p class="register_content_item_text">Click on the Save button</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<p class="config_content_text2">You will be redirected to the customer account setup page</p>
+					<p class="config_content_text3">The next configuration step is to create an SMPP account for the client and add an IP</p>
+				</div>
+				<div class="config_labels_overlay config_labels_overlay2">
+					<div class="config_labels_item" id="image1">
+						<img src="img/config_img1.png" class="config_img">
+						<a href="#" class="config_label config_label1"><p>1</p></a>
+					</div>
+					<div class="config_labels_item config_labels_item2"  id="image2">
+						<img src="img/config_img2.png" class="config_img">
+						<a href="#" class="config_label config_label2"><p>2</p></a>
+						<a href="#" class="config_label config_label3"><p>3</p></a>
+						<a href="#" class="config_label config_label4"><p>4</p></a>
+						<a href="#" class="config_label config_label5"><p>5</p></a>
+					</div>
+					<div class="config_labels_item"  id="image3">
+						<img src="img/config_img3.png" class="config_img">
+						<a href="#" class="config_label config_label6"><p>6</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="config_overlay config_overlay2">
+				<div class="config_content_overlay register_content_overlay2">
+					<a href="#image4" class="register_content_item">
+						<p class="register_content_item_num">1</p>
+						<p class="register_content_item_text">On the same page, go to the “SMPP config” section and click the Create button in the “SMPP Credentials” block</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image5" class="register_content_item">
+						<p class="register_content_item_num">2</p>
+						<p class="register_content_item_text">In the Login field, enter the login for the SMPP client account</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image5" class="register_content_item">
+						<p class="register_content_item_num">3</p>
+						<p class="register_content_item_text">In the Password field, enter the password for the SMPP client account</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image5" class="register_content_item">
+						<p class="register_content_item_num">4</p>
+						<p class="register_content_item_text">Click on the Save button</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image6" class="register_content_item">
+						<p class="register_content_item_num">5</p>
+						<p class="register_content_item_text">Return to the client account settings page, go to the “SMPP config” section and click the Create button in the “SMPP IP” block</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image7" class="register_content_item">
+						<p class="register_content_item_num">6</p>
+						<p class="register_content_item_text">Enter the IP and click on the Add button</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<p class="config_content_text2">Now you can connect to the client via SMPP and send its traffic through the SMS simulator</p>
+					<p class="config_content_text4">For each smpp connection that will connect to this account, you need to make a separate login and password, and of course, add all the IP addresses from which they will connect</p>
+					<p class="config_content_text3">The final step in the basic setup of the simulator will be the creation of a report distribution scheme for your client. Here you can set how many reports (as a percentage) will be delivered with the status Delivered, Not Delivered, Expired, Pending and Rejected</p>
+				</div>
+				<div class="config_labels_overlay">
+					<div class="config_labels_item config_labels_item4" id="image4">
+						<img src="img/config_img4.png" class="config_img">
+						<a href="#" class="config_label config_label21"><p>1</p></a>
+						<a href="#" class="config_label config_label22"><p>1</p></a>
+					</div>
+					<div class="config_labels_item">
+						<img src="img/config_img5.png" class="config_img" id="image5">
+						<a href="#" class="config_label config_label23"><p>2</p></a>
+						<a href="#" class="config_label config_label24"><p>3</p></a>
+						<a href="#" class="config_label config_label25"><p>4</p></a>
+					</div>
+					<div class="config_labels_item config_labels_item6" id="image6">
+						<img src="img/config_img6.png" class="config_img">
+						<a href="#" class="config_label config_label26"><p>5</p></a>
+					</div>
+					<div class="config_labels_item">
+						<img src="img/config_img7.png" class="config_img" id="image7">
+						<a href="#" class="config_label config_label27"><p>6</p></a>
+						<a href="#" class="config_label config_label28"><p>6</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="config_overlay config_overlay3">
+				<div class="config_content_overlay register_content_overlay3">
+					<a href="#image8" class="register_content_item">
+						<p class="register_content_item_num">1</p>
+						<p class="register_content_item_text">On the client account settings page, in the Routing section, click the Create button. Here you will create a so-called Rule, according to which all client traffic that passes through this account will be distributed</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image9" class="register_content_item">
+						<p class="register_content_item_num">2</p>
+						<p class="register_content_item_text">In the Name field, enter a name for the Scheme, which will help you quickly navigate. For example, “90% Delivered, 10% Not Delivered” or “Super Scheme”</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image9" class="register_content_item">
+						<p class="register_content_item_num">3</p>
+						<p class="register_content_item_text">In the Delay field, enter the number of seconds to wait before sending the report. That is, how many seconds should elapse between sending SMS and delivering the report</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image9" class="register_content_item">
+						<p class="register_content_item_num">4</p>
+						<p class="register_content_item_text">In the “Aggregators” block, you need to select the report statuses that will be valid in the scheme and their percentage. For example, if we want 90% of the reports to be returned with the Delivered status, and 10% of the reports with the Not Delivered status, then we need to select two corresponding aggregators. And opposite each, in the Percentage field, enter a percentage</p>
+						<img src="img/eye.svg" class="config_eye">
+					</a>
+					<a href="#image9" class="register_content_item">
+						<p class="register_content_item_num">5</p>
+						<p class="register_content_item_text">Click on the Create button</p>
+					</a>
+				</div>
+				<div class="config_labels_overlay">
+					<div class="config_labels_item config_labels_item8" id="image8">
+						<img src="img/config_img8.png" class="config_img">
+						<a href="#" class="config_label config_label31"><p>1</p></a>
+					</div>
+					<div class="config_labels_item config_labels_item9" id="image9">
+						<img src="img/config_img9.png" class="config_img">
+						<a href="#" class="config_label config_label32"><p>2</p></a>
+						<a href="#" class="config_label config_label33"><p>3</p></a>
+						<a href="#" class="config_label config_label34"><p>4</p><p class="new">4</p></a>
+						<a href="#" class="config_label config_label35"><p>4</p><p class="new">4</p></a>
+						<a href="#" class="config_label config_label36"><p>5</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="slider">
+		<div class="container">
+			<div class="slider_top">
+				<img src="img/config_img1.png">
+				<img src="img/config_img2.png">
+				<img src="img/config_img3.png">
+				<img src="img/config_img4.png">
+				<img src="img/config_img5.png">
+				<img src="img/config_img6.png">
+			</div>
+			<div class="slider_desc">
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">In the “Settings” section of the menu, you will pay for the rental of the simulator and will be able to switch to another package</p>
+				</div>
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">Every feature is designed to optimize performance and expand your business</p>
+				</div>
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">If you have any questions, please email us at support@maxisms-simulator.com  and we will get back to you as soon as possible</p>
+				</div>
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">The basic configuration of the SMS simulator is now complete. Using the data from the top panel of the simulator, you can connect to the simulator via SMTP, where the port and IP are located</p>
+				</div>
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">In the “Global results” menu section, you can view statistics on all sent SMS through the simulator and filter as needed</p>
+				</div>
+				<div class="slider_desc_item">
+					<p class="slider_desc_item_text">In the “Traffic” menu section, you can track the queue of SMS that pass through the simulator, view reports on already sent SMS and report queues</p>
+				</div>
+			</div>
+			<a href="#" class="btn slider_btn">Video of configuration</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_text">
+					<div class="footer_text_item">
+						<p class="footer_title">SMSC Simulator Maxi</p>
+						<p class="footer_text_content">SMPP SMSC web-based simulator for SMS platforms and applications</p>
+					</div>
+					<div class="footer_text_item">
+						<p class="footer_title">Contact us</p>
+						<p class="footer_text_content">If you have questions about SMSC simulator write to us</p>
+					</div>
+				</div>
+				<div class="footer_nav">
+					<a href="#" class="footer_nav_item">home</a>
+					<a href="#" class="footer_nav_item">How to register?</a>
+					<a href="#" class="footer_nav_item">How to configure?</a>
+					<a href="#" class="footer_nav_item">How to pay?</a>
+				</div>
+				<div class="footer_contact">
+					<p class="footer_title">SMSC Simulator Maxi</p>
+					<a href="#" class="footer_contact_item">sales@maxisms-simulator.com </a>
+					<a href="#" class="footer_contact_item">support@maxisms-simulator.com</a>
+					<div class="footer_contact_nav">
+						<a href="#" class="footer_contact_link">privacy policy</a>
+						<a href="#" class="footer_contact_link">Terms of use and conditions</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<p class="modal_title">menu</p>
+			<a href="#" class="modal_close"><img src="img/close.svg"></a>
+			<div class="modal_nav">
+				<a href="#" class="modal_nav_item">Home</a>
+				<a href="#" class="modal_nav_item">How to register?</a>
+				<a href="#" class="modal_nav_item">How to configure?</a>
+				<a href="#" class="modal_nav_item">How to pay?</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
