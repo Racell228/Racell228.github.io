@@ -1185,6 +1185,11 @@ footer {
 .modal {
 	display: none;
 }
+.error_btn {
+	width: 500rem;
+	text-transform: initial;
+	margin: auto;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
@@ -1612,7 +1617,9 @@ footer {
 	.slider_btn {
 		padding: 26rem 0;
 	}
-	
+	.error_btn {
+		width: 300rem;
+	}
 }
 @media screen and (max-width: 480px) {
 	html {
@@ -2273,6 +2280,10 @@ footer {
 	}
 	.modal_nav {
 		margin-top: 30rem;
+	}
+	.error_btn {
+		font-size: 24rem;
+		padding: 15rem 0;
 	}
 }
 
