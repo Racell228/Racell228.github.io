@@ -368,6 +368,7 @@ header {
 	font-weight: 500;
 	font-size: 17rem;
 	margin-bottom: 10rem;
+	transition: 0.5s;
 }
 .services_item {
 	padding: 50rem;
@@ -853,8 +854,8 @@ ul li:before {
 	justify-content: space-between;
 }
 .steps_item_icon {
-	width: 16rem;
-	height: 16rem;
+	width: 11rem;
+	height: 11rem;
 	transform: rotate(45deg);
 	border: 1rem solid #612BD3;
 	margin: 20rem 0;
@@ -862,6 +863,8 @@ ul li:before {
 }
 .steps_item_icon.active {
 	background-color: #612BD3;
+	box-shadow: 0px 0px 15px rgba(97, 43, 211, 0.35);
+	transition: 0.5s;
 }
 .steps_item_descr {
 	margin-top: 20rem;
@@ -871,7 +874,7 @@ ul li:before {
 	height: 1rem;
 	background-color: #612BD3;
 	position: absolute;
-	top: 68rem;
+	top: 66rem;
 	left: 0;
 	z-index: -1;
 }
@@ -1067,6 +1070,10 @@ ul li:before {
 	box-shadow: 0px 0px 15px rgba(97, 43, 211, 0.35);
 	transition: 0.5s;
 }
+.header_nav_child_content_item_about_social:hover {
+	transition: 0.5s;
+	color: #612BD3;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
@@ -1258,7 +1265,7 @@ ul li:before {
 	    width: 1rem;
 	    height: 485rem;
 	    top: 63rem;
-	    left: 79rem;
+	    left: 77rem;
 	}
 	.steps_item_descr {
     	margin-top: 15rem;
@@ -1613,7 +1620,7 @@ ul li:before {
 	}
 	.steps_line {
 		height: 515rem;
-		left: 60rem;
+		left: 57rem;
 	}
 	.steps_item {
 		margin-top: 40rem;
