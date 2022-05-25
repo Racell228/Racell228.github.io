@@ -66,7 +66,7 @@ h5 {
 }
 .header_head_overlay {
 	background: #100722;
-	padding: 13rem 0;
+	padding: 10rem 0;
 }
 .header_head_text {
 	display: flex;
@@ -195,6 +195,7 @@ header {
 	padding: 10rem 20rem;
 	width: max-content;
 	border: 1rem solid #612BD3;
+	transition: 0.5s;
 }
 .btn {
 	background: linear-gradient(90deg, #110146 0%, #770096 100%);
@@ -527,12 +528,14 @@ footer {
 }
 .footer_item_link {
 	margin-top: 13rem;
+	transition: 0.5s;
 	font-size: 15rem;
 }
 .footer_item_contact {
 	margin-top: 8rem;
 	font-size: 18rem;
 	font-weight: 500;
+	transition: 0.5s;
 }
 .rosources_hero {
 	height: 603rem;
@@ -624,7 +627,7 @@ footer {
 }
 .resources_item_title {
 	font-size: 24rem;
-	margin-top: 30rem;
+	margin-top: 20rem;
 }
 .pagination {
 	display: flex;
@@ -642,6 +645,7 @@ footer {
 	justify-content: center;
 	border: 1rem solid rgba(255, 255, 255, 0.35);
 	margin: 0 10rem;
+	transition: 0.5s;
 }
 .pagination_void {
 	margin: 0 10rem;
@@ -693,6 +697,7 @@ footer {
 .blog_nav_item_link {
 	margin-top: 17rem;
 	font-weight: 300;
+	transition: 0.5s;
 }
 .webinars_item {
 	width: 503rem;
@@ -794,6 +799,7 @@ ul li:before {
 	justify-content: center;
 	flex-direction: column;
 	margin: 0 7rem;
+	transition: 0.5s;
 }
 .share_item img {
 	margin-top: 0;
@@ -833,13 +839,12 @@ ul li:before {
 	width: 278rem;
 }
 .steps_overlay {
-	display: flex;
-	justify-content: space-between;
 	margin-top: 60rem;
 	position: relative;
 }
-.steps_item_number {
-
+.steps_wrapper {
+	display: flex;
+	justify-content: space-between;
 }
 .steps_item_icon {
 	width: 16rem;
@@ -1024,6 +1029,38 @@ ul li:before {
 .header_nav_lang {
 	display: none;
 }
+.header_head_text a:hover {
+	text-decoration: underline;
+}
+.footer_item_link:hover {
+	color: #612BD3;
+	transition: 0.5s;
+}
+.footer_item_contact:hover {
+	color: #612BD3;
+	transition: 0.5s;
+}
+.pagination_item:hover {
+	transition: 0.5s;
+	border: 1rem solid #612BD3;
+	color: #612BD3;
+}
+.pagination_item.active:hover {
+	color: #fff;
+}
+.blog_nav_item_link:hover {
+	color: #612BD3;
+	transition: 0.5s;
+}
+.share_overlay .share_item:hover {
+	transition: 0.5s;
+	background-color: #612BD3;
+	border: 1rem solid #612BD3;
+}
+.button:hover {
+	box-shadow: 0px 0px 15px rgba(97, 43, 211, 0.35);
+	transition: 0.5s;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
@@ -1194,8 +1231,10 @@ ul li:before {
 		height: 600rem;
 	}
 	.steps_overlay {
-		flex-direction: column;
 		margin-top: 0;
+	}
+	.steps_wrapper {
+		flex-direction: column;
 	}
 	.steps_item {
     	width: 100%;
@@ -1611,6 +1650,7 @@ ul li:before {
 	.header_nav_child_content {
 		flex-direction: column;
 		width: 100%;
+		margin-top: -20rem;
 	}
 	.header_nav_child_content_item_title {
 		font-size: 14rem;
