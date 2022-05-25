@@ -58,11 +58,36 @@ header {
 	background-size: cover;
 	background-position: center;
 	padding: 33rem 0;
+	transition: 0.5s;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.header_fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999999;
+	transition: 0.5s;
+	background-color: #F5E8DE;
+	background-image: none;
+	padding: 10rem 0;
+}
+.header_fixed .header_overlay {
+	align-items: center;
+	transition: 0.5s;
+}
+.header_fixed .header_logo {
+	height: 50rem;
+	transition: 0.5s;
+	margin-top: 0;
 }
 .header_overlay {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	transition: 0.5s;
 }
 .heder_nav {
 	display: flex;
@@ -79,6 +104,7 @@ header {
 .header_logo {
 	height: 100rem;
 	margin-top: -20rem;
+	transition: 0.5s;
 }
 .header_logo img {
 	height: 100%;
@@ -110,7 +136,7 @@ header {
 	width: 782rem;
 	position: absolute;
 	top: -110rem;
-	right: -65rem;
+	right: -105rem;
 	z-index: -1;
 }
 .hero_text {
@@ -1217,6 +1243,9 @@ footer {
 		width: 100rem;
 		text-align: center;
 	}
+	.heder_nav {
+		width: 428rem;
+	}
 	header {
 		background-position: -20rem 0;
 	}
@@ -1246,11 +1275,12 @@ footer {
 		width: 250rem;
 	}
 	.about_text_right {
-		margin-right: 70rem;
-		margin-top: 40rem;
+		margin: 40rem 70rem 0 70rem;
+    	text-align: right;
 	}
 	.about_overlay {
 		margin-top: 30rem;
+		justify-content: center;
 	}
 	.about {
 		padding: 75rem 0 80rem;
@@ -1637,6 +1667,7 @@ footer {
 	.burger {
 		display: block;
 		width: 50rem;
+		transition: 0.5s;
 	}
 	.burger img {
 		width: 100%;
@@ -1644,6 +1675,10 @@ footer {
 	header {
     	padding: 25rem 0;
     	background-position: -110rem 0;
+	}
+	.header_fixed .burger  {
+		width: 30rem;
+		transition: 0.5s;
 	}
 	.hero_title {
 		font-size: 18rem;
@@ -1687,10 +1722,11 @@ footer {
 	}
 	.about_overlay {
 		flex-direction: column;
-		margin-top: 15rem;
+		margin: 35rem 0;
 	}
 	.about_text_right {
 		margin: 0;
+		text-align: left;
 	}
 	.spec_overlay {
 		position: relative;
@@ -1848,8 +1884,13 @@ footer {
 		width: 188rem;
 		padding: 19rem 73rem;
 	}
+	.offer_item_btn {
+		font-size: 16rem;
+		padding: 15rem 0;
+	}
 	.contacts_img {
     	width: 278rem;
+    	margin: auto;
 	}
 	.contacts_overlay {
 		flex-direction: column;
@@ -2203,7 +2244,7 @@ footer {
 		margin-top: 150rem;
 	}
 	.slider_desc {
-	    margin-top: 150rem;
+	    margin-top: 20rem;
 	    width: 375rem;
 	    margin-left: -20rem;
 	}
@@ -2230,22 +2271,22 @@ footer {
 		padding: 10rem 0;
 	}
 	.modal_overlay {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
 		height: 100vh;
 		backdrop-filter: blur(4px);
-		z-index: 99;
+		z-index: 9999999;
 	}
 	.modal_content {
-		position: absolute;
+		position: fixed;
 		top: calc(50% - 200rem);
 		left: calc(50% - 150rem);
 		width: 300rem;
 		height: 400rem;
 		background: rgba(67, 0, 113, 0.92);
-		z-index: 999;
+		z-index: 99999999;
 	}
 	.modal_title {
 		font-weight: 700;
@@ -2284,6 +2325,9 @@ footer {
 	.error_btn {
 		font-size: 24rem;
 		padding: 15rem 0;
+	}
+	.video_bg {
+		top: 0;
 	}
 }
 

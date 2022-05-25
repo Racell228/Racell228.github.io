@@ -58,3 +58,15 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+
+$(window).scroll(function() { 
+    var the_top = jQuery(document).scrollTop();
+    if (the_top > 50) {
+        $('header').addClass('header_fixed');
+    }
+    else {
+        $('header').removeClass('header_fixed');
+    }
+});
