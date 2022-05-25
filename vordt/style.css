@@ -198,11 +198,17 @@ header {
 	transition: 0.5s;
 }
 .btn {
-	background: linear-gradient(90deg, #110146 0%, #770096 100%);
+	background-image: linear-gradient(to right, #110146, #770096, #110146, #770096);
+	background-size: 300% 100%;
 	width: max-content;
 	padding: 15rem 30rem;
 	font-size: 18rem;
 	font-weight: 300;
+	transition: all .4s ease-in-out;
+}
+.btn:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
 }
 .header_content_actions_help {
 	margin-left: 15rem;
