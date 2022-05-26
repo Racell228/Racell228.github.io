@@ -1282,10 +1282,10 @@ footer {
 	.about_text {
 		line-height: 110%;
 		width: 250rem;
+		text-align: justify;
 	}
 	.about_text_right {
 		margin: 40rem 70rem 0 70rem;
-    	text-align: right;
 	}
 	.about_overlay {
 		margin-top: 30rem;
@@ -1741,7 +1741,6 @@ footer {
 	}
 	.about_text_right {
 		margin: 0;
-		text-align: left;
 	}
 	.spec_overlay {
 		position: relative;
@@ -2212,6 +2211,9 @@ footer {
 	}
 	.register_content_overlay3 {
     	margin-bottom: 50rem;
+	}
+	.register_label7 {
+		filter: inherit;
 	}
 	.config_label31 {
 	    width: 25rem;
