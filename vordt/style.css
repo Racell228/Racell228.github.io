@@ -67,6 +67,8 @@ h5 {
 .header_head_overlay {
 	background: #100722;
 	padding: 10rem 0;
+	position: relative;
+	z-index: 99;
 }
 .header_head_text {
 	display: flex;
@@ -131,7 +133,7 @@ h5 {
 	.header_nav_parent_overlay:hover .header_nav_item.parent:after {
 		content: "";
 		position: absolute;
-		top: 0;
+		top: -40rem;
 		left: 0;
 		display: none;
 		width: 100%;
@@ -140,7 +142,7 @@ h5 {
 		display: block;
 	}
 	.header_nav_parent_overlay:hover .header_nav_child {
-		transform: scale(1);
+		top: 100%;
 	    transition: 0.5s;
 	}
 	.header_nav_parent_overlay:hover .arrow {
@@ -173,6 +175,7 @@ header {
 	color: #fff;
 	margin-right: 50rem;
     transition: 0.5s;
+    font-size: 17rem;
 }
 
 .header_overlay {
@@ -220,7 +223,7 @@ header {
 	font-size: 18rem;
 }
 .hero {
-	background-image: url(img/hero_bg.svg);
+	background-image: url(img/hero_bg.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -259,6 +262,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 100rem;
 }
 .future_content_title {
 	width: 465rem;
@@ -273,20 +277,18 @@ header {
 	width: 705rem;
 }
 .future {
-	margin: 100rem 0;
+	margin: 100rem 0 0;
 }
-
 .header_nav_child {
 	position: absolute;
-	top: 100%;
+	top:-999rem;
 	left: 0;
-	background: #160A2D;
+	background: #0C021D;
 	border-top: 1rem solid rgba(255, 255, 255, 0.1);
 	border-bottom: 1rem solid rgba(255, 255, 255, 0.1);
 	width: 100%;
 	margin-top: 20rem;
 	padding: 90rem 0;
-	transform: scale(0);
     transition: 0.5s;
     z-index: -1;
 }
@@ -296,7 +298,7 @@ header {
     height: 89rem;
     top: -90rem;
     display: block;
-    background: #160A2D;
+    background: #0C021D;
     position: absolute;
     z-index: -1;
 }
@@ -374,11 +376,16 @@ header {
 	padding: 50rem;
 	margin-top: 30rem;
 	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
 	background: linear-gradient(180deg, #1F103C 0%, rgba(20, 19, 46, 0) 100%);
 }
 .services_item:hover {
 	transform: scale(1.05);
 	transition: 0.5s;
+}
+.services_item_descr {
+	margin-bottom: 40rem;
 }
 .big {
 	width: 485rem;
@@ -401,7 +408,7 @@ header {
 .services_item_btn {
 	width: 243rem;
 	text-align: center;
-	margin-top: 40rem;
+	margin-top: auto;
 }
 .services_overlay {
 	display: flex;
@@ -510,8 +517,7 @@ header {
 }
 footer {
 	padding: 100rem 0;
-	background: #14092A;
-	margin-top: 120rem;
+	background: #0C021D;
 }
 .footer_overlay {
 	display: flex;
@@ -536,7 +542,7 @@ footer {
 .footer_item_link {
 	margin-top: 13rem;
 	transition: 0.5s;
-	font-size: 15rem;
+	font-size: 16rem;
 }
 .footer_item_contact {
 	margin-top: 8rem;
@@ -545,7 +551,7 @@ footer {
 	transition: 0.5s;
 }
 .rosources_hero {
-	height: 603rem;
+	height: 543rem;
 	background-size: cover;
 	background-image: url(img/resources_bg.png);
 	display: flex;
@@ -566,7 +572,7 @@ footer {
 	justify-content: center;
 }
 .resources_nav {
-	margin: 50rem 0 30rem;
+    margin: -80rem 0 30rem;
 }
 .resources_nav_item {
 	margin: 0 35rem;
@@ -587,6 +593,7 @@ footer {
 	margin: 20rem 13rem 0;
 	transform: scale(1);
     transition: 0.5s;
+    background-color: #160A2D;
 }
 .resources_item:hover {
 	transform: scale(1.05);
@@ -602,6 +609,10 @@ footer {
 	opacity: 0.8;
 	background-repeat: no-repeat;
 	z-index: 8;
+}
+.blog {
+	background-color: #fff;
+	padding: 100rem 0;
 }
 .resources_item_image:after {
 	position: absolute;
@@ -652,19 +663,23 @@ footer {
 	justify-content: center;
 	border: 1rem solid rgba(255, 255, 255, 0.35);
 	margin: 0 10rem;
+	color: #100722;
 	transition: 0.5s;
 }
 .pagination_void {
 	margin: 0 10rem;
+	color: #100722;
 }
 .pagination_btn {
 	margin: 0 60rem;
 	padding: 10rem 20rem;
-	border: 1rem solid #612BD3;
+	border: 1rem solid #100722;
+	color: #100722;
 }
 .pagination_item.active {
-	background: #612BD3;
-	border: 1rem solid #612BD3;
+	background: #100722;
+	border: 1rem solid #100722;
+	color: #fff;
 }
 .blog_item {
 	width: 356rem;
@@ -691,20 +706,30 @@ footer {
 .blog_nav {
 	width: 260rem;
 	margin-top: 20rem;
+
+}
+.reports {
+	background-color: #fff;
+	padding: 100rem 0;
 }
 .blog_nav_item_title {
 	font-size: 24rem;
-	margin-bottom: 25rem;
+	padding-bottom: 6rem;
+	border-bottom: 1rem solid #100722;
+	color: #100722;
+	margin-bottom: 19rem;
+	width: max-content;
 }
 .blog_nav_item {
-	padding: 40rem 0;
+	padding: 0 0 50rem;
 	border-top: 1rem solid rgba(255, 255, 255, 0.25);
 	border-bottom: 1rem solid rgba(255, 255, 255, 0.25);
 }
 .blog_nav_item_link {
 	margin-top: 17rem;
-	font-weight: 300;
+	font-weight: 400;
 	transition: 0.5s;
+	color: rgba(16, 7, 34, 0.5);
 }
 .webinars_item {
 	width: 503rem;
@@ -839,6 +864,11 @@ ul li:before {
 .service_future_img {
 	width: 634rem;
 }
+.steps {
+	padding: 120rem 0;
+	background-color: #fff;
+	color: #100722;
+}
 .steps_title {
 	width: 400rem;
 }
@@ -859,7 +889,7 @@ ul li:before {
 	transform: rotate(45deg);
 	border: 1rem solid #612BD3;
 	margin: 20rem 0;
-	background-color: #160A2D;
+	background-color: #fff;
 }
 .steps_item_icon.active {
 	background-color: #612BD3;
@@ -876,10 +906,10 @@ ul li:before {
 	position: absolute;
 	top: 66rem;
 	left: 0;
-	z-index: -1;
+	z-index: 0;
 }
 .pricing {
-	margin: 150rem 0;
+	margin: 120rem 0 150rem;
 }
 .pricing_overlay {
 	display: flex;
@@ -901,6 +931,9 @@ ul li:before {
 	width: 264rem;
 	padding-left: 130rem;
 	border-left: 1rem solid rgba(255, 255, 255, 0.25);;
+}
+.faq {
+	margin-bottom: 100rem;
 }
 .faq_overlay {
 	display: flex;
@@ -964,8 +997,13 @@ ul li:before {
 	width: 786rem;
 	margin: auto;
 }
+.team {
+	background-color: #fff;
+	color: #100722;
+	padding: 120rem 0;
+}
 .team_item {
-	width: 278rem;
+	width: 276rem;
 	margin: 40rem 15rem 0;
 }
 .team_item_img {
@@ -1000,7 +1038,7 @@ ul li:before {
 }
 .team_item_position {
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.35);
+	color: rgba(16, 7, 34, 0.5);
 	font-size: 14rem;
 	font-weight: 500;
 }
@@ -1015,13 +1053,17 @@ ul li:before {
     margin-left: -16rem;
 }
 .awards {
-	margin: 200rem 0 150rem;
+	margin: 100rem 0 150rem;
 }
 .awards_overlay {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 60rem;
+}
+.webinars {
+	background-color: #fff;
+	padding: 100rem 0;
 }
 .awards_item {
 	height: 80rem;
@@ -1051,8 +1093,7 @@ ul li:before {
 }
 .pagination_item:hover {
 	transition: 0.5s;
-	border: 1rem solid #612BD3;
-	color: #612BD3;
+	border: 1rem solid #100722;
 }
 .pagination_item.active:hover {
 	color: #fff;
@@ -1074,9 +1115,24 @@ ul li:before {
 	transition: 0.5s;
 	color: #612BD3;
 }
+.single_overlay .blog_nav_item_title  {
+	color: #fff;
+}
+.single_overlay .blog_nav_item {
+	padding: 40rem 0;
+}
+.single_overlay .blog_nav_item_link {
+	color: #fff;
+}
+.news {
+	margin-bottom: 100rem;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
+	}
+	.header_head_overlay {
+		z-index: 1;
 	}
 	.container {
 	    width: 708rem;
@@ -1159,8 +1215,7 @@ ul li:before {
 		width: auto;
 		margin-top: 30rem;
 	}
-	footer {
-		margin-top: 100rem;
+	footer { 
 		padding: 80rem 0;
 	}
 	.footer_overlay {
@@ -1476,7 +1531,6 @@ ul li:before {
 		padding: 15rem 30rem;
 	}
 	footer {
-    	margin-top: 80rem;
     	padding: 55rem 0;
 	}
 	.footer_item {
@@ -1510,6 +1564,9 @@ ul li:before {
 	.resources_item_title {
 		margin-top: 20rem;
 	}
+	.reports {
+		padding: 70rem 0;
+	}
 	.reports_overlay {
 		width: 100%;
 		margin-left: 0;
@@ -1532,6 +1589,9 @@ ul li:before {
 	}
 	.blog_nav_item_link {
 		margin-top: 15rem;
+	}
+	.blog {
+		padding: 70rem 0;
 	}
 	.pagination {
 		margin-top: 40rem;
@@ -1583,12 +1643,18 @@ ul li:before {
 		height: 680rem;
 		background-position: center;
 	}
+	.team {
+		padding: 70rem 0;
+	}
 	.team_title {
 		margin-bottom: -10rem;
 	}
 	.team_item {
 		width: 100%;
 		margin: 40rem 0 0;
+	}
+	.webinars {
+		padding: 70rem 0;
 	}
 	.team_overlay {
 		width: 100%;
@@ -1608,6 +1674,12 @@ ul li:before {
 	}
 	.services_head {
     	height: 543rem;
+	}
+	.steps {
+		padding: 80rem 0;
+	}
+	.future_overlay {
+		margin-bottom: 0;
 	}
 	.steps_item_icon {
     	margin: 10rem 15rem 0;
@@ -1651,6 +1723,9 @@ ul li:before {
 	.pricing_sum_value {
     	margin: 6rem 0 20rem;
 	}
+	.faq {
+		margin-bottom: 80rem;
+	}
 	.faq_title {
     	margin-bottom: 30rem;
 	}
@@ -1685,4 +1760,7 @@ ul li:before {
 		margin-left: auto;
 		width: 12rem;
 	}
+	.news {
+		margin-bottom: 80rem;
+	} 
 }
