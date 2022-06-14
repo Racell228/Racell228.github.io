@@ -846,7 +846,7 @@ ul li:before {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	height: 733rem;
+	height: 600rem;
 	background-size: cover;
 	background-position: center;
 }
@@ -978,7 +978,7 @@ ul li:before {
 	transform: rotate(180deg);
 }
 .about_head {
-	height: 733rem;
+	height: 653rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
