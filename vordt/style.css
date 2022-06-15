@@ -277,7 +277,7 @@ header {
 	width: 705rem;
 }
 .future {
-	margin: 100rem 0 0;
+	margin:  0;
 }
 .header_nav_child {
 	position: absolute;
@@ -846,7 +846,8 @@ ul li:before {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	height: 600rem;
+	height: 500rem;
+	padding-top: 50rem;
 	background-size: cover;
 	background-position: center;
 }
@@ -893,7 +894,6 @@ ul li:before {
 }
 .steps_item_icon.active {
 	background-color: #612BD3;
-	box-shadow: 0px 0px 15px rgba(97, 43, 211, 0.35);
 	transition: 0.5s;
 }
 .steps_item_descr {
@@ -978,7 +978,8 @@ ul li:before {
 	transform: rotate(180deg);
 }
 .about_head {
-	height: 653rem;
+	height: 500rem;
+	padding-top: 50rem;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
