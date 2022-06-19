@@ -27,6 +27,7 @@ $(window).scroll(function() {
             }, step);
         });
       }
+      $(window).off('scroll');
     }
   });
 });
@@ -37,6 +38,8 @@ $(window).scroll(function() {
 $(document).ready(function() {
   $('.faq_item').click(function(event) {
     event.preventDefault();
+      $('.faq_item').removeClass('active');
+      $('.faq_item_answer').hide(400);
       $(this).toggleClass('active');
       $(this).find('.faq_item_answer').toggle(400);
   });
@@ -48,14 +51,18 @@ $(document).ready(function() {
     event.preventDefault();
       $('.header_nav').show(400);
       $('.header_nav_head').show(400);
+      $('body,html').toggleClass('hidden');
   });
 });
 
 $(document).ready(function() {
   $('.header_nav_item.parent').click(function(event) {
     event.preventDefault();
+      $('.header_nav_item.parent').removeClass('active');
+      $('.header_nav_child').hide()
       $(this).parent().find('.header_nav_child').toggle();
       $(this).toggleClass('active');
+
   });
 });
 $(document).ready(function() {
@@ -63,6 +70,7 @@ $(document).ready(function() {
     event.preventDefault();
       $('.header_nav').hide(400);
       $('.header_nav_head').hide(400);
+       $('body,html').removeClass('hidden');
   });
 });
 
@@ -116,3 +124,15 @@ setInterval(function() {
   setTimeout(item4, 4000);
   setTimeout(clear, 5000);
 }, 5000);
+
+
+
+$(window).scroll(function() { 
+    var the_top = jQuery(document).scrollTop();
+    if (the_top > 50) {
+        $('header').addClass('header_fixed');
+    }
+    else {
+        $('header').removeClass('header_fixed');
+    }
+});
