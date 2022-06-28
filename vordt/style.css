@@ -125,6 +125,16 @@ h5 {
 		color: #612BD3;
 		transition: 0.5s;
 	}
+	.header_nav_parent_overlay:hover:before {
+		content: "";
+	    position: absolute;
+	    width: 100vw;
+	    height: 82rem;
+	    background-color: #0C021D;
+	    left: 0;
+	    top: 0;
+	    z-index: -1;
+	}
 	.header_nav_parent_overlay:hover .header_nav_item.parent:before {
 		height: 2rem;
 		transition: 0.5s;
@@ -143,7 +153,7 @@ h5 {
 	}
 	.header_nav_parent_overlay:hover .header_nav_child {
 		top: 100%;
-	    transition: 0.3s;
+	    transition: 0.5s;
 	}
 	.header_nav_parent_overlay:hover .arrow {
 		transform: rotate(180deg);
@@ -162,7 +172,9 @@ h5 {
 
 
 header {
-	position: relative;
+	position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 .header_nav {
 	display: flex;
@@ -294,7 +306,7 @@ header {
 	width: 100%;
 	padding: 90rem 0;
     transition: 0.5s;
-    z-index: -1;
+    z-index: -2;
 }
 .header_nav_child:after {
     content: "";
@@ -434,7 +446,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 256rem 0;
+	padding: 116rem 0;
 	margin: 50rem 0;
 }
 .video_play {
@@ -860,7 +872,6 @@ ul li:before {
 	padding-top: 50rem;
 	background-size: cover;
 	background-position: center;
-	display: none;
 }
 .services_head_subtitle {
 	margin: 30rem 0;
@@ -871,6 +882,7 @@ ul li:before {
 }
 .services_head_title {
 	max-width: 625rem;
+	line-height: 100%;
 	margin: auto;
 }
 .service_future_img {
@@ -1002,6 +1014,7 @@ ul li:before {
 }
 .future_about {
 	padding-top: 50rem;
+	display: none;
 }
 .about_head_subtitle {
 	margin: 30rem 0;
