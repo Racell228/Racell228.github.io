@@ -58,18 +58,18 @@ function all() {
   function item12() {
     $('.work_rules').addClass('active');
   }
-  setTimeout(item1, 1000);
-  setTimeout(item2, 2000);
-  setTimeout(item3, 3000);
-  setTimeout(item4, 4000);
-  setTimeout(item5, 5000);
-  setTimeout(item6, 6000);
-  setTimeout(item7, 7000);
-  setTimeout(item8, 8000);
-  setTimeout(item9, 9000);
-  setTimeout(item10, 10000);
-  setTimeout(item11, 11000);
-  setTimeout(item12, 12000);
+  setTimeout(item1, 500);
+  setTimeout(item2, 1000);
+  setTimeout(item3, 1500);
+  setTimeout(item4, 2000);
+  setTimeout(item5, 2500);
+  setTimeout(item6, 3000);
+  setTimeout(item7, 3500);
+  setTimeout(item8, 4000);
+  setTimeout(item9, 4500);
+  setTimeout(item10, 5000);
+  setTimeout(item11, 5500);
+  setTimeout(item12, 6000);
 
 };
 
