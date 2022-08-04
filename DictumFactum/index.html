@@ -17,7 +17,7 @@
 			<div class="hero_overlay">
 				<header>
 					<a href="#"><img src="img/logo.svg" class="logo"></a>
-					<a href="#"><img src="img/burger.svg" class="burger"></a>
+					<a href="#"><img src="img/burger.svg" class="burger"><div class="overlay"></div></a>
 				</header>
 				<div class="hero_content">
 					<h1 class="hero_title">Dictum Factum</h1>
@@ -28,14 +28,14 @@
 				</div>
 				<div class="hero_bottom">
 					<a href="#facts" class="hero_bottom_scroll">Scroll <img src="img/hero_scroll.svg"></a>
-					<a href="#" class="hero_bottom_off"><img src="img/hero_off.svg"></a>
+					<a href="#quiz" class="hero_bottom_off"><img src="img/hero_off.svg"></a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="facts" id="facts">
 		<div class="container">
-			<h2 class="facts_title animated up"><span class="pink">8 facts</span> why you need a new website right now <img src="img/title_img.svg"></h2>
+			<h2 class="facts_title"><span class="pink">8 facts</span> why you need a new website right now <img src="img/title_img.svg"></h2>
 			<div class="facts_overlay">
 				<div class="facts_item">
 					<img src="img/facts_item1.svg" class="facts_item_img">
@@ -85,10 +85,10 @@
 			<div class="off_overlay">
 				<div class="off_content animated anleft">
 					<h3 class="off_title"><span class="pink">GET 50% off </span>on prototype, by ordering now for only $100! </h3>
-					<a href="#" class="off_btn btn">Get it now</a>
+					<a href="#quiz" class="off_btn btn">Get it now</a>
 				</div>
 				<img src="img/off_img.svg" class="off_img anright animated">
-				<img src="img/off_bg.svg" class="off_bg">
+				<img src="img/off_bg.svg" class="off_bg anright animated">
 			</div>
 		</div>
 	</section>
@@ -108,7 +108,17 @@
 							</div>
 						</div>
 						<p class="develop_item_head_text">We create exceptional, completely custom websites from scratch. At Dictum Factum we strive for 100% customer satisfaction. We successfully take on the most complex projects.</p>
-						<hr class="develop_item_head_hr">
+						<p class="develop_item_head_text_mobile">We create exceptional, custom websites from scratch. Here we strive for 100% customer satisfaction. </p>
+						<div class="develop_item_head_list_overlay">
+							<hr class="develop_item_head_hr">
+							<h4 class="develop_item_head_list_title">What’s included:</h4>
+							<p class="develop_item_head_list_item">– Prototype (skeleton of your future website</p>
+							<p class="develop_item_head_list_item">– Custom website design</p>
+							<p class="develop_item_head_list_item">– Website coding</p>
+							<p class="develop_item_head_list_item">– Quality assurance</p>
+						</div>
+					</div>
+					<div class="develop_item_head_list_mobile">
 						<h4 class="develop_item_head_list_title">What’s included:</h4>
 						<p class="develop_item_head_list_item">– Prototype (skeleton of your future website</p>
 						<p class="develop_item_head_list_item">– Custom website design</p>
@@ -148,7 +158,7 @@
 						<img src="img/develop_item_bot_item_bg.svg" class="develop_item_bot_item_bg">
 					</div>
 				</div>
-				<img src="img/about_bg3.svg" class="develop_bg">
+				<img src="img/about_bg3.svg" class="develop_bg animated up">
 				<div class="develop_item">
 					<div class="develop_item_head animated anright">
 						<h4 class="develop_item_head_title">Websites on a website builder</h4>
@@ -161,7 +171,17 @@
 							</div>
 						</div>
 						<p class="develop_item_head_text">Our designers are trained to develop the high quality design using limited options on website builders to make your ideas come true.</p>
-						<hr class="develop_item_head_hr">
+						<p class="develop_item_head_text_mobile">Our designers are trained to develop the high quality design using limited options on website builders to make your ideas come true.</p>
+						<div class="develop_item_head_list_overlay">
+							<hr class="develop_item_head_hr">
+							<h4 class="develop_item_head_list_title">What’s included:</h4>
+							<p class="develop_item_head_list_item">– Prototype (skeleton of your future website</p>
+							<p class="develop_item_head_list_item">– Design of the website </p>
+							<p class="develop_item_head_list_item">– Website set up </p>
+							<p class="develop_item_head_list_item">– Quality assurance</p>
+						</div>
+					</div>
+					<div class="develop_item_head_list_mobile">
 						<h4 class="develop_item_head_list_title">What’s included:</h4>
 						<p class="develop_item_head_list_item">– Prototype (skeleton of your future website</p>
 						<p class="develop_item_head_list_item">– Design of the website </p>
@@ -224,7 +244,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="quiz">
+	<section class="quiz" id="quiz">
 		<div class="container">
 			<h2 class="quiz_title">TAKE a QUIZ <img src="img/cases_title.svg"></h2>
 			<p class="quiz_text">to find out what service is best for you and <span> get 50% off on the prototype</span></p>
@@ -241,12 +261,12 @@
 						<hr class="quiz_item_hr">
 						<div class="quiz_item_overlay">
 							<div class="quiz_item_input_overlay">
-								<input type="radio" id="quiz_item_input11" class="quiz_item_input" name="quiz_item1">
+								<input type="radio" id="quiz_item_input11" class="quiz_item_input" name="quiz_item1" checked>
 								<label for="quiz_item_input11" class="quiz_item_label"><span>I think about a modern design and low price or low monthly fee for personal use mainly. I don’t need it to have many complex features.</span> </label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<input type="radio" id="quiz_item_input12" class="quiz_item_input" name="quiz_item1">
-								<label for="quiz_item_input12" class="quiz_item_label"><span>3 I am not sure what exactly I need, I am starting a new project</span></label>
+								<label for="quiz_item_input12" class="quiz_item_label"><span>I am not sure what exactly I need, I am starting a new project</span></label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<hr class="quiz_item_label_hr">
@@ -266,7 +286,7 @@
 					</div>
 					<div class="quiz_item" id="quiz_item2">
 						<div class="quiz_item_head">
-							<p class="quiz_item_head_title">What is more like you?</p>
+							<p class="quiz_item_head_title">Do you want to have a shopping cart and payment processor on your website?</p>
 							<div class="quiz_item_head_steps">
 								<img src="img/quiz_item2.svg" class="quiz_item_img">
 								<p class="quiz_item_head_steps_item"><span>2</span> of 5</p>
@@ -275,22 +295,17 @@
 						<hr class="quiz_item_hr">
 						<div class="quiz_item_overlay">
 							<div class="quiz_item_input_overlay">
-								<input type="radio" id="quiz_item_input21" class="quiz_item_input" name="quiz_item2">
-								<label for="quiz_item_input21" class="quiz_item_label"><span>I think about a modern design and low price or low monthly fee for personal use mainly. I don’t need it to have many complex features.</span> </label>
+								<input type="radio" id="quiz_item_input21" class="quiz_item_input" name="quiz_item2" checked>
+								<label for="quiz_item_input21" class="quiz_item_label"><span>Yes</span> </label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<input type="radio" id="quiz_item_input22" class="quiz_item_input" name="quiz_item2">
-								<label for="quiz_item_input22" class="quiz_item_label"><span>3 I am not sure what exactly I need, I am starting a new project</span></label>
+								<label for="quiz_item_input22" class="quiz_item_label"><span>No</span></label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<hr class="quiz_item_label_hr">
 								<input type="radio" id="quiz_item_input23" class="quiz_item_input" name="quiz_item2">
-								<label for="quiz_item_input23" class="quiz_item_label"><span>I want it to be perfect, I need it to be responsive and SEO friendly. I have so many ideas to fulfill. I am willing to spend some money on it and can wait, just make it perfffect</span></label>
-							</div>
-							<div class="quiz_item_input_overlay">
-								<hr class="quiz_item_label_hr">
-								<input type="radio" id="quiz_item_input24" class="quiz_item_input" name="quiz_item2">
-								<label for="quiz_item_input24" class="quiz_item_label"><span>I have some ideas, but I don’t know if a website builder is right for me</span></label>
+								<label for="quiz_item_input23" class="quiz_item_label"><span>Maybe later/haven’t decided yet/ don’t know</span></label>
 							</div>
 						</div>
 						<div class="quiz_item_actions">
@@ -300,7 +315,7 @@
 					</div>
 					<div class="quiz_item" id="quiz_item3">
 						<div class="quiz_item_head">
-							<p class="quiz_item_head_title">What is more like you?</p>
+							<p class="quiz_item_head_title">What help you may need with designing website?</p>
 							<div class="quiz_item_head_steps">
 								<img src="img/quiz_item3.svg" class="quiz_item_img">
 								<p class="quiz_item_head_steps_item"><span>3</span> of 5</p>
@@ -309,22 +324,17 @@
 						<hr class="quiz_item_hr">
 						<div class="quiz_item_overlay">
 							<div class="quiz_item_input_overlay">
-								<input type="radio" id="quiz_item_input31" class="quiz_item_input" name="quiz_item3">
-								<label for="quiz_item_input31" class="quiz_item_label"><span>I think about a modern design and low price or low monthly fee for personal use mainly. I don’t need it to have many complex features.</span> </label>
+								<input type="radio" id="quiz_item_input31" class="quiz_item_input" name="quiz_item3" checked>
+								<label for="quiz_item_input31" class="quiz_item_label"><span> I have so many ideas just help me to bring them to life! Let’s start NOW!</span> </label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<input type="radio" id="quiz_item_input32" class="quiz_item_input" name="quiz_item3">
-								<label for="quiz_item_input32" class="quiz_item_label"><span>3 I am not sure what exactly I need, I am starting a new project</span></label>
+								<label for="quiz_item_input32" class="quiz_item_label"><span> I don’t know what exactly I want, but let’s explore together. I am open for discussion just guide me.</span></label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<hr class="quiz_item_label_hr">
 								<input type="radio" id="quiz_item_input33" class="quiz_item_input" name="quiz_item3">
-								<label for="quiz_item_input33" class="quiz_item_label"><span>I want it to be perfect, I need it to be responsive and SEO friendly. I have so many ideas to fulfill. I am willing to spend some money on it and can wait, just make it perfffect</span></label>
-							</div>
-							<div class="quiz_item_input_overlay">
-								<hr class="quiz_item_label_hr">
-								<input type="radio" id="quiz_item_input34" class="quiz_item_input" name="quiz_item3">
-								<label for="quiz_item_input34" class="quiz_item_label"><span>I have some ideas, but I don’t know if a website builder is right for me</span></label>
+								<label for="quiz_item_input33" class="quiz_item_label"><span> I am very busy, do it for me. </span></label>
 							</div>
 						</div>
 						<div class="quiz_item_actions">
@@ -334,7 +344,7 @@
 					</div>
 					<div class="quiz_item" id="quiz_item4">
 						<div class="quiz_item_head">
-							<p class="quiz_item_head_title">What is more like you?</p>
+							<p class="quiz_item_head_title">What is your budget?</p>
 							<div class="quiz_item_head_steps">
 								<img src="img/quiz_item4.svg" class="quiz_item_img">
 								<p class="quiz_item_head_steps_item"><span>4</span> of 5</p>
@@ -343,22 +353,22 @@
 						<hr class="quiz_item_hr">
 						<div class="quiz_item_overlay">
 							<div class="quiz_item_input_overlay">
-								<input type="radio" id="quiz_item_input41" class="quiz_item_input" name="quiz_item4">
-								<label for="quiz_item_input41" class="quiz_item_label"><span>I think about a modern design and low price or low monthly fee for personal use mainly. I don’t need it to have many complex features.</span> </label>
+								<input type="radio" id="quiz_item_input41" class="quiz_item_input" name="quiz_item4" checked>
+								<label for="quiz_item_input41" class="quiz_item_label"><span> below $500 </span> </label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<input type="radio" id="quiz_item_input42" class="quiz_item_input" name="quiz_item4">
-								<label for="quiz_item_input42" class="quiz_item_label"><span>3 I am not sure what exactly I need, I am starting a new project</span></label>
+								<label for="quiz_item_input42" class="quiz_item_label"><span>$500-$1000</span></label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<hr class="quiz_item_label_hr">
 								<input type="radio" id="quiz_item_input43" class="quiz_item_input" name="quiz_item4">
-								<label for="quiz_item_input43" class="quiz_item_label"><span>I want it to be perfect, I need it to be responsive and SEO friendly. I have so many ideas to fulfill. I am willing to spend some money on it and can wait, just make it perfffect</span></label>
+								<label for="quiz_item_input43" class="quiz_item_label"><span>$1000-$5000</span></label>
 							</div>
 							<div class="quiz_item_input_overlay">
 								<hr class="quiz_item_label_hr">
 								<input type="radio" id="quiz_item_input44" class="quiz_item_input" name="quiz_item4">
-								<label for="quiz_item_input44" class="quiz_item_label"><span>I have some ideas, but I don’t know if a website builder is right for me</span></label>
+								<label for="quiz_item_input44" class="quiz_item_label"><span> $5000+</span></label>
 							</div>
 						</div>
 						<div class="quiz_item_actions">
@@ -367,11 +377,40 @@
 						</div>
 					</div>
 					<div class="quiz_item" id="quiz_item5">
+						<div class="quiz_item_head">
+							<p class="quiz_item_head_title">How soon do you need the website?</p>
+							<div class="quiz_item_head_steps">
+								<img src="img/quiz_item5.svg" class="quiz_item_img">
+								<p class="quiz_item_head_steps_item"><span>5</span> of 5</p>
+							</div>
+						</div>
+						<hr class="quiz_item_hr">
+						<div class="quiz_item_overlay">
+							<div class="quiz_item_input_overlay">
+								<input type="radio" id="quiz_item_input51" class="quiz_item_input" name="quiz_item4" checked>
+								<label for="quiz_item_input51" class="quiz_item_label"><span>I need it to be done by tomorrow! ASAP!!!</span> </label>
+							</div>
+							<div class="quiz_item_input_overlay">
+								<input type="radio" id="quiz_item_input52" class="quiz_item_input" name="quiz_item4">
+								<label for="quiz_item_input52" class="quiz_item_label"><span> I need it to be done quickly, I have only one month or so.</span></label>
+							</div>
+							<div class="quiz_item_input_overlay">
+								<hr class="quiz_item_label_hr">
+								<input type="radio" id="quiz_item_input53" class="quiz_item_input" name="quiz_item4">
+								<label for="quiz_item_input53" class="quiz_item_label"><span>I can wait 2-3 months</span></label>
+							</div>
+						</div>
+						<div class="quiz_item_actions">
+							<a href="#quiz_item4" class="quiz_item_actions_back quiz_item_actions_item"><img src="img/arrow_pink.svg">Back</a>
+							<a href="#quiz_item6" class="quiz_item_actions_next quiz_item_actions_item">Forward <img src="img/arrow_whire.svg"></a>
+						</div>
+					</div>
+					<div class="quiz_item" id="quiz_item6">
 						<div class="quiz_item_final">
 							<div class="quiz_item_final_text">
 								<p class="quiz_item_final_text_title">Got it! Thanks for the answers! Let’s discuss your project, we are keen to meet your needs. </p>
 								<p class="quiz_item_final_text_offer"><span class="pink">Get up to 50% off</span> on prototype by submitting this form now!</p>
-								<a href="#quiz_item4" class="quiz_item_actions_back quiz_item_actions_item quiz_item_final_btn"><img src="img/arrow_pink.svg">Back</a>
+								<a href="#quiz_item5" class="quiz_item_actions_back quiz_item_actions_item quiz_item_final_btn"><img src="img/arrow_pink.svg">Back</a>
 							</div>
 							<div class="quiz_item_final_form">
 								<input type="text" class="quiz_item_final_form_input input" placeholder="Please leave any additional information here">
@@ -395,7 +434,8 @@
 			<div class="container">
 				<div class="about_head_overlay">
 					<h2 class="about_head_title">About us</h2>
-					<p class="about_head_text"><span>We treat each project as an art object,</span> we approach the solution of the task creatively and extraordinary. Our team takes on the most complex projects to make your and, of course, our dreams come true.</p>
+					<p class="about_head_text"><span>We treat each project as an art object,</span> we approach the solution of the task creatively and extraordinary.</p>
+					<p class="about_head_text">Our team takes on the most complex projects to make your and, of course, our dreams come true.</p>
 				</div>
 			</div>
 			<img src="img/about_bg1.svg" class="about_bg1">
@@ -426,23 +466,23 @@
 		<div class="container">
 			<h2 class="guarantees_title">Guarantees<img src="img/guarantes_title.svg"></h2>
 			<div class="guarantees_overlay">
-				<div class="guarantees_item animated down">
+				<div class="guarantees_item animated up">
 					<img src="img/guarantes1.svg" class="guarantees_item_image">
 					<p class="guarantees_item_text">Satisfaction guarantee</p>
 				</div>
-				<div class="guarantees_item animated down">
+				<div class="guarantees_item animated up">
 					<img src="img/guarantes2.svg" class="guarantees_item_image">
 					<p class="guarantees_item_text">Time and quality </p>
 				</div>
-				<div class="guarantees_item animated down">
+				<div class="guarantees_item animated up">
 					<img src="img/guarantes3.svg" class="guarantees_item_image">
 					<p class="guarantees_item_text">Great customer support service </p>
 				</div>
-				<div class="guarantees_item animated down">
+				<div class="guarantees_item animated up">
 					<img src="img/guarantes4.svg" class="guarantees_item_image">
 					<p class="guarantees_item_text">We know how to sell, our product isn`t just a pretty face.</p>
 				</div>
-				<div class="guarantees_item animated down">
+				<div class="guarantees_item animated up">
 					<img src="img/guarantes5.svg" class="guarantees_item_image">
 					<p class="guarantees_item_text">No hidden charges</p>
 				</div>
@@ -526,6 +566,7 @@
 					</div>
 				</div>
 			</div>
+			<a href="#" class="work_item_mobile"><img src="img/pink_arrow.svg">click to read more<img src="img/pink_arrow.svg"></a>
 		</div>
 	</section>
 	<section class="cases" id="cases">
@@ -539,7 +580,7 @@
 					<h4 class="cases_item_title">Fat Goose Pub – pub restaurant website</h4>
 					<p class="cases_item_descr">Fat Goose Pub website design. Website design for full development. The site provides the opportunity to book a table, see the announcement of events and the menu</p>
 				</div>
-				<img src="img/about_bg3.svg" class="cases_bg">
+				<img src="img/about_bg3.svg" class="cases_bg animated up">
 				<div class="cases_item animated anright">
 					<img src="img/case2.png" class="cases_item_image">
 					<h4 class="cases_item_title">GIG.ME – creative partner<br> of gaming and eSports</h4>
@@ -557,8 +598,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">Do you have phone support? </p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>Not this time. There are lots of important details that can be lost in a phone call, but not in an email. Emails are a great resource for reference and research.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -567,8 +607,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">Do you maintain the website after work?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>Sure! However, it will make additional charges.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -577,8 +616,9 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">What if I don’t like the design? </p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>No problem. If you don’t like your design, we will discuss everything and make changes at no cost to you*. Our main goal is to satisfy you so feel free to tell us what you don’t like, we are here to help and address your needs. We are willing to make our clients happy.</p>
+								<p>*changes will be made at no cost only if it does not contradict with the Brief and no more than 5 times per stage.</p>
+								<p>* Note: if the design has been agreed and our team is at the next stage (e.g. website coding), the changes in design are chargeable. </p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -587,8 +627,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">Do you make changes to a website which was not created by you?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>Absolutely</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -597,8 +636,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">I want to have a hardcoded website, but I have a limited budget, can I still have a hardcoded website? </p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>certainly. We will do our best to fit into any budget and will try to offer you the best options to satisfy your needs and save money.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -607,20 +645,20 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">How do you accept payments? Can I pay monthly?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and etc. </p>
+								<p>There are usually two payments for a website on a website builder, and tree payments for a handwritten website. However, we can split payments to weekly or monthly payments. In addition, we can work in parts, meaning you pay for a specific part of development e.g. cart development.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
 					</div>
 				</div>
-				<div class="faq_wrapper">
+				<div class="faq_wrapper last">
 					<div class="faq_item">
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">I need a website very urgently; will you help? </p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>sure. Please send us an email as soon as you can, including all possible details. This will help us respond faster to your needs</p>
+								<p>In the email header type “urgent” to get an answer even faster. If you want to speed it up even more, you can text to +1 (626) 379-8535.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -629,8 +667,8 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">What is your refund policy?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>We provide proportional reimbursement within 6 months from the beginning of work. It means that we will keep money for work which was done and refund what is left. </p>
+								<p>In case you are not satisfied with the work done, we will discuss it and try to make it in the way you like it. In some cases, a full refund is possible, but it does depend on a situation.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -639,8 +677,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">What is your response time? </p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>Our usual response time is 2-4 hours.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -649,8 +686,7 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">Where are you located?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>We are a California based company, but we have employees all over the world. </p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
@@ -659,13 +695,13 @@
 						<div class="faq_item_overlay">
 							<p class="faq_item_title">What if I have found a bug afterwards? Will you fix it for free or should I pay?</p>
 							<div class="faq_item_answer">
-								<p>We accept almost all types of debit and credit cards, checks, Zelle, bank deposits and ect. </p>
-								<p>Usually there are two payments for a website on a website builder, and tree payments for handwritten website. However, we can split payments to weekly or monthly payments. Also, we can work piece by piece basic, meaning you pay for specific part of development eg cart development.</p>
+								<p>It depends on how long ago the project was made and whether you made any changes to the code. Please contact us with a detailed explanation and steps on how to reproduce the bug. We will be glad to help you anyway.</p>
 							</div>
 						</div>
 						<p class="faq_plus"></p>
 					</div>
 				</div>
+				<a href="#" class="faq_btn_mobile"><img src="img/pink_arrow.svg">show more<img src="img/pink_arrow.svg"></a>
 			</div>
 		</div>
 	</section>
@@ -707,8 +743,8 @@
 				<a href="#" class="footer_logo"><img src="img/logo.svg"></a>
 				<div class="footer_mob_overlay">
 					<div class="footer_links">
-					<a href="#" class="footer_link">Terms of use</a>
-					<a href="#" class="footer_link">Privacy policy </a>
+					<a href="terms.html" class="footer_link">Terms of use</a>
+					<a href="policy.html" class="footer_link">Privacy policy </a>
 				</div>
 				<a href="#" class="footer_email"><img src="img/social.svg">email@gmail.com</a>
 				</div>
@@ -725,7 +761,7 @@
 		<a href="#" class="menu_close"><img src="img/close.svg"></a>
 		<a href="#facts" class="menu_link">Why do I need a website?</a>
 		<a href="#develop" class="menu_link">Services</a>
-		<a href="#" class="menu_link">Quiz to get a discount </a>
+		<a href="#quiz" class="menu_link">Quiz to get a discount </a>
 		<a href="#about" class="menu_link">About us</a>
 		<a href="#cases" class="menu_link">Our cases </a>
 		<a href="#faq" class="menu_link">Questions and answers </a>
@@ -733,6 +769,7 @@
 		<a href="#" class="menu_link_mail"> <img src="img/social.svg">email@gmail.com</a>
 	</div>
 </div>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="js/slick.min.js"></script>

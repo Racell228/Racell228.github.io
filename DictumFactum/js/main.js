@@ -86,7 +86,7 @@ function all() {
 $(window).scroll(function() {
   $('.facts_item').each(function(){
     var ElPosition = $(this).offset().top;
-     var WindowPosition = $(window).scrollTop() + 600;
+     var WindowPosition = $(window).scrollTop() + 900;
      if (ElPosition < WindowPosition) {
        $(this).addClass("show");
      }
@@ -101,7 +101,7 @@ $(window).scroll(function() {
   $('.up').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+600) {
+     if (imagePos < topOfWindow+900) {
        $(this).addClass("fadeInUp");
      }
      else {}
@@ -111,7 +111,7 @@ $(window).scroll(function() {
   $('.down').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+600) {
+     if (imagePos < topOfWindow+900) {
        $(this).addClass("fadeInDown");
      }
      else {}
@@ -121,7 +121,7 @@ $(window).scroll(function() {
   $('.anleft').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+600) {
+     if (imagePos < topOfWindow+900) {
        $(this).addClass("fadeInLeft");
      }
      else {}
@@ -131,7 +131,7 @@ $(window).scroll(function() {
   $('.anright').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+600) {
+     if (imagePos < topOfWindow+900) {
        $(this).addClass("fadeInRight");
      }
      else {}
@@ -148,7 +148,7 @@ $(window).scroll(function() {
     var
       cPos = $(this).offset().top,
       topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 500) {
+    if (cPos < topWindow + 900) {
       if (cc < 2) {
         $(".about_content_item_value span").addClass("viz");
         $('.about_content_item_value span').each(function() {
@@ -181,13 +181,15 @@ $(window).scroll(function() {
 $(document).ready(function() {
   $('.burger').click(function(event) {
     event.preventDefault();
-      $('.menu').show(400);
+      $('.menu').show(1000);
+      $('.overlay').addClass('active');
   });
 });
 $(document).ready(function() {
   $('.menu_close').click(function(event) {
     event.preventDefault();
-      $('.menu').hide(400);
+      $('.menu').hide(1000);
+      $('.overlay').removeClass('active');
   });
 });
 
@@ -196,7 +198,7 @@ $(document).ready(function() {
 
 //Плавный скрол по секциям
 $(document).ready(function() {
-  $('.menu_link,.hero_bottom_scroll').click(function(){
+  $('.menu_link,.hero_bottom_scroll,.hero_bottom_off,.off_btn').click(function(){
     $('.menu').hide(400);
     var el = $(this).attr('href');
     $('html,body').animate({
@@ -237,17 +239,59 @@ $('.facts_overlay').slick({
 
 
 
-//Переключение навыков(О нас)
+
 $(document).ready(function() {
   $('.develop_item_bot_item').click(function(event) {
     event.preventDefault();
       $(this).find('.develop_item_bot_list').toggle(400);
   });
 });
-//Переключение навыков(О нас)
+
 $(document).ready(function() {
   $('.develop_item_mid').click(function(event) {
     event.preventDefault();
       $(this).find('.develop_item_mid_overlay').toggle(400);
   });
 });
+
+$(document).ready(function() {
+  $('.develop_item_head_list_mobile').click(function(event) {
+    event.preventDefault();
+      $(this).find('.develop_item_head_list_item').toggle(400);
+  });
+});
+
+$(document).ready(function() {
+  $('.work_item_mobile').click(function(event) {
+    event.preventDefault();
+      $(this).addClass('active');
+      $('.work_overlay').addClass('active');
+      $('.work_item').show(0);
+      $('.work_rules').addClass('active');
+  });
+}); 
+
+
+$(document).ready(function() {
+  $('.faq_btn_mobile').click(function(event) {
+    event.preventDefault();
+      $('.faq_wrapper.last').show(400);
+      $(this).hide();
+  });
+});
+if (window.matchMedia("(max-width: 480px)").matches) {
+    $(document).ready(function() {
+      $('.develop_item_head').removeClass('anleft');
+      $('.develop_item_head').addClass('up');
+
+
+      $('.cases_title,.cases_text').removeClass('down');
+      $('.cases_title,.cases_text').addClass('up');
+
+      $('.cases_item').removeClass('anleft');
+      $('.cases_item').removeClass('anright');
+      $('.cases_item').addClass('up');
+});
+} else {
+  
+}
