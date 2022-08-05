@@ -831,16 +831,22 @@ p {
 	position: relative;
 	z-index: 2;
 }
-.about_bg1 {
-	position: absolute;
-	top: -21rem;
-	left: calc(50% - 365rem);
-	width: 730rem;
-	z-index: -1;
-}
 .about_head_overlay {
 	position: relative;
 	z-index: 2;
+}
+.about_bg_top {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 227rem);
+	width: 454rem;
+}
+.about_bg_bot {
+	width: 730rem;
+	position: absolute;
+	bottom: -55rem;
+	left: calc(50% - 365rem);
+	z-index: -1;
 }
 .about_bg2 {
     position: absolute;
@@ -1078,26 +1084,12 @@ p {
 	height: 30rem;
 	display: block;
 	position: relative;
+	background-image: url(img/faq_plus.svg);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
-.faq_plus:before,.faq_plus:after {
-	content: "";
-	width: 30rem;
-	height: 2rem;
-	background-color: #9CE62E;
-	position: absolute;
-	border-radius: 100%;
-}
-.faq_plus:before {
-	left: -1rem;
-	top: calc(50% - 1rem);
-}
-.faq_plus:after {
-	left: 0;
-    top: 15rem;
-	transform: rotate(90deg);
-	opacity: 1;
-	transition: 0.5s;
-}
+
 .faq_item_title {
 	font-size: 21rem;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1111,9 +1103,8 @@ p {
 	color: #DBDBDB;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.faq_item.active .faq_plus:after{
-	opacity: 0;
-	transition: 0.5s;
+.faq_item.active .faq_plus {
+	background-image: url(img/faq_minus.svg);
 }
 .faq_overlay {
 	display: flex;
@@ -1218,6 +1209,9 @@ p {
 	left: -2rem;
 	top: 66rem;
 	padding-top: 10rem;
+}
+.jq-selectbox__dropdown li:first-child{
+	display: none;
 }
 .jq-selectbox__dropdown .contacts_form_option {
 	font-size: 18rem;
@@ -1327,7 +1321,12 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	z-index: 99999;
 	align-items: center;
+}
+.menu_link {
+	margin: 10rem 0;
+	font-size: 18rem;
 }
 .menu_link_mail {
 	display: flex;
@@ -1405,6 +1404,30 @@ footer {
 .textpage_overlay {
     max-width: 1000rem;
     margin: 0 auto 100rem;
+}
+.rules {
+	display: none;
+}
+.rules_overlay {
+	margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.rules_content {
+	width: 1400rem;
+}
+.rules_content li {
+	font-size: 18rem;
+	margin-top: 15rem;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -1625,6 +1648,7 @@ footer {
 		margin-top: 35rem;
 	}
 	.quiz_item_head_title {
+		max-width: 270rem;
     	font-size: 24rem;
 	} 
 	.quiz_item_img {
@@ -1684,13 +1708,11 @@ footer {
 		font-size: 18rem;
 		width: 600rem;
 	}
+	.about_bg_bot {
+		bottom: -104rem;
+	}
 	.about_bg4 {
 		display: none;
-	}
-	.about_bg1 {
-		top: 7rem;
-	    left: calc(50% - 265rem);
-	    width: 530rem;
 	}
 	.about_bg2 {
 		display: none;
@@ -1732,6 +1754,13 @@ footer {
 	.work_overlay {
 		width: 100%;
 		margin: auto;
+	}
+	.work {
+    	height: 1507rem;
+	}
+	.rules_content {
+	    width: 700rem;
+	    overflow: auto;
 	}
 	.work_item {
     	margin: 40rem 25rem 0;
@@ -1810,20 +1839,24 @@ footer {
 		width: 100%;
 	}
 	.footer_logo img {
-    	width: 140rem;
+    	width: 120rem;
 	} 
+	.footer_email {
+		font-size: 16rem;
+	}
 	.footer_cpoyright_img {
-    	width: 100rem;
+    	width: 80rem;
 	}
 	.footer_copyright_text {
 		font-size: 14rem;
+		margin-right: 10rem;
 	}
 	.footer_email img {
     	width: 17rem;
     	margin-right: 6rem;
 	}
 	.footer_mob_overlay {
-		width: 290rem;
+		width: 370rem;
 	}
 	.menu_close {
     	position: absolute;
@@ -1863,8 +1896,11 @@ footer {
     	font-size: 25rem;
 	}
 	.hero_video {
-		height: 100vh;
-		object-fit: fill;
+	    height: 100vw;
+	    transform: rotate(90deg);
+	    width: 100vh;
+	    left: calc(50% - 50vh);
+	    top: calc(50% - 50vw);
 	}
 	.hero_wave {
 		width: 42rem;
@@ -1982,7 +2018,7 @@ footer {
 	    position: absolute;
 	    z-index: -1;
 	    right: -112rem;
-	    top: 40rem;
+	    top: 30rem;
 	}
 	.off_img.fadeInRight {
 		filter: opacity(30%);
@@ -2077,10 +2113,11 @@ footer {
 		top: 0;
 		right: 0;
 		order: 3;
-		width: 108rem;
+		width: 120rem;
     	padding: 6rem 11rem 6rem 7rem;
     	margin: 15rem auto 0;
     	border-radius: 38rem;
+    	justify-content: center;
 	}
 	.develop_item_head_price_item {
     	font-size: 12rem;
@@ -2182,6 +2219,7 @@ footer {
 		font-size: 16rem;
 		padding: 12rem 0 9rem;
 		font-family: 'Nunito';
+		height: 42rem;
 	}
 	.agree_text span {
     	width: 203rem;
@@ -2276,6 +2314,7 @@ footer {
 	.quiz_item_final_form_submit {
 		font-size: 14rem;
 		padding: 12rem 0;
+		height: 40rem;
 	}
 	.quiz_item_final_form_soon {
 		font-size: 16rem;
@@ -2291,11 +2330,6 @@ footer {
 	.about_head_text {
 	    font-size: 14rem;
 	    width: 283rem;
-	}
-	.about_bg1 {
-    	top: 20rem;
-    	left: calc(50% - 220rem);
-    	width: 440rem;
 	}
 	.about_content_item_value {
     	font-size: 34rem;
@@ -2316,6 +2350,15 @@ footer {
     	width: 140rem;
     	order: 2;
     	margin-top: 5rem;
+	}
+	.about_bg_top {
+		left: calc(50% - 116rem);
+    	width: 232rem;
+	}
+	.about_bg_bot {
+		width: 378rem;
+		left: calc(50% - 189rem);
+		bottom: -63rem;
 	}
 	.guarantees_item:nth-child(4) {
 	    order: 3;
@@ -2554,6 +2597,7 @@ footer {
 	.contacts_form_submit {
 		padding: 13rem 0 9rem;
 		font-family: 'Nunito';
+		height: 50rem;
 	}
 	.jq-selectbox__dropdown {
 		top: 46rem;
@@ -2630,5 +2674,12 @@ footer {
 	}
 	.textpage_overlay {
 		margin-bottom: 40rem;
+	}
+	.rules_content {
+		width: 300rem;
+		margin-top: 70rem;
+	}
+	.rules_content p {
+		font-size: 16rem;
 	}
 }

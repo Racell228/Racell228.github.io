@@ -188,7 +188,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.menu_close').click(function(event) {
     event.preventDefault();
-      $('.menu').hide(1000);
+      $('.menu').hide(1000);  
       $('.overlay').removeClass('active');
   });
 });
@@ -198,7 +198,7 @@ $(document).ready(function() {
 
 //Плавный скрол по секциям
 $(document).ready(function() {
-  $('.menu_link,.hero_bottom_scroll,.hero_bottom_off,.off_btn').click(function(){
+  $('.menu_link,.hero_bottom_scroll,.hero_bottom_off,.off_btn,.hero_btn').click(function(){
     $('.menu').hide(400);
     var el = $(this).attr('href');
     $('html,body').animate({
@@ -212,7 +212,7 @@ $(document).ready(function() {
   $('.quiz_item_actions_item').click(function(event) {
     event.preventDefault();
       var id1 = $(this).attr('href');
-      $(id1).fadeIn(300).siblings(0).fadeOut(0);
+      $(id1).fadeIn(0).siblings(0).fadeOut(0);
   });
 });
 
@@ -279,6 +279,28 @@ $(document).ready(function() {
       $(this).hide();
   });
 });
+
+
+
+$(document).ready(function() {
+  $('.work_rules_link').click(function(event) {
+    event.preventDefault();
+      $('.rules').show(400);
+  });
+});
+
+
+$(document).ready(function() {
+  $('.menu_close').click(function(event) {
+    event.preventDefault();
+      $('.rules').hide(400);
+  });
+});
+
+
+
+
+
 if (window.matchMedia("(max-width: 480px)").matches) {
     $(document).ready(function() {
       $('.develop_item_head').removeClass('anleft');
