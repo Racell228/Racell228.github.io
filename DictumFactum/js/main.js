@@ -201,6 +201,7 @@ $(document).ready(function() {
   $('.menu_link,.hero_bottom_scroll,.hero_bottom_off,.off_btn,.hero_btn').click(function(){
     $('.menu').hide(400);
     var el = $(this).attr('href');
+    $('.overlay').removeClass('active');
     $('html,body').animate({
       scrollTop: $(el).offset().top}, 1000);
     return false;
