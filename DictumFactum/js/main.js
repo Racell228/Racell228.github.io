@@ -229,11 +229,19 @@ $('.facts_overlay').slick({
     dots: true,
     centerMode: true,
     responsive: [
-      {
-        breakpoint: 480,
-        settings: 'unslick'
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false
       }
-    ]
+    },
+    {
+      breakpoint: 768,
+       settings: 'unslick'
+    }
+  ]
+    
   });
 
 
@@ -284,7 +292,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.work_rules_link').click(function(event) {
+  $('.work_rules').click(function(event) {
     event.preventDefault();
       $('.rules').show(400);
   });

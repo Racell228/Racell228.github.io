@@ -174,6 +174,11 @@ p {
 	min-height: 265rem;
 	transition: 0.3s;
 	opacity: 0;
+	transition: 0.5s;
+}
+.facts_item:hover {
+	box-shadow: 0px 2px 40px rgba(181, 74, 204, 0.6);
+	transition: 0.5s;
 }
 .facts_item_img {
 	width: 94rem;
@@ -374,7 +379,7 @@ p {
 	margin-top: 16rem;
 }
 .develop_item_mid_list img {
-	width: 25rem;
+	width: 14rem;
 	margin-right: 15rem;
 	position: relative;
 	top: 8rem;
@@ -402,7 +407,7 @@ p {
 }
 .develop_item_bot_item_title img {
 	margin-right: 22rem;
-	width: 44rem;
+	width: 17rem;
 }
 .develop_item_bot_list {
 	padding-left: 30rem;
@@ -415,7 +420,7 @@ p {
 .develop_item_bot_item_bg {
 	position: absolute;
 	top: 32rem;
-	left: 25rem;
+	left: 15rem;
 	width: 540rem;
 	z-index: -1;
 }
@@ -487,7 +492,10 @@ p {
 	padding: 19rem 0 15rem;
 	background: #9CE62E;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 150rem;
+	-webkit-border-radius: 150rem;
+    -moz-border-radius: 150rem;
+    border-radius: 150rem;
+    -khtml-border-radius: 150rem;
 	cursor: pointer;
 	font-family: 'Actay';
 	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -755,7 +763,10 @@ p {
 	width: 100%;
 	background: #FF0178;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.88), inset 0px -5px 10px #AF0052;
-	border-radius: 150rem;
+	-webkit-border-radius: 150rem;
+    -moz-border-radius: 150rem;
+    border-radius: 150rem;
+    -khtml-border-radius: 150rem;
 	font-family: 'Actay';
 	font-weight: 400;
 	font-size: 18rem;
@@ -982,6 +993,7 @@ p {
 	text-align: center;
 	margin: 80rem 13rem 0 auto;
 	display: none;
+	cursor: pointer;
 }
 .work_rules.active {
 	display: flex;
@@ -1223,7 +1235,10 @@ p {
 	padding: 19rem 0 15rem;
 	background: #9CE62E;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 150rem;
+	-webkit-border-radius: 150rem;
+    -moz-border-radius: 150rem;
+    border-radius: 150rem;
+    -khtml-border-radius: 150rem;
 	cursor: pointer;
 	font-family: 'Actay';
 	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -1326,12 +1341,12 @@ footer {
 }
 .menu_link {
 	margin: 10rem 0;
-	font-size: 18rem;
+	font-size: 22rem;
 }
 .menu_link_mail {
 	display: flex;
 	align-items: center;
-	font-size: 22rem;
+	font-size: 26rem;
 	margin-top: 50rem;
 }
 .menu_link_mail img {
@@ -1426,7 +1441,7 @@ footer {
 	width: 1400rem;
 }
 .rules_content li {
-	font-size: 18rem;
+	font-size: 24rem;
 	margin-top: 15rem;
 }
 @media screen and (max-width: 768px) {
@@ -1515,6 +1530,41 @@ footer {
 	.facts_item {
 		margin-top: 64rem;
 	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 20rem auto 0;
+	}
+	.slick-dots button {
+		display: none;
+	}
+	.slick-dots li {
+		width: 10rem;
+		height: 10rem;
+		display: block;
+		border-radius: 100%;
+		margin: 0 5rem;
+		background: #2B2B2B;
+		transition: 0.4s;
+	}
+	.slick-dots li.slick-active {
+		width: 20rem;
+		transition: 0.4s;
+		background: #B54ACC;
+		border-radius: 59rem;
+	}
+	.slick-slide {
+		opacity: 0.3;
+		margin: 75rem 10rem 0;
+	}
+	.slick-active {
+		opacity: 1;
+	}
+	 .slick-list {
+	    margin: 0 -10rem;
+	}	
 	h3 {
     	font-size: 24rem;
 	} 
@@ -1585,7 +1635,7 @@ footer {
 	}
 	.develop_item_bot_item_title img {
     	margin-right: 9rem;
-    	width: 34rem;
+    	width: 17rem;
 	}
 	.develop_item_bot_item_bg {
 		top: 22rem;
@@ -1946,41 +1996,7 @@ footer {
 	.facts {
 	    margin: 40rem 0;
 	}
-	.slick-dots {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0;
-		margin: 20rem auto 0;
-	}
-	.slick-dots button {
-		display: none;
-	}
-	.slick-dots li {
-		width: 10rem;
-		height: 10rem;
-		display: block;
-		border-radius: 100%;
-		margin: 0 5rem;
-		background: #2B2B2B;
-		transition: 0.4s;
-	}
-	.slick-dots li.slick-active {
-		width: 20rem;
-		transition: 0.4s;
-		background: #B54ACC;
-		border-radius: 59rem;
-	}
-	.slick-slide {
-		opacity: 0.3;
-		margin: 75rem 10rem 0;
-	}
-	.slick-current {
-		opacity: 1;
-	}
-	 .slick-list {
-	    margin: 0 -10rem;
-	}	
+	
 	.facts_title {
 	   	width: 287rem;
 	}
@@ -2097,6 +2113,10 @@ footer {
 		color: #fff;
 		text-transform: none;
 	}
+	.develop_item_mid_list {
+		font-size: 14rem;
+		margin-top: 5rem;
+	}
 	.develop_item_head_text {
 		display: none;
 	}
@@ -2178,9 +2198,11 @@ footer {
 	}
 	.develop_item_bot_list {
 		display: none;
+		border-top: 1rem solid rgba(255, 255, 255, 0.5);
+		padding-top: 15rem;
 	}
 	.develop_item_bot_item_title img {
-		width: 20rem;
+		width: 11rem;
 	}
 	.help_text {
     	font-size: 16rem;
