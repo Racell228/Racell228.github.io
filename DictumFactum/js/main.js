@@ -86,7 +86,7 @@ function all() {
 $(window).scroll(function() {
   $('.facts_item').each(function(){
     var ElPosition = $(this).offset().top;
-     var WindowPosition = $(window).scrollTop() + 900;
+     var WindowPosition = $(window).scrollTop() + 600;
      if (ElPosition < WindowPosition) {
        $(this).addClass("show");
      }
@@ -101,7 +101,7 @@ $(window).scroll(function() {
   $('.up').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+900) {
+     if (imagePos < topOfWindow+600) {
        $(this).addClass("fadeInUp");
      }
      else {}
@@ -111,7 +111,7 @@ $(window).scroll(function() {
   $('.down').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+900) {
+     if (imagePos < topOfWindow+600) {
        $(this).addClass("fadeInDown");
      }
      else {}
@@ -121,7 +121,7 @@ $(window).scroll(function() {
   $('.anleft').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+900) {
+     if (imagePos < topOfWindow+600) {
        $(this).addClass("fadeInLeft");
      }
      else {}
@@ -131,7 +131,7 @@ $(window).scroll(function() {
   $('.anright').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
-     if (imagePos < topOfWindow+900) {
+     if (imagePos < topOfWindow+600) {
        $(this).addClass("fadeInRight");
      }
      else {}

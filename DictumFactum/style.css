@@ -167,7 +167,7 @@ p {
 	width: 265rem;
 	padding: 25rem 20rem;
 	background: #232323;
-	box-shadow: inset 6px 6px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 6px 6px 4px rgb(0 0 0 / 30%), 0px 2px 40px rgb(181 74 204 / 0%);
 	border-radius: 30rem;
 	text-align: center;
 	margin-top: 104rem;
@@ -177,7 +177,7 @@ p {
 	transition: 0.5s;
 }
 .facts_item:hover {
-	box-shadow: 0px 2px 40px rgba(181, 74, 204, 0.6);
+	box-shadow: inset 6px 6px 4px rgb(0 0 0 / 0%), 0px 2px 40px rgb(181 74 204 / 60%);
 	transition: 0.5s;
 }
 .facts_item_img {
@@ -486,6 +486,10 @@ p {
 }
 .help_form_input {
 	width: 335rem;
+}
+.submit_overlay {
+	border-radius: 150rem;
+	overflow: hidden;
 }
 .help_form_submit {
 	width: 100%;
