@@ -367,10 +367,12 @@ p {
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 20rem;
+	font-weight: 400;
 	line-height: 110%;
 }
 .develop_item_mid_title span {
 	text-transform: none;
+	font-weight: 700;
 	display: block;
 }
 .develop_item_mid_list {
@@ -671,12 +673,11 @@ p {
 	background: #FF0178;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.88), inset 0px -5px 10px #AF0052;
 	border-radius: 150px;
-	border: 2rem solid #FF0178; 
 	font-size: 18rem;
 	font-family: 'Actay';
 	display: flex;
 	width: 270rem;
-	padding: 19rem 0;
+	padding: 21rem 0;
 	align-items: center;
 	justify-content: center;
 }
@@ -717,6 +718,7 @@ p {
 }
 .quiz_item_img {
 	width: 411rem;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .quiz_item_head_steps_item {
 	font-weight: 400;
@@ -889,12 +891,14 @@ p {
 	top: -11rem;
 	right: -7rem;
 	width: 332rem;
+	z-index: -1;
 }
 .guarantees_title {
 	position: relative;
 	width: max-content;
 	font-family: 'Nunito';
 	margin: auto;
+	z-index: 2;
 	text-transform: uppercase;
 }
 .guarantees {
@@ -1018,6 +1022,9 @@ p {
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-size: 21rem;
 }
+.work_rules_link:hover {
+	text-decoration: underline;
+}
 .cases {
 	padding: 120rem 0 90rem;
 	background: #232323;
@@ -1049,7 +1056,7 @@ p {
 	width: 890rem;
 }
 .cases_item {
-	width: 568rem;
+	width: 602rem;
 }
 .cases_item_image {
 	width: 100%;
@@ -1059,6 +1066,7 @@ p {
 	font-weight: 400;
 	margin: 100rem auto 20rem;
 	text-align: center;
+	font-family: "Actay";
 }
 .cases_item_descr {
 	font-size: 21rem;
@@ -1073,6 +1081,7 @@ p {
 .faq_title {
 	text-transform: uppercase;
 	text-align: center;
+	font-family: 'Nunito';
 }
 .faq {
 	padding: 115rem 0 140rem;
@@ -1698,7 +1707,7 @@ footer {
 	.quiz_item_actions_next {
 		font-size: 16rem;
 		width: 190rem;
-		padding: 10rem 0;
+		padding: 12rem 0;
 	}
 	.quiz_item_actions {
 		margin-top: 35rem;
@@ -1860,6 +1869,13 @@ footer {
 	.faq_item_overlay {
 		width: 630rem;
 	}
+	.faq_wrapper.last .faq_item:first-child .faq_item_overlay {
+		border-top: 1rem solid rgba(255,255,255,0.5);
+		padding-top: 17rem;
+	}
+	.contacts_content_title {
+		text-align: center;
+	}
 	.faq_item {
 		width: 100%;
 	}
@@ -1869,6 +1885,9 @@ footer {
 	.contacts_content_subtitle {
 		font-size: 24rem;
 		margin-top: 50rem;
+	}
+	.contacts_content {
+		margin: auto;
 	}
 	.contacts_content_text {
 		font-size: 18rem;
@@ -1998,6 +2017,7 @@ footer {
 	}
 	.facts_item {
 		min-height: 185rem;
+		box-shadow: inset 1.4106px 4.23179px 2.82119px rgba(0, 0, 0, 0.25);
 	}
 	.facts {
 	    margin: 40rem 0;
@@ -2007,8 +2027,8 @@ footer {
 	   	width: 287rem;
 	}
 	.facts_title img {
-	    width: 60rem;
-	    top: 29rem;
+	    width: 90rem;
+	    top: 26rem;
 	    right: -5rem;
 	}
 	.off {
@@ -2069,6 +2089,7 @@ footer {
 		display: flex;
 		flex-direction: column;
 		border-radius: 15rem;
+		box-shadow: inset 0px 1.83439px 1.83439px rgba(0, 0, 0, 0.25);
 	}
 	.develop_item_head_text {
 		width: 100%;
@@ -2140,7 +2161,7 @@ footer {
 		right: 0;
 		order: 3;
 		width: 120rem;
-    	padding: 6rem 11rem 6rem 7rem;
+    	padding: 8rem 11rem 8rem 7rem;
     	margin: 15rem auto 0;
     	border-radius: 38rem;
     	justify-content: center;
@@ -2161,6 +2182,9 @@ footer {
 		padding: 15rem;
 		border-radius: 15rem;
 		margin-top: 10rem;
+	}
+	.develop_item_bot_list {
+		font-size: 14rem;
 	}
 	.develop_item_mid_overlay {
 		display: none;
@@ -2285,6 +2309,7 @@ footer {
 	}
 	.quiz_item_img {
 	    width: 258rem;
+	    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 1));
 	}
 	.quiz_item_head_steps {
 	    width: 100%;
@@ -2318,6 +2343,7 @@ footer {
 	}
 	.quiz_item_actions_back {
 		width: 100%;
+		filter: none;
 	}
 	.quiz_item_actions_next {
 		width: 100%;
@@ -2403,6 +2429,9 @@ footer {
 		width: 100%;
 		justify-content: space-between;
 	}
+	.guarantees_title {
+		text-transform: capitalize;
+	}
 	.guarantees_item_text {
 		margin-top: 15rem;
 		margin-bottom: 0;
@@ -2460,6 +2489,7 @@ footer {
 		width: 40rem;
 		height: 40rem;
 		padding: 16rem 13rem 10rem;
+		box-shadow: 0px 2.38532px 2.38532px rgba(0, 0, 0, 0.25), inset 0px 2.38532px 2.38532px rgba(0, 0, 0, 0.25);
 	}
 	.work_item {
     	width: 143rem;
@@ -2509,8 +2539,9 @@ footer {
 		font-size: 20rem;
 	}
 	.cases_title img {
-	    width: 109rem;
-	    top: -9rem;
+	    width: 134rem;
+	    top: -19rem;
+	    right: -14rem;
 	}
 	.cases_item_descr {
     	font-size: 14rem;
