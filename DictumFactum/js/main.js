@@ -182,6 +182,7 @@ $(document).ready(function() {
   $('.burger').click(function(event) {
     event.preventDefault();
       $('.menu').show(1000);
+      $('body, html').addClass('hidden');
       $('.overlay').addClass('active');
   });
 });
@@ -190,6 +191,7 @@ $(document).ready(function() {
     event.preventDefault();
       $('.menu').hide(1000);  
       $('.overlay').removeClass('active');
+      $('body, html').removeClass('hidden');
   });
 });
 
@@ -237,7 +239,7 @@ $('.facts_overlay').slick({
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 992,
        settings: 'unslick'
     }
   ]

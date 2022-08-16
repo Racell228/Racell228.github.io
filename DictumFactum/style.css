@@ -167,7 +167,7 @@ p {
 	width: 265rem;
 	padding: 25rem 20rem;
 	background: #232323;
-	box-shadow: inset 6px 6px 4px rgb(0 0 0 / 30%), 0px 2px 40px rgb(181 74 204 / 0%);
+	box-shadow: inset 4px 2px 4px rgb(0 0 0 / 30%), 0px 2px 40px rgb(181 74 204 / 0%);
 	border-radius: 30rem;
 	text-align: center;
 	margin-top: 104rem;
@@ -177,18 +177,24 @@ p {
 	transition: 0.5s;
 }
 .facts_item:hover {
-	box-shadow: inset 6px 6px 4px rgb(0 0 0 / 0%), 0px 2px 40px rgb(181 74 204 / 60%);
+	box-shadow: inset 4px 2px 4px rgb(0 0 0 / 0%), 0px 2px 20px rgb(181 74 204 / 60%);
 	transition: 0.5s;
 }
-.facts_item_img {
+.facts_item_img_overlay {
 	width: 94rem;
 	margin: -73rem auto 0;
 	display: block;
-	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.9));
 	border-radius: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #B54ACC;
+	box-shadow: 0px 10px 50px #000000, inset 2px 4px 4px rgba(0, 0, 0, 0.30);
+	border-radius: 20px;
+	height: 94rem;
 }
-.facts_item_img_overlay {
-	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+.facts_item_img {
+	height: 50rem;
 }
 .facts_item_number {
 	font-size: 36rem;
@@ -271,7 +277,7 @@ p {
 	width: 500rem;
 	padding: 30rem 45rem;
 	background: #232323;
-	box-shadow: inset 6px 6px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
 	position: relative;
 }
@@ -356,8 +362,8 @@ p {
 	margin-top: 40rem;
 	padding: 30rem;
 	background: #232323;
-	box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 30rem;
+	box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
 	min-height: 410rem;
 }
 .develop_item_mid_title {
@@ -380,10 +386,9 @@ p {
 	align-items: flex-start;
 	font-size: 20rem;
 	line-height: 175%;
-	margin-top: 16rem;
 }
 .develop_item_mid_list img {
-	width: 14rem;
+	width: 18rem;
 	margin-right: 15rem;
 	position: relative;
 	top: 8rem;
@@ -393,8 +398,8 @@ p {
 }
 .develop_item_bot {
 	background: #232323;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 30rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
 	margin-top: 44rem;
 	padding: 30rem 20rem;
 	width: 550rem;
@@ -1232,7 +1237,7 @@ p {
 }
 .jq-selectbox__dropdown {
 	width: calc(100% + 4rem);
-	background-color: #000;
+	background-color: #232323;
 	border-radius: 20rem;
 	left: -2rem;
 	top: 66rem;
@@ -1460,7 +1465,13 @@ footer {
 	font-size: 24rem;
 	margin-top: 15rem;
 }
-@media screen and (max-width: 768px) {
+.about_bg_mobile {
+	display: none;
+}
+.hidden {
+	overflow: hidden;
+}
+@media screen and (max-width: 992px) {
 	html {
 		font-size: 0.13021vw;
 	}
@@ -1536,8 +1547,9 @@ footer {
 	.facts_item_text {
 		font-size: 18rem;
 	}
-	.facts_item_img {
+	.facts_item_img_overlay {
     	width: 84rem;
+    	height: 84rem;
     	margin: -64rem auto 0;
 	}
 	.facts_overlay {
@@ -1638,7 +1650,6 @@ footer {
 	}
 	.develop_item_mid_list {
 		font-size: 16rem;
-		margin-top: 10rem;
 	}
 	.develop_item_mid {
 		min-height: auto;
@@ -1676,6 +1687,9 @@ footer {
 	.help_form_overlay {
 		width: 100%;
 		margin-top: 20rem;
+	}
+	.help_form_submit {
+		height: 66rem;
 	}
 	.quiz_title img {
 	    top: -11rem;
@@ -1758,6 +1772,9 @@ footer {
 	}
 	.quiz_item_final_btn {
 		margin: auto;
+	}
+	.quiz_item_final_form_submit {
+		height: 66rem;
 	}
 	.quiz_item_final_form_agree_text {
 		justify-content: center;
@@ -1949,6 +1966,7 @@ footer {
 		max-width: 520rem;
 		margin-bottom: 80rem;
 	}
+
 }
 
 
@@ -1984,6 +2002,7 @@ footer {
 	.hero_text {
 		font-size: 16rem;
 		width: 223rem;
+		text-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
 	}
 	.hero_btn {
 		margin: 27rem auto 0;
@@ -2005,13 +2024,17 @@ footer {
 	.facts_overlay {
 		margin-top: 0;
 	}
-	.facts_item_img {
+	.facts_item_img_overlay {
 	    width: 70rem;
+	    height: 70rem;
 	    margin: -60rem auto 0;
 	}
 	.facts_item_number {
 	    font-size: 26rem;
 	    margin: 17rem 0 6rem;
+	}
+	.facts_item_img {
+		height: 40rem;
 	}
 	.facts_item_text {
     	font-size: 14rem;
@@ -2019,6 +2042,12 @@ footer {
 	.facts_item {
 		min-height: 185rem;
 		box-shadow: inset 1.4106px 4.23179px 2.82119px rgba(0, 0, 0, 0.25);
+	}
+	.slick-track {
+		padding-bottom: 20rem;
+	}
+	.slick-dots {
+		margin: 0 auto;
 	}
 	.facts {
 	    margin: 40rem 0;
@@ -2370,6 +2399,7 @@ footer {
 		font-size: 14rem;
 		padding: 12rem 0;
 		height: 40rem;
+		font-weight: 600;
 	}
 	.quiz_item_final_form_soon {
 		font-size: 16rem;
@@ -2396,8 +2426,12 @@ footer {
 		margin: 50rem 0 110rem;
 	}
 	.about_bg4 {
+		display: none;
+	}
+	.about_bg_mobile {
 		display: block;
-	    top: 41rem;
+		position: absolute;
+		top: 41rem;
 	    right: -15rem;
 	    width: 78rem;
 	}
