@@ -364,7 +364,7 @@ p {
 	background: #232323;
 	box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 30px;
-	min-height: 410rem;
+	min-height: 330rem;
 }
 .develop_item_mid_title {
 	width: 390rem;
@@ -1471,6 +1471,12 @@ footer {
 .hidden {
 	overflow: hidden;
 }
+.work_item_line_tab {
+	display: none;
+}
+.work_item_hr_tab {
+	display: none;
+}
 @media screen and (max-width: 992px) {
 	html {
 		font-size: 0.13021vw;
@@ -1483,9 +1489,6 @@ footer {
 	}
 	.burger {
     	width: 38rem;
-	}
-	.hero_video {
-		height: 511rem;
 	}
 	.hero_content {
 		width: 100%;
@@ -1504,9 +1507,6 @@ footer {
 	}
 	.hero_wave {
     	margin: 30rem 0 25rem;
-	}
-	.hero_overlay {
-		height: 511rem;
 	}
 	.hero_bottom_off img {
     	width: 90rem;
@@ -1677,19 +1677,21 @@ footer {
 	.help_form {
 		padding: 25rem;
 		flex-direction: column;
-		width: 480rem;
+		width: 380rem;
 		margin: 25rem auto 0;
 	}
 	.help_form_input {
     	width: calc(100% - 50rem);
     	margin-top: 20rem;
+    	padding: 14rem 25rem;
 	}
 	.help_form_overlay {
 		width: 100%;
 		margin-top: 20rem;
 	}
 	.help_form_submit {
-		height: 66rem;
+	    height: 54rem;
+	    padding: 10rem 0 6rem;
 	}
 	.quiz_title img {
 	    top: -11rem;
@@ -1839,14 +1841,33 @@ footer {
 		margin: auto;
 	}
 	.work {
-    	height: 1507rem;
+	    height: 1627rem;
 	}
 	.rules_content {
 	    width: 700rem;
 	    overflow: auto;
 	}
+	.rules_content ol {
+		padding-left: 40rem;
+	}
+	.work_item_line_tab {
+		display: block;
+	    position: absolute;
+	    top: 43rem;
+	    right: -29rem;
+	    width: 540rem;
+	    z-index: -1;
+	}
 	.work_item {
-    	margin: 40rem 25rem 0;
+    	margin: 60rem 25rem 0;
+	}
+	.work_item_hr_tab {
+	    display: block;
+	    position: absolute;
+	    width: 320rem;
+	    top: 45rem;
+	    right: -187rem;
+	    z-index: -1;
 	}
 	.work_rules_title {
 		font-size: 26rem;
@@ -1860,7 +1881,7 @@ footer {
 	}
 	.work_rules {
 		padding: 25rem 20rem;
-		margin: 40rem 73rem 0 auto;
+		margin: 60rem 73rem 0 auto;
 	}
 	.cases_text {
 		font-size: 22rem;
@@ -1906,6 +1927,9 @@ footer {
 	}
 	.contacts_content {
 		margin: auto;
+	}
+	.contacts_form_submit {
+		height: 60rem;
 	}
 	.contacts_content_text {
 		font-size: 18rem;
@@ -2781,5 +2805,11 @@ footer {
 	    right: -660rem;
 	    width: 1400rem;
 	    height: 1400rem;
+	}
+	.work_item_line_tab {
+		display: none;
+	}
+	.work_item_hr_tab {
+		display: none;
 	}
 }
