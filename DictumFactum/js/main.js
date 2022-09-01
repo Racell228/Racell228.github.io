@@ -298,6 +298,7 @@ $(document).ready(function() {
   $('.work_rules').click(function(event) {
     event.preventDefault();
       $('.rules').show(400);
+      $('body,html').addClass('hidden');
   });
 });
 
@@ -306,6 +307,7 @@ $(document).ready(function() {
   $('.menu_close').click(function(event) {
     event.preventDefault();
       $('.rules').hide(400);
+      $('body,html').removeClass('hidden');
   });
 });
 

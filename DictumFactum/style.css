@@ -1583,6 +1583,9 @@ footer {
 		background: #B54ACC;
 		border-radius: 59rem;
 	}
+	.slick-track {
+		padding-bottom: 20rem;
+	}
 	.slick-slide {
 		opacity: 0.3;
 		margin: 75rem 10rem 0;
@@ -1611,6 +1614,11 @@ footer {
 	    top: 14rem;
 	    left: -70rem;
 	}
+	.off_content {
+    	width: 595rem;
+    	margin-left: 50rem;
+    	margin-top: 15rem;
+	}
 	.off_bg {
 		display: none;
 	}
@@ -1623,20 +1631,22 @@ footer {
 		margin: 60rem auto 0;
 	}
 	.develop_item_head_title {
-		font-size: 26rem;
+		font-size: 20rem;
 	}
 	.develop_item_head_price_item {
 		font-size: 16rem;
 	}
-	.develop_overlay {
-		flex-direction: column;
+	.develop_item_head {
+		width: 280rem;
+    	padding: 20rem 30rem;
 	}
 	.develop_item_head_price_data {
 		font-size: 12rem;
 	}
 	.develop_item_head_text {
 		font-size: 18rem;
-		height: auto;
+		height: 135rem;
+		width: auto;
 	}
 	.develop_item_head_list_title {
 		font-size: 22rem;
@@ -1647,18 +1657,34 @@ footer {
 	}
 	.develop_item_mid_title {
 		font-size: 24rem;
+		width: auto;
 	}
 	.develop_item_mid_list {
 		font-size: 16rem;
 	}
 	.develop_item_mid {
-		min-height: auto;
+		width: 300rem;
+	    padding: 20rem;
+	    min-height: 380rem;
 	}
 	.develop_item_bot_list {
 		font-size: 16rem;
 	}
+	.develop_item_bot {
+		padding: 30rem 10rem;
+    	width: 320rem;
+    	min-height: 393rem;
+    	flex-direction: column;
+	}
+	.develop_item_img {
+		width: 100%;
+	}
+	.develop_item_head_price {
+		top: 100rem;
+	}
 	.develop_item_bot_item_title {
 		font-size: 24rem;
+		margin-left: 10rem;
 	}
 	.develop_item_bot_item_title img {
     	margin-right: 9rem;
@@ -1666,6 +1692,7 @@ footer {
 	}
 	.develop_item_bot_item_bg {
 		top: 22rem;
+		display: none;
 	}
 	.help_text {
 		font-size: 24rem;
@@ -1848,7 +1875,7 @@ footer {
 	    overflow: auto;
 	}
 	.rules_content ol {
-		padding-left: 40rem;
+		padding-left: 70rem;
 	}
 	.work_item_line_tab {
 		display: block;
@@ -1959,7 +1986,8 @@ footer {
     	width: 120rem;
 	} 
 	.footer_email {
-		font-size: 16rem;
+	    font-size: 16rem;
+	    margin-bottom: 10rem;
 	}
 	.footer_cpoyright_img {
     	width: 80rem;
@@ -1973,7 +2001,9 @@ footer {
     	margin-right: 6rem;
 	}
 	.footer_mob_overlay {
-		width: 370rem;
+	    width: auto;
+	    flex-direction: column-reverse;
+	    align-items: center;
 	}
 	.menu_close {
     	position: absolute;
@@ -2180,6 +2210,7 @@ footer {
 	}
 	.develop_overlay {
 		margin-top: 0;
+		flex-direction: column;
 	}
 	.develop_item_head_list_item {
 		margin-top: 10rem;
@@ -2236,6 +2267,7 @@ footer {
 		padding: 15rem;
 		border-radius: 15rem;
 		margin-top: 10rem;
+		min-height: auto;
 	}
 	.develop_item_bot_list {
 		font-size: 14rem;
@@ -2267,6 +2299,7 @@ footer {
 		padding: 0;
 		width: auto;
 		margin-top: 0;
+		min-height: auto;
 	}
 	.develop_item_bot_item {
 		background: #232323;
@@ -2736,6 +2769,7 @@ footer {
 	}
 	.footer_email {
 		font-size: 10rem;
+		margin-bottom: 0;
 	}
 	.footer_email img {
     	width: 10rem;
