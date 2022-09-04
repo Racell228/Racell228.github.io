@@ -1631,7 +1631,7 @@ footer {
 		margin: 60rem auto 0;
 	}
 	.develop_item_head_title {
-		font-size: 20rem;
+		font-size: 32rem;
 	}
 	.develop_item_head_price_item {
 		font-size: 16rem;
@@ -1671,16 +1671,27 @@ footer {
 		font-size: 16rem;
 	}
 	.develop_item_bot {
-		padding: 30rem 10rem;
-    	width: 320rem;
-    	min-height: 393rem;
     	flex-direction: column;
+    	background-color: transparent;
+		padding: 0;
+		margin-top: 0;
+		width: 300rem;
+		min-height: auto;
+		margin-top: 25rem;
+	}
+	.develop_item_bot_item {
+		padding: 20rem;
+	    background: #232323;
+	    box-shadow: inset 2px 4px 4px rgb(0 0 0 / 25%);
+	    border-radius: 30px;
+	    width: 100%;
+	    margin-top: 15rem;
 	}
 	.develop_item_img {
 		width: 100%;
 	}
 	.develop_item_head_price {
-		top: 100rem;
+		top: 170rem;
 	}
 	.develop_item_bot_item_title {
 		font-size: 24rem;
