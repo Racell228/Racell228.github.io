@@ -10,6 +10,8 @@ body {
 	font-family: 'Nunito';
 	background: #000000;
 	color: #fff;
+	touch-action: none;
+	-ms-touch-action: none;
 }
 :active, :hover, :focus {
     outline: 0;
