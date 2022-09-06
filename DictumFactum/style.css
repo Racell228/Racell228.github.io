@@ -2862,4 +2862,7 @@ footer {
 	.jq-selectbox select, .jq-select-multiple select {
 		display: block;
 	}
+	.menu_overlay {
+		height: calc(100vh + 50rem);
+	}
 }
