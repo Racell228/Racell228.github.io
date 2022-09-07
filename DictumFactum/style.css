@@ -2865,4 +2865,7 @@ footer {
 	.menu_overlay {
 		height: calc(100vh + 50rem);
 	}
+	.rules_content ol {
+		padding-bottom: 70rem;
+	}
 }
