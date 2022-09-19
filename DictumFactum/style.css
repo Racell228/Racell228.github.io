@@ -1886,6 +1886,7 @@ footer {
 	.rules_content {
 	    width: 700rem;
 	    overflow: auto;
+	    margin: 50rem 0;
 	}
 	.rules_content ol {
 		padding-left: 70rem;
@@ -2281,6 +2282,7 @@ footer {
 		border-radius: 15rem;
 		margin-top: 10rem;
 		min-height: auto;
+		box-shadow: inset 0px 1.83439px 1.83439px rgb(0 0 0 / 25%);
 	}
 	.develop_item_bot_list {
 		font-size: 14rem;
@@ -2843,6 +2845,7 @@ footer {
 	.rules_content {
 		width: 300rem;
 		margin-top: 70rem;
+		margin-bottom: 50rem;
 	}
 	.rules_content p {
 		font-size: 16rem;
