@@ -38,8 +38,11 @@
 //      if (imagePos > topOfWindow) {
 //       year1();
 //       imagePos = 3;
+//       topOfWindow = '2';
 //      }
 //      else {}
+//       imagePos = 3;
+//       topOfWindow = '2';
 //   });
 // });
 
@@ -56,12 +59,14 @@
 //   $('#2018').each(function(){
 //     var imagePos = $(this).offset().top;
 //      var topOfWindow = $(window).scrollTop();
-//      isResizeble = false;
-//      if ((imagePos > topOfWindow) && isResizeble === false) {
+//      if (imagePos > topOfWindow) {
 //       year2();
-//       isResizeble = true;
+//       imagePos = 3;
+//       topOfWindow = '3';
 //      }
 //      else {}
+//       imagePos = 3;
+//       topOfWindow = '2';
 //   });
 // });
 

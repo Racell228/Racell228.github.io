@@ -4,12 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"> 
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
-	<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
 </head>
-<body>
+<body >
 	<header>
 		<div class="container">
 			<div class="header_overlay">
@@ -38,6 +43,7 @@
 				</div>
 				<a href="#" class="header_contact btn">Contact us</a>
 				<a href="#" class="header_reg button">Try now!</a>
+				<a href="#" class="burger"><img src="img/burger.svg"></a>
 			</div>
 		</div>
 	</header>
@@ -200,7 +206,31 @@
 			<a href="#" class="button hiring_modal_btn">Apply</a>
 		</div>
 	</div>
-
+	
+	<div class="menu">
+		<div class="menu_overlay"></div>
+		<a href="#" class="menu_close"><img src="img/close.svg"></a>
+		<div class="menu_content">
+			<a href="#" class="menu_content_link">Home</a>
+			<a href="#" class="menu_content_link">Solutions</a>
+			<a href="#" class="menu_content_link child">SMS marketing</a>
+			<a href="#" class="menu_content_link child">SMPP platform</a>
+			<a href="#" class="menu_content_link">Pricing</a>
+			<a href="#" class="menu_content_link">About us</a>
+			<a href="#" class="menu_content_link">News</a>
+			<a href="#" class="menu_content_link">Blog</a>
+			<a href="#" class="menu_content_link">Hiring</a>
+			<div class="header_lang header_lang_mob">
+				<a href="#" class="header_lang_current">
+					<img src="img/dropdown_arrow.svg" class="arrow">
+					<span class="header_lang_current_name">Eng</span>
+					<img src="img/lang.svg" class="header_lang_current_icon">
+				</a>
+			</div>
+			<a href="#" class="header_contact header_contact_mob btn">Contact us</a>
+		</div>
+		
+	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.formstyler.min.js"></script>
