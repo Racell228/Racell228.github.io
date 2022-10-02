@@ -2891,7 +2891,7 @@ footer {
 		margin: 736rem 30rem 0;
 	}
 }
-@media screen and (max-width: 376px)  {
+@media screen and (max-width: 480px)  {
 	html {
 	    font-size: 0.26654vw;
 	}
