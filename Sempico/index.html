@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css"> 
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	
 </head>
-<body>
+<body >
 	<header>
 		<div class="container">
 			<div class="header_overlay">
@@ -36,6 +39,7 @@
 				</div>
 				<a href="#" class="header_contact btn">Contact us</a>
 				<a href="#" class="header_reg button">Try now!</a>
+				<a href="#" class="burger"><img src="img/burger.svg"></a>
 			</div>
 		</div>
 	</header>
@@ -51,7 +55,10 @@
 					</div>
 				</div>
 				<div class="hero_anim">
-					<img src="img/hero_anim_bg.png" class="hero_anim_bg">
+					<div class="hero_anim_bg">
+						<img src="img/hero_anim_bg.png" class="hero_anim_bg_item">
+					</div>
+					
 					<img src="img/hero_anim_image.png" class="hero_anim_image">
 					<div class="hero_anim_content">
 						<p class="hero_anim_text green"><img src="img/hero_anim_icon1.svg" class="hero_anim_icon"><span>Jojy, it is a special day for us, our 10th birthday. Thanks for being with us! Text back BIRTHDAY10 and take a discount for renting.</span></p>
@@ -85,36 +92,592 @@
 					<p class="steps_item_number">1</p>
 					<p class="steps_item_text">Sign up on our platform</p>
 					<img src="img/step1.svg" class="steps_item_img1">
+					<img src="img/step1_mob.svg" class="steps_item_img1_mob steps_item_img_mob">
 				</div>
 				<div class="steps_item">
 					<p class="steps_item_number">2</p>
 					<p class="steps_item_text">Choose the type of suitable Product</p>
+					<img src="img/step2.svg" class="steps_item_img2">
+					<img src="img/step2_mob.svg" class="steps_item_img2_mob steps_item_img_mob">
 				</div>
 				<div class="steps_item">
 					<p class="steps_item_number">3</p>
 					<p class="steps_item_text">Top up balance</p>
+					<img src="img/step3.svg" class="steps_item_img3">
+					<img src="img/step3_mob.svg" class="steps_item_img3_mob steps_item_img_mob">
 				</div>
 				<div class="steps_item">
 					<p class="steps_item_number">Done!</p>
 					<p class="steps_item_text">Send SMS / HLR</p>
+					<img src="img/step4.svg" class="steps_item_img4">
+					<img src="img/step4_mob.svg" class="steps_item_img4_mob steps_item_img_mob">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features">
+		<div class="container">
+			<img src="img/features_bg.png" class="features_bg">
+			<h2 class="features_title">Features</h2>
+			<p class="features_text">Our functionality allows you to increase business indicators using next</p>
+			<div class="features_overlay">
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon1.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Bulk SMS</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon2.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Bulk HLR lookup</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon3.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Bulk MNP lookup</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon4.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Incoming SMS mailing</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon5.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">High performing SMPP system</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon6.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Simply integration</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon7.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Product types</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+				<div class="features_item">
+					<div class="features_item_icon_wrapper">
+						<img src="img/features_item_icon8.svg" class="features_item_icon">
+					</div>
+					<h3 class="features_item_title">Sempico Solutions team</h3>
+					<div class="features_item_text_wrapper">
+						<p class="features_item_text">Our online platform allows you to send bulk and single SMS. Single SMS have higher priority for sending and they are sent faster.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="advantages" id="advantages">
+		<h2 class="advantages_title">Why Sempico?</h2>
+		<div class="advantages_scroll">
+			
+			<div class="container">
+
+				<div class="advantages_overlay" >
+
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">Easy to use</h3>
+						<p class="advantages_item_text">Easy to send SMS from Web or SMPP v3.4 Easy access to REST API from Java, PHP, Python, Go, Nodejs, etc.</p>
+					</div>
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">Security</h3>
+						<p class="advantages_item_text">All data in the user’s account is encrypted and protected by web certificates.</p>
+					</div>
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">SMS / (HLR/MNP) lookup</h3>
+						<p class="advantages_item_text">Wide coverage – 200+ countries, direct agreements with operators, attractive prices</p>
+					</div>
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">Payments</h3>
+						<p class="advantages_item_text">We are flexible in payments and can accept different currencies.</p>
+					</div>
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">Stable & Reliable</h3>
+						<p class="advantages_item_text">For 12 years of work in the telecom sector, we, as a bulk SMS provider, were able to build a stable and reliable SMS platform for you.</p>
+					</div>
+					<div class="advantages_item">
+						<h3 class="advantages_item_title">Support 24/7/365</h3>
+						<p class="advantages_item_text">Our support service will help you with technical and financial issues at any time</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="interface" id="interface">
+		<div class="container">
+			<h2 class="interface_title">User friendly interface is easy to control from any device</h2>
+			<p class="interface_text">In the web interface you can send single and bulk SMS / HLR lookup, view and export reports, top up your balance online and schedule future campaign. And using the mobile version of our mass texting service, you can control business processes from anywhere in the world.</p>
+			<img src="img/interface_img.svg" class="interface_img">
+			<img src="img/interface_bg.png" class="interface_bg">
+		</div>
+	</section>
+	<section class="api">
+		<div class="container">
+			<div class="api_overlay">
+				<div class="api_content">
+					<h2 class="api_title">Easily implemented to every type of application</h2>
+					<p class="api_text">Мы легко интегрируемся в любой тип приложений! С помощью наших API автоматизировать рассылки еще проще! Мы предоставляем на выбор два типа API: </p>
+					<p class="api_text"><strong>GET API</strong> — быстрая интеграция с любым приложением; <strong>REST API</strong> — более сложный протокол, который лучше использовать для массовых рассылок и симуляции работы веб-кабинета. Подробная API документация позволит совершать СМС рассылки любого типа за считанные секунды и меньше.</p>
+					<div class="api_content_actions">
+						<a href="#" class="btn api_content_contact api_content_actions_item">Contact us</a>
+						<a href="#" class="btn api_content_doc api_content_actions_item">See documentation</a>
+					</div>
+				</div>
+				<div class="api_code_wrapper">
+					<div class="api_code_cat">
+						<a href="#GET" class="api_code_cat_item active">GET API</a>
+						<a href="#REST" class="api_code_cat_item">REST API</a>
+					</div>
+					<div class="api_code">
+						<div class="api_code_nav" id="GET">
+							<a href="#CURL" class="api_code_nav_item active">CURL</a>
+							<a href="#PHP" class="api_code_nav_item">PHP</a>
+							<a href="#Go" class="api_code_nav_item">Go</a>
+							<a href="#jQuery" class="api_code_nav_item">JS (jQuery)</a>
+							<a href="#Python" class="api_code_nav_item">Python</a>
+							<a href="#Ruby" class="api_code_nav_item">Ruby</a>
+						</div>
+						<div class="api_code_nav" id="REST">
+							<a href="#CURL2" class="api_code_nav_item active">CURL</a>
+							<a href="#PHP2" class="api_code_nav_item">PHP</a>
+							<a href="#Go2" class="api_code_nav_item">Go</a>
+							<a href="#jQuery2" class="api_code_nav_item">JS (jQuery)</a>
+							<a href="#Python2" class="api_code_nav_item">Python</a>
+							<a href="#Ruby2" class="api_code_nav_item">Ruby</a>
+						</div>
+						<div class="api_code_content">
+							<div class="api_code_content_item" id="CURL">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="PHP">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Go">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="jQuery">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Python">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Ruby">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="CURL2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="PHP2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Go2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="jQuery2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Python2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+							<div class="api_code_content_item" id="Ruby2">
+<pre class="hljs" style="display: block; overflow: auto; padding: 0.5em;  color: rgb(248, 248, 242);">var settings = {
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"url"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone =441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"method"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">GET</span>"</span>,
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"timeout"</span>: <span class="hljs-number">0</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"headers"</span>: {
+ <span class="hljs-string" style="color: rgb(241, 250, 140);">"Content-Type"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"application/json"</span>,
+<span class="hljs-string" style="color: rgb(241, 250, 140);">"charset"</span>: <span class="hljs-string" style="color: rgb(241, 250, 140);">"UTF-8"</span>
+ },
+};
+
+$.ajax(settings).done(function (response) {
+console.log(response);
+});</pre>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="love">
+		<div class="container">
+			<h2 class="love_title">Features you will love</h2>
+			<p class="love_text">Each account in our system can apply specific settings, such as:</p>
+			<div class="love_overlay">
+				<p class="love_item">priority for sending</p>
+				<p class="love_item">text autocorrection</p>
+				<p class="love_item">senderID autocorrection</p>
+				<p class="love_item">different Product type (for traffic type)</p>
+				<p class="love_item">traffic moderation</p>
+				<p class="love_item">dispatch planning</p>
+				<p class="love_item">dispatch distribution</p>
+				<p class="love_item">Happy Birthday congrats</p>
+				<p class="love_item">etc.</p>
+			</div>
+		</div>
+	</section>
+	<section class="extra">
+		<div class="container">
+			<div class="extra_overlay">
+				<div class="extra_content">
+					<h2 class="extra_title">Extra features</h2>
+					<p>Additional functionality of Sempico Solutions mass texting service, that will facilitate the process of sending SMS and make it even more convenient.</p>
+					<h5>Opt in + Opt out</h5>
+					<p>Your customers will be able to subscribe and unsubscribe from your mailing list via SMS at any time.</p>
+					<h5>Link shortening service+ Click tracking system</h5>
+					<p>Reduce the number of characters in SMS and track the effectiveness of marketing campaigns: the number of clicks, conversions, sources, etc.</p>
+					<h5>Concierge service</h5>
+					<p>Free yourself some time, we’ll do the mailing for you.
+					<span>What is included? <img src="img/plus.svg" class="plus"></span> </p>
+				</div>
+				<img src="img/extra_img.svg" class="extra_img">
+			</div>
+		</div>
+	</section>
+	<section class="pricing">
+		<div class="container">
+			<h2 class="pricing_title">Pricing</h2>
+			<p class="pricing_text">Our best deals on SMS prices for you at the moment. Increase the volume and achieve the best price with profitable Sempico Solutions mas SMS service.</p>
+			<div class="pricing_overlay">
+				<div class="pricing_item">
+					<div class="priing_item_img_wrapper">
+						<img src="img/priing_item_img.svg">
+					</div>
+					<p class="pricing_item_name">Country</p>
+					<p class="pricing_item_price">400 $</p>
+					<a href="#" class="pricing_item_btn button">Get started now</a>
+				</div>
+				<div class="pricing_item">
+					<div class="priing_item_img_wrapper">
+						<img src="img/priing_item_img.svg">
+					</div>
+					<p class="pricing_item_name">Country</p>
+					<p class="pricing_item_price">400 $</p>
+					<a href="#" class="pricing_item_btn button">Get started now</a>
+				</div>
+				<div class="pricing_item">
+					<div class="priing_item_img_wrapper">
+						<img src="img/priing_item_img.svg">
+					</div>
+					<p class="pricing_item_name">Country</p>
+					<p class="pricing_item_price">400 $</p>
+					<a href="#" class="pricing_item_btn button">Get started now</a>
+				</div>
+			</div>
+			<a href="#" class="pricing_btn btn">View all prices</a>
+		</div>
+	</section>
+	<section class="faq">
+		<div class="container">
+			<div class="faq_overlay">
+				<div class="faq_img">
+					<h2 class="faq_img_title">Frequently Asked Questions</h2>
+					<p class="faq_img_text">As a bulk SMS provider, we are constantly faced with a lot of questions and therefore decided to immediately answer the most common of them.</p>
+					<img src="img/faq_img.svg" class="faq_img_item">
+					<img src="img/faq_bg.png" class="faq_bg">
+				</div>
+				<div class="faq_wrapper">
+					<div class="faq_item">
+						<p class="faq_item_title">What difference between Product types in your app?</p>
+						<div class="faq_item_answer">
+							<p>Only your manager can issue a personal price for a destination. To contact managers, you can use the contact information in the Contacts block.</p>
+						</div>
+					</div>
+					<div class="faq_item">
+						<p class="faq_item_title">What needs to be done to get an individual SMS price for the direction I need?</p>
+						<div class="faq_item_answer">
+							<p>Only your manager can issue a personal price for a destination. To contact managers, you can use the contact information in the Contacts block.</p>
+						</div>
+					</div>
+					<div class="faq_item">
+						<p class="faq_item_title">How fast is SMS delivered?</p>
+						<div class="faq_item_answer">
+							<p>Only your manager can issue a personal price for a destination. To contact managers, you can use the contact information in the Contacts block.</p>
+						</div>
+					</div>
+					<div class="faq_item">
+						<p class="faq_item_title">My text does not fit in one part of SMS, can you make more characters for me in one part of SMS?</p>
+						<div class="faq_item_answer">
+							<p>Only your manager can issue a personal price for a destination. To contact managers, you can use the contact information in the Contacts block.</p>
+						</div>
+					</div>
+					<div class="faq_item">
+						<p class="faq_item_title">How much do I need to replenish for mailing?</p>
+						<div class="faq_item_answer">
+							<p>Only your manager can issue a personal price for a destination. To contact managers, you can use the contact information in the Contacts block.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news">
+		<div class="container">
+			<h2 class="news_title">Latest News</h2>
+			<p class="news_text">All the most interesting and useful in SMS business and other telecom news from Sempico SMS service team</p>
+			<div class="news_overlay">
+				<a href="#" class="news_item">
+					<div class="news_item_img" style="background-image: url(img/news_item_img.svg);"></div>
+					<p class="news_item_title">News / Blog post text</p>
+				</a>
+				<a href="#" class="news_item">
+					<div class="news_item_img" style="background-image: url(img/news_item_img.svg);"></div>
+					<p class="news_item_title">News / Blog post text</p>
+				</a>
+				<a href="#" class="news_item">
+					<div class="news_item_img" style="background-image: url(img/news_item_img.svg);"></div>
+					<p class="news_item_title">News / Blog post text</p>
+				</a>
+			</div>
+			<a href="#" class="news_btn btn">Read more</a>
+		</div>
+	</section>
+	<section class="wait">
+		<div class="container">
+			<h2 class="wait_title">What are you waiting for?</h2>
+			<p class="wait_text">To start sending SMS or HLR, you need to register and use the test balance that our mass texting service provides for free to conduct the first tests. Our experts will help you if something is not clear to you. The only thing left is to create an account.</p>
+			<a href="#" class="button wait_btn">Create account!</a>
+			<video src="img/wait_video.mp4" class="wait_video" autoplay muted loop></video>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_info">
+					<a href="#" class="footer_logo"><img src="img/logo.svg"></a>
+					<p class="footer_info_text">SEMPICO SOLUTION GROUP LTD Unit 3041, Second Floor, 6 Market Place, London, Fitzrovia, United Kingdom, W1W 8AF</p>
+					<a href="#" class="footer_info_email">sales@sempico.solutions</a>
+					<a href="#" class="footer_info_phone">+44 (131) 608-09-06</a>
+				</div>
+				<div class="footer_links">
+					<p class="footer_links_title">Solutions</p>
+					<a href="#" class="footer_links_item">SMS</a>
+					<a href="#" class="footer_links_item">HLR lookup</a>
+					<a href="#" class="footer_links_item">MNP lookup</a>
+					<a href="#" class="footer_links_item">SMPP platform</a>
+					<a href="#" class="footer_links_item">Pricing</a>
+				</div>
+				<div class="footer_links">
+					<p class="footer_links_title">Resources</p>
+					<a href="#" class="footer_links_item">Blog</a>
+					<a href="#" class="footer_links_item">News</a>
+					<a href="#" class="footer_links_item">Privacy policy</a>
+					<a href="#" class="footer_links_item">Terms of use</a>
+				</div>
+				<div class="footer_links">
+					<p class="footer_links_title">Company</p>
+					<a href="#" class="footer_links_item">About us</a>
+					<a href="#" class="footer_links_item">Hiring</a>
+					<a href="#" class="footer_links_item">Contact us</a>
+				</div>
+				<div class="footer_actions">
+					<a href="#" class="footer_actions_manager btn">Talk to a manager</a>
+					<a href="#" class="footer_actions_try button">Try it now</a>
+					<div class="footer_social">
+						<a href="#" class="footer_social_item"><img src="img/social1.svg"></a>
+						<a href="#" class="footer_social_item"><img src="img/social2.svg"></a>
+						<a href="#" class="footer_social_item"><img src="img/social3.svg"></a>
+						<a href="#" class="footer_social_item"><img src="img/social4.svg"></a>
+					</div>
+				</div>
+			</div>
+			<p class="footer_copyright">Copyrights</p>
+		</div>
+	</footer>
 
 
-
-
-
-
-
-
-
-
+	<div class="menu">
+		<div class="menu_overlay"></div>
+		<a href="#" class="menu_close"><img src="img/close.svg"></a>
+		<div class="menu_content">
+			<a href="#" class="menu_content_link">Home</a>
+			<a href="#" class="menu_content_link">Solutions</a>
+			<a href="#" class="menu_content_link child">SMS marketing</a>
+			<a href="#" class="menu_content_link child">SMPP platform</a>
+			<a href="#" class="menu_content_link">Pricing</a>
+			<a href="#" class="menu_content_link">About us</a>
+			<a href="#" class="menu_content_link">News</a>
+			<a href="#" class="menu_content_link">Blog</a>
+			<a href="#" class="menu_content_link">Hiring</a>
+			<div class="header_lang header_lang_mob">
+				<a href="#" class="header_lang_current">
+					<img src="img/dropdown_arrow.svg" class="arrow">
+					<span class="header_lang_current_name">Eng</span>
+					<img src="img/lang.svg" class="header_lang_current_icon">
+				</a>
+			</div>
+			<a href="#" class="header_contact header_contact_mob btn">Contact us</a>
+		</div>
+		
+	</div>
 
 
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js'></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
