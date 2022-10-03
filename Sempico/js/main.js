@@ -199,11 +199,11 @@ $(window).scroll(function() {
     var the_top = $(document).scrollTop();
     cPos = $('.steps').offset().top;
     if (the_top > cPos) {
-        all();
+        steps();
     }
     else {}
 });
-function all() {
+function steps() {
   function item1() {
     $('.steps_item:first-child').addClass('active');
   }
