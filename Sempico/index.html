@@ -20,7 +20,7 @@
 			<div class="header_overlay">
 				<a href="#" class="header_logo"><img src="img/logo.svg"></a>
 				<div class="header_nav">
-					<a href="#" class="header_nav_item">Home</a>
+					<a href="#" class="header_nav_item current">Home</a>
 					<div class="header_nav_item parent">
 						<a href="#" class="header_nav_item">Solutions</a>
 						<div class="child">
@@ -241,6 +241,7 @@
 			<h2 class="interface_title">User friendly interface is easy to control from any device</h2>
 			<p class="interface_text">In the web interface you can send single and bulk SMS / HLR lookup, view and export reports, top up your balance online and schedule future campaign. And using the mobile version of our mass texting service, you can control business processes from anywhere in the world.</p>
 			<img src="img/interface_img.svg" class="interface_img">
+			<img src="img/interface_img_mob.svg" class="interface_img_mob">
 			<img src="img/interface_bg.png" class="interface_bg">
 		</div>
 	</section>
@@ -250,10 +251,10 @@
 				<div class="api_content">
 					<h2 class="api_title">Easily implemented to every type of application</h2>
 					<p class="api_text">Мы легко интегрируемся в любой тип приложений! С помощью наших API автоматизировать рассылки еще проще! Мы предоставляем на выбор два типа API: </p>
-					<p class="api_text"><strong>GET API</strong> — быстрая интеграция с любым приложением; <strong>REST API</strong> — более сложный протокол, который лучше использовать для массовых рассылок и симуляции работы веб-кабинета. Подробная API документация позволит совершать СМС рассылки любого типа за считанные секунды и меньше.</p>
+					<p class="api_text"><span><strong>GET API</strong> — быстрая интеграция с любым приложением;</span> <strong>REST API</strong> — более сложный протокол, который лучше использовать для массовых рассылок и симуляции работы веб-кабинета. Подробная API документация позволит совершать СМС рассылки любого типа за считанные секунды и меньше.</p>
 					<div class="api_content_actions">
-						<a href="#" class="btn api_content_contact api_content_actions_item">Contact us</a>
-						<a href="#" class="btn api_content_doc api_content_actions_item">See documentation</a>
+						<a href="#" class="btn api_content_contact api_content_actions_item">GET API documentation</a>
+						<a href="#" class="btn api_content_doc api_content_actions_item">REST API documentation</a>
 					</div>
 				</div>
 				<div class="api_code_wrapper">
@@ -262,7 +263,7 @@
 						<a href="#REST" class="api_code_cat_item">REST API</a>
 					</div>
 					<div class="api_code">
-						<div class="api_code_nav" id="GET">
+						<div class="api_code_nav active" id="GET">
 							<a href="#CURL" class="api_code_nav_item active">CURL</a>
 							<a href="#PHP" class="api_code_nav_item">PHP</a>
 							<a href="#Go" class="api_code_nav_item">Go</a>
@@ -495,9 +496,20 @@ console.log(response);
 					<p>Reduce the number of characters in SMS and track the effectiveness of marketing campaigns: the number of clicks, conversions, sources, etc.</p>
 					<h5>Concierge service</h5>
 					<p>Free yourself some time, we’ll do the mailing for you.
-					<span>What is included? <img src="img/plus.svg" class="plus"></span> </p>
+					<span class="extra_content_trigger">What is included? </p>
+					<ul class="extra_content_hide">
+						<li>mailing by Sempico managers instead of you;</li>				
+						<li>preparation of the base in the correct format and its cleaning;</li>
+						<li>balance control for mailings;</li>
+						<li>collection of campaign analytics;</li>
+						<li>etc.</li>
+					</ul>
 				</div>
-				<img src="img/extra_img.svg" class="extra_img">
+				<div class="extra_img_overlay">
+					<img src="img/extra_img1.svg" class="extra_img1">
+					<img src="img/extra_img2.svg" class="extra_img2">
+					<img src="img/extra_img3.svg" class="extra_img3">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -604,7 +616,7 @@ console.log(response);
 			<h2 class="wait_title">What are you waiting for?</h2>
 			<p class="wait_text">To start sending SMS or HLR, you need to register and use the test balance that our mass texting service provides for free to conduct the first tests. Our experts will help you if something is not clear to you. The only thing left is to create an account.</p>
 			<a href="#" class="button wait_btn">Create account!</a>
-			<video src="img/wait_video.mp4" class="wait_video" autoplay muted loop></video>
+			<video src="img/wait_video.mp4" class="wait_video" id="video" muted></video>
 		</div>
 	</section>
 	<footer>

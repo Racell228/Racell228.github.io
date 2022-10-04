@@ -1,6 +1,11 @@
 html {
-	font-size: 0.052084vw;
+	font-size: 0.065084vw;
 	overflow-x: hidden;
+}
+@media screen and (min-width: 1921px) {
+	html {
+		font-size: 0.052084vw
+	}
 }
 body {
 	margin: 0;
@@ -42,6 +47,9 @@ p {
 	font-size: 18rem;
 	line-height: 130%;
 }
+b {
+	font-weight: 500;
+}
 .container {
 	width: 1200rem;
 	margin: auto;
@@ -60,6 +68,16 @@ p {
     width: 160rem;
     left: calc(50% - 70rem);
     display: none;
+}
+.header_nav_item.current:after {
+    content: "";
+    position: absolute;
+    top: 40rem;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #39F4C4;
+    transition: 0.4s;
 }
 .header_nav_item.parent a{
 	margin-left: 0;
@@ -84,7 +102,7 @@ p {
 	display: none;
 }
 header {
-	padding: 12rem 0;
+	padding: 16rem 0;
 }
 .header_overlay {
 	display: flex;
@@ -117,6 +135,9 @@ header {
 	display: flex;
 	align-items: center;
 }
+.header_lang {
+	margin-left: 20rem;
+}
 .header_lang_current {
 	display: flex;
 	align-items: center;
@@ -137,6 +158,7 @@ header {
 	font-size: 18rem;
 	border: 3rem solid #000000;
 	border-radius: 8rem;
+	transition: 0.5s;
 	line-height: 110%;
 }
 .header_contact {
@@ -150,6 +172,7 @@ header {
 	line-height: 110%;
 	background-color: #000000;
 	color: #fff;
+	transition: 0.5s;
 }
 .header_reg {
 	padding: 7rem 35rem;
@@ -185,21 +208,37 @@ header {
    	z-index: 2;  
 }
 .hero_anim_bg {
-	position: absolute;
-    top: -180rem;
-    right: -360rem;
+	position: absolute;    
     width: 784rem;
     z-index: -1;
+    transition: 0.3s;
+    top: -260rem;
+    right: -560rem;
+    opacity: 0;
+}
+.hero_anim_bg.active {
+	transition: 0.3s;
+	top: -180rem;
+    right: -360rem;
+    opacity: 1;
 }
 .hero_anim_bg_item {
 	width: 100%;
 }
+.hero_anim_image.active {
+	top: -97rem;
+    right: -160rem;
+    transition: 0.7s;
+    opacity: 1;
+}
 .hero_anim_image {
 	position: absolute;
-    top: -97rem;
-    right: -160rem;
+    transition: 0.7s;
+    top: -150rem;
+    right: -480rem;
     width: 588rem;
     z-index: -1;
+    opacity: 0;
 }
 .green span {
 	border-radius: 16px 16px 16px 0px;
@@ -445,7 +484,7 @@ header {
 	color: #000;
 	background: rgba(255, 146, 111, 0.9);
 	border-radius: 16px;
-	margin: 736rem 170rem 0;
+	margin: 736rem 70rem 0;
 	position: relative;
 	z-index: 9999;
 }
@@ -467,13 +506,14 @@ header {
 .advantages_title.fixed {
 	position: fixed;
 	top: calc(50% - 52rem);
-
+	opacity: 1;
 }
 .advantages_title.absolute {
 	position: absolute;
 	top: auto;
 	bottom: 0;
 	transition: 0.5s;
+	opacity: 1;
 }
 .advantages {
 	margin-top: 270rem;
@@ -519,6 +559,12 @@ header {
 .api_text {
 	margin-top: 10rem;
 	font-size: 16rem;
+}
+.api_text span {
+	display: block;
+}
+.api_text strong {
+	font-weight: 500;
 }
 .api_content_actions {
 	display: flex;
@@ -577,8 +623,11 @@ header {
 	font-size: 16rem;
 }
 .api_code_nav {
-	display: flex;
+	display: none;
 	justify-content: space-between;
+}
+.api_code_nav.active {
+	display: flex;
 }
 .api_code_nav_item.active {
 	background: #453F58;
@@ -618,9 +667,6 @@ pre::-webkit-scrollbar-thumb {
 .api_code_nav {
 	display: none;
 }
-.api_code_nav:first-child {
-	display: flex;
-}
 .love_title {
 	text-align: center;
 }
@@ -642,7 +688,7 @@ pre::-webkit-scrollbar-thumb {
 	margin: 14rem auto 0;
 }
 .love_item {
-   	margin: 88rem 40rem 0 40rem;
+   	margin: 88rem 0 0 80rem;
     width: 162rem;
     position: relative;
     font-weight: 500;
@@ -665,6 +711,56 @@ pre::-webkit-scrollbar-thumb {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.extra_img_overlay {
+	position: relative;
+	z-index: 2;
+}
+.extra_img1 {
+	width: 608rem;
+}
+.extra_img2 {
+	position: absolute;
+	top: 80rem;
+    left: 170rem;
+    width: 353rem;
+	z-index: -1;
+	-webkit-animation: first 25s infinite;
+  	animation: first 25s infinite;
+  	transform: rotate(0deg);
+}
+@-webkit-keyframes first {
+  0% {
+   transform: rotate(0deg);
+  }
+  50% {
+   transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.extra_img3 {
+	position: absolute;
+	top: 20rem;
+    left: 100rem;
+    width: 477rem;
+	z-index: -1;
+	-webkit-animation: second 25s infinite;
+  	animation: second 25s infinite;
+  	transform: rotate(0deg);
+}
+@-webkit-keyframes second {
+  0% {
+   transform: rotate(0deg);
+  }
+  50% {
+   transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 .extra_content {
 	width: 480rem;
@@ -695,10 +791,23 @@ pre::-webkit-scrollbar-thumb {
 	font-weight: 500;
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 }
-.extra_content p span img {
+.extra_content p span:after {
 	width: 24rem;
-	margin-left: 5rem;
+	height: 24rem;
+	border-radius: 100%;
+	background: #39F4C4;
+	content: "+";
+	font-size: 18rem;
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10rem;
+}
+.extra_content p span.active:after {
+	content: "-";
 }
 .pricing {
 	padding: 32rem 0 128rem;
@@ -945,7 +1054,7 @@ pre::-webkit-scrollbar-thumb {
 }
 .footer_info_email {
 	font-weight: 500;
-	margin-top: 81rem;
+	margin-top: 50rem;
 }
 .footer_info_phone {
 	font-weight: 500;
@@ -1127,6 +1236,7 @@ footer {
 	border-radius: 16rem;
 	margin: 24rem 15rem 0;
 	width: 174rem;
+	transition: 0.5s;
 }
 .solution_choose_item_name {
 	margin-top: 8rem;
@@ -1291,7 +1401,6 @@ footer {
 .about_worth_overlay {
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 824rem;
 	margin: auto;
@@ -1307,10 +1416,13 @@ footer {
 	background: #FF9D7D;
 	border-radius: 16rem 16rem 0px 0px;
 	padding: 20rem;
+	font-family: 'Halvar Breit';
+	font-weight: 400;
+	font-size: 21rem;
 }
 .about_worth_item_text {
-	padding: 20rem 32rem;
-	font-size: 16rem;
+    padding: 20rem 22rem;
+    font-size: 16rem;
 }
 .about_story {
 	position: relative;
@@ -1374,6 +1486,10 @@ footer {
 }
 .about_help {
 	margin-top: 56rem;
+}
+.about_help_content {
+	width: 1000rem;
+	margin: auto;
 }
 .about_help_title {
 	font-size: 24rem;
@@ -1863,6 +1979,7 @@ footer {
 	border: 3rem solid #000000;
 	margin-top: 32rem;
 	border-radius: 8px;
+	transition: 0.5s;
 }
 .hiring_vacancies_bg {
 	position: absolute;
@@ -2159,7 +2276,7 @@ footer {
 	background: #FEFCF5;
 }
 .pricing_single_img {
-	width: 1920rem;
+
 	height: 296rem;
 	background-size: cover;
 	background-position: center;
@@ -2170,14 +2287,14 @@ footer {
 	display: block;
 	position: relative;
 	bottom: -200rem;
+	border-radius: 100%;
 	filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.1));
 }
 .pricing_single_content {
 	text-align: center;
 	width: 1136rem;
 	margin: auto;
-	padding: 118rem 0 188rem;
-	
+	padding: 118rem 0 140rem;
 }
 .pricing_price {
 	position: relative;
@@ -2258,6 +2375,39 @@ footer {
 }
 .pricing_price_contact {
 	width: 176rem;
+}
+.pricing_price_image {
+	width: 400rem;
+	position: relative;
+	top: 0rem;
+	left: 0rem;
+	-webkit-animation: pricing_price_image 5s infinite;
+  	animation: pricing_price_image 5s infinite;
+}
+@-webkit-keyframes pricing_price_image {
+  0% {
+  	top: 0rem;
+	left: 0rem;
+	transform: scale(1.0);
+  }
+  50% {
+   	top: 0rem;
+	left: 0rem;
+	transform: scale(1.05);
+  }
+  100% {
+    top: 0rem;
+	left: 0rem;
+	transform: scale(1.0);
+  }
+}
+
+.pricing_price_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1064rem;
+	margin: auto;
 }
 .burger {
 	display: none;
@@ -2374,11 +2524,216 @@ footer {
 
 
 
-
-
-
-
-
+.btn:hover {
+	border: 3rem solid #000000;
+	background-color: #000000;
+	color: #fff;
+	transition: 0.5s;
+}
+.button:hover {
+	border: 3rem solid #000000;
+	background-color: transparent;
+	color: #000;
+	transition: 0.5s;
+}
+.hiring_vacancies_item:hover {
+	background-color: #000;
+	color: #fff;
+	transition: 0.5s;
+}
+.solution_choose_item:hover {
+	transition: 0.5s;
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 1) 100%);
+}
+.sol_head {
+	position: relative;
+	padding-top: 72rem;
+}
+.sol_head_img {
+	width: 206rem;
+	margin: auto;
+	display: block;
+}
+.sol_head_title {
+	margin: 8rem 0 16rem;
+	text-align: center;
+}
+.sol_head_text {
+	text-align: center;
+	width: 800rem;
+	margin: auto;
+}
+.sol_head_btn {
+	width: max-content;
+	padding: 11rem 30rem;
+	margin: 57rem auto -20rem;
+}
+.sol_bg {
+    position: absolute;
+    top: 0;
+    left: -360rem;
+    width: 1920rem;
+    z-index: -1;
+}
+.sol_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30rem;
+}
+.sol_content_left {
+	width: 664rem;
+}
+.sol_content_title {
+	font-size: 28rem;
+	margin-bottom: 8rem;
+}
+.sol_content_text {
+	font-size: 16rem;
+}
+.sol_content_img {
+	width: 320rem;
+}
+.sol_faq {
+	position: relative;
+	margin-top: 34rem;
+	z-index: 2;
+}
+.sol_faq_overlay {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.sol_faq_content {
+	width: 472rem;
+}
+.sol_faq_title {
+	font-size: 26rem;
+	margin-bottom: 8rem;
+}
+.sol_faq_ques {
+	padding: 32rem 24rem;
+	background: #FEFCF5;
+	width: 536rem;
+	border-radius: 16px;
+}
+.sol_faq_ques_text {
+	font-size: 16rem;
+	margin-bottom: 32rem;
+}
+.sol_faq_ques_bottext {
+	margin-top: 12rem;
+	font-size: 16rem;
+}
+.sol_faq_bg {
+	position: absolute;
+    top: -100rem;
+    left: 0;
+    width: 1920rem;
+    z-index: -1;
+}
+.sol_faq_text {
+	font-size: 16rem;
+}
+.sol_start {
+	margin-top: 56rem;
+}
+.sol_start_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1124rem;
+    margin: auto;
+}
+.sol_start_content {
+	width: 640rem;
+}
+.sol_start_title {
+	font-size: 26rem;
+	margin-bottom: 8rem;
+}
+.sol_start_text {
+	font-size: 16rem;
+}
+.sol_start_item {
+	margin-top: 40rem;
+}
+.sol_start_item_title {
+	font-size: 21rem;
+	margin-bottom: 8rem;
+	position: relative;
+	font-weight: 500;
+}
+.sol_start_item_title:before {
+	content: "";
+	width: 24rem;
+	height: 24rem;
+	position: absolute;
+	left: -12rem;
+	top: -8rem;
+	background: #39F4C4;
+	border-radius: 100%;
+	z-index: -1;
+}
+.sol_start_item_text {
+	font-size: 16rem;
+}
+.sol_start_img {
+	width: 224rem;
+}
+.sol_benefits {
+	margin-top: 164rem;
+	position: relative;
+	padding-bottom: 100rem;
+}
+.sol_benefits_title {
+	text-align: center;
+}
+.sol_benefits_text {
+	text-align: center;
+	width: 704rem;
+	margin: 8rem auto 0;
+	font-size: 16rem;
+}
+.sol_benefits_overlay {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 16rem;
+}
+.sol_benefits_item {
+	width: 520rem;
+	margin-top: 32rem;
+}
+.sol_benefits_item_title {
+	font-size: 24rem;
+	font-weight: 400;
+	margin-bottom: 8rem;
+}
+.sol_benefits_bottext {
+	text-align: center;
+	margin: 82rem auto 0;
+	width: 704rem;
+}
+.sol_benefits_bg {
+    position: absolute;
+    bottom: 0;
+    left: -200rem;
+    z-index: -1;
+    width: 2290rem;
+}
+.sol_faq_bg_mob {
+	display: none;
+}
+.extra_content_hide {
+	font-size: 18rem;
+	padding-left: 40rem;
+	display: none;
+}
+.interface_img_mob {
+	display: none;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
@@ -2397,13 +2752,17 @@ footer {
 		width: 290rem;
 	}
 	.hero_anim_image {
-	    top: -19rem;
-	    right: -50rem;
 	    width: 508rem;
 	}
-	.hero_anim_bg {
-	    top: -1rem;
+	.hero_anim_image.active {
+		top: -19rem;
+	    right: -50rem;
+	}
+	.hero_anim_bg.active {
+		top: -1rem;
 	    right: -70rem;
+	}
+	.hero_anim_bg {
 	    width: 564rem;
 	}
 	.hero {
@@ -2507,6 +2866,7 @@ footer {
 	}
 	.love_item {
 		width: 112rem;
+		margin: 80rem 40rem 0 40rem;
 	}
 	.love_overlay {
 		width: auto;
@@ -2793,7 +3153,8 @@ footer {
 		width: auto;
 	}
 	.pricing_price_bg {
-		left: -480rem;
+	    left: -1200rem;
+	    width: 3120rem;
 	}
 	.solution_hero_overlay {
 		flex-direction: column;
@@ -2890,6 +3251,67 @@ footer {
 	.advantages_item {
 		margin: 736rem 30rem 0;
 	}
+	.sol_head_text {
+		width: 630rem;
+	}
+	.sol_bg {
+		left: -530rem;
+	}
+	.sol_head_btn {
+		margin: 27rem auto -20rem;
+	}
+	.sol_content {
+		margin-top: 100rem;
+	}
+	.sol_faq {
+		margin-top: 154rem;
+	}
+	.sol_faq_ques {
+		width: 300rem;
+	}
+	.sol_faq_content {
+    	width: 342rem;
+	}
+	.sol_faq_bg {
+	    top: -80rem;
+	    left: -510rem;
+	}
+	.sol_faq_ques_bottext {
+		margin-top: 0;
+	}
+	.sol_start_overlay {
+		flex-direction: column;
+		width: auto;
+	}
+	.sol_start_img {
+		margin-top: 60rem;
+	}
+	.pricing_price_bg {
+	    left: -1020rem;
+	    width: 2850rem;
+	}
+	.pricing_price_wrapper {
+		flex-direction: column;
+		width: auto;
+		align-items: flex-start;
+	}
+	.pricing_price_image {
+    	width: 270rem;
+    	margin: 60rem auto 0; 
+	}
+	.extra_img1 {
+		width: 348rem;
+	}
+	.extra_img2 {
+		top: 70rem;
+	    left: 90rem;
+	    width: 213rem;
+	}
+	.extra_img3 {
+	    top: 20rem;
+	    left: 50rem;
+    	width: 297rem;
+	}
 }
 @media screen and (max-width: 480px)  {
 	html {
@@ -2963,9 +3385,11 @@ footer {
 	.hero_anim {
 		padding: 55rem 0 60rem;
 	}
-	.hero_anim_image {
-	    top: 30rem;
+	.hero_anim_image.active {
+		top: 30rem;
 	    right: -79rem;
+	}
+	.hero_anim_image {
 	    width: 349rem;
 	}
 	.hero_anim_bg_item {
@@ -2973,10 +3397,13 @@ footer {
 	    position: relative;
 	    left: 270rem;
 	}
-	.hero_anim_bg {
+	.hero_anim_bg.active {
 		top: auto;
 	    bottom: 30rem;
 	    right: -104rem;
+	}
+	.hero_anim_bg {
+		
 	    overflow: hidden;
 	    transform: rotate(90deg);
 	}
@@ -3017,7 +3444,12 @@ footer {
     	margin-top: 5rem;
 	}
 	.interface_img {
-    	width: 355rem;
+    	
+    	display: none;
+	}
+	.interface_img_mob {
+		display: block;
+		width: 355rem;
     	margin-top: 50rem;
 	}
 	.interface_bg {
@@ -3291,10 +3723,15 @@ footer {
 	    z-index: -1;
 	}
 	.steps_item {
+		left: 0;
+		bottom: -40rem;
 		height: auto;
 		padding-left: 0;
 		width: 100%;
 		margin-top: 84rem;
+	}
+	.steps_item.active {
+		bottom: 0rem;
 	}
 	.steps {
     	margin-top: 90rem;
@@ -3374,7 +3811,7 @@ footer {
 		font-size: 18rem;
 	}
 	.about_worth_item {
-		margin-top: 20rem;
+		margin: 20rem auto 0;
 	}
 	.about_worth_item_title {
 		font-size: 21rem;
@@ -3422,6 +3859,9 @@ footer {
     	top: 0rem;
     	left: -870rem;
     	width: 2140rem;
+	}
+	.about_help_content {
+		width: auto;
 	}
 	.about_help_title {
 		font-size: 18rem;
@@ -3785,7 +4225,7 @@ footer {
     	bottom: -143rem;
 	}
 	.pricing_single_content {
-		padding: 84rem 0 188rem;
+		padding: 84rem 0;
 	}
 	.pricing_single_title {
 		margin-bottom: 5rem;
@@ -4056,6 +4496,7 @@ footer {
 	}
 	.header_lang_mob {
 		display: flex;
+		margin-left: 0;
 	}
 	.header_contact_mob {
 		display: block;
@@ -4127,5 +4568,156 @@ footer {
 	}
 	.advantages_title {
 		font-size: 32rem;
+		opacity: 0;
+	}
+	.sol_head_img {
+		width: 145rem;
+	}
+	.sol_head_title {
+		font-size: 24rem;
+		margin-top: 0;
+	}
+	.sol_head_text {
+		width: auto;
+	}
+	.sol_head_btn {
+		margin: 42rem auto 0;
+	}
+	.sol_bg {
+    	width: 575rem;
+    	left: -130rem;
+	}
+	.sol_content {
+		margin-top: 75rem;
+		flex-direction: column;
+	}
+	.sol_content_title {
+		font-size: 21rem;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+	.sol_content_left {
+		width: auto;
+	}
+	.sol_content_text {
+		font-size: 14rem;
+		text-align: center;
+	}
+	.sol_content_img {
+    	margin-top: 33rem;
+    	width: 225rem;
+	} 
+	.sol_faq_bg_mob {
+		display: block;
+		position: absolute;
+		z-index: -1;
+		width: 375rem;
+		top: -100rem;
+		left: 0;
+	}
+	.sol_faq_bg {
+		display: none;
+	}
+	.sol_faq_overlay {
+		flex-direction: column;
+	}
+	.sol_faq_content {
+		width: auto;
+		text-align: center;
+	}
+	.sol_faq_title {
+		font-size: 18rem;
+		margin-bottom: 5rem;
+	}
+	.sol_faq_text {
+		font-size: 14rem;
+	}
+	.sol_faq_ques {
+		padding: 20rem 15rem;
+		width: 305rem;
+		margin: 25rem auto 0;
+	}
+	.sol_faq_ques_text {
+    	font-size: 14rem;
+    	margin-bottom: 20rem;
+	}
+	.sol_faq_ques_bottext {
+		font-size: 14rem;
+	}
+	.sol_faq {
+    	margin-top: 70rem;
+	}
+	.sol_start {
+    	margin-top: 50rem;
+	}
+	.sol_start_title {
+		font-size: 21rem;
+		margin-bottom: 5rem;
+	}
+	.sol_start_content {
+		width: auto;
+		text-align: center;
+	}
+	.sol_start_text {
+		font-size: 14rem;
+	}
+	.sol_start_item {
+		margin-top: 34rem;
+	}
+	.sol_start_item_title {
+		font-size: 18rem;
+		margin: 0 auto 5rem;
+		width: 305rem;
+	}
+	.sol_start_item_text {
+		font-size: 14rem;
+	}
+	.sol_start_item_title:before {
+		left: calc(50% - 12rem);
+	}
+	.sol_start_img {
+		display: none;
+	}
+	.sol_benefits {
+		margin-top:  63rem;
+		padding-top: 55rem;
+		background-image: url(img/sol_benefits_bg.svg);
+		background-position: center;
+		background-size: cover;
+		padding-bottom: 70rem;
+	}
+	.sol_benefits_title {
+		width: 295rem;
+		margin: auto;
+	}
+	.sol_benefits_text {
+		width: auto;
+		margin-top: 5rem;
+		font-size: 14rem;
+	}
+	.sol_benefits_item {
+		margin: 23rem auto 0;
+		width: 275rem;
+		text-align: center;
+	}
+	.sol_benefits_item_title {
+		font-size: 18rem;
+		margin-bottom: 5rem;
+	}
+	.sol_benefits_item_text {
+		font-size: 13rem;
+	}
+	.sol_benefits_bottext {
+    	text-align: center;
+    	margin: 40rem auto 0;
+    	width: auto;
+    	font-size: 14rem;
+	}
+	.extra_content_hide {
+		text-align: left;
+		font-size: 14rem;
+	}
+	.pricing_price_image {
+		display: none;
 	}
 }

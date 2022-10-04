@@ -1,125 +1,17 @@
-// $(document).ready(function() {
-  
-//   var year2 = document.getElementById('2018');
-//   var year3 = document.getElementById('2021');
-//   var year4 = document.getElementById('2022');
-
-
-// var typewriter2 = new Typewriter(year2, {
-//     loop: false
-// });
-// var typewriter3 = new Typewriter(year3, {
-//     loop: false
-// });
-// var typewriter4 = new Typewriter(year4, {
-//     loop: false
-// });
 
 
 
-// typewriter2.typeString('2018').start();
-// typewriter3.typeString('2021').start();
-// typewriter4.typeString('2022').start();
-// });
-
-// function year1() {
-//   var year1 = document.getElementById('2015');
-
-//   var typewriter1 = new Typewriter(year1, {
-//       loop: false
-//   });
-//   typewriter1.typeString('2015').start();
-// }
-
-// $(window).scroll(function() {
-//   $('#2015').each(function(){
-//     var imagePos = $(this).offset().top;
-//      var topOfWindow = $(window).scrollTop();
-//      if (imagePos > topOfWindow) {
-//       year1();
-//       imagePos = 3;
-//       topOfWindow = '2';
-//      }
-//      else {}
-//       imagePos = 3;
-//       topOfWindow = '2';
-//   });
-// });
-
-// function year2() {
-//   var year2 = document.getElementById('2018');
-
-//   var typewriter2 = new Typewriter(year2, {
-//       loop: false
-//   });
-//   typewriter2.typeString('2018').start();
-// }
-
-// $(window).scroll(function() {
-//   $('#2018').each(function(){
-//     var imagePos = $(this).offset().top;
-//      var topOfWindow = $(window).scrollTop();
-//      if (imagePos > topOfWindow) {
-//       year2();
-//       imagePos = 3;
-//       topOfWindow = '3';
-//      }
-//      else {}
-//       imagePos = 3;
-//       topOfWindow = '2';
-//   });
-// });
-
-// $(window).scroll(function() {
-//   $('#2018').each(function(){
-//     var imagePos = $(this).offset().top;
-//      var topOfWindow = $(window).scrollTop();
-//      if (imagePos < topOfWindow) {
-//       var year2 = document.getElementById('2018');
-//       var typewriter2 = new Typewriter(year2, {
-//           loop: false
-//       });
-//       typewriter2.typeString('2018').start();
-//      }
-//      else {}
-//   });
-// });
-
-// $(window).scroll(function() {
-//   $('#2021').each(function(){
-//     var imagePos = $(this).offset().top;
-//      var topOfWindow = $(window).scrollTop();
-//      if (imagePos < topOfWindow) {
-//       var year3 = document.getElementById('2021');
-//       var typewriter3 = new Typewriter(year3, {
-//           loop: false
-//       });
-//       typewriter3.typeString('2021').start();
-//      }
-//      else {}
-//   });
-// });
-
-// $(window).scroll(function() {
-//   $('#2022').each(function(){
-//     var imagePos = $(this).offset().top;
-//      var topOfWindow = $(window).scrollTop();
-//      if (imagePos < topOfWindow) {
-//       var year4 = document.getElementById('2022');
-//       var typewriter4 = new Typewriter(year4, {
-//           loop: false
-//       });
-//       typewriter4.typeString('2022').start();
-//      }
-//      else {}
-//   });
-// });
-
-
-
-
-
-
+$(window).scroll(function() {
+  $('.wait_video').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+600) {
+      const wrapperVideo = document.getElementById('video');
+       wrapperVideo.play();
+     }
+     else {}
+  });
+}); 
 
 
 //Анимации
@@ -184,7 +76,11 @@ function all() {
   function item5() {
     $('.hero_anim_text:nth-child(5)').addClass('active');
   }
-  
+  function item6() {
+    $('.hero_anim_image').addClass('active');
+    $('.hero_anim_bg').addClass('active');
+  }
+  setTimeout(item6, 0);
   setTimeout(item1, 1000);
   setTimeout(item2, 2000);
   setTimeout(item3, 3000);
@@ -223,8 +119,22 @@ function steps() {
   setTimeout(item3, 750);
   setTimeout(item4, 1000);
 };
-
-
+$(document).ready(function() {
+  $('.extra_content_trigger').click(function(event) {
+    event.preventDefault();
+      $(this).toggleClass('active');
+      $('.extra_content_hide').toggle(400);
+  });
+});
+$(document).ready(function() {
+  $('.api_code_cat_item').click(function(event) {
+    event.preventDefault();
+      $(this).addClass('active').siblings().removeClass('active');
+      var id1 = $(this).attr('href');
+      $('.api_code_nav').removeClass('active');
+      $(id1).addClass('active');
+  });
+});
 $(document).ready(function() {
   $('.api_code_nav_item').click(function(event) {
     event.preventDefault();
