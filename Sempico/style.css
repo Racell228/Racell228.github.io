@@ -261,9 +261,55 @@ header {
     line-height: 130%;
     font-weight: 500;
 }
+.load {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 1rem;
+	border-radius: 100%;
+	background-color: #fff;
+	display: block;
+}
+.load.one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.load.two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dot 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.load.three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dot 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 .hero_anim_text.orange span {
 	width: 76rem;
 	text-align: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero_anim_icon {
 	margin: 0 10rem -20rem;
@@ -287,9 +333,30 @@ header {
 	transform: scale(0);
 	transition: 0.3s;
 }
-.hero_anim_text.active {
-	transform: scale(1);
+.hero_anim_text.orange.active {
+	transform:rotate(0deg) scale(1) ;
 	transition: 0.3s;
+	-webkit-animation: text_show_orange 1.3s ;
+    -webkit-animation-delay: 0.3s;
+     animation: text_show_orange 1.3s ;
+     animation-delay: 0.3s;
+}
+@-webkit-keyframes text_show_orange {
+     50% { transform:rotate(-3deg) scale(1.05) ; }
+    100% { transform:rotate(0deg) scale(1) ; }
+}
+.hero_anim_text.green.active {
+	transform: scale(1) rotate(0deg);
+	transition: 0.3s;
+	-webkit-animation: text_show_green 1.3s ;
+    -webkit-animation-delay: 0.3s;
+     animation: text_show_green 1.3s ;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes text_show_green {
+     50% { transform:rotate(3deg) scale(1.05);  }
+    100% { transform:rotate(0deg) scale(1) ; }
 }
 .scale_overlay {
 	display: flex;
@@ -501,7 +568,9 @@ header {
 	width: 100%;
 	text-align: center;
 	transition: 0.5s;
-	position: relative;
+	position: absolute;
+	top: 0rem;
+	opacity: 0;
 }
 .advantages_title.fixed {
 	position: fixed;
@@ -1649,7 +1718,9 @@ footer {
 	width: 16rem;
 	height: 16rem;
 	border: none;
+	background-position: center;
 	background-color: transparent;
+	padding: 0;
 }
 .blog_head_form_select {
 	width: 232rem;
@@ -2114,17 +2185,42 @@ footer {
 	z-index: 2;
 	cursor: pointer;
 }
+.pricing .container {
+	position: relative;
+}
 .teritory.active {
 	fill: #000;
 	transition: 0.5s;
 }
 .pricing_modal {
 	position: absolute;
-	top: calc(50% - 105rem);
-	left: calc(50% - 107rem);
 	border-radius: 16rem;
 	width: 224rem;
 	display: none;
+}
+.pricing_modal#modal_asia {
+	top: 225rem;
+    right: 250rem;
+}
+.pricing_modal#modal_europe {
+	top: 205rem;
+    right: 460rem;
+}
+.pricing_modal#modal_afrika {
+	top: 405rem;
+    right: 471rem;
+}
+.pricing_modal#modal_sa {
+	top: 485rem;
+    left: 301rem;
+}
+.pricing_modal#modal_na {
+	top: 295rem;
+    left: 160rem;
+}
+.pricing_modal#modal_australia {
+	top: 515rem;
+    right: 140rem;
 }
 .pricing_modal_title {
 	color: #fff;
@@ -2627,7 +2723,7 @@ footer {
 }
 .sol_faq_bg {
 	position: absolute;
-    top: -100rem;
+    top: -110rem;
     left: 0;
     width: 1920rem;
     z-index: -1;
@@ -3312,6 +3408,30 @@ footer {
 	    left: 50rem;
     	width: 297rem;
 	}
+	.pricing_modal#modal_australia {
+	    top: 395rem;
+	    right: -10rem;
+	}
+	.pricing_modal#modal_asia {
+	    top: 205rem;
+	    right: 40rem;
+	}
+	.pricing_modal#modal_afrika {
+	    top: 325rem;
+	    right: 211rem;
+	}
+	.pricing_modal#modal_europe {
+	    top: 155rem;
+	    right: 230rem;
+	}
+	.pricing_modal#modal_sa {
+    	top: 385rem;
+    	left: 91rem;
+	}
+	.pricing_modal#modal_na {
+    	top: 225rem;
+    	left: 0rem;
+	}
 }
 @media screen and (max-width: 480px)  {
 	html {
@@ -3474,9 +3594,11 @@ footer {
 	}
 	.api_content_contact {
 		padding: 8rem 9rem;
+		text-align: center;
 	}
 	.api_content_doc {
 	    padding: 8rem 21rem;
+	    text-align: center;
 	}
 	.btn {
 		font-size: 16rem;
@@ -3587,6 +3709,12 @@ footer {
 	.pricing_item_btn {
 		opacity: 1;
 		margin-top: 12rem;
+	}
+	.pricing_modal {
+	    top: auto!important;
+	    bottom: 0rem!important;
+	    right: 65rem!important;
+	    left: auto!important;
 	}
 	.faq {
 	    background-image: url(img/faq_bg_mob.png);
@@ -4719,5 +4847,11 @@ footer {
 	}
 	.pricing_price_image {
 		display: none;
+	}
+	.about_worth_overlay {
+		flex-direction: column;
+	}
+	.about_worth_wrapper {
+		width: 100%;
 	}
 }

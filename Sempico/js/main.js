@@ -1,13 +1,81 @@
 
 
-
 $(window).scroll(function() {
-  $('.wait_video').each(function(){
+  $('#2015').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+600) {
+       var app = document.getElementById('2015');
+
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+
+        typewriter.typeString('2015').start();
+        app.removeAttribute('id');
+     }
+     else {}
+  });
+});
+$(window).scroll(function() {
+  $('#2018').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+600) {
+       var app = document.getElementById('2018');
+
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+
+        typewriter.typeString('2018').start();
+        app.removeAttribute('id');
+     }
+     else {}
+  });
+});
+$(window).scroll(function() {
+  $('#2021').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+600) {
+       var app = document.getElementById('2021');
+
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+
+        typewriter.typeString('2021').start();
+        app.removeAttribute('id');
+     }
+     else {}
+  });
+});
+$(window).scroll(function() {
+  $('#2022').each(function(){
+    var imagePos = $(this).offset().top;
+     var topOfWindow = $(window).scrollTop();
+     if (imagePos < topOfWindow+600) {
+       var app = document.getElementById('2022');
+
+        var typewriter = new Typewriter(app, {
+            loop: false
+        });
+
+        typewriter.typeString('2022').start();
+        app.removeAttribute('id');
+     }
+     else {}
+  });
+});
+$(window).scroll(function() {
+  $('.video-js').each(function(){
     var imagePos = $(this).offset().top;
      var topOfWindow = $(window).scrollTop();
      if (imagePos < topOfWindow+600) {
       const wrapperVideo = document.getElementById('video');
        wrapperVideo.play();
+        $(this).removeClass('video-js');
      }
      else {}
   });
@@ -133,6 +201,9 @@ $(document).ready(function() {
       var id1 = $(this).attr('href');
       $('.api_code_nav').removeClass('active');
       $(id1).addClass('active');
+      $('.api_code_content_item').hide(0);
+      $('.api_code_nav_item').removeClass('active');
+      $('#pure').show(0);
   });
 });
 $(document).ready(function() {
