@@ -162,7 +162,7 @@ function all() {
 $(window).scroll(function() { 
     var the_top = $(document).scrollTop();
     cPos = $('.steps').offset().top;
-    if (the_top > cPos) {
+    if (the_top > cPos -300) {
         steps();
     }
     else {}
