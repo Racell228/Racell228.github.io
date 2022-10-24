@@ -61,6 +61,8 @@ a {
 }
 header {
 	padding: 26rem 0 8rem;
+	position: relative;
+	z-index: 9999;
 }
 .header_overlay {
 	display: flex;
@@ -77,9 +79,36 @@ header {
 }
 .header_burger {
 	width: 30rem;
+	height: 17rem;
+	display: flex;
+	flex-direction: column;
 }
-.header_burger img {
+.header_burger span {
 	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	position: relative;
+    top: 0rem;
+    transition: 0.4s;
+}
+.header_burger span:nth-child(2) {
+	margin: auto 0;
+	width: 19rem;
+	transition: 0.4s;
+}
+.header_burger.active span:nth-child(2) {
+	opacity: 0;
+	transition: 0.4s;
+}
+.header_burger.active span:nth-child(1) {
+    transform: rotate(135deg);
+    top: 9rem;
+    transition: 0.4s;
+}
+.header_burger.active span:nth-child(3) {
+    transform: rotate(-135deg);
+    top: -7rem;
+    transition: 0.4s;
 }
 span {
 	color: #00FFE6;
@@ -837,15 +866,38 @@ ul li:before {
 .interface_img_tab {
 	display: none;
 }
-.menu_content_overlay {
-	display: flex;
-	justify-content: space-between;
+.menu {
+	display: none;
 }
 .menu_item {
 	line-height: 120%;
 	font-family: 'Museo Sans';
 	font-size: 24rem;
 	color: #fff;
+	font-weight: 100;
+	margin: 35rem 0;
+	display: flex;
+	align-items: center;
+	transition: 0.4s;
+}
+.menu_item:before {
+	content: "";
+	background-image: url(img/menu_arrow.svg);
+	background-size: cover;
+	display: block;
+	width: 0rem;
+	height: 15rem;
+	margin-right: 0rem;
+	transition: 0.4s;
+}
+.menu_item:hover:before {
+	width: 25rem;
+	margin-right: 25rem;
+	transition: 0.4s;
+}
+.menu_item:hover {
+	color: #00FFE6;
+	transition: 0.4s;
 }
 .menu_overlay {
 	position: fixed;
@@ -858,9 +910,18 @@ ul li:before {
 }
 .menu_content {
 	position: absolute;
-	z-index: 9999;
-	top: 0;
-	left: 0;
+    z-index: 9999;
+    top: calc(50% - 208rem);
+    left: calc(50% - 600rem);
+    width: 1200rem;
+    display: flex;
+	justify-content: space-between;
+}
+.menu_content_overlay {
+	width: 600rem;
+}
+.overflow {
+	overflow: hidden;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -1167,6 +1228,20 @@ ul li:before {
 	.textarea_overlay {
 		width: 100%;
 	}
+	.menu_content_overlay {
+		width: auto;
+		margin-top: -35rem;
+	}
+	.menu_content {
+		width: 708rem;
+	    height: 75vh;
+	    flex-direction: column;
+	    overflow: auto;
+	    left: 122rem;
+	    justify-content: flex-start;
+	    top: 143rem;
+	}
+
 }
 @media screen and (max-width: 480px) {
 	html {
@@ -1485,5 +1560,17 @@ ul li:before {
 	}
 	.copyright_overlay {
 		padding: 25rem 0;
+	}
+	.menu_item {
+		font-size: 18rem;
+		margin: 25rem 0;
+	}
+	.menu_content_overlay {
+		margin-top: -25rem;
+	}
+	.menu_content {
+		left: 50rem;
+		width: 300rem;
+		top: 111rem;
 	}
 }
