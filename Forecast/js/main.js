@@ -34,3 +34,27 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+$(document).ready(function() {
+  $('.interface_content_tab_item_link').click(function(event) {
+    event.preventDefault();
+      $('html,body').addClass('overflow');
+      $('.interface_content_tab_overlay').show(400);
+      $(this).addClass('active').siblings().removeClass('active');
+      var id1 = $(this).attr('href');
+      $(id1).fadeIn(300).siblings(0).fadeOut(0);
+  });
+});
+
+
+
+$(document).ready(function() {
+  $('.interface_content_tab_item_text').click(function(event) {
+    event.preventDefault();
+      $('html,body').removeClass('overflow');
+      $('.interface_content_tab_overlay').hide(400);
+      $(this).hide(400);
+      $('.interface_content_tab_item_link').removeClass('active');
+  });
+});
