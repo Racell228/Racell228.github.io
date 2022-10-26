@@ -876,6 +876,7 @@ ul li:before {
 	display: flex;
 	align-items: center;
 	transition: 0.4s;
+	width: max-content;
 }
 .menu_item:before {
 	content: "";
