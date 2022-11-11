@@ -47,6 +47,11 @@ a {
 }
 .calendar_item_nav_link  {
 	color: #000;
+	transition: 0.4s;
+}
+.calendar_item_nav_link:hover {
+	color: #2774CF;
+	transition: 0.4s;
 }
 .calendar_item_nav_title {
 	color: #767676;
@@ -144,9 +149,11 @@ a {
 	content: "";
 	background-image: url(note_arrow.svg);
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 32px;
 	height: 28px;
-	left: -27px;
+	left: -20px;
 	top: calc(50% - 14px);
 }
 .calendar_result_note_item {
@@ -390,7 +397,6 @@ a {
 		width: 44px;
 	}
 	.calendar_result_author {
-		justify-content: flex-start;
 		margin-bottom: 18px;
 	}
 	.calendar_overlay {
@@ -402,6 +408,7 @@ a {
 	.calendar_result_note {
 		text-align: left;
 		padding: 15px 18px;
+		max-width: 260px;
 	}
 	.calendar_item {
     	width: 280px;
@@ -431,24 +438,24 @@ a {
 		padding: 10px;
 		border-radius: 10px;
 	}
-	.calendar_result.absolute .calendar_result_hide {
-		justify-content: flex-start;
-	}
 	.calendar_result_location {
 		margin-top: 25px;
 	}
 	.calendar_result_location_title {
 		font-size: 16px;
-		text-align: left;
 	}
 	.calendar_result_location {
-		justify-content: flex-start;
 	}
 	.calendar_result_check {
-    	margin-top: 25px;
+    	margin-top: 20px;
 	} 
 	.calendar_result_data {
 		font-weight: 700;
 	}
-
+	.calendar_result_actions_back {
+		width: 140px;
+	}
+	.calendar_result_actions_next {
+		width: 140px;
+	}
 }

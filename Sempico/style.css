@@ -2866,6 +2866,213 @@ footer {
 .interface_img_mob {
 	display: none;
 }
+.hiring_form_overlay {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(5px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 999;
+	height: 100vh;
+}
+.hiring_form_close {
+	position: absolute;
+	top: 35rem;
+	right: 35rem;
+	width: 26rem;
+}
+.hiring_form_close img {
+	width: 100%;
+}
+.hiring_form_content {
+	position: fixed;
+	width: 1136rem;
+	height: 80vh;
+	padding: 35rem 32rem;
+	background: #FEFCF5;
+	border-radius: 16px; 
+	top: calc(50% - 40vh - 35rem);
+	left: calc(50% - 600rem);
+	overflow: auto;
+	z-index: 999;
+}
+.hiring_form_content_wrapper {
+	padding: 0 157rem;
+}
+.hiring_form_content_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 8rem;
+	border-bottom: 1rem solid #000;
+	width: 100%;
+}
+.hiring_form_content_title_clear {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16rem;
+	color: #919191;
+	font-family: 'Montserrat';
+}
+.hiring_form_content_title_clear img {
+	width: 20rem;
+	margin-right: 10rem;
+}
+.hiring_form_content_input {
+	border: 2rem solid #000000;
+	border-radius: 8px;
+	padding: 13rem 16rem;
+	margin-top: 24rem;
+	display: block;
+}
+.hiring_form_content_input_small {
+	width: 368rem;
+}
+.hiring_form_content_head {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50rem;
+}
+.hiring_form_content_phone_title {
+	margin: 16rem 0 8rem;
+	font-size: 16rem;
+}
+.hiring_form_content_input_long {
+	width: 100%;
+}
+.hiring_form_content_radio_title {
+	font-weight: 400;
+	font-size: 16rem;
+	color: #000;	
+	margin-bottom: 8rem;
+}
+.hiring_form_content_phone_wrapper {
+	display: flex;
+	align-items: center;
+}
+.hiring_form_content_phone_select {
+	width: 108rem;
+	padding: 12rem 16rem;
+	background-color: #000;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18rem;
+	color: #fff;
+	border-radius: 8px 0px 0px 8px;
+}
+.hiring_form_content_input_phone {
+	margin-top: 0;
+	border-radius: 0 8px 8px 0;
+	width: calc(100% - 140rem);
+}
+.hiring_form_content_phone_note {
+	font-size: 14rem;
+	margin-top: 8rem;
+}
+.hiring_form_content_item_label {
+	font-size: 16rem;
+	margin-bottom: 8rem;
+	margin-top: 24rem;
+}
+.hiring_form_content_item {
+	margin-top: 50rem;
+}
+.hiring_form_content_item_file {
+	display: none;
+}
+.hiring_form_content_item_file_label {
+	width: 100%;
+	border: 2px dashed #000000;
+	border-radius: 8px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18rem;
+	padding: 41rem 0;
+	display: block;
+}
+.hiring_form_content_item_file_label span {
+	color: #39F4C4;
+}
+.hiring_form_content_radio_item {
+	margin-top: 44rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.hiring_form_content_radio_title {
+	width: 100%;
+	font-size: 16rem;
+	padding-left: 24rem;
+}
+.hiring_form_content_radio {
+	display: none;
+}
+.hiring_form_content_radio:checked + .hiring_form_content_radio_label:before{
+	background-position: top;
+}
+.hiring_form_content_radio_label {
+	font-weight: 500;
+	font-size: 16rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-right: 36rem;
+}
+.hiring_form_content_radio_label:before {
+	content: "";
+	width: 24rem;
+	height: 24rem;
+	background-size: 24rem;
+	background-image: url(img/modal_sprite.svg);
+	background-position: bottom;
+	margin-right: 8rem;
+}
+.hiring_form_content_checkbox {
+	display: none;
+}
+.hiring_form_content_checkbox_overlay {
+	margin-top: 60rem;
+}
+.hiring_form_content_checkbox_label {
+	display: flex;
+	align-items: center;
+	font-size: 16rem;
+	padding-left: 24rem;
+}
+.hiring_form_content_checkbox:checked + .hiring_form_content_checkbox_label:before{
+	background-position: top;
+}
+.hiring_form_content_checkbox_label:before {
+	content: "";
+	width: 24rem;
+	height: 24rem;
+	background-size: 24rem;
+	background-image: url(img/modal_sprite.svg);
+	background-position: bottom;
+	margin-right: 8rem;
+}
+.hiring_form_content_checkbox_label span  {
+	width: 550rem;
+}
+.hiring_form_content_submit {
+	margin: 54rem auto 0;
+	width: max-content;
+	padding: 13rem 40rem;
+	display: block;
+}
+.hiring_form_content::-webkit-scrollbar-track {
+	border-radius: 5px;
+}
+.hiring_form_content::-webkit-scrollbar {
+	width: 4px;
+	height: 2px;
+}
+.hiring_form_content::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #888888;
+}
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 0.13021vw;
