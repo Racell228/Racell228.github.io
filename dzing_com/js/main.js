@@ -43,7 +43,7 @@ $(document).ready(function() {
   });
 });
 $(document).ready(function() {
-  $('.header_download_item').click(function(event) {
+  $('.header_download_item,.download_item_link').click(function(event) {
   	event.preventDefault();
     $('.get').show();
   });
