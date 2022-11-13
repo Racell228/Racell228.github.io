@@ -576,6 +576,13 @@ header {
 }
 .more_item1 {
 	margin: 50rem 160rem 0;
+	background: linear-gradient(232.44deg, #9F64EA -7.6%, #6424A8 89.44%);
+}
+.more_item1 .more_item_title {
+	color: #fff;
+}
+.more_item1 .more_item_text {
+	color: #fff;
 }
 .more_item4 {
 	margin: 50rem 105rem 0;
