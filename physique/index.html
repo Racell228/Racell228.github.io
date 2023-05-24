@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Better Physique</title>
+</head>
+<body>
+	
+	<section class="hero">
+		<header>
+			<div class="container">
+				<div class="header_overlay">
+					<div class="header_nav">
+						<a href="#">About</a>
+						<a href="#">Online Personal Training</a>
+						<a href="#">Articles & Podcasts</a>
+					</div>
+					<a href="#" class="header_logo"><img src="img/logo.svg"></a>
+					<div class="header_actions">
+						<a href="#" class="button">#VirtualGym </a>
+						<a href="#" class="btn">Book Consultation</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<div class="hero_content">
+				<h1 class="hero_content_title">Health is <span>better</span> than wealth </h1>
+				<p class="hero_content_text">I'm Alex, a coach who has been helping people to improve their lives for many years. Click the button below if you want to change your life.</p>
+				<a href="#" class="hero_content_btn btn">About personal Training</a>
+			</div>
+			<div class="hero_bg"></div>
+			<div class="hero_social">
+				<a href="#" class="hero_social_item"></a>
+				<a href="#" class="hero_social_item"></a>
+				<a href="#" class="hero_social_item"></a>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>
+document.addEventListener("DOMContentLoaded", function() {
+      var form = document.getElementById("offers_form");
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var checkBox = document.getElementById("checkbox-2"); 
+        var checkBox2 = document.getElementById("checkbox"); 
+        if (checkBox.checked  && checkBox2.checked) {
+          window.location.href = "https://owen-prevoir-prototype.webflow.io/insurance-registration";
+        } else if (checkBox2.checked) {
+          window.location.href = "https://owen-prevoir-prototype.webflow.io/insurance-registration-2";
+        } else {
+          window.location.href = "https://owen-prevoir-prototype.webflow.io/insurance-registration-2-free";
+        }
+   });
+   });
+
+
+
+
+      $("#form_submit").on("click", function(event){
+    if ($(this).is("[disable]")) {
+        event.preventDefault();
+    } else {
+   
+    }
+  });
+  $(document).ready(function() {
+    $('#offers_check').click(function(event) {
+      var checkBox = document.getElementById("offers_check");
+
+      var link = document.getElementById("form_submit");
+      // If the checkbox is checked
+      if (checkBox.checked == true){
+        $(link).removeAttr("disable");
+        $(link).removeClass("disabled-btn");
+      } else {
+        $(link).attr("disable", "disable");
+        $(link).addClass("disabled-btn");
+      }
+      });
+  });

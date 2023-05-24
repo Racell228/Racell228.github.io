@@ -11,6 +11,27 @@
 </head>
 <body>
 	<header>
+		<script>
+function testJump(x){
+    var ml = ~~x.getAttribute('maxlength');
+    if(ml && x.value.length >= ml){
+        do{
+            x = x.nextSibling;
+        }
+        while(x && !(/text/.test(x.type)));
+        if(x && /text/.test(x.type)){
+            x.focus();
+        }
+    }
+}
+</script>
+
+<div>
+    <input type="text" onkeyup="testJump(this);" maxlength="5" size="5">
+    <input type="text" onkeyup="testJump(this);" maxlength="4" size="4">
+    <input type="text" onkeyup="testJump(this);" maxlength="7" size="7">
+    <input type="text" onkeyup="testJump(this);" maxlength="5" size="5">
+</div>
 		<div class="container">
 			<div class="header_overlay">
 				<a href="#" class="header_logo"><img src="img/logo.svg"></a>

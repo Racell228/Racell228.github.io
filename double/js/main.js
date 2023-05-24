@@ -237,4 +237,12 @@ $(document).ready(function() {
 }); 
 
 
+$(document).ready(function() {
+  $('#miId').click(function(event) {
+    event.preventDefault();
+    var el = document.getElementById('miId');
+      var id = el.getAttribute('href');
+      location = id;
+  });
+}); 
 

@@ -6,10 +6,20 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	background-image: url(img/body_bg.svg);
-	background-size: 320rem;
 	font-family: 'Bebasneue';
 	color: #242424;
+	position: relative;
+	z-index: 2;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(img/body_bg.svg);
+	background-size: 320rem;
+	z-index: -1;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -63,7 +73,6 @@ p {
 }
 .hero_overlay {
 	display: flex;
-	align-items: flex-start;
 	justify-content: space-between;
 }
 .hero_content {
@@ -74,7 +83,7 @@ p {
 	font-size: 144rem;
 	line-height: 100%;
 	color: #0D3B70;
-	margin-top: 88rem;
+	margin-top: -200rem;
 }
 .hero_title span {
 	margin-top: 104rem;
@@ -113,11 +122,13 @@ p {
 }
 .agnostic_item_overlay {
 	margin-top: 130rem;
+	overflow: hidden;
 }
 .agnostic_item_text {
 	font-weight: 700;
 	font-size: 144rem;
 	color: #0D3B70;
+	font-family: 'Bebasneue';
 }
 .agnostic_item_text_note {
 	color: #919191;
@@ -160,6 +171,7 @@ p {
 	font-size: 44rem;
 	word-spacing: 500rem;
 	display: block;
+	font-family: 'Bebasneue';
 }
 .team_item_img {
 	width: 100%;
@@ -255,6 +267,7 @@ body::-webkit-scrollbar-thumb {
 	font-weight: 400;
 	font-size: 16rem;
 	color: #919191;
+	font-family: 'Bebasneue';
 }
 .press_item_title {
 	font-weight: 400;
@@ -404,6 +417,7 @@ footer {
 .single_social {
 	display: flex;
 	margin-top: 44rem;
+	align-items: center;
 }
 .single_social_item {
 	display: block;
@@ -417,12 +431,12 @@ footer {
 	background-color: #fff;
 	padding-top: 53rem;
 }
+.page_news_title {
+	color: #0D3B70;
+}
 .press_head_overlay {
 	width: 1600rem;
 	margin: auto;
-}
-.press_title {
-	color: #0D3B70;
 }
 .press_head_content {
 	display: flex;
@@ -545,6 +559,7 @@ footer {
 	border-bottom: 1rem solid #10DE7B;
 	display: block;
 	margin: auto;
+	font-family: 'Bebasneue';
 }
 .about {
 	display: flex;
@@ -554,7 +569,9 @@ footer {
 }
 .about_logo {
 	width: 137rem;
+	display: block;
 	margin-left: 180rem;
+	margin-top: -200rem;
 }
 .about_logo img {
 	width: 100%;
@@ -628,4 +645,623 @@ footer {
 	margin-top: 80rem;
 	width: 800rem;
 	margin-left: auto;
+}
+.burger {
+	display: none;
+}
+.hero_title_mobile {
+	display: none;
+}
+.close {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	html {
+	    font-size: 0.13021vw;
+	}
+	.container {
+		width: 708rem;
+	}
+	.header_overlay {
+		width: 708rem;
+	}
+	.hero_title {
+		font-size: 68rem;
+		word-spacing: 500rem;
+		width: 244rem;
+	}
+	.hero_title span {
+		margin-top: 44rem;
+	}
+	.hero {
+		margin-top: 50rem;
+	}
+	.hero_content {
+		width: 400rem;
+	}
+	.hero_content_title {
+		width: auto;
+		margin-top: 30rem;
+	}
+	.hero_content_sectors_item {
+		font-size: 68rem;
+	}
+	.hero_content_sectors {
+	    margin-top: 100rem;
+	}
+	.agnostic_item_text {
+		font-size: 68rem;
+	}
+	.agnostic_item_overlay_first {
+    	margin-left: 70rem;
+	}
+	.agnostic_item_overlay_second {
+		margin-left: auto;
+		text-align: right;
+	}
+	.agnostic_item_text_another {
+    	margin-right: 50rem;
+	}
+	.agnostic {
+    	margin: 100rem 0;
+	}
+	.team_item {
+    	width: 302rem;
+    	padding: 20rem;
+	}
+	.team_overlay {
+		justify-content: flex-start;
+	}
+	.team_item_img {
+		height: 245rem;
+	}
+	.more {
+		margin: 50rem auto 0;
+	}
+	.agnostic_overlay {
+		width: 708rem;
+	}
+	.team {
+		width: 708rem;
+		margin: auto;
+	}
+	.companies {
+		width: 708rem;
+		margin: 100rem auto 0;
+	}
+	.companies_item {
+    	width: 232rem;
+    	height: 150rem;
+	}
+	.companies_item_image {
+		width: 190rem;
+	}
+	.companies_overlay {
+		justify-content: flex-start;
+	}
+	.press {
+		width: 708rem;
+		margin: 100rem auto 0;
+	}
+	.press_item {
+		width: 285rem;
+		padding: 33rem;
+	}
+	.press_item_img {
+		height: 176rem;
+	}
+	.bottom_text {
+		font-size: 70rem;
+		margin-top: 150rem;
+	}
+	footer {
+		width: 708rem;
+		padding: 120rem 0 60rem;
+	}
+	.footer_nav_item {
+		margin-left: 24rem;
+	}
+	.footer_social {
+		margin-top: 30rem;
+	}
+	.about_logo {
+		width: 80rem;
+		margin-left: 0;
+	}
+	.about {
+		width: 708rem;
+		margin-top: 80rem;
+	}
+	.about_content {
+		width: 500rem;
+	}
+	.about_text {
+		font-size: 30rem;
+		margin-top: 40rem;
+	}
+	.about_image_bottom {
+    	width: 100%;
+    	margin-top: 40rem;
+	}
+	.about_title {
+		margin-top: 60rem;
+	}
+	.about_experians {
+    	width: 708rem;
+    	margin: 120rem auto 0;
+	}
+	.about_experians_title {
+		font-size: 84rem;
+		word-spacing: 46rem;
+	}
+	.about_strategy {
+    	margin: 120rem auto 0;
+    	width: 708rem;
+	}
+	.about_strategy_item {
+    	margin-left: auto;
+	}
+	.about_strategy_note {
+		width: auto;
+		margin-top: 60rem;
+	}
+	.contact_title {
+		font-size: 80rem;
+	}
+	.contact {
+    	margin-top: 160rem;
+	}
+	.contact_form {
+		margin: 80rem auto 0;
+		width: 588rem;
+		padding: 60rem;
+	}
+	.contact_form_input {
+		width: 273rem;
+	}
+	.contact_form_textarea {
+		width: 273rem;
+	}
+	.contact_form_label {
+		margin-top: 69rem;
+	}
+	.news {
+		width: 708rem;
+		margin: auto;
+	}
+	.press_item.large {
+    	width: 638rem;
+	}
+	.press_head_overlay {
+		width: auto;
+	}
+	.single {
+	    width: 510rem;
+	    margin: 80rem auto 0;
+	}
+	.single .single_title {
+		width: auto;
+		font-size: 32rem;
+	}
+	.related {
+    	width: 708rem;
+    	margin: 100rem auto 0;
+	} 
+	.team_page_title {
+		margin: 60rem 62rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	html {
+	    font-size: 0.26654vw;
+	}
+	.header_menu {
+		display: none;
+	}
+	.header_overlay {
+    	width: 343rem;
+	}
+	.burger {
+		display: block;
+		font-size: 16rem;
+	}
+	.header_logo img {
+		width: 120rem;
+	}
+	header {
+		padding: 20rem;
+	}
+	.hero_title {
+		font-size: 46rem;
+	}
+	.hero_overlay {
+		flex-direction: column;
+	}
+	.hero_content {
+		width: auto;
+	}
+	.hero_content_image {
+		width: 193rem;
+		margin-left: 62rem;
+	}
+	h2  {
+		font-size: 22rem;
+	}
+	.hero_content_title {
+		width: 234rem;
+		
+	}
+	.overlay {
+		background-size: 136rem;
+	}
+	.hero_content_sectors_item {
+		font-size: 46rem;
+	}
+	.hero_content_mobile {
+		margin-left: auto;
+	}
+	.hero_content_sectors {
+		margin-top: 80rem;
+		
+	}
+	.hero_content_sectors_item {
+		margin-bottom: 16rem;
+	}
+	.agnostic {
+    	margin: 80rem 0;
+	}
+	.agnostic_title {
+		margin-left: 62rem;
+		margin-bottom: 0;
+	}
+	.agnostic_item_text {
+    	font-size: 46rem;
+	}
+	.agnostic_item_text_note {
+		display: block;
+		font-size: 22rem;
+	}
+	.agnostic_overlay {
+		width: auto;
+	}
+	.agnostic_item_overlay_second {
+		text-align: left;
+	}
+	.agnostic_item_text_another {
+    	margin-right: 0rem;
+    	display: block;
+    	margin-bottom: 44rem;
+	}
+	.agnostic_item_overlay {
+		margin-top: 44rem;
+		margin-left: 99rem;
+	}
+	.team_title {
+		margin-left: 62rem;
+	}
+	.team_overlay {
+		margin-top: 44rem;
+	}
+	.team_item {
+    	width: 255rem;
+    	padding: 60rem;
+	}
+	.team_item_img {
+    	height: 213rem;
+	}
+	.team_item_name {
+		margin-top: 20rem;
+		font-size: 34rem;
+	}
+	.team_item_position {
+		font-size: 22rem;
+		margin: 7rem 0 6rem;
+	}
+	.team {
+		width: auto;
+	}
+	.more {
+		font-size: 22rem;
+	}
+	.companies_title {
+		width: auto;
+		margin-left: 62rem;
+	}
+	.companies {
+    	background-color: #fff;
+    	width: auto;
+    	margin: 75rem auto 0;
+    	padding-top: 22rem;
+	}
+	.companies_overlay {
+		margin-top: 17rem;
+	}
+	.companies_item_image {
+    	width: 112rem;
+	}
+	.companies_item {
+    	width: 184rem;
+    	height: 119rem;
+	}
+	.press {
+    	width: auto;
+    	margin: 80rem auto 0;
+	}
+	.press_title {
+		margin-left: 62rem;
+	}
+	.press_overlay {
+		margin-top: 44rem;
+	}
+	.press_item {
+    	width: 295rem;
+    	padding: 40rem;
+	}
+	.press_item_data {
+		font-size: 14rem;
+	}
+	.press_item_title {
+		font-size: 22rem;
+		margin-top: 6rem;
+		margin-bottom: 20rem;
+	}
+	.press_item_img {
+    	height: 201rem;
+	}
+	.bottom_text {
+		margin: 75rem 20rem 0;
+		font-size: 46rem;
+	}
+	footer {
+		width: 315rem;
+		padding: 60rem 0;
+	}
+	.footer_nav {
+		display: none;
+	}
+	.footer_logo {
+		width: 125rem;
+	}
+	.footer_form_label {
+		font-size: 12rem;
+	}
+	.footer_form_input {
+    	font-size: 12rem;
+    	width: 115rem;
+	}
+	.footer_form_submit {
+		font-size: 14rem;
+	}
+	.footer_social_item {
+		font-size: 12rem;
+		margin-left: 0;
+		margin-bottom: 10rem;
+	}
+	.footer_social {
+		flex-direction: column;
+		margin-top: 21rem;
+	}
+	.about_logo {
+		display: none;
+	}
+	.about_logo_mob {
+		display: block;
+		width: 147rem;
+		margin: auto;
+	}
+	.about_logo_mob img {
+		width: 100%;
+	}
+	.about {
+		flex-direction: column;
+		width: 312rem;
+		margin-top: 24rem;
+	}
+	.about_content {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 112rem;
+	}
+	.about_title {
+    	margin-top: 44rem;
+    	margin-left: 31rem;
+	}
+	.about_text {
+		margin-left: 31rem;
+		margin-top: 44rem;
+		font-size: 22rem;
+	}
+	.about_image_bottom {
+		margin-top: 80rem;
+	}
+	.about_experians_title {
+    	font-size: 44rem;
+    	word-spacing: 26rem;
+	}
+	.about_experians {
+    	width: 313rem;
+    	margin: 80rem auto 0;
+	}
+	.about_strategy {
+   	 	margin: 80rem auto 0;
+	    width: 313rem;
+	}
+	.about_strategy_title {
+		margin-right: 0;
+		margin-left: 31rem;
+	}
+	.about_strategy_item_icon {
+    	width: 14rem;
+    	height: 14rem;
+	}
+	.about_strategy_item_text {
+		font-size: 14rem;
+	}
+	.about_strategy_item {
+		margin-top: 44rem;
+	    width: 280rem;
+	}
+	.contact_title {
+    	font-size: 46rem;
+	}
+	.contact {
+    	margin-top: 75rem;
+	}
+	.contact_form {
+    	margin: 44rem auto 0;
+    	width: 263rem;
+    	padding: 0 40rem 40rem 40rem;
+	}
+	.contact_form_input {
+		margin-top: 40rem;
+		width: 263rem;
+		font-size: 14rem;
+	}
+	.contact_form_title {
+		display: none;
+	}
+	.contact_form_label {
+    	margin-top: 40rem;
+    	font-size: 14rem;
+    	color: rgba(0, 0, 0, 0.59);
+	}
+	.contact_form_textarea {
+		height: 73rem;
+		width: 263rem;
+	}
+	.contact_form_submit {
+		font-size: 22rem;
+	}
+	.contact_form_submit_overlay {
+		margin-top: 40rem;
+	}
+	.press_head {
+		padding-top: 20rem;
+	}
+	.press_head_content {
+		margin-top: 20rem;
+	}
+	.press_head_content_image {
+		display: none;
+	}
+	.press_head_content_title a {
+		font-size: 22rem;
+	}
+	.news {
+		width: auto;
+	}
+	.press_head_content_title {
+		margin-left: 62rem;
+	}
+	.press_item.large {
+    	width: 295rem;
+	}
+	.press_item.large .press_item_img {
+    	height: 180rem;
+	}
+	.single {
+		width: 343rem;
+		margin: 74rem auto 0;
+	}
+	.single .single_title {
+		font-size: 22rem;
+		font-weight: 400;
+	}
+	.single .single_data {
+		margin: 14rem auto 34rem;
+		font-size: 14rem;
+	}
+	.single img {
+    	margin-bottom: 34rem;
+    	display: block;
+	}
+	.single p {
+		font-size: 14rem;
+		margin: 14rem 0;
+	}
+	.single_social_item {
+		font-size: 22rem;
+		margin-right: 27rem;
+	}
+	.single .single_social_title {
+		font-size: 22rem;
+	}
+	.single_social {
+		margin-top: 34rem;
+	}
+	.related {
+		width: auto;
+		margin: 80rem auto 0;
+	}
+	.related_title {
+    	width: auto;
+    	text-align: center;
+	}
+	.single h1 {
+		font-size: 34rem;
+	}
+	.single h2 {
+		font-size: 20rem;
+	}
+	.team_page_title_overlay {
+		width: auto;
+	}
+	.team_page_title {
+    	margin: 23rem 31rem;
+    	width: auto;
+	}
+	.hero_title {
+		margin-top: 0;
+		margin-left: 65rem;
+	}
+	.hero_title span {
+		display: none;
+	}
+	.hero_title_mobile {
+		display: block;
+		font-size: 46rem;
+		color: #0D3B70;
+		margin: -200rem 16rem 0 12rem;
+		width: auto;
+	}
+	.hero_content_overlay {
+		display: flex;
+	}
+	.container {
+    	width: 343rem;
+	}
+	.header_menu.active {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-image: url(img/body_bg.svg);
+		background-size: 136rem;
+		background-color: #fff;
+		z-index: 9999;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.header_menu a {
+		font-size: 46rem;
+		color: #0D3B70;
+		margin: 18rem 0 18rem 62rem;
+		font-family: 'Bebasneue';
+	}
+	.header_menu .close {
+		display: block;
+		width: 18rem;
+		position: absolute;
+		top: 18rem;
+		right: 18rem;
+		margin: 0;
+		font-size: 0;
+	}
+	.close img {
+		width: 100%;
+	}
 }

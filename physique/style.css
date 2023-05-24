@@ -1,0 +1,108 @@
+html {
+	font-size: 0.069445vw;
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	color: #0F0E0E;
+	font-size: 16rem;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	display: block;
+	font-size: 16rem;
+}
+h1 {
+	font-size: 90rem;
+	line-height: 100%;
+	font-weight: 800;
+}
+h2 {
+	font-size: 55rem;
+	line-height: 120%;	
+	font-weight: 800;
+}
+h3 {
+	font-size: 35rem;
+	line-height: 130%;
+	font-weight: 800;	
+}
+h4 {
+	font-size: 24rem;
+	line-height: 130%;
+	font-weight: 800;
+}
+h5 {
+	font-size: 16rem;
+	line-height: 130%;
+	font-weight: 800;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+p {
+	font-size: 16rem;
+	line-height: 160%;
+}
+.container {
+	width: 1360rem;
+	margin: auto;
+}
+.hero {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+.hero_content {
+	margin: auto;
+	width: 900rem;
+}
+.hero_content_text {
+	margin: 32rem 0;
+	width: 551rem;
+}
+.btn {
+	padding: 17rem 30rem;
+	width: max-content;
+	font-weight: 800;
+	font-size: 14rem;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #E20422;
+}
+.hero_bg {
+	background-image: url(img/hero_img.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: -1;
+	height: 100vh;
+	background-size: cover;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+}
+.header_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
