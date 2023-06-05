@@ -19,10 +19,11 @@
 			<div class="header_overlay">
 				<a href="#" class="header_logo"><img src="img/logo.svg"></a>
 				<div class="header_nav">
-					<a href="#" class="header_nav_item">Câștiguri</a>
-					<a href="#" class="header_nav_item">Recenzii</a>
-					<a href="#" class="header_nav_item">Puneți o întrebare</a>
+					<a href="#calc" class="header_nav_item">Câștiguri</a>
+					<a href="#success" class="header_nav_item">Recenzii</a>
+					<a href="#contacts" class="header_nav_item">Puneți o întrebare</a>
 				</div>
+				<div class="burger"><span></span></div>
 			</div>
 		</div>
 	</header>
@@ -34,28 +35,28 @@
 	</div>
 	<section class="hero">
 		<div class="container">
-			<h1 class="hero_title">ROMGAS a oferit oamenilor din România posibilitatea de a câștiga<br> din resursele țării</h1>
+			<h1 class="hero_title">ROMGAS a oferit oamenilor din România posibilitatea de a câștiga din resursele țării</h1>
 			<h3 class="hero_subtitle">Urmăriți videoclipul până la sfârșit</h3>
 			<div class="hero_overlay">
 				<div class="hero_video">
-					<img src="img/video.png" class="hero_video_item">
+					<video src="img/video.mp4" class="hero_video_item" id="video" controls poster="img/video.png"></video>
 					<img src="img/play.svg" class="hero_video_play">
 				</div>
 				<div class="form_overlay">
-					<form action="">
+					<form action="send.php" id="hero_form" method="POST">
 						<div class="form">
 							<h3 class="form_title">ÎNCEPEȚI SĂ CÂȘTIGAȚI </h3>
-							<input type="text" class="form_input" placeholder="Nume">
-							<input type="text" class="form_input" placeholder="Numele de familie ">
-							<input type="text" class="form_input" placeholder="Email">
-							<input type="text" class="form_input" placeholder="Număr de telefon">
+							<input type="text" class="form_input" placeholder="Nume" name="name">
+							<input type="text" class="form_input" placeholder="Numele de familie " name="surname">
+							<input type="text" class="form_input" placeholder="Email" name="email">
+							<input type="text" class="form_input" placeholder="Număr de telefon" name="phone">
 							<div class="check_overlay">
-								<input type="checkbox" class="form_check" id="hero_form_check">
-								<label for="hero_form_check" class="form_check_label">
+								<input type="checkbox" class="form_check" id="hero_form_check2" required>
+								<label for="hero_form_check2" class="form_check_label">
 									<span class="form_check_text">Voi aștepta ca managerul să sune pentru a confirma cererea</span>
 								</label>
 							</div>
-							<input type="submit" value="Trimiteți" class="form_submit">
+							<input type="submit" value="Trimiteți" class="form_submit" name="submit">
 							<p class="form_bottom_text">Prin apăsarea butonului sunteți de acord cu politica de confidențialitate</p>
 						</div>
 					</form>
@@ -101,8 +102,11 @@
 	</section>
 	<section class="person">
 		<div class="container">
-			<h2 class="person_title">Răzvan Popescu</h2>
-			<p class="person_subtitle">Director general (CEO) al S.N.G.N. ROMGAZ S.A</p>
+			<div class="person_overlay">
+				<img src="img/person_mob.png" class="person_img">
+				<h2 class="person_title">Răzvan Popescu</h2>
+				<p class="person_subtitle">Director general (CEO) al S.N.G.N. ROMGAZ S.A</p>
+			</div>
 			<div class="person_content">
 				<p>Cred că lansarea unei astfel de platforme este foarte profitabilă, atât pentru întreprinderile private și pentru stat, cât și pentru fiecare cetățean în parte. </p>
 				<p>În momentul de față, cererea de gaze românești este în creștere rapidă și, odată cu ea, cresc și profiturile companiilor producătoare de gaze. </p>
@@ -111,7 +115,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="calc">
+	<section class="calc" id="calc">
 		<div class="container">
 			<h2 class="calc_title">Cât de mult voi câștiga?</h2>
 			<div class="calc_overlay">
@@ -128,20 +132,20 @@
 		<div class="container">
 			<div class="steps_overlay">
 				<div class="form_overlay">
-					<form action="">
+					<form action="send.php" id="hero_form" method="POST">
 						<div class="form">
 							<h3 class="form_title">ÎNCEPEȚI SĂ CÂȘTIGAȚI </h3>
-							<input type="text" class="form_input" placeholder="Nume">
-							<input type="text" class="form_input" placeholder="Numele de familie ">
-							<input type="text" class="form_input" placeholder="Email">
-							<input type="text" class="form_input" placeholder="Număr de telefon">
+							<input type="text" class="form_input" placeholder="Nume" name="name">
+							<input type="text" class="form_input" placeholder="Numele de familie " name="surname">
+							<input type="text" class="form_input" placeholder="Email" name="email">
+							<input type="text" class="form_input" placeholder="Număr de telefon" name="phone">
 							<div class="check_overlay">
-								<input type="checkbox" class="form_check" id="hero_form_check2">
-								<label for="hero_form_check2" class="form_check_label">
+								<input type="checkbox" class="form_check" id="hero_form_check3" required>
+								<label for="hero_form_check3" class="form_check_label">
 									<span class="form_check_text">Voi aștepta ca managerul să sune pentru a confirma cererea</span>
 								</label>
 							</div>
-							<input type="submit" value="Trimiteți" class="form_submit">
+							<input type="submit" value="Trimiteți" class="form_submit" name="submit">
 							<p class="form_bottom_text">Prin apăsarea butonului sunteți de acord cu politica de confidențialitate</p>
 						</div>
 					</form>
@@ -188,63 +192,63 @@
 					<p class="earn_table_item_name">Andrei P.</p>
 					<p class="earn_table_item_sum">5105RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:03:32</p>
+					<p class="earn_table_item_time" id="item1" diff="1">13:03:32</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Cristina T.</p>
 					<p class="earn_table_item_sum">7000RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:04:13</p>
+					<p class="earn_table_item_time" id="item2" diff="2">13:04:13</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Gabriel S.</p>
 					<p class="earn_table_item_sum">3670RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:06:20</p>
+					<p class="earn_table_item_time" id="item3" diff="3">13:06:20</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Ionuț M.</p>
 					<p class="earn_table_item_sum">3400RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:07:45</p>
+					<p class="earn_table_item_time" id="item4" diff="4">13:07:45</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Ana R.</p>
 					<p class="earn_table_item_sum">6000RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:08:20</p>
+					<p class="earn_table_item_time" id="item5" diff="5">13:08:20</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Ion I.</p>
 					<p class="earn_table_item_sum">3200RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:09:32</p>
+					<p class="earn_table_item_time" id="item6" diff="6">13:09:32</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Florin G.</p>
 					<p class="earn_table_item_sum">5005RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:10:32</p>
+					<p class="earn_table_item_time" id="item7" diff="7">13:10:32</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Cristina T.</p>
 					<p class="earn_table_item_sum">4500RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:13:32</p>
+					<p class="earn_table_item_time" id="item8" diff="8">13:13:32</p>
 				</div>
 				<div class="earn_table_item">
 					<img src="img/flag.svg" class="earn_table_item_icon">
 					<p class="earn_table_item_name">Mihai S.</p>
 					<p class="earn_table_item_sum">7100RON</p>
 					<p class="earn_table_item_code">ROMGAZ/RON</p>
-					<p class="earn_table_item_time">13:16:12</p>
+					<p class="earn_table_item_time" id="item9" diff="9">13:16:12</p>
 				</div>
 			</div>
 		</div>
@@ -258,68 +262,99 @@
 			</div>
 		</div>
 	</section>
-	<section class="success">
+	<section class="success" id="success">
 		<div class="container">
 			<h2 class="success_title">Succesele clienților noștri</h2>
-			<div class="success_overlay">
-				<div class="success_item">
-					<div class="success_item_image_overlay">
-						<img src="img/success1.jpg" class="success_item_image">
-						<h3 class="success_item_name">Maria Popescu</h3>
-					</div>
-					<div class="success_item_content">
-						<h2 class="success_item_sum">+15 000RON</h2>
-						<p class="success_item_text">Aș dori să mulțumesc ROMGAZ pentru că îmi permite să călătoresc liber în întreaga lume și să câștig bani indiferent unde mă aflu,  indiferent unde mă aflu! În 3 luni de investiții am câștigat aproximativ 15.000RON.</p>
-						<p class="success_item_text">De asemenea, o mulțumire specială managerului meu, care m-a ajutat absolut la fiecare pas de la început și continuă să mă ajute să câștig bani</p>
+			<div class="comment_overlay">
+				<div class="comment_item">
+					<img src="img/comment1.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Alexandru Marin<span>55 minute în urmă</span></h3>
+						<p class="comment_text">Până nu am văzut primele câștiguri, am refuzat să cred! Părea prea frumos ca să fie adevărat, dar așa a fost! Multe mulțumiri celui care a creat platforma. Da, e timpul să plec în vacanță!!! 🍹🍹 </p>
+						<span class="comment_likes"><img src="img/like.svg">325</span>
 					</div>
 				</div>
-				<div class="success_item">
-					<div class="success_item_image_overlay">
-						<img src="img/success2.jpg" class="success_item_image">
-						<h3 class="success_item_name">Alexandru Dumitru</h3>
-					</div>
-					<div class="success_item_content">
-						<h2 class="success_item_sum">+10 000RON</h2>
-						<p class="success_item_text">Mă bucur foarte mult că am văzut acest anunț pe internet și am decis să investesc în ROMGAZ.  În decurs de o săptămână mi-am plătit deja datoriile și acum câștig bani buni, care sunt suficienți pentru a trăi și pentru a economisi pentru a cumpăra o mașină.</p>
-						<p class="success_item_text">Acum nu mai trebuie să-mi fac griji că nu am suficienți bani</p>
+				<div class="comment_item">
+					<img src="img/comment2.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Elenai Petrescu<span>49 minute în urmă</span></h3>
+						<p class="comment_text">Sunteți cei mai buni! Lucrurile au început să meargă din prima zi. Am văzut 5600RON de venit în contul meu în acea zi și am crezut că nu se poate mai bine. Dar m-am înșelat pentru că acum câștig și mai mult</p>
+						<span class="comment_likes"><img src="img/like.svg">125</span>
 					</div>
 				</div>
-				<div class="success_item">
-					<div class="success_item_image_overlay">
-						<img src="img/success3.jpg" class="success_item_image">
-						<h3 class="success_item_name">Vasile Popa</h3>
+				<div class="comment_item">
+					<img src="img/comment3.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Nicolae Dumitru<span>41 minute în urmă</span></h3>
+						<p class="comment_text">Există vreo dovadă a rezultatelor... Poate cineva să împărtășească capturi de ecran cu profiturile dvs</p>
+						<span class="comment_likes"><img src="img/like.svg">95</span>
 					</div>
-					<div class="success_item_content">
-						<h2 class="success_item_sum">+8 000RON</h2>
-						<p class="success_item_text">Nu eram foarte sigur dacă ar trebui să investesc sau nu, deoarece nu aveam nicio experiență în materie de investiții. Dar asistentul meu mi-a explicat totul și mi-a explicat toate nuanțele.</p>
-						<p class="success_item_text">Nu am făcut niciodată vreo greșeală când am început să lucrez cu ROMGAZ. Managerul meu de cont mă ajută în continuare la orice întrebare și acesta este motivul pentru care acum câștig 8000RON în mod regulat</p>
+				</div>
+				<div class="comment_item">
+					<img src="img/comment4.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Ion Mitrescu<span>38 minute în urmă</span></h3>
+						<p class="comment_text">Acesta este un lucru bun... exact ceea ce familia mea avea nevoie în aceste vremuri. Sunt atât de fericit... Acum pot să plătesc educația fiului meu și în sfârșit să renovez casa</p>
+						<span class="comment_likes"><img src="img/like.svg">105</span>
+					</div>
+				</div>
+				<div class="comment_item">
+					<img src="img/comment5.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Vladimir Simionescu<span>29 minute în urmă</span></h3>
+						<p class="comment_text">Wow... Nu am cuvinte, mi se pare incredibil. Cu toate acestea, mai are cineva rezultate reale? Am de gând să mă înscriu și să contribui cu 250 de lire sterline astăzi</p>
+						<span class="comment_likes"><img src="img/like.svg">325</span>
+					</div>
+				</div>
+				<div class="comment_item">
+					<img src="img/comment7.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Ana Dragomirescu<span>26 minute în urmă</span></h3>
+						<p class="comment_text">Vreau să încerc și eu! </p>
+						<span class="comment_likes"><img src="img/like.svg">12</span>
+					</div>
+				</div>
+				<div class="comment_item comment_item_sub">
+					<img src="img/comment71.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Nicolae Mitrescu<span>19 minute în urmă</span></h3>
+						<p class="comment_text">Bună!!! Acesta este linkul pe care îl folosim pentru a testa platforma. Puteți, de asemenea, să vă înscrieți</p>
+						<span class="comment_likes"><img src="img/like.svg">320</span>
+					</div>
+				</div>
+				<div class="comment_item">
+					<img src="img/comment8.png" class="comment_icon">
+					<div class="comment_content">
+						<h3 class="comment_name">Cristina Marin<span>10 minute în urmă</span></h3>
+						<p class="comment_text">Este pur și simplu minunat! Am încercat multe oportunități de investiții, dar platforma este singura care multiplică investițiile de mai multe ori... În doar ÎN TOATE ZILELE! 💵💵💵💵🥳🥳🥳🥳🥳🥳</p>
+						<span class="comment_likes"><img src="img/like.svg">102</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<h2 class="contacts_title">Aveți întrebări? </h2>
 			<h2 class="contacts_subtitle">Trimiteți o cerere de informații pentru ca noi să vă ajutăm să o rezolvați</h2>
 			<div class="form_overlay">
-				<form action="">
-					<div class="form contacts_form">
-						<h3 class="form_title">ÎNCEPEȚI SĂ CÂȘTIGAȚI </h3>
-						<input type="text" class="form_input" placeholder="Nume">
-						<input type="text" class="form_input" placeholder="Numele de familie ">
-						<input type="text" class="form_input" placeholder="Email">
-						<input type="text" class="form_input" placeholder="Număr de telefon">
-						<div class="check_overlay">
-							<input type="checkbox" class="form_check" id="hero_form_check3">
-							<label for="hero_form_check3" class="form_check_label">
-								<span class="form_check_text">Voi aștepta ca managerul să sune pentru a confirma cererea</span>
-							</label>
+				<form action="send.php" id="hero_form" method="POST">
+						<div class="form contacts_form">
+							<h3 class="form_title">ÎNCEPEȚI SĂ CÂȘTIGAȚI </h3>
+							<input type="text" class="form_input" placeholder="Nume" name="name">
+							<input type="text" class="form_input" placeholder="Numele de familie " name="surname">
+							<input type="text" class="form_input" placeholder="Email" name="email">
+							<input type="text" class="form_input" placeholder="Număr de telefon" name="phone">
+							<div class="check_overlay">
+								<input type="checkbox" class="form_check" id="hero_form_check1" required>
+								<label for="hero_form_check1" class="form_check_label">
+									<span class="form_check_text">Voi aștepta ca managerul să sune pentru a confirma cererea</span>
+								</label>
+							</div>
+							<input type="submit" value="Trimiteți" class="form_submit" name="submit">
+							<p class="form_bottom_text">Prin apăsarea butonului sunteți de acord cu politica de confidențialitate</p>
 						</div>
-						<input type="submit" value="Trimiteți" class="form_submit">
-						<p class="form_bottom_text">Prin apăsarea butonului sunteți de acord cu politica de confidențialitate</p>
-					</div>
-				</form>
+					</form>
 			</div>
 		</div>
 	</section>
@@ -328,9 +363,9 @@
 			<div class="footer_overlay">
 				<a href="#" class="footer_logo"><img src="img/footer_logo.svg"></a>
 				<div class="footer_nav">
-					<a href="#" class="footer_nav_item">Recenzii</a>
-					<a href="#" class="footer_nav_item">Câștiguri</a>
-					<a href="#" class="footer_nav_item">Puneți o întrebare</a>
+					<a href="#success" class="footer_nav_item">Recenzii</a>
+					<a href="#calc" class="footer_nav_item">Câștiguri</a>
+					<a href="#contacts" class="footer_nav_item">Puneți o întrebare</a>
 				</div>
 				<p class="footer_copyright">© 2023 Toate drepturile rezervate</p>
  			</div>
