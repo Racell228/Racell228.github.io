@@ -12,6 +12,8 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     arrows:true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     prevArrow: '<button type="button" class="left"></button>',
     nextArrow: '<button type="button" class="right"></button>',
   });
