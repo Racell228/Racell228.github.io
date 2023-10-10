@@ -27,3 +27,11 @@ $(document).ready(function() {
       $(this).parent().find('.filter_item_overlay').toggle(400)
   });
 });
+$(document).ready(function() {
+  $('.filter_trigger').click(function(event) {
+      $('.filter').toggle(400);
+      $('.filter').toggleClass('active');
+      $('html,body').toggleClass('hidden');
+      $(this).toggleClass('active');
+  });
+});

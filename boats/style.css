@@ -285,6 +285,14 @@ img {
 .home_filters_price_item {
 	display: flex;
 	align-items: center;
+	position: relative;
+}
+.home_filters_price_item_curr {
+	position: absolute;
+	right: 9rem;
+	top: 6rem;
+	font-size: 12rem;
+	color: rgba(0, 20, 35, 0.40);
 }
 .home_filters_price_item:first-child {
 	margin-right: 20rem;
@@ -302,6 +310,12 @@ img {
 	line-height: 150%;
 	margin: 0;
 	width: 84rem;
+	font-family: 'Raleway', sans-serif;
+	font-feature-settings: 'lnum';
+	  -moz-font-feature-settings: 'lnum=1';
+	  -ms-font-feature-settings: 'lnum';
+	  -webkit-font-feature-settings: 'lnum';
+	  -o-font-feature-settings: 'lnum';
 }
 .home_filters_button {
 	padding: 18rem 50rem;
@@ -835,6 +849,9 @@ footer {
 .article_content p {
 	margin: 20rem 0;
 }
+.article_content .single p {
+	margin: 0;
+}
 .article_content h2 {
 	margin: 60rem 0 20rem;
 }
@@ -850,6 +867,7 @@ footer {
 .article_product .single {
 	margin: 0 20rem 0;
 	width: 299rem;
+	text-decoration: none;
 }
 .article_product h2 {
 	margin-left: 20rem;
@@ -901,7 +919,7 @@ b {
 	display: flex;
 	align-items: center;
 }
-.share_item {
+.article_content .share_item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -925,6 +943,8 @@ b {
 	padding-bottom: 13rem;
 	margin-bottom: 25rem;
 	border-bottom: 1rem solid #E4E4E4;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 .sidebar_article_name {
 	font-size: 16rem;
@@ -1194,6 +1214,7 @@ b {
 }
 .catalog {
 	margin-top: 60rem;
+	margin-bottom: -70rem;
 }
 .catalog_title {
 	margin-bottom: 40rem;
@@ -1203,4 +1224,984 @@ b {
 .catalog_filters_title {
 	font-family: 'Playfair Display', serif;
 	font-size: 48rem;
+	margin-bottom: -20rem;
+}
+.catalog_filters {
+	margin-top: 120rem;
+}
+.yacht {
+	padding-top: 40rem;
+}
+.yacht_head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.yacht_head_title {
+	margin-bottom: 10rem;
+}
+.yacht_head_btn {
+	font-size: 14rem;
+	font-weight: 500;
+	letter-spacing: 2.8rem;
+	text-transform: uppercase;
+	background-color: #7395AE;
+	padding: 18rem 50rem;
+	margin-top: 15rem;
+	color: #fff;
+}
+.yacht_head_actions .single_price {
+	font-size: 24rem;
+}
+.yacht_slider {
+	width: 1560rem;
+	margin-top: 30rem;
+}
+.yacht_slider img {
+	height: 500rem;
+	margin: 0 15rem;
+}
+.yacht_slider  ul li:before{
+	display: none;
+}	
+.yacht_slider button {
+	display: none;
+}
+.yacht_slider ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	width: 130rem;
+	justify-content: center;
+	margin: 30rem auto 0;
+}
+.yacht_slider  ul li {
+	width: 100%;
+	height: 3rem;
+	background-color: #E4E4E4;
+	transition: 0.3s;
+}
+.yacht_slider .slick-arrow {
+	display: block;
+    position: absolute;
+    background-image: url(img/arrow.svg);
+    background-size: cover;
+    width: 10rem;
+    height: 6rem;
+    background-color: transparent;
+    border: none;
+    z-index: 4;
+    cursor: pointer;
+    bottom: -3rem;
+}
+.yacht_slider .slick-arrow.left {
+	transform: rotate(90deg);
+	left: 610rem;
+}
+.yacht_slider .slick-arrow.right {
+	transform: rotate(-90deg);
+	right: 610rem;
+}
+.yacht_slider_overlay {
+	position: relative;
+}
+.yacht_slider_count {
+    font-size: 24rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: -16rem;
+}
+.yacht_slider_current {
+	left: 650rem;
+}
+.yacht_slider_all {
+	right: 650rem;
+}
+.yacht_slider ul .slick-active {
+	background-color: #557A95;
+	transition: 0.3s;
+}
+.yacht_item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.yacht_item_content {
+	width: 770rem;
+}
+.yacht_item {
+	padding: 50rem 0;
+	border-top: 1rem solid #e4e4e4;
+	border-bottom: 1rem solid #e4e4e4;
+}
+.yacht_item_descr p {
+	margin-bottom: 20rem;
+}
+.yacht_item_descr ul {
+	font-size: 16rem;
+	line-height: 150%;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+.yacht_item_descr ul li {
+	position: relative;
+	margin-bottom: 4rem;
+	padding-left: 20rem;
+}
+.yacht_item_descr ul li:before {
+	content: "";
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #557A95;
+	top: 9rem;
+	left: 5rem;
+	position: absolute;
+}
+.yacht_overlay {
+	margin-top: 70rem;
+}
+.yacht_item_title {
+	text-transform: uppercase;
+}
+.yacht_item_char_item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	position: relative;
+	z-index: 2;
+	padding: 5rem 0;
+	margin: 9rem 0;
+}
+.yacht_item_char_item:first-child{
+	margin-top: 0;
+}
+.yacht_item_char_item:last-child{
+	margin-bottom: 0;
+}
+.yacht_item_char_item_name {
+	padding-right: 20rem;
+	background-color: #fff;
+	font-size: 12rem;
+	text-transform: uppercase;
+}
+.yacht_item_char_item_value {
+	padding-left: 20rem;
+	background-color: #fff;
+	color: #557A95;
+}
+.yacht_item_char_item:before {
+	background-image: url(img/yacht_line.svg);
+	background-size: cover;
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	top: calc(50% - 1rem);
+	content: "";
+	z-index: -1;
+}
+.yacht_item_images img {
+	width: 100%;
+	margin-bottom: 20rem;
+}
+.yacht_item_images img:last-child {
+	margin-bottom: 0;
+}
+.category_title {
+	width: 100%;
+	margin-left: 20rem;
+}
+.filter_trigger {
+	display: none;
+}
+.related .news_title {
+	text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 0.13022vw;
+	}
+	.container {
+		width: 708rem;
+	}
+	header .container {
+		width: 100%;
+	}
+	.header_nav {
+		display: none;
+	}
+	.hero_content {
+		padding-top: 120rem;
+	}
+	.hero_slider .slick-dots {
+		right: 30rem;
+	}
+	.hero_slider .slick-arrow {
+		right: 25rem;
+	}
+	.slider_count {
+		display: none;
+	}
+	.hero_cat_item img {
+    	height: 57rem;
+	}
+	.hero_slider_item {
+		height: 596rem;
+		background-position: center;
+	}
+	.home_filters {
+		margin: 40rem 0 auto;
+		flex-direction: column;
+		border-bottom: none;
+	}
+	.home_filters_select {
+		border-top: 1rem solid #e4e4e4;
+		border-bottom: 1rem solid #e4e4e4;
+		border-left: none;
+		border-right: none;
+		padding: 17rem 0;
+	}
+	.home_filters_price {
+		border-bottom: 1rem solid #e4e4e4;
+		padding: 17rem 0;
+	}
+	.home_filters_search {
+		border-right: none;
+		padding: 26rem 0;
+	}
+	.home_filters_button {
+		margin-top: 30rem;
+	}
+	.categories {
+		margin-top: 100rem;
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	    flex-wrap: nowrap;
+	    width: calc(100% + 30rem);
+	}
+	.categories_item {
+		min-width: 265rem;
+	}
+	.top {
+    	margin-top: 80rem;
+	}
+	.top_title {
+		text-align: left;
+	}
+	.top_overlay {
+		margin-top: 30rem;
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	    flex-wrap: nowrap;
+	    width: calc(100% + 60rem);
+	}
+	.single {
+		min-width: 397rem;
+		margin: 0 30rem 20rem;
+	}
+	.news {
+    	margin-top: 80rem;
+	}
+	.news_title {
+		text-align: left;
+	}
+	.news_item {
+		margin: 0 0 60rem;
+		width: 100%;
+	}
+	.news_item_image {
+		height: 266rem;
+	}
+	.news_btn {
+		margin: 0;
+	}
+	footer {
+		margin-top: 80rem;
+	}
+	.footer_overlay {
+		flex-wrap: wrap;
+	}
+	.footer_info {
+		width: 100%;
+	}
+	.footer_nav {
+		width: 45%;
+		margin-top: 70rem;
+	}
+	.footer_info_form {
+		width: max-content;
+	}
+	.breadcrumbs {
+		border-top: 1rem solid #e4e4e4;
+	}
+	.filter {
+		display: none;
+	}
+	.single_overlay {
+	    width: calc(100% + 40rem);
+	    display: flex;
+	    flex-wrap: wrap;
+	    padding-top: 30rem;
+	    border-left: none;
+	    padding-left: 0rem;
+	    margin-left: -20rem;
+	}
+	.single_overlay .single {
+    	width: 324rem;
+    	min-width: 324rem;
+    	margin: 0 20rem 60rem;
+	}
+	.category_title {
+		margin-bottom: 20rem;
+	}
+	.filter_trigger {
+		display: flex;
+		align-items: center;
+		font-size: 14rem;
+		padding: 18rem 0;
+		border-bottom: 1rem solid #E4E4E4;
+		border-top: 1rem solid #E4E4E4;
+		width: calc(100% - 20rem);
+	    justify-content: center;
+	    margin: 0 auto 30rem 20rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	.filter_trigger img {
+		width: 18rem;
+		margin-right: 20rem;
+	}
+	.yacht {
+    	padding-top: 30rem;
+	}
+	.yacht_slider {
+		width: 768rem;
+	}
+	.yacht_slider img {
+		height: 370rem;
+		margin: 0 10rem;
+	}
+	.yacht_slider_count {
+		font-size: 20rem;
+	}
+	.yacht_slider_all {
+    	right: 285rem;
+	}
+	.yacht_slider_current {
+		left: 285rem;
+	}
+	.yacht_slider .slick-arrow.left {
+		left: 230rem;
+	}
+	.yacht_slider .slick-arrow.right {
+	    right: 230rem;
+	}
+	.yacht_item {
+		flex-direction: column;
+	}
+	.yacht_item_content {
+		margin-top: 25rem;
+		width: 100%;
+	}
+	.news_overlay {
+		width: 100%;
+		margin-left: 0;
+	}
+	.page_news .news_btn {
+		margin: auto;
+	}
+	.article_overlay {
+		flex-direction: column;
+	}
+	.article_content {
+		padding-top: 30rem;
+		padding-right: 0;
+		margin-right: 0;
+		border: none;
+		width: 100%;
+	}
+	.article_product .single {
+		min-width: 333rem;
+		width: 333rem;
+		margin: 0 20rem 20rem;
+	}
+	.article_content h2 {
+    	margin: 40rem 0 20rem;
+	}
+	.sidebar {
+    	padding-top: 80rem;
+    	width: 100%;
+	}
+	.related .news_title {
+		text-align: center;
+	}
+	.related .news_overlay {
+		margin-top: 40rem;
+	}
+	.related .news_btn {
+		margin: auto;
+	}
+	.contacts_item {
+    	width: 314rem;
+    	margin-top: 20rem;
+	}
+	.contacts {
+		padding: 20rem 0 40rem;
+		flex-wrap: wrap;
+	}
+	.contacts_title {
+		margin-top: 20rem;
+	}
+	.exhibition_item_line {
+		width: 210rem;
+	}
+	.exhibition_item_link {
+		word-break: break-all;
+	}
+	.service_slider {
+		width: 708rem;
+	}
+	.service_slider_count {
+		font-size: 20rem;
+	}
+	.service_slider_current {
+	    left: 255rem;
+	}
+	.service_slider_all {
+		right: 255rem;
+	}
+	.service_slider .slick-arrow.left {
+		left: 210rem;
+	}
+	.service_slider .slick-arrow.right {
+		right: 210rem;
+	}
+	.calc_item {
+    	width: 230rem;
+	}
+	.contactspage {
+		width: 100%;
+		padding-right: 0;
+		margin-right: 0;
+		border-right: none;
+	}
+	.contactspage_item {
+		flex-direction: column;
+	}
+	.contactspage_item_title {
+		margin-bottom: 25rem;
+	}
+	.contactspage_item_overlay {
+		width: 100%;
+	}
+	.filter {
+	    position: absolute;
+	    background: #fff;
+	    width: calc(100% - 60rem);
+	    top: 250rem;
+	    left: 0rem;
+	    padding: 0 30rem;
+	    height: calc(100vh - 250rem);
+	    overflow: auto;
+	}
+	.filter_head_title {
+		display: none;
+	}
+	.filter_head {
+		margin: 20rem 0;
+	}
+	.hidden {
+		overflow: hidden;
+	}
+	.filter_btn {
+	    width: max-content;
+	    margin: 30rem auto 20rem;
+	    display: block;
+	}
+	.filter_item_wrapper {
+		justify-content: flex-start;
+	}
+	.defis {
+		margin: 0 20rem;
+	}
+	.filter_trigger.active {
+		transition: 0.4s;
+		color: #fff;
+		background-color: #7395AE;
+		border: 1rem solid #7395AE;
+	}
+}
+@media screen and (max-width: 480px) {
+	html {
+	    font-size: 0.26668vw;
+	}
+	.hero_title {
+    	width: 390rem;
+    	font-size: 40rem;
+	}
+	.container {
+    	width: 335rem;
+	}
+	.hero_content {
+    	padding-top: 50rem;
+    	padding-bottom: 90rem;
+	}
+	.white_btn {
+    	padding: 16rem 0;
+    	width: 100%;
+    	text-align: center;
+	}
+	.hero_btn {
+		margin-top: 40rem;
+	}
+	.hero_cat_item {
+		padding: 0 28rem;
+		margin-top: 30rem;
+	}
+	.hero_cat {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 100rem;
+	}
+	.hero_cat_item img {
+    	height: 53rem;
+	}
+	.hero_slider_item {
+		height: 655rem;
+	}
+
+	.hero_slider .slick-dots {
+	    width: 278rem;
+	    height: 2rem;
+	    top: auto;
+	    bottom: 50rem;
+	    right: calc(50% - 137rem);
+	    flex-direction: row;
+	}
+	.hero_slider .slick-dots li {
+		width: 100%;
+	}
+	.hero_slider .slick-arrow.left {
+    	top: auto;
+    	bottom: 49rem;
+    	transform: rotate(-90deg);
+    	right: auto;
+    	left: 20rem;
+	}
+	.hero_slider .slick-arrow.right {
+    	bottom: 49rem;
+    	transform: rotate(90deg);
+    	right: 20rem;
+	}
+	.header_search {
+		padding: 22rem 24rem;
+	}
+	.header_search img {
+    	width: 16rem;
+	}
+	.header_lang {
+		padding: 22rem 20rem;
+	}
+	.header_logo img {
+    	width: 64rem;
+	}
+	.header_menu img {
+    	width: 15rem;
+    	margin-right: 12rem;
+	}
+	.header_menu {
+		font-size: 12rem;
+		padding: 20rem;
+	}
+	.home_filters_search {
+		padding: 20rem 0;
+	}
+	.jq-selectbox {
+		width: 309rem;
+	}
+	.home_filters_button {
+    	margin-top: 25rem;
+	}
+	.categories_item {
+    	padding: 20rem 15rem;
+    	height: 235rem;
+    	min-width: 185rem;
+    	margin: 0 5rem 20rem;
+	}
+	.categories_item_overlay:after {
+		left: -15rem;
+	    height: 120rem;
+	    width: 215rem;
+
+	}
+	.categories {
+		margin-left: -5rem;
+		margin-top: 80rem;
+	}
+	.top_title {
+		font-size: 32rem;
+	}
+	.single {
+    	min-width: 267rem;
+    	margin: 0 12rem 20rem;
+	}
+	.top_overlay {
+		margin-left: -10rem;
+	}
+	.single_cat {
+		margin-top: 10rem;
+	}
+	h4 {
+		font-size: 16rem;
+	}
+	.single_lenght {
+		font-size: 12rem;
+	}
+	.single_price {
+		font-size: 16rem;
+	}
+	.news_title {
+		font-size: 32rem;
+	}
+	.news_overlay {
+		margin-top: 20rem;
+	}
+	.news_item {
+		margin: 0 0 40rem ;
+	}
+	.news_item_data {
+		font-size: 12rem;
+	}
+	.news_item_title {
+		font-size: 16rem;
+		margin: 5rem 0 10rem;
+	}
+	.btn {
+		width: 100%;
+		padding: 16rem 0;
+		text-align: center;
+	}
+	footer {
+    	margin-top: 60rem;
+	}
+	.footer_info_input {
+    	width: 275rem;
+	}
+	.footer_info_social {
+		margin-top: 20rem;
+	}
+	.footer_nav {
+    	width: 100%;
+    	margin-top: 45rem;
+	}
+	.footer_nav_title {
+		margin-bottom: 18rem;
+	}
+	.footer_copyright {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 30rem;
+		align-items: center;
+	}
+	.footer_copyright_dev {
+		margin-top: 7rem;
+	}
+	.breadcrumbs_item {
+		font-size: 12rem;
+	}
+	.breadcrumbs {
+		padding: 12rem 0;
+	}
+	.single_overlay {
+		padding-top: 25rem;
+	}
+	.filter_trigger {
+		font-size: 12rem;
+		padding: 16rem 0;
+		width: calc(100% - 40rem);
+	}
+	.single_overlay .single {
+		min-width: 335rem;
+		margin: 0 20rem 40rem;
+	}
+	.single_more {
+		width: 335rem;
+		margin-top: 20rem;
+	}
+	.filter_head {
+    	margin: 15rem 0;
+	}
+	.filter {
+		top: 220rem;
+		height: calc(100vh - 220rem);
+		width: calc(100% - 40rem);
+		padding: 0 20rem;
+	}
+	.filter_head_clear {
+		font-size: 10rem;
+	}
+	.filter_item_title {
+		font-size: 12rem;
+	}
+	.filter_item_overlay {
+		margin-top: 18rem;
+	}
+	.filter_item_checkbox span {
+		font-size: 12rem;
+	}
+	.yacht_head {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	h1 {
+		font-size: 26rem;
+	}
+	.yacht_head_content {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.yacht_head_actions .single_price {
+    	font-size: 20rem;
+	}
+	.yacht_head_btn {
+		font-size: 12rem;
+		padding: 16rem 0;
+		width: 100%;
+		text-align: center;
+	}
+	.yacht_head_actions {
+		width: 100%;
+	}
+	.yacht_slider {
+		margin-top: 40rem;
+		width: 375rem;
+	}
+	.yacht_slider img {
+		height: 180rem;
+		margin: 0 5rem;
+	}
+	.yacht_slider ul {
+		width: 190rem;
+	}
+	.yacht_slider_count {
+    	font-size: 14rem;
+    	bottom: -11rem;
+	}
+	.yacht_slider_all {
+    	right: 62rem;
+	}
+	.yacht_slider_current {
+    	left: 62rem;
+	}
+	.yacht_slider .slick-arrow.left {
+    	left: 20rem;
+	}
+	.yacht_slider .slick-arrow.right {
+    	right: 20rem;
+	}
+	.yacht_overlay {
+    	margin-top: 60rem;
+	}
+	.yacht_item {
+		padding: 30rem 0;
+	}
+	.yacht_item_descr p {
+    	margin-bottom: 15rem;
+	}
+	p {
+		font-size: 14rem;
+	}
+	.yacht_item_content {
+		margin-top: 20rem;
+	}
+	.yacht_item_descr ul {
+		font-size: 14rem;
+	}
+	.yacht_item_char_item_name {
+		font-size: 11rem;
+	}
+	.yacht_item_char_item {
+		margin: 5rem 0;
+	}
+	.page_news {
+		margin-top: 30rem;
+	}
+	.page_news_title {
+		margin-bottom: 0;
+	}
+	.article_content .article_data {
+		font-size: 12rem;
+	}
+	.article_content h1 {
+    	margin-bottom: 25rem;
+	}
+	.article_title {
+		margin-top: 5rem;
+	}
+	.article_content p {
+		margin: 15rem 0 20rem;
+	}
+	.article_content h2 {
+		font-size: 22rem;
+		margin: 50rem 0 15rem;
+	}
+	.article_product h2 {
+		margin-left: 20rem;
+	}
+	.article_content ul li {
+		font-size: 14rem;
+	}
+	.share {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.share_items {
+		margin-top: 15rem;
+	}
+	.sidebar {
+		padding-top: 60rem;
+	}
+	.sidebar_title {
+		font-size: 16rem;
+		padding: 15rem 0;
+		border-top: 1rem solid #E4E4E4;
+	}
+	.exhibition_item_line {
+		font-size: 12rem;
+		width: 100rem;
+	}
+	a.exhibition_item_line {
+		font-size: 12rem;
+	}
+	.exhibition_overlay {
+		overflow-x: scroll;
+    	overflow-y: hidden;
+    	white-space: nowrap;
+    	flex-wrap: nowrap;
+    	width: calc(100% + 30rem);
+	}
+	.article_content .exhibition_item_line {
+		white-space: normal;
+		min-width: 120rem;
+	}
+	.exhibition_item {
+		padding: 15rem 0;
+	}
+	.service_slider {
+		width: 335rem;
+		
+	}
+	.service_slider ul {
+		width: 180rem;
+	}
+	.service_slider .slick-arrow.right {
+    	right: 0rem;
+	}
+	.service_slider .slick-arrow.left {
+    	left: 0rem;
+	}
+	.service_slider_all {
+    	right: 45rem;
+	}
+	.service_slider_current {
+    	left: 45rem;
+	}
+	.service_slider_count {
+		bottom: -3rem;
+		font-size: 14rem;
+	}
+	h3 {
+		font-size: 18rem;
+	}
+	.calc_overlay {
+		margin-top: 0;
+		flex-direction: column;
+	}
+	.calc_item {
+		margin-top: 20rem;
+		width: 100%;
+	}
+	.article_content .calc_item_title {
+		font-size: 13rem;
+	}
+	.article_content .calc_item_step_title {
+		font-size: 10rem;
+		margin-bottom: 4rem;
+	}
+	.calc_item_step {
+		padding: 14rem 0;
+	}
+	.calc_info p {
+		margin: 0;
+	}
+	.calc_info {
+		margin: 20rem 0;
+	}
+	.calc_info .calc_info_link {
+		font-size: 14rem;
+	}
+	.calc_doc {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.calc_doc .calc_doc_btn {
+		font-size: 12rem;
+		margin-left: 0;
+		margin-top: 20rem;
+		text-decoration: none;
+	}
+	.article_content a {
+		font-size: 14rem;
+	}
+	.contactspage {
+		padding-top: 30rem;
+	}
+	.contactspage_subtitle {
+    	margin-top: 20rem;
+	}
+	.contactspage_item {
+		padding: 30rem 0;
+	}
+	.contactspage_item_title {
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	.contactspage_item_overlay {
+		flex-direction: column;
+	}
+	.contactspage_item_item {
+		margin-top: 20rem;
+	}
+	.contactspage_item_item_title {
+		font-size: 10rem;
+	}
+	.contactspage_item_item_value {
+		font-size: 14rem;
+		width: 100%;
+	}
+	.contactspage_item_map {
+		height: 195rem;
+		margin-top: 20rem;
+	}
+	.catalog_title {
+		font-size: 32rem;
+		margin-bottom: -50rem;
+	}
+	.catalog {
+		margin-top: 20rem;
+		margin-bottom: -20rem;
+	}
+	.catalog_filters {
+    	margin-top: 50rem;
+	}
+	.catalog_filters_title {
+		font-size: 32rem;
+	}
 }
