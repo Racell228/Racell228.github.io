@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-EL.eot');
+    src: url('../fonts/kreadon/Kreadon-EL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-EL.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-EL.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-L.eot');
+    src: url('../fonts/kreadon/Kreadon-L.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-L.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-L.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-R.eot');
+    src: url('../fonts/kreadon/Kreadon-R.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-R.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-R.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-M.eot');
+    src: url('../fonts/kreadon/Kreadon-M.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-M.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-M.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-D.eot');
+    src: url('../fonts/kreadon/Kreadon-D.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-D.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-D.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-B.eot');
+    src: url('../fonts/kreadon/Kreadon-B.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-B.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-B.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/kreadon/Kreadon-EB.eot');
+    src: url('../fonts/kreadon/Kreadon-EB.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/kreadon/Kreadon-EB.woff') format('woff'),
+        url('../fonts/kreadon/Kreadon-EB.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Black.eot');
+    src: url('../fonts/onest/Onest-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Black.woff') format('woff'),
+        url('../fonts/onest/Onest-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-ExtraBold.eot');
+    src: url('../fonts/onest/Onest-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-ExtraBold.woff') format('woff'),
+        url('../fonts/onest/Onest-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Bold.eot');
+    src: url('../fonts/onest/Onest-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Bold.woff') format('woff'),
+        url('../fonts/onest/Onest-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Medium.eot');
+    src: url('../fonts/onest/Onest-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Medium.woff') format('woff'),
+        url('../fonts/onest/Onest-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Regular.eot');
+    src: url('../fonts/onest/Onest-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Regular.woff') format('woff'),
+        url('../fonts/onest/Onest-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Light.eot');
+    src: url('../fonts/onest/Onest-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Light.woff') format('woff'),
+        url('../fonts/onest/Onest-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/onest/Onest-Thin.eot');
+    src: url('../fonts/onest/Onest-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/onest/Onest-Thin.woff') format('woff'),
+        url('../fonts/onest/Onest-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+
