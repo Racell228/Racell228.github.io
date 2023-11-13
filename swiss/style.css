@@ -88,14 +88,34 @@ a {
 }
 .sidebar_item ul {
 	font-size: 14rem;
-	padding: 0 0 0 10rem;
+	padding: 0;
 	margin: 10rem 0;
 }
-.sidebar_item_btn {
-	color: #de2634;
-	font-weight: 500;
-	margin-top: 20rem;
+.sidebar_item ul li {
+	position: relative;
+	padding: 0 0 0 25rem;
+	list-style: none;
 }
+.sidebar_item ul li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "✅";
+}
+.sidebar_item_btn { 
+	display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #399521;
+    padding: 10rem 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 100rem;
+    margin: 20rem 0 0;
+    border: 2rem solid #33861E;
+	box-shadow: 0px 12px 34px 0px rgba(57, 149, 33, 0.30);
+}
+
 p b {
 	color: #e7868d;
 	font-weight: 500;
@@ -171,14 +191,14 @@ blockquote {
 	display: block;
 	text-decoration: none;
 	color: #fff;
-	background-color: #e7868d;
+	background-color: #399521;
 	padding: 10rem 0;
 	width: 100%;
 	text-align: center;
 	border-radius: 100rem;
 	margin: 20rem 0;
-	border: 2rem solid #D0797F;
-	box-shadow: 0px 12px 34px 0px rgba(237, 145, 151, 0.30);
+	border: 2rem solid #33861E;
+	box-shadow: 0px 12px 34px 0px rgba(57, 149, 33, 0.30);
 }
 .article_content .btn_hover {
 	-webkit-animation: pulse 2s infinite;
@@ -249,6 +269,37 @@ blockquote {
 }
 .footer_title {
 	font-size: 16rem;
+}
+.quote {
+	display: flex;
+	align-items: center;
+}
+.quote_content {
+
+}
+.quote img {
+	width: 150rem;
+	margin-right: 20rem;
+}   
+.footer_nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50rem;
+}
+.footer .footer_nav_item {
+	margin: 0 30rem;
+	font-size: 12rem;
+	color: rgba(0,0,0, 0.8);
+}
+.footer .footer_nav_copyright {
+	width: 100%;
+	margin-top: 20rem;
+	text-align: center;
+}
+.article_content .article_content_title {
+	font-size: 12rem;
 }
 @media screen and (max-width: 768px)  {
 	html {
@@ -354,5 +405,28 @@ blockquote {
 	.footer_overlay {
     	width: 350rem;
     	padding: 30rem 15rem;
+	}
+	.article_content img {
+		width: 100%;
+	}
+	.comments_like img {
+		width: 20rem;
+	}
+	.quote {
+		flex-direction: column;
+	}
+	.quote img {
+		width: 180rem;
+		display: block;
+		margin: 0  auto 20rem;
+	}
+	.footer .footer_nav_item {
+		margin: 0 10rem;
+	}
+	.footer .footer_nav_copyright {
+		margin-top: 10rem;
+	}
+	.footer_nav {
+		margin-top: 30rem;
 	}
 }
