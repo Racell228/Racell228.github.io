@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Femida</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#" class="header_logo"><img src="img/header_logo.svg"></a>
+				<div class="header_nav">
+					<a href="#team" class="header_nav_item scroll_btn">Про нас</a>
+					<a href="#services" class="header_nav_item scroll_btn">Послуги</a>
+					<a href="#" class="header_nav_item scroll_btn">Відгуки</a>
+					<a href="#blog" class="header_nav_item scroll_btn">Блог</a>
+					<a href="#contacts" class="header_nav_item scroll_btn">Контакти</a>
+				</div>
+				<div class="header_contacts">
+					<a href="tel:+380 66 987 99 32" class="header_contacts_phone">+380 66 987 99 32</a>
+					<p class="header_contacts_text">Юрист онлайн</p>
+				</div>
+				<a href="#" class="header_burger"><span></span></a>
+			</div>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="container">
+			<h1 class="hero_title"><span>Професiйна</span> юридична допомога</h1>
+			<p class="hero_text">Задайте Ваше питання, і отримайте необхідну консультацію за <span>10 хвилин!</span></p>
+			<div class="hero_actions">
+				<a href="#" class="hero_btn btn consultation_btn">Отримати допомогу</a>
+				<a href="#works" class="hero_cases btn_border scroll_btn">Наші кейси</a>
+			</div>
+			<div class="hero_award">
+				<img src="img/hero_award.svg" class="hero_award_icon">
+				<div class="hero_award_content">
+					<p class="hero_award_title">Краща юридична компанія 2022 в м. Одеса</p>
+					<p class="hero_award_text">За версією Pravo</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="home_numbers">
+		<div class="container">
+			<div class="home_numbers_overlay">
+				<div class="home_numbers_item">
+					<div class="home_numbers_item_number_overlay">
+						<p class="home_numbers_item_number" data-num="7">7</p>
+						<span>+</span>
+					</div>
+					<p class="home_numbers_item_text">Років досвіду</p>
+				</div>
+				<div class="home_numbers_item">
+					<div class="home_numbers_item_number_overlay">
+						<p class="home_numbers_item_number" data-num="2300">2300</p>
+						<span>+</span>
+					</div>
+					<p class="home_numbers_item_text">Судових справ</p>
+				</div>
+				<div class="home_numbers_item">
+					<div class="home_numbers_item_number_overlay">
+						<p class="home_numbers_item_number" data-num="14640">14640</p>
+						<span>+</span>
+					</div>
+					<p class="home_numbers_item_text">Юридичних консультацій</p>
+				</div>
+				<div class="home_numbers_item">
+					<div class="home_numbers_item_number_overlay">
+						<p class="home_numbers_item_number" data-num="5800">5800</p>
+						<span>+</span>
+					</div>
+					<p class="home_numbers_item_text">Клієнтів</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+			<h2 class="services_title dots_title">З чим ми працюємо?</h2>
+			<div class="services_overlay">
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img1.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Сімейне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img2.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Військове право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img3.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Спадкове право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img4.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Кримінальне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img5.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Пенсійне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img6.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Банківське право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img7.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">ДТП</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img8.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Міграційне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img5.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Адміністративне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img6.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Земельні спори</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img7.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Трудове право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img8.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Господарче право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img5.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Захист прав споживачів</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img6.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Житлове право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img7.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Податкове право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img8.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Послуги нотаріусу</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img1.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Міжнародне право</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="services_item">
+					<div class="services_item_image" style="background-image: url(img/services_img2.png);"></div>
+					<div class="services_item_content">
+						<h4 class="services_item_title">Юридичні послуги бізнесу</h4>
+						<p class="services_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+			</div>
+			<a href="#" class="services_more btn_border">Всі послуги <img src="img/arrow_more.svg"></a>
+		</div>
+	</section>
+	<section class="team" id="team">
+		<div class="container">
+			<h2 class="team_title dots_title">Наша команда</h2>
+			<p class="team_subtitle">За 7 років успішної роботи ми зібрали команду кращих професіоналів в різних сферах права, які за допомогою свого досвіду вирішать проблему будь-якої складності!</p>
+			<div class="team_overlay">
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team1.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Ольга Вікторівна</h4>
+						<p class="team_item_posititon">Керівник юридичного відділу</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Більше 11 років юридичного стажу та близько 6 років практичного досвіду</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільна та господарська сфери</p>
+					</div>
+				</div>
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team2.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Віталій Олександрович</h4>
+						<p class="team_item_posititon">Адвокат</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Більше п'ятнадцяти років досвіду роботи у судовій системі. </p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільне та адміністративне право, а також справи про адміністративні правопорушення.</p>
+					</div>
+				</div>
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team3.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Дар’я Геннадіївна</h4>
+						<p class="team_item_posititon">Старший юрист</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Закінчила з відзнакою Національний Університет «Одеська юридична академія» магістр права. Має безперервний юридичний стаж більше 5 років.</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільне право, Сімейне право, Кредитні спори</p>
+					</div>
+				</div>
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team1.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Ольга Вікторівна</h4>
+						<p class="team_item_posititon">Керівник юридичного відділу</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Більше 11 років юридичного стажу та близько 6 років практичного досвіду</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільна та господарська сфери</p>
+					</div>
+				</div>
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team2.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Віталій Олександрович</h4>
+						<p class="team_item_posititon">Адвокат</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Більше п'ятнадцяти років досвіду роботи у судовій системі. </p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільне та адміністративне право, а також справи про адміністративні правопорушення.</p>
+					</div>
+				</div>
+				<div class="team_item">
+					<div class="team_item_image" style="background-image: url(img/team3.png);"></div>
+					<div class="team_item_info">
+						<h4 class="team_item_name">Дар’я Геннадіївна</h4>
+						<p class="team_item_posititon">Старший юрист</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">Стаж:</p>
+						<p class="team_item_value">Закінчила з відзнакою Національний Університет «Одеська юридична академія» магістр права. Має безперервний юридичний стаж більше 5 років.</p>
+					</div>
+					<div class="team_item_content">
+						<p class="team_item_label">спеціалізація:</p>
+						<p class="team_item_value">Цивільне право, Сімейне право, Кредитні спори</p>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="team_more btn_border">Дивитися більше <img src="img/arrow_more.svg"></a>
+		</div>
+	</section>
+	<section class="works" id="works">
+		<div class="container">
+			<h2 class="works_title">Останні справи,<br> з якими ми успішно працювали</h2>
+			<div class="works_overlay">
+				<div class="works_item">
+					<img src="img/work_avatar1.svg" class="works_avatar">
+					<h5 class="works_name">Іван, Одеса</h5>
+					<p class="works_problem">Став виновником ДТП в нетверезому стані, отримав позов до суду</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg.svg" class="works_item_bg">
+				</div>
+				<div class="works_item">
+					<img src="img/work_avatar2.svg" class="works_avatar">
+					<h5 class="works_name">Олена, Київ</h5>
+					<p class="works_problem">Компенсація аліментів на утримання дитини</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg2.svg" class="works_item_bg">
+				</div>
+				<div class="works_item">
+					<img src="img/work_avatar1.svg" class="works_avatar">
+					<h5 class="works_name">Іван, Одеса</h5>
+					<p class="works_problem">Став виновником ДТП в нетверезому стані, отримав позов до суду</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg.svg" class="works_item_bg">
+				</div>
+				<div class="works_item">
+					<img src="img/work_avatar1.svg" class="works_avatar">
+					<h5 class="works_name">Іван, Одеса</h5>
+					<p class="works_problem">Став виновником ДТП в нетверезому стані, отримав позов до суду</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg.svg" class="works_item_bg">
+				</div>
+				<div class="works_item">
+					<img src="img/work_avatar2.svg" class="works_avatar">
+					<h5 class="works_name">Олена, Київ</h5>
+					<p class="works_problem">Компенсація аліментів на утримання дитини</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg2.svg" class="works_item_bg">
+				</div>
+				<div class="works_item">
+					<img src="img/work_avatar1.svg" class="works_avatar">
+					<h5 class="works_name">Іван, Одеса</h5>
+					<p class="works_problem">Став виновником ДТП в нетверезому стані, отримав позов до суду</p>
+					<div class="works_action">
+						<p class="works_action_label">що ми зробили:</p>
+						<p class="works_action_value">Сформували пакет таких-то документів, таку то заяву, супроводжували на суді, т.п.</p>
+					</div>
+					<div class="works_action">
+						<p class="works_action_label">результат:</p>
+						<p class="works_action_value">Клієнт отримав мінімальний штраф і мінімально можливе покарання, не позбавили прав</p>
+					</div>
+					<img src="img/work_item_bg.svg" class="works_item_bg">
+				</div>
+			</div>
+			<div class="works_slider_nav slider_nav"></div>
+		</div>
+	</section>
+	<section class="steps">
+		<div class="container">
+			<h2 class="steps_title dots_title">Робота з нами</h2>
+			<div class="steps_overlay">
+				<div class="steps_item">
+					<p class="steps_item_number">01</p>
+					<div class="steps_item_romb"></div>
+					<div class="steps_item_wrapper">
+						<img src="img/steps1.svg" class="steps_item_icon">
+						<p class="steps_item_text">Опишіть Вашу проблему на сайті або зателефонуйте нам!</p>
+					</div>
+				</div>
+				<div class="steps_item">
+					<p class="steps_item_number">02</p>
+					<div class="steps_item_romb"></div>
+					<div class="steps_item_wrapper">
+						<img src="img/steps2.svg" class="steps_item_icon">
+						<p class="steps_item_text">Найближчим часом ми звʼязуємось з Вами</p>
+					</div>
+				</div>
+				<div class="steps_item">
+					<p class="steps_item_number">03</p>
+					<div class="steps_item_romb"></div>
+					<div class="steps_item_wrapper">
+						<img src="img/steps3.svg" class="steps_item_icon">
+						<p class="steps_item_text">Ви отримаєте кваліфіковану юридичну консультацію для вирішення Вашої проблеми</p>
+					</div>
+				</div>
+				<div class="steps_item">
+					<p class="steps_item_number">04</p>
+					<div class="steps_item_romb"></div>
+						<div class="steps_item_wrapper">
+						<img src="img/steps4.svg" class="steps_item_icon">
+					<p class="steps_item_text">Ми займаємось вирішенням Вашого питання у найкоротший термін </p>
+					</div>
+				</div>
+				<div class="steps_item">
+					<p class="steps_item_number">05</p>
+					<div class="steps_item_romb"></div>
+						<div class="steps_item_wrapper">
+						<img src="img/steps5.svg" class="steps_item_icon">
+					<p class="steps_item_text">Ви отримуєте позитивний результат</p>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="steps_btn btn consultation_btn">замовити консультацію <img src="img/arrow_more.svg"></a>
+		</div>
+	</section>
+	<section class="win">
+		<div class="container">
+			<h2 class="win_title dots_title">Останні виграні справи</h2>
+			<div class="win_overlay">
+				<div class="win_item">
+					<a href="img/win_image1.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image1.png);"></a>
+					<p class="win_item_cat">Сімейні спори</p>
+					<h5 class="win_item_title">Зменшення розміру аліментів</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image1.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image1.png);"></a>
+					<p class="win_item_cat">Спори з банками</p>
+					<h5 class="win_item_title">Повернення безпідставно набутих коштів</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image2.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image2.png);"></a>
+					<p class="win_item_cat">ДТП</p>
+					<h5 class="win_item_title">Стягнення матеріальної шкоди внаслідок ДТП</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image1.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image1.png);"></a>
+					<p class="win_item_cat">Військові питання</p>
+					<h5 class="win_item_title">Звільнення з військової служби</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image2.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image2.png);"></a>
+					<p class="win_item_cat">Сімейні спори</p>
+					<h5 class="win_item_title">Зменшення розміру аліментів</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image1.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image1.png);"></a>
+					<p class="win_item_cat">Спори з банками</p>
+					<h5 class="win_item_title">Повернення безпідставно набутих коштів</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image2.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image2.png);"></a>
+					<p class="win_item_cat">ДТП</p>
+					<h5 class="win_item_title">Стягнення матеріальної шкоди внаслідок ДТП</h5>
+				</div>
+				<div class="win_item">
+					<a href="img/win_image1.png" class="win_item_image fancybox" data-fancybox="win" style="background-image: url(img/win_image1.png);"></a>
+					<p class="win_item_cat">Військові питання</p>
+					<h5 class="win_item_title">Звільнення з військової служби</h5>
+				</div>
+			</div>
+			<div class="win_slider_nav slider_nav"></div>
+		</div>
+	</section>
+	<section class="advice">
+		<div class="container">
+			<div class="advice_overlay">
+				<h2 class="advice_title">Потрібна <span>консультація експерта?</span></h2>
+				<form action="">
+					<div class="advice_form">
+						<div class="advice_form_wrapper">
+							<input type="text" class="advice_form_input" placeholder="Ваше ім’я">
+							<input type="text" class="advice_form_input" placeholder="Ваш телефон">
+						</div>
+						<textarea class="advice_form_input advice_form_textarea" placeholder="Повідомлення"></textarea>
+						<input type="submit" class="btn advice_form_submit" value="Надіслати">
+					</div>
+				</form>
+			</div>
+		</div>
+		<img src="img/advice_bg.png" class="advice_bg">
+	</section>
+	<section class="partners">
+		<div class="container">
+			<h2 class="partners_title dots_title">Наші партнери</h2>
+			<div class="partners_overlay">
+				<img src="img/partners1.png" class="partners_item">
+				<img src="img/partners2.png" class="partners_item">
+				<img src="img/partners3.png" class="partners_item">
+				<img src="img/partners4.png" class="partners_item">
+				<img src="img/partners5.png" class="partners_item">
+				<img src="img/partners6.png" class="partners_item">
+				<img src="img/partners7.png" class="partners_item">
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="container">
+			<h2 class="gallery_title dots_title">Галерея</h2>
+			<div class="gallery_overlay">
+				<a href="img/gallery1.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery1.png);"></a>
+				<a href="img/gallery2.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery2.png);"></a>
+				<a href="img/gallery3.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery3.png);"></a>
+				<a href="img/gallery4.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery4.png);"></a>
+				<a href="img/gallery2.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery2.png);"></a>
+				<a href="img/gallery1.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery1.png);"></a>
+				<a href="img/gallery4.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery4.png);"></a>
+				<a href="img/gallery3.png" data-fancybox="gallery" class="gallery_item" style="background-image: url(img/gallery3.png);"></a>
+				
+			</div>
+		</div>
+	</section>
+	<section class="video">
+		<div class="container">
+			<h2 class="video_title dots_title">Корисні відео</h2>
+			<div class="video_overlay">
+				<a href="img/video1.png" class="video_item" data-fancybox="video" style="background-image: url(img/video1.png);">
+					<img src="img/play_icon.svg" class="video_play">
+				</a>
+				<a href="img/video2.png" class="video_item" data-fancybox="video" style="background-image: url(img/video2.png);">
+					<img src="img/play_icon.svg" class="video_play">
+				</a>
+				<a href="img/video1.png" class="video_item" data-fancybox="video" style="background-image: url(img/video1.png);">
+					<img src="img/play_icon.svg" class="video_play">
+				</a>
+				<a href="img/video2.png" class="video_item" data-fancybox="video" style="background-image: url(img/video2.png);">
+					<img src="img/play_icon.svg" class="video_play">
+				</a>
+			</div>
+			<div class="video_slider_nav slider_nav"></div>
+			<a href="#" class="video_more btn_border">Дивитися більше <img src="img/video_insta.svg"></a>
+		</div>
+	</section>
+	<section class="blog" id="blog">
+		<div class="container">
+			<h2 class="blog_title dots_title">Блог</h2>
+			<div class="blog_overlay">
+				<a href="#" class="blog_item">
+					<div class="blog_item_image" style="background-image: url(img/blog_image.png);"></div>
+					<div class="blog_item_content">
+						<p class="blog_item_data">01/12/2023</p>
+						<h5 class="blog_item_title">Виплати родинам військових, які перебувають в полоні</h5>
+						<p class="blog_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="blog_item">
+					<div class="blog_item_image" style="background-image: url(img/blog_image.png);"></div>
+					<div class="blog_item_content">
+						<p class="blog_item_data">01/12/2023</p>
+						<h5 class="blog_item_title">Виплати родинам військових, які перебувають в полоні</h5>
+						<p class="blog_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+				<a href="#" class="blog_item">
+					<div class="blog_item_image" style="background-image: url(img/blog_image.png);"></div>
+					<div class="blog_item_content">
+						<p class="blog_item_data">01/12/2023</p>
+						<h5 class="blog_item_title">Виплати родинам військових, які перебувають в полоні</h5>
+						<p class="blog_item_more">дізнатися більше <img src="img/arrow_more.svg"></p>
+					</div>
+				</a>
+			</div>
+			<a href="#" class="blog_more btn_border">Дивитися більше <img src="img/arrow_more.svg"></a>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts_overlay">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.9535158376366!2d30.736170999352815!3d46.46942871969448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63178c6b44b45%3A0x67bddb786f8cb5a4!2z0JfQsNC70ZbQt9C90LjRh9C90LjQuSDQstC-0LrQt9Cw0Ls!5e0!3m2!1suk!2sua!4v1705248735344!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contacts_map"></iframe>
+				<div class="contacts_info">
+					<h4 class="contacts_title">Контакти</h4>
+					<div class="contacts_info_item">
+						<p class="contacts_info_label">Адреса</p>
+						<p class="contacts_info_value">65102, м. Одеса</p>
+					</div>
+					<div class="contacts_info_item">
+						<p class="contacts_info_label">Телефон:</p>
+						<a href="#" class="contacts_info_value">+38(066) 985 85 37</a>
+					</div>
+					<div class="contacts_info_item">
+						<p class="contacts_info_label">E-mail</p>
+						<a href="#" class="contacts_info_value">femida.odesa.ua@gmail.com</a>
+					</div>
+					<div class="contacts_info_item">
+						<p class="contacts_info_label">Написати нам</p>
+						<div class="contacts_info_social">
+							<a href="#" class="contacts_info_social_item"><img src="img/contact_social1.svg"></a>
+							<a href="#" class="contacts_info_social_item"><img src="img/contact_social2.svg"></a>
+							<a href="#" class="contacts_info_social_item"><img src="img/contact_social3.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_info">
+					<a href="#" class="footer_logo"><img src="img/header_logo.svg"></a>
+					<p class="footer_copyright">Femida © 2023. Всі права захищено</p>
+				</div>
+				<!-- <div class="footer_links">
+					<p class="footer_title">Послуги</p>
+					<a href="#" class="footer_link">Спадкові спори</a>
+					<a href="#" class="footer_link">Земельні спори</a>
+					<a href="#" class="footer_link">Спори з банками</a>
+					<a href="#" class="footer_link">ДТП</a>
+					<a href="#" class="footer_link">Кримінальні справи</a>
+					<a href="#" class="footer_link">Сімейні спори</a>
+					<a href="#" class="footer_link">Військові питання</a>
+					<a href="#" class="footer_link">Пенсійні справи</a>
+				</div>
+				<div class="footer_links">
+					<p class="footer_title">Інформація</p>
+					<a href="#" class="footer_link">Про нас</a>
+					<a href="#" class="footer_link">Кейси</a>
+					<a href="#" class="footer_link">Відгуки</a>
+					<a href="#" class="footer_link">Блог</a>
+					<a href="#" class="footer_link">Контакти</a>
+				</div> -->
+				<div class="footer_links_contacts">
+					<p class="footer_title">Зв’язатись з нами</p>
+					<a href="#" class="footer_link">+38(066) 985 85 37</a>
+					<a href="#" class="footer_link">femida.odesa.ua@gmail.com</a>
+					<div class="contacts_info_social">
+						<a href="#" class="contacts_info_social_item"><img src="img/video_insta.svg"></a>
+						<a href="#" class="contacts_info_social_item"><img src="img/contact_social1.svg"></a>
+						<a href="#" class="contacts_info_social_item"><img src="img/contact_social2.svg"></a>
+						<a href="#" class="contacts_info_social_item"><img src="img/contact_social3.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="modal modal_time">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<a href="#" class="modal_close"><img src="img/modal_close.svg"></a>
+			<div class="modal_time_content">
+				<h3 class="modal_time_title">Гадаєте, ми не взмозі <span>вирішити Ваше питання?</span></h3>
+				<p class="modal_time_text">Даруємо <span>безкоштовну</span> ввідну консультацію з нашим юристом. Просто заповніть форму</p>
+				<form action="">
+					<div class="modal_time_form">
+						<input type="text" class="input modal_time_input" placeholder="Ваше ім’я">
+						<input type="text" class="input modal_time_input" placeholder="Ваш телефон">
+						<input type="submit" class="btn modal_time_submit" value="Надіслати">
+					</div>
+				</form>
+			</div>
+			<img src="img/modal_time_bg.png" class="modal_time_bg">
+		</div>
+	</div>
+	
+	<div class="modal modal_consultation">
+		<div class="modal_overlay"></div>
+		<div class="modal_wrapper">
+			<a href="#" class="modal_close"><img src="img/modal_close.svg"></a>
+			<h3 class="modal_title">Запис на <span>безкоштовну</span> ввідну <span>консультацію юриста</span></h3>
+			<form action="">
+				<div class="modal_form">
+					<input type="text" class="input modal_input" placeholder="Ваше ім’я">
+					<input type="text" class="input modal_input" placeholder="Ваш контактний телефон">
+					<textarea class="input modal_textarea" placeholder="Коротко опишіть вашу ситуацію"></textarea>
+					<input type="submit" class="btn modal_time_submit" value="Надіслати">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<script>
+		$(document).ready(function() {
+		  //Works Slider
+		  $('.works_overlay').slick({
+		      infinite: true,
+		      slidesToShow: 3,
+		      slidesToScroll: 1,
+		      dots: true,
+		      arrows:true,
+		      variableWidth:true,
+		      prevArrow: '<button type="button" class="left"></button>',
+		      nextArrow: '<button type="button" class="right"></button>',
+		      appendDots:$('.works_slider_nav'),
+		      appendArrows:$('.works_slider_nav'),
+		      responsive: [
+			    {
+			      breakpoint: 769,
+			      settings: {
+			        slidesToShow: 1,
+			      }
+			    },
+			    ]
+		  });
+		  //Win Slider
+		  $('.win_overlay').slick({
+		      infinite: true,
+		      slidesToShow: 4,
+		      slidesToScroll: 1,
+		      dots: true,
+		      arrows:true,
+		      variableWidth:true,
+		      prevArrow: '<button type="button" class="left"></button>',
+		      nextArrow: '<button type="button" class="right"></button>',
+		      appendDots:$('.win_slider_nav'),
+		      appendArrows:$('.win_slider_nav'),
+		      responsive: [
+			    {
+			      breakpoint: 481,
+			      settings: {
+			        dots: false
+			      }
+			    },
+			    ]
+		  });
+		  //Video Slider
+		  $('.video_overlay').slick({
+		      infinite: true,
+		      slidesToShow: 3,
+		      slidesToScroll: 1,
+		      dots: true,
+		      arrows:true,
+		      variableWidth:true,
+		      prevArrow: '<button type="button" class="left"></button>',
+		      nextArrow: '<button type="button" class="right"></button>',
+		      appendDots:$('.video_slider_nav'),
+		      appendArrows:$('.video_slider_nav'),
+		      responsive: [
+			    {
+			      breakpoint: 481,
+			      settings: {
+			        dots: false
+			      }
+			    },
+			    ]
+		  });
+		  //Show More Services
+		  $('.services_more').click(function(event) {
+			  event.preventDefault();
+			  $(this).hide();
+			  $('.services_overlay').addClass('active');
+		  });
+		  //Show More Team
+		  $('.team_more').click(function(event) {
+			  event.preventDefault();
+			  $(this).hide();
+			  $('.team_item').show();
+		  });
+
+		});
+		//Wrapped Gallery
+		const container = document.querySelector('.gallery_overlay')
+		  let wrapper = null;
+		  [...document.querySelectorAll('.gallery_item')].forEach((el, i) => {
+		    if (i % 4 === 0) {
+		      wrapper = document.createElement('div')
+		      container.appendChild(wrapper)
+		    }
+		    wrapper.appendChild(el)
+		  })
+	</script>
+</body>
+</html>

@@ -219,6 +219,7 @@ header {
 	top: -13rem;
     left: -17rem;
     width: 240rem;
+    z-index: -1;
 }
 .why_bg {
 	position: absolute;

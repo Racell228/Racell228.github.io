@@ -1,0 +1,52 @@
+html {
+	font-size: 0.069446vw;
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter';
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+.container {
+	width: 1280rem;
+	margin: auto;
+}
+p {
+	font-size: 16rem;
+	line-height: 150%;
+}
+h1 {
+	font-size: 120rem;
+	line-height: 120%;
+}
+h2 {
+	font-size: 54rem;
+}
+h3 {
+	font-size: 24rem;
+	line-height: 125%;
+	font-weight: 600;
+}
+h4 {
+	font-size: 20rem;
+	font-weight: 600;
+}
+a {
+	font-size: 16rem;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	line-height: 150%;
+	font-weight: 400;
+	font-family: 'Inter';
+}
+.page {
+	height: 100vh;
+}
