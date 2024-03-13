@@ -13,12 +13,6 @@ setTimeout(function run() {
 }, 1000);
 
 
-
-
-
-
-
-
 $('.page').on('wheel', (function(e) {
 
 var count = $('.number').val();
