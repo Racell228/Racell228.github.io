@@ -1,0 +1,222 @@
+html {
+	font-size: 0.069446vw;
+	overflow-x: hidden;
+}
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: "Unbounded", sans-serif;
+	color: var(--White);
+	background-color: var(--Black);
+}
+h1,h2,h3,h4,h5,p {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--Black: #000;
+	--Accent: #B8DF53;
+	--White: #fff;
+	--text-white: rgba(255, 255, 255, 0.60);
+	--Grey: #181818;
+	--Text-dark: rgba(0, 0, 0, 0.60);
+	--Lines-white: rgba(255, 255, 255, 0.30);
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	display: block;
+	font-size: 14rem;
+	color: var(--White);
+}
+h1 {
+	font-size: 60rem;
+	font-weight: 700;
+}
+h2 {
+	font-size: 50rem;
+	font-weight: 700;
+}
+h3 {
+	font-size: 40rem;
+	font-weight: 700;
+}
+h4 {
+	font-size: 22rem;
+	font-weight: 700;
+	line-height: 150%;
+}
+h5 {
+	font-size: 18rem;
+	font-weight: 500;
+	line-height: 150%;
+}
+p {
+	font-size: 14rem;
+	line-height: 160%;
+	font-family: "Montserrat", sans-serif;
+}
+.container {
+	width: 1200rem;
+	margin: auto;
+}
+header {
+	position: fixed;
+	top: 15rem;
+	left: 0;
+	width: 100%;
+}
+.header_overlay {
+	display: flex;
+	align-items: center;
+	padding: 14rem 30rem;
+	border-radius: 5rem;
+	border: 1rem solid rgba(255, 255, 255, 0.05);
+	background: var(--Grey);
+}
+.header_nav {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+.header_logo {
+	width: 143rem;
+}
+.header_nav a {
+	font-weight: 500;
+	margin: 0 25rem;
+	font-family: "Montserrat", sans-serif;
+}
+.header_lang {
+	margin-right: 30rem;
+}
+.btn {
+	padding: 15rem 25rem;
+	border-radius: 5rem;
+	background: var(--Accent);
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	color: var(--Black);
+}
+.btn_dot:before {
+	content: "";
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100%;
+	background: var(--Black);
+	display: block;
+	margin-right: 10rem;
+}
+.hero_image {
+	width: 540rem;
+	overflow: hidden;
+	height: 610rem;
+}
+.hero_image_item {
+	position: relative;
+	top: -50rem;
+}
+span {
+	color: var(--Accent);
+}
+.hero_content {
+	width: 566rem;
+}
+.hero_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.hero {
+	padding-top: 105rem;
+}
+.hero_text {
+	margin: 40rem 0;
+	color: var(--text-white);
+	width: 402rem;
+}
+.hero_actions {
+	display: flex;
+	align-items: center;
+}
+.hero_more_btn {
+	color: var(--text-white);
+	font-family: Montserrat;
+	line-height: 160%;
+	text-decoration: underline;
+	margin-left: 30rem;
+}
+.numbers {
+	padding: 40rem 0;
+	background: var(--Grey);
+}
+.numbers_overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.numbers_item {
+	width: 166rem;
+}
+.numbers_item_number {
+	display: flex;
+	align-items: center;
+	font-size: 40rem;
+	font-weight: 700;
+	font-family: "Unbounded", sans-serif;
+	line-height: 100%;
+}
+.numbers_item_number span {
+	font-size: 40rem;
+	font-weight: 700;
+	display: block;
+	margin: 0 10rem;
+}
+.numbers_item_label {
+	margin-top: 9rem;
+	color: var(--text-white);
+}
+.home_about {
+	background-color: var(--White);
+	padding: 90rem 0;
+}
+.home_about_overlay {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.home_about_title {
+	color: var(--Grey);
+}
+.home_about_content {
+	width: 568rem;
+}
+.home_about_text {
+	color: var(--Text-dark);
+}
+.home_about_btn {
+	margin-top: 44rem;
+}
+.button {
+	display: flex;
+	align-items: center;
+	border-radius: 5rem;
+	background: var(--Accent);
+	color: var(--Black);
+	font-weight: 500;
+	padding: 16rem 30rem;
+	width: max-content;
+}
+.button img {
+	width: 17rem;
+	margin-left: 30rem;
+}
