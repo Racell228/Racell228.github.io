@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background-color: #453F58;">
+  
+
+<!-- Get api -->
+<!-- CURL -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em;  color: rgb(255, 255, 255);"><span style="color: #8181DB;">curl</span> --location --request GET <span class="hljs-string" style="color: #42E7B7;">'https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%20world'</span> \
+--<span class="hljs-selector-tag" style="color: rgb(255, 255, 255);">header</span> <span class="hljs-string" style="color: #42E7B7;">'Content-Type: application/json'</span> \
+--<span class="hljs-selector-tag" style="color: rgb(255, 255, 255);">header</span> <span class="hljs-string" style="color: #42E7B7;">'charset: UTF-8'</span></pre>
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+
+
+
+<!-- PHP -->
+
+<pre class="hljs" style="display: block; overflow-x: auto;  color: rgb(255, 255, 255); padding: 0.5em;"><span class="hljs-meta" style="color: #8181DB;">&lt;?php</span>
+
+<span style="color: #fff">$curl</span> = <span style="color: #B3D0FF">curl_init()</span>;
+
+<span style="color: #B3D0FF">curl_setopt_array</span>($curl, <span class="hljs-keyword" style="color: #8181DB;">array</span>(
+  <span style="color: #FF926F">CURLOPT_URL =&gt; <span class="hljs-string" style="color: #42E7B7;">'https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%2520world'</span>,
+   <span style="color: #FF926F">CURLOPT_RETURNTRANSFER =&gt;</span> <span class="hljs-keyword" style="color: #8181DB;">true</span>,
+   <span style="color: #FF926F">CURLOPT_ENCODING =&gt;</span> <span class="hljs-string" style="color: #42E7B7;">''</span>,
+   <span style="color: #FF926F">CURLOPT_MAXREDIRS =&gt;</span> <span class="hljs-number" style="color: #FF926F;">10</span>,
+   <span style="color: #FF926F">CURLOPT_TIMEOUT =&gt;</span> <span class="hljs-number" style="color: #FF926F;">0</span>,
+   <span style="color: #FF926F">CURLOPT_FOLLOWLOCATION =&gt; </span><span class="hljs-keyword" style="color: #8181DB;">true</span>,
+   <span style="color: #FF926F">CURLOPT_SSL_VERIFYPEER =&gt;</span> <span class="hljs-keyword" style="color: #8181DB;">false</span>,
+   <span style="color: #FF926F">CURLOPT_SSL_VERIFYHOST =&gt;</span> <span class="hljs-keyword" style="color: #8181DB;">false</span>,
+   <span style="color: #FF926F">CURLOPT_HTTP_VERSION =&gt;</span> CURL_HTTP_VERSION_1_1,
+   <span style="color: #FF926F">CURLOPT_CUSTOMREQUEST =&gt;</span> <span class="hljs-string" style="color: #42E7B7;">'GET'</span>,
+   <span style="color: #FF926F">CURLOPT_HTTPHEADER =&gt; </span><span class="hljs-keyword" style="color: #8181DB;">array</span>(
+    <span class="hljs-string" style="color: #42E7B7;">'Content-Type: application/json'</span>,
+    <span class="hljs-string" style="color: #42E7B7;">'charset: UTF-8'</span>
+  ),
+));
+
+<span style="color: #fff">$response =</span> <span style="color: #B3D0FF">curl_exec($curl);</span>
+
+<span style="color: #B3D0FF">curl_close</span><span style="color: #fff">($curl)</span>;
+<span class="hljs-keyword" style="color: #8181DB;">echo</span> <span style="color: #fff">$response;</span></pre>
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- GO -->
+
+<pre class="hljs" style="display: block; overflow-x: auto;  color: #fff; padding: 0.5em;"><span class="hljs-keyword" style="color: #8181DB;">package</span> main
+
+<span class="hljs-keyword" style="color: #8181DB;">import</span> (
+  <span class="hljs-string" style="color: #42E7B7;">"fmt"</span>
+  <span class="hljs-string" style="color: #42E7B7;">"net/http"</span>
+  <span class="hljs-string" style="color: #42E7B7;">"io/ioutil"</span>
+)
+
+<span class="hljs-function"><span class="hljs-keyword" style="color: #8181DB;">func</span> main<span class="hljs-params" style="color: #FF926F;">()</span></span> {
+
+  url := <span class="hljs-string" style="color: #42E7B7;">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%2520world"</span>
+  method := <span class="hljs-string" style="color: #42E7B7;">"GET"</span>
+
+  client := &amp;http.Client {
+  }
+  req, err := http.NewRequest(method, url, <span class="hljs-literal" style="color: #FF926F;">nil</span>)
+
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != <span class="hljs-literal" style="color: #FF926F;">nil</span> {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  req.Header.Add(<span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>, <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>)
+  req.Header.Add(<span class="hljs-string" style="color: #42E7B7;">"charset"</span>, <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>)
+
+  res, err := client.Do(req)
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != <span class="hljs-literal" style="color: #FF926F;">nil</span> {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  <span class="hljs-keyword" style="color: #8181DB;">defer</span> res.Body.Close()
+
+  body, err := ioutil.ReadAll(res.Body)
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != <span class="hljs-literal" style="color: #FF926F;">nil</span> {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  fmt.Println(<span class="hljs-keyword" style="color: #8181DB;">string</span>(body))
+}</pre>
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- JS -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;"><span style="color: #8181DB">var</span><span style="color: #FF926F"> settings</span> = {
+  <span class="hljs-string" style="color: #42E7B7;">"url"</span>: <span class="hljs-string" style="color: #42E7B7;">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"method"</span>: <span class="hljs-string" style="color: #42E7B7;">"GET"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"timeout"</span>: <span class="hljs-number" style="color: #FF926F;">0</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"headers"</span>: {
+    <span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>: <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"charset"</span>: <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>
+  },
+};
+
+$.<span style="color: #B3D0FF">ajax</span>(<span style="color: #FF926F">settings</span>).<span style="color: #B3D0FF">done</span>(<span style="color: #8181DB">function</span> (<span style="color: #FFEFB8;">response</span>) {
+  <span style="color: #FF926F">console</span>.<span style="color: #B3D0FF">log</span>(<span style="color: #FFEFB8;">response</span>);
+});</pre>
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- Python -->
+
+<pre class="hljs" style="display: block; overflow-x: auto;  color: #fff; padding: 0.5em;"><span class="hljs-keyword" style="color: #8181DB;">import</span> requests
+<span class="hljs-keyword" style="color: #8181DB;">import</span> json
+
+url = <span class="hljs-string" style="color: #42E7B7;">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>
+
+payload={}
+headers = {
+  <span class="hljs-string" style="color: #42E7B7;">'Content-Type'</span>: <span class="hljs-string" style="color: #42E7B7;">'application/json'</span>,
+  <span class="hljs-string" style="color: #42E7B7;">'charset'</span>: <span class="hljs-string" style="color: #42E7B7;">'UTF-8'</span>
+}
+
+response = requests.request(<span class="hljs-string" style="color: #42E7B7;">"GET"</span>, url, <span style="color: #FF926F">headers</span>=headers, <span class="hljs-keyword" style="color: #FF926F;">data</span>=payload)
+
+<span style="color: #B3D0FF">print</span>(response.text)</pre>
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- Ruby -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: #fff; padding: 0.5em;"><span style="color: #8181DB">require</span> <span class="hljs-string" style="color: #42E7B7;">"uri"</span>
+<span style="color: #8181DB">require</span> <span class="hljs-string" style="color: #42E7B7;">"json"</span>
+<span style="color: #8181DB">require</span> <span class="hljs-string" style="color: #42E7B7;">"net/http"</span>
+
+url = URI(<span class="hljs-string" style="color: #42E7B7;">"https://api.sempico.solutions/send?token=di5B9xXcZeULyNAFSsdv9COWOzBPWD&amp;phone=441316080906&amp;senderID=Sempico&amp;text=Hello%20world"</span>)
+
+https = Net::HTTP.<span class="hljs-keyword" style="color: #8181DB;">new</span>(url.host, url.port)
+https.use_ssl = <span class="hljs-literal" style="color: #FF926F;">true</span>
+
+request = Net::HTTP::<span class="hljs-keyword" style="color: #8181DB;">Get</span>.<span class="hljs-keyword" style="color: #8181DB;">new</span>(url)
+request[<span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>] = <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>
+request[<span class="hljs-string" style="color: #42E7B7;">"charset"</span>] = <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>
+
+response = https.request(request)
+<span style="color: #316BCA">puts</span> response.read_body</pre>
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+<div style="padding: 100px 0;"></div>
+
+
+
+<!-- Rest api -->
+<!-- curl -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;"><span style="color: #8181DB">curl</span> --location --request <span class="hljs-type" style="color: #42E7B7;">POST</span> <span class="hljs-symbol" style="color: #42E7B7;">'https://restapi.sempico.solutions/v1/send' \</span>
+--header <span class="hljs-symbol" style="color: #42E7B7;">'X</span>-<span class="hljs-type" style="color: #42E7B7;">Access</span>-<span class="hljs-type" style="color: #42E7B7;">Token</span>: <span class="hljs-number" style="color: #42E7B7;">193</span>aeb655c4c34c4fcd3d9516eeb0cf1' \
+--header <span class="hljs-symbol" style="color: #42E7B7;">'Content</span>-<span class="hljs-type" style="color: #42E7B7;">Type</span>: application/json' \
+--header <span class="hljs-symbol" style="color: #42E7B7;">'charset</span>: <span class="hljs-type" style="color: #42E7B7;">UTF</span><span class="hljs-number" style="color: #42E7B7;">-8</span>' \
+--data-raw '[{
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>],
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello\n are you?"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>:<span class="hljs-number" style="color: #42E7B7;">555</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:<span class="hljs-literal" style="color: #42E7B7;">false</span>
+},
+{
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,<span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>],
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello\nHow are you too?"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>:<span class="hljs-number" style="color: #42E7B7;">555</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:<span class="hljs-literal" style="color: #42E7B7;">false</span>
+}]'</pre>
+
+
+
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- php -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;"><span style="color: #8181DB;">&lt;?php</span>
+
+$curl = <span style="color: #B3D0FF;">curl_init</span>();
+
+<span style="color: #B3D0FF;">curl_setopt_array</span>($curl, array(
+  <span style="color: #FF926F;">CURLOPT_URL</span> =&gt; 'https://restapi.sempico.solutions/v1/send',
+  <span style="color: #FF926F;">CURLOPT_RETURNTRANSFER</span> =&gt; <span class="hljs-literal" style="color: #8181DB;">true</span>,
+  <span style="color: #FF926F;">CURLOPT_ENCODING</span> =&gt; '',
+  <span style="color: #FF926F;">CURLOPT_MAXREDIRS</span> =&gt; <span style="color: #FF926F;">10</span>,
+  <span style="color: #FF926F;">CURLOPT_TIMEOUT</span> =&gt; <span style="color: #FF926F;">0</span>,
+  <span style="color: #FF926F;">CURLOPT_FOLLOWLOCATION</span> =&gt; <span class="hljs-literal" style="color: #8181DB;">true</span>,
+  <span style="color: #FF926F;">CURLOPT_HTTP_VERSION</span> =&gt; <span style="color: #FF926F;">CURL_HTTP_VERSION_1_1</span>,
+  <span style="color: #FF926F;">CURLOPT_CUSTOMREQUEST</span> =&gt; 'POST',
+  <span style="color: #FF926F;">CURLOPT_POSTFIELDS</span> =&gt;'[{
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>],
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello\\n are you?"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>:<span class="hljs-number" style="color: #8181DB;">555</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:<span class="hljs-literal" style="color: #8181DB;">false</span>
+},
+{
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,<span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>],
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello<span style="color: #B3D0FF;">\\</span>How are you too?"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>:<span class="hljs-number" style="color: #8181DB;">555</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:<span class="hljs-literal" style="color: #8181DB;">false</span>
+}]',
+  <span style="color: #FF926F;">CURLOPT_HTTPHEADER</span> =&gt; array(
+    'X-Access-Token: 193aeb655c4c34c4fcd3d9516eeb0cf1',
+    'Content-Type: application/json',
+    'charset: UTF-8'
+  ),
+));
+
+$response = <span style="color: #B3D0FF;">curl_exec</span>($curl);
+
+<span style="color: #B3D0FF;">curl_close</span>($curl);
+<span style="color: #8181DB;">echo</span> $response;</pre>
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- go -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: #ffffff; padding: 0.5em;">package main
+
+import (
+  <span class="hljs-string" style="color: #42E7B7;">"fmt"</span>
+  <span class="hljs-string" style="color: #42E7B7;">"strings"</span>
+  <span class="hljs-string" style="color: #42E7B7;">"net/http"</span>
+  <span class="hljs-string" style="color: #42E7B7;">"io/ioutil"</span>
+)
+
+func main() {
+
+  url := <span class="hljs-string" style="color: #42E7B7;">"https://restapi.sempico.solutions/v1/send"</span>
+  method := <span class="hljs-string" style="color: #42E7B7;">"POST"</span>
+
+  payload := strings.NewReader([{<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>],`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello\n are you?"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime":555</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:false`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+},`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+{`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"number"</span>:[<span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,<span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>],`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>:<span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"text"</span>:<span class="hljs-string" style="color: #42E7B7;">"Hello\nHow are you too?"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"type"</span>:<span class="hljs-string" style="color: #42E7B7;">"sms"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>:<span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>:<span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"lifetime":555,`</span><span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+  <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>:false`<span style="color: #8181DB;">+</span><span class="hljs-comment" style="color: #FFEFB8;">"</span>
+<span class="hljs-comment" style="color: #FFEFB8;">"<span style="color: #8181DB;">+</span>`</span>
+}]`)
+
+  client := &amp;http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != nil {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  req.Header.Add(<span class="hljs-string" style="color: #42E7B7;">"X-Access-Token"</span>, <span class="hljs-string" style="color: #42E7B7;">"193aeb655c4c34c4fcd3d9516eeb0cf1"</span>)
+  req.Header.Add(<span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>, <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>)
+  req.Header.Add(<span class="hljs-string" style="color: #42E7B7;">"charset"</span>, <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>)
+
+  <span class="hljs-keyword" style="color: #8181DB;">res</span>, err := client.Do(req)
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != nil {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  defer <span class="hljs-keyword" style="color: #8181DB;">res</span>.Body.Close()
+
+  body, err := ioutil.ReadAll(<span class="hljs-keyword" style="color: #8181DB;">res</span>.Body)
+  <span class="hljs-keyword" style="color: #8181DB;">if</span> err != nil {
+    fmt.Println(err)
+    <span class="hljs-keyword" style="color: #8181DB;">return</span>
+  }
+  fmt.Println(string(body))
+}</pre>
+
+
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- js -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;"><span class="hljs-keyword" style="color: #8181DB;">var</span> <span style="color: #FF926F">settings</span> = {
+  <span class="hljs-string" style="color: #42E7B7;">"url"</span>: <span class="hljs-string" style="color: #42E7B7;">"https://restapi.sempico.solutions/v1/send"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"method"</span>: <span class="hljs-string" style="color: #42E7B7;">"POST"</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"timeout"</span>: <span class="hljs-number" style="color: #FF926F;">0</span>,
+  <span class="hljs-string" style="color: #42E7B7;">"headers"</span>: {
+    <span class="hljs-string" style="color: #42E7B7;">"X-Access-Token"</span>: <span class="hljs-string" style="color: #42E7B7;">"193aeb655c4c34c4fcd3d9516eeb0cf1"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>: <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"charset"</span>: <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>
+  },
+  <span class="hljs-string" style="color: #42E7B7;">"data"</span>: <span class="hljs-built_in" style="color: #FF926F;">JSON</span>.stringify([
+    {
+      <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+        <span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>
+      ],
+      <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\n are you?"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: <span class="hljs-literal" style="color: #FF926F;">false</span>
+    },
+    {
+      <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+        <span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,
+        <span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>
+      ],
+      <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\nHow are you too?"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: <span class="hljs-literal" style="color: #FF926F;">false</span>
+    }
+  ]),
+};
+
+$.ajax(<span style="color: #FF926F">settings</span>).done(<span class="hljs-function"><span class="hljs-keyword" style="color: #8181DB;">function</span> (<span style="color: #FFEFB8;">response</span>) </span>{
+  <span class="hljs-built_in" style="color: #FF926F;">console</span>.log(<span style="color: #FFEFB8;">response</span>);
+});</pre>
+
+
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- python -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;"><span class="hljs-keyword" style="color: #8181DB;">import</span> requests
+<span class="hljs-keyword" style="color: #8181DB;">import</span> json
+
+url = <span class="hljs-string" style="color: #42E7B7;">"https://restapi.sempico.solutions/v1/send"</span>
+
+payload = json.dumps([
+  {
+    <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+      <span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>
+    ],
+    <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\n are you?"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: False
+  },
+  {
+    <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+      <span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>
+    ],
+    <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\nHow are you too?"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: False
+  }
+])
+headers = {
+  <span class="hljs-string" style="color: #42E7B7;">'X-Access-Token'</span>: <span class="hljs-string" style="color: #42E7B7;">'193aeb655c4c34c4fcd3d9516eeb0cf1'</span>,
+  <span class="hljs-string" style="color: #42E7B7;">'Content-Type'</span>: <span class="hljs-string" style="color: #42E7B7;">'application/json'</span>,
+  <span class="hljs-string" style="color: #42E7B7;">'charset'</span>: <span class="hljs-string" style="color: #42E7B7;">'UTF-8'</span>
+}
+
+response = requests.request(<span class="hljs-string" style="color: #42E7B7;">"POST"</span>, url, headers=headers, <span class="hljs-keyword" style="color: #8181DB;">data</span>=payload)
+
+print(response.<span class="hljs-keyword" style="color: #8181DB;">text</span>)</pre>
+
+
+
+
+
+<div style="padding: 100px 0;"></div>
+
+
+
+
+
+<!-- ruby -->
+
+<pre class="hljs" style="display: block; overflow-x: auto; color: rgb(255, 255, 255); padding: 0.5em;">require <span class="hljs-string" style="color: #42E7B7;">"uri"</span>
+require <span class="hljs-string" style="color: #42E7B7;">"json"</span>
+require <span class="hljs-string" style="color: #42E7B7;">"net/http"</span>
+
+url = URI(<span class="hljs-string" style="color: #42E7B7;">"https://restapi.sempico.solutions/v1/send"</span>)
+
+https = Net::HTTP.<span class="hljs-keyword" style="color: #8181DB;">new</span>(url.host, url.port)
+https.use_ssl = <span class="hljs-literal" style="color: #FF926F;">true</span>
+
+<span class="hljs-built_in" style="color: #FF926F;">request</span> = Net::HTTP::Post.<span class="hljs-keyword" style="color: #8181DB;">new</span>(url)
+<span class="hljs-built_in" style="color: #FF926F;">request</span>[<span class="hljs-string" style="color: #42E7B7;">"X-Access-Token"</span>] = <span class="hljs-string" style="color: #42E7B7;">"193aeb655c4c34c4fcd3d9516eeb0cf1"</span>
+<span class="hljs-built_in" style="color: #FF926F;">request</span>[<span class="hljs-string" style="color: #42E7B7;">"Content-Type"</span>] = <span class="hljs-string" style="color: #42E7B7;">"application/json"</span>
+<span class="hljs-built_in" style="color: #FF926F;">request</span>[<span class="hljs-string" style="color: #42E7B7;">"charset"</span>] = <span class="hljs-string" style="color: #42E7B7;">"UTF-8"</span>
+<span class="hljs-built_in" style="color: #FF926F;">request</span>.body = JSON.dump([
+  {
+    <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+      <span class="hljs-string" style="color: #42E7B7;">"12345678912"</span>
+    ],
+    <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\n are you?"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: <span class="hljs-literal" style="color: #FF926F;">false</span>
+  },
+  {
+    <span class="hljs-string" style="color: #42E7B7;">"number"</span>: [
+      <span class="hljs-string" style="color: #42E7B7;">"12345678910"</span>,
+      <span class="hljs-string" style="color: #42E7B7;">"12345678911"</span>
+    ],
+    <span class="hljs-string" style="color: #42E7B7;">"senderID"</span>: <span class="hljs-string" style="color: #42E7B7;">"Sempico"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"text"</span>: <span class="hljs-string" style="color: #42E7B7;">"Hello\nHow are you too?"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"type"</span>: <span class="hljs-string" style="color: #42E7B7;">"sms"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginDate"</span>: <span class="hljs-string" style="color: #42E7B7;">"2022-08-31"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"beginTime"</span>: <span class="hljs-string" style="color: #42E7B7;">"11:00"</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"lifetime"</span>: <span class="hljs-number" style="color: #FF926F;">555</span>,
+    <span class="hljs-string" style="color: #42E7B7;">"delivery"</span>: <span class="hljs-literal" style="color: #FF926F;">false</span>
+  }
+])
+
+<span class="hljs-built_in" style="color: #FF926F;">response</span> = https.<span class="hljs-built_in" style="color: #FF926F;">request</span>(<span class="hljs-built_in" style="color: #FF926F;">request</span>)
+puts <span class="hljs-built_in" style="color: #FF926F;">response</span>.read_body</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Normandica">
+    <meta name="application-name" content="Normandica">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0A3251">
+    <title>Normandica - Калькулятор доставки</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<main class="calcMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrapper">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="/"><img src="img/logo-white.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <h1 class="title">Калькулятор доставки</h1>
+                    </div>
+                    <div class="calc">
+                        <!-- <aside class="leter_back">
+                            <img src="img/iconArrowLeft.svg" alt="back">
+                        </aside> -->
+                        <p class="aucTitle">Выберите аукцион</p>
+                        <div class="pageCounter">01</div>
+                        <section>
+                            <aside id="ia_auc">
+                                <img src="img/iaai.svg">
+                            </aside>
+                            <aside id="cop_auc">
+                                <img src="img/copart.svg">
+                            </aside>
+
+                            <p class="stateTitle">Заглавная буква локации</p>
+
+                            <div class="show_location"  style="display:none;">
+                                <aside class="leter_back">
+                                	<img src="img/iconArrowLeft.svg" alt="back">
+                                </aside>
+                                <aside class="select_l">A</aside>
+                                <aside class="select_l">B</aside>
+                                <aside class="select_l">C</aside>
+                                <aside class="select_l">D</aside>
+                                <aside class="select_l">E</aside>
+                                <aside class="select_l">F</aside>
+                                <aside class="select_l">G</aside>
+                                <aside class="select_l">H</aside>
+                                <aside class="select_l">I</aside>
+                                <aside class="select_l">J</aside>
+                                <aside class="select_l">K</aside>
+                                <aside class="select_l">L</aside>
+                                <aside class="select_l">M</aside>
+                                <aside class="select_l">N</aside>
+                                <aside class="select_l">O</aside>
+                                <aside class="select_l">P</aside>
+                                <aside class="select_l">R</aside>
+                                <aside class="select_l">S</aside>
+                                <aside class="select_l">T</aside>
+                                <aside class="select_l">V</aside>
+                                <aside class="select_l">W</aside>
+                                <aside class="select_l">Y</aside>
+                                <div class="stock">
+                                    
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="380">ABILENE - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="285">ALBANY  - NY</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="515">ALBUQUERQUE  - NM</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="380">ALTOONA - PA</span>
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="475">AMARILLO - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="2700">ANCHORAGE - AK</span>
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="420">ANDREWS - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="365">ANTELOPE - CA</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="640">APPLETON - WI</span>
+                                    <span class="full_name" data-letter="A" data-port="GA" data-price="260">ATLANTA - GA</span>
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="290">AUSTIN - TX</span>
+                                    <span class="full_name" data-letter="B" data-port="CA" data-price="240">BAKERSFIELD - CA</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="280">BALTIMORE - MD</span>
+                                    <span class="full_name" data-letter="B" data-port="TX" data-price="355">BATON ROUGE - LA</span>
+                                    <span class="full_name" data-letter="B" data-port="CA" data-price="950">BILLINGS - MT</span>
+                                    <span class="full_name" data-letter="B" data-port="GA" data-price="365">BIRMINGHAM  - AL</span>
+                                    <span class="full_name" data-letter="B" data-port="CA" data-price="790">BOISE - ID</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="385">BUFFALO - NY</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="370">CANDIA - NH</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="290">CARTERSVILLE  - GA</span>
+                                    <span class="full_name" data-letter="C" data-port="CA" data-price="990">CASPER - WY</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="370">CHAMBERSBURG  - PA</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="390">NORTH CHARLESTON - SC</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="515">CHARLESTON - WV</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="515">CHICAGO - IL</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="290">CHINA GROVE - NC</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="415">CLEVELAND - OH</span>
+                                    <span class="full_name" data-letter="C" data-port="TX" data-price="790">COLORADO  SPRINGS - CO</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="720">COLUMBIA - MO</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="235">COLUMBIA - SC</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="515">COLUMBUS - OH</span>
+                                    <span class="full_name" data-letter="C" data-port="TX" data-price="290">CORPUS CHRISTI - TX</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="275">CRASHEDTOYS ATLANTA</span>
+                                    <span class="full_name" data-letter="C" data-port="TX" data-price="295">CRASHEDTOYS DALLAS</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="675">CRASHEDTOYS MINNEAPOLIS</span>
+                                    <span class="full_name" data-letter="C" data-port="CA" data-price="330">CRASHEDTOYS SACRAMENTO</span>
+                                    <span class="full_name" data-letter="D" data-port="TX" data-price="320">DALLAS - TX</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="430">DANVILLE - VA</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="645">DAVENPORT  - IA</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="490">DAYTON - OH</span>
+                                    <span class="full_name" data-letter="D" data-port="CA" data-price="570">DENVER - CO</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="685">DES MOINES - IA</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="510">DETROIT - MI</span>
+                                    <span class="full_name" data-letter="E" data-port="TX" data-price="530">EL PASO - TX</span>
+                                    <span class="full_name" data-letter="E" data-port="NJ" data-price="360">EXETER - RI</span>
+                                    <span class="full_name" data-letter="E" data-port="CA" data-price="540">EUGENE - OR</span>
+                                    <span class="full_name" data-letter="F" data-port="TX" data-price="590">FAYETTEVILLE - AR</span>
+                                    <span class="full_name" data-letter="F" data-port="NJ" data-price="515">FLINT - MI</span>
+                                    <span class="full_name" data-letter="F" data-port="NJ" data-price="535">FORT WAYNE - IN</span>
+                                    <span class="full_name" data-letter="F" data-port="CA" data-price="290">FRESNO - CA</span>
+                                    <span class="full_name" data-letter="F" data-port="GA" data-price="320">FT. PIERCE - FL</span>
+                                    <span class="full_name" data-letter="F" data-port="TX" data-price="310">FT. WORTH - TX</span>
+                                    <span class="full_name" data-letter="G" data-port="NJ" data-price="180">GLASSBORO - NJ</span>
+                                    <span class="full_name" data-letter="G" data-port="CA" data-price="610">GRAHAM - WA</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="490">HAMMOND - IN</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="390">HAMPTON - VA</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="265">HARRISBURG - PA</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="265">HARTFORD - CT</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="280">HARTFORD SPRINGFIELD - CT</span>
+									<span class="full_name" data-letter="H" data-port="CA" data-price="370">HAYWARD  - CA</span>
+									<span class="full_name" data-letter="H" data-port="CA" data-price="950">HELENA - MT</span>
+									<span class="full_name" data-letter="H" data-port="CA" data-price="1560">HONOLULU  - HI</span>
+									<span class="full_name" data-letter="H" data-port="TX" data-price="265">HOUSTON  - TX</span>
+									<span class="full_name" data-letter="I" data-port="GA" data-price="520">INDIANAPOLIS  - IN</span>
+									<span class="full_name" data-letter="I" data-port="NJ" data-price="570">IONIA - MI</span>
+									<span class="full_name" data-letter="J" data-port="GA" data-price="535">JACKSON - MS</span>
+									<span class="full_name" data-letter="J" data-port="GA" data-price="215">JACKSONVILLE - FL</span>
+									<span class="full_name" data-letter="K" data-port="GA" data-price="720">KANSAS CITY - KS</span>
+									<span class="full_name" data-letter="K" data-port="NJ" data-price="995">KINCHELOE - MI</span>
+									<span class="full_name" data-letter="K" data-port="GA" data-price="365">KNOXVILLE  - TN</span>
+									<span class="full_name" data-letter="L" data-port="NJ" data-price="535">LANSING - MI</span>
+									<span class="full_name" data-letter="L" data-port="CA" data-price="370">LAS VEGAS - NV</span>
+									<span class="full_name" data-letter="L" data-port="GA" data-price="470">LEXINGTON - KY</span>
+									<span class="full_name" data-letter="L" data-port="NJ" data-price="775">LINCOLN - NE</span>
+									<span class="full_name" data-letter="L" data-port="GA" data-price="540">LITTLE ROCK - AR</span>
+									<span class="full_name" data-letter="L" data-port="CA" data-price="165">LONG BEACH - CA</span>
+									<span class="full_name" data-letter="L" data-port="NJ" data-price="225">LONG ISLAND - NY</span>
+									<span class="full_name" data-letter="L" data-port="TX" data-price="340">LONGVIEW - TX</span>
+									<span class="full_name" data-letter="L" data-port="CA" data-price="165">LOS ANGELES - CA</span>
+									<span class="full_name" data-letter="L" data-port="GA" data-price="470">LOUISVILLE  - KY</span>
+									<span class="full_name" data-letter="L" data-port="TX" data-price="315">LUFKIN - TX</span>
+									<span class="full_name" data-letter="L" data-port="NJ" data-price="420">LYMAN - ME</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="270">MACON - GA</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="640">MADISON  - WI</span>
+									<span class="full_name" data-letter="M" data-port="CA" data-price="340">MARTINEZ - CA</span>
+									<span class="full_name" data-letter="M" data-port="TX" data-price="340">MCALLEN  - TX</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="290">MEBANE - NC</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="420">MEMPHIS - TN</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="345">MIAMI - FL</span>
+									<span class="full_name" data-letter="M" data-port="NJ" data-price="540">MILWAUKEE  - WI</span>
+									<span class="full_name" data-letter="M" data-port="NJ" data-price="570">MINNEAPOLIS  - MN</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="370">MOBILE - AL</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="290">MOCKSVILLE - NC</span>
+									<span class="full_name" data-letter="M" data-port="GA" data-price="370">MONTGOMERY - AL</span>
+									<span class="full_name" data-letter="N" data-port="GA" data-price="370">NASHVILLE  - TN</span>
+									<span class="full_name" data-letter="N" data-port="GA" data-price="415">NEW ORLEANS  - LA</span>
+									<span class="full_name" data-letter="N" data-port="NJ" data-price="195">NEWBURGH - NY</span>
+									<span class="full_name" data-letter="N" data-port="NJ" data-price="345">NORTH BOSTON - MA</span>
+									<span class="full_name" data-letter="N" data-port="CA" data-price="630">NORTH SEATTLE - WA</span>
+									<span class="full_name" data-letter="O" data-port="GA" data-price="265">OCALA - FL</span>
+									<span class="full_name" data-letter="O" data-port="CA" data-price="470">OGDEN - UT</span>
+									<span class="full_name" data-letter="O" data-port="TX" data-price="440">OKLAHOMA  CITY - OK</span>
+									<span class="full_name" data-letter="O" data-port="GA" data-price="290">ORLANDO - FL</span>
+									<span class="full_name" data-letter="P" data-port="CA" data-price="750">PASCO - WA</span>
+									<span class="full_name" data-letter="P" data-port="GA" data-price="570">PEORIA - IL</span>
+									<span class="full_name" data-letter="P" data-port="GA" data-price="570">PEORIA - IL</span>
+									<span class="full_name" data-letter="P" data-port="NJ" data-price="195">PHILADELPHIA - PA</span>
+									<span class="full_name" data-letter="P" data-port="CA" data-price="370">PHOENIX - AZ</span>
+									<span class="full_name" data-letter="P" data-port="NJ" data-price="395">PITTSBURG - PA</span>
+									<span class="full_name" data-letter="P" data-port="CA" data-price="540">PORTLAND - OR</span>
+									<span class="full_name" data-letter="P" data-port="GA" data-price="320">PUNTA GORDA - FL</span>
+									<span class="full_name" data-letter="R" data-port="GA" data-price="320">RALEIGH - NC</span>
+									<span class="full_name" data-letter="R" data-port="CA" data-price="190">RANCHO CUCAMONGA - CA</span>
+									<span class="full_name" data-letter="R" data-port="CA" data-price="440">RENO - NV</span>
+									<span class="full_name" data-letter="R" data-port="NJ" data-price="370">RICHMOND  - VA</span>
+									<span class="full_name" data-letter="R" data-port="NJ" data-price="390">ROCHESTER  - NY</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="335">SACRAMENTO - CA</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="465">SALT LAKE CITY - UT</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="190">SAN BERNARDINO - CA</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="215">SAN DIEGO - CA</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="340">SAN JOSE - CA</span>
+									<span class="full_name" data-letter="S" data-port="TX" data-price="310">SAN ANTONIO - TX</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="145">SAVANNAH - GA</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="270">SCRANTON - PA</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="320">SEAFORD - DE</span>
+									<span class="full_name" data-letter="S" data-port="TX" data-price="340">SHREVEPORT - LA</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="690">SIKESTON - MO</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="340">SO SACRAMENTO  - CA</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="165">SOMERVILLE - NJ</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="345">SOUTH BOSTON - MA</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="520">SOUTHERN ILLINOIS - IL</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="270">SPARTANBURG - SC</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="750">SPOKANE - WA</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="680">SPRINGFIELD  - MO</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="740">ST. CLOUD - MN</span>
+									<span class="full_name" data-letter="S" data-port="GA" data-price="485">ST. LOUIS - MO</span>
+									<span class="full_name" data-letter="S" data-port="CA" data-price="185">SUN VALLEY - CA</span>
+									<span class="full_name" data-letter="S" data-port="NJ" data-price="320">SYRACUSE - NY</span>
+									<span class="full_name" data-letter="T" data-port="GA" data-price="330">TALLAHASSEE - FL</span>
+									<span class="full_name" data-letter="T" data-port="GA" data-price="295">TAMPA - FL</span>
+									<span class="full_name" data-letter="T" data-port="GA" data-price="490">TANNER - AL</span>
+									<span class="full_name" data-letter="T" data-port="GA" data-price="270">TIFTON - GA</span>
+									<span class="full_name" data-letter="T" data-port="NJ" data-price="165">TRENTON - NJ</span>
+									<span class="full_name" data-letter="T" data-port="CA" data-price="490">TUCSON - AZ</span>
+									<span class="full_name" data-letter="T" data-port="TX" data-price="520">TULSA - OK</span>
+									<span class="full_name" data-letter="T" data-port="CA" data-price="340">VALLEJO - CA</span>
+									<span class="full_name" data-letter="V" data-port="CA" data-price="170">VAN NUYS - CA</span>
+									<span class="full_name" data-letter="W" data-port="TX" data-price="315">WACO - TX</span>
+									<span class="full_name" data-letter="W" data-port="GA" data-price="490">WALTON - KY</span>
+									<span class="full_name" data-letter="W" data-port="NJ" data-price="290">WASHINGTON  DC - MD</span>
+									<span class="full_name" data-letter="W" data-port="GA" data-price="340">WEST PALM BEACH - FL</span>
+									<span class="full_name" data-letter="W" data-port="NJ" data-price="340">WEST WARREN - MA</span>
+									<span class="full_name" data-letter="W" data-port="NJ" data-price="440">WHEELING - IL</span>
+									<span class="full_name" data-letter="W" data-port="TX" data-price="590">WICHITA  - KS</span>
+									<span class="full_name" data-letter="Y" data-port="NJ" data-price="320">YORK HAVEN - PA</span>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="show_letter" style="display:none;">
+                                <aside class="leter_back">
+                                	<img src="img/iconArrowLeft.svg" alt="back">
+                                </aside>
+                                <aside class="select_l">A</aside>
+                                <aside class="select_l">B</aside>
+                                <aside class="select_l">C</aside>
+                                <aside class="select_l">D</aside>
+                                <aside class="select_l">E</aside>
+                                <aside class="select_l">F</aside>
+                                <aside class="select_l">G</aside>
+                                <aside class="select_l">H</aside>
+                                <aside class="select_l">I</aside>
+                                <aside class="select_l">J</aside>
+                                <aside class="select_l">K</aside>
+                                <aside class="select_l">L</aside>
+                                <aside class="select_l">M</aside>
+                                <aside class="select_l">N</aside>
+                                <aside class="select_l">O</aside>
+                                <aside class="select_l">P</aside>
+                                <aside class="select_l">R</aside>
+                                <aside class="select_l">S</aside>
+                                <aside class="select_l">T</aside>
+                                <aside class="select_l">W</aside>
+                                <aside class="select_l">Y</aside>
+                                <div class="stock">
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="365">ABILENE - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="190">ACE CARSON - CA</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="190">ACE PERRIS - CA</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="190">ACE PERRIS 2 - CA</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="420">AKRON CANTON - OH</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="285">ALBANY - NY</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="520">ALBUQUERQUE - NM</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="415">ALTOONA - PA</span>
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="420">AMARILLO - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="165">ANAHEIM - CA</span>
+                                    <span class="full_name" data-letter="A" data-port="CA" data-price="2650">ANCHORAGE - AK</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="610">APPLETON - WI</span>
+                                    <span class="full_name" data-letter="A" data-port="GA" data-price="340">ASHEVILLE - NC</span>
+                                    <span class="full_name" data-letter="A" data-port="GA" data-price="535">ASHLAND - KY</span>
+                                    <span class="full_name" data-letter="A" data-port="GA" data-price="260">ATLANTA - GA</span>
+                                    <span class="full_name" data-letter="A" data-port="TX" data-price="240">AUSTIN - TX</span>
+                                    <span class="full_name" data-letter="A" data-port="NJ" data-price="140">AVENEL - NJ</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="285">BALTIMORE - MD</span>
+                                    <span class="full_name" data-letter="B" data-port="TX" data-price="410">BATON ROUGE - LA</span>
+                                    <span class="full_name" data-letter="B" data-port="CA" data-price="850">BILLINGS - MT</span>
+                                    <span class="full_name" data-letter="B" data-port="GA" data-price="360">BIRMINGHAM - AL</span>
+                                    <span class="full_name" data-letter="B" data-port="CA" data-price="650">BOISE - ID</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="315">BOSTON-SHIRLEY - MA</span>
+                                    <span class="full_name" data-letter="B" data-port="GA" data-price="510">BOWLING GREEN — KY</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="215">BRIDGEPORT - PA</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="515">BUCKHANNON - WV</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="385">BUFFALO - NY</span>
+                                    <span class="full_name" data-letter="B" data-port="NJ" data-price="510">BURLINGTON - VT</span>
+                                    <span class="full_name" data-letter="C" data-port="CA" data-price="920">CASPER - WY</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="165">CENTRAL NEW JERSEY - NJ</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="210">CHARLESTON - SC</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="265">CHARLOTTE - NC</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="410">CHATTANOOGA - TN</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="515">CHICAGO - IL</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="430">CINCINNATI - OH</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="285">CLEARWATER - FL</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="435">CLEVELAND - OH</span>
+                                    <span class="full_name" data-letter="C" data-port="CA" data-price="185">COLTON - CA</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="235">COLUMBIA - SC</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="460">COLUMBUS - OH</span>
+                                    <span class="full_name" data-letter="C" data-port="GA" data-price="310">CONCORD - NC</span>
+                                    <span class="full_name" data-letter="C" data-port="TX" data-price="285">CORPUS CHRISTI - TX</span>
+                                    <span class="full_name" data-letter="C" data-port="NJ" data-price="310">CULPEPER - VA</span>
+                                    <span class="full_name" data-letter="D" data-port="TX" data-price="235">DALLAS - TX</span>
+                                    <span class="full_name" data-letter="D" data-port="TX" data-price="235">DALLAS / FT. WORTH - TX</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="585">DAVENPORT - IA</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="435">DAYTON - OH</span>
+                                    <span class="full_name" data-letter="D" data-port="CA" data-price="570">DENVER - CO</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="560">DES MOINES - IA</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="460">DETROIT - MI</span>
+                                    <span class="full_name" data-letter="D" data-port="GA" data-price="390">DOTHAN - AL</span>
+                                    <span class="full_name" data-letter="D" data-port="NJ" data-price="285">DUNDALK - MD</span>
+                                    <span class="full_name" data-letter="E" data-port="CA" data-price="340">EAST BAY - CA</span>
+                                    <span class="full_name" data-letter="E" data-port="TX" data-price="385">EL PASO - TX</span>
+                                    <span class="full_name" data-letter="E" data-port="NJ" data-price="185">ENGLISHTOWN - NJ</span>
+                                    <span class="full_name" data-letter="E" data-port="NJ" data-price="485">ERIE - PA</span>
+                                    <span class="full_name" data-letter="E" data-port="CA" data-price="540">EUGENE - OR</span>
+                                    <span class="full_name" data-letter="F" data-port="NJ" data-price="850">FARGO - ND</span>
+                                    <span class="full_name" data-letter="F" data-port="TX" data-price="440">FAYETTEVILLE - AR</span>
+                                    <span class="full_name" data-letter="F" data-port="NJ" data-price="510">FLINT - MI</span>
+                                    <span class="full_name" data-letter="F" data-port="CA" data-price="185">FONTANA - CA</span>
+                                    <span class="full_name" data-letter="F" data-port="GA" data-price="335">FORT MYERS - FL</span>
+                                    <span class="full_name" data-letter="F" data-port="GA" data-price="310">FORT PIERCE - FL</span>
+                                    <span class="full_name" data-letter="F" data-port="TX" data-price="265">Fort Worth North - TX</span>
+                                    <span class="full_name" data-letter="F" data-port="NJ" data-price="285">Fredericksburg-South - VA</span>
+                                    <span class="full_name" data-letter="F" data-port="CA" data-price="315">FREMONT - CA</span>
+                                    <span class="full_name" data-letter="F" data-port="CA" data-price="315">FRESNO - CA</span>
+                                    <span class="full_name" data-letter="G" data-port="NJ" data-price="535">GRAND RAPIDS - MI</span>
+                                    <span class="full_name" data-letter="G" data-port="GA" data-price="285">GREENSBORO - NC</span>
+                                    <span class="full_name" data-letter="G" data-port="GA" data-price="285">GREENVILLE - SC</span>
+                                    <span class="full_name" data-letter="G" data-port="GA" data-price="430">GRENADA - MS</span>
+                                    <span class="full_name" data-letter="G" data-port="GA" data-price="360">GULF COAST - MS</span>
+                                    <span class="full_name" data-letter="H" data-port="NJ" data-price="255">HARTFORD - CT</span>
+                                    <span class="full_name" data-letter="H" data-port="CA" data-price="265">HIGH DESERT - CA</span>
+                                    <span class="full_name" data-letter="H" data-port="CA" data-price="1800">HONOLULU - HI</span>
+                                    <span class="full_name" data-letter="H" data-port="TX" data-price="185">HOUSTON - TX</span>
+                                    <span class="full_name" data-letter="H" data-port="GA" data-price="360">HUNTSVILLE - AL</span>
+                                    <span class="full_name" data-letter="I" data-port="GA" data-price="490">INDIANAPOLIS - IN</span>
+                                    <span class="full_name" data-letter="J" data-port="GA" data-price="410">JACKSON - MS</span>
+                                    <span class="full_name" data-letter="J" data-port="GA" data-price="210">JACKSONVILLE - FL</span>
+                                    <span class="full_name" data-letter="K" data-port="GA" data-price="510">KANSAS CITY - KS</span>
+                                    <span class="full_name" data-letter="K" data-port="GA" data-price="355">KNOXVILLE - TN</span>
+                                    <span class="full_name" data-letter="L" data-port="TX" data-price="290">LAFAYETTE - LA</span>
+                                    <span class="full_name" data-letter="L" data-port="CA" data-price="340">LAS VEGAS - NV</span>
+                                    <span class="full_name" data-letter="L" data-port="NJ" data-price="310">LAUREL - MD</span>
+                                    <span class="full_name" data-letter="L" data-port="GA" data-price="205">Lexington - SC</span>
+                                    <span class="full_name" data-letter="L" data-port="NJ" data-price="530">LINCOLN - IL</span>
+                                    <span class="full_name" data-letter="L" data-port="GA" data-price="450">LITTLE ROCK - AR</span>
+                                    <span class="full_name" data-letter="L" data-port="NJ" data-price="230">LONG ISLAND - NY</span>
+                                    <span class="full_name" data-letter="L" data-port="TX" data-price="285">LONGVIEW - TX</span>
+                                    <span class="full_name" data-letter="L" data-port="CA" data-price="165">LOS ANGELES (GARDENA) - CA</span>
+                                    <span class="full_name" data-letter="L" data-port="GA" data-price="455">LOUISVILLE - KY</span>
+                                    <span class="full_name" data-letter="L" data-port="TX" data-price="455">LUBBOCK - TX</span>
+                                    <span class="full_name" data-letter="M" data-port="GA" data-price="260">MACON - GA</span>
+                                    <span class="full_name" data-letter="M" data-port="NJ" data-price="360">MANCHESTER - NH</span>
+                                    <span class="full_name" data-letter="M" data-port="TX" data-price="290">MCALLEN - TX</span>
+                                    <span class="full_name" data-letter="M" data-port="GA" data-price="410">MEMPHIS - TN</span>
+                                    <span class="full_name" data-letter="M" data-port="NJ" data-price="280">METRO DC - MD</span>
+                                    <span class="full_name" data-letter="M" data-port="GA" data-price="280">MIAMI - FL</span>
+                                    <span class="full_name" data-letter="M" data-port="NJ" data-price="535">MILWAUKEE - WI</span>
+                                    <span class="full_name" data-letter="M" data-port="NJ" data-price="560">MINNEAPOLIS/ST.PAUL - MN</span>
+                                    <span class="full_name" data-letter="M" data-port="CA" data-price="880">MISSOULA - MT</span>
+                                    <span class="full_name" data-letter="N" data-port="GA" data-price="360">NASHVILLE - TN</span>
+                                    <span class="full_name" data-letter="N" data-port="NJ" data-price="260">NEW CASTLE - DE</span>
+                                    <span class="full_name" data-letter="N" data-port="GA" data-price="430">NEW ORLEANS - LA</span>
+                                    <span class="full_name" data-letter="N" data-port="NJ" data-price="210">NEWBURGH - NY</span>
+                                    <span class="full_name" data-letter="N" data-port="CA" data-price="160">NORH HOLLYWOOD - CA</span>
+                                    <span class="full_name" data-letter="N" data-port="NJ" data-price="285">NOTHERN VIRGINIA - VA</span>
+                                    <span class="full_name" data-letter="O" data-port="TX" data-price="385">OKLAHOMA CITY - OK</span>
+                                    <span class="full_name" data-letter="O" data-port="NJ" data-price="610">OMAHA - NE</span>
+                                    <span class="full_name" data-letter="O" data-port="GA" data-price="280">ORLANDO - FL</span>
+                                    <span class="full_name" data-letter="P" data-port="GA" data-price="500">PADUCAH - KY</span>
+                                    <span class="full_name" data-letter="P" data-port="GA" data-price="360">PENSACOLA - FL</span>
+                                    <span class="full_name" data-letter="P" data-port="TX" data-price="415">PERMIAN BASIN - TX</span>
+                                    <span class="full_name" data-letter="P" data-port="NJ" data-price="205">PHILADELPHIA - PA</span>
+                                    <span class="full_name" data-letter="P" data-port="CA" data-price="365">PHOENIX - AZ</span>
+                                    <span class="full_name" data-letter="P" data-port="NJ" data-price="405">PITTSBURGH - PA</span>
+                                    <span class="full_name" data-letter="P" data-port="NJ" data-price="585">PORTAGE-WI</span>
+                                    <span class="full_name" data-letter="P" data-port="CA" data-price="540">PORTLAND - OR</span>
+                                    <span class="full_name" data-letter="P" data-port="NJ" data-price="385">PULASKI - VA</span>
+                                    <span class="full_name" data-letter="R" data-port="GA" data-price="280">RALEIGH - NC</span>
+                                    <span class="full_name" data-letter="R" data-port="CA" data-price="435">RENO - NV</span>
+                                    <span class="full_name" data-letter="R" data-port="NJ" data-price="355">RICHMOND - VA</span>
+                                    <span class="full_name" data-letter="R" data-port="GA" data-price="455">ROANOKE - VA</span>
+                                    <span class="full_name" data-letter="R" data-port="NJ" data-price="385">ROCHESTER - NY</span>
+                                    <span class="full_name" data-letter="S" data-port="CA" data-price="310">SACRAMENTO - CA</span>
+                                    <span class="full_name" data-letter="S" data-port="CA" data-price="470">SALT LAKE CITY - UT</span>
+                                    <span class="full_name" data-letter="S" data-port="TX" data-price="260">SAN ANTONIO - TX</span>
+                                    <span class="full_name" data-letter="S" data-port="CA" data-price="210">SAN DIEGO - CA</span>
+                                    <span class="full_name" data-letter="S" data-port="GA" data-price="135">SAVANNAH - GA</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="260">SCRANTON - PA</span>
+                                    <span class="full_name" data-letter="S" data-port="CA" data-price="535">SEATTLE - WA</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="530">SHADY SPRING - WV</span>
+                                    <span class="full_name" data-letter="S" data-port="TX" data-price="260">SHREVEPORT - LA</span>
+                                    <span class="full_name" data-letter="S" data-port="TX" data-price="840">SIOUX FALLS - SD</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="555">SOUTH BEND - IN</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="180">SOUTHERN NEW JERSEY— NJ</span>
+                                    <span class="full_name" data-letter="S" data-port="GA" data-price="555">SPECIALTY DIVISION - IL</span>
+                                    <span class="full_name" data-letter="S" data-port="CA" data-price="735">SPOKANE - WA</span>
+                                    <span class="full_name" data-letter="S" data-port="GA" data-price="505">SPRINGFIELD - MO</span>
+                                    <span class="full_name" data-letter="S" data-port="GA" data-price="505">ST. LOUIS - IL</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="360">SUFFOLK - VA</span>
+                                    <span class="full_name" data-letter="S" data-port="NJ" data-price="280">SYRACUSE - NY</span>
+                                    <span class="full_name" data-letter="T" data-port="GA" data-price="280">TAMPA - FL</span>
+                                    <span class="full_name" data-letter="T" data-port="NJ" data-price="280">TAUNTON - MA</span>
+                                    <span class="full_name" data-letter="T" data-port="NJ" data-price="310">TEMPLETON - MA</span>
+                                    <span class="full_name" data-letter="T" data-port="NJ" data-price="330">TIDEWATER - VA</span>
+                                    <span class="full_name" data-letter="T" data-port="GA" data-price="255">TIFTON - GA</span>
+                                    <span class="full_name" data-letter="T" data-port="CA" data-price="385">TUCSON - AZ</span>
+                                    <span class="full_name" data-letter="T" data-port="TX" data-price="410">TULSA - OK</span>
+                                    <span class="full_name" data-letter="W" data-port="TX" data-price="755">WESTERN COLORADO - CO</span>
+                                    <span class="full_name" data-letter="W" data-port="TX" data-price="485">WICHITA - KS</span>
+                                    <span class="full_name" data-letter="W" data-port="GA" data-price="280">WILMINGTON - NC</span>
+                                    <span class="full_name" data-letter="Y" data-port="GA" data-price="280">YORK SPRINGS - PA </span>
+
+
+
+
+
+
+
+
+
+
+                                   
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+<!-- МАНХЕЙМ -->
+                           
+                            <div class="total_price">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                        	<div class="priceBlock">
+                                        		<p>Стоимость доставки</p>
+	                                            <div class="wrap">
+	                                                <div class="item">
+	                                                    <div id="ground"></div>
+	                                                    <div class="sub_t">Суша</div>
+	                                                </div>
+	                                                <span class="symbol">+</span>
+	                                                <div class="item">
+	                                                    <div id="port"></div>
+	                                                    <div id="sub_t" class="sub_t">Фрахт</div>
+	                                                </div>
+	                                                <span class="symbol">+</span>
+	                                                <div class="item">
+	                                                    <div id="service"></div>
+	                                                    <div class="sub_t">Услуга</div>
+	                                                </div>
+	                                                <span class="symbol">=</span>
+	                                                <div class="item total">
+	                                                    <div id="total"></div>
+	                                                    <div class="sub_t">USD</div>
+	                                                </div>
+	                                            </div>
+                                        	</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

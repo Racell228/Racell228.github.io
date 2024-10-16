@@ -1,0 +1,18 @@
+@font-face {
+    font-family: AkzidenzGrotesk;  
+    src: url('../fonts/AkzidenzGroteskPro-Bold.eot');   
+    src: url('../fonts/AkzidenzGroteskPro-Bold.eot?#iefix') format('embedded-opentype'),       
+    url('../fonts/AkzidenzGroteskPro-Bold.woff') format('woff'),        
+    url('../fonts/AkzidenzGroteskPro-Bold.ttf') format('truetype');    
+    font-weight: 700;   
+    font-style: normal;
+}
+@font-face {
+    font-family: AkzidenzGrotesk;  
+    src: url('../fonts/AkzidenzGroteskPro-Bold.eot');   
+    src: url('../fonts/AkzidenzGroteskPro-Bold.eot?#iefix') format('embedded-opentype'),       
+    url('../fonts/AkzidenzGroteskPro-Bold.woff') format('woff'),        
+    url('../fonts/AkzidenzGroteskPro-Bold.ttf') format('truetype');    
+    font-weight: bold;   
+    font-style: normal;
+}
