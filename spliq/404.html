@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#" class="header_logo"><img src="img/logo.svg"></a>
+				<div class="header_nav">
+					<a href="#">Home</a>
+					<a href="#">About us</a>
+					<a href="#">For whom</a>
+					<a href="#">FAQ</a>
+					<a href="#">Contact us</a>
+					<a href="#" class="header_btn btn modal-js header_btn_mobile">Contact us<img src="img/arrow_btn.svg"></a>
+				</div>
+				<div class="header_lang">
+					<p class="header_lang_current">EN<img src="img/arrow_show.svg"></p>
+					<div class="header_lang_hide">
+						<li><a href="#">EN</a></li>
+						<li><a href="#">PL</a></li>
+					</div>
+				</div>
+				<a href="#" class="header_btn btn modal-js">Contact us<img src="img/arrow_btn.svg"></a>
+				<div class="header_burger"><span></span></div>
+			</div>
+		</div>
+	</header>
+	<section class="error">
+		<div class="container">
+			<h1 class="error_title">404</h1>
+			<h2 class="error_subtitle">Page <b>not found</b></h2>
+			<a href="#" class="error_btn btn">Back to home<img src="img/arrow_btn.svg"></a>
+		</div>
+	</section>
+	<footer>
+		<img src="img/footer_bg.png" class="footer_bg">
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_contacts_overlay">
+					<div class="footer_contacts">
+						<h2 class="footer_title">Discover the <b>future of AI</b> with us</h2>
+						<div class="footer_contacts_items">
+							<div class="footer_contacts_item">
+								<div class="circle_overlay">
+									<img src="img/contacts_item1.svg" class="circle_icon">
+								</div>
+								<div class="footer_contacts_item_content">
+									<p class="footer_contacts_item_label">Company info</p>
+									<p class="footer_contacts_item_link">Spliq LLC</p>
+								</div>
+							</div>
+							<div class="footer_contacts_item">
+								<div class="circle_overlay">
+									<img src="img/contacts_item2.svg" class="circle_icon">
+								</div>
+								<div class="footer_contacts_item_content">
+									<p class="footer_contacts_item_label">E-mail</p>
+									<a href="#" class="footer_contacts_item_link">test@gmail.com  <img src="img/arrow_btn.svg"></a>
+								</div>
+							</div>
+							<div class="footer_contacts_item">
+								<div class="circle_overlay">
+									<img src="img/contacts_item3.svg" class="circle_icon">
+								</div>
+								<div class="footer_contacts_item_content">
+									<p class="footer_contacts_item_label">Phone</p>
+									<a href="#" class="footer_contacts_item_link">+44 332 23 421 22 <img src="img/arrow_btn.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer_form_overlay">
+						<form>
+							<div class="footer_form">
+								<div class="footer_form_input_overlay">
+									<input type="text" class="footer_form_input" placeholder="Your name">
+								</div>
+								<div class="footer_form_input_overlay">
+									<input type="text" class="footer_form_input" placeholder="E-mail">
+								</div>
+								<div class="footer_form_input_overlay">
+									<textarea class="footer_form_input footer_form_textarea" placeholder="Message..."></textarea>
+								</div>
+								<input type="submit" value="Send message" class="footer_form_submit button">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="line footer_line"></div>
+				<div class="footer_bottom">
+					<p class="footer_copyright">2024. All right reserved</p>
+					<a href="#" class="footer_dev">Website development: <img src="img/dev_logo.svg"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal">
+		<div class="modal_overlay"></div>
+		<div class="modal_content">
+			<img src="img/icon_close.svg" class="modal_close">
+			<h3 class="modal_title">Discover the <b>future of AI</b> with us</h3>
+			<form>
+				<div class="footer_form modal_form">
+					<div class="footer_form_input_overlay">
+						<input type="text" class="footer_form_input" placeholder="Your name">
+					</div>
+					<div class="footer_form_input_overlay">
+						<input type="text" class="footer_form_input" placeholder="E-mail">
+					</div>
+					<div class="footer_form_input_overlay">
+						<textarea class="footer_form_input footer_form_textarea" placeholder="Message..."></textarea>
+					</div>
+					<input type="submit" value="Send message" class="footer_form_submit button">
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="modal_cf modal_cf_done">
+		<div class="modal_cf_overlay"></div>
+		<div class="modal_cf_content">
+			<img src="img/icon_close.svg" class="modal_cf_close">
+			<img src="img/icon_done.svg" class="modal_cf_icon">
+			<div class="modal_cf_text_overlay">
+				<h4 class="modal_cf_title">Success!</h4>
+				<p class="modal_cf_text">Your request was successfully sent!</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal_cf modal_cf_error">
+		<div class="modal_cf_overlay"></div>
+		<div class="modal_cf_content">
+			<img src="img/icon_close.svg" class="modal_cf_close">
+			<img src="img/icon_error.svg" class="modal_cf_icon">
+			<div class="modal_cf_text_overlay">
+				<h4 class="modal_cf_title">Error!</h4>
+				<p class="modal_cf_text">Please check your data and try again!</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,527 @@
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-weight: 400;
+	color: #272323;
+	background: #F9F9FC;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.container {
+	position: relative;
+	max-width: 1280px;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	color: #E31E24;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 130%;
+}
+h2 {
+	font-size: 26px;
+	line-height: 130%;
+	font-weight: 500;
+}
+h3 {
+	font-size: 18px;
+	line-height: 130%;
+	font-weight: 500;	
+}
+h4 {
+	font-size: 14px;
+	line-height: 130%;
+	font-weight: 700;	
+}
+p {
+	font-size: 14px;
+	line-height: 130%;
+}
+.header_img {
+	width: 100%;
+}
+.bonus_hero {
+	margin-top: 23px;
+}
+.bonus_hero_overlay {
+	padding: 50px 70px;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+span {
+	color: #E31E24;
+}
+.bonus_hero_content {
+	max-width: 616px;
+}
+.bonus_hero_text {
+	margin-top: 12px;
+	font-size: 12px;
+	color: #757373;
+	font-weight: 500;
+}
+.bonus_hero_actions {
+	display: flex;
+	align-items: center;
+	margin-top: 55px;
+}
+.btn {
+	border-radius: 5px;
+	background: #E31E24;
+	padding: 14px 29px;
+	color: #fff;
+	width: 140px;
+	text-align: center;
+	border: 1px solid #E31E24;
+}
+.button {
+	border-radius: 5px;
+	padding: 14px 29px;
+	color: #E31E24;
+	width: 140px;
+	text-align: center;
+	border: 1px solid #E31E24;
+}
+.bonus_hero_btn {
+	margin-right: 20px;
+}
+.bonus_hero_img {
+	max-width: 408px;
+}
+.bonus_steps {
+	margin-top: 120px;
+}
+.bonus_steps_title {
+	text-align: center;
+}
+.bonus_steps_overlay {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.bonus_steps_item_img {
+	display: block;
+	height: 160px;
+	margin: auto;
+}
+.bonus_steps_item {
+	max-width: 297px;
+}
+.bonus_steps_item_wrapper {
+	border-radius: 8px;
+	background:  #FFF;
+	box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+	padding: 20px 30px;
+	height: calc(100% - 201px);
+}
+.bonus_steps_item_number {
+	color: #E31E24;
+	font-weight: 700;
+	text-align: center;
+}
+.bonus_steps_item_text {
+	margin-top: 6px;
+	text-align: center;
+	font-weight: 500;
+}
+.bonus_steps_actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+.bonus_steps_actions_reg {
+	margin-right: 30px;
+}
+.bonus_get_title {
+	text-align: center;
+}
+.bonus_get {
+	margin-top: 120px;
+}
+.bonus_get_overlay {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.bonus_get_item {
+	display: flex;
+	align-items: flex-start;
+}
+.bonus_get_item_icon {
+	width: 55px;
+}
+.bonus_get_item_content {
+	max-width: 280px;
+	margin-left: 25px;
+}
+.bonus_get_item_text {
+	margin-top: 12px;
+	color: #757373;
+}
+.bonus_info {
+	margin-top: 120px;
+}
+.bonus_info_overlay {
+	padding: 70px 50px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #E31E24;
+}
+.bonus_info_items {
+	display: flex;
+	justify-content: space-between;
+}
+.bonus_info_item {
+	max-width: 234px;
+}
+.bonus_info_item_icon {
+	display: block;
+	width: 106px;
+	margin: auto;
+}
+.bonus_info_item_text {
+	font-weight: 700;
+	margin-top: 25px;
+	text-align: center;
+}
+.bonus_info_title {
+	margin-top: 80px;
+	text-align: center;
+}
+.bonus_info_actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.bonus_info_actions_law {
+	margin-left: 33px;
+	text-decoration: underline;
+}
+.bonus_faq {
+	margin: 120px 0 80px;
+}
+.bonus_faq_title {
+	text-align: center;
+}
+.bonus_faq_item {
+	padding: 20px 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.05);
+	margin-top: 12px;
+}
+.bonus_faq_overlay {
+	margin-top: 30px;
+}
+.bonus_faq_item_title span {
+	color: #272323;
+	max-width: calc(100% - 25px);
+}
+.bonus_faq_item_title {
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.bonus_faq_item_title img {
+	transform: rotate(0deg);
+	transition: 0.4s;
+}
+.bonus_faq_item_title img.active {
+	transform: rotate(180deg);
+}
+.bonus_faq_item_answer {
+	display: none;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #E2E2E2;
+}
+.bonus_faq_item_answer p {
+	margin-top: 12px;
+	color: #757373;
+}
+.bonus_faq_item_answer p:first-child {
+	margin-top: 0;
+}
+.bonus_faq_item_answer img {
+	max-width: 500px;
+	margin: 12px 0;
+}
+.bonus_faq_item_answer ul {
+	margin: 12px 0;
+	padding: 0 0 0 20px;
+}
+.bonus_faq_item_answer li {
+	color: #757373;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 130%;
+	margin-bottom: 5px;
+}
+.footer_img {
+	width: 100%;
+}
+@media screen and (max-width: 1360px) {
+	.container {
+		max-width: 100%;
+		margin:  0 30px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.bonus_steps_item_img {
+		height: auto;
+		width: 80%;
+	}
+	.bonus_steps_item {
+        max-width: 23%;
+        margin: 0 auto;
+    }
+	.bonus_steps_item_wrapper {
+		min-height: 100px;
+		height: auto;
+	}
+	.bonus_get_item {
+		margin: 0 20px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.bonus_steps_overlay {
+		flex-wrap: wrap;
+		margin-top: 10px;
+	}
+	.bonus_steps_item {
+		width: 40%;
+		max-width: 100%;
+		margin-top: 40px;
+	}
+	.bonus_get_overlay {
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	.bonus_get_item {
+		margin-top: 40px;
+	}
+	.bonus_get_item_content {
+		max-width: 690px;
+	}
+	.bonus_get_item_text {
+		margin-top: 5px;
+	}
+	.bonus_info_item {
+		margin: 0 15px;
+	}
+	.bonus_info_overlay {
+		padding: 30px 20px;
+	}
+	.bonus_hero_overlay {
+		flex-direction: column;
+		align-items: center;
+	}
+	.bonus_hero_img {
+		margin-top: 50px;
+	}
+	.bonus_hero_actions {
+		margin-top: 30px;
+		justify-content: center;
+	}
+	.bonus_steps {
+    	margin-top: 100px;
+	}
+	.bonus_get {
+    	margin-top: 100px;
+	}
+	.bonus_info {
+    	margin-top: 100px;
+	}
+	.bonus_faq {
+    	margin: 100px 0 80px;
+	}
+	.bonus_hero_content {
+		text-align: center;
+	}
+	.bonus_faq_item_answer img {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 26px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3  {
+		font-size: 16px;
+	}
+	.bonus_info_title {
+		font-size: 20px;
+		margin-top: 50px;
+	}
+	.container {
+        margin: 0 20px;
+    }
+    .bonus_hero_overlay {
+    	padding: 35px 30px;
+    }
+    .bonus_hero_content {
+    	width: 100%;
+    	text-align: left;
+    }
+    .bonus_hero_actions {
+    	flex-direction: column;
+    }
+    .bonus_hero_btn {
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	}
+	.btn {
+		width: 100%;
+	    padding: 14px 0;
+	}
+	.button {
+		width: 100%;
+		padding: 14px 0;
+	}
+	.bonus_hero_img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .bonus_steps {
+        margin-top: 80px;
+    }
+    .bonus_steps_overlay {
+    	flex-direction: column;
+    }
+    .bonus_steps_item {
+    	width: 80%;
+    }
+    .bonus_steps_item_wrapper {
+    	min-height: auto;
+    	padding: 20px 30px 30px 30px;
+    }
+    .bonus_steps_actions {
+    	flex-direction: column;
+    }
+    .bonus_steps_actions_reg {
+    	margin-right: 0;
+    	margin-bottom: 15px;
+    }
+    .bonus_get {
+        margin-top: 80px;
+    }
+    .bonus_info_items {
+    	flex-direction: column;
+    }
+    .bonus_info_item {
+    	display: flex;
+    	align-items: center;
+    	max-width: 100%;
+    	margin: 20px 0 0;
+    }
+    .bonus_info_item_text {
+    	margin-top: 0;
+    	text-align: left;
+    	margin-left: 25px;
+    	width: 100%;
+    }
+    .bonus_info_actions {
+    	flex-direction: column;
+    }
+    .bonus_info_actions_law {
+    	margin-left: 0;
+    	width: 100%;
+    	text-align: center;
+    	margin-top: 15px;
+    }
+    .bonus_info_overlay {
+    	padding: 30px;
+    }
+    .bonus_faq {
+        margin: 80px 0 60px;
+    } 
+}
+@media screen and (max-width: 480px) {
+	.button {
+		padding: 12px 0;
+	}
+	.btn {
+		padding: 12px 0;
+	}
+	.bonus_hero_btn {
+		margin-bottom: 10px;
+	}
+	.bonus_steps_item {
+		margin-top: 30px;
+		width: 90%;
+	}
+	.bonus_get_item {
+		margin: 30px 0 0;
+	}
+	.bonus_info {
+        margin-top: 80px;
+    }
+    .bonus_info_item_icon {
+    	width: 80px;
+    }
+    .bonus_info_item_text {
+    	margin-left: 20px;
+    }
+    .bonus_info_overlay {
+        padding: 10px 20px 30px;
+    }
+    .bonus_info_actions_law {
+    	font-size: 12px;
+    }
+    .bonus_info_actions {
+    	margin-top: 20px;
+    }
+    .bonus_faq {
+        margin: 60px 0 40px;
+    }
+    .bonus_faq_overlay {
+    	margin-top: 20px;
+	}
+	.bonus_faq_item_title img {
+		width: 12px;
+	}
+	.bonus_faq_item_title span {
+    	max-width: calc(100% - 30px);
+	}
+	.bonus_faq_item {
+    	padding: 17px 20px;
+	}
+	.bonus_get_item_content {
+		margin-left: 20px;
+	}
+	.bonus_get_item_icon {
+		width: 50px;
+	}
+	.bonus_steps_overlay {
+		margin-top: 0;
+	}
+	.bonus_steps {
+        margin-top: 60px;
+    }
+}

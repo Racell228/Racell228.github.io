@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="page_header">
+		<div class="container">
+			<div class="header_overlay">
+				<div class="header_nav">
+					<a href="#" class="header_search"><img src="img/icon_search_white.svg"><span>пошук</span></a>
+					<div class="header_nav_overlay">
+						<div class="header_nav_parent">
+							<a href="#" class="header_nav_parent_link">Каталог<img src="img/icon_nav_arrow.svg"></a>
+							<div class="header_nav_parent_hidden">
+								
+							</div>
+						</div>
+						<a href="#">Про нас</a>
+						<a href="#">Контакти</a>
+					</div>
+				</div>
+				<a href="#" class="header_logo"><img src="img/logo_dark.png"></a>
+				<div class="header_actions">
+					<a href="#" class="header_actions_phone"><img src="img/icon_phone.svg"><span>+380 (68) 003 99 03</span></a>
+					<a href="#" class="btn button header_actions_button">продати нерухомість</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="subpage_hero" style="background-image: url(img/catalog_bg.png);"></section>
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog_overlay">
+				<div class="catalog_filters">
+					<form>
+						<div class="filters">
+							<h3 class="filters_title">Фільтри</h3>
+							<img src="img/icon_close.svg" class="filters_close">
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Тип об’єкту</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_overlay">
+									<label class="filter_item_label">
+										<span>Земельні ділянки</span>
+										<input type="checkbox" class="checkbox" name="checkbox1">
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<span>Будинки-котеджі</span>
+										<input type="checkbox" class="checkbox" name="checkbox1">
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<span>Апартаменти</span>
+										<input type="checkbox" class="checkbox" name="checkbox1">
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<span>Діючий бізнес</span>
+										<input type="checkbox" class="checkbox" name="checkbox1">
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<span>Будівництво</span>
+										<input type="checkbox" class="checkbox" name="checkbox1">
+										<b class="filter_item_label_icon"></b>
+									</label>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Локація</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_overlay">
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Яремче</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Микуличин</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Ворохта</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Кривопілля</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Вербовець</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox2">
+										<span>Ільці</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Ціна</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_price filter_item_overlay">
+									<div class="filter_item_price_overlay">
+										<div class="filter_item_price_input_wrapper">
+											<p class="filter_item_price_input_label">Від</p>
+											<input type="number" id="slider_min" class="filter_item_price_input">
+											<p class="filter_item_price_input_value">$</p>
+										</div>
+										<div class="filter_item_price_input_wrapper">
+											<p class="filter_item_price_input_label">До</p>
+											<input type="number" id="slider_max" class="filter_item_price_input">
+											<p class="filter_item_price_input_value">$</p>
+										</div>
+									</div>
+									<div id="price_slider"></div>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Призначення</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_overlay">
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox3">
+										<span>Землі промисловості</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox3">
+										<span>Сільськогосподарська ділянка</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox3">
+										<span>Землі промисловості</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Комунікації</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_overlay_com filter_item_overlay">
+									<input type="checkbox" class="filter_item_com_input" name="com" id="com1">
+									<label class="filter_item_com_label" for="com1"><span>Вода</span></label>
+									<input type="checkbox" class="filter_item_com_input" name="com" id="com2">
+									<label class="filter_item_com_label" for="com2"><span>Газ</span></label>
+								</div>
+							</div>
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Електроенергія, кВТ</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_price filter_item_overlay">
+									<div class="filter_item_price_overlay">
+										<div class="filter_item_price_input_wrapper">
+											<p class="filter_item_price_input_label">Від</p>
+											<input type="number" class="filter_item_price_input">
+											<p class="filter_item_price_input_value">кВТ</p>
+										</div>
+										<div class="filter_item_price_input_wrapper">
+											<p class="filter_item_price_input_label">До</p>
+											<input type="number" class="filter_item_price_input">
+											<p class="filter_item_price_input_value">кВТ</p>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="filter_item">
+								<div class="filter_item_head">
+									<p class="filter_item_head_title">Форма власності</p>
+									<img src="img/icon_arrow_dark.svg">
+								</div>
+								<div class="filter_item_overlay">
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox4">
+										<span>Приватизовано</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+									<label class="filter_item_label">
+										<input type="checkbox" class="checkbox" name="checkbox4">
+										<span>Неприватизовано</span>
+										<b class="filter_item_label_icon"></b>
+									</label>
+								</div>
+							</div>
+							<input type="submit" class="filter_submit" value="Застосувати">
+							<a href="#" class="filter_clear">Очистити фільтри</a>
+						</div>
+					</form>
+				</div>
+				<div class="catalog_content">
+					<a href="#" class="mob_filters"><img src="img/icon_filter.svg">Фільтри</a>
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs_link">Головна</a>
+						<a href="#" class="breadcrumbs_link">Всі об’єкти</a>
+						<p class="breadcrumbs_current">Земельні ділянки</p>
+					</div>
+					<h3 class="catalog_content_title">Земельні ділянки</h3>
+					<div class="catalog_items">
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+						<a href="#" class="popular_item">
+							<div class="popular_item_image" style="background-image: url(img/popular_item1.png);"></div>
+							<div class="popular_item_content">
+								<h5 class="popular_item_title">Готель в центрі Яремче</h5>
+								<div class="popular_item_info">
+									<p class="popular_item_info_item"><img src="img/icon_location.svg">Яремче</p>
+									<p class="popular_item_info_item"><img src="img/icon_square.svg">20 соток</p>
+								</div>
+								<div class="popular_item_wrapper">
+									<h5 class="popular_item_price">$ 23 500</h5>
+									<img src="img/icon_single_arrow.svg" class="popular_item_arrow">
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts_overlay">
+				<div class="contacts_info">
+					<h3 class="contacts_title">Контакти</h3>
+					<div class="contacts_item">
+						<img src="img/icon_location.svg" class="contacts_item_icon">
+						<div class="contacts_item_overlay">
+							<h5 class="contacts_item_label">Адреса</h5>
+							<a href="#" class="contacts_item_link">м. Яремче, вул Свободи, 91/2</a>
+						</div>
+					</div>
+					<div class="contacts_item">
+						<img src="img/icon_phone_green.svg" class="contacts_item_icon">
+						<div class="contacts_item_overlay">
+							<h5 class="contacts_item_label">Телефон</h5>
+							<a href="#" class="contacts_item_link">+380 (68) 003 99 03</a>
+						</div>
+					</div>
+					<div class="contacts_item">
+						<img src="img/icon_mail.svg" class="contacts_item_icon">
+						<div class="contacts_item_overlay">
+							<h5 class="contacts_item_label">Пошта</h5>
+							<a href="#" class="contacts_item_link">test@contact.com</a>
+						</div>
+					</div>
+					<div class="contacts_social">
+						<a href="#" class="contacts_social_item"><img src="img/contacts_social1.svg"></a>
+						<a href="#" class="contacts_social_item"><img src="img/contacts_social2.svg"></a>
+						<a href="#" class="contacts_social_item"><img src="img/contacts_social1.svg"></a>
+						<a href="#" class="contacts_social_item"><img src="img/contacts_social2.svg"></a>
+					</div>
+				</div>
+				<div class="contacts_form">
+					<h3 class="contacts_form_title">Потрібна консультація?</h3>
+					<p class="contacts_form_text">Залиште заявку і наші спеціалісти проконсультують вас у виборі нерухомості</p>
+					<form>
+						<div class="contacts_form_overlay">
+							<input type="text" class="contacts_form_input" placeholder="Ім’я*">
+							<input type="text" class="contacts_form_input" placeholder="Телефон*">
+							<input type="submit" class="contacts_form_submit" value="Надіслати">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_info">
+					<a href="#" class="footer_info_logo"><img src="img/logo.png"></a>
+					<p class="footer_info_copyright">2024. Всі права захищено</p>
+				</div>
+				<div class="footer_nav">
+					<p class="footer_nav_title">Каталог</p>
+					<div class="footer_nav_overlay">
+						<a href="#">Земельні ділянки</a>
+						<a href="#">Будинки-котеджі</a>
+						<a href="#">Апартаменти</a>
+						<a href="#">Діючий бізнес</a>
+						<a href="#">Будівництво</a>
+					</div>
+				</div>
+				<div class="footer_nav">
+					<p class="footer_nav_title">Про нас</p>
+					<div class="footer_nav_overlay">
+						<a href="#">Про нас</a>
+						<a href="#">Контакти</a>
+					</div>
+				</div>
+				<div class="footer_contacts">
+					<p class="footer_nav_title">Контакти</p>
+					<a href="#" class="footer_contacts_item"><img src="img/icon_phone_green.svg">+380 (68) 003 99 03</a>
+					<a href="#" class="footer_contacts_item"><img src="img/icon_mail.svg">test@contact.com</a>
+					<div class="footer_contacts_social">
+						<a href="#" class="footer_contacts_social_item"><img src="img/contacts_social1.svg"></a>
+						<a href="#" class="footer_contacts_social_item"><img src="img/contacts_social2.svg"></a>
+						<a href="#" class="footer_contacts_social_item"><img src="img/contacts_social1.svg"></a>
+						<a href="#" class="footer_contacts_social_item"><img src="img/contacts_social2.svg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<a href="#" class="footer_dev">Розробка сайту:<img src="img/dev_logo.svg"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/wNumb.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+
+	<script>
+		//Slider Price
+		var html5Slider = document.getElementById('price_slider');
+		noUiSlider.create(html5Slider, {
+		    start: [1500, 30000],
+		    connect: true,
+		    range: {
+		        'min': 1000,
+		        'max': 40000
+		    },
+		    format: wNumb({
+	          decimals: 0,
+	          thousand: '',
+	          prefix: ''
+	      	})
+		});
+
+
+		var inputMin = document.getElementById('slider_min');
+		var inputMax = document.getElementById('slider_max');
+
+		html5Slider.noUiSlider.on('update', function (values, handle) {
+		    var value = values[handle];
+		    if (handle) {
+		        inputMax.value = value;
+		    } else {
+		        inputMin.value = value;
+		    }
+		});
+
+		inputMin.addEventListener('change', function () {
+		    html5Slider.noUiSlider.set([this.value, null]);
+		});
+		inputMax.addEventListener('change', function () {
+		    html5Slider.noUiSlider.set([null, this.value]);
+		});
+
+
+		
+	</script>
+</body>
+</html>

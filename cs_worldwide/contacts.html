@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header_overlay">
+				<a href="#" class="header_logo"><img src="img/logo.svg"></a>
+				<div class="header_nav">
+					<a href="#" class="header_nav_item">Home</a>
+					<div class="header_nav_item_parent">
+						<a href="#" class="header_nav_item_parent_link header_nav_item">Services <img src="img/icon_arrow.svg"></a>
+						<div class="header_nav_item_child">
+							<a href="#" class="header_nav_item_child_item"></a>
+							<a href="#" class="header_nav_item_child_item"></a>
+							<a href="#" class="header_nav_item_child_item"></a>
+							<a href="#" class="header_nav_item_child_item"></a>
+						</div>
+					</div>
+					<a href="#" class="header_nav_item">Cases</a>
+					<a href="#" class="header_nav_item">News</a>
+					<a href="#" class="header_nav_item">About us</a>
+					<a href="#" class="header_nav_item">Contact us</a>
+				</div>
+				<div class="header_lang">
+					<p class="header_lang_current">EN <img src="img/icon_arrow.svg"></p>
+					<div class="header_lang_hide">
+						<a href="#" class="header_lang_hide_item">EN</a>
+						<a href="#" class="header_lang_hide_item">EN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="subpagehero">
+		<div class="container">
+			<div class="subpagehero_overlay">
+				<img src="img/news_ilustration1.svg" class="subpagehero_imageleft">
+				<div class="subpagehero_content">
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs_link breadcrumbs_home">Home</a>
+						<p class="breadcrumbs_current">Contact us</p>
+					</div>
+					<h1 class="subpagehero_title">Contact us</h1>
+					<p class="subpagehero_text">Accelerate your cloud adoption with confidence using proven guidance that’s designed to help you create and implement the business and technology strategies necessary for your organisation to succeed in the cloud.</p>
+				</div>
+				<img src="img/news_ilustration2.svg" class="subpagehero_imageright">
+			</div>
+		</div>
+	</section>
+
+	<section class="offices">
+		<div class="container">
+			<p class="note offices_note">Visit us</p>
+			<h2 class="offices_title">Our offices</h2>
+			<div class="contacts_offices">
+				<div id="map" class="contacts_map_item"></div>
+				<div class="contacts_offices_overlay">
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Kyiv, Ukraine</h5>
+	                    <p class="contacts_offices_item_address">51, Nizhniy Val street</p>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Tallinn, Estonia</h5>
+	                    <p class="contacts_offices_item_address">Harju maakond, Tallinn, Kesklinna linnaosa, Vesivärava tn 50-301, 10152</p>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">London, United Kingdom</h5>
+	                    <p class="contacts_offices_item_address">12 London Road, Morden SM4 5BQ </p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+44 (204) 551 1437</a>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Ljubljana, Slovenia</h5>
+	                    <p class="contacts_offices_item_address">Regus Ljubljana, Schellenburg Palace Gosposvetska cesta 13, 1st floor 1000 Ljubljana</p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+386 30 653 635</a>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Virginia, USA</h5>
+	                    <p class="contacts_offices_item_address">4445 Corporation Ln Ste 264, Virginia Beach, VA, 23462-3262, USA</p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+1(202) 964 2723</a>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Kyiv, Ukraine</h5>
+	                    <p class="contacts_offices_item_address">51, Nizhniy Val street</p>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Tallinn, Estonia</h5>
+	                    <p class="contacts_offices_item_address">Harju maakond, Tallinn, Kesklinna linnaosa, Vesivärava tn 50-301, 10152</p>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">London, United Kingdom</h5>
+	                    <p class="contacts_offices_item_address">12 London Road, Morden SM4 5BQ </p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+44 (204) 551 1437</a>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Ljubljana, Slovenia</h5>
+	                    <p class="contacts_offices_item_address">Regus Ljubljana, Schellenburg Palace Gosposvetska cesta 13, 1st floor 1000 Ljubljana</p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+386 30 653 635</a>
+		            </div>
+		            <div class="contacts_offices_item">
+	                    <h5 class="contacts_offices_item_location">Virginia, USA</h5>
+	                    <p class="contacts_offices_item_address">4445 Corporation Ln Ste 264, Virginia Beach, VA, 23462-3262, USA</p>
+	                    <a href="tel:+44 (204) 551 1437" class="contacts_offices_item_phone">+1(202) 964 2723</a>
+		            </div>
+	            </div>
+	        </div>
+		</div>
+	</section>
+
+
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts_overlay">
+				<div class="contacts_form">
+					<p class="contacts_note note">Write to us</p>
+					<h2 class="contacts_title">Get in touch</h2>
+					<form>
+						<div class="contacts_form_overlay">
+							<input type="text" class="contacts_form_input contacts_form_input_large" placeholder="Name*">
+							<input type="text" class="contacts_form_input" placeholder="Phone*">
+							<input type="text" class="contacts_form_input" placeholder="E-mail*">
+							<input type="text" class="contacts_form_input" placeholder="Company name">
+							<input type="text" class="contacts_form_input" placeholder="Subject">
+							<textarea class="contacts_form_input contacts_form_textarea" placeholder="Your message"></textarea>
+							<input type="submit" class="btn contacts_form_submit" value="Send">
+						</div>
+					</form>
+				</div>
+				<div class="contacts_values">
+					<h3 class="contacts_values_title">Contact us</h3>
+					<div class="contacts_values_item">
+						<p class="contacts_values_label">Phone</p>
+						<a href="#" class="contacts_values_link">+44 (204) 551 1437</a>
+					</div>
+					<div class="contacts_values_item">
+						<p class="contacts_values_label">E-Mail</p>
+						<a href="#" class="contacts_values_link">test@gmail.com</a>
+					</div>
+					<div class="contacts_values_item">
+						<p class="contacts_values_label">address</p>
+						<p class="contacts_values_link contacts_values_address">12 London Road, Morden SM4 5BQ United Kingdom </p>
+					</div>
+					<div class="contacts_values_social">
+						<a href="#" class="contacts_values_social_item" target="_blank"><img src="img/icon_social1.svg"></a>
+						<a href="#" class="contacts_values_social_item" target="_blank"><img src="img/icon_social2.svg"></a>
+						<a href="#" class="contacts_values_social_item" target="_blank"><img src="img/icon_social3.svg"></a>
+					</div>
+					<img src="img/icon_circle.svg" class="contacts_values_bg1">
+					<img src="img/icon_star.svg" class="contacts_values_bg2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer_overlay">
+				<div class="footer_info">
+					<a href="#" class="footer_logo"><img src="img/logo_white.svg"></a>
+					<p class="footer_info_text">Microsoft Partner, consulting company, who helps clients deliver cloud technologies with strong focus on Analytics</p>
+				</div>
+				<div class="footer_nav">
+					<h5 class="footer_title">Navigation</h5>
+					<a href="#" class="footer_nav_link">About us</a>
+					<a href="#" class="footer_nav_link">Services</a>
+					<a href="#" class="footer_nav_link">Cases</a>
+					<a href="#" class="footer_nav_link">News</a>
+					<a href="#" class="footer_nav_link">Contact us</a>
+				</div>
+				<div class="footer_contacts">
+					<h5 class="footer_title">Contact us</h5>
+					<div class="footer_contacts_item">
+						<p class="footer_contacts_label">Phone</p>
+						<a href="#" class="footer_contacts_value">+44 (204) 551 1437</a>
+					</div>
+					<div class="footer_contacts_item">
+						<p class="footer_contacts_label">E-Mail</p>
+						<a href="#" class="footer_contacts_value">test@gmail.com</a>
+					</div>
+					<div class="footer_contacts_item">
+						<p class="footer_contacts_label">address</p>
+						<p class="footer_contacts_value footer_contacts_value_address">12 London Road, Morden SM4 5BQ United Kingdom </p>
+					</div>
+					<div class="footer_contacts_social">
+						<a href="#" class="footer_contacts_social_item"><img src="img/icon_social1.svg"></a>
+						<a href="#" class="footer_contacts_social_item"><img src="img/icon_social2.svg"></a>
+						<a href="#" class="footer_contacts_social_item"><img src="img/icon_social3.svg"></a>
+					</div>
+				</div>
+				<div class="footer_subscribe">
+					<h5 class="footer_title">Subscribe to our news</h5>
+					<form>
+						<div class="footer_subscribe_form">
+							<input type="text" class="footer_subscribe_form_input" placeholder="E-mail*">
+							<input type="submit" class="footer_subscribe_form_submit" value="">
+						</div>
+					</form>
+					<a href="#" class="footer_subscribe_link">Terms of use</a>
+					<a href="#" class="footer_subscribe_link">Privacy Policy</a>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<p class="footer_copyright">Copyright © 2024. All right reserved</p>
+				<a href="#" class="footer_dev">Website development:<img src="img/logo_dev.svg"></a>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	    var map = L.map('map').setView([27.917478, -2.131394], 2);
+	    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    maxZoom: 2,
+	    minZoom: 2
+	}).addTo(map);
+	    var california = L.marker([33.8723139, -117.5373001]).addTo(map);
+	    var hongkong = L.marker([22.3008515, 114.175777]).addTo(map);
+	    var india = L.marker([11.1439739,77, 3146855]).addTo(map);
+	    var bangladesh = L.marker([23.7981021, 90.3892448]).addTo(map);
+	    var china = L.marker([32.0120757, 120.7929311]).addTo(map);
+  </script>
+</body>
+</html>

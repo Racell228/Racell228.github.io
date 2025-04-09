@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Arthead';
+		src: url('../fonts/Arthead.eot');
+		src: url('../fonts/Arthead.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arthead.woff') format('woff'),
+		url('../fonts/Arthead.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}

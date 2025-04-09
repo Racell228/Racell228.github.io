@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'AgencyFB';
+		src: url('../fonts/AgencyFB.eot');
+		src: url('../fonts/AgencyFB.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AgencyFB.woff') format('woff'),
+		url('../fonts/AgencyFB.ttf') format('truetype');
+	font-weight: 550;
+	font-style: normal;
+}

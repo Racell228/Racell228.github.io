@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Velve</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="banner">
+		<div class="banner_content">
+			<a href="#" class="banner_logo"><img src="img/logo.svg"></a>
+			<h1 class="banner_title">A NEW ERA OF SKINCARE  IS UNFOLDING</h1>
+			<p class="banner_text">Something exquisite is coming.</p>
+			<div class="banner_form_wrapper">
+				<h4 class="banner_subtitle">Be the first to experience the debut collection, unlock VIP access to exclusive pre-orders, and receive an invite to our pre-launch event.</h4>
+				<form>
+					<div class="banner_form">
+						<input type="text" class="banner_form_input" placeholder="Your name*">
+						<input type="text" class="banner_form_input" placeholder="Your email*">
+						<input type="text" class="banner_form_input" placeholder="Your mobile*">
+						<input type="submit" value="Give Me Insider Access" class="banner_form_submit">
+					</div>
+				</form>
+			</div>
+			<div class="banner_social">
+				<p class="banner_social_title">Follow the journey</p>
+				<div class="banner_social_overlay">
+					<a href="#" class="banner_social_item"><img src="img/icon_social1.svg"></a>
+					<a href="#" class="banner_social_item"><img src="img/icon_social2.svg"></a>
+					<a href="#" class="banner_social_item"><img src="img/icon_social3.svg"></a>
+				</div>
+			</div>
+		</div>
+		<div class="banner_image">
+			<img src="img/page_image.png">
+			<div class="banner_timer">
+				<h2 class="banner_timer_time" id="countdown">29</h2>
+				<p class="banner_timer_label">days</p>
+			</div>
+		</div>
+
+	</section>
+	<script>
+		function startCountdown() {
+		    const targetDate = new Date("May 6, 2025 11:00:00").getTime();
+		    
+		    function updateCountdown() {
+		        const now = new Date().getTime();
+		        const timeLeft = targetDate - now;
+		        
+		        if (timeLeft <= 0) {
+		            document.getElementById("countdown").innerHTML = "Час вийшов!";
+		            clearInterval(interval);
+		            return;
+		        }
+		        
+		        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+		        
+		        document.getElementById("countdown").innerHTML = `${days}`;
+		    }
+		    
+		    updateCountdown();
+		    const interval = setInterval(updateCountdown, 1000);
+		}
+
+		document.addEventListener("DOMContentLoaded", startCountdown);
+
+
+	</script>
+</body>
+</html>

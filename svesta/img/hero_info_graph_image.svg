@@ -1,0 +1,53 @@
+<svg width="167" height="100" viewBox="0 0 167 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_119_5088)">
+<rect y="0.00195312" width="12" height="86" fill="#E42C70" fill-opacity="0.1"/>
+<rect y="86.002" width="12" height="14" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip1_119_5088)">
+<rect x="25.8359" y="0.00195312" width="12" height="73" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="25.8359" y="73.002" width="12" height="27" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip2_119_5088)">
+<rect x="51.6641" y="0.00195312" width="12" height="65" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="51.6641" y="65.002" width="12" height="35" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip3_119_5088)">
+<rect x="77.5" y="0.00195312" width="12" height="69" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="77.5" y="69.002" width="12" height="31" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip4_119_5088)">
+<rect x="103.336" y="0.00195312" width="12" height="48" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="103.336" y="48.002" width="12" height="52" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip5_119_5088)">
+<rect x="129.164" y="0.00195312" width="12" height="41" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="129.164" y="41.002" width="12" height="59" fill="#E42C70"/>
+</g>
+<g clip-path="url(#clip6_119_5088)">
+<rect x="155" y="0.00195312" width="12" height="31" fill="#E42C70" fill-opacity="0.1"/>
+<rect x="155" y="31.002" width="12" height="69" fill="#E42C70"/>
+</g>
+<defs>
+<clipPath id="clip0_119_5088">
+<rect y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip1_119_5088">
+<rect x="25.8359" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip2_119_5088">
+<rect x="51.6641" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip3_119_5088">
+<rect x="77.5" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip4_119_5088">
+<rect x="103.336" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip5_119_5088">
+<rect x="129.164" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+<clipPath id="clip6_119_5088">
+<rect x="155" y="0.00195312" width="12" height="100" rx="6" fill="white"/>
+</clipPath>
+</defs>
+</svg>

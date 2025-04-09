@@ -1,0 +1,108 @@
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayXXThin.eot');
+		src: url('../fonts/NeueHaasDisplayXXThin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayXXThin.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayXXThin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayXXThinItalic.eot');
+		src: url('../fonts/NeueHaasDisplayXXThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayXXThinItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayXXThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayLight.eot');
+		src: url('../fonts/NeueHaasDisplayLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayLight.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayLightItalic.eot');
+		src: url('../fonts/NeueHaasDisplayLightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayLightItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayLightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayRoman.eot');
+		src: url('../fonts/NeueHaasDisplayRoman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayRoman.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayRoman.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayRomanItalic.eot');
+		src: url('../fonts/NeueHaasDisplayRomanItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayRomanItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayRomanItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayMediu.eot');
+		src: url('../fonts/NeueHaasDisplayMediu.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayMediu.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayMediumItalic.eot');
+		src: url('../fonts/NeueHaasDisplayMediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayMediumItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayMediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayBold.eot');
+		src: url('../fonts/NeueHaasDisplayBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayBold.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayBold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayBoldItalic.eot');
+		src: url('../fonts/NeueHaasDisplayBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayBoldItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayBoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayBlack.eot');
+		src: url('../fonts/NeueHaasDisplayBlack.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayBlack.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayBlack.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NeueHaasDisplay';
+		src: url('../fonts/NeueHaasDisplayBlackItalic.eot');
+		src: url('../fonts/NeueHaasDisplayBlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NeueHaasDisplayBlackItalic.woff') format('woff'),
+		url('../fonts/NeueHaasDisplayBlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}

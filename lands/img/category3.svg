@@ -1,0 +1,28 @@
+<svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_22_298)">
+<rect width="61" height="61" rx="10" fill="#38CC6D"/>
+</g>
+<path d="M13.9268 47.7637L46.7638 47.7637V47.7637L13.9268 47.7637V47.7637Z" stroke="white" stroke-linejoin="round"/>
+<path d="M14 47V16H32V47" stroke="white" stroke-linejoin="round"/>
+<path d="M14.1914 21.1504H32.0664" stroke="white" stroke-linejoin="round"/>
+<path d="M32.0664 33.6631L48.7497 39.0256" stroke="white" stroke-linejoin="round"/>
+<path d="M31.9346 26.5785H39.3494V21.2822H31.9346" stroke="white" stroke-linejoin="round"/>
+<path d="M14.1914 27.1084H32.0664" stroke="white" stroke-linejoin="round"/>
+<path d="M23.1289 21.1504V27.1087" stroke="white" stroke-linejoin="round"/>
+<path d="M14.1914 33.0664H32.0664" stroke="white" stroke-linejoin="round"/>
+<path d="M23.1289 27.1084V33.0667" stroke="white" stroke-linejoin="round"/>
+<path d="M14.1914 39.0254H32.0664" stroke="white" stroke-linejoin="round"/>
+<path d="M23.1289 33.0664V39.0247" stroke="white" stroke-linejoin="round"/>
+<path d="M20.1504 47.3665V44.3874C20.1504 43.5972 20.4643 42.8395 21.023 42.2808C21.5817 41.7221 22.3394 41.4082 23.1296 41.4082C23.5208 41.4082 23.9082 41.4853 24.2696 41.635C24.6311 41.7847 24.9595 42.0041 25.2361 42.2808C25.5128 42.5574 25.7322 42.8858 25.8819 43.2473C26.0317 43.6087 26.1087 43.9961 26.1087 44.3874V47.3665" stroke="white" stroke-linejoin="round"/>
+<path d="M46.3662 38.2568V47.3671" stroke="white" stroke-linejoin="round"/>
+<path d="M35 48V41H43V48" stroke="white" stroke-linejoin="round"/>
+<path d="M37 27L37 35" stroke="white" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_b_22_298" x="-2" y="-2" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_22_298"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_22_298" result="shape"/>
+</filter>
+</defs>
+</svg>

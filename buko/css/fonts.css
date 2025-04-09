@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica Light'), local('Pragmatica-Light'),
+        url('../fonts/Pragmatica-Light.woff2') format('woff2'),
+        url('../fonts/Pragmatica-Light.woff') format('woff'),
+        url('../fonts/Pragmatica-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-ExtraLight'), local('Pragmatica-ExtraLight'),
+        url('../fonts/Pragmatica-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Pragmatica-ExtraLight.woff') format('woff'),
+        url('../fonts/Pragmatica-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+   @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-Book'), local('Pragmatica-Book'),
+        url('../fonts/Pragmatica-Book.woff2') format('woff2'),
+        url('../fonts/Pragmatica-Book.woff') format('woff'),
+        url('../fonts/Pragmatica-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-Medium'), local('Pragmatica-Medium'),
+        url('../fonts/Pragmatica-Medium.woff2') format('woff2'),
+        url('../fonts/Pragmatica-Medium.woff') format('woff'),
+        url('../fonts/Pragmatica-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-Bold'), local('Pragmatica-Bold'),
+        url('../fonts/Pragmatica-Bold.woff2') format('woff2'),
+        url('../fonts/Pragmatica-Bold.woff') format('woff'),
+        url('../fonts/Pragmatica-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-ExtraBold'), local('Pragmatica-ExtraBold'),
+        url('../fonts/Pragmatica-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Pragmatica-ExtraBold.woff') format('woff'),
+        url('../fonts/Pragmatica-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pragmatica';
+    src: local('Pragmatica-Black'), local('Pragmatica-Black'),
+        url('../fonts/Pragmatica-Black.woff2') format('woff2'),
+        url('../fonts/Pragmatica-Black.woff') format('woff'),
+        url('../fonts/Pragmatica-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
