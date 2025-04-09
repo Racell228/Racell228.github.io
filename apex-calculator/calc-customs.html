@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Normandica">
+    <meta name="application-name" content="Normandica">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0A3251">
+    <title>Normandica - Калькулятор растаможки</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<main class="calcMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrapper">
+                    <div class="header">
+                        <div class="logo">
+                            <a href="/"><img src="img/logo-white.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <h1 class="title">Калькулятор растаможки</h1>
+                    </div>
+                    <div class="calc">
+                        <div class="calcCustoms">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="calcItem">
+                                            <p class="title">Тип двигателя</p>
+                                            <div class="selectionBlock">
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="gasoline" name="engine-type" value="gasoline" checked>
+                                                    <label for="gasoline">Бензин</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="diesel" name="engine-type" value="diesel">
+                                                    <label for="diesel">Дизель</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="electro" name="engine-type" value="electro">
+                                                    <label for="electro">Электро</label>
+                                                </div>
+                                            </div>
+
+                                            <p class="title">Стоимость</p>
+                                            <div class="inputBlock">
+                                                <label for="calcCost">Введите стоимость, USD
+                                                    <input type="text" id="calcCost">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="calcItem">
+                                            <p class="title">Год</p>
+                                            <div class="selectionBlock">
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2013" name="year-manufacture" value="2013">
+                                                    <label for="year-2013">2013</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2014" name="year-manufacture" value="2014">
+                                                    <label for="year-2014">2014</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2015" name="year-manufacture" value="2015">
+                                                    <label for="year-2015">2015</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2016" name="year-manufacture" value="2016">
+                                                    <label for="year-2016">2016</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                     <input type="radio" id="year-2017" name="year-manufacture" value="2017">
+                                                    <label for="year-2017">2017</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2018" name="year-manufacture" value="2018">
+                                                    <label for="year-2018">2018</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2019" name="year-manufacture" value="2019">
+                                                    <label for="year-2019">2019</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2020" name="year-manufacture" value="2020">
+                                                    <label for="year-2020">2020</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="year-2021" name="year-manufacture" value="2021">
+                                                    <label for="year-2021">2021</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputBlock">
+                                                <label for="calcYear">Введите год
+                                                    <input type="text" id="calcYear">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 volume">
+                                        <div class="calcItem">
+                                            <p class="title">Объем</p>
+                                            <div class="selectionBlock">
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-1-4" name="engine-volume" value="1.4">
+                                                    <label for="volume-1-4">1.4</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-1-5" name="engine-volume" value="1.5">
+                                                    <label for="volume-1-5">1.5</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-1-6" name="engine-volume" value="1.6">
+                                                    <label for="volume-1-6">1.6</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-1-8" name="engine-volume" value="1.8">
+                                                    <label for="volume-1-8">1.8</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-2-0" name="engine-volume" value="2.0">
+                                                    <label for="volume-2-0">2.0</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-2-4" name="engine-volume" value="2.4">
+                                                    <label for="volume-2-4">2.4</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-2-5" name="engine-volume" value="2.5">
+                                                    <label for="volume-2-5">2.5</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-3-0" name="engine-volume" value="3.0">
+                                                    <label for="volume-3-0">3.0</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="volume-3-5" name="engine-volume" value="3.5">
+                                                    <label for="volume-3-5">3.5</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputBlock">
+                                                <label for="calcVolume">Введите объем, л
+                                                    <input type="text" id="calcVolume">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 capacity disabledBlock">
+                                        <div class="calcItem">
+                                            <p class="title">Емкость АКБ</p>
+                                            <div class="selectionBlock">
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-12" name="engine-capacity" value="12">
+                                                    <label for="capacity-12">12 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-15" name="engine-capacity" value="15">
+                                                    <label for="capacity-15">15 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-16" name="engine-capacity" value="16">
+                                                    <label for="capacity-16">16 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-20" name="engine-capacity" value="20">
+                                                    <label for="capacity-20">20 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-25" name="engine-capacity" value="25">
+                                                    <label for="capacity-25">25 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-50" name="engine-capacity" value="50">
+                                                    <label for="capacity-50">50 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-60" name="engine-capacity" value="60">
+                                                    <label for="capacity-60">60 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-75" name="engine-capacity" value="75">
+                                                    <label for="capacity-75">75 kW</label>
+                                                </div>
+                                                <div class="selectionItem">
+                                                    <input type="radio" id="capacity-100" name="engine-capacity" value="100">
+                                                    <label for="capacity-100">100 kW</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputBlock">
+                                                <label for="calcCapacity">Введите емкость АКБ, кВт/ч
+                                                    <input type="text" id="calcCapacity">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-sm-6 col-lg-4">
+                                        <button type="button" id="calculateCustoms" class="mainBtn">Расчет</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total_price">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="priceBlock">
+                                        <p>Стоимость растаможки</p>
+                                        <div class="wrap">
+                                            <div class="item">
+                                                <div id="customsClearance"></div>
+                                                <div class="sub_t">Таможня</div>
+                                            </div>
+                                            <span class="symbol">+</span>
+                                            <div class="item">
+                                                <div id="customsService"></div>
+                                                <div class="sub_t">Комплекс</div>
+                                            </div>
+                                            <span class="symbol">=</span>
+                                            <div class="item total">
+                                                <div id="customsTotal"></div>
+                                                <div class="sub_t">USD</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-mask-plugin@1.14.16/dist/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
